@@ -1,0 +1,13 @@
+{
+    "Name": "Drying Rack",
+    "Author": "YourName",
+    "Version": "1.0.0",
+    "Description": "Adds a drying rack that turns flowers into dried flowers over time.",
+    "UniqueID": "YourName.DryingRack",
+    "MinimumApiVersion": "3.0.0",
+    "UpdateKeys": [],
+    "ContentPackFor": 
+    {
+      "UniqueID": "Pathoschild.ContentPatcher"
+    }
+}
