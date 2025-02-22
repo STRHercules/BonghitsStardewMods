@@ -1,240 +1,64 @@
 {
-  "$schema": "https://smapi.io/schemas/content-patcher.json",
-  "Format": "2.5.0",
-  "Changes": [
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Format": "2.5.0",
+    "Changes": [
       // Load the spritesheet
       {
-          "Action": "Load",
-          "Target": "Assets/Spritesheet.png",
-          "FromFile": "Assets/Spritesheet.png" // Replace with the path to your spritesheet
+        "Action": "Load",
+        "Target": "Assets/bh_dryingrack.png",
+        "FromFile": "Assets/bh_dryingrack.png" // Replace with the path to your spritesheet
       },
       {
-          // Add the Drying Rack as a new crafting recipe
-          "Action": "EditData",
-          "Target": "Data/CraftingRecipes",
-          "Entries": {
-              "Drying Rack": "390 10 388 20 335 1/s Foraging 4/true/Default" // 10 Wood, 20 Stone, 1 Copper Bar
+        // Add the Drying Rack as a new crafting recipe
+        "Action": "EditData",
+        "Target": "Data/CraftingRecipes",
+        "Entries": {
+          "Drying Rack": "390 10 388 20 335 1/s Foraging 4/true/Default" // 10 Wood, 20 Stone, 1 Copper Bar
+        }
+      },
+      {
+        // Define the Drying Rack as a big craftable
+        "Action": "EditData",
+        "Target": "Data/BigCraftables",
+        "Entries": {
+          "bonghits.DryingRack": {
+            "Name": "Drying Rack",
+            "Price": 1000,
+            "Edibility": -300,
+            "Type": "Crafting",
+            "Category": -9,
+            "Description": "Turns flowers into dried flowers over time. Can be placed on walls.",
+            "Texture": "Assets/bh_dryingrack.png", // Reference the spritesheet
+            "SpriteIndex": 0, // Use the first sprite in the spritesheet
+            "Placement": "Wall" // Allows placement on walls
           }
+        }
       },
       {
-          "Action": "EditData",
-          "Target": "Data/BigCraftables",
-          "Entries": {
-              "bonghits.DryingRack": {
-                  "Name": "Drying Rack",
-                  "Price": 1000,
-                  "Edibility": -300,
-                  "Type": "Crafting",
-                  "Category": -9,
-                  "Description": "Turns flowers into dried flowers over time. Can be placed on walls.",
-                  "Texture": "Assets/Spritesheet.png", // Reference the spritesheet
-                  "SpriteIndex": 0, // Use the first sprite in the spritesheet
-                  "Placement": "Wall" // Allows placement on walls
-              }
-          }
-      },
-      {
+        // Define the Drying Rack's behavior
         "Action": "EditData",
         "Target": "Data/Machines",
         "TargetField": ["(BC)163", "OutputRules"], // Replace (BC)163 with the correct ID for the Drying Rack
         "Entries": {
-            "bonghits.dryingrack": {
-                "Triggers": [
-                    {
-                        "Id": "bonghits.dryingrackTrigger",
-                        "Trigger": "ItemPlacedInMachine",
-                        "RequiredItemId": "(O)591, (O)593, (O)595, (O)597, (O)376, (O)429, (O)593, (O)595, (O)597", // Input flowers
-                        "RequiredCount": "1" // Only 1 flower needed
-                    }
-                ],
-                "OutputItem": [
-                    {
-                        "Idd": "bonghits.DriedFlower",
-                        "ItemId": "bonghits.DriedFlower",
-                        "CopyQuality": true // Quality is retained
-                    }
-                ],
-                "MinutesUntilReady": 6000 // 4 in-game days
-            }
+          "bonghits.dryingrack": {
+            "Triggers": [
+              {
+                "Id": "bonghits.dryingrackTrigger",
+                "Trigger": "ItemPlacedInMachine",
+                "RequiredItemId": "(O)591, (O)593, (O)595, (O)597, (O)376, (O)429, (O)593, (O)595, (O)597", // Input flowers
+                "RequiredCount": "1" // Only 1 flower needed
+              }
+            ],
+            "OutputItem": [
+              {
+                "Id": "bonghits.DriedFlower",
+                "ItemId": "bonghits.DriedFlower",
+                "CopyQuality": true // Quality is retained
+              }
+            ],
+            "MinutesUntilReady": 6000 // 4 in-game days
+          }
         }
-    },
-      {
-          // Add the Dried Tulip as a new item
-          "Action": "EditData",
-          "Target": "Data/Objects",
-          "Entries": {
-              "bonghits.DriedTulip": {
-                  "Name": "Dried Tulip",
-                  "Price": 500,
-                  "Edibility": -300,
-                  "Type": "ArtisanGoods",
-                  "Category": -9,
-                  "Description": "A beautifully preserved tulip.",
-                  "Texture": "Assets/Spritesheet.png", // Reference the spritesheet
-                  "SpriteIndex": 1 // Use the second sprite in the spritesheet
-              }
-          }
-      },
-      {
-          // Add the Dried Summer Spangle as a new item
-          "Action": "EditData",
-          "Target": "Data/Objects",
-          "Entries": {
-              "bonghits.DriedSummerSpangle": {
-                  "Name": "Dried Summer Spangle",
-                  "Price": 600,
-                  "Edibility": -300,
-                  "Type": "ArtisanGoods",
-                  "Category": -9,
-                  "Description": "A dried summer spangle, still vibrant.",
-                  "Texture": "Assets/Spritesheet.png", // Reference the spritesheet
-                  "SpriteIndex": 2 // Use the third sprite in the spritesheet
-              }
-          }
-      },
-      {
-          // Add the Dried Fairy Rose as a new item
-          "Action": "EditData",
-          "Target": "Data/Objects",
-          "Entries": {
-              "bonghits.DriedFairyRose": {
-                  "Name": "Dried Fairy Rose",
-                  "Price": 700,
-                  "Edibility": -300,
-                  "Type": "ArtisanGoods",
-                  "Category": -9,
-                  "Description": "A delicate, dried fairy rose.",
-                  "Texture": "Assets/Spritesheet.png", // Reference the spritesheet
-                  "SpriteIndex": 3 // Use the fourth sprite in the spritesheet
-              }
-          }
-      },
-      {
-          // Add the Dried Blue Jazz as a new item
-          "Action": "EditData",
-          "Target": "Data/Objects",
-          "Entries": {
-              "bonghits.DriedBlueJazz": {
-                  "Name": "Dried Blue Jazz",
-                  "Price": 400,
-                  "Edibility": -300,
-                  "Type": "ArtisanGoods",
-                  "Category": -9,
-                  "Description": "A dried blue jazz flower, still cheerful.",
-                  "Texture": "Assets/Spritesheet.png", // Reference the spritesheet
-                  "SpriteIndex": 4 // Use the fifth sprite in the spritesheet
-              }
-          }
-      },
-      {
-          // Add the Dried Poppy as a new item
-          "Action": "EditData",
-          "Target": "Data/Objects",
-          "Entries": {
-              "bonghits.DriedPoppy": {
-                  "Name": "Dried Poppy",
-                  "Price": 550,
-                  "Edibility": -300,
-                  "Type": "ArtisanGoods",
-                  "Category": -9,
-                  "Description": "A dried poppy, its color still vivid.",
-                  "Texture": "Assets/Spritesheet.png", // Reference the spritesheet
-                  "SpriteIndex": 5 // Use the sixth sprite in the spritesheet
-              }
-          }
-      },
-      {
-          // Add the Dried Sunflower as a new item
-          "Action": "EditData",
-          "Target": "Data/Objects",
-          "Entries": {
-              "bonghits.DriedSunflower": {
-                  "Name": "Dried Sunflower",
-                  "Price": 450,
-                  "Edibility": -300,
-                  "Type": "ArtisanGoods",
-                  "Category": -9,
-                  "Description": "A dried sunflower, still full of charm.",
-                  "Texture": "Assets/Spritesheet.png", // Reference the spritesheet
-                  "SpriteIndex": 6 // Use the seventh sprite in the spritesheet
-              }
-          }
-      },
-      {
-          // Add the Dried Sweet Pea as a new item
-          "Action": "EditData",
-          "Target": "Data/Objects",
-          "Entries": {
-              "bonghits.DriedSweetPea": {
-                  "Name": "Dried Sweet Pea",
-                  "Price": 300,
-                  "Edibility": -300,
-                  "Type": "ArtisanGoods",
-                  "Category": -9,
-                  "Description": "A dried sweet pea, still fragrant.",
-                  "Texture": "Assets/Spritesheet.png", // Reference the spritesheet
-                  "SpriteIndex": 7 // Use the eighth sprite in the spritesheet
-              }
-          }
-      },
-      {
-          // Add the Dried Crocus as a new item
-          "Action": "EditData",
-          "Target": "Data/Objects",
-          "Entries": {
-              "bonghits.DriedCrocus": {
-                  "Name": "Dried Crocus",
-                  "Price": 350,
-                  "Edibility": -300,
-                  "Type": "ArtisanGoods",
-                  "Category": -9,
-                  "Description": "A dried crocus, its beauty preserved.",
-                  "Texture": "Assets/Spritesheet.png", // Reference the spritesheet
-                  "SpriteIndex": 8 // Use the ninth sprite in the spritesheet
-              }
-          }
-      },
-      {
-          // Add the Dried Snowdrop as a new item
-          "Action": "EditData",
-          "Target": "Data/Objects",
-          "Entries": {
-              "bonghits.DriedSnowdrop": {
-                  "Name": "Dried Snowdrop",
-                  "Price": 400,
-                  "Edibility": -300,
-                  "Type": "ArtisanGoods",
-                  "Category": -9,
-                  "Description": "A dried snowdrop, still pure and lovely.",
-                  "Texture": "Assets/Spritesheet.png", // Reference the spritesheet
-                  "SpriteIndex": 9 // Use the tenth sprite in the spritesheet
-              }
-          }
-      },
-      {
-          // Add the Dried Bouquet as a new item
-          "Action": "EditData",
-          "Target": "Data/Objects",
-          "Entries": {
-              "bonghits.DriedBouquet": {
-                  "Name": "Dried Bouquet",
-                  "Price": 1500,
-                  "Edibility": -300,
-                  "Type": "ArtisanGoods",
-                  "Category": -9,
-                  "Description": "A beautiful arrangement of dried flowers, perfect for decoration.",
-                  "Texture": "Assets/Spritesheet.png", // Reference the spritesheet
-                  "SpriteIndex": 10 // Use the eleventh sprite in the spritesheet
-              }
-          }
-      },
-      {
-          // Add the Dried Bouquet crafting recipe
-          "Action": "EditData",
-          "Target": "Data/CraftingRecipes",
-          "Entries": {
-              "bonghits.DriedBouquet": "Dried Tulip 1 Dried Fairy Rose 1 Dried Sunflower 1/Home/false/Default"
-          }
       }
-  ]
-}
+    ]
+  }

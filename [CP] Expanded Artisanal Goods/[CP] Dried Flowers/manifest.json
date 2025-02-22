@@ -1,9 +1,9 @@
 {
-    "Name": "Drying Rack",
+    "Name": "Dried Flowers",
     "Author": "Major Bonghits",
     "Version": "0.1",
-    "Description": "Adds a drying rack that turns flowers into dried flowers over time.",
-    "UniqueID": "Bonghits.DryingRack",
+    "Description": "Adds a small collection of dried flowers to be used with the drying rack.",
+    "UniqueID": "Bonghits.DriedFlowers",
     "MinimumApiVersion": "3.0.0",
     "UpdateKeys": [],
     "ContentPackFor": 
