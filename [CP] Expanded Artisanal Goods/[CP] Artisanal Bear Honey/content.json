@@ -142,7 +142,7 @@
                           "CopyQuality": true // Retain Quality
                       }
                   ],
-                  "MinutesUntilReady": 57600 // 40 Days
+                  "MinutesUntilReady": 64800 // 45 Days
               }
           }
       }
