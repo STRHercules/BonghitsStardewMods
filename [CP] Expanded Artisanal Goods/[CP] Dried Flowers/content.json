@@ -5,7 +5,7 @@
       // Load the spritesheet
       {
         "Action": "Load",
-        "Target": "Assets/bh_flowers.png",
+        "Target": "bonghits.DriedFlowers/Objects",
         "FromFile": "Assets/bh_flowers.png" // Replace with the path to your spritesheet
       },
       {
@@ -20,8 +20,8 @@
             "Type": "ArtisanGoods",
             "Category": -9,
             "Description": "A beautifully preserved tulip.",
-            "Texture": "Assets/bh_flowers.png", // Reference the spritesheet
-            "SpriteIndex": 1 // Use the second sprite in the spritesheet
+            "Texture": "bonghits.DriedFlowers/Objects", // Reference the spritesheet
+            "SpriteIndex": 0 // Use the second sprite in the spritesheet
           }
         }
       },
@@ -37,8 +37,8 @@
             "Type": "ArtisanGoods",
             "Category": -9,
             "Description": "A dried summer spangle, still vibrant.",
-            "Texture": "Assets/bh_flowers.png", // Reference the spritesheet
-            "SpriteIndex": 2 // Use the third sprite in the spritesheet
+            "Texture": "bonghits.DriedFlowers/Objects", // Reference the spritesheet
+            "SpriteIndex": 1 // Use the third sprite in the spritesheet
           }
         }
       },
@@ -54,8 +54,8 @@
             "Type": "ArtisanGoods",
             "Category": -9,
             "Description": "A delicate, dried fairy rose.",
-            "Texture": "Assets/bh_flowers.png", // Reference the spritesheet
-            "SpriteIndex": 3 // Use the fourth sprite in the spritesheet
+            "Texture": "bonghits.DriedFlowers/Objects", // Reference the spritesheet
+            "SpriteIndex": 2 // Use the fourth sprite in the spritesheet
           }
         }
       },
@@ -71,8 +71,8 @@
             "Type": "ArtisanGoods",
             "Category": -9,
             "Description": "A dried blue jazz flower, still cheerful.",
-            "Texture": "Assets/bh_flowers.png", // Reference the spritesheet
-            "SpriteIndex": 4 // Use the fifth sprite in the spritesheet
+            "Texture": "bonghits.DriedFlowers/Objects", // Reference the spritesheet
+            "SpriteIndex": 3 // Use the fifth sprite in the spritesheet
           }
         }
       },
@@ -88,8 +88,8 @@
             "Type": "ArtisanGoods",
             "Category": -9,
             "Description": "A dried poppy, its color still vivid.",
-            "Texture": "Assets/bh_flowers.png", // Reference the spritesheet
-            "SpriteIndex": 5 // Use the sixth sprite in the spritesheet
+            "Texture": "bonghits.DriedFlowers/Objects", // Reference the spritesheet
+            "SpriteIndex": 4 // Use the sixth sprite in the spritesheet
           }
         }
       },
@@ -105,8 +105,8 @@
             "Type": "ArtisanGoods",
             "Category": -9,
             "Description": "A dried sunflower, still full of charm.",
-            "Texture": "Assets/bh_flowers.png", // Reference the spritesheet
-            "SpriteIndex": 6 // Use the seventh sprite in the spritesheet
+            "Texture": "bonghits.DriedFlowers/Objects", // Reference the spritesheet
+            "SpriteIndex": 5 // Use the seventh sprite in the spritesheet
           }
         }
       },
@@ -122,8 +122,8 @@
             "Type": "ArtisanGoods",
             "Category": -9,
             "Description": "A dried sweet pea, still fragrant.",
-            "Texture": "Assets/bh_flowers.png", // Reference the spritesheet
-            "SpriteIndex": 7 // Use the eighth sprite in the spritesheet
+            "Texture": "bonghits.DriedFlowers/Objects", // Reference the spritesheet
+            "SpriteIndex": 6 // Use the eighth sprite in the spritesheet
           }
         }
       },
@@ -139,8 +139,8 @@
             "Type": "ArtisanGoods",
             "Category": -9,
             "Description": "A dried crocus, its beauty preserved.",
-            "Texture": "Assets/bh_flowers.png", // Reference the spritesheet
-            "SpriteIndex": 8 // Use the ninth sprite in the spritesheet
+            "Texture": "bonghits.DriedFlowers/Objects", // Reference the spritesheet
+            "SpriteIndex": 7 // Use the ninth sprite in the spritesheet
           }
         }
       },
@@ -156,8 +156,8 @@
             "Type": "ArtisanGoods",
             "Category": -9,
             "Description": "A dried snowdrop, still pure and lovely.",
-            "Texture": "Assets/bh_flowers.png", // Reference the spritesheet
-            "SpriteIndex": 9 // Use the tenth sprite in the spritesheet
+            "Texture": "bonghits.DriedFlowers/Objects", // Reference the spritesheet
+            "SpriteIndex": 8 // Use the tenth sprite in the spritesheet
           }
         }
       },
@@ -173,8 +173,8 @@
             "Type": "ArtisanGoods",
             "Category": -9,
             "Description": "A beautiful arrangement of dried flowers, perfect for decoration.",
-            "Texture": "Assets/bh_flowers.png", // Reference the spritesheet
-            "SpriteIndex": 10 // Use the eleventh sprite in the spritesheet
+            "Texture": "bonghits.DriedFlowers/Objects", // Reference the spritesheet
+            "SpriteIndex": 9 // Use the eleventh sprite in the spritesheet
           }
         }
       },
@@ -183,7 +183,7 @@
         "Action": "EditData",
         "Target": "Data/CraftingRecipes",
         "Entries": {
-          "bonghits.DriedBouquet": "Dried Tulip 1 Dried Fairy Rose 1 Dried Sunflower 1/Home/false/Default"
+          "bonghits.DriedBouquet": "bonghits.DriedTulip 1 bonghits.DriedFairyRose 1 bonghits.DriedSunflower 1/Home/false/Default"
         }
       }
     ]

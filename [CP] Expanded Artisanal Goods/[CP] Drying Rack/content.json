@@ -5,15 +5,15 @@
       // Load the spritesheet
       {
         "Action": "Load",
-        "Target": "Assets/bh_dryingrack.png",
-        "FromFile": "Assets/bh_dryingrack.png" // Replace with the path to your spritesheet
+        "Target": "bonghits.DryingRack/Objects",
+        "FromFile": "Assets/bh_dryingrack.png"
       },
       {
         // Add the Drying Rack as a new crafting recipe
         "Action": "EditData",
         "Target": "Data/CraftingRecipes",
         "Entries": {
-          "Drying Rack": "390 10 388 20 335 1/s Foraging 4/true/Default" // 10 Wood, 20 Stone, 1 Copper Bar
+          "bonoghits.DryingRack": "390 10 388 20 335 1/s Foraging 4/true/Default"
         }
       },
       {
@@ -28,9 +28,9 @@
             "Type": "Crafting",
             "Category": -9,
             "Description": "Turns flowers into dried flowers over time. Can be placed on walls.",
-            "Texture": "Assets/bh_dryingrack.png", // Reference the spritesheet
-            "SpriteIndex": 0, // Use the first sprite in the spritesheet
-            "Placement": "Wall" // Allows placement on walls
+            "Texture": "bonghits.DryingRack/Objects",
+            "SpriteIndex": 0,
+            "Placement": "Wall"
           }
         }
       },
@@ -38,25 +38,140 @@
         // Define the Drying Rack's behavior
         "Action": "EditData",
         "Target": "Data/Machines",
-        "TargetField": ["(BC)163", "OutputRules"], // Replace (BC)163 with the correct ID for the Drying Rack
+        "TargetField": ["bonghits.DryingRack", "OutputRules"],
         "Entries": {
           "bonghits.dryingrack": {
             "Triggers": [
+              // Sunflower -> Dried Sunflower
               {
-                "Id": "bonghits.dryingrackTrigger",
+                "Id": "bonghits.dryingrackTriggerSunflower",
                 "Trigger": "ItemPlacedInMachine",
-                "RequiredItemId": "(O)591, (O)593, (O)595, (O)597, (O)376, (O)429, (O)593, (O)595, (O)597", // Input flowers
-                "RequiredCount": "1" // Only 1 flower needed
+                "RequiredItemId": "(O)591",
+                "RequiredCount": "1"
+              },
+              // Tulip -> Dried Tulip
+              {
+                "Id": "bonghits.dryingrackTriggerTulip",
+                "Trigger": "ItemPlacedInMachine",
+                "RequiredItemId": "(O)593",
+                "RequiredCount": "1"
+              },
+              // Summer Spangle -> Dried Summer Spangle
+              {
+                "Id": "bonghits.dryingrackTriggerSummerSpangle",
+                "Trigger": "ItemPlacedInMachine",
+                "RequiredItemId": "(O)595",
+                "RequiredCount": "1"
+              },
+              // Fairy Rose -> Dried Fairy Rose
+              {
+                "Id": "bonghits.dryingrackTriggerFairyRose",
+                "Trigger": "ItemPlacedInMachine",
+                "RequiredItemId": "(O)597",
+                "RequiredCount": "1"
+              },
+              // Poppy -> Dried Poppy
+              {
+                "Id": "bonghits.dryingrackTriggerPoppy",
+                "Trigger": "ItemPlacedInMachine",
+                "RequiredItemId": "(O)376",
+                "RequiredCount": "1"
+              },
+              // Blue Jazz -> Dried Blue Jazz
+              {
+                "Id": "bonghits.dryingrackTriggerBlueJazz",
+                "Trigger": "ItemPlacedInMachine",
+                "RequiredItemId": "(O)429",
+                "RequiredCount": "1"
+              },
+              // Sweet Pea -> Dried Sweet Pea
+              {
+                "Id": "bonghits.dryingrackTriggerSweetPea",
+                "Trigger": "ItemPlacedInMachine",
+                "RequiredItemId": "(O)402",
+                "RequiredCount": "1"
+              },
+              // Crocus -> Dried Crocus
+              {
+                "Id": "bonghits.dryingrackTriggerCrocus",
+                "Trigger": "ItemPlacedInMachine",
+                "RequiredItemId": "(O)418",
+                "RequiredCount": "1"
+              },
+              // Snowdrop -> Dried Snowdrop
+              {
+                "Id": "bonghits.dryingrackTriggerSnowdrop",
+                "Trigger": "ItemPlacedInMachine",
+                "RequiredItemId": "(O)414",
+                "RequiredCount": "1"
               }
             ],
             "OutputItem": [
+              // Sunflower -> Dried Sunflower
               {
-                "Id": "bonghits.DriedFlower",
-                "ItemId": "bonghits.DriedFlower",
-                "CopyQuality": true // Quality is retained
+                "Id": "bonghits.dryingrackOutputSunflower",
+                "TriggerId": "bonghits.dryingrackTriggerSunflower",
+                "ItemId": "bonghits.DriedSunflower",
+                "CopyQuality": true
+              },
+              // Tulip -> Dried Tulip
+              {
+                "Id": "bonghits.dryingrackOutputTulip",
+                "TriggerId": "bonghits.dryingrackTriggerTulip",
+                "ItemId": "bonghits.DriedTulip",
+                "CopyQuality": true
+              },
+              // Summer Spangle -> Dried Summer Spangle
+              {
+                "Id": "bonghits.dryingrackOutputSummerSpangle",
+                "TriggerId": "bonghits.dryingrackTriggerSummerSpangle",
+                "ItemId": "bonghits.DriedSummerSpangle",
+                "CopyQuality": true
+              },
+              // Fairy Rose -> Dried Fairy Rose
+              {
+                "Id": "bonghits.dryingrackOutputFairyRose",
+                "TriggerId": "bonghits.dryingrackTriggerFairyRose",
+                "ItemId": "bonghits.DriedFairyRose",
+                "CopyQuality": true
+              },
+              // Poppy -> Dried Poppy
+              {
+                "Id": "bonghits.dryingrackOutputPoppy",
+                "TriggerId": "bonghits.dryingrackTriggerPoppy",
+                "ItemId": "bonghits.DriedPoppy",
+                "CopyQuality": true
+              },
+              // Blue Jazz -> Dried Blue Jazz
+              {
+                "Id": "bonghits.dryingrackOutputBlueJazz",
+                "TriggerId": "bonghits.dryingrackTriggerBlueJazz",
+                "ItemId": "bonghits.DriedBlueJazz",
+                "CopyQuality": true
+              },
+              // Sweet Pea -> Dried Sweet Pea
+              {
+                "Id": "bonghits.dryingrackOutputSweetPea",
+                "TriggerId": "bonghits.dryingrackTriggerSweetPea",
+                "ItemId": "bonghits.DriedSweetPea",
+                "CopyQuality": true
+              },
+              // Crocus -> Dried Crocus
+              {
+                "Id": "bonghits.dryingrackOutputCrocus",
+                "TriggerId": "bonghits.dryingrackTriggerCrocus",
+                "ItemId": "bonghits.DriedCrocus",
+                "CopyQuality": true
+              },
+              // Snowdrop -> Dried Snowdrop
+              {
+                "Id": "bonghits.dryingrackOutputSnowdrop",
+                "TriggerId": "bonghits.dryingrackTriggerSnowdrop",
+                "ItemId": "bonghits.DriedSnowdrop",
+                "CopyQuality": true
               }
             ],
-            "MinutesUntilReady": 6000 // 4 in-game days
+            "MinutesUntilReady": 6000
           }
         }
       }
