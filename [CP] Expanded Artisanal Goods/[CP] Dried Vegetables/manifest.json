@@ -1,0 +1,13 @@
+{
+    "Name": "Dried Vegetables",
+    "Author": "Major Bonghits",
+    "Version": "0.1",
+    "Description": "Adds a small collection of dried vegetables to be used with the drying rack.",
+    "UniqueID": "Bonghits.DriedVegetables",
+    "MinimumApiVersion": "3.0.0",
+    "UpdateKeys": [],
+    "ContentPackFor": 
+    {
+      "UniqueID": "Pathoschild.ContentPatcher"
+    }
+}
