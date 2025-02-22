@@ -1,0 +1,11 @@
+{
+  "Format": "2.5.0",
+  "Changes": [
+    {
+      "Action": "EditMap",
+      "Target":       "Maps/BusStop",
+      "FromFile": "assets/Porta.tmx",
+      "ToArea": {"X": 27,"Y": 2,"Height": 1,"Width": 1}
+    }
+    ]
+}
