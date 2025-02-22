@@ -140,9 +140,7 @@
 					"MaxDailyWeeds": 0,
 					"ChanceForClay": 0.03,
 					
-					"ArrivalTile_T0": { "X": 15, "Y": 20 },
-					
-					"MapAsset_T0": "Maps/PIF/BackyardT0",
+					"MapAsset": "Maps/PIF/AnimalFarm",
 					
 					"Preview": "Bonghits.AnimalFarm_Preview"
 				}
@@ -150,7 +148,7 @@
 		},
 		{
 			"Action": "Load",
-			"Target": "Maps/PIF/BackyardT0",
+			"Target": "Maps/PIF/AnimalFarm",
 			"FromFile": "assets/{{TargetWithoutPath}}.tmx"
 		},
 		{
