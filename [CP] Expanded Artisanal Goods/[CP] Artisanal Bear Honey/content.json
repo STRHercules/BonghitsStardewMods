@@ -69,7 +69,7 @@
               {
                   "Name": "bonghits.Cp_AgedBearHoneyMead",
                   "DisplayName": "Aged Bear Honey Mead",
-                  "Description": "An artisanal bear honey mead refined and aged to its' highest potential. The fruity smell eminating from the bottle reminds you of a warm bath in the spring.",
+                  "Description": "An artisanal bear honey mead refined and aged to its highest potential. The fruity smell eminating from the bottle reminds you of a warm bath in the spring.",
                   "Type": "ArtisanGoods",
                   "Edibility": 100,
                   "IsDrink": true,
