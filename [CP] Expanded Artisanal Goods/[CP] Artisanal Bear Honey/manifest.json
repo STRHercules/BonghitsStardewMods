@@ -6,6 +6,7 @@
     "UniqueID": "bonghits.cp.BearHoneyMead",
     "UpdateKeys": ["Nexus:31786" ],
     "Dependencies": [
+        {"UniqueID": "FlashShifter.StardewValleyExpandedCP", "IsRequired": true},
         {"UniqueID": "selph.ExtraMachineConfig", "IsRequired": true}
 	],
     "ContentPackFor": {
