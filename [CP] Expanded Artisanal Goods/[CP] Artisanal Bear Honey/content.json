@@ -1,150 +1,250 @@
 {
-  "$schema": "https://smapi.io/schemas/content-patcher.json",
-  "Format": "2.5.0",
-  "Changes": 
-  [
-      {
-          // Spritesheet Load
-          "Action": "Load",
-          "Target": "bonghits.BearHoneyMead/Objects",
-          "FromFile": "assets/bh_honeymead.png"
-      },
-      {
-          // Edit Objects
-          "Action": "EditData",
-          "Target": "Data/Objects",
-          "Entries": 
-          {
-              // Bear Honey Mead
-              "bonghits.Cp_BearHoneyMead": 
-              {
-                  "Name": "bonghits.Cp_BearHoneyMead",
-                  "DisplayName": "Bear Honey Mead",
-                  "Description": "An artisanal mead crafted to perfection using Honey harvested by happy Bears.",
-                  "Type": "ArtisanGoods",
-                  "Edibility": 100,
-                  "IsDrink": true,
-                  "Category": -26,
-                  "Price": 1950,
-                  "SpriteIndex": 0,
-                  "Texture": "bonghits.BearHoneyMead/Objects",
-                  "Buffs": 
-                  [
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Format": "2.5.0",
+    "Changes": 
+    [
+       {
+            // Load Strings
+            "LogName": "String Tokens",
+            "Action": "Include",
+            "FromFile": "Data/strings.json"
+        },
+        {
+            // Spritesheet Load
+            "Action": "Load",
+            "Target": "bonghits.BearHoneyMead/Objects",
+            "FromFile": "assets/bh_mead.png"
+        },
+        {
+            // Edit Objects
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": 
+            {
+                // Bear Honey Mead
+                //
+                // Create Original Bear Honey Mead Item
+                //
+                "bonghits.Cp_BearHoneyMead": 
+                {
+                    "Name": "bonghits.Cp_BearHoneyMead",
+                    "DisplayName": "Bear Honey Mead",
+                    "Description": "An artisanal mead crafted to perfection using Honey harvested by happy Bears.",
+                    "Type": "ArtisanGoods",
+                    "Edibility": 100,
+                    "IsDrink": true,
+                    "Category": -26,
+                    "Price": 1950,
+                    "SpriteIndex": 0,
+                    "Texture": "bonghits.BearHoneyMead/Objects",
+                    "Buffs": 
+                    [
+                        {
+                            "Duration": 1500,
+                            "CustomAttributes": 
+                            {
+                                "FarmingLevel": 0,
+                                "FishingLevel": 0,
+                                "MiningLevel": 0,
+                                "LuckLevel": 3,
+                                "ForagingLevel": 2,
+                                "MaxStamina": 50,
+                                "MagneticRadius": 0,
+                                "Speed": 2,
+                                "Defense": 0,
+                                "Attack": 2
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+						"bh.stock_mead"
+					]
+                    
+                },
+                // Aged Bear Honey Mead
+                //
+                // Create Aged Bear Honey Mead Item
+                //
+                "bonghits.Cp_AgedBearHoneyMead": 
+                {
+                    "Name": "bonghits.Cp_AgedBearHoneyMead",
+                    "DisplayName": "Aged Bear Honey Mead",
+                    "Description": "An artisanal bear honey mead refined and aged to its' highest potential. The fruity smell eminating from the bottle reminds you of a warm bath in the spring.",
+                    "Type": "ArtisanGoods",
+                    "Edibility": 100,
+                    "IsDrink": true,
+                    "Category": -26,
+                    "Price": 4215,
+                    "SpriteIndex": 2,
+                    "Texture": "bonghits.BearHoneyMead/Objects",
+                    "Buffs": 
+                    [
+                        {
+                            "Duration": 4000, // 2 In-Game Days
+                            "CustomAttributes": 
+                            {
+                                "FarmingLevel": 5,
+                                "FishingLevel": 0,
+                                "MiningLevel": 0,
+                                "LuckLevel": 5,
+                                "ForagingLevel": 5,
+                                "MaxStamina": 100,
+                                "MagneticRadius": 5,
+                                "Speed": 5,
+                                "Defense": 2,
+                                "Attack": 5
+                            }
+                        }
+                    ],      
+                    "ContextTags": [
+						"bh.aged_mead"
+					]
+                    
+                }
+            }
+        },
+        // Machine Operations
+        //
+        // Edit Keg Operations
+        //
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [ "(BC)12", "OutputRules" ], 
+            "Entries": 
+            {
+                // Jar Honey -> Keg -> Bear Honey Mead
+                "bearhoneymake": 
+                {
+                    "Triggers": 
+                    [
+                        {
+                            "Id": "bearhoneyTrigger",
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredItemId": "FlashShifter.StardewValleyExpandedCP_Honey_Jar", //SVE Bear Jar of Honey
+                            "RequiredCount": "1" // Only Need 1 Jar of Honey
+  
+                        }
+                    ],
+                    "OutputItem": 
+                    [
+                        {
+                            "Id": "bonghits.Cp_BearHoneyMead",
+                            "ItemId": "bonghits.Cp_BearHoneyMead",
+                            "CopyQuality": true // Retain Quality
+                        }
+                    ],
+                    "MinutesUntilReady": 600 // 10 Hours
+                }
+            }
+        },
+        // Cask Test 
+        //
+        // Working as intended, raises quality of honey mead
+        //
+        {
+			"Action": "EditData",
+			"Target": "Data/Machines",
+			"TargetField": [ "(BC)163", "OutputRules" ],
+			"Entries": {
+				"agedbearhoneycask": {
+					"Id": "CaskHoneyMead",
+					"Triggers": 
+						[
+							{
+								"RequiredItemId": "bonghits.Cp_BearHoneyMead",
+                                "Trigger": "ItemPlacedInMachine",
+                                "RequiredCount": "1"
+							}
+						],
+					"OutputItem":
+						[
+							{
+								"Id": "bonghits.Cp_AgedBearHoneyMead",
+                                "ItemId": "bonghits.Cp_AgedBearHoneyMead",
+                                "CopyQuality": true // Retain Quality
+							}
+						],
+                    "MinutesUntilReady": 600 // 10 Hours
+				}
+			}
+		},
+        // Preserving Jar Custom
+        //
+        // 
+        {
+            // Bear Honey Mead +  10x Fruit -> Preserving Jar -> Flavored Bear Honey Mead
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+              "(BC)15",
+              "OutputRules"
+            ],
+            "Entries": {
+              "bh.jarmeadrule": {
+                "Id": "bh.jarmeadrule",
+                "Triggers": [
+                  {
+                    "Id": "bh.jarmeadrule_AgedMead10Input",
+                    "RequiredTags": [
+                      "category_fruits"
+                    ],
+                    "RequiredCount": 10
+                  }
+                ],
+                "OutputItem": [
+                  {
+                    "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
+                    "ObjectInternalName": "Aged {0} Bear Honey Mead",
+                    "ObjectDisplayName": "[LocalizedText Strings/Objects:bonghits.agedmead_name %PRESERVED_DISPLAY_NAME]",
+                    "PreserveId": "DROP_IN",
+                    "CopyColor": true,
+                    "CopyPrice": true,
+                    "PriceModifierMode": "Stack",
+                    "CustomData": {
+                      "selph.ExtraMachineConfig.RequirementTags.1": "bh.stock_mead",
+                      "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 10 of any fruit, and one Bear Honey Mead"
+                    },
+                    //
+                    // The price modifier here allows an iridum level aged mead to reach 12,000 gold
+                    //
+                    //
+                    // Honey Mead 1: 1950
+                    // Honey Mead 2: 2437
+                    // Honey Mead 3: 2925
+                    // Honey Mead 4: 3900
+                    // 
+                    //
+                    // Aged Honey Mead 1: 4215
+                    // Aged Honey Mead 2: 5268
+                    // Aged Honey Mead 3: 6322
+                    // Aged Honey Mead 4: 8430
+                    //
+                    // Fully Casked Aged Honey Mead: 12000
+                    // Duration: 70 Hours
+                    //
+                    //
+                    "PriceModifiers": [
                       {
-                          "Duration": 1500,
-                          "CustomAttributes": 
-                          {
-                              "FarmingLevel": 0,
-                              "FishingLevel": 0,
-                              "MiningLevel": 0,
-                              "LuckLevel": 10,
-                              "ForagingLevel": 0,
-                              "MaxStamina": 50,
-                              "MagneticRadius": 0,
-                              "Speed": 5,
-                              "Defense": 0,
-                              "Attack": 5
-                          }
-                      }
-                  ]
-              },
-              // Aged Bear Honey Mead
-              "bonghits.Cp_AgedBearHoneyMead": 
-              {
-                  "Name": "bonghits.Cp_AgedBearHoneyMead",
-                  "DisplayName": "Aged Bear Honey Mead",
-                  "Description": "An artisanal bear honey mead refined and aged to its' highest potential. The smell eminating from the bottle reminds you of home.",
-                  "Type": "ArtisanGoods",
-                  "Edibility": 100,
-                  "IsDrink": true,
-                  "Category": -26,
-                  "Price": 4215,
-                  "SpriteIndex": 1,
-                  "Texture": "bonghits.BearHoneyMead/Objects",
-                  "Buffs": 
-                  [
+                        "Modification": "Multiply",
+                        "Amount": 3
+                      },
                       {
-                          "Duration": 2000,
-                          "CustomAttributes": 
-                          {
-                              "FarmingLevel": 5,
-                              "FishingLevel": 5,
-                              "MiningLevel": 5,
-                              "LuckLevel": 10,
-                              "ForagingLevel": 0,
-                              "MaxStamina": 50,
-                              "MagneticRadius": 5,
-                              "Speed": 5,
-                              "Defense": 5,
-                              "Attack": 5
-                          }
+                        "Modification": "Add",
+                        "Amount": 150
                       }
-                  ]
+                    ]
+                  }
+                ],
+                "MinutesUntilReady": 600
               }
-          }
-      },
-      // Machine Operations
-      {
-          "Action": "EditData",
-          "Target": "Data/Machines",
-          "TargetField": [ "(BC)12", "OutputRules" ], 
-          "Entries": 
-          {
-              // Jar Honey -> Keg -> Bear Honey Mead
-              "bearhoneymake": 
+            },
+            "MoveEntries": [
               {
-                  "Triggers": 
-                  [
-                      {
-                          "Id": "bearhoneyTrigger",
-                          "Trigger": "ItemPlacedInMachine",
-                          "RequiredItemId": "FlashShifter.StardewValleyExpandedCP_Honey_Jar", //SVE Bear Jar of Honey
-                          "RequiredCount": "1" // Only Need 1 Jar of Honey
-
-                      }
-                  ],
-                  "OutputItem": 
-                  [
-                      {
-                          "Id": "bonghits.Cp_BearHoneyMead",
-                          "ItemId": "bonghits.Cp_BearHoneyMead",
-                          "CopyQuality": true // Retain Quality
-                      }
-                  ],
-                  "MinutesUntilReady": 480 // 8 Hours
+                "ID": "bh.jarmeadrule",
+                "ToPosition": "Top"
               }
-          }
-      },
-      {
-          "Action": "EditData",
-          "Target": "Data/Machines",
-          "TargetField": [ "(BC)163", "OutputRules" ], 
-          "Entries": 
-          {
-              // Bear Honey Mead -> Cask -> Aged Bear Honey Mead
-              "agedbearhoneymake": 
-              {
-                  "Triggers": 
-                  [
-                      {
-                          "Id": "agedbearhoneyTrigger",
-                          "Trigger": "ItemPlacedInMachine",
-                          "RequiredItemId": "bonghits.Cp_BearHoneyMead", // Bear Honey Mead
-                          "RequiredCount": "1" // Only Need 1 Bear Honey Mead
-
-                      }
-                  ],
-                  "OutputItem": 
-                  [
-                      {
-                          "Id": "bonghits.Cp_AgedBearHoneyMead",
-                          "ItemId": "bonghits.Cp_AgedBearHoneyMead",
-                          "CopyQuality": true // Retain Quality
-                      }
-                  ],
-                  "MinutesUntilReady": 64800 // 45 Days
-              }
-          }
-      }
-  ]
+            ]
+        }
+    ]
 }
