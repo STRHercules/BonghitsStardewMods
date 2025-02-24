@@ -4,7 +4,7 @@
 ## Background
 This collection of mods are authored by myself, mostly for my own playthroughs, problem solving and closing gaps.
 
-I started with frustration over Stardew Valley Expanded'd custom Bears in the Premium Barn. They acted similarly to truffle pigs, but once you get the honey from them that was it. I was dissapointed in the lack of artisan good for such unique honey, so I decided to make it!
+I started with frustration over Stardew Valley Expanded's custom Bears in the Premium Barn. They acted similarly to truffle pigs, but once you get the honey from them that was it. I was dissapointed in the lack of artisan good for such unique honey, so I decided to make it!
 
 The itch to tinker and 'fix' crept up on me, now we're here!
 
