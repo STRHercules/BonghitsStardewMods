@@ -14,6 +14,33 @@
       },
       // Create Custom Drunken Mead Debuff
       {
+        "Action": "EditData",
+        "Target": "Data/Buffs",
+        "Entries": {
+            "bonghits.mead_tipsy": {
+                "DisplayName": "Tipsy on Bear Mead",
+                "Description": "Enjoyed a little mead!",
+                "IsDebuff": false,
+                "GlowColor": null,
+                "Duration": 30000,
+                "MaxDuration": -1,
+                "IconTexture": "TileSheets\\BuffsIcons",
+                "IconSpriteIndex": 17,
+                "Effects": {
+                    "AttackMultiplier": 0.0,
+                    "Immunity": 0.0,
+                    "KnockbackMultiplier": 0.0,
+                    "WeaponSpeedMultiplier": 0.0,
+                    "CriticalChanceMultiplier": 0.0,
+                    "CriticalPowerMultiplier": 0.0,
+                    "WeaponPrecisionMultiplier": 0.0
+                },
+                "ActionsOnApply": null,
+                "CustomFields": null
+            }
+        }
+    },
+      {
           "Action": "EditData",
           "Target": "Data/Buffs",
           "Entries": {
@@ -60,8 +87,9 @@
                   "SpriteIndex": 0,
                   "Texture": "bonghits.BearHoneyMead/Objects",
                   "Buffs": [{
-                      "Duration": 1500, // 17.5 In-Game Hours
-                      "CustomAttributes": {
+                        "BuffId": "bonghits.mead_tipsy",
+                        "Duration": 1500, // 17.5 In-Game Hours
+                        "CustomAttributes": {
                           "FarmingLevel": 0,
                           "FishingLevel": 0,
                           "MiningLevel": 0,
