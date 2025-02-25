@@ -11,6 +11,34 @@
           "Action": "Load",
           "Target": "bonghits.BearHoneyMead/Objects",
           "FromFile": "assets/bh_mead.png"
+      },
+      // Create Custom Drunken Mead Debuff
+      {
+          "Action": "EditData",
+          "Target": "Data/Buffs",
+          "Entries": {
+              "bonghits.mead_drunk": {
+                  "DisplayName": "Drunk on Bear Mead",
+                  "Description": "Enjoyed a bit too much mead!",
+                  "IsDebuff": false,
+                  "GlowColor": null,
+                  "Duration": 30000,
+                  "MaxDuration": -1,
+                  "IconTexture": "TileSheets\\BuffsIcons",
+                  "IconSpriteIndex": 17,
+                  "Effects": {
+                      "AttackMultiplier": 0.0,
+                      "Immunity": 0.0,
+                      "KnockbackMultiplier": 0.0,
+                      "WeaponSpeedMultiplier": 0.0,
+                      "CriticalChanceMultiplier": 0.0,
+                      "CriticalPowerMultiplier": 0.0,
+                      "WeaponPrecisionMultiplier": 0.0
+                  },
+                  "ActionsOnApply": null,
+                  "CustomFields": null
+              }
+          }
       }, {
           // Edit Objects
           "Action": "EditData",
@@ -64,6 +92,7 @@
                   "SpriteIndex": 2,
                   "Texture": "bonghits.BearHoneyMead/Objects",
                   "Buffs": [{
+                      "BuffId": "bonghits.mead_drunk",
                       "Duration": 4000, // 2 In-Game Days (46.5 Hours)
                       "CustomAttributes": {
                           "FarmingLevel": 5,
@@ -78,7 +107,7 @@
                           "Attack": 5
                       }
                   }],
-                  "ContextTags": ["bh.aged_mead"]
+                  "ContextTags": ["bh.aged_mead", "alcohol_item", "drink_item"]
               }
           }
       },
@@ -104,7 +133,7 @@
                       "ItemId": "bonghits.Cp_BearHoneyMead",
                       "CopyQuality": true // Retain Quality
                   }],
-                  "MinutesUntilReady": 600 // 10 Hours
+                  "MinutesUntilReady": 480 // 8 Hours
               }
           }
       },
@@ -113,132 +142,132 @@
       //  Machine Progression System Support
       //
       {
-        "Action": "EditData",
-        "Target": "Data/Machines",
-        "TargetField": ["(BC)nachonline.mps_GoldKeg", "OutputRules"],
-        "Entries": {
-            // Jar Honey -> Keg -> Bear Honey Mead
-            "bearhoneymake": {
-                "Triggers": [{
-                    "Id": "bearhoneyTrigger",
-                    "Trigger": "ItemPlacedInMachine",
-                    "RequiredItemId": "FlashShifter.StardewValleyExpandedCP_Honey_Jar", //SVE Bear Jar of Honey
-                    "RequiredCount": "1" // Only Need 1 Jar of Honey
-                }],
-                "OutputItem": [{
-                    "Id": "bonghits.Cp_BearHoneyMead",
-                    "ItemId": "bonghits.Cp_BearHoneyMead",
-                    "CopyQuality": true // Retain Quality
-                }],
-                "MinutesUntilReady": 600 // 10 Hours
-            }
-        }
+          "Action": "EditData",
+          "Target": "Data/Machines",
+          "TargetField": ["(BC)nachonline.mps_GoldKeg", "OutputRules"],
+          "Entries": {
+              // Jar Honey -> Keg -> Bear Honey Mead
+              "bearhoneymake": {
+                  "Triggers": [{
+                      "Id": "bearhoneyTrigger",
+                      "Trigger": "ItemPlacedInMachine",
+                      "RequiredItemId": "FlashShifter.StardewValleyExpandedCP_Honey_Jar", //SVE Bear Jar of Honey
+                      "RequiredCount": "1" // Only Need 1 Jar of Honey
+                  }],
+                  "OutputItem": [{
+                      "Id": "bonghits.Cp_BearHoneyMead",
+                      "ItemId": "bonghits.Cp_BearHoneyMead",
+                      "CopyQuality": true // Retain Quality
+                  }],
+                  "MinutesUntilReady": 432 // 7.2 Hours
+              }
+          }
       },
       //
       //  Diamond Keg
       //  Machine Progression System Support
       //
       {
-        "Action": "EditData",
-        "Target": "Data/Machines",
-        "TargetField": ["(BC)nachonline.mps_DiamondKeg", "OutputRules"],
-        "Entries": {
-            // Jar Honey -> Keg -> Bear Honey Mead
-            "bearhoneymake": {
-                "Triggers": [{
-                    "Id": "bearhoneyTrigger",
-                    "Trigger": "ItemPlacedInMachine",
-                    "RequiredItemId": "FlashShifter.StardewValleyExpandedCP_Honey_Jar", //SVE Bear Jar of Honey
-                    "RequiredCount": "1" // Only Need 1 Jar of Honey
-                }],
-                "OutputItem": [{
-                    "Id": "bonghits.Cp_BearHoneyMead",
-                    "ItemId": "bonghits.Cp_BearHoneyMead",
-                    "CopyQuality": true // Retain Quality
-                }],
-                "MinutesUntilReady": 600 // 10 Hours
-            }
-        }
+          "Action": "EditData",
+          "Target": "Data/Machines",
+          "TargetField": ["(BC)nachonline.mps_DiamondKeg", "OutputRules"],
+          "Entries": {
+              // Jar Honey -> Keg -> Bear Honey Mead
+              "bearhoneymake": {
+                  "Triggers": [{
+                      "Id": "bearhoneyTrigger",
+                      "Trigger": "ItemPlacedInMachine",
+                      "RequiredItemId": "FlashShifter.StardewValleyExpandedCP_Honey_Jar", //SVE Bear Jar of Honey
+                      "RequiredCount": "1" // Only Need 1 Jar of Honey
+                  }],
+                  "OutputItem": [{
+                      "Id": "bonghits.Cp_BearHoneyMead",
+                      "ItemId": "bonghits.Cp_BearHoneyMead",
+                      "CopyQuality": true // Retain Quality
+                  }],
+                  "MinutesUntilReady": 389 // 6.4 Hours
+              }
+          }
       },
       //
       //  Iridium Keg
       //  Machine Progression System Support
       //
       {
-        "Action": "EditData",
-        "Target": "Data/Machines",
-        "TargetField": ["(BC)nachonline.mps_IridiumKeg", "OutputRules"],
-        "Entries": {
-            // Jar Honey -> Keg -> Bear Honey Mead
-            "bearhoneymake": {
-                "Triggers": [{
-                    "Id": "bearhoneyTrigger",
-                    "Trigger": "ItemPlacedInMachine",
-                    "RequiredItemId": "FlashShifter.StardewValleyExpandedCP_Honey_Jar", //SVE Bear Jar of Honey
-                    "RequiredCount": "1" // Only Need 1 Jar of Honey
-                }],
-                "OutputItem": [{
-                    "Id": "bonghits.Cp_BearHoneyMead",
-                    "ItemId": "bonghits.Cp_BearHoneyMead",
-                    "CopyQuality": true // Retain Quality
-                }],
-                "MinutesUntilReady": 600 // 10 Hours
-            }
-        }
+          "Action": "EditData",
+          "Target": "Data/Machines",
+          "TargetField": ["(BC)nachonline.mps_IridiumKeg", "OutputRules"],
+          "Entries": {
+              // Jar Honey -> Keg -> Bear Honey Mead
+              "bearhoneymake": {
+                  "Triggers": [{
+                      "Id": "bearhoneyTrigger",
+                      "Trigger": "ItemPlacedInMachine",
+                      "RequiredItemId": "FlashShifter.StardewValleyExpandedCP_Honey_Jar", //SVE Bear Jar of Honey
+                      "RequiredCount": "1" // Only Need 1 Jar of Honey
+                  }],
+                  "OutputItem": [{
+                      "Id": "bonghits.Cp_BearHoneyMead",
+                      "ItemId": "bonghits.Cp_BearHoneyMead",
+                      "CopyQuality": true // Retain Quality
+                  }],
+                  "MinutesUntilReady": 350 // 5.8 Hours
+              }
+          }
       },
       //
       //  Radioactive Keg
       //  Machine Progression System Support
       //
       {
-        "Action": "EditData",
-        "Target": "Data/Machines",
-        "TargetField": ["(BC)nachonline.mps_RadioactiveKeg", "OutputRules"],
-        "Entries": {
-            // Jar Honey -> Keg -> Bear Honey Mead
-            "bearhoneymake": {
-                "Triggers": [{
-                    "Id": "bearhoneyTrigger",
-                    "Trigger": "ItemPlacedInMachine",
-                    "RequiredItemId": "FlashShifter.StardewValleyExpandedCP_Honey_Jar", //SVE Bear Jar of Honey
-                    "RequiredCount": "1" // Only Need 1 Jar of Honey
-                }],
-                "OutputItem": [{
-                    "Id": "bonghits.Cp_BearHoneyMead",
-                    "ItemId": "bonghits.Cp_BearHoneyMead",
-                    "CopyQuality": true // Retain Quality
-                }],
-                "MinutesUntilReady": 600 // 10 Hours
-            }
-        }
+          "Action": "EditData",
+          "Target": "Data/Machines",
+          "TargetField": ["(BC)nachonline.mps_RadioactiveKeg", "OutputRules"],
+          "Entries": {
+              // Jar Honey -> Keg -> Bear Honey Mead
+              "bearhoneymake": {
+                  "Triggers": [{
+                      "Id": "bearhoneyTrigger",
+                      "Trigger": "ItemPlacedInMachine",
+                      "RequiredItemId": "FlashShifter.StardewValleyExpandedCP_Honey_Jar", //SVE Bear Jar of Honey
+                      "RequiredCount": "1" // Only Need 1 Jar of Honey
+                  }],
+                  "OutputItem": [{
+                      "Id": "bonghits.Cp_BearHoneyMead",
+                      "ItemId": "bonghits.Cp_BearHoneyMead",
+                      "CopyQuality": true // Retain Quality
+                  }],
+                  "MinutesUntilReady": 315 // 5.25 Hours
+              }
+          }
       },
       //
-      //  Orismatic Keg
+      //  Prismatic Keg
       //  Machine Progression System Support
       //
       {
-        "Action": "EditData",
-        "Target": "Data/Machines",
-        "TargetField": ["(BC)nachonline.mps_PrismaticKeg", "OutputRules"],
-        "Entries": {
-            // Jar Honey -> Keg -> Bear Honey Mead
-            "bearhoneymake": {
-                "Triggers": [{
-                    "Id": "bearhoneyTrigger",
-                    "Trigger": "ItemPlacedInMachine",
-                    "RequiredItemId": "FlashShifter.StardewValleyExpandedCP_Honey_Jar", //SVE Bear Jar of Honey
-                    "RequiredCount": "1" // Only Need 1 Jar of Honey
-                }],
-                "OutputItem": [{
-                    "Id": "bonghits.Cp_BearHoneyMead",
-                    "ItemId": "bonghits.Cp_BearHoneyMead",
-                    "CopyQuality": true // Retain Quality
-                }],
-                "MinutesUntilReady": 600 // 10 Hours
-            }
-        }
+          "Action": "EditData",
+          "Target": "Data/Machines",
+          "TargetField": ["(BC)nachonline.mps_PrismaticKeg", "OutputRules"],
+          "Entries": {
+              // Jar Honey -> Keg -> Bear Honey Mead
+              "bearhoneymake": {
+                  "Triggers": [{
+                      "Id": "bearhoneyTrigger",
+                      "Trigger": "ItemPlacedInMachine",
+                      "RequiredItemId": "FlashShifter.StardewValleyExpandedCP_Honey_Jar", //SVE Bear Jar of Honey
+                      "RequiredCount": "1" // Only Need 1 Jar of Honey
+                  }],
+                  "OutputItem": [{
+                      "Id": "bonghits.Cp_BearHoneyMead",
+                      "ItemId": "bonghits.Cp_BearHoneyMead",
+                      "CopyQuality": true // Retain Quality
+                  }],
+                  "MinutesUntilReady": 284 // 4.7 Hours
+              }
+          }
       },
-      // Cask Test 
+      // Cask Operation
       //
       // Working as intended, raises quality of honey mead
       //
@@ -372,7 +401,7 @@
                           ]
                       }]
                   }],
-                  "DaysUntilReady": 2 // 2 Days
+                  "MinutesUntilReady": 3000 // 50 Hours - 2.083 Days
               }
           },
           "MoveEntries": [{
@@ -492,7 +521,7 @@
                           ]
                       }]
                   }],
-                  "DaysUntilReady": 2 // 2 Days
+                  "MinutesUntilReady": 2500 // 41 Hours - 1.7 Days
               }
           },
           "MoveEntries": [{
@@ -612,7 +641,7 @@
                           ]
                       }]
                   }],
-                  "DaysUntilReady": 2 // 2 Days
+                  "MinutesUntilReady": 2000 // 33 Hours - 1.375 Days
               }
           },
           "MoveEntries": [{
@@ -732,7 +761,7 @@
                           ]
                       }]
                   }],
-                  "DaysUntilReady": 2 // 2 Days
+                  "MinutesUntilReady": 1500 // 25 Hours - 1.04 Days
               }
           },
           "MoveEntries": [{
@@ -852,7 +881,7 @@
                           ]
                       }]
                   }],
-                  "DaysUntilReady": 2 // 2 Days
+                  "MinutesUntilReady": 1000 // 16 Hours
               }
           },
           "MoveEntries": [{
@@ -972,7 +1001,7 @@
                           ]
                       }]
                   }],
-                  "DaysUntilReady": 2 // 2 Days
+                  "MinutesUntilReady": 1000 // 16 Hours
               }
           },
           "MoveEntries": [{
@@ -1092,7 +1121,7 @@
                           ]
                       }]
                   }],
-                  "DaysUntilReady": 2 // 2 Days
+                  "MinutesUntilReady": 720 // 12 Hours
               }
           },
           "MoveEntries": [{
