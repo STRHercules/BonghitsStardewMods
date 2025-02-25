@@ -1,32 +1,26 @@
 {
   "$schema": "https://smapi.io/schemas/content-patcher.json",
   "Format": "2.5.0",
-  "Changes": 
-  [
-     {
+  "Changes": [{
           // Load Strings
           "LogName": "String Tokens",
           "Action": "Include",
           "FromFile": "Data/strings.json"
-      },
-      {
+      }, {
           // Spritesheet Load
           "Action": "Load",
           "Target": "bonghits.BearHoneyMead/Objects",
           "FromFile": "assets/bh_mead.png"
-      },
-      {
+      }, {
           // Edit Objects
           "Action": "EditData",
           "Target": "Data/Objects",
-          "Entries": 
-          {
+          "Entries": {
               // Bear Honey Mead
               //
               // Create Original Bear Honey Mead Item
               //
-              "bonghits.Cp_BearHoneyMead": 
-              {
+              "bonghits.Cp_BearHoneyMead": {
                   "Name": "bonghits.Cp_BearHoneyMead",
                   "DisplayName": "Bear Honey Mead",
                   "Description": "An artisanal mead crafted to perfection using Honey harvested by happy Bears.",
@@ -37,36 +31,28 @@
                   "Price": 1950,
                   "SpriteIndex": 0,
                   "Texture": "bonghits.BearHoneyMead/Objects",
-                  "Buffs": 
-                  [
-                      {
-                          "Duration": 1500, // 17.5 In-Game Hours
-                          "CustomAttributes": 
-                          {
-                              "FarmingLevel": 0,
-                              "FishingLevel": 0,
-                              "MiningLevel": 0,
-                              "LuckLevel": 3,
-                              "ForagingLevel": 2,
-                              "MaxStamina": 50,
-                              "MagneticRadius": 0,
-                              "Speed": 2,
-                              "Defense": 0,
-                              "Attack": 2
-                          }
+                  "Buffs": [{
+                      "Duration": 1500, // 17.5 In-Game Hours
+                      "CustomAttributes": {
+                          "FarmingLevel": 0,
+                          "FishingLevel": 0,
+                          "MiningLevel": 0,
+                          "LuckLevel": 3,
+                          "ForagingLevel": 2,
+                          "MaxStamina": 50,
+                          "MagneticRadius": 0,
+                          "Speed": 2,
+                          "Defense": 0,
+                          "Attack": 2
                       }
-                  ],
-                  "ContextTags": [
-          "bh.stock_mead"
-        ]
-                  
+                  }],
+                  "ContextTags": ["bh.stock_mead"]
               },
               // Aged Bear Honey Mead
               //
               // Create Aged Bear Honey Mead Item
               //
-              "bonghits.Cp_AgedBearHoneyMead": 
-              {
+              "bonghits.Cp_AgedBearHoneyMead": {
                   "Name": "bonghits.Cp_AgedBearHoneyMead",
                   "DisplayName": "Aged Bear Honey Mead",
                   "Description": "An artisanal bear honey mead refined and aged to its highest potential. The fruity smell eminating from the bottle reminds you of a warm bath in the spring.",
@@ -77,29 +63,22 @@
                   "Price": 4215,
                   "SpriteIndex": 2,
                   "Texture": "bonghits.BearHoneyMead/Objects",
-                  "Buffs": 
-                  [
-                      {
-                          "Duration": 4000, // 2 In-Game Days (46.5 Hours)
-                          "CustomAttributes": 
-                          {
-                              "FarmingLevel": 5,
-                              "FishingLevel": 0,
-                              "MiningLevel": 0,
-                              "LuckLevel": 5,
-                              "ForagingLevel": 5,
-                              "MaxStamina": 100,
-                              "MagneticRadius": 5,
-                              "Speed": 5,
-                              "Defense": 2,
-                              "Attack": 5
-                          }
+                  "Buffs": [{
+                      "Duration": 4000, // 2 In-Game Days (46.5 Hours)
+                      "CustomAttributes": {
+                          "FarmingLevel": 5,
+                          "FishingLevel": 0,
+                          "MiningLevel": 0,
+                          "LuckLevel": 5,
+                          "ForagingLevel": 5,
+                          "MaxStamina": 100,
+                          "MagneticRadius": 5,
+                          "Speed": 5,
+                          "Defense": 2,
+                          "Attack": 5
                       }
-                  ],      
-                  "ContextTags": [
-          "bh.aged_mead"
-        ]
-                  
+                  }],
+                  "ContextTags": ["bh.aged_mead"]
               }
           }
       },
@@ -110,65 +89,180 @@
       {
           "Action": "EditData",
           "Target": "Data/Machines",
-          "TargetField": [ "(BC)12", "OutputRules" ], 
-          "Entries": 
-          {
+          "TargetField": ["(BC)12", "OutputRules"],
+          "Entries": {
               // Jar Honey -> Keg -> Bear Honey Mead
-              "bearhoneymake": 
-              {
-                  "Triggers": 
-                  [
-                      {
-                          "Id": "bearhoneyTrigger",
-                          "Trigger": "ItemPlacedInMachine",
-                          "RequiredItemId": "FlashShifter.StardewValleyExpandedCP_Honey_Jar", //SVE Bear Jar of Honey
-                          "RequiredCount": "1" // Only Need 1 Jar of Honey
-
-                      }
-                  ],
-                  "OutputItem": 
-                  [
-                      {
-                          "Id": "bonghits.Cp_BearHoneyMead",
-                          "ItemId": "bonghits.Cp_BearHoneyMead",
-                          "CopyQuality": true // Retain Quality
-                      }
-                  ],
+              "bearhoneymake": {
+                  "Triggers": [{
+                      "Id": "bearhoneyTrigger",
+                      "Trigger": "ItemPlacedInMachine",
+                      "RequiredItemId": "FlashShifter.StardewValleyExpandedCP_Honey_Jar", //SVE Bear Jar of Honey
+                      "RequiredCount": "1" // Only Need 1 Jar of Honey
+                  }],
+                  "OutputItem": [{
+                      "Id": "bonghits.Cp_BearHoneyMead",
+                      "ItemId": "bonghits.Cp_BearHoneyMead",
+                      "CopyQuality": true // Retain Quality
+                  }],
                   "MinutesUntilReady": 600 // 10 Hours
               }
           }
+      },
+      //
+      //  Gold Keg
+      //  Machine Progression System Support
+      //
+      {
+        "Action": "EditData",
+        "Target": "Data/Machines",
+        "TargetField": ["(BC)nachonline.mps_GoldKeg", "OutputRules"],
+        "Entries": {
+            // Jar Honey -> Keg -> Bear Honey Mead
+            "bearhoneymake": {
+                "Triggers": [{
+                    "Id": "bearhoneyTrigger",
+                    "Trigger": "ItemPlacedInMachine",
+                    "RequiredItemId": "FlashShifter.StardewValleyExpandedCP_Honey_Jar", //SVE Bear Jar of Honey
+                    "RequiredCount": "1" // Only Need 1 Jar of Honey
+                }],
+                "OutputItem": [{
+                    "Id": "bonghits.Cp_BearHoneyMead",
+                    "ItemId": "bonghits.Cp_BearHoneyMead",
+                    "CopyQuality": true // Retain Quality
+                }],
+                "MinutesUntilReady": 600 // 10 Hours
+            }
+        }
+      },
+      //
+      //  Diamond Keg
+      //  Machine Progression System Support
+      //
+      {
+        "Action": "EditData",
+        "Target": "Data/Machines",
+        "TargetField": ["(BC)nachonline.mps_DiamondKeg", "OutputRules"],
+        "Entries": {
+            // Jar Honey -> Keg -> Bear Honey Mead
+            "bearhoneymake": {
+                "Triggers": [{
+                    "Id": "bearhoneyTrigger",
+                    "Trigger": "ItemPlacedInMachine",
+                    "RequiredItemId": "FlashShifter.StardewValleyExpandedCP_Honey_Jar", //SVE Bear Jar of Honey
+                    "RequiredCount": "1" // Only Need 1 Jar of Honey
+                }],
+                "OutputItem": [{
+                    "Id": "bonghits.Cp_BearHoneyMead",
+                    "ItemId": "bonghits.Cp_BearHoneyMead",
+                    "CopyQuality": true // Retain Quality
+                }],
+                "MinutesUntilReady": 600 // 10 Hours
+            }
+        }
+      },
+      //
+      //  Iridium Keg
+      //  Machine Progression System Support
+      //
+      {
+        "Action": "EditData",
+        "Target": "Data/Machines",
+        "TargetField": ["(BC)nachonline.mps_IridiumKeg", "OutputRules"],
+        "Entries": {
+            // Jar Honey -> Keg -> Bear Honey Mead
+            "bearhoneymake": {
+                "Triggers": [{
+                    "Id": "bearhoneyTrigger",
+                    "Trigger": "ItemPlacedInMachine",
+                    "RequiredItemId": "FlashShifter.StardewValleyExpandedCP_Honey_Jar", //SVE Bear Jar of Honey
+                    "RequiredCount": "1" // Only Need 1 Jar of Honey
+                }],
+                "OutputItem": [{
+                    "Id": "bonghits.Cp_BearHoneyMead",
+                    "ItemId": "bonghits.Cp_BearHoneyMead",
+                    "CopyQuality": true // Retain Quality
+                }],
+                "MinutesUntilReady": 600 // 10 Hours
+            }
+        }
+      },
+      //
+      //  Radioactive Keg
+      //  Machine Progression System Support
+      //
+      {
+        "Action": "EditData",
+        "Target": "Data/Machines",
+        "TargetField": ["(BC)nachonline.mps_RadioactiveKeg", "OutputRules"],
+        "Entries": {
+            // Jar Honey -> Keg -> Bear Honey Mead
+            "bearhoneymake": {
+                "Triggers": [{
+                    "Id": "bearhoneyTrigger",
+                    "Trigger": "ItemPlacedInMachine",
+                    "RequiredItemId": "FlashShifter.StardewValleyExpandedCP_Honey_Jar", //SVE Bear Jar of Honey
+                    "RequiredCount": "1" // Only Need 1 Jar of Honey
+                }],
+                "OutputItem": [{
+                    "Id": "bonghits.Cp_BearHoneyMead",
+                    "ItemId": "bonghits.Cp_BearHoneyMead",
+                    "CopyQuality": true // Retain Quality
+                }],
+                "MinutesUntilReady": 600 // 10 Hours
+            }
+        }
+      },
+      //
+      //  Orismatic Keg
+      //  Machine Progression System Support
+      //
+      {
+        "Action": "EditData",
+        "Target": "Data/Machines",
+        "TargetField": ["(BC)nachonline.mps_PrismaticKeg", "OutputRules"],
+        "Entries": {
+            // Jar Honey -> Keg -> Bear Honey Mead
+            "bearhoneymake": {
+                "Triggers": [{
+                    "Id": "bearhoneyTrigger",
+                    "Trigger": "ItemPlacedInMachine",
+                    "RequiredItemId": "FlashShifter.StardewValleyExpandedCP_Honey_Jar", //SVE Bear Jar of Honey
+                    "RequiredCount": "1" // Only Need 1 Jar of Honey
+                }],
+                "OutputItem": [{
+                    "Id": "bonghits.Cp_BearHoneyMead",
+                    "ItemId": "bonghits.Cp_BearHoneyMead",
+                    "CopyQuality": true // Retain Quality
+                }],
+                "MinutesUntilReady": 600 // 10 Hours
+            }
+        }
       },
       // Cask Test 
       //
       // Working as intended, raises quality of honey mead
       //
       {
-    "Action": "EditData",
-    "Target": "Data/Machines",
-    "TargetField": [ "(BC)163", "OutputRules" ],
-    "Entries": {
-      "agedbearhoneycask": {
-        "Id": "CaskHoneyMead",
-        "Triggers": 
-          [
-            {
-              "RequiredItemId": "bonghits.Cp_BearHoneyMead",
-                              "Trigger": "ItemPlacedInMachine",
-                              "RequiredCount": "1"
-            }
-          ],
-        "OutputItem":
-          [
-            {
-              "OutputMethod": "StardewValley.Objects.Cask, Stardew Valley: OutputCask",
-              "CustomData": {
-                "AgingMultiplier": "4"
+          "Action": "EditData",
+          "Target": "Data/Machines",
+          "TargetField": ["(BC)163", "OutputRules"],
+          "Entries": {
+              "agedbearhoneycask": {
+                  "Id": "CaskHoneyMead",
+                  "Triggers": [{
+                      "RequiredItemId": "bonghits.Cp_BearHoneyMead",
+                      "Trigger": "ItemPlacedInMachine",
+                      "RequiredCount": "1"
+                  }],
+                  "OutputItem": [{
+                      "OutputMethod": "StardewValley.Objects.Cask, Stardew Valley: OutputCask",
+                      "CustomData": {
+                          "AgingMultiplier": "4"
+                      }
+                  }],
               }
-            }
-          ],
-      }
-    }
-  },
+          }
+      },
       // Vanilla Preserving Jar
       //
       // 
@@ -176,131 +270,115 @@
           // Bear Honey Mead +  10x Fruit -> Preserving Jar -> Flavored Bear Honey Mead
           "Action": "EditData",
           "Target": "Data/Machines",
-          "TargetField": [
-            "(BC)15",
-            "OutputRules"
-          ],
+          "TargetField": ["(BC)15", "OutputRules"],
           "Entries": {
-            "bh.jarmeadrule": {
-              "Id": "bh.jarmeadrule",
-              "Triggers": [
-                {
-                  "Id": "bh.jarmeadrule_AgedMead10Input",
-                  "RequiredTags": [
-                    "category_fruits"
-                  ],
-                  "RequiredCount": 10
-                }
-              ],
-              "OutputItem": [
-                {
-                  "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
-                  "ObjectInternalName": "Aged {0} Bear Honey Mead",
-                  "ObjectDisplayName": "[LocalizedText Strings/Objects:bonghits.agedmead_name %PRESERVED_DISPLAY_NAME]",
-                  "PreserveId": "DROP_IN",
-                  "CopyColor": true,
-                  "CopyPrice": true,
-                  "CopyQuality": true, // Retain Quality
-                  "PriceModifierMode": "Stack",
-                  // 5% Chance to Double your Aged Mead
-                  "StackModifiers": [
-                    {
-                      "Id": "RareDouble",
-                      "Condition": "RANDOM .05",
-                      "Modification": "Multiply",
-                      "Amount": 2.0
-                    }
-                  ],
-                  "CustomData": {
-                    "selph.ExtraMachineConfig.RequirementTags.1": "bh.stock_mead",
-                    "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 10 of any fruit, and one Bear Honey Mead"
-                  },
-                  "PriceModifiers": [
-                    {
-                      // Adds a 'random' raw amount to the mead
-                      "Modification": "Add",
-                      "RandomAmount": [ 
-                          4265, 
-                          3892, 
-                          2378, 
-                          4921, 
-                          3017, 
-                          4583, 
-                          2764, 
-                          3152, 
-                          4729, 
-                          2113,
-                          3567, 
-                          4936, 
-                          2894, 
-                          3221, 
-                          4148, 
-                          2419, 
-                          3897, 
-                          4782, 
-                          2675, 
-                          3058, 
-                          4293, 
-                          3786, 
-                          2174, 
-                          4951, 
-                          3662, 
-                          2839, 
-                          4498, 
-                          3097, 
-                          4625, 
-                          2306
-                      ]
-                    },
-                    {
-                      // Adds a 'random' percentage increase to the mead
-                      // 3% - 46%
-                      "Modification": "Multiply",
-                      "RandomAmount": [
-                          1.12, 
-                          1.43, 
-                          1.05, 
-                          1.29, 
-                          1.37, 
-                          1.18, 
-                          1.46, 
-                          1.23, 
-                          1.09, 
-                          1.31, 
-                          1.41, 
-                          1.07, 
-                          1.26, 
-                          1.34, 
-                          1.14, 
-                          1.48, 
-                          1.02, 
-                          1.21, 
-                          1.39, 
-                          1.06, 
-                          1.27, 
-                          1.44, 
-                          1.11, 
-                          1.32, 
-                          1.08, 
-                          1.25, 
-                          1.35, 
-                          1.03, 
-                          1.16, 
-                          1.49
-                      ]
-                    }
-                  ]
-                }
-              ],
-              "DaysUntilReady": 2 // 2 Days
-            }
+              "bh.jarmeadrule": {
+                  "Id": "bh.jarmeadrule",
+                  "Triggers": [{
+                      "Id": "bh.jarmeadrule_AgedMead10Input",
+                      "RequiredTags": ["category_fruits"],
+                      "RequiredCount": 10
+                  }],
+                  "OutputItem": [{
+                      "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
+                      "ObjectInternalName": "Aged {0} Bear Honey Mead",
+                      "ObjectDisplayName": "[LocalizedText Strings/Objects:bonghits.agedmead_name %PRESERVED_DISPLAY_NAME]",
+                      "PreserveId": "DROP_IN",
+                      "CopyColor": true,
+                      "CopyPrice": true,
+                      "CopyQuality": true, // Retain Quality
+                      "PriceModifierMode": "Stack",
+                      // 5% Chance to Double your Aged Mead
+                      "StackModifiers": [{
+                          "Id": "RareDouble",
+                          "Condition": "RANDOM .05",
+                          "Modification": "Multiply",
+                          "Amount": 2.0
+                      }],
+                      "CustomData": {
+                          "selph.ExtraMachineConfig.RequirementTags.1": "bh.stock_mead",
+                          "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 10 of any fruit, and one Bear Honey Mead"
+                      },
+                      "PriceModifiers": [{
+                          // Adds a 'random' raw amount to the mead
+                          "Modification": "Add",
+                          "RandomAmount": [
+                              4265,
+                              3892,
+                              2378,
+                              4921,
+                              3017,
+                              4583,
+                              2764,
+                              3152,
+                              4729,
+                              2113,
+                              3567,
+                              4936,
+                              2894,
+                              3221,
+                              4148,
+                              2419,
+                              3897,
+                              4782,
+                              2675,
+                              3058,
+                              4293,
+                              3786,
+                              2174,
+                              4951,
+                              3662,
+                              2839,
+                              4498,
+                              3097,
+                              4625,
+                              2306
+                          ]
+                      }, {
+                          // Adds a 'random' percentage increase to the mead
+                          // 3% - 46%
+                          "Modification": "Multiply",
+                          "RandomAmount": [
+                              1.12,
+                              1.43,
+                              1.05,
+                              1.29,
+                              1.37,
+                              1.18,
+                              1.46,
+                              1.23,
+                              1.09,
+                              1.31,
+                              1.41,
+                              1.07,
+                              1.26,
+                              1.34,
+                              1.14,
+                              1.48,
+                              1.02,
+                              1.21,
+                              1.39,
+                              1.06,
+                              1.27,
+                              1.44,
+                              1.11,
+                              1.32,
+                              1.08,
+                              1.25,
+                              1.35,
+                              1.03,
+                              1.16,
+                              1.49
+                          ]
+                      }]
+                  }],
+                  "DaysUntilReady": 2 // 2 Days
+              }
           },
-          "MoveEntries": [
-            {
+          "MoveEntries": [{
               "ID": "bh.jarmeadrule",
               "ToPosition": "Top"
-            }
-          ]
+          }]
       },
       //
       //
@@ -309,814 +387,718 @@
       //
       //
       {
-        // Bear Honey Mead +  10x Fruit -> Preserving Jar -> Flavored Bear Honey Mead
-        "Action": "EditData",
-        "Target": "Data/Machines",
-        "TargetField": [
-          "(BC)nachonline.mps_SteelPreservesJar",
-          "OutputRules"
-        ],
-        "Entries": {
-          "bh.jarmeadrule": {
-            "Id": "bh.jarmeadrule",
-            "Triggers": [
-              {
-                "Id": "bh.jarmeadrule_AgedMead10Input",
-                "RequiredTags": [
-                  "category_fruits"
-                ],
-                "RequiredCount": 10
+          // Bear Honey Mead +  10x Fruit -> Preserving Jar -> Flavored Bear Honey Mead
+          "Action": "EditData",
+          "Target": "Data/Machines",
+          "TargetField": ["(BC)nachonline.mps_SteelPreservesJar", "OutputRules"],
+          "Entries": {
+              "bh.jarmeadrule": {
+                  "Id": "bh.jarmeadrule",
+                  "Triggers": [{
+                      "Id": "bh.jarmeadrule_AgedMead10Input",
+                      "RequiredTags": ["category_fruits"],
+                      "RequiredCount": 10
+                  }],
+                  "OutputItem": [{
+                      "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
+                      "ObjectInternalName": "Aged {0} Bear Honey Mead",
+                      "ObjectDisplayName": "[LocalizedText Strings/Objects:bonghits.agedmead_name %PRESERVED_DISPLAY_NAME]",
+                      "PreserveId": "DROP_IN",
+                      "CopyColor": true,
+                      "CopyPrice": true,
+                      "CopyQuality": true, // Retain Quality
+                      "PriceModifierMode": "Stack",
+                      // 10% Chance to Double your Aged Mead
+                      "StackModifiers": [{
+                          "Id": "RareDouble",
+                          "Condition": "RANDOM .1",
+                          "Modification": "Multiply",
+                          "Amount": 2.0
+                      }],
+                      "CustomData": {
+                          "selph.ExtraMachineConfig.RequirementTags.1": "bh.stock_mead",
+                          "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 10 of any fruit, and one Bear Honey Mead"
+                      },
+                      "PriceModifiers": [{
+                          // Adds a 'random' raw amount to the mead
+                          "Modification": "Add",
+                          "RandomAmount": [
+                              4265,
+                              3892,
+                              2378,
+                              4921,
+                              3017,
+                              4583,
+                              2764,
+                              3152,
+                              4729,
+                              2113,
+                              3567,
+                              4936,
+                              2894,
+                              3221,
+                              4148,
+                              2419,
+                              3897,
+                              4782,
+                              2675,
+                              3058,
+                              4293,
+                              3786,
+                              2174,
+                              4951,
+                              3662,
+                              2839,
+                              4498,
+                              3097,
+                              4625,
+                              2306
+                          ]
+                      }, {
+                          // Adds a 'random' percentage increase to the mead
+                          // 3% - 46%
+                          "Modification": "Multiply",
+                          "RandomAmount": [
+                              1.12,
+                              1.43,
+                              1.05,
+                              1.29,
+                              1.37,
+                              1.18,
+                              1.46,
+                              1.23,
+                              1.09,
+                              1.31,
+                              1.41,
+                              1.07,
+                              1.26,
+                              1.34,
+                              1.14,
+                              1.48,
+                              1.02,
+                              1.21,
+                              1.39,
+                              1.06,
+                              1.27,
+                              1.44,
+                              1.11,
+                              1.32,
+                              1.08,
+                              1.25,
+                              1.35,
+                              1.03,
+                              1.16,
+                              1.49
+                          ]
+                      }]
+                  }],
+                  "DaysUntilReady": 2 // 2 Days
               }
-            ],
-            "OutputItem": [
-              {
-                "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
-                "ObjectInternalName": "Aged {0} Bear Honey Mead",
-                "ObjectDisplayName": "[LocalizedText Strings/Objects:bonghits.agedmead_name %PRESERVED_DISPLAY_NAME]",
-                "PreserveId": "DROP_IN",
-                "CopyColor": true,
-                "CopyPrice": true,
-                "CopyQuality": true, // Retain Quality
-                "PriceModifierMode": "Stack",
-                // 10% Chance to Double your Aged Mead
-                "StackModifiers": [
-                  {
-                    "Id": "RareDouble",
-                    "Condition": "RANDOM .1",
-                    "Modification": "Multiply",
-                    "Amount": 2.0
-                  }
-                ],
-                "CustomData": {
-                  "selph.ExtraMachineConfig.RequirementTags.1": "bh.stock_mead",
-                  "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 10 of any fruit, and one Bear Honey Mead"
-                },
-                "PriceModifiers": [
-                  {
-                    // Adds a 'random' raw amount to the mead
-                    "Modification": "Add",
-                    "RandomAmount": [ 
-                        4265, 
-                        3892, 
-                        2378, 
-                        4921, 
-                        3017, 
-                        4583, 
-                        2764, 
-                        3152, 
-                        4729, 
-                        2113,
-                        3567, 
-                        4936, 
-                        2894, 
-                        3221, 
-                        4148, 
-                        2419, 
-                        3897, 
-                        4782, 
-                        2675, 
-                        3058, 
-                        4293, 
-                        3786, 
-                        2174, 
-                        4951, 
-                        3662, 
-                        2839, 
-                        4498, 
-                        3097, 
-                        4625, 
-                        2306
-                    ]
-                  },
-                  {
-                    // Adds a 'random' percentage increase to the mead
-                    // 3% - 46%
-                    "Modification": "Multiply",
-                    "RandomAmount": [
-                        1.12, 
-                        1.43, 
-                        1.05, 
-                        1.29, 
-                        1.37, 
-                        1.18, 
-                        1.46, 
-                        1.23, 
-                        1.09, 
-                        1.31, 
-                        1.41, 
-                        1.07, 
-                        1.26, 
-                        1.34, 
-                        1.14, 
-                        1.48, 
-                        1.02, 
-                        1.21, 
-                        1.39, 
-                        1.06, 
-                        1.27, 
-                        1.44, 
-                        1.11, 
-                        1.32, 
-                        1.08, 
-                        1.25, 
-                        1.35, 
-                        1.03, 
-                        1.16, 
-                        1.49
-                    ]
-                  }
-                ]
-              }
-            ],
-            "DaysUntilReady": 2 // 2 Days
-          }
-        },
-        "MoveEntries": [
-          {
-            "ID": "bh.jarmeadrule",
-            "ToPosition": "Top"
-          }
-        ]
-    },
-    //
+          },
+          "MoveEntries": [{
+              "ID": "bh.jarmeadrule",
+              "ToPosition": "Top"
+          }]
+      },
+      //
       //
       //  Machine Progression System
       //  Gold
       //
       //
       {
-        // Bear Honey Mead +  10x Fruit -> Preserving Jar -> Flavored Bear Honey Mead
-        "Action": "EditData",
-        "Target": "Data/Machines",
-        "TargetField": [
-          "(BC)nachonline.mps_GoldPreservesJar",
-          "OutputRules"
-        ],
-        "Entries": {
-          "bh.jarmeadrule": {
-            "Id": "bh.jarmeadrule",
-            "Triggers": [
-              {
-                "Id": "bh.jarmeadrule_AgedMead10Input",
-                "RequiredTags": [
-                  "category_fruits"
-                ],
-                "RequiredCount": 10
+          // Bear Honey Mead +  10x Fruit -> Preserving Jar -> Flavored Bear Honey Mead
+          "Action": "EditData",
+          "Target": "Data/Machines",
+          "TargetField": ["(BC)nachonline.mps_GoldPreservesJar", "OutputRules"],
+          "Entries": {
+              "bh.jarmeadrule": {
+                  "Id": "bh.jarmeadrule",
+                  "Triggers": [{
+                      "Id": "bh.jarmeadrule_AgedMead10Input",
+                      "RequiredTags": ["category_fruits"],
+                      "RequiredCount": 10
+                  }],
+                  "OutputItem": [{
+                      "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
+                      "ObjectInternalName": "Aged {0} Bear Honey Mead",
+                      "ObjectDisplayName": "[LocalizedText Strings/Objects:bonghits.agedmead_name %PRESERVED_DISPLAY_NAME]",
+                      "PreserveId": "DROP_IN",
+                      "CopyColor": true,
+                      "CopyPrice": true,
+                      "CopyQuality": true, // Retain Quality
+                      "PriceModifierMode": "Stack",
+                      // 15% Chance to Double your Aged Mead
+                      "StackModifiers": [{
+                          "Id": "RareDouble",
+                          "Condition": "RANDOM .15",
+                          "Modification": "Multiply",
+                          "Amount": 2.0
+                      }],
+                      "CustomData": {
+                          "selph.ExtraMachineConfig.RequirementTags.1": "bh.stock_mead",
+                          "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 10 of any fruit, and one Bear Honey Mead"
+                      },
+                      "PriceModifiers": [{
+                          // Adds a 'random' raw amount to the mead
+                          "Modification": "Add",
+                          "RandomAmount": [
+                              4265,
+                              3892,
+                              2378,
+                              4921,
+                              3017,
+                              4583,
+                              2764,
+                              3152,
+                              4729,
+                              2113,
+                              3567,
+                              4936,
+                              2894,
+                              3221,
+                              4148,
+                              2419,
+                              3897,
+                              4782,
+                              2675,
+                              3058,
+                              4293,
+                              3786,
+                              2174,
+                              4951,
+                              3662,
+                              2839,
+                              4498,
+                              3097,
+                              4625,
+                              2306
+                          ]
+                      }, {
+                          // Adds a 'random' percentage increase to the mead
+                          // 3% - 46%
+                          "Modification": "Multiply",
+                          "RandomAmount": [
+                              1.12,
+                              1.43,
+                              1.05,
+                              1.29,
+                              1.37,
+                              1.18,
+                              1.46,
+                              1.23,
+                              1.09,
+                              1.31,
+                              1.41,
+                              1.07,
+                              1.26,
+                              1.34,
+                              1.14,
+                              1.48,
+                              1.02,
+                              1.21,
+                              1.39,
+                              1.06,
+                              1.27,
+                              1.44,
+                              1.11,
+                              1.32,
+                              1.08,
+                              1.25,
+                              1.35,
+                              1.03,
+                              1.16,
+                              1.49
+                          ]
+                      }]
+                  }],
+                  "DaysUntilReady": 2 // 2 Days
               }
-            ],
-            "OutputItem": [
-              {
-                "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
-                "ObjectInternalName": "Aged {0} Bear Honey Mead",
-                "ObjectDisplayName": "[LocalizedText Strings/Objects:bonghits.agedmead_name %PRESERVED_DISPLAY_NAME]",
-                "PreserveId": "DROP_IN",
-                "CopyColor": true,
-                "CopyPrice": true,
-                "CopyQuality": true, // Retain Quality
-                "PriceModifierMode": "Stack",
-                // 15% Chance to Double your Aged Mead
-                "StackModifiers": [
-                  {
-                    "Id": "RareDouble",
-                    "Condition": "RANDOM .15",
-                    "Modification": "Multiply",
-                    "Amount": 2.0
-                  }
-                ],
-                "CustomData": {
-                  "selph.ExtraMachineConfig.RequirementTags.1": "bh.stock_mead",
-                  "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 10 of any fruit, and one Bear Honey Mead"
-                },
-                "PriceModifiers": [
-                  {
-                    // Adds a 'random' raw amount to the mead
-                    "Modification": "Add",
-                    "RandomAmount": [ 
-                        4265, 
-                        3892, 
-                        2378, 
-                        4921, 
-                        3017, 
-                        4583, 
-                        2764, 
-                        3152, 
-                        4729, 
-                        2113,
-                        3567, 
-                        4936, 
-                        2894, 
-                        3221, 
-                        4148, 
-                        2419, 
-                        3897, 
-                        4782, 
-                        2675, 
-                        3058, 
-                        4293, 
-                        3786, 
-                        2174, 
-                        4951, 
-                        3662, 
-                        2839, 
-                        4498, 
-                        3097, 
-                        4625, 
-                        2306
-                    ]
-                  },
-                  {
-                    // Adds a 'random' percentage increase to the mead
-                    // 3% - 46%
-                    "Modification": "Multiply",
-                    "RandomAmount": [
-                        1.12, 
-                        1.43, 
-                        1.05, 
-                        1.29, 
-                        1.37, 
-                        1.18, 
-                        1.46, 
-                        1.23, 
-                        1.09, 
-                        1.31, 
-                        1.41, 
-                        1.07, 
-                        1.26, 
-                        1.34, 
-                        1.14, 
-                        1.48, 
-                        1.02, 
-                        1.21, 
-                        1.39, 
-                        1.06, 
-                        1.27, 
-                        1.44, 
-                        1.11, 
-                        1.32, 
-                        1.08, 
-                        1.25, 
-                        1.35, 
-                        1.03, 
-                        1.16, 
-                        1.49
-                    ]
-                  }
-                ]
-              }
-            ],
-            "DaysUntilReady": 2 // 2 Days
-          }
-        },
-        "MoveEntries": [
-          {
-            "ID": "bh.jarmeadrule",
-            "ToPosition": "Top"
-          }
-        ]
-    },
-    //
+          },
+          "MoveEntries": [{
+              "ID": "bh.jarmeadrule",
+              "ToPosition": "Top"
+          }]
+      },
+      //
       //
       //  Machine Progression System
       //  Diamond
       //
       //
       {
-        // Bear Honey Mead +  10x Fruit -> Preserving Jar -> Flavored Bear Honey Mead
-        "Action": "EditData",
-        "Target": "Data/Machines",
-        "TargetField": [
-          "(BC)nachonline.mps_DiamondPreservesJar",
-          "OutputRules"
-        ],
-        "Entries": {
-          "bh.jarmeadrule": {
-            "Id": "bh.jarmeadrule",
-            "Triggers": [
-              {
-                "Id": "bh.jarmeadrule_AgedMead10Input",
-                "RequiredTags": [
-                  "category_fruits"
-                ],
-                "RequiredCount": 10
+          // Bear Honey Mead +  10x Fruit -> Preserving Jar -> Flavored Bear Honey Mead
+          "Action": "EditData",
+          "Target": "Data/Machines",
+          "TargetField": ["(BC)nachonline.mps_DiamondPreservesJar", "OutputRules"],
+          "Entries": {
+              "bh.jarmeadrule": {
+                  "Id": "bh.jarmeadrule",
+                  "Triggers": [{
+                      "Id": "bh.jarmeadrule_AgedMead10Input",
+                      "RequiredTags": ["category_fruits"],
+                      "RequiredCount": 10
+                  }],
+                  "OutputItem": [{
+                      "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
+                      "ObjectInternalName": "Aged {0} Bear Honey Mead",
+                      "ObjectDisplayName": "[LocalizedText Strings/Objects:bonghits.agedmead_name %PRESERVED_DISPLAY_NAME]",
+                      "PreserveId": "DROP_IN",
+                      "CopyColor": true,
+                      "CopyPrice": true,
+                      "CopyQuality": true, // Retain Quality
+                      "PriceModifierMode": "Stack",
+                      // 20% Chance to Double your Aged Mead
+                      "StackModifiers": [{
+                          "Id": "RareDouble",
+                          "Condition": "RANDOM .2",
+                          "Modification": "Multiply",
+                          "Amount": 2.0
+                      }],
+                      "CustomData": {
+                          "selph.ExtraMachineConfig.RequirementTags.1": "bh.stock_mead",
+                          "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 10 of any fruit, and one Bear Honey Mead"
+                      },
+                      "PriceModifiers": [{
+                          // Adds a 'random' raw amount to the mead
+                          "Modification": "Add",
+                          "RandomAmount": [
+                              4265,
+                              3892,
+                              2378,
+                              4921,
+                              3017,
+                              4583,
+                              2764,
+                              3152,
+                              4729,
+                              2113,
+                              3567,
+                              4936,
+                              2894,
+                              3221,
+                              4148,
+                              2419,
+                              3897,
+                              4782,
+                              2675,
+                              3058,
+                              4293,
+                              3786,
+                              2174,
+                              4951,
+                              3662,
+                              2839,
+                              4498,
+                              3097,
+                              4625,
+                              2306
+                          ]
+                      }, {
+                          // Adds a 'random' percentage increase to the mead
+                          // 3% - 46%
+                          "Modification": "Multiply",
+                          "RandomAmount": [
+                              1.12,
+                              1.43,
+                              1.05,
+                              1.29,
+                              1.37,
+                              1.18,
+                              1.46,
+                              1.23,
+                              1.09,
+                              1.31,
+                              1.41,
+                              1.07,
+                              1.26,
+                              1.34,
+                              1.14,
+                              1.48,
+                              1.02,
+                              1.21,
+                              1.39,
+                              1.06,
+                              1.27,
+                              1.44,
+                              1.11,
+                              1.32,
+                              1.08,
+                              1.25,
+                              1.35,
+                              1.03,
+                              1.16,
+                              1.49
+                          ]
+                      }]
+                  }],
+                  "DaysUntilReady": 2 // 2 Days
               }
-            ],
-            "OutputItem": [
-              {
-                "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
-                "ObjectInternalName": "Aged {0} Bear Honey Mead",
-                "ObjectDisplayName": "[LocalizedText Strings/Objects:bonghits.agedmead_name %PRESERVED_DISPLAY_NAME]",
-                "PreserveId": "DROP_IN",
-                "CopyColor": true,
-                "CopyPrice": true,
-                "CopyQuality": true, // Retain Quality
-                "PriceModifierMode": "Stack",
-                // 20% Chance to Double your Aged Mead
-                "StackModifiers": [
-                  {
-                    "Id": "RareDouble",
-                    "Condition": "RANDOM .2",
-                    "Modification": "Multiply",
-                    "Amount": 2.0
-                  }
-                ],
-                "CustomData": {
-                  "selph.ExtraMachineConfig.RequirementTags.1": "bh.stock_mead",
-                  "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 10 of any fruit, and one Bear Honey Mead"
-                },
-                "PriceModifiers": [
-                  {
-                    // Adds a 'random' raw amount to the mead
-                    "Modification": "Add",
-                    "RandomAmount": [ 
-                        4265, 
-                        3892, 
-                        2378, 
-                        4921, 
-                        3017, 
-                        4583, 
-                        2764, 
-                        3152, 
-                        4729, 
-                        2113,
-                        3567, 
-                        4936, 
-                        2894, 
-                        3221, 
-                        4148, 
-                        2419, 
-                        3897, 
-                        4782, 
-                        2675, 
-                        3058, 
-                        4293, 
-                        3786, 
-                        2174, 
-                        4951, 
-                        3662, 
-                        2839, 
-                        4498, 
-                        3097, 
-                        4625, 
-                        2306
-                    ]
-                  },
-                  {
-                    // Adds a 'random' percentage increase to the mead
-                    // 3% - 46%
-                    "Modification": "Multiply",
-                    "RandomAmount": [
-                        1.12, 
-                        1.43, 
-                        1.05, 
-                        1.29, 
-                        1.37, 
-                        1.18, 
-                        1.46, 
-                        1.23, 
-                        1.09, 
-                        1.31, 
-                        1.41, 
-                        1.07, 
-                        1.26, 
-                        1.34, 
-                        1.14, 
-                        1.48, 
-                        1.02, 
-                        1.21, 
-                        1.39, 
-                        1.06, 
-                        1.27, 
-                        1.44, 
-                        1.11, 
-                        1.32, 
-                        1.08, 
-                        1.25, 
-                        1.35, 
-                        1.03, 
-                        1.16, 
-                        1.49
-                    ]
-                  }
-                ]
-              }
-            ],
-            "DaysUntilReady": 2 // 2 Days
-          }
-        },
-        "MoveEntries": [
-          {
-            "ID": "bh.jarmeadrule",
-            "ToPosition": "Top"
-          }
-        ]
-    },
-    //
+          },
+          "MoveEntries": [{
+              "ID": "bh.jarmeadrule",
+              "ToPosition": "Top"
+          }]
+      },
+      //
       //
       //  Machine Progression System
       //  Iridium
       //
       //
       {
-        // Bear Honey Mead +  10x Fruit -> Preserving Jar -> Flavored Bear Honey Mead
-        "Action": "EditData",
-        "Target": "Data/Machines",
-        "TargetField": [
-          "(BC)nachonline.mps_IridiumPreservesJar",
-          "OutputRules"
-        ],
-        "Entries": {
-          "bh.jarmeadrule": {
-            "Id": "bh.jarmeadrule",
-            "Triggers": [
-              {
-                "Id": "bh.jarmeadrule_AgedMead10Input",
-                "RequiredTags": [
-                  "category_fruits"
-                ],
-                "RequiredCount": 10
+          // Bear Honey Mead +  10x Fruit -> Preserving Jar -> Flavored Bear Honey Mead
+          "Action": "EditData",
+          "Target": "Data/Machines",
+          "TargetField": ["(BC)nachonline.mps_IridiumPreservesJar", "OutputRules"],
+          "Entries": {
+              "bh.jarmeadrule": {
+                  "Id": "bh.jarmeadrule",
+                  "Triggers": [{
+                      "Id": "bh.jarmeadrule_AgedMead10Input",
+                      "RequiredTags": ["category_fruits"],
+                      "RequiredCount": 10
+                  }],
+                  "OutputItem": [{
+                      "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
+                      "ObjectInternalName": "Aged {0} Bear Honey Mead",
+                      "ObjectDisplayName": "[LocalizedText Strings/Objects:bonghits.agedmead_name %PRESERVED_DISPLAY_NAME]",
+                      "PreserveId": "DROP_IN",
+                      "CopyColor": true,
+                      "CopyPrice": true,
+                      "CopyQuality": true, // Retain Quality
+                      "PriceModifierMode": "Stack",
+                      // 25% Chance to Double your Aged Mead
+                      "StackModifiers": [{
+                          "Id": "RareDouble",
+                          "Condition": "RANDOM .25",
+                          "Modification": "Multiply",
+                          "Amount": 2.0
+                      }],
+                      "CustomData": {
+                          "selph.ExtraMachineConfig.RequirementTags.1": "bh.stock_mead",
+                          "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 10 of any fruit, and one Bear Honey Mead"
+                      },
+                      "PriceModifiers": [{
+                          // Adds a 'random' raw amount to the mead
+                          "Modification": "Add",
+                          "RandomAmount": [
+                              4265,
+                              3892,
+                              2378,
+                              4921,
+                              3017,
+                              4583,
+                              2764,
+                              3152,
+                              4729,
+                              2113,
+                              3567,
+                              4936,
+                              2894,
+                              3221,
+                              4148,
+                              2419,
+                              3897,
+                              4782,
+                              2675,
+                              3058,
+                              4293,
+                              3786,
+                              2174,
+                              4951,
+                              3662,
+                              2839,
+                              4498,
+                              3097,
+                              4625,
+                              2306
+                          ]
+                      }, {
+                          // Adds a 'random' percentage increase to the mead
+                          // 3% - 46%
+                          "Modification": "Multiply",
+                          "RandomAmount": [
+                              1.12,
+                              1.43,
+                              1.05,
+                              1.29,
+                              1.37,
+                              1.18,
+                              1.46,
+                              1.23,
+                              1.09,
+                              1.31,
+                              1.41,
+                              1.07,
+                              1.26,
+                              1.34,
+                              1.14,
+                              1.48,
+                              1.02,
+                              1.21,
+                              1.39,
+                              1.06,
+                              1.27,
+                              1.44,
+                              1.11,
+                              1.32,
+                              1.08,
+                              1.25,
+                              1.35,
+                              1.03,
+                              1.16,
+                              1.49
+                          ]
+                      }]
+                  }],
+                  "DaysUntilReady": 2 // 2 Days
               }
-            ],
-            "OutputItem": [
-              {
-                "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
-                "ObjectInternalName": "Aged {0} Bear Honey Mead",
-                "ObjectDisplayName": "[LocalizedText Strings/Objects:bonghits.agedmead_name %PRESERVED_DISPLAY_NAME]",
-                "PreserveId": "DROP_IN",
-                "CopyColor": true,
-                "CopyPrice": true,
-                "CopyQuality": true, // Retain Quality
-                "PriceModifierMode": "Stack",
-                // 25% Chance to Double your Aged Mead
-                "StackModifiers": [
-                  {
-                    "Id": "RareDouble",
-                    "Condition": "RANDOM .25",
-                    "Modification": "Multiply",
-                    "Amount": 2.0
-                  }
-                ],
-                "CustomData": {
-                  "selph.ExtraMachineConfig.RequirementTags.1": "bh.stock_mead",
-                  "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 10 of any fruit, and one Bear Honey Mead"
-                },
-                "PriceModifiers": [
-                  {
-                    // Adds a 'random' raw amount to the mead
-                    "Modification": "Add",
-                    "RandomAmount": [ 
-                        4265, 
-                        3892, 
-                        2378, 
-                        4921, 
-                        3017, 
-                        4583, 
-                        2764, 
-                        3152, 
-                        4729, 
-                        2113,
-                        3567, 
-                        4936, 
-                        2894, 
-                        3221, 
-                        4148, 
-                        2419, 
-                        3897, 
-                        4782, 
-                        2675, 
-                        3058, 
-                        4293, 
-                        3786, 
-                        2174, 
-                        4951, 
-                        3662, 
-                        2839, 
-                        4498, 
-                        3097, 
-                        4625, 
-                        2306
-                    ]
-                  },
-                  {
-                    // Adds a 'random' percentage increase to the mead
-                    // 3% - 46%
-                    "Modification": "Multiply",
-                    "RandomAmount": [
-                        1.12, 
-                        1.43, 
-                        1.05, 
-                        1.29, 
-                        1.37, 
-                        1.18, 
-                        1.46, 
-                        1.23, 
-                        1.09, 
-                        1.31, 
-                        1.41, 
-                        1.07, 
-                        1.26, 
-                        1.34, 
-                        1.14, 
-                        1.48, 
-                        1.02, 
-                        1.21, 
-                        1.39, 
-                        1.06, 
-                        1.27, 
-                        1.44, 
-                        1.11, 
-                        1.32, 
-                        1.08, 
-                        1.25, 
-                        1.35, 
-                        1.03, 
-                        1.16, 
-                        1.49
-                    ]
-                  }
-                ]
-              }
-            ],
-            "DaysUntilReady": 2 // 2 Days
-          }
-        },
-        "MoveEntries": [
-          {
-            "ID": "bh.jarmeadrule",
-            "ToPosition": "Top"
-          }
-        ]
-    },
-    //
+          },
+          "MoveEntries": [{
+              "ID": "bh.jarmeadrule",
+              "ToPosition": "Top"
+          }]
+      },
+      //
       //
       //  Machine Progression System
       //  Radioactive
       //
       //
       {
-        // Bear Honey Mead +  10x Fruit -> Preserving Jar -> Flavored Bear Honey Mead
-        "Action": "EditData",
-        "Target": "Data/Machines",
-        "TargetField": [
-          "(BC)nachonline.mps_RadioactivePreservesJar",
-          "OutputRules"
-        ],
-        "Entries": {
-          "bh.jarmeadrule": {
-            "Id": "bh.jarmeadrule",
-            "Triggers": [
-              {
-                "Id": "bh.jarmeadrule_AgedMead10Input",
-                "RequiredTags": [
-                  "category_fruits"
-                ],
-                "RequiredCount": 10
+          // Bear Honey Mead +  10x Fruit -> Preserving Jar -> Flavored Bear Honey Mead
+          "Action": "EditData",
+          "Target": "Data/Machines",
+          "TargetField": ["(BC)nachonline.mps_RadioactivePreservesJar", "OutputRules"],
+          "Entries": {
+              "bh.jarmeadrule": {
+                  "Id": "bh.jarmeadrule",
+                  "Triggers": [{
+                      "Id": "bh.jarmeadrule_AgedMead10Input",
+                      "RequiredTags": ["category_fruits"],
+                      "RequiredCount": 10
+                  }],
+                  "OutputItem": [{
+                      "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
+                      "ObjectInternalName": "Aged {0} Bear Honey Mead",
+                      "ObjectDisplayName": "[LocalizedText Strings/Objects:bonghits.agedmead_name %PRESERVED_DISPLAY_NAME]",
+                      "PreserveId": "DROP_IN",
+                      "CopyColor": true,
+                      "CopyPrice": true,
+                      "CopyQuality": true, // Retain Quality
+                      "PriceModifierMode": "Stack",
+                      // 30% Chance to Double your Aged Mead
+                      "StackModifiers": [{
+                          "Id": "RareDouble",
+                          "Condition": "RANDOM .3",
+                          "Modification": "Multiply",
+                          "Amount": 2.0
+                      }],
+                      "CustomData": {
+                          "selph.ExtraMachineConfig.RequirementTags.1": "bh.stock_mead",
+                          "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 10 of any fruit, and one Bear Honey Mead"
+                      },
+                      "PriceModifiers": [{
+                          // Adds a 'random' raw amount to the mead
+                          "Modification": "Add",
+                          "RandomAmount": [
+                              4265,
+                              3892,
+                              2378,
+                              4921,
+                              3017,
+                              4583,
+                              2764,
+                              3152,
+                              4729,
+                              2113,
+                              3567,
+                              4936,
+                              2894,
+                              3221,
+                              4148,
+                              2419,
+                              3897,
+                              4782,
+                              2675,
+                              3058,
+                              4293,
+                              3786,
+                              2174,
+                              4951,
+                              3662,
+                              2839,
+                              4498,
+                              3097,
+                              4625,
+                              2306
+                          ]
+                      }, {
+                          // Adds a 'random' percentage increase to the mead
+                          // 3% - 46%
+                          "Modification": "Multiply",
+                          "RandomAmount": [
+                              1.12,
+                              1.43,
+                              1.05,
+                              1.29,
+                              1.37,
+                              1.18,
+                              1.46,
+                              1.23,
+                              1.09,
+                              1.31,
+                              1.41,
+                              1.07,
+                              1.26,
+                              1.34,
+                              1.14,
+                              1.48,
+                              1.02,
+                              1.21,
+                              1.39,
+                              1.06,
+                              1.27,
+                              1.44,
+                              1.11,
+                              1.32,
+                              1.08,
+                              1.25,
+                              1.35,
+                              1.03,
+                              1.16,
+                              1.49
+                          ]
+                      }]
+                  }],
+                  "DaysUntilReady": 2 // 2 Days
               }
-            ],
-            "OutputItem": [
-              {
-                "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
-                "ObjectInternalName": "Aged {0} Bear Honey Mead",
-                "ObjectDisplayName": "[LocalizedText Strings/Objects:bonghits.agedmead_name %PRESERVED_DISPLAY_NAME]",
-                "PreserveId": "DROP_IN",
-                "CopyColor": true,
-                "CopyPrice": true,
-                "CopyQuality": true, // Retain Quality
-                "PriceModifierMode": "Stack",
-                // 30% Chance to Double your Aged Mead
-                "StackModifiers": [
-                  {
-                    "Id": "RareDouble",
-                    "Condition": "RANDOM .3",
-                    "Modification": "Multiply",
-                    "Amount": 2.0
-                  }
-                ],
-                "CustomData": {
-                  "selph.ExtraMachineConfig.RequirementTags.1": "bh.stock_mead",
-                  "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 10 of any fruit, and one Bear Honey Mead"
-                },
-                "PriceModifiers": [
-                  {
-                    // Adds a 'random' raw amount to the mead
-                    "Modification": "Add",
-                    "RandomAmount": [ 
-                        4265, 
-                        3892, 
-                        2378, 
-                        4921, 
-                        3017, 
-                        4583, 
-                        2764, 
-                        3152, 
-                        4729, 
-                        2113,
-                        3567, 
-                        4936, 
-                        2894, 
-                        3221, 
-                        4148, 
-                        2419, 
-                        3897, 
-                        4782, 
-                        2675, 
-                        3058, 
-                        4293, 
-                        3786, 
-                        2174, 
-                        4951, 
-                        3662, 
-                        2839, 
-                        4498, 
-                        3097, 
-                        4625, 
-                        2306
-                    ]
-                  },
-                  {
-                    // Adds a 'random' percentage increase to the mead
-                    // 3% - 46%
-                    "Modification": "Multiply",
-                    "RandomAmount": [
-                        1.12, 
-                        1.43, 
-                        1.05, 
-                        1.29, 
-                        1.37, 
-                        1.18, 
-                        1.46, 
-                        1.23, 
-                        1.09, 
-                        1.31, 
-                        1.41, 
-                        1.07, 
-                        1.26, 
-                        1.34, 
-                        1.14, 
-                        1.48, 
-                        1.02, 
-                        1.21, 
-                        1.39, 
-                        1.06, 
-                        1.27, 
-                        1.44, 
-                        1.11, 
-                        1.32, 
-                        1.08, 
-                        1.25, 
-                        1.35, 
-                        1.03, 
-                        1.16, 
-                        1.49
-                    ]
-                  }
-                ]
-              }
-            ],
-            "DaysUntilReady": 2 // 2 Days
-          }
-        },
-        "MoveEntries": [
-          {
-            "ID": "bh.jarmeadrule",
-            "ToPosition": "Top"
-          }
-        ]
-    },
-    //
+          },
+          "MoveEntries": [{
+              "ID": "bh.jarmeadrule",
+              "ToPosition": "Top"
+          }]
+      },
+      //
       //
       //  Machine Progression System
       //  Prismatic
       //
       //
       {
-        // Bear Honey Mead +  10x Fruit -> Preserving Jar -> Flavored Bear Honey Mead
-        "Action": "EditData",
-        "Target": "Data/Machines",
-        "TargetField": [
-          "(BC)nachonline.mps_PrismaticPreservesJar",
-          "OutputRules"
-        ],
-        "Entries": {
-          "bh.jarmeadrule": {
-            "Id": "bh.jarmeadrule",
-            "Triggers": [
-              {
-                "Id": "bh.jarmeadrule_AgedMead10Input",
-                "RequiredTags": [
-                  "category_fruits"
-                ],
-                "RequiredCount": 10
+          // Bear Honey Mead +  10x Fruit -> Preserving Jar -> Flavored Bear Honey Mead
+          "Action": "EditData",
+          "Target": "Data/Machines",
+          "TargetField": ["(BC)nachonline.mps_PrismaticPreservesJar", "OutputRules"],
+          "Entries": {
+              "bh.jarmeadrule": {
+                  "Id": "bh.jarmeadrule",
+                  "Triggers": [{
+                      "Id": "bh.jarmeadrule_AgedMead10Input",
+                      "RequiredTags": ["category_fruits"],
+                      "RequiredCount": 10
+                  }],
+                  "OutputItem": [{
+                      "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
+                      "ObjectInternalName": "Aged {0} Bear Honey Mead",
+                      "ObjectDisplayName": "[LocalizedText Strings/Objects:bonghits.agedmead_name %PRESERVED_DISPLAY_NAME]",
+                      "PreserveId": "DROP_IN",
+                      "CopyColor": true,
+                      "CopyPrice": true,
+                      "CopyQuality": true, // Retain Quality
+                      "PriceModifierMode": "Stack",
+                      // 35% Chance to Double your Aged Mead
+                      "StackModifiers": [{
+                          "Id": "RareDouble",
+                          "Condition": "RANDOM .35",
+                          "Modification": "Multiply",
+                          "Amount": 2.0
+                      }],
+                      "CustomData": {
+                          "selph.ExtraMachineConfig.RequirementTags.1": "bh.stock_mead",
+                          "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 10 of any fruit, and one Bear Honey Mead"
+                      },
+                      "PriceModifiers": [{
+                          // Adds a 'random' raw amount to the mead
+                          "Modification": "Add",
+                          "RandomAmount": [
+                              4265,
+                              3892,
+                              2378,
+                              4921,
+                              3017,
+                              4583,
+                              2764,
+                              3152,
+                              4729,
+                              2113,
+                              3567,
+                              4936,
+                              2894,
+                              3221,
+                              4148,
+                              2419,
+                              3897,
+                              4782,
+                              2675,
+                              3058,
+                              4293,
+                              3786,
+                              2174,
+                              4951,
+                              3662,
+                              2839,
+                              4498,
+                              3097,
+                              4625,
+                              2306
+                          ]
+                      }, {
+                          // Adds a 'random' percentage increase to the mead
+                          // 3% - 46%
+                          "Modification": "Multiply",
+                          "RandomAmount": [
+                              1.12,
+                              1.43,
+                              1.05,
+                              1.29,
+                              1.37,
+                              1.18,
+                              1.46,
+                              1.23,
+                              1.09,
+                              1.31,
+                              1.41,
+                              1.07,
+                              1.26,
+                              1.34,
+                              1.14,
+                              1.48,
+                              1.02,
+                              1.21,
+                              1.39,
+                              1.06,
+                              1.27,
+                              1.44,
+                              1.11,
+                              1.32,
+                              1.08,
+                              1.25,
+                              1.35,
+                              1.03,
+                              1.16,
+                              1.49
+                          ]
+                      }]
+                  }],
+                  "DaysUntilReady": 2 // 2 Days
               }
-            ],
-            "OutputItem": [
-              {
-                "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
-                "ObjectInternalName": "Aged {0} Bear Honey Mead",
-                "ObjectDisplayName": "[LocalizedText Strings/Objects:bonghits.agedmead_name %PRESERVED_DISPLAY_NAME]",
-                "PreserveId": "DROP_IN",
-                "CopyColor": true,
-                "CopyPrice": true,
-                "CopyQuality": true, // Retain Quality
-                "PriceModifierMode": "Stack",
-                // 35% Chance to Double your Aged Mead
-                "StackModifiers": [
-                  {
-                    "Id": "RareDouble",
-                    "Condition": "RANDOM .35",
-                    "Modification": "Multiply",
-                    "Amount": 2.0
-                  }
-                ],
-                "CustomData": {
-                  "selph.ExtraMachineConfig.RequirementTags.1": "bh.stock_mead",
-                  "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 10 of any fruit, and one Bear Honey Mead"
-                },
-                "PriceModifiers": [
-                  {
-                    // Adds a 'random' raw amount to the mead
-                    "Modification": "Add",
-                    "RandomAmount": [ 
-                        4265, 
-                        3892, 
-                        2378, 
-                        4921, 
-                        3017, 
-                        4583, 
-                        2764, 
-                        3152, 
-                        4729, 
-                        2113,
-                        3567, 
-                        4936, 
-                        2894, 
-                        3221, 
-                        4148, 
-                        2419, 
-                        3897, 
-                        4782, 
-                        2675, 
-                        3058, 
-                        4293, 
-                        3786, 
-                        2174, 
-                        4951, 
-                        3662, 
-                        2839, 
-                        4498, 
-                        3097, 
-                        4625, 
-                        2306
-                    ]
-                  },
-                  {
-                    // Adds a 'random' percentage increase to the mead
-                    // 3% - 46%
-                    "Modification": "Multiply",
-                    "RandomAmount": [
-                        1.12, 
-                        1.43, 
-                        1.05, 
-                        1.29, 
-                        1.37, 
-                        1.18, 
-                        1.46, 
-                        1.23, 
-                        1.09, 
-                        1.31, 
-                        1.41, 
-                        1.07, 
-                        1.26, 
-                        1.34, 
-                        1.14, 
-                        1.48, 
-                        1.02, 
-                        1.21, 
-                        1.39, 
-                        1.06, 
-                        1.27, 
-                        1.44, 
-                        1.11, 
-                        1.32, 
-                        1.08, 
-                        1.25, 
-                        1.35, 
-                        1.03, 
-                        1.16, 
-                        1.49
-                    ]
-                  }
-                ]
-              }
-            ],
-            "DaysUntilReady": 2 // 2 Days
-          }
-        },
-        "MoveEntries": [
-          {
-            "ID": "bh.jarmeadrule",
-            "ToPosition": "Top"
-          }
-        ]
-    }
+          },
+          "MoveEntries": [{
+              "ID": "bh.jarmeadrule",
+              "ToPosition": "Top"
+          }]
+      }
   ]
 }
