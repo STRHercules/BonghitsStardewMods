@@ -1,0 +1,13 @@
+{
+    "bonghits.agedmead_name": "Aged {0} Honey Mead",
+    "bonghits.mead_name": "{0} Honey Mead",
+    "message.invalidCount": "Need 10 fruit, one Honey",
+    "meadKeg.name": "Artisanal Mead Keg",
+    "meadKeg.description": "Used to create artisanal meads from various fruits and honey.",
+    "config.section.behavior.name": "Behavior",
+    "config.CopyQualitySetting.name": "Copy item quality",
+    "config.CopyQualitySetting.description": "Enabled: The produced item has the same quality as the input item. \n\nAuto (default): Like Enabled but only when specific mods are installed. \n\nDisabled: Disable this feature.",
+    "config.CopyQualitySetting.values.disabled": "Disabled",
+    "config.CopyQualitySetting.values.enabled": "Enabled",
+    "config.CopyQualitySetting.values.auto": "Auto"
+}

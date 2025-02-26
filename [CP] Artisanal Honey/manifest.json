@@ -1,0 +1,19 @@
+{
+    "Name": "[CP] Artisan Honey",
+    "Author": "Major Bonghits",
+    "Version": "1.0",
+    "Description": "Brew your own artisanal meads with honey and fruit!",
+    "UniqueID": "bonghits.cp.ArtisanHoney",
+    "UpdateKeys": [
+        "Nexus:31786"
+    ],
+    "Dependencies": [
+        {
+            "UniqueID": "selph.ExtraMachineConfig",
+            "IsRequired": true
+        }
+    ],
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    }
+}

@@ -1,0 +1,151 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/CraftingRecipes",
+            "Entries": {
+                "{{ModId}}_MeadKeg": "(BC)12 1 388 125 725 2 726 2/Home/bh.meadkeg/true/Farming 8/" // 1 Keg, 125 Wood, 2 Pine Tar, 2 Oak Resin
+            },
+            "LogName": "Mead Keg Recipe Definition"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/BigCraftables",
+            "Entries": {
+                "{{ModId}}_MeadKeg": {
+                    "Name": "{{ModId}}_MeadKeg",
+                    "DisplayName": "{{i18n: meadKeg.name}}",
+                    "Description": "{{i18n: meadKeg.description}}",
+                    "Price": 12500,
+                    "Fragility": 0,
+                    "CanBePlacedOutdoors": true,
+                    "CanBePlacedIndoors": true,
+                    "IsLamp": false,
+                    "Texture": "bonghits.BearHoneyMead/Machines",
+                    "SpriteIndex": 0,
+                    "ContextTags": null,
+                    "CustomFields": null
+                }
+            },
+            "LogName": "Mead Keg BC definition"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "Entries": {
+                "(BC){{ModId}}_MeadKeg": {
+                    "HasInput": false,
+                    "HasOutput": false,
+                    "InteractMethod": null,
+                    "OutputRules": [
+                        {
+                            "Id": "Default_Honey",
+                            "Triggers": [
+                                {
+                                    "Id": "ItemPlacedInMachine",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O)340",
+                                    "RequiredTags": null,
+                                    "RequiredCount": 10,
+                                    "Condition": null
+                                }
+                            ],
+                            "UseFirstValidOutput": false,
+                            "OutputItem": [
+                                {
+                                    "CustomData": null,
+                                    "OutputMethod": null,
+                                    "CopyColor": false,
+                                    "CopyPrice": false,
+                                    "CopyQuality": "{{CopyQualityEnabled}}",
+                                    "PreserveType": null,
+                                    "PreserveId": "DROP_IN_PRESERVE",
+                                    "IncrementMachineParentSheetIndex": 0,
+                                    "PriceModifiers": null,
+                                    "PriceModifierMode": "Stack",
+                                    "StackModifiers": [
+                                        {
+                                            "Id": "RareDouble",
+                                            "Condition": "RANDOM .05",
+                                            "Modification": "Multiply",
+                                            "Amount": 2.0
+                                        }
+                                    ],
+                                    "Condition": null,
+                                    "Id": "(O)bonghits.Cp_BearHoneyMead",
+                                    "ItemId": "(O)bonghits.Cp_BearHoneyMead",
+                                    "RandomItemId": null,
+                                    "MaxItems": null,
+                                    "MinStack": 1,
+                                    "MaxStack": 1,
+                                    "Quality": -1,
+                                    "ObjectInternalName": "PRESERVE_ID_0 Honey Mead",
+                                    "ObjectDisplayName": "[LocalizedText Strings/Objects:bonghits.mead_name %PRESERVED_DISPLAY_NAME]",
+                                    
+                                    "ToolUpgradeLevel": -1,
+                                    "IsRecipe": false,
+                                    "StackModifierMode": "Stack",
+                                    "QualityModifiers": null,
+                                    "QualityModifierMode": "Stack",
+                                    "ModData": {
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.1": "DROP_IN_PRESERVE_1",
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.2": "DROP_IN",
+                                    },
+                                    "PerItemCondition": null
+                                }
+                            ],
+                            "MinutesUntilReady": 1,
+                            "DaysUntilReady": -1,
+                            "InvalidCountMessage": "Requires 10 Honey",
+                            "RecalculateOnCollect": false
+                        },
+                    ],
+                    "AdditionalConsumedItems": null,
+                    "PreventTimePass": null,
+                    "ReadyTimeModifiers": null,
+                    "ReadyTimeModifierMode": "Stack",
+                    "InvalidItemMessage": null,
+                    "InvalidItemMessageCondition": null,
+                    "InvalidCountMessage": "{{i18n: message.invalidCount}}",
+                    "LoadEffects": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "Sounds": [
+                                {
+                                    "Id": "Ship",
+                                    "Delay": 0
+                                },
+                                {
+                                    "Id": "bubbles",
+                                    "Delay": 0
+                                }
+                            ]
+                        }
+                    ],
+                    "WorkingEffectChance": 0.33,
+                    "AllowLoadWhenFull": false,
+                    "WobbleWhileWorking": true,
+                    "LightWhileWorking": null,
+                    "ShowNextIndexWhileWorking": false,
+                    "ShowNextIndexWhenReady": false,
+                    "AllowFairyDust": true,
+                    "IsIncubator": false,
+                    "ClearContentsOvernightCondition": null,
+                    "StatsToIncrementWhenLoaded": null,
+                    "StatsToIncrementWhenHarvested": [
+                        {
+                            "RequiredItemId": null,
+                            "RequiredTags": null,
+                            "StatName": "BeveragesMade"
+                        }
+                    ],
+                    "ExperienceGainOnHarvest": null,
+                    "CustomFields": null
+                }
+            },
+            "LogName": "Mead Keg machine definition"
+        }
+    ]
+}
