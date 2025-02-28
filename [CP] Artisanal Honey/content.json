@@ -2,16 +2,40 @@
     "$schema": "https://smapi.io/schemas/content-patcher.json",
     "Format": "2.5.0",
     "ConfigSchema": {
+        "SVESupportSetting": {
+            "AllowValues": "disabled, enabled, auto",
+            "Default": "auto",
+            "Section": "SVE Integration"
+        },
         "CopyQualitySetting": {
             "AllowValues": "disabled, enabled, auto",
             "Default": "auto",
-            "Section": "behavior"
-        }
+            "Section": "Behavior"
+        }   
     },
     "DynamicTokens": [
         {
             "Name": "CopyQualityEnabled",
             "Value": false
+        },
+        {
+            "Name": "SVESupportEnabled",
+            "Value": false
+        },
+        {
+            "Name": "SVESupportEnabled",
+            "Value": true,
+            "When": {
+                "SVESupportSetting": "auto",
+                "HasMod": "FlashShifter.StardewValleyExpandedCP"
+            }
+        },
+        {
+            "Name": "SVESupportEnabled",
+            "Value": true,
+            "When": {
+                "SVESupportSetting": "enabled"
+            }
         },
         {
             "Name": "CopyQualityEnabled",

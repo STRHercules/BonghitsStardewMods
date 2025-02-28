@@ -1,6 +1,20 @@
 {
     "$schema": "https://smapi.io/schemas/content-patcher.json",
     "Changes": [
+        // --------------------------------------------------------
+        //
+        //
+        //
+        //
+        //      Custom Keg Operations
+        //
+        //
+        //
+        //
+        //
+        // --------------------------------------------------------
+        //  Non - SVE Recipe
+        //
         {
             "Action": "EditData",
             "Target": "Data/Machines",
@@ -22,7 +36,7 @@
                     ],
                     "OutputItem": [
                         {
-                            "ItemId": "bonghits.Cp_BearHoneyMead",
+                            "ItemId": "bonghits.Cp_HoneyMead",
                             "ObjectInternalName": "PRESERVE_ID_2 and PRESERVE_ID_1 Honey Mead",
                             "ObjectDisplayName": "%PRESERVED_DISPLAY_NAME and %EXTRA_PRESERVED_DISPLAY_NAME_1 Mead",
                             "PreserveId": "DROP_IN",
@@ -48,37 +62,30 @@
                             "PriceModifiers": [
                                 {
                                     "Modification": "Multiply", // Adds a 'random' percentage increase to the mead
-                                    "RandomAmount": [ // 3% - 46%
-                                        1.12,
-                                        1.43,
-                                        1.05,
-                                        1.29,
-                                        1.37,
-                                        1.18,
-                                        1.46,
-                                        1.23,
-                                        1.09,
-                                        1.31,
-                                        1.41,
-                                        1.07,
-                                        1.26,
-                                        1.34,
-                                        1.14,
-                                        1.48,
-                                        1.02,
-                                        1.21,
-                                        1.39,
-                                        1.06,
-                                        1.27,
-                                        1.44,
-                                        1.11,
-                                        1.32,
-                                        1.08,
-                                        1.25,
-                                        1.35,
-                                        1.03,
-                                        1.16,
-                                        1.49
+                                    "RandomAmount": [ // 5% - 25%
+                                        1.05, 1.07, 1.09, 1.11, 1.13, 1.15, 1.17, 1.19, 1.21, 1.23, 1.25, 1.06, 1.08, 1.10, 1.12, 1.14, 1.16, 1.18, 1.20, 1.22
+
+                                    ]
+                                },
+                                {
+                                    // Adds a 'random' raw amount to the mead
+                                    /*
+                                    100–290: 15 numbers
+                                    290–480: 12 numbers
+                                    480–670: 8 numbers
+                                    670–860: 16 numbers
+                                    860–1050: 13 numbers
+                                    1050–1240: 6 numbers
+                                    1240–1430: 11 numbers
+                                    1430–1620: 6 numbers
+                                    1620–1810: 5 numbers
+                                    1810–2000: 8 numbers
+                                    This shows a clear bias towards the lower numbers, with more numbers concentrated below 1000.
+                                    */
+                                    
+                                    "Modification": "Add",
+                                    "RandomAmount": [
+                                        902, 1407, 994, 260, 830, 373, 654, 1342, 1864, 1142, 1023, 185, 540, 697, 160, 1887, 871, 538, 1290, 1772, 709, 222, 1617, 1591, 1352, 1814, 813, 880, 405, 730, 275, 1298, 1621, 117, 864, 624, 689, 1757, 1934, 1159, 914, 121, 677, 739, 929, 316, 379, 257, 956, 797, 1820, 803, 1235, 947, 1443, 557, 228, 1088, 282, 1338, 1236, 900, 1855, 431, 999, 1368, 251, 123, 437, 359, 1166, 862, 483, 734, 650, 424, 397, 752, 409, 277, 1394, 1242, 856, 468, 1614, 1761, 1600, 759, 717, 269, 1863, 1286, 649, 1438, 1425, 1660, 1980, 464, 840, 259
                                     ]
                                 }
                             ]
@@ -86,7 +93,9 @@
                     ],
                     "MinutesUntilReady": 1
                 },
+                /*
                 "bh.honey.mead_make2": {
+                    "Id": "bh.honey.mead_make2",
                     "Triggers": [
                         {
                             "Id": "bh.honeyTrigger",
@@ -122,44 +131,38 @@
                             "PriceModifiers": [
                                 {
                                     "Modification": "Multiply", // Adds a 'random' percentage increase to the mead
-                                    "RandomAmount": [ // 3% - 46%
-                                        1.12,
-                                        1.43,
-                                        1.05,
-                                        1.29,
-                                        1.37,
-                                        1.18,
-                                        1.46,
-                                        1.23,
-                                        1.09,
-                                        1.31,
-                                        1.41,
-                                        1.07,
-                                        1.26,
-                                        1.34,
-                                        1.14,
-                                        1.48,
-                                        1.02,
-                                        1.21,
-                                        1.39,
-                                        1.06,
-                                        1.27,
-                                        1.44,
-                                        1.11,
-                                        1.32,
-                                        1.08,
-                                        1.25,
-                                        1.35,
-                                        1.03,
-                                        1.16,
-                                        1.49
+                                    "RandomAmount": [ // 5% - 25%
+                                        1.05, 1.07, 1.09, 1.11, 1.13, 1.15, 1.17, 1.19, 1.21, 1.23, 1.25, 1.06, 1.08, 1.10, 1.12, 1.14, 1.16, 1.18, 1.20, 1.22
+
+                                    ]
+                                },
+                                {
+                                    // Adds a 'random' raw amount to the mead
+                                    /*
+                                    100–290: 15 numbers
+                                    290–480: 12 numbers
+                                    480–670: 8 numbers
+                                    670–860: 16 numbers
+                                    860–1050: 13 numbers
+                                    1050–1240: 6 numbers
+                                    1240–1430: 11 numbers
+                                    1430–1620: 6 numbers
+                                    1620–1810: 5 numbers
+                                    1810–2000: 8 numbers
+                                    This shows a clear bias towards the lower numbers, with more numbers concentrated below 1000.
+                                    
+                                    
+                                    "Modification": "Add",
+                                    "RandomAmount": [
+                                        902, 1407, 994, 260, 830, 373, 654, 1342, 1864, 1142, 1023, 185, 540, 697, 160, 1887, 871, 538, 1290, 1772, 709, 222, 1617, 1591, 1352, 1814, 813, 880, 405, 730, 275, 1298, 1621, 117, 864, 624, 689, 1757, 1934, 1159, 914, 121, 677, 739, 929, 316, 379, 257, 956, 797, 1820, 803, 1235, 947, 1443, 557, 228, 1088, 282, 1338, 1236, 900, 1855, 431, 999, 1368, 251, 123, 437, 359, 1166, 862, 483, 734, 650, 424, 397, 752, 409, 277, 1394, 1242, 856, 468, 1614, 1761, 1600, 759, 717, 269, 1863, 1286, 649, 1438, 1425, 1660, 1980, 464, 840, 259
                                     ]
                                 }
                             ]
                         }
                     ],
                     "MinutesUntilReady": 1
-                }
+                }*/
+                
             },
             "MoveEntries": [
                 {
@@ -168,7 +171,18 @@
                 }
             ]
         },
+        // --------------------------------------------------------
         //
+        //
+        //
+        //
+        //
+        //  Non-SVE Machine Progression System Kegs
+        //
+        //
+        //
+        //
+        // --------------------------------------------------------
         //  Gold Keg
         //  Machine Progression System Support
         //
@@ -180,28 +194,84 @@
                 "OutputRules"
             ],
             "Entries": {
-                // Jar Honey -> Keg -> Bear Honey Mead
-                "bearhoneymake": {
+                "bh.honeymead_make_gold": {
+                    "Id": "bh.honeymead_make_gold",
                     "Triggers": [
                         {
-                            "Id": "bearhoneyTrigger",
+                            "Id": "bh.honeyTrigger",
                             "Trigger": "ItemPlacedInMachine",
                             "RequiredTags": [
-                                "honey_item"
-                            ], // Any Honey Item
-                            "RequiredCount": "1" // Only Need 1 Jar of Honey
+                                "category_fruits"
+                            ],
+                            "RequiredCount": "10"
                         }
                     ],
                     "OutputItem": [
                         {
-                            "Id": "bonghits.Cp_BearHoneyMead",
-                            "ItemId": "bonghits.Cp_BearHoneyMead",
+                            "ItemId": "bonghits.Cp_HoneyMead",
+                            "ObjectInternalName": "PRESERVE_ID_2 and PRESERVE_ID_1 Honey Mead",
+                            "ObjectDisplayName": "%PRESERVED_DISPLAY_NAME and %EXTRA_PRESERVED_DISPLAY_NAME_1 Mead",
+                            "PreserveId": "DROP_IN",
+                            "PriceModifierMode": "Stack",
                             "CopyQuality": "{{CopyQualityEnabled}}",
+                            "CopyColor": true,
+                            "StackModifiers": [
+                                {
+                                    "Id": "RareDouble",
+                                    "Condition": "RANDOM .05",
+                                    "Modification": "Multiply",
+                                    "Amount": 2.0
+                                }
+                            ],
+                            "ModData": {
+                                "selph.ExtraMachineConfig.ExtraPreserveId.1": "DROP_IN_PRESERVE_1",
+                                "selph.ExtraMachineConfig.ExtraPreserveId.2": "DROP_IN",
+                            },
+                            "CustomData": {
+                                "selph.ExtraMachineConfig.RequirementId.1": "340",
+                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires One Honey, 10 Fruit"
+                            },
+                            "PriceModifiers": [
+                                {
+                                    "Modification": "Multiply", // Adds a 'random' percentage increase to the mead
+                                    "RandomAmount": [ // 5% - 25%
+                                        1.05, 1.07, 1.09, 1.11, 1.13, 1.15, 1.17, 1.19, 1.21, 1.23, 1.25, 1.06, 1.08, 1.10, 1.12, 1.14, 1.16, 1.18, 1.20, 1.22
+
+                                    ]
+                                },
+                                {
+                                    // Adds a 'random' raw amount to the mead
+                                    /*
+                                    100–290: 15 numbers
+                                    290–480: 12 numbers
+                                    480–670: 8 numbers
+                                    670–860: 16 numbers
+                                    860–1050: 13 numbers
+                                    1050–1240: 6 numbers
+                                    1240–1430: 11 numbers
+                                    1430–1620: 6 numbers
+                                    1620–1810: 5 numbers
+                                    1810–2000: 8 numbers
+                                    This shows a clear bias towards the lower numbers, with more numbers concentrated below 1000.
+                                    */
+                                    
+                                    "Modification": "Add",
+                                    "RandomAmount": [
+                                        902, 1407, 994, 260, 830, 373, 654, 1342, 1864, 1142, 1023, 185, 540, 697, 160, 1887, 871, 538, 1290, 1772, 709, 222, 1617, 1591, 1352, 1814, 813, 880, 405, 730, 275, 1298, 1621, 117, 864, 624, 689, 1757, 1934, 1159, 914, 121, 677, 739, 929, 316, 379, 257, 956, 797, 1820, 803, 1235, 947, 1443, 557, 228, 1088, 282, 1338, 1236, 900, 1855, 431, 999, 1368, 251, 123, 437, 359, 1166, 862, 483, 734, 650, 424, 397, 752, 409, 277, 1394, 1242, 856, 468, 1614, 1761, 1600, 759, 717, 269, 1863, 1286, 649, 1438, 1425, 1660, 1980, 464, 840, 259
+                                    ]
+                                }
+                            ]
                         }
                     ],
-                    "MinutesUntilReady": 432 // 7.2 Hours
+                    "MinutesUntilReady": 1
                 }
-            }
+            },
+            "MoveEntries": [
+                {
+                    "ID": "bh.honeymead_make_gold",
+                    "ToPosition": "Top"
+                }
+            ]
         },
         //
         //  Diamond Keg
@@ -215,28 +285,84 @@
                 "OutputRules"
             ],
             "Entries": {
-                // Jar Honey -> Keg -> Bear Honey Mead
-                "bearhoneymake": {
+                "bh.honeymead_make_gold": {
+                    "Id": "bh.honeymead_make_gold",
                     "Triggers": [
                         {
-                            "Id": "bearhoneyTrigger",
+                            "Id": "bh.honeyTrigger",
                             "Trigger": "ItemPlacedInMachine",
                             "RequiredTags": [
-                                "honey_item"
-                            ], // Any Honey Item
-                            "RequiredCount": "1" // Only Need 1 Jar of Honey
+                                "category_fruits"
+                            ],
+                            "RequiredCount": "10"
                         }
                     ],
                     "OutputItem": [
                         {
-                            "Id": "bonghits.Cp_BearHoneyMead",
-                            "ItemId": "bonghits.Cp_BearHoneyMead",
+                            "ItemId": "bonghits.Cp_HoneyMead",
+                            "ObjectInternalName": "PRESERVE_ID_2 and PRESERVE_ID_1 Honey Mead",
+                            "ObjectDisplayName": "%PRESERVED_DISPLAY_NAME and %EXTRA_PRESERVED_DISPLAY_NAME_1 Mead",
+                            "PreserveId": "DROP_IN",
+                            "PriceModifierMode": "Stack",
                             "CopyQuality": "{{CopyQualityEnabled}}",
+                            "CopyColor": true,
+                            "StackModifiers": [
+                                {
+                                    "Id": "RareDouble",
+                                    "Condition": "RANDOM .05",
+                                    "Modification": "Multiply",
+                                    "Amount": 2.0
+                                }
+                            ],
+                            "ModData": {
+                                "selph.ExtraMachineConfig.ExtraPreserveId.1": "DROP_IN_PRESERVE_1",
+                                "selph.ExtraMachineConfig.ExtraPreserveId.2": "DROP_IN",
+                            },
+                            "CustomData": {
+                                "selph.ExtraMachineConfig.RequirementId.1": "340",
+                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires One Honey, 10 Fruit"
+                            },
+                            "PriceModifiers": [
+                                {
+                                    "Modification": "Multiply", // Adds a 'random' percentage increase to the mead
+                                    "RandomAmount": [ // 5% - 25%
+                                        1.05, 1.07, 1.09, 1.11, 1.13, 1.15, 1.17, 1.19, 1.21, 1.23, 1.25, 1.06, 1.08, 1.10, 1.12, 1.14, 1.16, 1.18, 1.20, 1.22
+
+                                    ]
+                                },
+                                {
+                                    // Adds a 'random' raw amount to the mead
+                                    /*
+                                    100–290: 15 numbers
+                                    290–480: 12 numbers
+                                    480–670: 8 numbers
+                                    670–860: 16 numbers
+                                    860–1050: 13 numbers
+                                    1050–1240: 6 numbers
+                                    1240–1430: 11 numbers
+                                    1430–1620: 6 numbers
+                                    1620–1810: 5 numbers
+                                    1810–2000: 8 numbers
+                                    This shows a clear bias towards the lower numbers, with more numbers concentrated below 1000.
+                                    */
+                                    
+                                    "Modification": "Add",
+                                    "RandomAmount": [
+                                        902, 1407, 994, 260, 830, 373, 654, 1342, 1864, 1142, 1023, 185, 540, 697, 160, 1887, 871, 538, 1290, 1772, 709, 222, 1617, 1591, 1352, 1814, 813, 880, 405, 730, 275, 1298, 1621, 117, 864, 624, 689, 1757, 1934, 1159, 914, 121, 677, 739, 929, 316, 379, 257, 956, 797, 1820, 803, 1235, 947, 1443, 557, 228, 1088, 282, 1338, 1236, 900, 1855, 431, 999, 1368, 251, 123, 437, 359, 1166, 862, 483, 734, 650, 424, 397, 752, 409, 277, 1394, 1242, 856, 468, 1614, 1761, 1600, 759, 717, 269, 1863, 1286, 649, 1438, 1425, 1660, 1980, 464, 840, 259
+                                    ]
+                                }
+                            ]
                         }
                     ],
-                    "MinutesUntilReady": 389 // 6.4 Hours
+                    "MinutesUntilReady": 1
                 }
-            }
+            },
+            "MoveEntries": [
+                {
+                    "ID": "bh.honeymead_make_gold",
+                    "ToPosition": "Top"
+                }
+            ]
         },
         //
         //  Iridium Keg
@@ -250,28 +376,84 @@
                 "OutputRules"
             ],
             "Entries": {
-                // Jar Honey -> Keg -> Bear Honey Mead
-                "bearhoneymake": {
+                "bh.honeymead_make_gold": {
+                    "Id": "bh.honeymead_make_gold",
                     "Triggers": [
                         {
-                            "Id": "bearhoneyTrigger",
+                            "Id": "bh.honeyTrigger",
                             "Trigger": "ItemPlacedInMachine",
                             "RequiredTags": [
-                                "honey_item"
-                            ], // Any Honey Item
-                            "RequiredCount": "1" // Only Need 1 Jar of Honey
+                                "category_fruits"
+                            ],
+                            "RequiredCount": "10"
                         }
                     ],
                     "OutputItem": [
                         {
-                            "Id": "bonghits.Cp_BearHoneyMead",
-                            "ItemId": "bonghits.Cp_BearHoneyMead",
-                            "CopyQuality": "{{CopyQualityEnabled}}" // Retain Quality
+                            "ItemId": "bonghits.Cp_HoneyMead",
+                            "ObjectInternalName": "PRESERVE_ID_2 and PRESERVE_ID_1 Honey Mead",
+                            "ObjectDisplayName": "%PRESERVED_DISPLAY_NAME and %EXTRA_PRESERVED_DISPLAY_NAME_1 Mead",
+                            "PreserveId": "DROP_IN",
+                            "PriceModifierMode": "Stack",
+                            "CopyQuality": "{{CopyQualityEnabled}}",
+                            "CopyColor": true,
+                            "StackModifiers": [
+                                {
+                                    "Id": "RareDouble",
+                                    "Condition": "RANDOM .05",
+                                    "Modification": "Multiply",
+                                    "Amount": 2.0
+                                }
+                            ],
+                            "ModData": {
+                                "selph.ExtraMachineConfig.ExtraPreserveId.1": "DROP_IN_PRESERVE_1",
+                                "selph.ExtraMachineConfig.ExtraPreserveId.2": "DROP_IN",
+                            },
+                            "CustomData": {
+                                "selph.ExtraMachineConfig.RequirementId.1": "340",
+                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires One Honey, 10 Fruit"
+                            },
+                            "PriceModifiers": [
+                                {
+                                    "Modification": "Multiply", // Adds a 'random' percentage increase to the mead
+                                    "RandomAmount": [ // 5% - 25%
+                                        1.05, 1.07, 1.09, 1.11, 1.13, 1.15, 1.17, 1.19, 1.21, 1.23, 1.25, 1.06, 1.08, 1.10, 1.12, 1.14, 1.16, 1.18, 1.20, 1.22
+
+                                    ]
+                                },
+                                {
+                                    // Adds a 'random' raw amount to the mead
+                                    /*
+                                    100–290: 15 numbers
+                                    290–480: 12 numbers
+                                    480–670: 8 numbers
+                                    670–860: 16 numbers
+                                    860–1050: 13 numbers
+                                    1050–1240: 6 numbers
+                                    1240–1430: 11 numbers
+                                    1430–1620: 6 numbers
+                                    1620–1810: 5 numbers
+                                    1810–2000: 8 numbers
+                                    This shows a clear bias towards the lower numbers, with more numbers concentrated below 1000.
+                                    */
+                                    
+                                    "Modification": "Add",
+                                    "RandomAmount": [
+                                        902, 1407, 994, 260, 830, 373, 654, 1342, 1864, 1142, 1023, 185, 540, 697, 160, 1887, 871, 538, 1290, 1772, 709, 222, 1617, 1591, 1352, 1814, 813, 880, 405, 730, 275, 1298, 1621, 117, 864, 624, 689, 1757, 1934, 1159, 914, 121, 677, 739, 929, 316, 379, 257, 956, 797, 1820, 803, 1235, 947, 1443, 557, 228, 1088, 282, 1338, 1236, 900, 1855, 431, 999, 1368, 251, 123, 437, 359, 1166, 862, 483, 734, 650, 424, 397, 752, 409, 277, 1394, 1242, 856, 468, 1614, 1761, 1600, 759, 717, 269, 1863, 1286, 649, 1438, 1425, 1660, 1980, 464, 840, 259
+                                    ]
+                                }
+                            ]
                         }
                     ],
-                    "MinutesUntilReady": 350 // 5.8 Hours
+                    "MinutesUntilReady": 1
                 }
-            }
+            },
+            "MoveEntries": [
+                {
+                    "ID": "bh.honeymead_make_gold",
+                    "ToPosition": "Top"
+                }
+            ]
         },
         //
         //  Radioactive Keg
@@ -285,28 +467,84 @@
                 "OutputRules"
             ],
             "Entries": {
-                // Jar Honey -> Keg -> Bear Honey Mead
-                "bearhoneymake": {
+                "bh.honeymead_make_gold": {
+                    "Id": "bh.honeymead_make_gold",
                     "Triggers": [
                         {
-                            "Id": "bearhoneyTrigger",
+                            "Id": "bh.honeyTrigger",
                             "Trigger": "ItemPlacedInMachine",
                             "RequiredTags": [
-                                "honey_item"
-                            ], // Any Honey Item
-                            "RequiredCount": "1" // Only Need 1 Jar of Honey
+                                "category_fruits"
+                            ],
+                            "RequiredCount": "10"
                         }
                     ],
                     "OutputItem": [
                         {
-                            "Id": "bonghits.Cp_BearHoneyMead",
-                            "ItemId": "bonghits.Cp_BearHoneyMead",
-                            "CopyQuality": "{{CopyQualityEnabled}}" // Retain Quality
+                            "ItemId": "bonghits.Cp_HoneyMead",
+                            "ObjectInternalName": "PRESERVE_ID_2 and PRESERVE_ID_1 Honey Mead",
+                            "ObjectDisplayName": "%PRESERVED_DISPLAY_NAME and %EXTRA_PRESERVED_DISPLAY_NAME_1 Mead",
+                            "PreserveId": "DROP_IN",
+                            "PriceModifierMode": "Stack",
+                            "CopyQuality": "{{CopyQualityEnabled}}",
+                            "CopyColor": true,
+                            "StackModifiers": [
+                                {
+                                    "Id": "RareDouble",
+                                    "Condition": "RANDOM .05",
+                                    "Modification": "Multiply",
+                                    "Amount": 2.0
+                                }
+                            ],
+                            "ModData": {
+                                "selph.ExtraMachineConfig.ExtraPreserveId.1": "DROP_IN_PRESERVE_1",
+                                "selph.ExtraMachineConfig.ExtraPreserveId.2": "DROP_IN",
+                            },
+                            "CustomData": {
+                                "selph.ExtraMachineConfig.RequirementId.1": "340",
+                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires One Honey, 10 Fruit"
+                            },
+                            "PriceModifiers": [
+                                {
+                                    "Modification": "Multiply", // Adds a 'random' percentage increase to the mead
+                                    "RandomAmount": [ // 5% - 25%
+                                        1.05, 1.07, 1.09, 1.11, 1.13, 1.15, 1.17, 1.19, 1.21, 1.23, 1.25, 1.06, 1.08, 1.10, 1.12, 1.14, 1.16, 1.18, 1.20, 1.22
+
+                                    ]
+                                },
+                                {
+                                    // Adds a 'random' raw amount to the mead
+                                    /*
+                                    100–290: 15 numbers
+                                    290–480: 12 numbers
+                                    480–670: 8 numbers
+                                    670–860: 16 numbers
+                                    860–1050: 13 numbers
+                                    1050–1240: 6 numbers
+                                    1240–1430: 11 numbers
+                                    1430–1620: 6 numbers
+                                    1620–1810: 5 numbers
+                                    1810–2000: 8 numbers
+                                    This shows a clear bias towards the lower numbers, with more numbers concentrated below 1000.
+                                    */
+                                    
+                                    "Modification": "Add",
+                                    "RandomAmount": [
+                                        902, 1407, 994, 260, 830, 373, 654, 1342, 1864, 1142, 1023, 185, 540, 697, 160, 1887, 871, 538, 1290, 1772, 709, 222, 1617, 1591, 1352, 1814, 813, 880, 405, 730, 275, 1298, 1621, 117, 864, 624, 689, 1757, 1934, 1159, 914, 121, 677, 739, 929, 316, 379, 257, 956, 797, 1820, 803, 1235, 947, 1443, 557, 228, 1088, 282, 1338, 1236, 900, 1855, 431, 999, 1368, 251, 123, 437, 359, 1166, 862, 483, 734, 650, 424, 397, 752, 409, 277, 1394, 1242, 856, 468, 1614, 1761, 1600, 759, 717, 269, 1863, 1286, 649, 1438, 1425, 1660, 1980, 464, 840, 259
+                                    ]
+                                }
+                            ]
                         }
                     ],
-                    "MinutesUntilReady": 315 // 5.25 Hours
+                    "MinutesUntilReady": 1
                 }
-            }
+            },
+            "MoveEntries": [
+                {
+                    "ID": "bh.honeymead_make_gold",
+                    "ToPosition": "Top"
+                }
+            ]
         },
         //
         //  Prismatic Keg
@@ -320,32 +558,99 @@
                 "OutputRules"
             ],
             "Entries": {
-                // Jar Honey -> Keg -> Bear Honey Mead
-                "bearhoneymake": {
+                "bh.honeymead_make_gold": {
+                    "Id": "bh.honeymead_make_gold",
                     "Triggers": [
                         {
-                            "Id": "bearhoneyTrigger",
+                            "Id": "bh.honeyTrigger",
                             "Trigger": "ItemPlacedInMachine",
                             "RequiredTags": [
-                                "honey_item"
-                            ], // Any Honey Item
-                            "RequiredCount": "1" // Only Need 1 Jar of Honey
+                                "category_fruits"
+                            ],
+                            "RequiredCount": "10"
                         }
                     ],
                     "OutputItem": [
                         {
-                            "Id": "bonghits.Cp_BearHoneyMead",
-                            "ItemId": "bonghits.Cp_BearHoneyMead",
-                            "CopyQuality": "{{CopyQualityEnabled}}" // Retain Quality
+                            "ItemId": "bonghits.Cp_HoneyMead",
+                            "ObjectInternalName": "PRESERVE_ID_2 and PRESERVE_ID_1 Honey Mead",
+                            "ObjectDisplayName": "%PRESERVED_DISPLAY_NAME and %EXTRA_PRESERVED_DISPLAY_NAME_1 Mead",
+                            "PreserveId": "DROP_IN",
+                            "PriceModifierMode": "Stack",
+                            "CopyQuality": "{{CopyQualityEnabled}}",
+                            "CopyColor": true,
+                            "StackModifiers": [
+                                {
+                                    "Id": "RareDouble",
+                                    "Condition": "RANDOM .05",
+                                    "Modification": "Multiply",
+                                    "Amount": 2.0
+                                }
+                            ],
+                            "ModData": {
+                                "selph.ExtraMachineConfig.ExtraPreserveId.1": "DROP_IN_PRESERVE_1",
+                                "selph.ExtraMachineConfig.ExtraPreserveId.2": "DROP_IN",
+                            },
+                            "CustomData": {
+                                "selph.ExtraMachineConfig.RequirementId.1": "340",
+                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires One Honey, 10 Fruit"
+                            },
+                            "PriceModifiers": [
+                                {
+                                    "Modification": "Multiply", // Adds a 'random' percentage increase to the mead
+                                    "RandomAmount": [ // 5% - 25%
+                                        1.05, 1.07, 1.09, 1.11, 1.13, 1.15, 1.17, 1.19, 1.21, 1.23, 1.25, 1.06, 1.08, 1.10, 1.12, 1.14, 1.16, 1.18, 1.20, 1.22
+
+                                    ]
+                                },
+                                {
+                                    // Adds a 'random' raw amount to the mead
+                                    /*
+                                    100–290: 15 numbers
+                                    290–480: 12 numbers
+                                    480–670: 8 numbers
+                                    670–860: 16 numbers
+                                    860–1050: 13 numbers
+                                    1050–1240: 6 numbers
+                                    1240–1430: 11 numbers
+                                    1430–1620: 6 numbers
+                                    1620–1810: 5 numbers
+                                    1810–2000: 8 numbers
+                                    This shows a clear bias towards the lower numbers, with more numbers concentrated below 1000.
+                                    */
+                                    
+                                    "Modification": "Add",
+                                    "RandomAmount": [
+                                        902, 1407, 994, 260, 830, 373, 654, 1342, 1864, 1142, 1023, 185, 540, 697, 160, 1887, 871, 538, 1290, 1772, 709, 222, 1617, 1591, 1352, 1814, 813, 880, 405, 730, 275, 1298, 1621, 117, 864, 624, 689, 1757, 1934, 1159, 914, 121, 677, 739, 929, 316, 379, 257, 956, 797, 1820, 803, 1235, 947, 1443, 557, 228, 1088, 282, 1338, 1236, 900, 1855, 431, 999, 1368, 251, 123, 437, 359, 1166, 862, 483, 734, 650, 424, 397, 752, 409, 277, 1394, 1242, 856, 468, 1614, 1761, 1600, 759, 717, 269, 1863, 1286, 649, 1438, 1425, 1660, 1980, 464, 840, 259
+                                    ]
+                                }
+                            ]
                         }
                     ],
-                    "MinutesUntilReady": 284 // 4.7 Hours
+                    "MinutesUntilReady": 1
                 }
-            }
+            },
+            "MoveEntries": [
+                {
+                    "ID": "bh.honeymead_make_gold",
+                    "ToPosition": "Top"
+                }
+            ]
         },
-        // Cask Operation
+        // -----------------------------------------------------------------
         //
-        // Working as intended, raises quality of honey mead
+        //
+        //
+        //
+        // Cask Operations
+        //
+        //
+        //
+        //
+        //
+        // -----------------------------------------------------------------
+        //
+        // Non-SVE Recipe
         //
         {
             "Action": "EditData",
@@ -359,7 +664,7 @@
                     "Id": "CaskHoneyMead",
                     "Triggers": [
                         {
-                            "RequiredItemId": "bonghits.Cp_BearHoneyMead",
+                            "RequiredItemId": "bonghits.Cp_HoneyMead",
                             "Trigger": "ItemPlacedInMachine",
                             "RequiredCount": "1"
                         }
@@ -375,6 +680,19 @@
                 }
             }
         },
+
+        // -----------------------------------------------------------------
+        //
+        //
+        //
+        //
+        // Non-SVE Jar Recipes
+        //
+        //
+        //
+        //
+        //
+        // -----------------------------------------------------------------
         // Vanilla Preserving Jar
         //
         // 
@@ -400,9 +718,10 @@
                     ],
                     "OutputItem": [
                         {
-                            "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
-                            "ObjectInternalName": "Aged {0} Bear Honey Mead",
-                            "ObjectDisplayName": "[LocalizedText Strings/Objects:bonghits.agedmead_name %PRESERVED_DISPLAY_NAME]",
+                            "ItemId": "(O)bonghits.Cp_AgedHoneyMead",
+                            "ObjectInternalName": "Aged {0} Honey Mead",
+                            //"ObjectDisplayName": "[LocalizedText Strings/Objects:bonghits.agedmead_name %PRESERVED_DISPLAY_NAME]",
+                            "ObjectDisplayName": "Aged %PRESERVED_DISPLAY_NAME and %EXTRA_PRESERVED_DISPLAY_NAME_1 Mead",
                             "PreserveId": "DROP_IN",
                             "CopyColor": true,
                             "CopyPrice": true,
@@ -417,6 +736,11 @@
                                     "Amount": 2.0
                                 }
                             ],
+                            "ModData": {
+                                "selph.ExtraMachineConfig.ExtraPreserveId.1": "DROP_IN_PRESERVE_1",
+                                "selph.ExtraMachineConfig.ExtraPreserveId.2": "DROP_IN_PRESERVE_2",
+                                "selph.ExtraMachineConfig.ExtraPreserveId.3": "DROP_IN",
+                            },
                             "CustomData": {
                                 "selph.ExtraMachineConfig.RequirementTags.1": "bh.stock_mead",
                                 "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 10 of any fruit, and one Bear Honey Mead"
@@ -510,7 +834,7 @@
         },
         //
         //
-        //  Machine Progression System
+        //  Preserving Jar
         //  Steel
         //
         //
@@ -536,8 +860,8 @@
                     ],
                     "OutputItem": [
                         {
-                            "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
-                            "ObjectInternalName": "Aged {0} Bear Honey Mead",
+                            "ItemId": "(O)bonghits.Cp_AgedHoneyMead",
+                            "ObjectInternalName": "Aged {0} Honey Mead",
                             "ObjectDisplayName": "[LocalizedText Strings/Objects:bonghits.agedmead_name %PRESERVED_DISPLAY_NAME]",
                             "PreserveId": "DROP_IN",
                             "CopyColor": true,
@@ -555,7 +879,7 @@
                             ],
                             "CustomData": {
                                 "selph.ExtraMachineConfig.RequirementTags.1": "bh.stock_mead",
-                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 10 of any fruit, and one Bear Honey Mead"
+                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 10 of any fruit, and one Honey Mead"
                             },
                             "PriceModifiers": [
                                 {
@@ -646,7 +970,7 @@
         },
         //
         //
-        //  Machine Progression System
+        //  Preserving Jar
         //  Gold
         //
         //
@@ -672,8 +996,8 @@
                     ],
                     "OutputItem": [
                         {
-                            "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
-                            "ObjectInternalName": "Aged {0} Bear Honey Mead",
+                            "ItemId": "(O)bonghits.Cp_AgedHoneyMead",
+                            "ObjectInternalName": "Aged {0} Honey Mead",
                             "ObjectDisplayName": "[LocalizedText Strings/Objects:bonghits.agedmead_name %PRESERVED_DISPLAY_NAME]",
                             "PreserveId": "DROP_IN",
                             "CopyColor": true,
@@ -782,7 +1106,7 @@
         },
         //
         //
-        //  Machine Progression System
+        //  Preserving Jar
         //  Diamond
         //
         //
@@ -808,8 +1132,8 @@
                     ],
                     "OutputItem": [
                         {
-                            "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
-                            "ObjectInternalName": "Aged {0} Bear Honey Mead",
+                            "ItemId": "(O)bonghits.Cp_AgedHoneyMead",
+                            "ObjectInternalName": "Aged {0} Honey Mead",
                             "ObjectDisplayName": "[LocalizedText Strings/Objects:bonghits.agedmead_name %PRESERVED_DISPLAY_NAME]",
                             "PreserveId": "DROP_IN",
                             "CopyColor": true,
@@ -918,7 +1242,7 @@
         },
         //
         //
-        //  Machine Progression System
+        //  Preserving Jar
         //  Iridium
         //
         //
@@ -944,8 +1268,8 @@
                     ],
                     "OutputItem": [
                         {
-                            "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
-                            "ObjectInternalName": "Aged {0} Bear Honey Mead",
+                            "ItemId": "(O)bonghits.Cp_AgedHoneyMead",
+                            "ObjectInternalName": "Aged {0} Honey Mead",
                             "ObjectDisplayName": "[LocalizedText Strings/Objects:bonghits.agedmead_name %PRESERVED_DISPLAY_NAME]",
                             "PreserveId": "DROP_IN",
                             "CopyColor": true,
@@ -1054,7 +1378,7 @@
         },
         //
         //
-        //  Machine Progression System
+        //  Preserving Jar
         //  Radioactive
         //
         //
@@ -1080,8 +1404,8 @@
                     ],
                     "OutputItem": [
                         {
-                            "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
-                            "ObjectInternalName": "Aged {0} Bear Honey Mead",
+                            "ItemId": "(O)bonghits.Cp_AgedHoneyMead",
+                            "ObjectInternalName": "Aged {0} Honey Mead",
                             "ObjectDisplayName": "[LocalizedText Strings/Objects:bonghits.agedmead_name %PRESERVED_DISPLAY_NAME]",
                             "PreserveId": "DROP_IN",
                             "CopyColor": true,
@@ -1190,7 +1514,7 @@
         },
         //
         //
-        //  Machine Progression System
+        //  Preserving Jar
         //  Prismatic
         //
         //
@@ -1216,8 +1540,8 @@
                     ],
                     "OutputItem": [
                         {
-                            "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
-                            "ObjectInternalName": "Aged {0} Bear Honey Mead",
+                            "ItemId": "(O)bonghits.Cp_AgedHoneyMead",
+                            "ObjectInternalName": "Aged {0} Honey Mead",
                             "ObjectDisplayName": "[LocalizedText Strings/Objects:bonghits.agedmead_name %PRESERVED_DISPLAY_NAME]",
                             "PreserveId": "DROP_IN",
                             "CopyColor": true,

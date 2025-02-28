@@ -5,85 +5,72 @@
             "Action": "EditData",
             "Target": "Data/Objects",
             "Entries": {
-                // Bear Honey Mead
+                // Honey Mead
                 //
-                // Create Original Bear Honey Mead Item
+                // Create Original Honey Mead Item
                 //
-                "bonghits.Cp_BearHoneyMead": {
-                    "Name": "bonghits.Cp_BearHoneyMead",
-                    "DisplayName": "Honey Mead",
-                    "Description": "An artisanal mead crafted to perfection using only the finest fruits and honey.",
-                    "Type": "ArtisanGoods",
-                    "Edibility": 100,
-                    "IsDrink": true,
-                    "Category": -26,
-                    "Price": 1950,
-                    "SpriteIndex": 0,
-                    "Texture": "bonghits.BearHoneyMead/Objects",
-                    "Buffs": [
-                        {
-                            "BuffId": "bonghits.mead_tipsy",
-                            "Duration": 1500, // 17.5 In-Game Hours
-                            "CustomAttributes": {
-                                "FarmingLevel": 0,
-                                "FishingLevel": 0,
-                                "MiningLevel": 0,
-                                "LuckLevel": 3,
-                                "ForagingLevel": 2,
-                                "MaxStamina": 50,
-                                "MagneticRadius": 0,
-                                "Speed": 2,
-                                "Defense": 0,
-                                "Attack": 2
-                            }
-                        }
-                    ],
-                    "ContextTags": [
-                        "bh.stock_mead",
-                        "alcohol_item",
-                        "drink_item",
-                        "color_gold"
-                    ]
-                },
-                // Aged Bear Honey Mead
-                //
-                // Create Aged Bear Honey Mead Item
-                //
-                "bonghits.Cp_AgedBearHoneyMead": {
-                    "Name": "bonghits.Cp_AgedBearHoneyMead",
-                    "DisplayName": "Aged Honey Mead",
-                    "Description": "An artisanal honey mead scoring with notes of fruit and honey. This particular brew smells exceptionally potent!",
-                    "Type": "ArtisanGoods",
-                    "Edibility": 100,
-                    "IsDrink": true,
-                    "Category": -26,
-                    "Price": 4215,
-                    "SpriteIndex": 2,
-                    "Texture": "bonghits.BearHoneyMead/Objects",
-                    "Buffs": [
-                        {
-                            "BuffId": "bonghits.mead_drunk",
-                            "Duration": 4000, // 2 In-Game Days (46.5 Hours)
-                            "CustomAttributes": {
-                                "FarmingLevel": 5,
-                                "FishingLevel": 0,
-                                "MiningLevel": 0,
-                                "LuckLevel": 5,
-                                "ForagingLevel": 5,
-                                "MaxStamina": 100,
-                                "MagneticRadius": 5,
-                                "Speed": 5,
-                                "Defense": 2,
-                                "Attack": 5
-                            }
-                        }
-                    ],
-                    "ContextTags": [
-                        "bh.aged_mead",
-                        "alcohol_item",
-                        "drink_item"
-                    ]
-                }
+                "bonghits.Cp_HoneyMead": {
+                  "Name": "bonghits.Cp_HoneyMead",
+                  "DisplayName": "Honey Mead",
+                  "Description": "An artisanal mead crafted to perfection.",
+                  "Type": "ArtisanGoods",
+                  "Edibility": 100,
+                  "IsDrink": true,
+                  "Category": -26,
+                  "Price": 1950,
+                  "SpriteIndex": 0,
+                  "Texture": "bonghits.BearHoneyMead/Objects",
+                  "Buffs": [{
+                        "BuffId": "bonghits.mead_tipsy",
+                        "Duration": 1500, // 17.5 In-Game Hours
+                        "CustomAttributes": {
+                          "FarmingLevel": 0,
+                          "FishingLevel": 0,
+                          "MiningLevel": 0,
+                          "LuckLevel": 3,
+                          "ForagingLevel": 2,
+                          "MaxStamina": 50,
+                          "MagneticRadius": 0,
+                          "Speed": 2,
+                          "Defense": 0,
+                          "Attack": 2
+                      }
+                  }],
+                  "ContextTags": ["bh.stock_mead"]
+              },
+              // Aged Honey Mead
+              //
+              // Create Aged Honey Mead Item
+              //
+              "bonghits.Cp_AgedHoneyMead": {
+                  "Name": "bonghits.Cp_AgedHoneyMead",
+                  "DisplayName": "Aged Honey Mead",
+                  "Description": "An artisanal  honey mead refined and aged to its highest potential. The fruity smell eminating from the bottle reminds you of a warm bath in the spring.",
+                  "Type": "ArtisanGoods",
+                  "Edibility": 100,
+                  "IsDrink": true,
+                  "Category": -26,
+                  "Price": 4215,
+                  "SpriteIndex": 2,
+                  "Texture": "bonghits.BearHoneyMead/Objects",
+                  "Buffs": [{
+                      "BuffId": "bonghits.mead_drunk",
+                      "Duration": 4000, // 2 In-Game Days (46.5 Hours)
+                      "CustomAttributes": {
+                          "FarmingLevel": 5,
+                          "FishingLevel": 0,
+                          "MiningLevel": 0,
+                          "LuckLevel": 5,
+                          "ForagingLevel": 5,
+                          "MaxStamina": 100,
+                          "MagneticRadius": 5,
+                          "Speed": 5,
+                          "Defense": 2,
+                          "Attack": 5
+                      }
+                  }],
+                  "ContextTags": ["bh.aged_mead", "alcohol_item", "drink_item"]
+              }
             }
         }
     ]
