@@ -10,14 +10,14 @@ The itch to tinker and 'fix' crept up on me, now we're here!
 
 ## GitHub Directory
 
-- [Expanded Artisanal Goods](https://github.com/STRHercules/BonghitsStardewMods/releases/tag/BearHoney)
+- [Artisanal Honey Mead](https://github.com/STRHercules/BonghitsStardewMods/releases/tag/BearHoney)
 
 - [Woods Elsewhere Unofficial Update](https://github.com/STRHercules/BonghitsStardewMods/releases/tag/WoodsElsewhere)
 
 
 ## Nexus Directory
 
-- [Expanded Artisanal Goods](https://www.nexusmods.com/stardewvalley/mods/31786)
+- [Artisanal Honey Mead](https://www.nexusmods.com/stardewvalley/mods/31786)
 
 - [Woods Elsewhere Unofficial Update](https://www.nexusmods.com/stardewvalley/mods/31801)
 
