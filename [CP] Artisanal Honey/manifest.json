@@ -1,9 +1,9 @@
 {
-    "Name": "[CP] Artisan Honey",
+    "Name": "[CP] Expanded Artisanal Goods",
     "Author": "Major Bonghits",
-    "Version": "1.0",
-    "Description": "Brew your own artisanal meads with honey and fruit!",
-    "UniqueID": "bonghits.cp.ArtisanHoney",
+    "Version": "1.6",
+    "Description": "Expands upon existing modded crops to make artisan versions.",
+    "UniqueID": "bonghits.cp.BearHoneyMead",
     "UpdateKeys": [
         "Nexus:31786"
     ],

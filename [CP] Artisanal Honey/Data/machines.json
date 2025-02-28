@@ -1,11 +1,11 @@
-{
+{ 
     "$schema": "https://smapi.io/schemas/content-patcher.json",
     "Changes": [
         {
             "Action": "EditData",
             "Target": "Data/CraftingRecipes",
             "Entries": {
-                "{{ModId}}_MeadKeg": "(BC)12 1 388 125 725 2 726 2/Home/bh.meadkeg/true/Farming 8/" // 1 Keg, 125 Wood, 2 Pine Tar, 2 Oak Resin
+                "{{ModId}}_MeadKeg": "388 125 725 2 726 2/Home/bh.meadkeg/true/Farming 4/" //125 Wood, 2 Pine Tar, 2 Oak Resin
             },
             "LogName": "Mead Keg Recipe Definition"
         },
@@ -47,7 +47,7 @@
                                     "Trigger": "ItemPlacedInMachine",
                                     "RequiredItemId": "(O)340",
                                     "RequiredTags": null,
-                                    "RequiredCount": 10,
+                                    "RequiredCount": 12,
                                     "Condition": null
                                 }
                             ],
@@ -64,6 +64,7 @@
                                     "IncrementMachineParentSheetIndex": 0,
                                     "PriceModifiers": null,
                                     "PriceModifierMode": "Stack",
+                                    // 5% Chance to Quadrouple Mead
                                     "StackModifiers": [
                                         {
                                             "Id": "RareDouble",
@@ -80,7 +81,7 @@
                                     "MinStack": 1,
                                     "MaxStack": 1,
                                     "Quality": -1,
-                                    "ObjectInternalName": "PRESERVE_ID_0 Honey Mead",
+                                    "ObjectInternalName": "DROP_IN_ID DROP_IN_ID_1 PRESERVE_ID_1 PRESERVE_ID_2 Honey Mead",
                                     "ObjectDisplayName": "[LocalizedText Strings/Objects:bonghits.mead_name %PRESERVED_DISPLAY_NAME]",
                                     
                                     "ToolUpgradeLevel": -1,
@@ -95,9 +96,9 @@
                                     "PerItemCondition": null
                                 }
                             ],
-                            "MinutesUntilReady": 1,
+                            "MinutesUntilReady": 600, // 10 Hours
                             "DaysUntilReady": -1,
-                            "InvalidCountMessage": "Requires 10 Honey",
+                            "InvalidCountMessage": "Requires 12 Honey",
                             "RecalculateOnCollect": false
                         },
                     ],

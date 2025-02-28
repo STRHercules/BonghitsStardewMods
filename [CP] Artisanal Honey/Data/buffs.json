@@ -1,4 +1,4 @@
-{
+{ 
     "$schema": "https://smapi.io/schemas/content-patcher.json",
     "Changes": [
         {
@@ -6,7 +6,7 @@
             "Target": "Data/Buffs",
             "Entries": {
                 "bonghits.mead_tipsy": {
-                    "DisplayName": "Tipsy on Artisanal Mead",
+                    "DisplayName": "Tipsy on Honey Mead",
                     "Description": "Enjoyed a little mead!",
                     "IsDebuff": false,
                     "GlowColor": null,
@@ -33,8 +33,8 @@
             "Target": "Data/Buffs",
             "Entries": {
                 "bonghits.mead_drunk": {
-                    "DisplayName": "Smashed on Artisanal Mead",
-                    "Description": "Enjoyed a bit too much mead!",
+                    "DisplayName": "Smashed on Honey Mead",
+                    "Description": "Enjoyed a bit too much mead! You're not complaining!",
                     "IsDebuff": false,
                     "GlowColor": null,
                     "Duration": 30000,

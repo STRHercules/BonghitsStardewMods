@@ -1,4 +1,4 @@
-{
+{ 
     "$schema": "https://smapi.io/schemas/content-patcher.json",
     "Format": "2.5.0",
     "ConfigSchema": {
