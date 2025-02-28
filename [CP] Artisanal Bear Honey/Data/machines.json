@@ -64,10 +64,11 @@
                                     "IncrementMachineParentSheetIndex": 0,
                                     "PriceModifiers": null,
                                     "PriceModifierMode": "Stack",
+                                    // 5% Chance to Quadrouple Mead
                                     "StackModifiers": [
                                         {
                                             "Id": "RareDouble",
-                                            "Condition": "RANDOM .01",
+                                            "Condition": "RANDOM .05",
                                             "Modification": "Multiply",
                                             "Amount": 2.0
                                         }
@@ -80,7 +81,7 @@
                                     "MinStack": 1,
                                     "MaxStack": 1,
                                     "Quality": -1,
-                                    "ObjectInternalName": "PRESERVE_ID_0 Honey Mead",
+                                    "ObjectInternalName": "DROP_IN_ID DROP_IN_ID_1 PRESERVE_ID_1 PRESERVE_ID_2 Honey Mead",
                                     "ObjectDisplayName": "[LocalizedText Strings/Objects:bonghits.mead_name %PRESERVED_DISPLAY_NAME]",
                                     
                                     "ToolUpgradeLevel": -1,
@@ -95,7 +96,7 @@
                                     "PerItemCondition": null
                                 }
                             ],
-                            "MinutesUntilReady": 1,
+                            "MinutesUntilReady": 600, // 10 Hours
                             "DaysUntilReady": -1,
                             "InvalidCountMessage": "Requires 12 Honey",
                             "RecalculateOnCollect": false

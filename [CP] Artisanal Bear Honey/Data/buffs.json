@@ -6,7 +6,7 @@
             "Target": "Data/Buffs",
             "Entries": {
                 "bonghits.mead_tipsy": {
-                    "DisplayName": "Tipsy on Bear Mead",
+                    "DisplayName": "Tipsy on Honey Mead",
                     "Description": "Enjoyed a little mead!",
                     "IsDebuff": false,
                     "GlowColor": null,
@@ -33,7 +33,7 @@
             "Target": "Data/Buffs",
             "Entries": {
                 "bonghits.mead_drunk": {
-                    "DisplayName": "Smashed on Bear Mead",
+                    "DisplayName": "Smashed on Honey Mead",
                     "Description": "Enjoyed a bit too much mead! You're not complaining!",
                     "IsDebuff": false,
                     "GlowColor": null,

@@ -16,6 +16,10 @@
         //  Raw Bear Honey to Mead Recipe
         //
         {
+            "When": {
+                "CopyQualitySetting": "auto",
+                "HasMod": "FlashShifter.StardewValleyExpandedCP"
+            },
             "Action": "EditData",
             "Target": "Data/Machines",
             "TargetField": [
@@ -39,18 +43,18 @@
                             "ItemId": "bonghits.Cp_BearHoneyMead",
                             "CopyQuality": "{{CopyQualityEnabled}}",
                             "PriceModifierMode": "Stack",
-                            // 10% Chance to Quadrouple
+                            // 2% Chance to Quadrouple
                             "StackModifiers": [
                                 {
                                     "Id": "RareDouble",
-                                    "Condition": "RANDOM .10",
+                                    "Condition": "RANDOM .2",
                                     "Modification": "Multiply",
                                     "Amount": 4.0
                                 }
                             ],
                         }
                     ],
-                    "MinutesUntilReady": 600 // 10 Hours
+                    "MinutesUntilReady": 960 // 16 Hours
                 }
             }
         },
@@ -67,6 +71,10 @@
         //
         // --------------------------------------------------------
         {
+            "When": {
+                "CopyQualitySetting": "auto",
+                "HasMod": "FlashShifter.StardewValleyExpandedCP"
+            },
             "Action": "EditData",
             "Target": "Data/Machines",
             "TargetField": [
@@ -128,6 +136,10 @@
         //  Raw Bear Honey to Mead Recipe
         //
         {
+            "When": {
+                "CopyQualitySetting": "auto",
+                "HasMod": "FlashShifter.StardewValleyExpandedCP"
+            },
             "Action": "EditData",
             "Target": "Data/Machines",
             "TargetField": [
@@ -173,6 +185,10 @@
         //  Raw Bear Honey to Mead Recipe
         //
         {
+            "When": {
+                "CopyQualitySetting": "auto",
+                "HasMod": "FlashShifter.StardewValleyExpandedCP"
+            },
             "Action": "EditData",
             "Target": "Data/Machines",
             "TargetField": [
@@ -218,6 +234,10 @@
         //  Raw Bear Honey to Mead Recipe
         //
         {
+            "When": {
+                "CopyQualitySetting": "auto",
+                "HasMod": "FlashShifter.StardewValleyExpandedCP"
+            },
             "Action": "EditData",
             "Target": "Data/Machines",
             "TargetField": [
@@ -263,6 +283,10 @@
         //  Raw Bear Honey to Mead Recipe
         //
         {
+            "When": {
+                "CopyQualitySetting": "auto",
+                "HasMod": "FlashShifter.StardewValleyExpandedCP"
+            },
             "Action": "EditData",
             "Target": "Data/Machines",
             "TargetField": [
@@ -308,6 +332,10 @@
         //  Raw Bear Honey to Mead Recipe
         //
         {
+            "When": {
+                "CopyQualitySetting": "auto",
+                "HasMod": "FlashShifter.StardewValleyExpandedCP"
+            },
             "Action": "EditData",
             "Target": "Data/Machines",
             "TargetField": [
@@ -429,7 +457,7 @@
                         {
                             "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
                             "ObjectInternalName": "Aged PRESERVE_ID_1 PRESERVE_ID PRESERVE_ID_2 PRESERVE_ID_3 Mead",
-                            "ObjectDisplayName": "Aged %EXTRA_PRESERVED_DISPLAY_NAME_1, %EXTRA_PRESERVED_DISPLAY_NAME_2 and %EXTRA_PRESERVED_DISPLAY_NAME_3 Bear Honey Mead",
+                            "ObjectDisplayName": "Aged %EXTRA_PRESERVED_DISPLAY_NAME_1, %EXTRA_PRESERVED_DISPLAY_NAME_2 and %EXTRA_PRESERVED_DISPLAY_NAME_3 Honey Mead",
                             "PreserveId": "DROP_IN",
                             "CopyColor": true,
                             "CopyPrice": true,
@@ -486,7 +514,7 @@
                         {
                             "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
                             "ObjectInternalName": "Aged PRESERVE_ID_2 PRESERVE_ID PRESERVE_ID_1 PRESERVE_ID_3 Mead",
-                            "ObjectDisplayName": "Aged %EXTRA_PRESERVED_DISPLAY_NAME_2, %EXTRA_PRESERVED_DISPLAY_NAME_1 and %EXTRA_PRESERVED_DISPLAY_NAME_3 Bear Honey Mead",
+                            "ObjectDisplayName": "Aged %EXTRA_PRESERVED_DISPLAY_NAME_2, %EXTRA_PRESERVED_DISPLAY_NAME_1 and %EXTRA_PRESERVED_DISPLAY_NAME_3 Honey Mead",
                             "PreserveId": "DROP_IN",
                             "CopyColor": true,
                             "CopyPrice": true,
@@ -639,7 +667,7 @@
                         {
                             "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
                             "ObjectInternalName": "Aged PRESERVE_ID_1 PRESERVE_ID PRESERVE_ID_2 PRESERVE_ID_3 Mead",
-                            "ObjectDisplayName": "Aged %EXTRA_PRESERVED_DISPLAY_NAME_1, %EXTRA_PRESERVED_DISPLAY_NAME_2 and %EXTRA_PRESERVED_DISPLAY_NAME_3 Bear Honey Mead",
+                            "ObjectDisplayName": "Aged %EXTRA_PRESERVED_DISPLAY_NAME_1, %EXTRA_PRESERVED_DISPLAY_NAME_2 and %EXTRA_PRESERVED_DISPLAY_NAME_3 Honey Mead",
                             "PreserveId": "DROP_IN",
                             "CopyColor": true,
                             "CopyPrice": true,
@@ -696,7 +724,7 @@
                         {
                             "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
                             "ObjectInternalName": "Aged PRESERVE_ID_2 PRESERVE_ID PRESERVE_ID_1 PRESERVE_ID_3 Mead",
-                            "ObjectDisplayName": "Aged %EXTRA_PRESERVED_DISPLAY_NAME_2, %EXTRA_PRESERVED_DISPLAY_NAME_1 and %EXTRA_PRESERVED_DISPLAY_NAME_3 Bear Honey Mead",
+                            "ObjectDisplayName": "Aged %EXTRA_PRESERVED_DISPLAY_NAME_2, %EXTRA_PRESERVED_DISPLAY_NAME_1 and %EXTRA_PRESERVED_DISPLAY_NAME_3 Honey Mead",
                             "PreserveId": "DROP_IN",
                             "CopyColor": true,
                             "CopyPrice": true,
@@ -849,7 +877,7 @@
                         {
                             "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
                             "ObjectInternalName": "Aged PRESERVE_ID_1 PRESERVE_ID PRESERVE_ID_2 PRESERVE_ID_3 Mead",
-                            "ObjectDisplayName": "Aged %EXTRA_PRESERVED_DISPLAY_NAME_1, %EXTRA_PRESERVED_DISPLAY_NAME_2 and %EXTRA_PRESERVED_DISPLAY_NAME_3 Bear Honey Mead",
+                            "ObjectDisplayName": "Aged %EXTRA_PRESERVED_DISPLAY_NAME_1, %EXTRA_PRESERVED_DISPLAY_NAME_2 and %EXTRA_PRESERVED_DISPLAY_NAME_3 Honey Mead",
                             "PreserveId": "DROP_IN",
                             "CopyColor": true,
                             "CopyPrice": true,
@@ -906,7 +934,7 @@
                         {
                             "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
                             "ObjectInternalName": "Aged PRESERVE_ID_2 PRESERVE_ID PRESERVE_ID_1 PRESERVE_ID_3 Mead",
-                            "ObjectDisplayName": "Aged %EXTRA_PRESERVED_DISPLAY_NAME_2, %EXTRA_PRESERVED_DISPLAY_NAME_1 and %EXTRA_PRESERVED_DISPLAY_NAME_3 Bear Honey Mead",
+                            "ObjectDisplayName": "Aged %EXTRA_PRESERVED_DISPLAY_NAME_2, %EXTRA_PRESERVED_DISPLAY_NAME_1 and %EXTRA_PRESERVED_DISPLAY_NAME_3 Honey Mead",
                             "PreserveId": "DROP_IN",
                             "CopyColor": true,
                             "CopyPrice": true,
@@ -1059,7 +1087,7 @@
                         {
                             "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
                             "ObjectInternalName": "Aged PRESERVE_ID_1 PRESERVE_ID PRESERVE_ID_2 PRESERVE_ID_3 Mead",
-                            "ObjectDisplayName": "Aged %EXTRA_PRESERVED_DISPLAY_NAME_1, %EXTRA_PRESERVED_DISPLAY_NAME_2 and %EXTRA_PRESERVED_DISPLAY_NAME_3 Bear Honey Mead",
+                            "ObjectDisplayName": "Aged %EXTRA_PRESERVED_DISPLAY_NAME_1, %EXTRA_PRESERVED_DISPLAY_NAME_2 and %EXTRA_PRESERVED_DISPLAY_NAME_3 Honey Mead",
                             "PreserveId": "DROP_IN",
                             "CopyColor": true,
                             "CopyPrice": true,
@@ -1116,7 +1144,7 @@
                         {
                             "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
                             "ObjectInternalName": "Aged PRESERVE_ID_2 PRESERVE_ID PRESERVE_ID_1 PRESERVE_ID_3 Mead",
-                            "ObjectDisplayName": "Aged %EXTRA_PRESERVED_DISPLAY_NAME_2, %EXTRA_PRESERVED_DISPLAY_NAME_1 and %EXTRA_PRESERVED_DISPLAY_NAME_3 Bear Honey Mead",
+                            "ObjectDisplayName": "Aged %EXTRA_PRESERVED_DISPLAY_NAME_2, %EXTRA_PRESERVED_DISPLAY_NAME_1 and %EXTRA_PRESERVED_DISPLAY_NAME_3 Honey Mead",
                             "PreserveId": "DROP_IN",
                             "CopyColor": true,
                             "CopyPrice": true,
@@ -1269,7 +1297,7 @@
                         {
                             "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
                             "ObjectInternalName": "Aged PRESERVE_ID_1 PRESERVE_ID PRESERVE_ID_2 PRESERVE_ID_3 Mead",
-                            "ObjectDisplayName": "Aged %EXTRA_PRESERVED_DISPLAY_NAME_1, %EXTRA_PRESERVED_DISPLAY_NAME_2 and %EXTRA_PRESERVED_DISPLAY_NAME_3 Bear Honey Mead",
+                            "ObjectDisplayName": "Aged %EXTRA_PRESERVED_DISPLAY_NAME_1, %EXTRA_PRESERVED_DISPLAY_NAME_2 and %EXTRA_PRESERVED_DISPLAY_NAME_3 Honey Mead",
                             "PreserveId": "DROP_IN",
                             "CopyColor": true,
                             "CopyPrice": true,
@@ -1326,7 +1354,7 @@
                         {
                             "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
                             "ObjectInternalName": "Aged PRESERVE_ID_2 PRESERVE_ID PRESERVE_ID_1 PRESERVE_ID_3 Mead",
-                            "ObjectDisplayName": "Aged %EXTRA_PRESERVED_DISPLAY_NAME_2, %EXTRA_PRESERVED_DISPLAY_NAME_1 and %EXTRA_PRESERVED_DISPLAY_NAME_3 Bear Honey Mead",
+                            "ObjectDisplayName": "Aged %EXTRA_PRESERVED_DISPLAY_NAME_2, %EXTRA_PRESERVED_DISPLAY_NAME_1 and %EXTRA_PRESERVED_DISPLAY_NAME_3 Honey Mead",
                             "PreserveId": "DROP_IN",
                             "CopyColor": true,
                             "CopyPrice": true,
@@ -1479,7 +1507,7 @@
                         {
                             "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
                             "ObjectInternalName": "Aged PRESERVE_ID_1 PRESERVE_ID PRESERVE_ID_2 PRESERVE_ID_3 Mead",
-                            "ObjectDisplayName": "Aged %EXTRA_PRESERVED_DISPLAY_NAME_1, %EXTRA_PRESERVED_DISPLAY_NAME_2 and %EXTRA_PRESERVED_DISPLAY_NAME_3 Bear Honey Mead",
+                            "ObjectDisplayName": "Aged %EXTRA_PRESERVED_DISPLAY_NAME_1, %EXTRA_PRESERVED_DISPLAY_NAME_2 and %EXTRA_PRESERVED_DISPLAY_NAME_3 Honey Mead",
                             "PreserveId": "DROP_IN",
                             "CopyColor": true,
                             "CopyPrice": true,
@@ -1536,7 +1564,7 @@
                         {
                             "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
                             "ObjectInternalName": "Aged PRESERVE_ID_2 PRESERVE_ID PRESERVE_ID_1 PRESERVE_ID_3 Mead",
-                            "ObjectDisplayName": "Aged %EXTRA_PRESERVED_DISPLAY_NAME_2, %EXTRA_PRESERVED_DISPLAY_NAME_1 and %EXTRA_PRESERVED_DISPLAY_NAME_3 Bear Honey Mead",
+                            "ObjectDisplayName": "Aged %EXTRA_PRESERVED_DISPLAY_NAME_2, %EXTRA_PRESERVED_DISPLAY_NAME_1 and %EXTRA_PRESERVED_DISPLAY_NAME_3 Honey Mead",
                             "PreserveId": "DROP_IN",
                             "CopyColor": true,
                             "CopyPrice": true,
@@ -1689,7 +1717,7 @@
                         {
                             "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
                             "ObjectInternalName": "Aged PRESERVE_ID_1 PRESERVE_ID PRESERVE_ID_2 PRESERVE_ID_3 Mead",
-                            "ObjectDisplayName": "Aged %EXTRA_PRESERVED_DISPLAY_NAME_1, %EXTRA_PRESERVED_DISPLAY_NAME_2 and %EXTRA_PRESERVED_DISPLAY_NAME_3 Bear Honey Mead",
+                            "ObjectDisplayName": "Aged %EXTRA_PRESERVED_DISPLAY_NAME_1, %EXTRA_PRESERVED_DISPLAY_NAME_2 and %EXTRA_PRESERVED_DISPLAY_NAME_3 Honey Mead",
                             "PreserveId": "DROP_IN",
                             "CopyColor": true,
                             "CopyPrice": true,
@@ -1746,7 +1774,7 @@
                         {
                             "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
                             "ObjectInternalName": "Aged PRESERVE_ID_2 PRESERVE_ID PRESERVE_ID_1 PRESERVE_ID_3 Mead",
-                            "ObjectDisplayName": "Aged %EXTRA_PRESERVED_DISPLAY_NAME_2, %EXTRA_PRESERVED_DISPLAY_NAME_1 and %EXTRA_PRESERVED_DISPLAY_NAME_3 Bear Honey Mead",
+                            "ObjectDisplayName": "Aged %EXTRA_PRESERVED_DISPLAY_NAME_2, %EXTRA_PRESERVED_DISPLAY_NAME_1 and %EXTRA_PRESERVED_DISPLAY_NAME_3 Honey Mead",
                             "PreserveId": "DROP_IN",
                             "CopyColor": true,
                             "CopyPrice": true,
