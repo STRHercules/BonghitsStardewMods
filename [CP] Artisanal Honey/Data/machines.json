@@ -5,9 +5,36 @@
             "Action": "EditData",
             "Target": "Data/CraftingRecipes",
             "Entries": {
-                "{{ModId}}_MeadKeg": "388 125 725 2 726 2/Home/bh.meadkeg/true/Farming 4/" //125 Wood, 2 Pine Tar, 2 Oak Resin
+                "{{ModId}}_MeadKegRecipe": "388 125 725 2 726 2/Home/{{ModId}}_MeadKeg/true/Farming 4/" //125 Wood, 2 Pine Tar, 2 Oak Resin
             },
             "LogName": "Mead Keg Recipe Definition"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [ "SeedShop", "Items" ],
+            "Entries": {
+              "{{ModId}}_MeadKegSale": {
+                "Id": "{{ModId}}_MeadKegRecipeSale",
+                "ItemId": "(BC){{ModId}}_MeadKeg",
+                "IsRecipe": true,
+                "Price": 25000
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [ "SeedShop", "Items" ],
+            "Entries": {
+              "{{ModId}}_MeadKegSale": {
+                "Id": "{{ModId}}_MeadKegSale",
+                "ItemId": "(BC){{ModId}}_MeadKeg",
+                "AvailableStock": 5,
+                "IsRecipe": false,
+                "Price": 12500
+                }
+            }
         },
         {
             "Action": "EditData",
