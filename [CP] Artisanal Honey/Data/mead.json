@@ -12,7 +12,7 @@
                 "bonghits.Cp_HoneyMead": {
                   "Name": "bonghits.Cp_HoneyMead",
                   "DisplayName": "Honey Mead",
-                  "Description": "An artisanal mead crafted to perfection.",
+                  "Description": "A handcrafted honey mead with a rich, golden hue and a sweet, floral aroma. Perfect for a relaxing evening.",
                   "Type": "ArtisanGoods",
                   "Edibility": 100,
                   "IsDrink": true,
@@ -45,7 +45,7 @@
               "bonghits.Cp_AgedHoneyMead": {
                   "Name": "bonghits.Cp_AgedHoneyMead",
                   "DisplayName": "Aged Honey Mead",
-                  "Description": "An artisanal  honey mead refined and aged to its highest potential. The fruity smell eminating from the bottle reminds you of a warm bath in the spring.",
+                  "Description": "An artisanal honey mead aged to perfection. Its complex flavors reveal multiple fruity notes, offering a delightful and sophisticated experience.",
                   "Type": "ArtisanGoods",
                   "Edibility": 100,
                   "IsDrink": true,
