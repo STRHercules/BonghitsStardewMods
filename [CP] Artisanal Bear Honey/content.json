@@ -1,0 +1,88 @@
+{ 
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Format": "2.5.0",
+    "ConfigSchema": {
+        "CopyQualitySetting": {
+            "AllowValues": "disabled, enabled, auto",
+            "Default": "auto",
+            "Section": "Behavior"
+        }   
+    },
+    "DynamicTokens": [
+        {
+            "Name": "CopyQualityEnabled",
+            "Value": false
+        },
+        {
+            "Name": "CopyQualityEnabled",
+            "Value": true,
+            "When": {
+                "CopyQualitySetting": "enabled"
+            }
+        },
+        {
+            "Name": "CopyQualityEnabled",
+            "Value": true,
+            "When": {
+                "CopyQualitySetting": "auto",
+                "HasMod": "iakona1983.MachinesCopyQuality"
+            }
+        },
+        {
+            "Name": "CopyQualityEnabled",
+            "Value": true,
+            "When": {
+                "CopyQualitySetting": "auto",
+                "HasMod": "6480.qualitygoods"
+            }
+        },
+        {
+            "Name": "CopyQualityEnabled",
+            "Value": true,
+            "When": {
+                "CopyQualitySetting": "auto",
+                "HasMod": "voiddreams.ArtisanGoodsKeepQuality"
+            }
+        }
+    ],
+    "Changes": [
+        {
+            // Load Strings
+            "LogName": "String Tokens",
+            "Action": "Include",
+            "FromFile": "Data/strings.json"
+        },
+        {
+            // Spritesheet Load
+            "Action": "Load",
+            "Target": "bonghits.BearHoneyMead/Objects",
+            "FromFile": "assets/bh_mead.png"
+        },
+        {
+            // Spritesheet Load
+            "Action": "Load",
+            "Target": "bonghits.BearHoneyMead/Machines",
+            "FromFile": "assets/meadkeg.png"
+        },
+        {
+            // Machine Load
+            "Action": "Include",
+            "FromFile": "Data/machines.json"
+        },
+        {
+            // Buffs Load
+            "Action": "Include",
+            "FromFile": "Data/buffs.json"
+        },
+        {
+            // Mead Load
+            "Action": "Include",
+            "FromFile": "Data/mead.json"
+        },
+        {
+            // Operations Load
+            "Action": "Include",
+            "FromFile": "Data/operations.json"
+        }
+    ]
+}

@@ -1,0 +1,77 @@
+{ 
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                // Honey Mead
+                //
+                // Create Original Honey Mead Item
+                //
+                "bonghits.Cp_HoneyMead": {
+                  "Name": "bonghits.Cp_HoneyMead",
+                  "DisplayName": "Bear Honey Mead",
+                  "Description": "An artisanal mead crafted to perfection using Honey harvested by happy Bears.",
+                  "Type": "ArtisanGoods",
+                  "Edibility": 100,
+                  "IsDrink": true,
+                  "Category": -26,
+                  "Price": 1950,
+                  "SpriteIndex": 0,
+                  "Texture": "bonghits.BearHoneyMead/Objects",
+                  "Buffs": [{
+                        "BuffId": "bonghits.mead_tipsy",
+                        "Duration": 1500, // 17.5 In-Game Hours
+                        "CustomAttributes": {
+                          "FarmingLevel": 0,
+                          "FishingLevel": 0,
+                          "MiningLevel": 0,
+                          "LuckLevel": 3,
+                          "ForagingLevel": 2,
+                          "MaxStamina": 50,
+                          "MagneticRadius": 0,
+                          "Speed": 2,
+                          "Defense": 0,
+                          "Attack": 2
+                      }
+                  }],
+                  "ContextTags": ["bh.stock_mead"]
+              },
+              // Aged Honey Mead
+              //
+              // Create Aged Honey Mead Item
+              //
+              "bonghits.Cp_AgedHoneyMead": {
+                  "Name": "bonghits.Cp_AgedHoneyMead",
+                  "DisplayName": "Aged Bear Honey Mead",
+                  "Description": "An artisanal bear honey mead refined and aged to its highest potential. The fruity smell eminating from the bottle reminds you of a warm bath in the spring.",
+                  "Type": "ArtisanGoods",
+                  "Edibility": 100,
+                  "IsDrink": true,
+                  "Category": -26,
+                  "Price": 4215,
+                  "SpriteIndex": 2,
+                  "Texture": "bonghits.BearHoneyMead/Objects",
+                  "Buffs": [{
+                      "BuffId": "bonghits.mead_drunk",
+                      "Duration": 4000, // 2 In-Game Days (46.5 Hours)
+                      "CustomAttributes": {
+                          "FarmingLevel": 5,
+                          "FishingLevel": 0,
+                          "MiningLevel": 0,
+                          "LuckLevel": 5,
+                          "ForagingLevel": 5,
+                          "MaxStamina": 100,
+                          "MagneticRadius": 5,
+                          "Speed": 5,
+                          "Defense": 2,
+                          "Attack": 5
+                      }
+                  }],
+                  "ContextTags": ["bh.aged_mead", "alcohol_item", "drink_item"]
+              }
+            }
+        }
+    ]
+}
