@@ -5,7 +5,7 @@
             "Action": "EditData",
             "Target": "Data/CraftingRecipes",
             "Entries": {
-                "{{ModId}}_MeadKegRecipe": "388 125 725 2 726 2/Home/{{ModId}}_MeadKeg/true/Farming 4/" //125 Wood, 2 Pine Tar, 2 Oak Resin
+                "{{ModId}}_MeadKeg": "388 125 725 2 726 2/Home/{{ModId}}_MeadKeg/true/Farming 4/" //125 Wood, 2 Pine Tar, 2 Oak Resin
             },
             "LogName": "Mead Keg Recipe Definition"
         },
