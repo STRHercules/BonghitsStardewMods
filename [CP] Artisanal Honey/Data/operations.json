@@ -124,7 +124,7 @@
         //
         //
         //
-        //  Machine Progression System Kegs
+        //  Machine Progression System Kegs {SVE}
         //
         //
         //
@@ -373,6 +373,312 @@
                     "MinutesUntilReady": 282 // 4.7 Hours
                 }
             }
+        },
+        //
+        //
+        //
+        //
+        //
+        // --------------------------------------------------------
+        //
+        //
+        //
+        //
+        //
+        //  Machine Progression System Kegs {NON-SVE}
+        //
+        //
+        //
+        //
+        // --------------------------------------------------------
+        //  Gold Keg
+        //  Machine Progression System Support
+        //
+        //  Raw Bear Honey to Mead Recipe
+        //
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)nachonline.mps_GoldKeg",
+                "OutputRules"
+            ],
+            "Entries": {
+                // Jar Honey -> Keg -> Bear Honey Mead
+                "nachonline.mps_flavored_mead": {
+                    "Triggers": [
+                        {
+                            "Id": "bearhoneyTrigger",
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredItemId": "(O)340", // Honey
+                            "RequiredCount": "12" // Need 12 Jars of Honey
+                        }
+                    ],
+                    "OutputItem": [
+                        {
+                            "Id": "bonghits.Cp_BearHoneyMead",
+                            "ItemId": "bonghits.Cp_BearHoneyMead",
+                            "ObjectInternalName": "{0} Mead",
+                            "ObjectDisplayName": "%PRESERVED_DISPLAY_NAME Mead",
+                            "PreserveId": "DROP_IN_PRESERVE",
+                            "CopyQuality": "{{CopyQualityEnabled}}",
+                            "PriceModifierMode": "Stack",
+                            // 5% Chance to double
+                            "StackModifiers": [
+                                {
+                                    "Id": "RareDouble",
+                                    "Condition": "RANDOM .05",
+                                    "Modification": "Multiply",
+                                    "Amount": 2.0
+                                }
+                            ],
+                            "PriceModifiers": [
+                                {
+                                    "Id": null,
+                                    "Condition": null,
+                                    "Modification": "Multiply",
+                                    "Amount": 2.0,
+                                    "RandomAmount": null
+                                }
+                            ],
+                            "InvalidCountMessage": "Needs 12 Honey",
+                        }
+                    ],
+                    "MinutesUntilReady": 432 // 7.2 Hours
+                }
+            },
+        },
+        //
+        //  Diamond Keg
+        //  Machine Progression System Support
+        //
+        //  Raw Bear Honey to Mead Recipe
+        //
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)nachonline.mps_DiamondKeg",
+                "OutputRules"
+            ],
+            "Entries": {
+                // Jar Honey -> Keg -> Bear Honey Mead
+                "nachonline.mps_flavored_mead": {
+                    "Triggers": [
+                        {
+                            "Id": "bearhoneyTrigger",
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredItemId": "(O)340", // Honey
+                            "RequiredCount": "12" // Need 12 Jars of Honey
+                        }
+                    ],
+                    "OutputItem": [
+                        {
+                            "Id": "bonghits.Cp_BearHoneyMead",
+                            "ItemId": "bonghits.Cp_BearHoneyMead",
+                            "ObjectInternalName": "{0} Mead",
+                            "ObjectDisplayName": "%PRESERVED_DISPLAY_NAME Mead",
+                            "PreserveId": "DROP_IN_PRESERVE",
+                            "CopyQuality": "{{CopyQualityEnabled}}",
+                            "PriceModifierMode": "Stack",
+                            // 5% Chance to double
+                            "StackModifiers": [
+                                {
+                                    "Id": "RareDouble",
+                                    "Condition": "RANDOM .05",
+                                    "Modification": "Multiply",
+                                    "Amount": 2.0
+                                }
+                            ],
+                            "PriceModifiers": [
+                                {
+                                    "Id": null,
+                                    "Condition": null,
+                                    "Modification": "Multiply",
+                                    "Amount": 2.0,
+                                    "RandomAmount": null
+                                }
+                            ],
+                            "InvalidCountMessage": "Needs 12 Honey",
+                        }
+                    ],
+                    "MinutesUntilReady": 384 // 6.4 Hours
+                }
+            },
+        },
+        //
+        //  Iridium Keg
+        //  Machine Progression System Support
+        //
+        //  Raw Bear Honey to Mead Recipe
+        //
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)nachonline.mps_IridiumKeg",
+                "OutputRules"
+            ],
+            "Entries": {
+                // Jar Honey -> Keg -> Bear Honey Mead
+                "nachonline.mps_flavored_mead": {
+                    "Triggers": [
+                        {
+                            "Id": "bearhoneyTrigger",
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredItemId": "(O)340", // Honey
+                            "RequiredCount": "12" // Need 12 Jars of Honey
+                        }
+                    ],
+                    "OutputItem": [
+                        {
+                            "Id": "bonghits.Cp_BearHoneyMead",
+                            "ItemId": "bonghits.Cp_BearHoneyMead",
+                            "ObjectInternalName": "{0} Mead",
+                            "ObjectDisplayName": "%PRESERVED_DISPLAY_NAME Mead",
+                            "PreserveId": "DROP_IN_PRESERVE",
+                            "CopyQuality": "{{CopyQualityEnabled}}",
+                            "PriceModifierMode": "Stack",
+                            // 5% Chance to double
+                            "StackModifiers": [
+                                {
+                                    "Id": "RareDouble",
+                                    "Condition": "RANDOM .05",
+                                    "Modification": "Multiply",
+                                    "Amount": 2.0
+                                }
+                            ],
+                            "PriceModifiers": [
+                                {
+                                    "Id": null,
+                                    "Condition": null,
+                                    "Modification": "Multiply",
+                                    "Amount": 2.0,
+                                    "RandomAmount": null
+                                }
+                            ],
+                            "InvalidCountMessage": "Needs 12 Honey",
+                        }
+                    ],
+                    "MinutesUntilReady": 348 // 5.8 Hours
+                }
+            },
+        },
+        //
+        //  Radioactive Keg
+        //  Machine Progression System Support
+        //
+        //  Raw Bear Honey to Mead Recipe
+        //
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)nachonline.mps_RadioactiveKeg",
+                "OutputRules"
+            ],
+            "Entries": {
+                // Jar Honey -> Keg -> Bear Honey Mead
+                "nachonline.mps_flavored_mead": {
+                    "Triggers": [
+                        {
+                            "Id": "bearhoneyTrigger",
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredItemId": "(O)340", // Honey
+                            "RequiredCount": "12" // Need 12 Jars of Honey
+                        }
+                    ],
+                    "OutputItem": [
+                        {
+                            "Id": "bonghits.Cp_BearHoneyMead",
+                            "ItemId": "bonghits.Cp_BearHoneyMead",
+                            "ObjectInternalName": "{0} Mead",
+                            "ObjectDisplayName": "%PRESERVED_DISPLAY_NAME Mead",
+                            "PreserveId": "DROP_IN_PRESERVE",
+                            "CopyQuality": "{{CopyQualityEnabled}}",
+                            "PriceModifierMode": "Stack",
+                            // 5% Chance to double
+                            "StackModifiers": [
+                                {
+                                    "Id": "RareDouble",
+                                    "Condition": "RANDOM .05",
+                                    "Modification": "Multiply",
+                                    "Amount": 2.0
+                                }
+                            ],
+                            "PriceModifiers": [
+                                {
+                                    "Id": null,
+                                    "Condition": null,
+                                    "Modification": "Multiply",
+                                    "Amount": 2.0,
+                                    "RandomAmount": null
+                                }
+                            ],
+                            "InvalidCountMessage": "Needs 12 Honey",
+                        }
+                    ],
+                    "MinutesUntilReady": 315 // 5.25 Hours
+                }
+            },
+        },
+        //
+        //  Prismatic Keg
+        //  Machine Progression System Support
+        //
+        //  Raw Bear Honey to Mead Recipe
+        //
+        {
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)nachonline.mps_PrismaticKeg",
+                "OutputRules"
+            ],
+            "Entries": {
+                // Jar Honey -> Keg -> Bear Honey Mead
+                "nachonline.mps_flavored_mead": {
+                    "Triggers": [
+                        {
+                            "Id": "bearhoneyTrigger",
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredItemId": "(O)340", // Honey
+                            "RequiredCount": "12" // Need 12 Jars of Honey
+                        }
+                    ],
+                    "OutputItem": [
+                        {
+                            "Id": "bonghits.Cp_BearHoneyMead",
+                            "ItemId": "bonghits.Cp_BearHoneyMead",
+                            "ObjectInternalName": "{0} Mead",
+                            "ObjectDisplayName": "%PRESERVED_DISPLAY_NAME Mead",
+                            "PreserveId": "DROP_IN_PRESERVE",
+                            "CopyQuality": "{{CopyQualityEnabled}}",
+                            "PriceModifierMode": "Stack",
+                            // 5% Chance to double
+                            "StackModifiers": [
+                                {
+                                    "Id": "RareDouble",
+                                    "Condition": "RANDOM .05",
+                                    "Modification": "Multiply",
+                                    "Amount": 2.0
+                                }
+                            ],
+                            "PriceModifiers": [
+                                {
+                                    "Id": null,
+                                    "Condition": null,
+                                    "Modification": "Multiply",
+                                    "Amount": 2.0,
+                                    "RandomAmount": null
+                                }
+                            ],
+                            "InvalidCountMessage": "Needs 12 Honey",
+                        }
+                    ],
+                    "MinutesUntilReady": 282 // 4.7 Hours
+                }
+            },
         },
         // -----------------------------------------------------------------
         //
