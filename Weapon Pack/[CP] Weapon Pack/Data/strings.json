@@ -1,0 +1,12 @@
+{ 
+  "Changes": [
+    {
+      "LogName": "Add String Tokens",
+      "Action": "EditData",
+      "Target": "Strings/Objects",
+      "Entries": {
+        "bonghits.agedmead_name": "Aged {0} Honey Mead"
+      }
+    }
+  ]
+}

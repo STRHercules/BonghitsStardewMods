@@ -1,0 +1,13 @@
+{
+    "Name": "[CP] Weapon Pack",
+    "Author": "MajorBonghits",
+    "Version": "1.0.0",
+    "Description": "Weapon Expansion Pack",
+    "UniqueID": "bonghits.cp.WeaponPack",
+    "UpdateKeys": [
+        "Nexus:XXXXX"
+    ],
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    }
+}

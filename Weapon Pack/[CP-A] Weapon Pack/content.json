@@ -1,0 +1,20 @@
+{
+    "Format": "2.5.0",
+    "Changes": [
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp-a.WeaponPack/ProjectileOne",
+            "FromFile": "assets/projectile_One.png"
+        },
+        {
+			"LogName": "Animated Projectiles",
+			"Action": "EditImage",
+			"Target": "bonghits.cp-a.WeaponPack/ProjectileOne",
+			"FromFile": "projectile_One.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 80, "Y": 0, "Width": 16, "Height": 16 },
+			"AnimationFrameTime": 5,
+			"AnimationFrameCount": 6
+		}
+    ]
+}
