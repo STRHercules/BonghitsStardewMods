@@ -1,0 +1,131 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                // Honey Mead
+                //
+                // Create Original Honey Mead Item
+                //
+                "bonghits.Cp_BearHoneyMead": {
+                    "Name": "bonghits.Cp_HoneyMead",
+                    "DisplayName": "Bear Honey Mead",
+                    "Description": "A handcrafted honey mead with a rich, golden hue and a sweet, floral aroma. Perfect for a relaxing evening.",
+                    "Type": "ArtisanGoods",
+                    "Edibility": 100,
+                    "IsDrink": true,
+                    "Category": -26,
+                    "Price": 1950,
+                    "SpriteIndex": 0,
+                    "Texture": "bonghits.BearHoneyMead/Objects",
+                    "Buffs": [
+                        {
+                            "BuffId": "bonghits.mead_tipsy",
+                            "Duration": 1500, // 17.5 In-Game Hours
+                            "CustomAttributes": {
+                                "FarmingLevel": 0,
+                                "FishingLevel": 0,
+                                "MiningLevel": 0,
+                                "LuckLevel": 3,
+                                "ForagingLevel": 2,
+                                "MaxStamina": 50,
+                                "MagneticRadius": 0,
+                                "Speed": 2,
+                                "Defense": 0,
+                                "Attack": 2
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "color_gold",
+                        "bh.stock_mead",
+                        "alcohol_item",
+                        "drink_item"
+                    ]
+                },
+                // Aged Honey Mead
+                //
+                // Create Aged Honey Mead Item
+                //
+                "bonghits.Cp_AgedBearHoneyMead": {
+                    "Name": "bonghits.Cp_AgedHoneyMead",
+                    "DisplayName": "Aged Bear Honey Mead",
+                    "Description": "An artisanal honey mead aged to perfection. Its complex flavors reveal multiple fruity notes, offering a delightful and sophisticated experience.",
+                    "Type": "ArtisanGoods",
+                    "Edibility": 100,
+                    "IsDrink": true,
+                    "Category": -26,
+                    "Price": 4215,
+                    "SpriteIndex": 2,
+                    "Texture": "bonghits.BearHoneyMead/Objects",
+                    "Buffs": [
+                        {
+                            "BuffId": "bonghits.mead_drunk",
+                            "Duration": 4000, // 2 In-Game Days (46.5 Hours)
+                            "CustomAttributes": {
+                                "FarmingLevel": 5,
+                                "FishingLevel": 0,
+                                "MiningLevel": 0,
+                                "LuckLevel": 5,
+                                "ForagingLevel": 5,
+                                "MaxStamina": 100,
+                                "MagneticRadius": 5,
+                                "Speed": 5,
+                                "Defense": 2,
+                                "Attack": 5
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "color_gold",
+                        "bh.aged_mead",
+                        "alcohol_item",
+                        "drink_item"
+                    ]
+                },
+                // Sparkling Mead
+                //
+                // Create Sparkling Mead Item
+                //
+                "bonghits.Cp_SparklingHoneyMead": {
+                    "Name": "bonghits.Cp_SparklingHoneyMead",
+                    "DisplayName": "Sparkling Honey Mead",
+                    "Description": "A refreshing sparkling honey mead with a light, effervescent quality and a hint of citrus. Perfect for celebrations.",
+                    "Type": "ArtisanGoods",
+                    "Edibility": 100,
+                    "IsDrink": true,
+                    "Category": -26,
+                    "Price": 2500,
+                    "SpriteIndex": 1,
+                    "Texture": "bonghits.BearHoneyMead/Beverages",
+                    "Buffs": [
+                        {
+                            "BuffId": "bonghits.mead_sparkling",
+                            "Duration": 2000, // 23 In-Game Hours
+                            "CustomAttributes": {
+                                "FarmingLevel": 2,
+                                "FishingLevel": 2,
+                                "MiningLevel": 2,
+                                "LuckLevel": 4,
+                                "ForagingLevel": 3,
+                                "MaxStamina": 75,
+                                "MagneticRadius": 2,
+                                "Speed": 3,
+                                "Defense": 1,
+                                "Attack": 3
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "color_gold",
+                        "bh.sparkling_mead",
+                        "alcohol_item",
+                        "drink_item"
+                    ]
+                }
+            }
+        }
+    ]
+}
