@@ -1,4 +1,4 @@
-{ 
+{
     "$schema": "https://smapi.io/schemas/content-patcher.json",
     "Changes": [
         //
@@ -19,7 +19,6 @@
         //  Carbonator Recipe
         //
         //
-
         //
         //
         //  Insert Artisanal Mead Keg Blueprint to Pierre's Shop
@@ -28,13 +27,16 @@
         {
             "Action": "EditData",
             "Target": "Data/Shops",
-            "TargetField": [ "SeedShop", "Items" ],
+            "TargetField": [
+                "SeedShop",
+                "Items"
+            ],
             "Entries": {
-              "{{ModId}}_MeadKegSale": {
-                "Id": "{{ModId}}_MeadKegRecipeSale",
-                "ItemId": "(BC){{ModId}}_MeadKeg",
-                "IsRecipe": true,
-                "Price": 25000
+                "{{ModId}}_MeadKegSale": {
+                    "Id": "{{ModId}}_MeadKegRecipeSale",
+                    "ItemId": "(BC){{ModId}}_MeadKeg",
+                    "IsRecipe": true,
+                    "Price": 25000
                 }
             }
         },
@@ -46,14 +48,17 @@
         {
             "Action": "EditData",
             "Target": "Data/Shops",
-            "TargetField": [ "SeedShop", "Items" ],
+            "TargetField": [
+                "SeedShop",
+                "Items"
+            ],
             "Entries": {
-              "{{ModId}}_MeadKegSale": {
-                "Id": "{{ModId}}_MeadKegSale",
-                "ItemId": "(BC){{ModId}}_MeadKeg",
-                "AvailableStock": 5,
-                "IsRecipe": false,
-                "Price": 12500
+                "{{ModId}}_MeadKegSale": {
+                    "Id": "{{ModId}}_MeadKegSale",
+                    "ItemId": "(BC){{ModId}}_MeadKeg",
+                    "AvailableStock": 5,
+                    "IsRecipe": false,
+                    "Price": 12500
                 }
             }
         },
@@ -101,13 +106,13 @@
                     "CanBePlacedOutdoors": true,
                     "CanBePlacedIndoors": true,
                     "IsLamp": false,
-                    "Texture": "bonghits.BearHoneyMead/Machines",
-                    "SpriteIndex": 1,
+                    "Texture": "bonghits.BearHoneyMead/Carbonator",
+                    "SpriteIndex": 0,
                     "ContextTags": null,
                     "CustomFields": null
                 }
             },
-            "LogName": "Mead Keg BC definition"
+            "LogName": "Carbonator BC definition"
         },
         {
             "Action": "EditData",
@@ -163,7 +168,6 @@
                                     "Quality": -1,
                                     "ObjectInternalName": "DROP_IN_ID DROP_IN_ID_1 PRESERVE_ID_1 PRESERVE_ID_2 Honey Mead",
                                     "ObjectDisplayName": "[LocalizedText Strings/Objects:bonghits.mead_name %PRESERVED_DISPLAY_NAME]",
-                                    
                                     "ToolUpgradeLevel": -1,
                                     "IsRecipe": false,
                                     "StackModifierMode": "Stack",
@@ -266,7 +270,6 @@
                                     "Quality": -1,
                                     "ObjectInternalName": "DROP_IN_ID DROP_IN_ID_1 PRESERVE_ID_1 PRESERVE_ID_2 Sparkling Honey Mead",
                                     "ObjectDisplayName": "[LocalizedText Strings/Objects:bonghits.sparkling_mead_name %PRESERVED_DISPLAY_NAME]",
-                                    
                                     "ToolUpgradeLevel": -1,
                                     "IsRecipe": false,
                                     "StackModifierMode": "Stack",
@@ -292,25 +295,27 @@
                     "InvalidItemMessage": null,
                     "InvalidItemMessageCondition": null,
                     "InvalidCountMessage": "{{i18n: message.invalidCount3}}",
-                    "LoadEffects": [
+                    "WorkingEffects": [
                         {
-                            "Id": "Default",
-                            "Condition": null,
                             "Sounds": [
-                                {
-                                    "Id": "Ship",
-                                    "Delay": 0
-                                },
                                 {
                                     "Id": "bubbles",
                                     "Delay": 0
                                 }
-                            ]
-                        }
+                            ],
+                            "ShakeDuration": 100,
+                            "Frames": [
+                                0,
+                                1,
+                                2,
+                                3
+                            ],
+                            "Interval": 200,
+                        },
                     ],
-                    "WorkingEffectChance": 0.33,
+                    "WorkingEffectChance": 1,
                     "AllowLoadWhenFull": false,
-                    "WobbleWhileWorking": true,
+                    "WobbleWhileWorking": false,
                     "LightWhileWorking": null,
                     "ShowNextIndexWhileWorking": false,
                     "ShowNextIndexWhenReady": false,
