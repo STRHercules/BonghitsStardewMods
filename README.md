@@ -12,12 +12,16 @@ The itch to tinker and 'fix' crept up on me, now we're here!
 
 - [Artisanal Honey Mead](https://github.com/STRHercules/BonghitsStardewMods/releases/tag/BearHoney)
 
+- [Bonghits' Weapon and Magic Expansion](https://github.com/STRHercules/BonghitsStardewMods/releases/tag/WeaponPack)
+
 - [Woods Elsewhere Unofficial Update](https://github.com/STRHercules/BonghitsStardewMods/releases/tag/WoodsElsewhere)
 
 
 ## Nexus Directory
 
 - [Artisanal Honey Mead](https://www.nexusmods.com/stardewvalley/mods/31786)
+
+- [Bonghits' Weapon and Magic Expansion](https://www.nexusmods.com/stardewvalley/mods/32082)
 
 - [Woods Elsewhere Unofficial Update](https://www.nexusmods.com/stardewvalley/mods/31801)
 
