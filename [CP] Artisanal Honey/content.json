@@ -53,16 +53,28 @@
             "FromFile": "Data/strings.json"
         },
         {
-            // Spritesheet Load
+            // Mead Spritesheet Load
             "Action": "Load",
             "Target": "bonghits.BearHoneyMead/Objects",
             "FromFile": "assets/bh_mead.png"
         },
         {
-            // Spritesheet Load
+            // Machine Spritesheet Load
             "Action": "Load",
             "Target": "bonghits.BearHoneyMead/Machines",
-            "FromFile": "assets/meadkeg.png"
+            "FromFile": "assets/machines.png"
+        },
+        {
+            // Carbonator Spritesheet Load
+            "Action": "Load",
+            "Target": "bonghits.BearHoneyMead/Carbonator",
+            "FromFile": "assets/carbonator.png"
+        },
+        {
+            // Beverages Spritesheet Load
+            "Action": "Load",
+            "Target": "bonghits.BearHoneyMead/Beverages",
+            "FromFile": "assets/bevs.png"
         },
         {
             // Machine Load
