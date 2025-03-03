@@ -1,0 +1,67 @@
+{ 
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Format": "2.5.0",
+    "Changes": [
+        {
+            // Spritesheet Load
+            "Action": "Load",
+            "Target": "bonghits.cp.WeaponPack/Weapons",
+            "FromFile": "assets/iron_weapons.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.WeaponPack/ProjectileOne",
+            "FromFile": "assets/projectile_One.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.WeaponPack/ProjectileTwo",
+            "FromFile": "assets/projectile_Two.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.WeaponPack/ProjectileThree",
+            "FromFile": "assets/projectile_Three.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.WeaponPack/ProjectileFour",
+            "FromFile": "assets/projectile_Four.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.WeaponPack/ProjectileFive",
+            "FromFile": "assets/projectile_Five.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.WeaponPack/ProjectileSix",
+            "FromFile": "assets/projectile_Six.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.WeaponPack/ProjectileSeven",
+            "FromFile": "assets/projectile_Seven.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.WeaponPack/ProjectileEight",
+            "FromFile": "assets/projectile_Eight.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.WeaponPack/ProjectileNine",
+            "FromFile": "assets/projectile_Nine.png"
+        },
+        {
+            // Weapon Load
+            "Action": "Include",
+            "FromFile": "Data/weapons.json"
+        },
+        {
+            // Weapon Load
+            "Action": "Include",
+            "FromFile": "Data/projectiles.json"
+        }
+    ]
+}

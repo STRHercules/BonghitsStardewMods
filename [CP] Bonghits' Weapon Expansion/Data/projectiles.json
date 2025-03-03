@@ -1,0 +1,281 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                // 
+                //
+                //  Projectile Object Data 
+                //
+                //
+                "{{ModId}}.Projectile.01": {
+                    "Name": "{{ModId}}.Projectile.01",
+                    "DisplayName": null,
+                    "Description": null,
+                    "Type": null,
+                    "Edibility": 0,
+                    "IsDrink": false,
+                    "Category": -26,
+                    "Price": 1,
+                    "SpriteIndex": 0,
+                    "Texture": "bonghits.cp.WeaponPack/ProjectileOne",
+                },
+                "{{ModId}}.Projectile.02": {
+                    "Name": "{{ModId}}.Projectile.02",
+                    "DisplayName": null,
+                    "Description": null,
+                    "Type": null,
+                    "Edibility": 0,
+                    "IsDrink": false,
+                    "Category": -26,
+                    "Price": 1,
+                    "SpriteIndex": 0,
+                    "Texture": "bonghits.cp.WeaponPack/ProjectileTwo",
+                },
+                "{{ModId}}.Projectile.03": {
+                    "Name": "{{ModId}}.Projectile.03",
+                    "DisplayName": null,
+                    "Description": null,
+                    "Type": null,
+                    "Edibility": 0,
+                    "IsDrink": false,
+                    "Category": -26,
+                    "Price": 1,
+                    "SpriteIndex": 0,
+                    "Texture": "bonghits.cp.WeaponPack/ProjectileThree",
+                },
+                "{{ModId}}.Projectile.04": {
+                    "Name": "{{ModId}}.Projectile.04",
+                    "DisplayName": null,
+                    "Description": null,
+                    "Type": null,
+                    "Edibility": 0,
+                    "IsDrink": false,
+                    "Category": -26,
+                    "Price": 1,
+                    "SpriteIndex": 0,
+                    "Texture": "bonghits.cp.WeaponPack/ProjectileFour",
+                },
+                "{{ModId}}.Projectile.05": {
+                    "Name": "{{ModId}}.Projectile.05",
+                    "DisplayName": null,
+                    "Description": null,
+                    "Type": null,
+                    "Edibility": 0,
+                    "IsDrink": false,
+                    "Category": -26,
+                    "Price": 1,
+                    "SpriteIndex": 0,
+                    "Texture": "bonghits.cp.WeaponPack/ProjectileFive",
+                },
+                "{{ModId}}.Projectile.06": {
+                    "Name": "{{ModId}}.Projectile.06",
+                    "DisplayName": null,
+                    "Description": null,
+                    "Type": null,
+                    "Edibility": 0,
+                    "IsDrink": false,
+                    "Category": -26,
+                    "Price": 1,
+                    "SpriteIndex": 0,
+                    "Texture": "bonghits.cp.WeaponPack/ProjectileSix",
+                },
+                "{{ModId}}.Projectile.07": {
+                    "Name": "{{ModId}}.Projectile.07",
+                    "DisplayName": null,
+                    "Description": null,
+                    "Type": null,
+                    "Edibility": 0,
+                    "IsDrink": false,
+                    "Category": -26,
+                    "Price": 1,
+                    "SpriteIndex": 0,
+                    "Texture": "bonghits.cp.WeaponPack/ProjectileSeven",
+                },
+                "{{ModId}}.Projectile.08": {
+                    "Name": "{{ModId}}.Projectile.08",
+                    "DisplayName": null,
+                    "Description": null,
+                    "Type": null,
+                    "Edibility": 0,
+                    "IsDrink": false,
+                    "Category": -26,
+                    "Price": 1,
+                    "SpriteIndex": 0,
+                    "Texture": "bonghits.cp.WeaponPack/ProjectileEight",
+                },
+                "{{ModId}}.Projectile.09": {
+                    "Name": "{{ModId}}.Projectile.09",
+                    "DisplayName": null,
+                    "Description": null,
+                    "Type": null,
+                    "Edibility": 0,
+                    "IsDrink": false,
+                    "Category": -26,
+                    "Price": 1,
+                    "SpriteIndex": 0,
+                    "Texture": "bonghits.cp.WeaponPack/ProjectileNine",
+                }
+            }
+        },
+        //
+        //  
+        // Projectile Animations
+        //
+        //
+        {
+            "LogName": "Projectile 1 Animation",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "Entries": {
+                "{{ModId}}.Projectile.01": {
+                    "TargetTexture": "bonghits.cp.WeaponPack/ProjectileOne",
+                    "TargetRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/projectile_One.png}}:0..5@10"
+                }
+            }
+        },
+        {
+            "LogName": "Projectile 2 Animation",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "Entries": {
+                "{{ModId}}.Projectile.02": {
+                    "TargetTexture": "bonghits.cp.WeaponPack/ProjectileTwo",
+                    "TargetRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/projectile_Two.png}}:0..3@10"
+                }
+            }
+        },
+        {
+            "LogName": "Projectile 3 Animation",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "Entries": {
+                "{{ModId}}.Projectile.03": {
+                    "TargetTexture": "bonghits.cp.WeaponPack/ProjectileThree",
+                    "TargetRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/projectile_Three.png}}:0..3@10"
+                }
+            }
+        },
+        {
+            "LogName": "Projectile 4 Animation",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "Entries": {
+                "{{ModId}}.Projectile.04": {
+                    "TargetTexture": "bonghits.cp.WeaponPack/ProjectileFour",
+                    "TargetRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/projectile_Four.png}}:0..3@10"
+                }
+            }
+        },
+        {
+            "LogName": "Projectile 5 Animation",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "Entries": {
+                "{{ModId}}.Projectile.05": {
+                    "TargetTexture": "bonghits.cp.WeaponPack/ProjectileFive",
+                    "TargetRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/projectile_Five.png}}:0..2@10"
+                }
+            }
+        },
+        {
+            "LogName": "Projectile 6 Animation",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "Entries": {
+                "{{ModId}}.Projectile.06": {
+                    "TargetTexture": "bonghits.cp.WeaponPack/ProjectileSix",
+                    "TargetRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/projectile_Six.png}}:0..5@10"
+                }
+            }
+        },
+        {
+            "LogName": "Projectile 7 Animation",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "Entries": {
+                "{{ModId}}.Projectile.07": {
+                    "TargetTexture": "bonghits.cp.WeaponPack/ProjectileSeven",
+                    "TargetRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/projectile_Seven.png}}:0..1@10"
+                }
+            }
+        },
+        {
+            "LogName": "Projectile 8 Animation",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "Entries": {
+                "{{ModId}}.Projectile.08": {
+                    "TargetTexture": "bonghits.cp.WeaponPack/ProjectileEight",
+                    "TargetRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/projectile_Eight.png}}:0..3@10"
+                }
+            }
+        },
+        {
+            "LogName": "Projectile 9 Animation",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "Entries": {
+                "{{ModId}}.Projectile.09": {
+                    "TargetTexture": "bonghits.cp.WeaponPack/ProjectileNine",
+                    "TargetRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    },
+                    "SourceTexture": "{{InternalAssetKey: assets/projectile_Nine.png}}:0..3@10"
+                }
+            }
+        }
+    ]
+}

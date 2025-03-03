@@ -1,0 +1,19 @@
+{
+    "Name": "[CP] Bonghits' Weapon Expansion",
+    "Author": "MajorBonghits",
+    "Version": "1.0",
+    "Description": "Weapon and Magic Expansion Pack",
+    "UniqueID": "bonghits.cp.WeaponPack",
+    "UpdateKeys": [
+        "Nexus:32082"
+    ],
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    },
+    "Dependencies": [
+        {
+            "UniqueID": "spacechase0.SpaceCore",
+            "Required": true
+        }
+    ]
+}
