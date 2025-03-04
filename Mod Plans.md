@@ -10,6 +10,8 @@
 ### Carbonation
 * Use Particle Framework to add bubbles to carbonator machine?
 
+* Potentially use carbonation machine to make other beverages such as cider from apples
+
 * Carbonation machine - create sparkling mead. Additional second step in the mead refining process. Does not replace aging, works in tandem.
 
 * Currently using placeholder art for sparkling mead object
