@@ -4,6 +4,9 @@
 
 * For stage three, simply ignore flavor definition and create *[Fruity Mead Spritzer]*? This option is kinda lame considering previous stages.
 
+* Translation support 
+
+
 ### Carbonation
 * Use Particle Framework to add bubbles to carbonator machine?
 
@@ -80,6 +83,8 @@
 * Add custom trinkets?
 
 * Figure out what the hell the determination for drop rates/locations are
+
+* Translation support
 
 ### Advanced Melee Framework
 * Finish AMF integration - decide which weapons will recieve special treatment
