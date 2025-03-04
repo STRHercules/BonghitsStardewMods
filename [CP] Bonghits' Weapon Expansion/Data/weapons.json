@@ -5,7 +5,7 @@
             "Action": "EditData",
             "Target": "Data/CraftingRecipes",
             "Entries": {
-                "{{ModId}}_Flamberge": "335 10 336 2 388 10 544 1/Home/{{ModId}}_Flamberge/false/Combat 4/" // 10 Iron Bars, 2 Gold Bars, 10 Wood, 1	Esperite
+                "{{ModId}}_Flamberge": "335 10 336 2 388 10 544 1/Home/{{ModId}}_Flamberge/false/Combat 4/" // 10 Iron Bars, 2 Gold Bars, 10 Wood, 1 Esperite
             },
             "LogName": "Flamberge Recipe Definition"
         },
