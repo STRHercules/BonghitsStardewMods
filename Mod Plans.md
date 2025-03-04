@@ -5,7 +5,9 @@
 * For stage three, simply ignore flavor definition and create *[Fruity Mead Spritzer]*? This option is kinda lame considering previous stages.
 
 ### Carbonation
-* Add machine that carbonates mead - create sparkling mead. Additional second step in the mead refining process. Does not replace aging, works in tandem.
+* Use Particle Framework to add bubbles to carbonator machine?
+
+* Carbonation machine - create sparkling mead. Additional second step in the mead refining process. Does not replace aging, works in tandem.
 
 * Currently using placeholder art for sparkling mead object
 
@@ -22,6 +24,8 @@
 
 ### Filtering
 * Add new machine, filter/strainer that will filter particulates left behind from fruit.
+
+* Byproducts from filtering can be sold/reused [Fruit, coal?]
 
 * Need some kind of cheesecloth crafted from linen/yarn (Wool, Camel Wool)
 
@@ -73,18 +77,25 @@
 ### General
 * Tinker with the particle framework - add them to a weapon? Use small sprites for twinkling or fire effect?
 
+* Add custom trinkets?
+
+* Figure out what the hell the determination for drop rates/locations are
 
 ### Advanced Melee Framework
 * Finish AMF integration - decide which weapons will recieve special treatment
-
-* Figure out what the hell the determination for drop rates/locations are
 
 * Tinker with AMF to create new unique specials
 
 * Create sunder effect - small impact/explosions that extend out from the player
 
+* laser beam ala Link? (Master sword)
+
+* Wands?
+
 ### Weapons
 * Create additional magical weapons using AMF - Lightning staff, etc
+
+* have weapon with empty/small sprite for magic projectile?
 
 ### Armor
 * Sword & Sorcery for East Scarp has armor slots - make items for that? Particle integration?
