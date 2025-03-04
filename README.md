@@ -1,14 +1,18 @@
 # MajorBonghits' Stardew Valley Mod Collection
 
+### [My Current Mod Plans](https://github.com/STRHercules/BonghitsStardewMods/blob/main/Mod%20Plans.md)
 
-## Background
+
+### Background
 This collection of mods are authored by myself, mostly for my own playthroughs, problem solving and closing gaps.
 
 I started with frustration over Stardew Valley Expanded's custom Bears in the Premium Barn. They acted similarly to truffle pigs, but once you get the honey from them that was it. I was dissapointed in the lack of artisan good for such unique honey, so I decided to make it!
 
 The itch to tinker and 'fix' crept up on me, now we're here!
 
-## GitHub Directory
+# Mod Directory
+
+### GitHub Directory
 
 - [Artisanal Honey Mead](https://github.com/STRHercules/BonghitsStardewMods/releases/tag/BearHoney)
 
@@ -17,7 +21,7 @@ The itch to tinker and 'fix' crept up on me, now we're here!
 - [Woods Elsewhere Unofficial Update](https://github.com/STRHercules/BonghitsStardewMods/releases/tag/WoodsElsewhere)
 
 
-## Nexus Directory
+### Nexus Directory
 
 - [Artisanal Honey Mead](https://www.nexusmods.com/stardewvalley/mods/31786)
 
@@ -25,3 +29,4 @@ The itch to tinker and 'fix' crept up on me, now we're here!
 
 - [Woods Elsewhere Unofficial Update](https://www.nexusmods.com/stardewvalley/mods/31801)
 
+---
