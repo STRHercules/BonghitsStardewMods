@@ -1,6 +1,80 @@
 {
     "$schema": "https://smapi.io/schemas/content-patcher.json",
     "Changes": [
+        //
+        //
+        //  Shop Insertion
+        //
+        //
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "AdventureShop",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_TippedSpearSale": {
+                    "Id": "{{ModId}}_TippedSpearSale",
+                    "ItemId": "{{ModId}}_TippedSpear",
+                    "IsRecipe": false,
+                    "Price": 5000
+                },
+                "{{ModId}}_ScimitarSale": {
+                    "Id": "{{ModId}}_ScimitarSale",
+                    "ItemId": "{{ModId}}_Scimitar",
+                    "IsRecipe": false,
+                    "Price": 1500
+                },
+                "{{ModId}}_WarCleaverSale": {
+                    "Id": "{{ModId}}_WarCleaverSale",
+                    "ItemId": "{{ModId}}_WarCleaver",
+                    "IsRecipe": false,
+                    "Price": 2400
+                },
+                "{{ModId}}_GladiusSale": {
+                    "Id": "{{ModId}}_GladiusSale",
+                    "ItemId": "{{ModId}}_Gladius",
+                    "IsRecipe": false,
+                    "Price": 3000
+                },
+                "{{ModId}}_CrimsonSale": {
+                    "Id": "{{ModId}}_CrimsonSale",
+                    "ItemId": "{{ModId}}_Crimson",
+                    "IsRecipe": false,
+                    "Price": 10000
+                },
+                "{{ModId}}_AbyssalMawSale": {
+                    "Id": "{{ModId}}_AbyssalMawSale",
+                    "ItemId": "{{ModId}}_AbyssalMaw",
+                    "IsRecipe": false,
+                    "Price": 3500
+                },
+                "{{ModId}}_RavensTalonSale": {
+                    "Id": "{{ModId}}_RavensTalonSale",
+                    "ItemId": "{{ModId}}_RavensTalon",
+                    "IsRecipe": false,
+                    "Price": 7500
+                },
+                "{{ModId}}_BrutalCleaverSale": {
+                    "Id": "{{ModId}}_BrutalCleaverSale",
+                    "ItemId": "{{ModId}}_BrutalCleaver",
+                    "IsRecipe": false,
+                    "Price": 8000
+                },
+                "{{ModId}}_MorningStarSale": {
+                    "Id": "{{ModId}}_MorningStarale",
+                    "ItemId": "{{ModId}}_MorningStar",
+                    "IsRecipe": false,
+                    "Price": 1500
+                },
+            }
+        },
+        //
+        //
+        //  Recipe Data
+        //
+        //
         {
             "Action": "EditData",
             "Target": "Data/CraftingRecipes",
@@ -9,6 +83,11 @@
             },
             "LogName": "Flamberge Recipe Definition"
         },
+        //
+        //
+        //  Weapon Data
+        //
+        //
         {
             "Action": "EditData",
             "Target": "Data/weapons",
@@ -168,7 +247,7 @@
                     "CustomFields": null
                 },
                 "{{ModId}}_MonsterSlayer": {
-                   "Name": "Monster Slayer",
+                    "Name": "Monster Slayer",
                     "DisplayName": "Monster Slayer",
                     "Description": "A sword forged by a legendary blacksmith, capable of slaying the most fearsome monsters.\n\nSpecial Attack performs a whirlwind.\n\n10% Chance to drop Void Essence on kill.\n20% Chance to drop Solar Essence on kill.\n\nRequired Combat Level: 5",
                     "MinDamage": 140,
@@ -189,7 +268,7 @@
                     "CustomFields": null
                 },
                 "{{ModId}}_Scimitar": {
-                  "Name": "Scimitar",
+                    "Name": "Scimitar",
                     "DisplayName": "Scimitar",
                     "Description": "A curved sword with a sharp edge, ideal for slashing attacks.",
                     "MinDamage": 40,
@@ -210,7 +289,7 @@
                     "CustomFields": null
                 },
                 "{{ModId}}_Bonecrusher": {
-                   "Name": "Bonecrusher",
+                    "Name": "Bonecrusher",
                     "DisplayName": "Bonecrusher",
                     "Description": "A massive studded mace, capable of crushing bones with a single blow.",
                     "MinDamage": 50,
@@ -537,29 +616,31 @@
                             "Velocity": "3",
                             "FireSound": "bubbles",
                             "CollisionSound": "bubbles",
-							"MinAngleOffset": "45",
-							"MaxAngleOffset": "-45",
+                            "MinAngleOffset": "45",
+                            "MaxAngleOffset": "-45",
                         },
-						{
+                        {
                             "SpriteIndex": "14",
                             "MaxDistance": "12",
                             "Velocity": "1",
                             "FireSound": "bubbles",
                             "CollisionSound": "bubbles",
-							"MinAngleOffset": "45",
-							"MaxAngleOffset": "-45",
+                            "MinAngleOffset": "45",
+                            "MaxAngleOffset": "-45",
                         },
-						{
+                        {
                             "SpriteIndex": "14",
                             "MaxDistance": "12",
                             "Velocity": "2",
                             "FireSound": "bubbles",
                             "CollisionSound": "bubbles",
-							"MinAngleOffset": "45",
-							"MaxAngleOffset": "-45",
+                            "MinAngleOffset": "45",
+                            "MaxAngleOffset": "-45",
                         }
                     ],
-                    "Debuffs": ["Weakness"],
+                    "Debuffs": [
+                        "Weakness"
+                    ],
                     "CustomFields": null
                 },
                 "{{ModId}}_InfernosEmbrace": {
@@ -637,7 +718,9 @@
                             "CollisionSound": "flameSpellHit"
                         }
                     ],
-                    "Debuffs": ["Weakness"],
+                    "Debuffs": [
+                        "Weakness"
+                    ],
                     "CustomFields": null
                 },
                 "{{ModId}}_StaffofDespair": {
@@ -708,7 +791,7 @@
                             "Explodes": true,
                             "TailLength": "7",
                             "MinAngleOffset": "45",
-							"MaxAngleOffset": "-45",
+                            "MaxAngleOffset": "-45",
                             "MaxDistance": "10",
                             "Velocity": "5",
                             "RotationVelocity": 0,
@@ -725,7 +808,7 @@
                             "Explodes": true,
                             "TailLength": "7",
                             "MinAngleOffset": "45",
-							"MaxAngleOffset": "-45",
+                            "MaxAngleOffset": "-45",
                             "MaxDistance": "10",
                             "Velocity": "5",
                             "RotationVelocity": 0,
@@ -741,7 +824,7 @@
                             "Explodes": true,
                             "TailLength": "7",
                             "MinAngleOffset": "45",
-							"MaxAngleOffset": "-45",
+                            "MaxAngleOffset": "-45",
                             "MaxDistance": "10",
                             "Velocity": "5",
                             "RotationVelocity": 0,
@@ -758,7 +841,7 @@
                             "Explodes": true,
                             "TailLength": "7",
                             "MinAngleOffset": "45",
-							"MaxAngleOffset": "-45",
+                            "MaxAngleOffset": "-45",
                             "MaxDistance": "10",
                             "Velocity": "5",
                             "RotationVelocity": 0,
@@ -797,7 +880,7 @@
                             "Explodes": true,
                             //"TailLength": "2",
                             "MinAngleOffset": "45",
-							"MaxAngleOffset": "-45",
+                            "MaxAngleOffset": "-45",
                             "MaxDistance": "10",
                             "Velocity": "5",
                             "RotationVelocity": 0,
@@ -813,7 +896,7 @@
                             "Explodes": true,
                             //"TailLength": "2",
                             "MinAngleOffset": "25",
-							"MaxAngleOffset": "-25",
+                            "MaxAngleOffset": "-25",
                             "MaxDistance": "10",
                             "Velocity": "5",
                             "RotationVelocity": 0,
@@ -829,7 +912,7 @@
                             "Explodes": true,
                             //"TailLength": "2",
                             "MinAngleOffset": "65",
-							"MaxAngleOffset": "-65",
+                            "MaxAngleOffset": "-65",
                             "MaxDistance": "10",
                             "Velocity": "5",
                             "RotationVelocity": 0,
@@ -845,7 +928,7 @@
                             "Explodes": true,
                             //"TailLength": "2",
                             "MinAngleOffset": "45",
-							"MaxAngleOffset": "-45",
+                            "MaxAngleOffset": "-45",
                             "MaxDistance": "10",
                             "Velocity": "5",
                             "RotationVelocity": 0,
@@ -861,13 +944,12 @@
                             "Explodes": true,
                             //"TailLength": "2",
                             "MinAngleOffset": "85",
-							"MaxAngleOffset": "-85",
+                            "MaxAngleOffset": "-85",
                             "MaxDistance": "10",
                             "Velocity": "5",
                             "RotationVelocity": 0,
                             "CollisionSound": "flameSpellHit"
                         },
-                     
                     ],
                     "CustomFields": null
                 },
