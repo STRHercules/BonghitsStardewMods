@@ -17,7 +17,6 @@
         //
         {
             "When": {
-                "CopyQualitySetting": "auto",
                 "HasMod": "FlashShifter.StardewValleyExpandedCP"
             },
             "Action": "EditData",
@@ -2202,5 +2201,203 @@
                 }
             ]
         },
+        {
+            // Sparkling Mead + 2 of any 4 Fruit -> Carbonator -> Flavored Sparkling Mead
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC){{ModId}}_Carbonator",
+                "OutputRules"
+            ],
+            "Entries": {
+                "bh.carbonatorrule_1": {
+                    "Id": "bh.carbonatorrule_1",
+                    "Triggers": [
+                        {
+                            "Id": "bh.carbonatorrule_MeadInput",
+                            "RequiredTags": [
+                                "bh.stock_mead"
+                            ],
+                            "RequiredCount": 1
+                        }
+                    ],
+                    "UseFirstValidOutput": false,
+                    "OutputItem": [
+                        {
+                            "ItemId": "(O)bonghits.Cp_SparklingHoneyMead",
+                            "ObjectInternalName": "Flavored PRESERVE_ID_1 PRESERVE_ID PRESERVE_ID_2 PRESERVE_ID_3 Sparkling Mead",
+                            "ObjectDisplayName": "Sparkling %EXTRA_PRESERVED_DISPLAY_NAME_1, %EXTRA_PRESERVED_DISPLAY_NAME_2 and %EXTRA_PRESERVED_DISPLAY_NAME_3 Honey Mead",
+                            "PreserveId": "DROP_IN",
+                            //"CopyColor": true,
+                            "CopyPrice": true,
+                            "CopyQuality": "{{CopyQualityEnabled}}",
+                            "PriceModifierMode": "Stack",
+                            // 2% Chance to Double your Flavored Sparkling Mead
+                            "StackModifiers": [
+                                {
+                                    "Id": "RareDouble",
+                                    "Condition": "RANDOM .02",
+                                    "Modification": "Multiply",
+                                    "Amount": 2.0
+                                }
+                            ],
+                            "ModData": {
+                                "selph.ExtraMachineConfig.ExtraPreserveId.1": "DROP_IN_ID_1",
+                                "selph.ExtraMachineConfig.ExtraPreserveId.2": "DROP_IN_ID_2",
+                                "selph.ExtraMachineConfig.ExtraPreserveId.3": "DROP_IN_ID_3",
+                                "selph.ExtraMachineConfig.ExtraColor.1": "DROP_IN_ID_1",
+                            },
+                            "CustomData": {
+                                "selph.ExtraMachineConfig.RequirementTags.1": "category_fruits",
+                                "selph.ExtraMachineConfig.RequirementCount.1": "2",
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.1": "2.5",
+                                "selph.ExtraMachineConfig.RequirementNoDuplicate.1": "true",
+                                "selph.ExtraMachineConfig.RequirementTags.2": "category_fruits",
+                                "selph.ExtraMachineConfig.RequirementCount.2": "2",
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.2": "2",
+                                "selph.ExtraMachineConfig.RequirementNoDuplicate.2": "true",
+                                "selph.ExtraMachineConfig.RequirementTags.3": "category_fruits",
+                                "selph.ExtraMachineConfig.RequirementCount.3": "2",
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2",
+                                "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
+                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                //"selph.ExtraMachineConfig.CopyColor": "true",
+                            },
+                            "PriceModifiers": [
+                                {
+                                    // Adds 1000 to price
+                                    "Modification": "Add",
+                                    "RandomAmount": [
+                                        1000
+                                    ]
+                                },
+                                {
+                                    // Adds a 5% increase in price
+                                    "Modification": "Multiply",
+                                    "RandomAmount": [
+                                        1.05,
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "ItemId": "(O)bonghits.Cp_SparklingHoneyMead",
+                            "ObjectInternalName": "Flavored PRESERVE_ID_2 PRESERVE_ID PRESERVE_ID_1 PRESERVE_ID_3 Sparkling Mead",
+                            "ObjectDisplayName": "Sparkling %EXTRA_PRESERVED_DISPLAY_NAME_2, %EXTRA_PRESERVED_DISPLAY_NAME_1 and %EXTRA_PRESERVED_DISPLAY_NAME_3 Honey Mead",
+                            "PreserveId": "DROP_IN",
+                            //"CopyColor": true,
+                            "CopyPrice": true,
+                            "CopyQuality": "{{CopyQualityEnabled}}",
+                            "PriceModifierMode": "Stack",
+                            // 2% Chance to Double your Flavored Sparkling Mead
+                            "StackModifiers": [
+                                {
+                                    "Id": "RareDouble",
+                                    "Condition": "RANDOM .02",
+                                    "Modification": "Multiply",
+                                    "Amount": 2.0
+                                }
+                            ],
+                            "ModData": {
+                                "selph.ExtraMachineConfig.ExtraPreserveId.1": "DROP_IN_ID_1",
+                                "selph.ExtraMachineConfig.ExtraPreserveId.2": "DROP_IN_ID_2",
+                                "selph.ExtraMachineConfig.ExtraPreserveId.3": "DROP_IN_ID_3",
+                                "selph.ExtraMachineConfig.ExtraColor.1": "DROP_IN_ID_2",
+                            },
+                            "CustomData": {
+                                "selph.ExtraMachineConfig.RequirementTags.1": "category_fruits",
+                                "selph.ExtraMachineConfig.RequirementCount.1": "2",
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.1": "2",
+                                "selph.ExtraMachineConfig.RequirementNoDuplicate.1": "true",
+                                "selph.ExtraMachineConfig.RequirementTags.2": "category_fruits",
+                                "selph.ExtraMachineConfig.RequirementCount.2": "2",
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.2": "2.5",
+                                "selph.ExtraMachineConfig.RequirementNoDuplicate.2": "true",
+                                "selph.ExtraMachineConfig.RequirementTags.3": "category_fruits",
+                                "selph.ExtraMachineConfig.RequirementCount.3": "2",
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2",
+                                "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
+                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                //"selph.ExtraMachineConfig.CopyColor": "true",
+                            },
+                            "PriceModifiers": [
+                                {
+                                    // Adds 1000 to price
+                                    "Modification": "Add",
+                                    "RandomAmount": [
+                                        1000
+                                    ]
+                                },
+                                {
+                                    // Adds a 5% increase in price
+                                    "Modification": "Multiply",
+                                    "RandomAmount": [
+                                        1.05,
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "ItemId": "(O)bonghits.Cp_SparklingHoneyMead",
+                            "ObjectInternalName": "Flavored PRESERVE_ID_3 PRESERVE_ID PRESERVE_ID_1 PRESERVE_ID_2 Sparkling Mead",
+                            "ObjectDisplayName": "Sparkling %EXTRA_PRESERVED_DISPLAY_NAME_3, %EXTRA_PRESERVED_DISPLAY_NAME_2 and %EXTRA_PRESERVED_DISPLAY_NAME_1 Honey Mead",
+                            "PreserveId": "DROP_IN",
+                            //"CopyColor": true,
+                            "CopyPrice": true,
+                            "CopyQuality": "{{CopyQualityEnabled}}",
+                            "PriceModifierMode": "Stack",
+                            // 2% Chance to Double your Flavored Sparkling Mead
+                            "StackModifiers": [
+                                {
+                                    "Id": "RareDouble",
+                                    "Condition": "RANDOM .02",
+                                    "Modification": "Multiply",
+                                    "Amount": 2.0
+                                }
+                            ],
+                            "ModData": {
+                                "selph.ExtraMachineConfig.ExtraPreserveId.1": "DROP_IN_ID_1",
+                                "selph.ExtraMachineConfig.ExtraPreserveId.2": "DROP_IN_ID_2",
+                                "selph.ExtraMachineConfig.ExtraPreserveId.3": "DROP_IN_ID_3",
+                                "selph.ExtraMachineConfig.ExtraColor.1": "DROP_IN_ID_3",
+                            },
+                            "CustomData": {
+                                "selph.ExtraMachineConfig.RequirementTags.1": "category_fruits",
+                                "selph.ExtraMachineConfig.RequirementCount.1": "2",
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.1": "2",
+                                "selph.ExtraMachineConfig.RequirementNoDuplicate.1": "true",
+                                "selph.ExtraMachineConfig.RequirementTags.2": "category_fruits",
+                                "selph.ExtraMachineConfig.RequirementCount.2": "2",
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.2": "2",
+                                "selph.ExtraMachineConfig.RequirementNoDuplicate.2": "true",
+                                "selph.ExtraMachineConfig.RequirementTags.3": "category_fruits",
+                                "selph.ExtraMachineConfig.RequirementCount.3": "2",
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2.5",
+                                "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
+                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                //"selph.ExtraMachineConfig.CopyColor": "true",
+                            },
+                            "PriceModifiers": [
+                                {
+                                    // Adds 1000 to price
+                                    "Modification": "Add",
+                                    "RandomAmount": [
+                                        1000
+                                    ]
+                                },
+                                {
+                                    // Adds a 5% increase in price
+                                    "Modification": "Multiply",
+                                    "RandomAmount": [
+                                        1.05,
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "MinutesUntilReady": 3000 // '3000' 50 Hours - 2.083 Days
+                }
+            }
+        }
     ]
 }

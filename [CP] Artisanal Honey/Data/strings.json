@@ -15,6 +15,14 @@
       "Entries": {
         "bonghits.mead_name": "{0} Honey Mead"
       }
+    },
+    {
+      "LogName": "Add String Tokens",
+      "Action": "EditData",
+      "Target": "Strings/Objects",
+      "Entries": {
+        "bonghits.sparklingmead_name": "Sparkling {0} Honey Mead"
+      }
     }
   ]
 }

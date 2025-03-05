@@ -1,6 +1,11 @@
-{ 
+{
     "$schema": "https://smapi.io/schemas/content-patcher.json",
     "Changes": [
+        //
+        //
+        //  Artisanal Mead Keg Recipe
+        //
+        //
         {
             "Action": "EditData",
             "Target": "Data/CraftingRecipes",
@@ -9,33 +14,59 @@
             },
             "LogName": "Mead Keg Recipe Definition"
         },
+        //
+        //
+        //  Carbonator Recipe
+        //
+        //
+        //
+        //
+        //  Insert Artisanal Mead Keg Blueprint to Pierre's Shop
+        //
+        //
         {
             "Action": "EditData",
             "Target": "Data/Shops",
-            "TargetField": [ "SeedShop", "Items" ],
+            "TargetField": [
+                "SeedShop",
+                "Items"
+            ],
             "Entries": {
-              "{{ModId}}_MeadKegSale": {
-                "Id": "{{ModId}}_MeadKegRecipeSale",
-                "ItemId": "(BC){{ModId}}_MeadKeg",
-                "IsRecipe": true,
-                "Price": 25000
+                "{{ModId}}_MeadKegSale": {
+                    "Id": "{{ModId}}_MeadKegRecipeSale",
+                    "ItemId": "(BC){{ModId}}_MeadKeg",
+                    "IsRecipe": true,
+                    "Price": 25000
                 }
             }
         },
+        //
+        //
+        //  Insert 5x Artisanal Mead Kegs to Pierre's Shop
+        //
+        //
         {
             "Action": "EditData",
             "Target": "Data/Shops",
-            "TargetField": [ "SeedShop", "Items" ],
+            "TargetField": [
+                "SeedShop",
+                "Items"
+            ],
             "Entries": {
-              "{{ModId}}_MeadKegSale": {
-                "Id": "{{ModId}}_MeadKegSale",
-                "ItemId": "(BC){{ModId}}_MeadKeg",
-                "AvailableStock": 5,
-                "IsRecipe": false,
-                "Price": 12500
+                "{{ModId}}_MeadKegSale": {
+                    "Id": "{{ModId}}_MeadKegSale",
+                    "ItemId": "(BC){{ModId}}_MeadKeg",
+                    "AvailableStock": 5,
+                    "IsRecipe": false,
+                    "Price": 12500
                 }
             }
         },
+        //
+        //
+        //  Mead Keg Definition
+        //
+        //
         {
             "Action": "EditData",
             "Target": "Data/BigCraftables",
@@ -57,10 +88,37 @@
             },
             "LogName": "Mead Keg BC definition"
         },
+        //
+        //
+        //  Carbonator Definition
+        //
+        //
+        {
+            "Action": "EditData",
+            "Target": "Data/BigCraftables",
+            "Entries": {
+                "{{ModId}}_Carbonator": {
+                    "Name": "{{ModId}}_Carbonator",
+                    "DisplayName": "{{i18n: carb.name}}",
+                    "Description": "{{i18n: carb.description}}",
+                    "Price": 12500,
+                    "Fragility": 0,
+                    "CanBePlacedOutdoors": true,
+                    "CanBePlacedIndoors": true,
+                    "IsLamp": false,
+                    "Texture": "bonghits.BearHoneyMead/Carbonator",
+                    "SpriteIndex": 0,
+                    "ContextTags": null,
+                    "CustomFields": null
+                }
+            },
+            "LogName": "Carbonator BC definition"
+        },
         {
             "Action": "EditData",
             "Target": "Data/Machines",
             "Entries": {
+                // Mead Keg
                 "(BC){{ModId}}_MeadKeg": {
                     "HasInput": false,
                     "HasOutput": false,
@@ -110,7 +168,6 @@
                                     "Quality": -1,
                                     "ObjectInternalName": "DROP_IN_ID DROP_IN_ID_1 PRESERVE_ID_1 PRESERVE_ID_2 Honey Mead",
                                     "ObjectDisplayName": "[LocalizedText Strings/Objects:bonghits.mead_name %PRESERVED_DISPLAY_NAME]",
-                                    
                                     "ToolUpgradeLevel": -1,
                                     "IsRecipe": false,
                                     "StackModifierMode": "Stack",
@@ -127,7 +184,7 @@
                             "DaysUntilReady": -1,
                             "InvalidCountMessage": "Requires 12 Honey",
                             "RecalculateOnCollect": false
-                        },
+                        }
                     ],
                     "AdditionalConsumedItems": null,
                     "PreventTimePass": null,
@@ -171,9 +228,113 @@
                     ],
                     "ExperienceGainOnHarvest": null,
                     "CustomFields": null
+                },
+                // Carbonator
+                "(BC){{ModId}}_Carbonator": {
+                    "HasInput": false,
+                    "HasOutput": false,
+                    "InteractMethod": null,
+                    "OutputRules": [
+                        {
+                            "Id": "Default_Carbonation",
+                            "Triggers": [
+                                {
+                                    "Id": "ItemPlacedInMachine",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O)bonghits.Cp_HoneyMead",
+                                    "RequiredTags": null,
+                                    "RequiredCount": 1,
+                                    "Condition": null
+                                }
+                            ],
+                            "UseFirstValidOutput": false,
+                            "OutputItem": [
+                                {
+                                    "CustomData": null,
+                                    "OutputMethod": null,
+                                    "CopyColor": false,
+                                    "CopyPrice": false,
+                                    "CopyQuality": "{{CopyQualityEnabled}}",
+                                    "PreserveType": null,
+                                    "PreserveId": "DROP_IN_PRESERVE",
+                                    "IncrementMachineParentSheetIndex": 0,
+                                    "PriceModifiers": null,
+                                    "PriceModifierMode": "Stack",
+                                    "Condition": null,
+                                    "Id": "(O)bonghits.Cp_SparklingHoneyMead",
+                                    "ItemId": "(O)bonghits.Cp_SparklingHoneyMead",
+                                    "RandomItemId": null,
+                                    "MaxItems": null,
+                                    "MinStack": 1,
+                                    "MaxStack": 1,
+                                    "Quality": -1,
+                                    "ObjectInternalName": "DROP_IN_ID DROP_IN_ID_1 PRESERVE_ID_1 PRESERVE_ID_2 Sparkling Honey Mead",
+                                    "ObjectDisplayName": "[LocalizedText Strings/Objects:bonghits.sparkling_mead_name %PRESERVED_DISPLAY_NAME]",
+                                    "ToolUpgradeLevel": -1,
+                                    "IsRecipe": false,
+                                    "StackModifierMode": "Stack",
+                                    "QualityModifiers": null,
+                                    "QualityModifierMode": "Stack",
+                                    "ModData": {
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.1": "DROP_IN_PRESERVE_1",
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.2": "DROP_IN",
+                                    },
+                                    "PerItemCondition": null
+                                }
+                            ],
+                            "MinutesUntilReady": 720, // 12 Hours
+                            "DaysUntilReady": -1,
+                            "InvalidCountMessage": "Requires 1 Honey Mead",
+                            "RecalculateOnCollect": false
+                        }
+                    ],
+                    "AdditionalConsumedItems": null,
+                    "PreventTimePass": null,
+                    "ReadyTimeModifiers": null,
+                    "ReadyTimeModifierMode": "Stack",
+                    "InvalidItemMessage": null,
+                    "InvalidItemMessageCondition": null,
+                    "InvalidCountMessage": "{{i18n: message.invalidCount3}}",
+                    "WorkingEffects": [
+                        {
+                            "Sounds": [
+                                {
+                                    "Id": "bubbles",
+                                    "Delay": 0
+                                }
+                            ],
+                            "ShakeDuration": 100,
+                            "Frames": [
+                                1,
+                                2,
+                                3,
+                                4
+                            ],
+                            "Interval": 200,
+                        },
+                    ],
+                    "WorkingEffectChance": 1,
+                    "AllowLoadWhenFull": false,
+                    "WobbleWhileWorking": false,
+                    "LightWhileWorking": null,
+                    "ShowNextIndexWhileWorking": false,
+                    "ShowNextIndexWhenReady": false,
+                    "AllowFairyDust": true,
+                    "IsIncubator": false,
+                    "ClearContentsOvernightCondition": null,
+                    "StatsToIncrementWhenLoaded": null,
+                    "StatsToIncrementWhenHarvested": [
+                        {
+                            "RequiredItemId": null,
+                            "RequiredTags": null,
+                            "StatName": "BeveragesMade"
+                        }
+                    ],
+                    "ExperienceGainOnHarvest": null,
+                    "CustomFields": null
                 }
             },
-            "LogName": "Mead Keg machine definition"
+            "LogName": "Mead Keg and Carbonator machine definitions"
         }
     ]
 }
