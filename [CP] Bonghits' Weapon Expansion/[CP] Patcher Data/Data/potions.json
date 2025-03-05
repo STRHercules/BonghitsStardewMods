@@ -1,7 +1,11 @@
 {
     "$schema": "https://smapi.io/schemas/content-patcher.json",
     "Changes": [
+        //
+        //
         // Potion Entries
+        //
+        //
         {
             "Action": "EditData",
             "Target": "Data/Objects",
@@ -10,21 +14,21 @@
                 // Animated using SpaceCore
                 // Potion behaviour assigned using SpaceCore
                 // Restores 50 Health, +15/second for 10 seconds
-                "{{ModId}}.Potion.Red/Hexagon": {
+                "{{ModId}}.Potion.Red.Hexagon": {
                     "LogName": "Red Hexagon Potion Creation",
-                    "Name": "{{ModId}}.Potion.Red/Hexagon",
+                    "Name": "{{ModId}}.Potion.Red.Hexagon",
                     "DisplayName": "Large Health Potion",
                     "Description": "A potent potion that restores 50 health. You continue to gain 15 health per second for 10 seconds after drinking it.",
                     "Type": "Basic",
                     "Edibility": 0,
                     "IsDrink": true,
-                    "Category": 0,
+                    "Category": -8,
                     "Price": 200,
                     "SpriteIndex": 0,
                     "Texture": "bonghits.cp.WeaponPack/RedHexPotion",
                     "Buffs": [
                         {
-                            "BuffId": "{{ModId}}.Potion.Red/Hexagon/Buff",
+                            "BuffId": "{{ModId}}.Potion.Red.Hexagon/Buff",
                             "Duration": 10,
                             "CustomFields": {
                                 "spacechase0.SpaceCore/HealthRegeneration": 15
@@ -42,21 +46,21 @@
                 // Animated using SpaceCore
                 // Potion behaviour assigned using SpaceCore
                 // Restores 75 Health, +20/second for 30 seconds
-                "{{ModId}}.Potion.Red/Huge": {
+                "{{ModId}}.Potion.Red.Huge": {
                     "LogName": "Red Huge Potion Creation",
-                    "Name": "{{ModId}}.Potion.Red/Huge",
+                    "Name": "{{ModId}}.Potion.Red.Huge",
                     "DisplayName": "Huge Health Potion",
                     "Description": "A potent potion that restores 75 health. You continue to gain 20 health per second for 30 seconds after drinking it.",
                     "Type": "Basic",
                     "Edibility": 0,
                     "IsDrink": true,
-                    "Category": 0,
+                    "Category": -8,
                     "Price": 500,
                     "SpriteIndex": 0,
                     "Texture": "bonghits.cp.WeaponPack/RedRoundPotion",
                     "Buffs": [
                         {
-                            "BuffId": "{{ModId}}.Potion.Red/Huge/Buff",
+                            "BuffId": "{{ModId}}.Potion.Red.Huge/Buff",
                             "Duration": 30,
                             "CustomFields": {
                                 "spacechase0.SpaceCore/HealthRegeneration": 20
@@ -75,15 +79,15 @@
                 // Animated using SpaceCore
                 // Potion behaviour assigned using SpaceCore
                 // Restores 20 Health
-                "{{ModId}}.Potion.Red/Small": {
+                "{{ModId}}.Potion.Red.Small": {
                     "LogName": "Small Red Potion Creation",
-                    "Name": "{{ModId}}.Potion.Red/Small",
+                    "Name": "{{ModId}}.Potion.Red.Small",
                     "DisplayName": "Small Health Potion",
                     "Description": "A small potion that restores 20 health.",
                     "Type": "Basic",
                     "Edibility": 0,
                     "IsDrink": true,
-                    "Category": -26,
+                    "Category": -8,
                     "Price": 500,
                     "SpriteIndex": 0,
                     "Texture": "bonghits.cp.WeaponPack/RedSmallPotion",
@@ -98,15 +102,15 @@
                 // Animated using SpaceCore
                 // Potion behaviour assigned using SpaceCore
                 // Restores 20 Stamina
-                "{{ModId}}.Potion.Green/Small": {
+                "{{ModId}}.Potion.Green.Small": {
                     "LogName": "Small Green Potion Creation",
-                    "Name": "{{ModId}}.Potion.Green/Small",
+                    "Name": "{{ModId}}.Potion.Green.Small",
                     "DisplayName": "Small Stamina Potion",
                     "Description": "A small potion that restores 20 stamina.",
                     "Type": "Basic",
                     "Edibility": 0,
                     "IsDrink": true,
-                    "Category": -26,
+                    "Category": -8,
                     "Price": 500,
                     "SpriteIndex": 0,
                     "Texture": "bonghits.cp.WeaponPack/GreenSmallPotion",
@@ -121,21 +125,21 @@
                 // Animated using SpaceCore
                 // Potion behaviour assigned using SpaceCore
                 // Restores 50 Stamina +5/second for 60 seconds
-                "{{ModId}}.Potion.Green/Big": {
+                "{{ModId}}.Potion.Green.Big": {
                     "LogName": "Big Green Potion Creation",
-                    "Name": "{{ModId}}.Potion.Green/Big",
+                    "Name": "{{ModId}}.Potion.Green.Big",
                     "DisplayName": "Large Stamina Potion",
                     "Description": "A large potion that restores 50 stamina.",
                     "Type": "Basic",
                     "Edibility": 0,
                     "IsDrink": true,
-                    "Category": -26,
+                    "Category": -8,
                     "Price": 500,
                     "SpriteIndex": 0,
                     "Texture": "bonghits.cp.WeaponPack/BigGreenPotion",
                     "Buffs": [
                         {
-                            "BuffId": "{{ModId}}.Potion.Green/Big/Buff",
+                            "BuffId": "{{ModId}}.Potion.Green.Big/Buff",
                             "Duration": 60,
                             "CustomFields": {
                                 "spacechase0.SpaceCore/StaminaRegeneration": 5
@@ -153,21 +157,21 @@
                 //
                 //
                 //
-                "{{ModId}}.Potion.Orange/Round": {
+                "{{ModId}}.Potion.Orange.Round": {
                     "LogName": "Orange Round Potion Creation",
-                    "Name": "{{ModId}}.Potion.Orange/Round",
+                    "Name": "{{ModId}}.Potion.Orange.Round",
                     "DisplayName": "Elixir of Berserking",
                     "Description": "Sends you into a frenzy.",
                     "Type": "Basic",
                     "Edibility": 0,
                     "IsDrink": true,
-                    "Category": -26,
+                    "Category": -8,
                     "Price": 500,
                     "SpriteIndex": 0,
                     "Texture": "bonghits.cp.WeaponPack/OrangeRoundPotion",
                     "Buffs": [
                         {
-                            "BuffId": "{{ModId}}.Potion.Orange/Round/Buff",
+                            "BuffId": "{{ModId}}.Potion.Orange.Round/Buff",
                             "Duration": 120,
                             "CustomFields": {
                                 "spacechase0.SpaceCore/StaminaRegeneration": 2
@@ -185,21 +189,21 @@
                 //
                 //
                 //
-                "{{ModId}}.Potion.Pink/Moon": {
+                "{{ModId}}.Potion.Pink.Moon": {
                     "LogName": "Moon Pink Potion Creation",
-                    "Name": "{{ModId}}.Potion.Pink/Moon",
+                    "Name": "{{ModId}}.Potion.Pink.Moon",
                     "DisplayName": "Farmhand Elixir",
                     "Description": "A moon shaped potion that increases various farming skills.",
                     "Type": "Basic",
                     "Edibility": 0,
                     "IsDrink": true,
-                    "Category": -26,
+                    "Category": -8,
                     "Price": 500,
                     "SpriteIndex": 0,
                     "Texture": "bonghits.cp.WeaponPack/PinkMoonPotion",
                     "Buffs": [
                         {
-                            "BuffId": "{{ModId}}.Potion.Pink/Moon/Buff",
+                            "BuffId": "{{ModId}}.Potion.Pink.Moon/Buff",
                             "Duration": 1200,
                             "CustomFields": {
                                 "spacechase0.SpaceCore/StaminaRegeneration": 2
@@ -217,21 +221,21 @@
                 //
                 //
                 //
-                "{{ModId}}.Potion.Black/Diamond": {
+                "{{ModId}}.Potion.Black.Diamond": {
                     "LogName": "Black Diamond Potion Creation",
-                    "Name": "{{ModId}}.Potion.Black/Diamond",
+                    "Name": "{{ModId}}.Potion.Black.Diamond",
                     "DisplayName": "Fisher's Elixir",
                     "Description": "A large elixir that increases your fishing skills.",
                     "Type": "Basic",
                     "Edibility": 0,
                     "IsDrink": true,
-                    "Category": -26,
+                    "Category": -8,
                     "Price": 500,
                     "SpriteIndex": 0,
                     "Texture": "bonghits.cp.WeaponPack/BlackDiamondPotion",
                     "Buffs": [
                         {
-                            "BuffId": "{{ModId}}.Potion.Black/Diamond/Buff",
+                            "BuffId": "{{ModId}}.Potion.Black.Diamond/Buff",
                             "Duration": 3600,
                         }
                     ],
@@ -246,21 +250,21 @@
                 //
                 //
                 //
-                "{{ModId}}.Potion.Yellow/Rectangle": {
+                "{{ModId}}.Potion.Yellow.Rectangle": {
                     "LogName": "Yellow Rectangle Potion Creation",
-                    "Name": "{{ModId}}.Potion.Yellow/Rectangle",
+                    "Name": "{{ModId}}.Potion.Yellow.Rectangle",
                     "DisplayName": "Miner's Elixir",
                     "Description": "A large elixir that increases your mining skills.",
                     "Type": "Basic",
                     "Edibility": 0,
                     "IsDrink": true,
-                    "Category": -26,
+                    "Category": -8,
                     "Price": 500,
                     "SpriteIndex": 0,
                     "Texture": "bonghits.cp.WeaponPack/YellowRectanglePotion",
                     "Buffs": [
                         {
-                            "BuffId": "{{ModId}}.Potion.Yellow/Rectangle/Buff",
+                            "BuffId": "{{ModId}}.Potion.Yellow.Rectangle/Buff",
                             "Duration": 3600,
                         }
                     ],
@@ -273,13 +277,17 @@
                 },
             }
         },
+        //
+        //
         // Potion SpaceCore Overrides
+        //
+        //
         {
             "LogName": "Red Hexagon Potion Overrides",
             "Action": "EditData",
             "Target": "spacechase0.SpaceCore/ObjectExtensionData",
             "Entries": {
-                "{{ModId}}.Potion.Red/Hexagon": {
+                "{{ModId}}.Potion.Red.Hexagon": {
                     "EatenHealthRestoredOverride": 50,
                     "EatenStaminaRestoredOverride": 0
                 }
@@ -290,7 +298,7 @@
             "Action": "EditData",
             "Target": "spacechase0.SpaceCore/ObjectExtensionData",
             "Entries": {
-                "{{ModId}}.Potion.Red/Huge": {
+                "{{ModId}}.Potion.Red.Huge": {
                     "EatenHealthRestoredOverride": 75,
                     "EatenStaminaRestoredOverride": 0
                 }
@@ -301,7 +309,7 @@
             "Action": "EditData",
             "Target": "spacechase0.SpaceCore/ObjectExtensionData",
             "Entries": {
-                "{{ModId}}.Potion.Red/Small": {
+                "{{ModId}}.Potion.Red.Small": {
                     "EatenHealthRestoredOverride": 20,
                     "EatenStaminaRestoredOverride": 0
                 }
@@ -312,7 +320,7 @@
             "Action": "EditData",
             "Target": "spacechase0.SpaceCore/ObjectExtensionData",
             "Entries": {
-                "{{ModId}}.Potion.Green/Small": {
+                "{{ModId}}.Potion.Green.Small": {
                     "EatenHealthRestoredOverride": 0,
                     "EatenStaminaRestoredOverride": 20
                 }
@@ -323,19 +331,23 @@
             "Action": "EditData",
             "Target": "spacechase0.SpaceCore/ObjectExtensionData",
             "Entries": {
-                "{{ModId}}.Potion.Green/Big": {
+                "{{ModId}}.Potion.Green.Big": {
                     "EatenHealthRestoredOverride": 0,
                     "EatenStaminaRestoredOverride": 50
                 }
             }
         },
+        //
+        //
         // Potion SpaceCore Animations
+        //
+        //
         {
             "LogName": "Red Hexagon Potion Animation",
             "Action": "EditData",
             "Target": "spacechase0.SpaceCore/TextureOverrides",
             "Entries": {
-                "{{ModId}}.Potion.Red/Hexagon": {
+                "{{ModId}}.Potion.Red.Hexagon": {
                     "TargetTexture": "bonghits.cp.WeaponPack/RedHexPotion",
                     "TargetRect": {
                         "X": 0,
@@ -352,7 +364,7 @@
             "Action": "EditData",
             "Target": "spacechase0.SpaceCore/TextureOverrides",
             "Entries": {
-                "{{ModId}}.Potion.Red/Small": {
+                "{{ModId}}.Potion.Red.Small": {
                     "TargetTexture": "bonghits.cp.WeaponPack/RedSmallPotion",
                     "TargetRect": {
                         "X": 0,
@@ -369,7 +381,7 @@
             "Action": "EditData",
             "Target": "spacechase0.SpaceCore/TextureOverrides",
             "Entries": {
-                "{{ModId}}.Potion.Green/Small": {
+                "{{ModId}}.Potion.Green.Small": {
                     "TargetTexture": "bonghits.cp.WeaponPack/GreenSmallPotion",
                     "TargetRect": {
                         "X": 0,
@@ -386,7 +398,7 @@
             "Action": "EditData",
             "Target": "spacechase0.SpaceCore/TextureOverrides",
             "Entries": {
-                "{{ModId}}.Potion.Green/Big": {
+                "{{ModId}}.Potion.Green.Big": {
                     "TargetTexture": "bonghits.cp.WeaponPack/BigGreenPotion",
                     "TargetRect": {
                         "X": 0,
@@ -403,7 +415,7 @@
             "Action": "EditData",
             "Target": "spacechase0.SpaceCore/TextureOverrides",
             "Entries": {
-                "{{ModId}}.Potion.Red/Huge": {
+                "{{ModId}}.Potion.Red.Huge": {
                     "TargetTexture": "bonghits.cp.WeaponPack/RedRoundPotion",
                     "TargetRect": {
                         "X": 0,
@@ -420,7 +432,7 @@
             "Action": "EditData",
             "Target": "spacechase0.SpaceCore/TextureOverrides",
             "Entries": {
-                "{{ModId}}.Potion.Orange/Round": {
+                "{{ModId}}.Potion.Orange.Round": {
                     "TargetTexture": "bonghits.cp.WeaponPack/OrangeRoundPotion",
                     "TargetRect": {
                         "X": 0,
@@ -437,7 +449,7 @@
             "Action": "EditData",
             "Target": "spacechase0.SpaceCore/TextureOverrides",
             "Entries": {
-                "{{ModId}}.Potion.Pink/Moon": {
+                "{{ModId}}.Potion.Pink.Moon": {
                     "TargetTexture": "bonghits.cp.WeaponPack/PinkMoonPotion",
                     "TargetRect": {
                         "X": 0,
@@ -454,7 +466,7 @@
             "Action": "EditData",
             "Target": "spacechase0.SpaceCore/TextureOverrides",
             "Entries": {
-                "{{ModId}}.Potion.Black/Diamond": {
+                "{{ModId}}.Potion.Black.Diamond": {
                     "TargetTexture": "bonghits.cp.WeaponPack/BlackDiamondPotion",
                     "TargetRect": {
                         "X": 0,
@@ -471,7 +483,7 @@
             "Action": "EditData",
             "Target": "spacechase0.SpaceCore/TextureOverrides",
             "Entries": {
-                "{{ModId}}.Potion.Yellow/Rectangle": {
+                "{{ModId}}.Potion.Yellow.Rectangle": {
                     "TargetTexture": "bonghits.cp.WeaponPack/YellowRectanglePotion",
                     "TargetRect": {
                         "X": 0,
@@ -483,5 +495,71 @@
                 }
             }
         },
+        //
+        //
+        // Potion Recipes
+        //
+        //
+        {
+            "Action": "EditData",
+            "Target": "Data/CraftingRecipes",
+            "Entries": {
+                "{{ModId}}.Potion.Red.Hexagon": "80 2 296 4 768 1/Home/{{ModId}}.Potion.Red.Hexagon/false/Combat 4/",                   // 2 Quartz, 4 Salmonberry, 1 Solar Essence [Combat Level 4]
+                "{{ModId}}.Potion.Red.Huge": "80 3 296 6 768 1/Home/{{ModId}}.Potion.Red.Huge/false/Combat 8/",                      // 3 Quartz, 6 Salmonberry, 1 Solar Essence [Combat Level 8]
+                "{{ModId}}.Potion.Red.Small": "80 1 296 2 768 1/Home/{{ModId}}.Potion.Red.Small/false/Combat 2/",                     // 1 Quartz, 2 Salmonberry, 1 Solar Essence [Combat Level 2]
+                "{{ModId}}.Potion.Green.Small": "80 1 16 2 768 1/Home/{{ModId}}.Potion.Green.Small/false/Combat 2/",                    // 1 Quartz, 2 Horseradish, 1 Solar Essence [Combat Level 2]
+                "{{ModId}}.Potion.Green.Big": "80 2 16 4 768 1/Home/{{ModId}}.Potion.Green.Big/false/Combat 4/",                      // 2 Quartz, 4 Horseradish, 1 Solar Essence [Combat Level 4]
+                "{{ModId}}.Potion.Orange.Round": "80 5 78 5 769 1/Home/{{ModId}}.Potion.Orange.Round/false/Combat 10/",                 // 5  Quartz, 5 Cave Carrots, 1 Void Essence [Combat Level 10]
+                "{{ModId}}.Potion.Pink.Moon": "80 5 24 2 90 2 430 1/Home/{{ModId}}.Potion.Pink.Moon/false/Farming 6/",                  // 5 Quartz, 2 Parsnip, 2 Cactus Fruit, 1 Truffle [Farming level 6]
+                "{{ModId}}.Potion.Black.Diamond": "80 5 SeaJelly 1 153 1 152 1/Home/{{ModId}}.Potion.Black.Diamond/false/Fishing 6/",   // 5 Quartz, 1 SeaJelly, 1 Green Algae, 1 Seaweed [Fishing Level 6]
+                "{{ModId}}.Potion.Yellow.Rectangle": "80 5 78 1 766 5/Home/{{ModId}}.Potion.Yellow.Rectangle/false/Mining 6/"           // 5 Quartz, 5 Coppe Ore, 1 Cave Carrot, 5 Slime [Mining Level 6]
+            },
+            "LogName": "Potion Recipe Definitions"
+        },
+        //
+        //
+        //  Add Basic Potions to Shop
+        //
+        //
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "AdventureShop",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}.Potion.Red.HugeSale": {
+                    "Id": "{{ModId}}.Potion.Red.HugeSale",
+                    "ItemId": "{{ModId}}.Potion.Red.Huge",
+                    "IsRecipe": false,
+                    "Price": 250
+                },
+                "{{ModId}}.Potion.Red.HexagonSale": {
+                    "Id": "{{ModId}}.Potion.Red.HexagonSale",
+                    "ItemId": "{{ModId}}.Potion.Red.Hexagon",
+                    "IsRecipe": false,
+                    "Price": 100
+                },
+                "{{ModId}}.Potion.Red.SmallSale": {
+                    "Id": "{{ModId}}.Potion.Red.SmallSale",
+                    "ItemId": "{{ModId}}.Potion.Red.Small",
+                    "IsRecipe": false,
+                    "Price": 25
+                },
+                "{{ModId}}.Potion.Green.SmallSale": {
+                    "Id": "{{ModId}}.Potion.Green.SmallSale",
+                    "ItemId": "{{ModId}}.Potion.Green.Small",
+                    "IsRecipe": false,
+                    "Price": 25
+                },
+                "{{ModId}}.Potion.Green.Big": {
+                    "Id": "{{ModId}}.Potion.Green.BigSale",
+                    "ItemId": "{{ModId}}.Potion.Green.Big",
+                    "IsRecipe": false,
+                    "Price": 100
+                }
+            }
+        }
     ]
 }
