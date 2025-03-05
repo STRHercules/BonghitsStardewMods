@@ -13,6 +13,11 @@
             "Action": "EditData",
             "Target": "Data/weapons",
             "Entries": {
+                //
+                //
+                // 'Melee' Weapons
+                //
+                //
                 "{{ModId}}_DualBlade": {
                     "Name": "Duality",
                     "DisplayName": "Duality",
@@ -72,9 +77,9 @@
                     "CustomFields": null
                 },
                 "{{ModId}}_Ragnarok": {
-                    "Name": "Ragnarok's Edge",
-                    "DisplayName": "Ragnarok's Edge",
-                    "Description": "A colossal axe forged by the ancient gods.\n\nWielding this axe channels the power of Odin himself, repelling enemies with divine force.",
+                    "Name": "Ragnarok",
+                    "DisplayName": "Ragnarok",
+                    "Description": "A colossal axe forged by the ancient gods.\n\nSpecial Attack performs an explosive whirlwind\n\n10% Chance to drop Diamonds on kill.\n\nRequired Combat Level: 8",
                     "MinDamage": 80,
                     "MaxDamage": 100,
                     "Knockback": 3.0,
@@ -103,135 +108,6 @@
                             "CollisionSound": "Cowboy_monsterDie"
                         }
                     ],
-                    "CustomFields": null
-                },
-                "{{ModId}}_BubbleStaff": {
-                    "Name": "Sparkling Effervescence Staff",
-                    "DisplayName": "Sparkling Effervescence Staff",
-                    "Description": "A mythical wand used by the Carbonation Queen, sparkling with effervescent magic.",
-                    "MinDamage": 80,
-                    "MaxDamage": 100,
-                    "Knockback": 1.0,
-                    "Speed": 0,
-                    "Precision": 100,
-                    "Defense": 0,
-                    "Type": 3,
-                    "MineBaseLevel": 70,
-                    "MineMinLevel": 70,
-                    "AreaOfEffect": 0,
-                    "CritChance": 0.02,
-                    "CritMultiplier": 3.0,
-                    "CanBeLostOnDeath": false,
-                    "Texture": "bonghits.cp.WeaponPack/Weapons",
-                    "SpriteIndex": 27,
-                    "Projectiles": [
-                        {
-                            "SpriteIndex": "14",
-                            "MaxDistance": "12",
-                            "Velocity": "3",
-                            "FireSound": "bubbles",
-                            "CollisionSound": "bubbles",
-							"MinAngleOffset": "45",
-							"MaxAngleOffset": "-45",
-                        },
-						{
-                            "SpriteIndex": "14",
-                            "MaxDistance": "12",
-                            "Velocity": "1",
-                            "FireSound": "bubbles",
-                            "CollisionSound": "bubbles",
-							"MinAngleOffset": "45",
-							"MaxAngleOffset": "-45",
-                        },
-						{
-                            "SpriteIndex": "14",
-                            "MaxDistance": "12",
-                            "Velocity": "2",
-                            "FireSound": "bubbles",
-                            "CollisionSound": "bubbles",
-							"MinAngleOffset": "45",
-							"MaxAngleOffset": "-45",
-                        }
-                    ],
-                    "Debuffs": ["Weakness"],
-                    "CustomFields": null
-                },
-                "{{ModId}}_InfernosEmbrace": {
-                    "Name": "Inferno's Embrace",
-                    "DisplayName": "Inferno's Embrace",
-                    "Description": "An ancient staff imbued with the essence of a primordial shaman.\n\nWielding this staff unleashes a torrent of searing flames upon your enemies, reducing them to ashes.\n\nProjectiles deal 55-100 damage.",
-                    "MinDamage": 1,
-                    "MaxDamage": 5,
-                    "Knockback": 1.0,
-                    "Speed": 0,
-                    "Precision": 100,
-                    "Defense": 0,
-                    "Type": 3,
-                    "MineBaseLevel": 70,
-                    "MineMinLevel": 70,
-                    "AreaOfEffect": 0,
-                    "CritChance": 0.02,
-                    "CritMultiplier": 3.0,
-                    "CanBeLostOnDeath": false,
-                    "Texture": "bonghits.cp.WeaponPack/Weapons",
-                    "SpriteIndex": 51,
-                    "Projectiles": [
-                        {
-                            "Id": "FlameProjectileTwo",
-                            "Item": {
-                                "Id": "ProjectileTwo",
-                                "ItemId": "{{ModId}}.Projectile.02"
-                            },
-                            "Damage": "55",
-                            "RotationVelocity": "1",
-                            "MinAngleOffset": "45",
-                            "MaxAngleOffset": "-60",
-                            "Bounces": "3",
-                            "TailLength": "3",
-                            "MaxDistance": "10",
-                            "Velocity": "5",
-                            "FireSound": "flameSpell",
-                            "BounceSound": "flameSpellHit",
-                            "CollisionSound": "flameSpellHit"
-                        },
-                        {
-                            "Id": "FlameProjectileTwo",
-                            "Item": {
-                                "Id": "ProjectileTwo",
-                                "ItemId": "{{ModId}}.Projectile.02"
-                            },
-                            "Damage": "75",
-                            "RotationVelocity": "1",
-                            "MinAngleOffset": "45",
-                            "MaxAngleOffset": "-60",
-                            "Bounces": "3",
-                            "TailLength": "3",
-                            "MaxDistance": "10",
-                            "Velocity": "6",
-                            "FireSound": "flameSpell",
-                            "BounceSound": "flameSpellHit",
-                            "CollisionSound": "flameSpellHit"
-                        },
-                        {
-                            "Id": "FlameProjectileTwo",
-                            "Item": {
-                                "Id": "ProjectileTwo",
-                                "ItemId": "{{ModId}}.Projectile.02"
-                            },
-                            "Damage": "100",
-                            "RotationVelocity": "1",
-                            "MinAngleOffset": "45",
-                            "MaxAngleOffset": "-60",
-                            "Explodes": true,
-                            "TailLength": "3",
-                            "MaxDistance": "10",
-                            "Velocity": "7",
-                            "FireSound": "flameSpell",
-                            "BounceSound": "flameSpellHit",
-                            "CollisionSound": "flameSpellHit"
-                        }
-                    ],
-                    "Debuffs": ["Weakness"],
                     "CustomFields": null
                 },
                 "{{ModId}}_Sawblade": {
@@ -294,7 +170,7 @@
                 "{{ModId}}_MonsterSlayer": {
                    "Name": "Monster Slayer",
                     "DisplayName": "Monster Slayer",
-                    "Description": "A sword forged by a legendary blacksmith, capable of slaying the most fearsome monsters.",
+                    "Description": "A sword forged by a legendary blacksmith, capable of slaying the most fearsome monsters.\n\nSpecial Attack performs a whirlwind.\n\n10% Chance to drop Void Essence on kill.\n20% Chance to drop Solar Essence on kill.\n\nRequired Combat Level: 5",
                     "MinDamage": 140,
                     "MaxDamage": 190,
                     "Knockback": 1.0,
@@ -501,7 +377,7 @@
                 "{{ModId}}_StarforgeEdge": {
                     "Name": "Starforge Edge",
                     "DisplayName": "Starforge Edge",
-                    "Description": "A sword forged from the heart of a dying star.",
+                    "Description": "A sword forged from the heart of a dying star.\n\nSpecial Attack calls down the power of Odin himself, lightning bolts strike down around you.\n\nHas a 2% Chance to drop a Prismatic Shard on kill.\n\nRequired Combat Level: 8",
                     "MinDamage": 100,
                     "MaxDamage": 215,
                     "Knockback": 3.0,
@@ -628,6 +504,409 @@
                     "Texture": "bonghits.cp.WeaponPack/Weapons",
                     "SpriteIndex": 384,
                     "Projectiles": null,
+                    "CustomFields": null
+                },
+                //
+                //
+                // Magical Staffs
+                //
+                //
+                "{{ModId}}_BubbleStaff": {
+                    "Name": "Sparkling Effervescence Staff",
+                    "DisplayName": "Sparkling Effervescence Staff",
+                    "Description": "A mythical wand used by the Carbonation Queen, sparkling with effervescent magic.",
+                    "MinDamage": 80,
+                    "MaxDamage": 100,
+                    "Knockback": 1.0,
+                    "Speed": 0,
+                    "Precision": 100,
+                    "Defense": 0,
+                    "Type": 3,
+                    "MineBaseLevel": 70,
+                    "MineMinLevel": 70,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0.02,
+                    "CritMultiplier": 3.0,
+                    "CanBeLostOnDeath": false,
+                    "Texture": "bonghits.cp.WeaponPack/Weapons",
+                    "SpriteIndex": 27,
+                    "Projectiles": [
+                        {
+                            "SpriteIndex": "14",
+                            "MaxDistance": "12",
+                            "Velocity": "3",
+                            "FireSound": "bubbles",
+                            "CollisionSound": "bubbles",
+							"MinAngleOffset": "45",
+							"MaxAngleOffset": "-45",
+                        },
+						{
+                            "SpriteIndex": "14",
+                            "MaxDistance": "12",
+                            "Velocity": "1",
+                            "FireSound": "bubbles",
+                            "CollisionSound": "bubbles",
+							"MinAngleOffset": "45",
+							"MaxAngleOffset": "-45",
+                        },
+						{
+                            "SpriteIndex": "14",
+                            "MaxDistance": "12",
+                            "Velocity": "2",
+                            "FireSound": "bubbles",
+                            "CollisionSound": "bubbles",
+							"MinAngleOffset": "45",
+							"MaxAngleOffset": "-45",
+                        }
+                    ],
+                    "Debuffs": ["Weakness"],
+                    "CustomFields": null
+                },
+                "{{ModId}}_InfernosEmbrace": {
+                    "Name": "Inferno's Embrace",
+                    "DisplayName": "Inferno's Embrace",
+                    "Description": "An ancient staff imbued with the essence of a primordial shaman.\n\nWielding this staff unleashes a torrent of searing flames upon your enemies, reducing them to ashes.\n\nProjectiles deal 55-100 damage.",
+                    "MinDamage": 1,
+                    "MaxDamage": 5,
+                    "Knockback": 1.0,
+                    "Speed": 0,
+                    "Precision": 100,
+                    "Defense": 0,
+                    "Type": 3,
+                    "MineBaseLevel": 70,
+                    "MineMinLevel": 70,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0.02,
+                    "CritMultiplier": 3.0,
+                    "CanBeLostOnDeath": false,
+                    "Texture": "bonghits.cp.WeaponPack/Weapons",
+                    "SpriteIndex": 51,
+                    "Projectiles": [
+                        {
+                            "Id": "FlameProjectileTwo",
+                            "Item": {
+                                "Id": "ProjectileTwo",
+                                "ItemId": "{{ModId}}.Projectile.02"
+                            },
+                            "Damage": "55",
+                            "RotationVelocity": "1",
+                            "MinAngleOffset": "45",
+                            "MaxAngleOffset": "-60",
+                            "Bounces": "3",
+                            "TailLength": "3",
+                            "MaxDistance": "10",
+                            "Velocity": "5",
+                            "FireSound": "flameSpell",
+                            "BounceSound": "flameSpellHit",
+                            "CollisionSound": "flameSpellHit"
+                        },
+                        {
+                            "Id": "FlameProjectileTwo",
+                            "Item": {
+                                "Id": "ProjectileTwo",
+                                "ItemId": "{{ModId}}.Projectile.02"
+                            },
+                            "Damage": "75",
+                            "RotationVelocity": "1",
+                            "MinAngleOffset": "45",
+                            "MaxAngleOffset": "-60",
+                            "Bounces": "3",
+                            "TailLength": "3",
+                            "MaxDistance": "10",
+                            "Velocity": "6",
+                            "FireSound": "flameSpell",
+                            "BounceSound": "flameSpellHit",
+                            "CollisionSound": "flameSpellHit"
+                        },
+                        {
+                            "Id": "FlameProjectileTwo",
+                            "Item": {
+                                "Id": "ProjectileTwo",
+                                "ItemId": "{{ModId}}.Projectile.02"
+                            },
+                            "Damage": "100",
+                            "RotationVelocity": "1",
+                            "MinAngleOffset": "45",
+                            "MaxAngleOffset": "-60",
+                            "Explodes": true,
+                            "TailLength": "3",
+                            "MaxDistance": "10",
+                            "Velocity": "7",
+                            "FireSound": "flameSpell",
+                            "BounceSound": "flameSpellHit",
+                            "CollisionSound": "flameSpellHit"
+                        }
+                    ],
+                    "Debuffs": ["Weakness"],
+                    "CustomFields": null
+                },
+                "{{ModId}}_StaffofDespair": {
+                    "Name": "Staff of Despair",
+                    "DisplayName": "Staff of Despair",
+                    "Description": "A staff imbued with dark magic, capable of launching skulls at enemies. The skulls are said to be the remnants of fallen warriors, seeking vengeance on the living.",
+                    "MinDamage": 1,
+                    "MaxDamage": 5,
+                    "Knockback": 0.0,
+                    "Speed": 0,
+                    "Precision": 0,
+                    "Defense": 0,
+                    "Type": 3,
+                    "MineBaseLevel": 180,
+                    "MineMinLevel": 100,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0,
+                    "CritMultiplier": 0,
+                    "CanBeLostOnDeath": false,
+                    "Texture": "bonghits.cp.WeaponPack/Staffs",
+                    "SpriteIndex": 14,
+                    "Projectiles": [
+                        {
+                            "Id": "SkullProjectileOne",
+                            "Item": {
+                                "Id": "SkullProjectileOne",
+                                "ItemId": "{{ModId}}.Projectile.SkullOne"
+                            },
+                            "Damage": "80",
+                            "Explodes": true,
+                            "TailLength": "7",
+                            "MaxDistance": "10",
+                            "Velocity": "5",
+                            "RotationVelocity": 0,
+                            "FireSound": "cacklingWitch",
+                            "CollisionSound": "flameSpellHit"
+                        }
+                    ],
+                    "CustomFields": null
+                },
+                "{{ModId}}_StaffofAnguish": {
+                    "Name": "Staff of Anguish",
+                    "DisplayName": "Staff of Anguish",
+                    "Description": "A staff imbued with sinister magic, capable of launching multiple skulls. The skulls are said to be the remnants of fallen warriors, seeking vengeance on the living.",
+                    "MinDamage": 1,
+                    "MaxDamage": 5,
+                    "Knockback": 0.0,
+                    "Speed": 0,
+                    "Precision": 0,
+                    "Defense": 0,
+                    "Type": 3,
+                    "MineBaseLevel": 180,
+                    "MineMinLevel": 100,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0,
+                    "CritMultiplier": 0,
+                    "CanBeLostOnDeath": false,
+                    "Texture": "bonghits.cp.WeaponPack/Staffs",
+                    "SpriteIndex": 5,
+                    "Projectiles": [
+                        {
+                            "Id": "SkullProjectileOne",
+                            "Item": {
+                                "Id": "SkullProjectileOne",
+                                "ItemId": "{{ModId}}.Projectile.SkullOne"
+                            },
+                            "Damage": "80",
+                            "Explodes": true,
+                            "TailLength": "7",
+                            "MinAngleOffset": "45",
+							"MaxAngleOffset": "-45",
+                            "MaxDistance": "10",
+                            "Velocity": "5",
+                            "RotationVelocity": 0,
+                            "FireSound": "cacklingWitch",
+                            "CollisionSound": "flameSpellHit"
+                        },
+                        {
+                            "Id": "SkullProjectileTwo",
+                            "Item": {
+                                "Id": "SkullProjectileTwo",
+                                "ItemId": "{{ModId}}.Projectile.SkullTwo"
+                            },
+                            "Damage": "80",
+                            "Explodes": true,
+                            "TailLength": "7",
+                            "MinAngleOffset": "45",
+							"MaxAngleOffset": "-45",
+                            "MaxDistance": "10",
+                            "Velocity": "5",
+                            "RotationVelocity": 0,
+                            "CollisionSound": "flameSpellHit"
+                        },
+                        {
+                            "Id": "SkullProjectileThree",
+                            "Item": {
+                                "Id": "SkullProjectileOne",
+                                "ItemId": "{{ModId}}.Projectile.SkullOne"
+                            },
+                            "Damage": "80",
+                            "Explodes": true,
+                            "TailLength": "7",
+                            "MinAngleOffset": "45",
+							"MaxAngleOffset": "-45",
+                            "MaxDistance": "10",
+                            "Velocity": "5",
+                            "RotationVelocity": 0,
+                            "FireSound": "cacklingWitch",
+                            "CollisionSound": "flameSpellHit"
+                        },
+                        {
+                            "Id": "SkullProjectileFour",
+                            "Item": {
+                                "Id": "SkullProjectileTwo",
+                                "ItemId": "{{ModId}}.Projectile.SkullTwo"
+                            },
+                            "Damage": "80",
+                            "Explodes": true,
+                            "TailLength": "7",
+                            "MinAngleOffset": "45",
+							"MaxAngleOffset": "-45",
+                            "MaxDistance": "10",
+                            "Velocity": "5",
+                            "RotationVelocity": 0,
+                            "CollisionSound": "flameSpellHit"
+                        }
+                    ],
+                    "CustomFields": null
+                },
+                "{{ModId}}_StaffofTheOculus": {
+                    "Name": "Staff of The Oculus",
+                    "DisplayName": "Staff of The Oculus",
+                    "Description": "A staff imbued with chaotic magic, capable of launching five uncontrolled eyeballs at your enemies. The eyes dart around unpredictably, seeking out foes with a mind of their own.",
+                    "MinDamage": 1,
+                    "MaxDamage": 5,
+                    "Knockback": 0.0,
+                    "Speed": 0,
+                    "Precision": 0,
+                    "Defense": 0,
+                    "Type": 3,
+                    "MineBaseLevel": 180,
+                    "MineMinLevel": 100,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0,
+                    "CritMultiplier": 0,
+                    "CanBeLostOnDeath": false,
+                    "Texture": "bonghits.cp.WeaponPack/Staffs",
+                    "SpriteIndex": 6,
+                    "Projectiles": [
+                        {
+                            "Id": "EyeProjectileOne",
+                            "Item": {
+                                "Id": "EyeProjectileOne",
+                                "ItemId": "{{ModId}}.Projectile.EyeOne"
+                            },
+                            "Damage": "80",
+                            "Explodes": true,
+                            //"TailLength": "2",
+                            "MinAngleOffset": "45",
+							"MaxAngleOffset": "-45",
+                            "MaxDistance": "10",
+                            "Velocity": "5",
+                            "RotationVelocity": 0,
+                            "CollisionSound": "flameSpellHit"
+                        },
+                        {
+                            "Id": "EyeProjectileSix",
+                            "Item": {
+                                "Id": "EyeProjectileSix",
+                                "ItemId": "{{ModId}}.Projectile.EyeSix"
+                            },
+                            "Damage": "70",
+                            "Explodes": true,
+                            //"TailLength": "2",
+                            "MinAngleOffset": "25",
+							"MaxAngleOffset": "-25",
+                            "MaxDistance": "10",
+                            "Velocity": "5",
+                            "RotationVelocity": 0,
+                            "CollisionSound": "flameSpellHit"
+                        },
+                        {
+                            "Id": "EyeProjectileThree",
+                            "Item": {
+                                "Id": "EyeProjectileThree",
+                                "ItemId": "{{ModId}}.Projectile.EyeThree"
+                            },
+                            "Damage": "80",
+                            "Explodes": true,
+                            //"TailLength": "2",
+                            "MinAngleOffset": "65",
+							"MaxAngleOffset": "-65",
+                            "MaxDistance": "10",
+                            "Velocity": "5",
+                            "RotationVelocity": 0,
+                            "CollisionSound": "flameSpellHit"
+                        },
+                        {
+                            "Id": "EyeProjectileFour",
+                            "Item": {
+                                "Id": "EyeProjectileFour",
+                                "ItemId": "{{ModId}}.Projectile.EyeFour"
+                            },
+                            "Damage": "80",
+                            "Explodes": true,
+                            //"TailLength": "2",
+                            "MinAngleOffset": "45",
+							"MaxAngleOffset": "-45",
+                            "MaxDistance": "10",
+                            "Velocity": "5",
+                            "RotationVelocity": 0,
+                            "CollisionSound": "flameSpellHit"
+                        },
+                        {
+                            "Id": "EyeProjectileFive",
+                            "Item": {
+                                "Id": "EyeProjectileFive",
+                                "ItemId": "{{ModId}}.Projectile.EyeFive"
+                            },
+                            "Damage": "80",
+                            "Explodes": true,
+                            //"TailLength": "2",
+                            "MinAngleOffset": "85",
+							"MaxAngleOffset": "-85",
+                            "MaxDistance": "10",
+                            "Velocity": "5",
+                            "RotationVelocity": 0,
+                            "CollisionSound": "flameSpellHit"
+                        },
+                     
+                    ],
+                    "CustomFields": null
+                },
+                "{{ModId}}_WitchesStaff": {
+                    "Name": "Witch's Staff",
+                    "DisplayName": "Witch's Staff",
+                    "Description": "Fires an unholy necronomicon at your enemies, dealing 80 damage.",
+                    "MinDamage": 1,
+                    "MaxDamage": 5,
+                    "Knockback": 0.0,
+                    "Speed": 0,
+                    "Precision": 0,
+                    "Defense": 0,
+                    "Type": 3,
+                    "MineBaseLevel": 180,
+                    "MineMinLevel": 100,
+                    "AreaOfEffect": 0,
+                    "CritChance": 0,
+                    "CritMultiplier": 0,
+                    "CanBeLostOnDeath": false,
+                    "Texture": "bonghits.cp.WeaponPack/Staffs",
+                    "SpriteIndex": 3,
+                    "Projectiles": [
+                        {
+                            "Id": "BookProjectile",
+                            "Item": {
+                                "Id": "BookProjectile",
+                                "ItemId": "{{ModId}}.Projectile.Book"
+                            },
+                            "Damage": "80",
+                            "Explodes": true,
+                            "TailLength": "2",
+                            "MaxDistance": "10",
+                            "Velocity": "5",
+                            "RotationVelocity": 0,
+                            "FireSound": "cacklingWitch",
+                            "CollisionSound": "flameSpellHit"
+                        }
+                    ],
                     "CustomFields": null
                 },
             }

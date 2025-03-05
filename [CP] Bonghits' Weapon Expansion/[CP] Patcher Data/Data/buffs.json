@@ -1,0 +1,211 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Buffs",
+            "Entries": {
+                "{{ModId}}.Potion.Red/Hexagon/Buff": {
+                    "DisplayName": "Regenerating Health",
+                    "Description": null,
+                    "IsDebuff": false,
+                    "GlowColor": "Red",
+                    "Duration": 10,
+                    "MaxDuration": -1,
+                    "IconTexture": "bonghits.cp.WeaponPack/Buffs",
+                    "IconSpriteIndex": 3,
+                    "Effects": {
+                        "AttackMultiplier": 0.0,
+                        "Immunity": 2.0,
+                        "KnockbackMultiplier": 0.0,
+                        "WeaponSpeedMultiplier": 0.0,
+                        "CriticalChanceMultiplier": 0.0,
+                        "CriticalPowerMultiplier": 0.0,
+                        "WeaponPrecisionMultiplier": 0.0
+                    },
+                    "ActionsOnApply": null,
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Buffs",
+            "Entries": {
+                "{{ModId}}.Potion.Red/Huge/Buff": {
+                    "DisplayName": "Regenerating Health",
+                    "Description": null,
+                    "IsDebuff": false,
+                    "GlowColor": "Red",
+                    "Duration": 30,
+                    "MaxDuration": -1,
+                    "IconTexture": "bonghits.cp.WeaponPack/Buffs",
+                    "IconSpriteIndex": 3,
+                    "Effects": {
+                        "AttackMultiplier": 0.0,
+                        "Immunity": 2.0,
+                        "KnockbackMultiplier": 0.0,
+                        "WeaponSpeedMultiplier": 0.0,
+                        "CriticalChanceMultiplier": 0.0,
+                        "CriticalPowerMultiplier": 0.0,
+                        "WeaponPrecisionMultiplier": 0.0
+                    },
+                    "ActionsOnApply": null,
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Buffs",
+            "Entries": {
+                "{{ModId}}.Potion.Green/Big/Buff": {
+                    "DisplayName": "Regenerating Stamina",
+                    "Description": null,
+                    "IsDebuff": false,
+                    "GlowColor": "PaleGreen",
+                    "Duration": 60,
+                    "MaxDuration": 90,
+                    "IconTexture": "bonghits.cp.WeaponPack/Buffs",
+                    "IconSpriteIndex": 5,
+                    "Effects": {
+                        "AttackMultiplier": 0.0,
+                        "Immunity": 0.0,
+                        "KnockbackMultiplier": 0.0,
+                        "WeaponSpeedMultiplier": 0.0,
+                        "CriticalChanceMultiplier": 0.0,
+                        "CriticalPowerMultiplier": 0.0,
+                        "WeaponPrecisionMultiplier": 0.0
+                    },
+                    "ActionsOnApply": null,
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Buffs",
+            "Entries": {
+                "{{ModId}}.Potion.Orange/Round/Buff": {
+                    "DisplayName": "Berserker's Rage",
+                    "Description": "Your rage is unquenchable!\n",
+                    "IsDebuff": false,
+                    "GlowColor": "DarkRed",
+                    "Duration": 120,
+                    "MaxDuration": 300,
+                    "IconTexture": "bonghits.cp.WeaponPack/Buffs",
+                    "IconSpriteIndex": 22,
+                    "Effects": {
+                        "CombatLevel": 5.0,
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 0.0,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 0.0,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 25.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": -5,
+                        "Attack": 2.5,
+                        "AttackMultiplier": 0.0,
+                        "Immunity": 0.0,
+                        "KnockbackMultiplier": 0.0,
+                        "WeaponSpeedMultiplier": 0.20,
+                        "CriticalChanceMultiplier": 0.15,
+                        "CriticalPowerMultiplier": 0.10,
+                        "WeaponPrecisionMultiplier": 0.0
+                    },
+                    "ActionsOnApply": null,
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Buffs",
+            "Entries": {
+                "{{ModId}}.Potion.Pink/Moon/Buff": {
+                    "DisplayName": "Farmer's Blessing",
+                    "Description": "You feel the need to get out and do chores!\n",
+                    "IsDebuff": false,
+                    //"GlowColor": "DarkRed",
+                    "Duration": 1200,
+                    "MaxDuration": 1500,
+                    "IconTexture": "bonghits.cp.WeaponPack/Buffs",
+                    "IconSpriteIndex": 21,
+                    "Effects": {
+                        "CombatLevel": 0.0,
+                        "FarmingLevel": 2.5,
+                        "FishingLevel": 2.5,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 2.5,
+                        "ForagingLevel": 2.5,
+                        "MaxStamina": 25.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0,
+                        "AttackMultiplier": 0.0,
+                        "Immunity": 0.0,
+                        "KnockbackMultiplier": 0.0,
+                        "WeaponSpeedMultiplier": 0.0,
+                        "CriticalChanceMultiplier": 0.0,
+                        "CriticalPowerMultiplier": 0.0,
+                        "WeaponPrecisionMultiplier": 0.0
+                    },
+                    "ActionsOnApply": null,
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Buffs",
+            "Entries": {
+                "{{ModId}}.Potion.Black/Diamond/Buff": {
+                    "DisplayName": "Fisher's Elixer",
+                    "Description": "Your luck in Fishing is looking up!",
+                    "IsDebuff": false,
+                    "Duration": 3600,
+                    "IconTexture": "bonghits.cp.WeaponPack/Buffs",
+                    "IconSpriteIndex": 17,
+                    "Effects": {
+                        "CombatLevel": 0.0,
+                        "FarmingLevel": 0.0,
+                        "FishingLevel": 2.5,
+                        "MiningLevel": 0.0,
+                        "LuckLevel": 2.5,
+                        "ForagingLevel": 0.0,
+                        "MaxStamina": 0.0,
+                        "MagneticRadius": 0.0,
+                        "Speed": 0.0,
+                        "Defense": 0.0,
+                        "Attack": 0.0,
+                        "AttackMultiplier": 0.0,
+                        "Immunity": 0.0,
+                        "KnockbackMultiplier": 0.0,
+                        "WeaponSpeedMultiplier": 0.0,
+                        "CriticalChanceMultiplier": 0.0,
+                        "CriticalPowerMultiplier": 0.0,
+                        "WeaponPrecisionMultiplier": 0.0
+                    },
+                    "ActionsOnApply": null,
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Buffs",
+            "Entries": {
+                "{{ModId}}.Potion.Yellow/Rectangle/Buff": {
+                    "DisplayName": "Miner's Elixer",
+                    "Description": "Your luck in Mining is looking up!",
+                    "IsDebuff": false,
+                    "Duration": 3600,
+                    "IconTexture": "bonghits.cp.WeaponPack/Buffs",
+                    "IconSpriteIndex": 13,
+                    "Effects": {
+                        "MiningLevel": 2.5,
+                        "LuckLevel": 2.5,
+                    },
+                    "ActionsOnApply": null,
+                }
+            }
+        },
+    ]
+}

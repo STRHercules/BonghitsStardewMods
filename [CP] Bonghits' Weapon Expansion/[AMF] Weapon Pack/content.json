@@ -1,0 +1,399 @@
+{
+    "Weapons": [
+        //  Starforge Edge
+        //  Artful + Vampiric + Looting + Heal
+        //  On crit, heal 15% of damage dealt
+        //  On kill, 2% chance to drop a prismatic shard
+        //  Special Attack: Swirl in circle, launch lightning
+        //  Skill Level Required: Combat 8
+        {
+            "id": "Starforge Edge",
+            "enchantments": [
+                {
+                    "name": "Odin's Rage (Special)",
+                    "type": "loot",
+                    "parameters": {
+                        "trigger": "slay",
+                        "chance": "0",
+                        "extraDropItems": "768_1_3_10,769_2_5_20",
+                        "sound": "boulderBreak"
+                    }
+                },     
+                {
+                    "name": "Demon.Artful",
+                    "type": "artful"
+                },
+                {
+                    "name": "Prismatic Looting",
+                    "type": "loot",
+                    "parameters": {
+                        "trigger": "slay",
+                        "chance": "2",
+                        "extraDropItems": "74_1_1_100",
+                        "sound": "Cowboy_Secret"
+                    }
+                },
+                {
+                    "name": "15% Heal on Crit",
+                    "type": "heal",
+                    "parameters": {
+                        "trigger": "crit",
+                        "chance": "100",
+                        "amountMult": "0.15",
+                        "sound": "healSound"
+                    }
+                }
+            ],
+            "skillLevel": 8,
+            "cooldown": "2500",
+            "frames": [
+                {
+                    "frameTicks": 1,
+                    "action": 0,
+                    "relativeFacingDirection": 0,
+                    "special": {
+                        "name": "lightning",
+                        "parameters": {
+                            "damageMult": 2,
+                            "minDamage": 50,
+                            "maxDamage": 100,
+                            "radius": 5,
+                            "offsetX": 2,
+                            "sound": "thunder_small"
+                        }
+                    }
+                },
+                {
+                    "frameTicks": 15,
+                    "action": 1,
+                    "relativeFacingDirection": 1,
+                    "invincible": true,
+                    "special": {
+                        "name": "lightning",
+                        "parameters": {
+                            "damageMult": 2,
+                            "minDamage": 50,
+                            "maxDamage": 100,
+                            "radius": 5,
+                            "offsetX": 2,
+                            "sound": "thunder_small"
+                        }
+                    }
+                },
+                {
+                    "frameTicks": 10,
+                    "action": 1,
+                    "invincible": true,
+                    "relativeFacingDirection": 2,
+                    "sound": "dcswingB",
+                    "special": {
+                        "name": "lightning",
+                        "parameters": {
+                            "damageMult": 2,
+                            "minDamage": 50,
+                            "maxDamage": 100,
+                            "radius": 5,
+                            "offsetX": 2,
+                            "sound": "thunder_small"
+                        }
+                    }
+                },
+                {
+                    "frameTicks": 10,
+                    "action": 1,
+                    "invincible": true,
+                    "relativeFacingDirection": 3,
+                    "sound": "dcswingB",
+                    "special": {
+                        "name": "lightning",
+                        "parameters": {
+                            "damageMult": 2,
+                            "minDamage": 50,
+                            "maxDamage": 100,
+                            "radius": 5,
+                            "offsetX": 2,
+                            "sound": "thunder_small"
+                        }
+                    }
+                },
+                {
+                    "frameTicks": 20,
+                    "action": 2,
+                    "relativeFacingDirection": 0
+                }
+            ]
+        },
+        //  Monster Slayer
+        //
+        //  10% Chance to Drop 1-3 Solar Essence on Kill
+        //  20% Chance to Drop 2-5 Void Essence on Kill
+        //  15% Heal on Crit
+        //  Special Attack: Swirl in circle
+        //  Skill Level Required: Combat 5
+        //
+        {
+            "id": "Monster Slayer",
+            "enchantments": [     
+                {
+                    "name": "Whirlwind (Special)",
+                    "type": "loot",
+                    "parameters": {
+                        "trigger": "slay",
+                        "chance": "0",
+                        "extraDropItems": "768_1_3_10,769_2_5_20",
+                        "sound": "boulderBreak"
+                    }
+                },     
+                {
+                    "name": "Essence Looting",
+                    "type": "loot",
+                    "parameters": {
+                        "trigger": "slay",
+                        "chance": "100",
+                        "extraDropItems": "768_1_3_10,769_2_5_20",
+                        "sound": "boulderBreak"
+                    }
+                },
+                {
+                    "name": "15% Heal on Crit",
+                    "type": "heal",
+                    "parameters": {
+                        "trigger": "crit",
+                        "chance": "100",
+                        "amountMult": "0.15",
+                        "sound": "healSound"
+                    }
+                }
+            ],
+            "skillLevel": 5,
+            "cooldown": "2500",
+            "frames": [
+                {
+                    "frameTicks": 1,
+                    "action": 0,
+                    "relativeFacingDirection": 0,
+                    "sound": "dcswingB"
+                },
+                {
+                    "frameTicks": 5,
+                    "action": 1,
+                    "relativeFacingDirection": 1,
+                    "invincible": true,
+                    "sound": "dcswingA"
+                },
+                {
+                    "frameTicks": 5,
+                    "action": 1,
+                    "invincible": true,
+                    "relativeFacingDirection": 2,
+                    "sound": "dcswingB"
+                },
+                {
+                    "frameTicks": 5,
+                    "action": 1,
+                    "invincible": true,
+                    "relativeFacingDirection": 3,
+                    "sound": "dcswingB"
+                },
+                {
+                    "frameTicks": 5,
+                    "action": 2,
+                    "relativeFacingDirection": 0,
+                    "sound": "dcswingA"
+                },
+                {
+                    "frameTicks": 5,
+                    "action": 1,
+                    "relativeFacingDirection": 1,
+                    "invincible": true,
+                    "sound": "dcswingA"
+                },
+                {
+                    "frameTicks": 5,
+                    "action": 1,
+                    "invincible": true,
+                    "relativeFacingDirection": 2,
+                    "sound": "dcswingB"
+                },
+                {
+                    "frameTicks": 5,
+                    "action": 1,
+                    "invincible": true,
+                    "relativeFacingDirection": 3,
+                    "sound": "dcswingB"
+                },
+                {
+                    "frameTicks": 5,
+                    "action": 2,
+                    "relativeFacingDirection": 0,
+                    "sound": "dcswingA"
+                },
+                {
+                    "frameTicks": 5,
+                    "action": 1,
+                    "relativeFacingDirection": 1,
+                    "invincible": true,
+                    "sound": "dcswingA"
+                },
+                {
+                    "frameTicks": 5,
+                    "action": 1,
+                    "invincible": true,
+                    "relativeFacingDirection": 2,
+                    "sound": "dcswingB"
+                },
+                {
+                    "frameTicks": 5,
+                    "action": 1,
+                    "invincible": true,
+                    "relativeFacingDirection": 3,
+                    "sound": "dcswingB"
+                },
+                {
+                    "frameTicks": 5,
+                    "action": 2,
+                    "relativeFacingDirection": 0,
+                    "sound": "dcswingA"
+                }
+            ]
+        },
+        //  Ragnarok
+        //
+        //  10% Chance to Drop 1-2 Diamonds on Kill
+        //  20% Heal on Crit
+        //  Special Attack: Swirl in circle, Explosions
+        //  Skill Level Required: Combat 8
+        //
+        {
+            "id": "Ragnarok",
+            "enchantments": [
+                {
+                    "name": "Explosion AoE (Special)",
+                    "type": "loot",
+                    "parameters": {
+                        "trigger": "slay",
+                        "chance": "0",
+                        "extraDropItems": "72_1_2_100",
+                        "sound": "Cowboy_Secret"
+                    }
+                },
+                {
+                    "name": "Crusader",
+                    "type": "crusader"
+                },
+                {
+                    "name": "Raining Diamonds",
+                    "type": "loot",
+                    "parameters": {
+                        "trigger": "slay",
+                        "chance": "10",
+                        "extraDropItems": "72_1_2_100",
+                        "sound": "Cowboy_Secret"
+                    }
+                },
+                {
+                    "name": "20% Heal on Crit",
+                    "type": "heal",
+                    "parameters": {
+                        "trigger": "crit",
+                        "chance": "100",
+                        "amountMult": "0.15",
+                        "sound": "healSound"
+                    }
+                }
+            ],
+            "skillLevel": 8,
+            "cooldown": "5000",
+            "frames": [
+                {
+                    "frameTicks": 1,
+                    "action": 1,
+                    "relativeFacingDirection": 0,
+                    "sound": "clubswipe",
+                    "special": {
+                        "name": "explosion",
+                        "parameters": {
+                            "damageMult": 2,
+                            "minDamage": 50,
+                            "maxDamage": 100,
+                            "radius": 1,
+                            "offsetX": 2,
+                            "sound": "Cowboy_monsterDie"
+                        }
+                    }
+                },
+                {
+                    "frameTicks": 15,
+                    "action": 1,
+                    "relativeFacingDirection": 1,
+                    "invincible": true,
+                    "sound": "clubswipe",
+                    "special": {
+                        "name": "explosion",
+                        "parameters": {
+                            "damageMult": 2,
+                            "minDamage": 50,
+                            "maxDamage": 100,
+                            "radius": 1,
+                            "offsetX": 2,
+                            "sound": "Cowboy_monsterDie"
+                        }
+                    }
+                },
+                {
+                    "frameTicks": 10,
+                    "action": 1,
+                    "invincible": true,
+                    "relativeFacingDirection": 2,
+                    "sound": "clubswipe",
+                    "special": {
+                        "name": "explosion",
+                        "parameters": {
+                            "damageMult": 2,
+                            "minDamage": 50,
+                            "maxDamage": 100,
+                            "radius": 1,
+                            "offsetX": 2,
+                            "sound": "Cowboy_monsterDie"
+                        }
+                    }
+                },
+                {
+                    "frameTicks": 10,
+                    "action": 1,
+                    "invincible": true,
+                    "relativeFacingDirection": 3,
+                    "sound": "clubswipe",
+                    "special": {
+                        "name": "explosion",
+                        "parameters": {
+                            "damageMult": 2,
+                            "minDamage": 50,
+                            "maxDamage": 100,
+                            "radius": 1,
+                            "offsetX": 2,
+                            "sound": "Cowboy_monsterDie"
+                        }
+                    }
+                },
+                {
+                    "frameTicks": 20,
+                    "action": 2,
+                    "relativeFacingDirection": 0,
+                    "sound": "clubswipe",
+                    "special": {
+                        "name": "explosion",
+                        "parameters": {
+                            "damageMult": 2,
+                            "minDamage": 50,
+                            "maxDamage": 100,
+                            "radius": 1,
+                            "offsetX": 2,
+                            "sound": "Cowboy_monsterDie"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -4,9 +4,9 @@
             "Action": "EditData",
             "Target": "Data/Objects",
             "Entries": {
-                // 
                 //
-                //  Projectile Object Data 
+                //
+                //  Animated Projectiles
                 //
                 //
                 "{{ModId}}.Projectile.01": {
@@ -116,7 +116,130 @@
                     "Price": 1,
                     "SpriteIndex": 0,
                     "Texture": "bonghits.cp.WeaponPack/ProjectileNine",
-                }
+                },
+                //
+                //
+                //  Static Skulls
+                //
+                //
+                "{{ModId}}.Projectile.SkullOne": {
+                    "Name": "{{ModId}}.SkullOne",
+                    "DisplayName": null,
+                    "Description": null,
+                    "Type": null,
+                    "Edibility": 0,
+                    "IsDrink": false,
+                    "Category": -26,
+                    "Price": 1,
+                    "SpriteIndex": 0,
+                    "Texture": "bonghits.cp.WeaponPack/ProjectileStatic",
+                },
+                "{{ModId}}.Projectile.SkullTwo": {
+                    "Name": "{{ModId}}.SkullTwo",
+                    "DisplayName": null,
+                    "Description": null,
+                    "Type": null,
+                    "Edibility": 0,
+                    "IsDrink": false,
+                    "Category": -26,
+                    "Price": 1,
+                    "SpriteIndex": 1,
+                    "Texture": "bonghits.cp.WeaponPack/ProjectileStatic",
+                },
+                //
+                //
+                //  Static Eyeballs
+                //
+                //
+                "{{ModId}}.Projectile.EyeOne": {
+                    "Name": "{{ModId}}.EyeOne",
+                    "DisplayName": null,
+                    "Description": null,
+                    "Type": null,
+                    "Edibility": 0,
+                    "IsDrink": false,
+                    "Category": -26,
+                    "Price": 1,
+                    "SpriteIndex": 2,
+                    "Texture": "bonghits.cp.WeaponPack/ProjectileStatic",
+                },
+                "{{ModId}}.Projectile.EyeTwo": {
+                    "Name": "{{ModId}}.EyeTwo",
+                    "DisplayName": null,
+                    "Description": null,
+                    "Type": null,
+                    "Edibility": 0,
+                    "IsDrink": false,
+                    "Category": -26,
+                    "Price": 1,
+                    "SpriteIndex": 3,
+                    "Texture": "bonghits.cp.WeaponPack/ProjectileStatic",
+                },
+                "{{ModId}}.Projectile.EyeThree": {
+                    "Name": "{{ModId}}.EyeThree",
+                    "DisplayName": null,
+                    "Description": null,
+                    "Type": null,
+                    "Edibility": 0,
+                    "IsDrink": false,
+                    "Category": -26,
+                    "Price": 1,
+                    "SpriteIndex": 4,
+                    "Texture": "bonghits.cp.WeaponPack/ProjectileStatic",
+                },
+                "{{ModId}}.Projectile.EyeFour": {
+                    "Name": "{{ModId}}.EyeFour",
+                    "DisplayName": null,
+                    "Description": null,
+                    "Type": null,
+                    "Edibility": 0,
+                    "IsDrink": false,
+                    "Category": -26,
+                    "Price": 1,
+                    "SpriteIndex": 5,
+                    "Texture": "bonghits.cp.WeaponPack/ProjectileStatic",
+                },
+                "{{ModId}}.Projectile.EyeFive": {
+                    "Name": "{{ModId}}.EyeFive",
+                    "DisplayName": null,
+                    "Description": null,
+                    "Type": null,
+                    "Edibility": 0,
+                    "IsDrink": false,
+                    "Category": -26,
+                    "Price": 1,
+                    "SpriteIndex": 6,
+                    "Texture": "bonghits.cp.WeaponPack/ProjectileStatic",
+                },
+                "{{ModId}}.Projectile.EyeSix": {
+                    "Name": "{{ModId}}.EyeSix",
+                    "DisplayName": null,
+                    "Description": null,
+                    "Type": null,
+                    "Edibility": 0,
+                    "IsDrink": false,
+                    "Category": -26,
+                    "Price": 1,
+                    "SpriteIndex": 7,
+                    "Texture": "bonghits.cp.WeaponPack/ProjectileStatic",
+                },
+                //
+                //
+                //  Static Demonic Book Projectile
+                //
+                //
+                "{{ModId}}.Projectile.Book": {
+                    "Name": "{{ModId}}.Book",
+                    "DisplayName": null,
+                    "Description": null,
+                    "Type": null,
+                    "Edibility": 0,
+                    "IsDrink": false,
+                    "Category": -26,
+                    "Price": 1,
+                    "SpriteIndex": 8,
+                    "Texture": "bonghits.cp.WeaponPack/ProjectileStatic",
+                },
             }
         },
         //

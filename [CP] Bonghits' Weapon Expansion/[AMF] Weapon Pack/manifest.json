@@ -1,0 +1,19 @@
+{
+    "Name": "[AMF] Weapon Pack",
+    "Author": "MajorBonghits",
+    "Version": "1.0.0",
+    "Description": "Weapon Expansion Pack for Advanced Melee Framework",
+    "UniqueID": "bonghits.AMF.WeaponPack",
+    "UpdateKeys": [
+        "Nexus:32082"
+    ],
+    "ContentPackFor": {
+        "UniqueID": "aedenthorn.AdvancedMeleeFramework"
+    },
+    "Dependencies": [
+        {
+            "UniqueID": "aedenthorn.AdvancedMeleeFramework",
+            "IsRequired": true
+        }
+    ]
+}

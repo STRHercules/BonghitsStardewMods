@@ -1,0 +1,137 @@
+{ 
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Format": "2.5.0",
+    "Changes": [
+        {
+            // Spritesheet Load
+            "Action": "Load",
+            "Target": "bonghits.cp.WeaponPack/Buffs",
+            "FromFile": "assets/buffs.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.WeaponPack/Weapons",
+            "FromFile": "assets/iron_weapons.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.WeaponPack/Staffs",
+            "FromFile": "assets/wands.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.WeaponPack/RedHexPotion",
+            "FromFile": "assets/red_hexagon.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.WeaponPack/OrangeRoundPotion",
+            "FromFile": "assets/orange_round.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.WeaponPack/YellowRectanglePotion",
+            "FromFile": "assets/yellow_rectangle.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.WeaponPack/PinkMoonPotion",
+            "FromFile": "assets/pink_moon.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.WeaponPack/BlackDiamondPotion",
+            "FromFile": "assets/black_diamond.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.WeaponPack/RedRoundPotion",
+            "FromFile": "assets/red_round.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.WeaponPack/RedSmallPotion",
+            "FromFile": "assets/red_vial.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.WeaponPack/GreenSmallPotion",
+            "FromFile": "assets/green_long_diamond.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.WeaponPack/BigGreenPotion",
+            "FromFile": "assets/green_diamond.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.WeaponPack/ProjectileOne",
+            "FromFile": "assets/projectile_One.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.WeaponPack/ProjectileTwo",
+            "FromFile": "assets/projectile_Two.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.WeaponPack/ProjectileThree",
+            "FromFile": "assets/projectile_Three.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.WeaponPack/ProjectileFour",
+            "FromFile": "assets/projectile_Four.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.WeaponPack/ProjectileFive",
+            "FromFile": "assets/projectile_Five.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.WeaponPack/ProjectileSix",
+            "FromFile": "assets/projectile_Six.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.WeaponPack/ProjectileSeven",
+            "FromFile": "assets/projectile_Seven.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.WeaponPack/ProjectileEight",
+            "FromFile": "assets/projectile_Eight.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.WeaponPack/ProjectileNine",
+            "FromFile": "assets/projectile_Nine.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.WeaponPack/ProjectileStatic",
+            "FromFile": "assets/projectilesStatic.png"
+        },
+        {
+            // Weapon Load
+            "Action": "Include",
+            "FromFile": "Data/weapons.json"
+        },
+        {
+            // Weapon Load
+            "Action": "Include",
+            "FromFile": "Data/projectiles.json"
+        },
+        {
+            // Potion Load
+            "Action": "Include",
+            "FromFile": "Data/potions.json"
+        },
+        {
+            // Buffs Load
+            "Action": "Include",
+            "FromFile": "Data/buffs.json"
+        }
+    ]
+}
