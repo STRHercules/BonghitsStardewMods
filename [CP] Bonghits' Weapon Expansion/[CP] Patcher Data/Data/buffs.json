@@ -5,9 +5,9 @@
             "Action": "EditData",
             "Target": "Data/Buffs",
             "Entries": {
-                "{{ModId}}.Potion.Red/Hexagon/Buff": {
-                    "DisplayName": "Regenerating Health",
-                    "Description": null,
+                "{{ModId}}.Potion.Red.Hexagon.Buff": {
+                    "DisplayName": "{{i18n:Potion.Red.Hexagon.Buff.DisplayName}}",
+                    "Description": "{{i18n:Potion.Red.Hexagon.Buff.Description}}",
                     "IsDebuff": false,
                     "GlowColor": "Red",
                     "Duration": 10,
@@ -31,9 +31,9 @@
             "Action": "EditData",
             "Target": "Data/Buffs",
             "Entries": {
-                "{{ModId}}.Potion.Red/Huge/Buff": {
-                    "DisplayName": "Regenerating Health",
-                    "Description": null,
+                "{{ModId}}.Potion.Red.Huge.Buff": {
+                    "DisplayName": "{{i18n:Potion.Red.Huge.Buff.DisplayName}}",
+                    "Description": "{{i18n:Potion.Red.Huge.Buff.Description}}",
                     "IsDebuff": false,
                     "GlowColor": "Red",
                     "Duration": 30,
@@ -57,9 +57,9 @@
             "Action": "EditData",
             "Target": "Data/Buffs",
             "Entries": {
-                "{{ModId}}.Potion.Green/Big/Buff": {
-                    "DisplayName": "Regenerating Stamina",
-                    "Description": null,
+                "{{ModId}}.Potion.Green.Big.Buff": {
+                    "DisplayName": "{{i18n:Potion.Green.Big.Buff.DisplayName}}",
+                    "Description": "{{i18n:Potion.Green.Big.Buff.Description}}",
                     "IsDebuff": false,
                     "GlowColor": "PaleGreen",
                     "Duration": 60,
@@ -83,9 +83,9 @@
             "Action": "EditData",
             "Target": "Data/Buffs",
             "Entries": {
-                "{{ModId}}.Potion.Orange/Round/Buff": {
-                    "DisplayName": "Berserker's Rage",
-                    "Description": "Your rage is unquenchable!\n",
+                "{{ModId}}.Potion.Orange.Round.Buff": {
+                    "DisplayName": "{{i18n:Potion.Orange.Round.Buff.DisplayName}}",
+                    "Description": "{{i18n:Potion.Orange.Round.Buff.Description}}",
                     "IsDebuff": false,
                     "GlowColor": "DarkRed",
                     "Duration": 120,
@@ -120,9 +120,9 @@
             "Action": "EditData",
             "Target": "Data/Buffs",
             "Entries": {
-                "{{ModId}}.Potion.Pink/Moon/Buff": {
-                    "DisplayName": "Farmer's Blessing",
-                    "Description": "You feel the need to get out and do chores!\n",
+                "{{ModId}}.Potion.Pink.Moon.Buff": {
+                    "DisplayName": "{{i18n:Potion.Pink.Moon.Buff.DisplayName}}",
+                    "Description": "{{i18n:Potion.Pink.Moon.Buff.Description}}",
                     "IsDebuff": false,
                     //"GlowColor": "DarkRed",
                     "Duration": 1200,
@@ -157,9 +157,9 @@
             "Action": "EditData",
             "Target": "Data/Buffs",
             "Entries": {
-                "{{ModId}}.Potion.Black/Diamond/Buff": {
-                    "DisplayName": "Fisher's Elixer",
-                    "Description": "Your luck in Fishing is looking up!",
+                "{{ModId}}.Potion.Black.Diamond.Buff": {
+                    "DisplayName": "{{i18n:Potion.Black.Diamond.Buff.DisplayName}}",
+                    "Description": "{{i18n:Potion.Black.Diamond.Buff.Description}}",
                     "IsDebuff": false,
                     "Duration": 3600,
                     "IconTexture": "bonghits.cp.WeaponPack/Buffs",
@@ -192,9 +192,9 @@
             "Action": "EditData",
             "Target": "Data/Buffs",
             "Entries": {
-                "{{ModId}}.Potion.Yellow/Rectangle/Buff": {
-                    "DisplayName": "Miner's Elixer",
-                    "Description": "Your luck in Mining is looking up!",
+                "{{ModId}}.Potion.Yellow.Rectangle.Buff": {
+                    "DisplayName": "{{i18n:Potion.Yellow.Rectangle.Buff.DisplayName}}",
+                    "Description": "{{i18n:Potion.Yellow.Rectangle.Buff.Description}}",
                     "IsDebuff": false,
                     "Duration": 3600,
                     "IconTexture": "bonghits.cp.WeaponPack/Buffs",
