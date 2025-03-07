@@ -1,7 +1,7 @@
 {
     "Name": "[AMF] Weapon Pack",
     "Author": "MajorBonghits",
-    "Version": "1.0.0",
+    "Version": "1.2",
     "Description": "Weapon Expansion Pack for Advanced Melee Framework",
     "UniqueID": "bonghits.AMF.WeaponPack",
     "UpdateKeys": [
