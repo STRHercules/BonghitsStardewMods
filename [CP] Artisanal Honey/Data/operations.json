@@ -71,7 +71,6 @@
         // --------------------------------------------------------
         {
             "When": {
-                "CopyQualitySetting": "auto",
                 "HasMod": "FlashShifter.StardewValleyExpandedCP"
             },
             "Action": "EditData",
@@ -136,7 +135,6 @@
         //
         {
             "When": {
-                "CopyQualitySetting": "auto",
                 "HasMod": "FlashShifter.StardewValleyExpandedCP"
             },
             "Action": "EditData",
@@ -185,7 +183,6 @@
         //
         {
             "When": {
-                "CopyQualitySetting": "auto",
                 "HasMod": "FlashShifter.StardewValleyExpandedCP"
             },
             "Action": "EditData",
@@ -234,7 +231,6 @@
         //
         {
             "When": {
-                "CopyQualitySetting": "auto",
                 "HasMod": "FlashShifter.StardewValleyExpandedCP"
             },
             "Action": "EditData",
@@ -283,7 +279,6 @@
         //
         {
             "When": {
-                "CopyQualitySetting": "auto",
                 "HasMod": "FlashShifter.StardewValleyExpandedCP"
             },
             "Action": "EditData",
@@ -332,7 +327,6 @@
         //
         {
             "When": {
-                "CopyQualitySetting": "auto",
                 "HasMod": "FlashShifter.StardewValleyExpandedCP"
             },
             "Action": "EditData",
