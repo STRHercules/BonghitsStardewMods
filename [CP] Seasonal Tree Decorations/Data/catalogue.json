@@ -1,0 +1,81 @@
+{
+    "Changes": [
+        {
+			"Action": "Load",
+			"Target": "bonghits.cp.catalogue",
+			"FromFile": "Assets/Catalogue/catalogue.png"
+		},
+        {
+            "LogName": "Add Tree Catalogue Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "Entries": {
+                "{{ModId}}.Catalogue": {
+                    "PriceModifiers": null,
+                    "PriceModifierMode": "Stack",
+                    "Items": [
+                        {
+                            "Price": 0,
+                            "AvailableStockLimit": "Global",
+                            "AvoidRepeat": false,
+                            "UseObjectDataPrice": false,
+                            "IgnoreShopPriceModifiers": false,
+                            "PriceModifiers": null,
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifiers": null,
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": null,
+                            "Id": "Default",
+                            "ItemId": "ALL_ITEMS (F)",
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                            "PerItemCondition": "ITEM_CONTEXT_TAG Target collection_bongTrees"
+                        },
+                    ],
+                    "CustomFields": {
+                        "HappyHomeDesigner/Catalogue": "true"
+                    }
+                }
+            }
+        },
+        {
+            "LogName": "Add Tree Catalogue Item",
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "Entries": {
+                "{{ModId}}.Catalogue": "{{ModId}}.Catalogue/other/2 3/2 1/1/20000/2/{{i18n:catalogue.name}}/0/bonghits.cp.catalogue/true"
+            }
+        },
+        {
+            "LogName": "Add Tree Catalogue Tile Actions",
+            "Action": "EditData",
+            "Target": "sophie.Calcifer/FurnitureActions",
+            "Entries": {
+                "(F){{ModId}}.Catalogue": {
+                    "TileActions": [
+                        {
+                            "TileAction": "OpenShop {{ModId}}.Catalogue"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "LogName": "Add Tree Catalogue to Robin's Shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "Carpenter",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}.Catalogue": {
+                    "Id": "{{ModId}}.Catalogue",
+                    "ItemId": "(F){{ModId}}.Catalogue",
+                    "Price": 20000
+                }
+            }
+        }
+    ]
+}

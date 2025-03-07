@@ -1,0 +1,11 @@
+{
+   "Name": "[CP] Seasonal Tree Decorations",
+   "Author": "MajorBonghits",
+   "Version": "1.0",
+   "Description": "Decorate your farm with trees!",
+   "UniqueID": "bonghits.cp.SeasonalTrees",
+   "UpdateKeys": [ "Nexus:-----" ],
+   "ContentPackFor": {
+      "UniqueID": "Pathoschild.ContentPatcher"
+   }
+}

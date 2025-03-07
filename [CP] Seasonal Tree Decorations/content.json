@@ -1,0 +1,58 @@
+{
+	"$schema": "https://smapi.io/schemas/content-patcher.json",
+	"Format": "2.5.0",
+	"Changes": [
+		//
+		//	Catalogue Load
+		//
+		{
+			"Action": "Include",
+			"FromFile": "Data/catalogue.json"
+		},
+		//
+		//	Spring Tree Load
+		//
+		{
+			"Action": "Include",
+			"FromFile": "Data/spring.json"
+		},
+
+		/*
+		//
+		//	Summer Tree Load
+		//
+		{
+			"Action": "Include",
+			"FromFile": "Data/summer.json"
+		},
+		//
+		//	Fall Tree Load
+		//
+		{
+			"Action": "Include",
+			"FromFile": "Data/fall.json"
+		},
+		//
+		//	Winter Tree Load
+		//
+		{
+			"Action": "Include",
+			"FromFile": "Data/winter.json"
+		},
+		//
+		//	Island Tree Load
+		//
+		{
+			"Action": "Include",
+			"FromFile": "Data/island.json"
+		},
+		//
+		//	Desert Tree Load
+		//
+		{
+			"Action": "Include",
+			"FromFile": "Data/desert.json"
+		},
+		*/
+	]
+}

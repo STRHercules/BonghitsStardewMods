@@ -1,0 +1,176 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Changes": [
+		{
+			"Action": "Load",
+			"Target": "bonghits.cp.SpringTree_1",
+			"FromFile": "Assets/Trees/spring/spring_tree_1.png"
+		},
+		{
+			"Action": "Load",
+			"Target": "bonghits.cp.SpringTree_2",
+			"FromFile": "Assets/Trees/spring/spring_tree_2.png"
+		},
+		{
+			"Action": "Load",
+			"Target": "bonghits.cp.SpringTree_3",
+			"FromFile": "Assets/Trees/spring/spring_tree_3.png"
+		},
+		{
+			"Action": "Load",
+			"Target": "bonghits.cp.SpringTree_8",
+			"FromFile": "Assets/Trees/spring/spring_tree_8.png"
+		},
+        {
+			"Action": "Load",
+			"Target": "bonghits.cp.SpringFruitTree_1",
+			"FromFile": "Assets/FruitTrees/spring/spring_tree_1.png"
+		},
+        {
+			"Action": "Load",
+			"Target": "bonghits.cp.SpringFruitTree_2",
+			"FromFile": "Assets/FruitTrees/spring/spring_tree_2.png"
+		},
+        {
+			"Action": "Load",
+			"Target": "bonghits.cp.SpringFruitTree_3",
+			"FromFile": "Assets/FruitTrees/spring/spring_tree_3.png"
+		},
+        {
+			"Action": "Load",
+			"Target": "bonghits.cp.SpringFruitTree_4",
+			"FromFile": "Assets/FruitTrees/spring/spring_tree_4.png"
+		},
+        {
+			"Action": "Load",
+			"Target": "bonghits.cp.SpringFruitTree_5",
+			"FromFile": "Assets/FruitTrees/spring/spring_tree_5.png"
+		},
+		{
+			"Action": "Load",
+			"Target": "bonghits.cp.SpringBush_1",
+			"FromFile": "Assets/Bushes/spring/spring_bush_1.png"
+		},
+		{
+			"Action": "Load",
+			"Target": "bonghits.cp.SpringBush_2",
+			"FromFile": "Assets/Bushes/spring/spring_bush_2.png"
+		},
+		{
+			"Action": "Load",
+			"Target": "bonghits.cp.SpringBush_3",
+			"FromFile": "Assets/Bushes/spring/spring_bush_3.png"
+		},
+		{
+			"Action": "Load",
+			"Target": "bonghits.cp.SpringBush_4",
+			"FromFile": "Assets/Bushes/spring/spring_bush_4.png"
+		},
+		{
+			"Action": "Load",
+			"Target": "bonghits.cp.SpringBush_5",
+			"FromFile": "Assets/Bushes/spring/spring_bush_5.png"
+		},
+        {
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "Entries": {
+                "{{ModId}}_SpringTree1": "{{ModId}}_SpringTree1/decor/3 5/1 1/1/1000/2/{{i18n:furniture.SpringTree.name}}/0/bonghits.cp.SpringTree_1/true/collection_bongTrees",
+                "{{ModId}}_SpringTree2": "{{ModId}}_SpringTree2/decor/3 5/1 1/1/1000/2/{{i18n:furniture.SpringTree.name}}/0/bonghits.cp.SpringTree_2/true/collection_bongTrees",
+                "{{ModId}}_SpringTree3": "{{ModId}}_SpringTree3/decor/3 5/1 1/1/1000/2/{{i18n:furniture.SpringTree.name}}/0/bonghits.cp.SpringTree_3/true/collection_bongTrees",
+                "{{ModId}}_SpringTree8": "{{ModId}}_SpringTree8/decor/3 5/1 1/1/1000/2/{{i18n:furniture.SpringTree.name}}/0/bonghits.cp.SpringTree_8/true/collection_bongTrees",
+                "{{ModId}}_SpringFruitTree1": "{{ModId}}_SpringFruitTree1/decor/3 5/1 1/1/1000/2/{{i18n:furniture.SpringFruitTree.name}}/0/bonghits.cp.SpringFruitTree_1/true/collection_bongTrees",
+                "{{ModId}}_SpringFruitTree2": "{{ModId}}_SpringFruitTree2/decor/3 5/1 1/1/1000/2/{{i18n:furniture.SpringFruitTree.name}}/0/bonghits.cp.SpringFruitTree_2/true/collection_bongTrees",
+                "{{ModId}}_SpringFruitTree3": "{{ModId}}_SpringFruitTree3/decor/3 5/1 1/1/1000/2/{{i18n:furniture.SpringFruitTree.name}}/0/bonghits.cp.SpringFruitTree_3/true/collection_bongTrees",
+                "{{ModId}}_SpringFruitTree4": "{{ModId}}_SpringFruitTree4/decor/3 5/1 1/1/1000/2/{{i18n:furniture.SpringFruitTree.name}}/0/bonghits.cp.SpringFruitTree_4/true/collection_bongTrees",
+                "{{ModId}}_SpringFruitTree5": "{{ModId}}_SpringFruitTree5/decor/3 5/1 1/1/1000/2/{{i18n:furniture.SpringFruitTree.name}}/0/bonghits.cp.SpringFruitTree_5/true/collection_bongTrees",
+                "{{ModId}}_SpringBush1": "{{ModId}}_SpringBush1/decor/3 1/1 1/1/1000/2/{{i18n:furniture.SpringBush.name}}/0/bonghits.cp.SpringBush_1/true/collection_bongTrees",
+                "{{ModId}}_SpringBush2": "{{ModId}}_SpringBush2/decor/1 3/1 1/1/1000/2/{{i18n:furniture.SpringBush.name}}/0/bonghits.cp.SpringBush_2/true/collection_bongTrees",
+                "{{ModId}}_SpringBush3": "{{ModId}}_SpringBush3/decor/2 1/1 1/1/1000/2/{{i18n:furniture.SpringBush.name}}/0/bonghits.cp.SpringBush_3/true/collection_bongTrees",
+                "{{ModId}}_SpringBush4": "{{ModId}}_SpringBush4/decor/1 2/1 1/1/1000/2/{{i18n:furniture.SpringBush.name}}/0/bonghits.cp.SpringBush_4/true/collection_bongTrees",
+                "{{ModId}}_SpringBush5": "{{ModId}}_SpringBush5/decor/2 3/1 1/1/1000/2/{{i18n:furniture.SpringBush.name}}/0/bonghits.cp.SpringBush_5/true/collection_bongTrees",
+            }
+        },
+        // Shop Data
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "FurnitureCatalogue",
+                "Items"
+            ],
+            "Entries": {
+                "{{ModId}}_SpringTree1": {
+                    "Id": "{{ModId}}_FurnitureCatalogue.SpringTree1",
+                    "ItemId": "{{ModId}}_SpringTree1",
+                    "Price": 1000
+                },
+                "{{ModId}}_SpringTree2": {
+                    "Id": "{{ModId}}_FurnitureCatalogue.SpringTree2",
+                    "ItemId": "{{ModId}}_SpringTree2",
+                    "Price": 1000
+                },
+                "{{ModId}}_SpringTree3": {
+                    "Id": "{{ModId}}_FurnitureCatalogue.SpringTree3",
+                    "ItemId": "{{ModId}}_SpringTree3",
+                    "Price": 1000
+                },
+                "{{ModId}}_SpringTree8": {
+                    "Id": "{{ModId}}_FurnitureCatalogue.SpringTree8",
+                    "ItemId": "{{ModId}}_SpringTree8",
+                    "Price": 1000
+                },
+                "{{ModId}}_SpringFruitTree1": {
+                    "Id": "{{ModId}}_FurnitureCatalogue.SpringFruitTree1",
+                    "ItemId": "{{ModId}}_SpringFruitTree1",
+                    "Price": 1000
+                },
+                "{{ModId}}_SpringFruitTree2": {
+                    "Id": "{{ModId}}_FurnitureCatalogue.SpringFruitTree2",
+                    "ItemId": "{{ModId}}_SpringFruitTree2",
+                    "Price": 1000
+                },
+                "{{ModId}}_SpringFruitTree3": {
+                    "Id": "{{ModId}}_FurnitureCatalogue.SpringFruitTree3",
+                    "ItemId": "{{ModId}}_SpringFruitTree3",
+                    "Price": 1000
+                },
+                "{{ModId}}_SpringFruitTree4": {
+                    "Id": "{{ModId}}_FurnitureCatalogue.SpringFruitTree4",
+                    "ItemId": "{{ModId}}_SpringFruitTree4",
+                    "Price": 1000
+                },
+                "{{ModId}}_SpringFruitTree5": {
+                    "Id": "{{ModId}}_FurnitureCatalogue.SpringFruitTree5",
+                    "ItemId": "{{ModId}}_SpringFruitTree5",
+                    "Price": 1000
+                },
+                "{{ModId}}_SpringBush1": {
+                    "Id": "{{ModId}}_FurnitureCatalogue.SpringBush1",
+                    "ItemId": "{{ModId}}_SpringBush1",
+                    "Price": 1000
+                },
+                "{{ModId}}_SpringBush2": {
+                    "Id": "{{ModId}}_FurnitureCatalogue.SpringBush2",
+                    "ItemId": "{{ModId}}_SpringBush2",
+                    "Price": 1000
+                },
+                "{{ModId}}_SpringBush3": {
+                    "Id": "{{ModId}}_FurnitureCatalogue.SpringBush3",
+                    "ItemId": "{{ModId}}_SpringBush3",
+                    "Price": 1000
+                },
+                "{{ModId}}_SpringBush4": {
+                    "Id": "{{ModId}}_FurnitureCatalogue.SpringBush4",
+                    "ItemId": "{{ModId}}_SpringBush4",
+                    "Price": 1000
+                },
+                "{{ModId}}_SpringBush5": {
+                    "Id": "{{ModId}}_FurnitureCatalogue.SpringBush5",
+                    "ItemId": "{{ModId}}_SpringBush5",
+                    "Price": 1000
+                }
+            }
+        }
+    ]
+}
