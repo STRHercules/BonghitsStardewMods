@@ -1,0 +1,24 @@
+{
+    "Name": "[CP] High-Tech Backpacks",
+    "Author": "MajorBonghits",
+    "Version": "1.0",
+    "Description": "Even More Backpacks!",
+    "UniqueID": "bonghits.EvenMoreBackpacks",
+    "MinimumApiVersion": "4.0.0",
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    },
+    "Dependencies": [
+        {
+            "UniqueID": "platinummyr.CustomBackpackFramework",
+            "MinimumVersion": "1.0.0"
+        },
+        {
+            "UniqueID": "platinummyr.CPMoreBackpacks",
+            "MinimumVersion": "1.0.0"
+        }
+    ],
+    "UpdateKeys": [
+        "Nexus:32165"
+    ]
+}

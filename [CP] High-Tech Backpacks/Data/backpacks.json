@@ -1,0 +1,66 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "platinummyr.CustomBackpackFramework/dictionary",
+            "Entries": {
+                "84": {
+                    "name": "Advanced Backpack",
+                    "cost": 2000000,
+                    "texturePath": "bonghits.Backpacks",
+                    "textureRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    }
+                },
+                "168": {
+                    "name": "Highly Advanced Backpack",
+                    "cost": 3000000,
+                    "texturePath": "bonghits.Backpacks",
+                    "textureRect": {
+                        "X": 16,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    }
+                },
+                "336": {
+                    "name": "Military Tech Backpack",
+                    "cost": 4000000,
+                    "texturePath": "bonghits.Backpacks",
+                    "textureRect": {
+                        "X": 32,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    }
+                },
+                "672": {
+                    "name": "Conceptual Backpack",
+                    "cost": 5000000,
+                    "texturePath": "bonghits.Backpacks",
+                    "textureRect": {
+                        "X": 48,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    }
+                },
+                "1344": {
+                    "name": "Cutting Edge backpack",
+                    "cost": 6000000,
+                    "texturePath": "bonghits.Backpacks",
+                    "textureRect": {
+                        "X": 64,
+                        "Y": 0,
+                        "Width": 16,
+                        "Height": 16
+                    }
+                }
+            }
+        }
+    ]
+}

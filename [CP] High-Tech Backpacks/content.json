@@ -1,0 +1,17 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Format": "2.5.0",
+    "Changes": [
+        {
+            // Load Spritesheets
+            "Action": "Load",
+            "Target": "bonghits.Backpacks",
+            "FromFile": "Assets/backpacks.png"
+        },
+        {
+            // Load Data
+            "Action": "Include",
+            "FromFile": "Data/backpacks.json"
+        },
+    ]
+}
