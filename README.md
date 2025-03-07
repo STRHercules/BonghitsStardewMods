@@ -20,6 +20,8 @@ The itch to tinker and 'fix' crept up on me, now we're here!
 
 - [Woods Elsewhere Unofficial Update](https://github.com/STRHercules/BonghitsStardewMods/releases/tag/WoodsElsewhere)
 
+- [High-Tech Backpacks](https://github.com/STRHercules/BonghitsStardewMods/tree/main/%5BCP%5D%20High-Tech%20Backpacks)
+
 
 ### Nexus Directory
 
@@ -28,6 +30,8 @@ The itch to tinker and 'fix' crept up on me, now we're here!
 - [Bonghits' Weapon and Magic Expansion](https://www.nexusmods.com/stardewvalley/mods/32082)
 
 - [Woods Elsewhere Unofficial Update](https://www.nexusmods.com/stardewvalley/mods/31801)
+
+- [High-Tech Backpacks](https://www.nexusmods.com/stardewvalley/mods/32165)
 
 # Work In Progress Mods
 
