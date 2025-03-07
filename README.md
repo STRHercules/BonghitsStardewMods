@@ -10,7 +10,7 @@ I started with frustration over Stardew Valley Expanded's custom Bears in the Pr
 
 The itch to tinker and 'fix' crept up on me, now we're here!
 
-# Mod Directory
+# Completed Mod Directory
 
 ### GitHub Directory
 
@@ -29,4 +29,6 @@ The itch to tinker and 'fix' crept up on me, now we're here!
 
 - [Woods Elsewhere Unofficial Update](https://www.nexusmods.com/stardewvalley/mods/31801)
 
----
+# Work In Progress Mods
+
+- [Arborist's Catalogue](https://github.com/STRHercules/BonghitsStardewMods/tree/main/%5BCP%5D%20Arborist's%20Catalogue) (Converting all trees and bushes to furniture + catalogue)
