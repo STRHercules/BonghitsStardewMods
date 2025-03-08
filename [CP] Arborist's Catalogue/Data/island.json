@@ -1,0 +1,53 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Changes": [
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.IslandFruitTree_1",
+            "FromFile": "Assets/FruitTrees/island/island_tree_1.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.IslandFruitTree_2",
+            "FromFile": "Assets/FruitTrees/island/island_tree_2.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.IslandFruitTree_3",
+            "FromFile": "Assets/FruitTrees/island/island_tree_3.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.IslandFruitTree_4",
+            "FromFile": "Assets/FruitTrees/island/island_tree_4.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.IslandFruitTree_5",
+            "FromFile": "Assets/FruitTrees/island/island_tree_5.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.IslandFruitTree_6",
+            "FromFile": "Assets/FruitTrees/island/island_tree_6.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.IslandBush_1",
+            "FromFile": "Assets/Bushes/island/island_bush_1.png"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "Entries": {
+                "{{ModId}}_IslandFruitTree1": "{{ModId}}_IslandFruitTree1/decor/3 5/3 1/1/1000/2/{{i18n:furniture.IslandFruitTree.name}}/0/bonghits.cp.IslandFruitTree_1/true/collection_bongTrees",
+                "{{ModId}}_IslandFruitTree2": "{{ModId}}_IslandFruitTree2/decor/3 5/3 1/1/1000/2/{{i18n:furniture.IslandFruitTree.name}}/0/bonghits.cp.IslandFruitTree_2/true/collection_bongTrees",
+                "{{ModId}}_IslandFruitTree3": "{{ModId}}_IslandFruitTree3/decor/4 5/4 1/1/1000/2/{{i18n:furniture.IslandFruitTree.name}}/0/bonghits.cp.IslandFruitTree_3/true/collection_bongTrees",
+                "{{ModId}}_IslandFruitTree4": "{{ModId}}_IslandFruitTree4/decor/4 5/4 1/1/1000/2/{{i18n:furniture.IslandFruitTree.name}}/0/bonghits.cp.IslandFruitTree_4/true/collection_bongTrees",
+                "{{ModId}}_IslandFruitTree5": "{{ModId}}_IslandFruitTree5/decor/3 6/3 1/1/1000/2/{{i18n:furniture.IslandFruitTree.name}}/0/bonghits.cp.IslandFruitTree_5/true/collection_bongTrees",
+                "{{ModId}}_IslandFruitTree6": "{{ModId}}_IslandFruitTree6/decor/3 6/3 1/1/1000/2/{{i18n:furniture.IslandFruitTree.name}}/0/bonghits.cp.IslandFruitTree_6/true/collection_bongTrees",
+                "{{ModId}}_IslandBush1": "{{ModId}}_IslandBush1/decor/2 2/2 1/1/1000/2/{{i18n:furniture.IslandBush.name}}/0/bonghits.cp.IslandBush_1/true/collection_bongTrees",
+            }
+        }
+    ]
+}

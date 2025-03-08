@@ -1,0 +1,36 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Changes": [
+        
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.DesertFruitTree_1",
+            "FromFile": "Assets/FruitTrees/desert/desert_tree_1.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.DesertCactus_1",
+            "FromFile": "Assets/Bushes/desert/cactus_1.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.DesertCactus_2",
+            "FromFile": "Assets/Bushes/desert/cactus_2.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.DesertCactus_3",
+            "FromFile": "Assets/Bushes/desert/cactus_3.png"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "Entries": {
+                "{{ModId}}_DesertFruitTree1": "{{ModId}}_DesertFruitTree1/decor/3 5/2 1/1/1000/2/{{i18n:furniture.DesertFruitTree.name}}/0/bonghits.cp.DesertFruitTree_1/true/collection_bongTrees",
+                "{{ModId}}_DesertCactus1": "{{ModId}}_DesertCactus1/decor/1 3/1 1/1/1000/2/{{i18n:furniture.DesertCactus.name}}/0/bonghits.cp.DesertCactus_1/true/collection_bongTrees",
+                "{{ModId}}_DesertCactus2": "{{ModId}}_DesertCactus2/decor/1 2/1 1/1/1000/2/{{i18n:furniture.DesertCactus.name}}/0/bonghits.cp.DesertCactus_2/true/collection_bongTrees",
+                "{{ModId}}_DesertCactus3": "{{ModId}}_DesertCactus3/decor/1 1/1 1/1/1000/2/{{i18n:furniture.DesertCactus.name}}/0/bonghits.cp.DesertCactus_3/true/collection_bongTrees"
+            }
+        },
+    ]
+}

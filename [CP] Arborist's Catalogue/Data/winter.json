@@ -1,0 +1,77 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Changes": [
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.WinterTree_1",
+            "FromFile": "Assets/Trees/winter/winter_tree_1.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.WinterTree_2",
+            "FromFile": "Assets/Trees/winter/winter_tree_2.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.WinterTree_3",
+            "FromFile": "Assets/Trees/winter/winter_tree_3.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.WinterTree_8",
+            "FromFile": "Assets/Trees/winter/winter_tree_8.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.WinterFruitTree_1",
+            "FromFile": "Assets/FruitTrees/winter/winter_tree_1.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.WinterFruitTree_2",
+            "FromFile": "Assets/FruitTrees/winter/winter_tree_2.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.WinterFruitTree_3",
+            "FromFile": "Assets/FruitTrees/winter/winter_tree_3.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.WinterFruitTree_4",
+            "FromFile": "Assets/FruitTrees/winter/winter_tree_4.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.WinterFruitTree_5",
+            "FromFile": "Assets/FruitTrees/winter/winter_tree_5.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.WinterBush_1",
+            "FromFile": "Assets/Bushes/winter/winter_bush_1.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.WinterBush_2",
+            "FromFile": "Assets/Bushes/winter/winter_bush_2.png"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "Entries": {
+                "{{ModId}}_WinterTree1": "{{ModId}}_WinterTree1/decor/3 6/2 1/1/1000/2/{{i18n:furniture.WinterTree.name}}/0/bonghits.cp.WinterTree_1/true/collection_bongTrees",
+                "{{ModId}}_WinterTree2": "{{ModId}}_WinterTree2/decor/3 6/2 1/1/1000/2/{{i18n:furniture.WinterTree.name}}/0/bonghits.cp.WinterTree_2/true/collection_bongTrees",
+                "{{ModId}}_WinterTree3": "{{ModId}}_WinterTree3/decor/3 6/2 1/1/1000/2/{{i18n:furniture.WinterTree.name}}/0/bonghits.cp.WinterTree_3/true/collection_bongTrees",
+                "{{ModId}}_WinterTree8": "{{ModId}}_WinterTree8/decor/3 6/2 1/1/1000/2/{{i18n:furniture.WinterTree.name}}/0/bonghits.cp.WinterTree_8/true/collection_bongTrees",
+                "{{ModId}}_WinterFruitTree1": "{{ModId}}_WinterFruitTree1/decor/3 6/2 1/1/1000/2/{{i18n:furniture.WinterFruitTree.name}}/0/bonghits.cp.WinterFruitTree_1/true/collection_bongTrees",
+                "{{ModId}}_WinterFruitTree2": "{{ModId}}_WinterFruitTree2/decor/3 6/2 1/1/1000/2/{{i18n:furniture.WinterFruitTree.name}}/0/bonghits.cp.WinterFruitTree_2/true/collection_bongTrees",
+                "{{ModId}}_WinterFruitTree3": "{{ModId}}_WinterFruitTree3/decor/4 7/3 1/1/1000/2/{{i18n:furniture.WinterFruitTree.name}}/0/bonghits.cp.WinterFruitTree_3/true/collection_bongTrees",
+                "{{ModId}}_WinterFruitTree4": "{{ModId}}_WinterFruitTree4/decor/3 6/2 1/1/1000/2/{{i18n:furniture.WinterFruitTree.name}}/0/bonghits.cp.WinterFruitTree_4/true/collection_bongTrees",
+                "{{ModId}}_WinterFruitTree5": "{{ModId}}_WinterFruitTree5/decor/5 7/4 1/1/1000/2/{{i18n:furniture.WinterFruitTree.name}}/0/bonghits.cp.WinterFruitTree_5/true/collection_bongTrees",
+                "{{ModId}}_WinterBush1": "{{ModId}}_WinterBush1/decor/3 3/3 1/1/1000/2/{{i18n:furniture.WinterBush.name}}/0/bonghits.cp.WinterBush_1/true/collection_bongTrees",
+                "{{ModId}}_WinterBush2": "{{ModId}}_WinterBush2/decor/2 2/2 1/1/1000/2/{{i18n:furniture.WinterBush.name}}/0/bonghits.cp.WinterBush_2/true/collection_bongTrees",
+            }
+        }
+    ]
+}

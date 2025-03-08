@@ -1,0 +1,89 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Changes": [
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.FallTree_1",
+            "FromFile": "Assets/Trees/fall/fall_tree_1.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.FallTree_2",
+            "FromFile": "Assets/Trees/fall/fall_tree_2.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.FallTree_3",
+            "FromFile": "Assets/Trees/fall/fall_tree_3.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.FallTree_8",
+            "FromFile": "Assets/Trees/fall/fall_tree_8.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.FallFruitTree_1",
+            "FromFile": "Assets/FruitTrees/fall/fall_tree_1.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.FallFruitTree_2",
+            "FromFile": "Assets/FruitTrees/fall/fall_tree_2.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.FallFruitTree_3",
+            "FromFile": "Assets/FruitTrees/fall/fall_tree_3.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.FallFruitTree_4",
+            "FromFile": "Assets/FruitTrees/fall/fall_tree_4.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.FallFruitTree_5",
+            "FromFile": "Assets/FruitTrees/fall/fall_tree_5.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.FallBush_1",
+            "FromFile": "Assets/Bushes/fall/fall_bush_1.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.FallBush_2",
+            "FromFile": "Assets/Bushes/fall/fall_bush_2.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.FallBush_3",
+            "FromFile": "Assets/Bushes/fall/fall_bush_3.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.FallBush_4",
+            "FromFile": "Assets/Bushes/fall/fall_bush_4.png"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "Entries": {
+                "{{ModId}}_FallTree1": "{{ModId}}_FallTree1/decor/3 6/2 1/1/1000/2/{{i18n:furniture.FallTree.name}}/0/bonghits.cp.FallTree_1/true/collection_bongTrees",
+                "{{ModId}}_FallTree2": "{{ModId}}_FallTree2/decor/3 6/2 1/1/1000/2/{{i18n:furniture.FallTree.name}}/0/bonghits.cp.FallTree_2/true/collection_bongTrees",
+                "{{ModId}}_FallTree3": "{{ModId}}_FallTree3/decor/3 6/2 1/1/1000/2/{{i18n:furniture.FallTree.name}}/0/bonghits.cp.FallTree_3/true/collection_bongTrees",
+                "{{ModId}}_FallTree8": "{{ModId}}_FallTree8/decor/3 6/2 1/1/1000/2/{{i18n:furniture.FallTree.name}}/0/bonghits.cp.FallTree_8/true/collection_bongTrees",
+                "{{ModId}}_FallFruitTree1": "{{ModId}}_FallFruitTree1/decor/3 6/2 1/1/1000/2/{{i18n:furniture.FallFruitTree.name}}/0/bonghits.cp.FallFruitTree_1/true/collection_bongTrees",
+                "{{ModId}}_FallFruitTree2": "{{ModId}}_FallFruitTree2/decor/3 6/2 1/1/1000/2/{{i18n:furniture.FallFruitTree.name}}/0/bonghits.cp.FallFruitTree_2/true/collection_bongTrees",
+                "{{ModId}}_FallFruitTree3": "{{ModId}}_FallFruitTree3/decor/4 7/3 1/1/1000/2/{{i18n:furniture.FallFruitTree.name}}/0/bonghits.cp.FallFruitTree_3/true/collection_bongTrees",
+                "{{ModId}}_FallFruitTree4": "{{ModId}}_FallFruitTree4/decor/3 6/2 1/1/1000/2/{{i18n:furniture.FallFruitTree.name}}/0/bonghits.cp.FallFruitTree_4/true/collection_bongTrees",
+                "{{ModId}}_FallFruitTree5": "{{ModId}}_FallFruitTree5/decor/5 7/4 1/1/1000/2/{{i18n:furniture.FallFruitTree.name}}/0/bonghits.cp.FallFruitTree_5/true/collection_bongTrees",
+                "{{ModId}}_FallBush1": "{{ModId}}_FallBush1/decor/3 3/3 1/1/1000/2/{{i18n:furniture.FallBush.name}}/0/bonghits.cp.FallBush_1/true/collection_bongTrees",
+                "{{ModId}}_FallBush2": "{{ModId}}_FallBush2/decor/2 2/2 1/1/1000/2/{{i18n:furniture.FallBush.name}}/0/bonghits.cp.FallBush_2/true/collection_bongTrees",
+                "{{ModId}}_FallBush3": "{{ModId}}_FallBush3/decor/2 2/2 1/1/1000/2/{{i18n:furniture.FallBush.name}}/0/bonghits.cp.FallBush_3/true/collection_bongTrees",
+                "{{ModId}}_FallBush4": "{{ModId}}_FallBush4/decor/2 2/2 1/1/1000/2/{{i18n:furniture.FallBush.name}}/0/bonghits.cp.FallBush_4/true/collection_bongTrees",
+            }
+        }
+    ]
+}

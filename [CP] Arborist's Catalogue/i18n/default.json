@@ -1,8 +1,21 @@
 {
-
   "furniture.SpringTree.name": "A decorative Spring-time tree.",
   "furniture.SpringFruitTree.name": "A decorative Spring-time fruit tree. Does not bear fruit.",
   "furniture.SpringBush.name": "A decorative Spring-time bush.",
+  "furniture.SummerTree.name": "A decorative Summer-time tree.",
+  "furniture.SummerFruitTree.name": "A decorative Summer-time fruit tree. Does not bear fruit.",
+  "furniture.SummerBush.name": "A decorative Summer-time bush.",
+  "furniture.FallTree.name": "A decorative Fall-time tree.",
+  "furniture.FallFruitTree.name": "A decorative Fall-time fruit tree. Does not bear fruit.",
+  "furniture.FallBush.name": "A decorative Fall-time bush.",
+  "furniture.WinterTree.name": "A decorative Winter-time tree.",
+  "furniture.WinterFruitTree.name": "A decorative Winter-time fruit tree. Does not bear fruit.",
+  "furniture.WinterBush.name": "A decorative Winter-time bush.",
+  "furniture.IslandTree.name": "A decorative Island tree.",
+  "furniture.IslandFruitTree.name": "A decorative Island fruit tree. Does not bear fruit.",
+  "furniture.IslandBush.name": "A decorative Island bush.",
+  "furniture.DesertTree.name": "A decorative Desert tree.",
+  "furniture.DesertFruitTree.name": "A decorative Desert fruit tree. Does not bear fruit.",
+  "furniture.DesertCactus.name": "A decorative Desert cactus.",
   "catalogue.name": "Arborist's Catalogue",
-
 }

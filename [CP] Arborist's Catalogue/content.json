@@ -16,8 +16,6 @@
 			"Action": "Include",
 			"FromFile": "Data/spring.json"
 		},
-
-		/*
 		//
 		//	Summer Tree Load
 		//
@@ -53,6 +51,5 @@
 			"Action": "Include",
 			"FromFile": "Data/desert.json"
 		},
-		*/
 	]
 }

@@ -44,7 +44,7 @@
             "Action": "EditData",
             "Target": "Data/Furniture",
             "Entries": {
-                "{{ModId}}.Catalogue": "{{ModId}}.Catalogue/other/2 3/2 1/1/20000/2/{{i18n:catalogue.name}}/0/bonghits.cp.catalogue/true"
+                "{{ModId}}.Catalogue": "{{ModId}}.Catalogue/other/4 3/3 1/1/20000/2/{{i18n:catalogue.name}}/0/bonghits.cp.catalogue/true"
             }
         },
         {

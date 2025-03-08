@@ -4,8 +4,16 @@
    "Version": "1.0",
    "Description": "Decorate your farm with trees and bushes!",
    "UniqueID": "bonghits.cp.ArboristCatalogue",
-   "UpdateKeys": [ "Nexus:-----" ],
+   "UpdateKeys": [
+      "Nexus:32164"
+   ],
    "ContentPackFor": {
       "UniqueID": "Pathoschild.ContentPatcher"
-   }
+   },
+   "Dependencies": [
+      {
+         "UniqueID": "sophie.Calcifer",
+         "IsRequired": true
+      }
+   ]
 }
