@@ -125,6 +125,402 @@
                         "drink_item"
                     ]
                 },
+                "bonghits.Cp_HealingMead": {
+                    "Name": "bonghits.Cp_HealingMead",
+                    "DisplayName": "Healing Mead",
+                    "Description": "A warm inviting mug reminding you of home.",
+                    "Type": "ArtisanGoods",
+                    "Edibility": 0,
+                    "IsDrink": true,
+                    "Category": -26,
+                    "Price": 250,
+                    "SpriteIndex": 0,
+                    "Texture": "bonghits.BearHoneyMead/Objects/Zachary/MeadHealth",
+                    "Buffs": [
+                        {
+                            "BuffId": "bonghits.mead.healing",
+                            "Duration": 30,
+                            "CustomFields": {
+                                "spacechase0.SpaceCore/HealthRegeneration": 20
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "color_gold",
+                        "bh.healing_mead",
+                        "alcohol_item",
+                        "drink_item",
+                        "potion_item"
+                    ]
+                },
+                "bonghits.Cp_SpecialtyHoneyMead": {
+                    "Name": "bonghits.Cp_SpecialtyHoneyMead",
+                    "DisplayName": "Zach's Special Mead",
+                    "Description": "This mead smells strongly of Whiskey..",
+                    "Type": "ArtisanGoods",
+                    "Edibility": 100,
+                    "IsDrink": true,
+                    "Category": -26,
+                    "Price": 1000,
+                    "SpriteIndex": 0,
+                    "Texture": "bonghits.BearHoneyMead/Objects/Zachary/MeadMug",
+                    "Buffs": [
+                        {
+                            "BuffId": "bonghits.mead_specialty",
+                            "Duration": 90,
+                            "CustomAttributes": {
+                                "FarmingLevel": 0,
+                                "FishingLevel": 5,
+                                "MiningLevel": 0,
+                                "LuckLevel": 5,
+                                "ForagingLevel": 5,
+                                "MaxStamina": 100,
+                                "MagneticRadius": 0,
+                                "Speed": 0,
+                                "Defense": 0,
+                                "Attack": 0
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "color_gold",
+                        "bh.specialty_mead",
+                        "alcohol_item",
+                        "drink_item"
+                    ]
+                },
+                /*"bonghits.Cp_BubbleBeer": {
+                    "Name": "bonghits.Cp_BubbleBeer",
+                    "DisplayName": "Bubble Mead",
+                    "Description": "A bubbly beer that makes you feel warm and cozy.",
+                    "Type": "ArtisanGoods",
+                    "Edibility": 100,
+                    "IsDrink": true,
+                    "Category": -26,
+                    "Price": 1000,
+                    "SpriteIndex": 0,
+                    "Texture": "bonghits.BearHoneyMead/Objects/Natalie/BubbleBeer",
+                    "Buffs": [
+                        {
+                            "BuffId": "bonghits.bubble.beer",
+                            "Duration": 90, 
+                            "CustomAttributes": {
+                                "FarmingLevel": 5,
+                                "FishingLevel": 0,
+                                "MiningLevel": 0,
+                                "LuckLevel": 5,
+                                "ForagingLevel": 0,
+                                "MaxStamina": 75,
+                                "MagneticRadius": 5,
+                                "Speed": 3,
+                                "Defense": 0,
+                                "Attack": 0
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "color_gold",
+                        "bh.bubble_beer",
+                        "alcohol_item",
+                        "drink_item"
+                    ]
+                },*/
+                "bonghits.Cp_BubbleHealth": {
+                    "Name": "bonghits.Cp_BubbleHealth",
+                    "DisplayName": "Bubbly Health Potion",
+                    "Description": "A carbonated health potion! The bubbles tickle your tongue.",
+                    "Type": "ArtisanGoods",
+                    "Edibility": 100,
+                    "IsDrink": true,
+                    "Category": -26,
+                    "Price": 250,
+                    "SpriteIndex": 0,
+                    "Texture": "bonghits.BearHoneyMead/Objects/Natalie/BubbleHealth",
+                    "Buffs": [
+                        {
+                            "BuffId": "bonghits.bubble.health",
+                            "Duration": 90,
+                            "CustomFields": {
+                                "spacechase0.SpaceCore/HealthRegeneration": 20
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "color_gold",
+                        "bh.sparkling_mead",
+                        "alcohol_item",
+                        "drink_item"
+                    ]
+                },
+                "bonghits.Cp_BubbleMead": {
+                    "Name": "bonghits.Cp_BubbleMead",
+                    "DisplayName": "Bubble Mead",
+                    "Description": "A bubbly mead that makes you feel warm and effervescent.",
+                    "Type": "ArtisanGoods",
+                    "Edibility": 100,
+                    "IsDrink": true,
+                    "Category": -26,
+                    "Price": 1000,
+                    "SpriteIndex": 0,
+                    "Texture": "bonghits.BearHoneyMead/Objects/Natalie/BubbleMead",
+                    "Buffs": [
+                        {
+                            "BuffId": "bonghits.bubble.mead",
+                            "Duration": 90,
+                            "CustomAttributes": {
+                                "FarmingLevel": 2,
+                                "FishingLevel": 2,
+                                "MiningLevel": 2,
+                                "LuckLevel": 4,
+                                "ForagingLevel": 2,
+                                "MaxStamina": 0,
+                                "MagneticRadius": 0,
+                                "Speed": 0,
+                                "Defense": 0,
+                                "Attack": 0
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "color_gold",
+                        "bh.bubble_mead",
+                        "alcohol_item",
+                        "drink_item"
+                    ]
+                },
+                "bonghits.Cp_BubbleRoseBeer": {
+                    "Name": "bonghits.Cp_BubbleRoseBeer",
+                    "DisplayName": "Bubbly Rosé Beer",
+                    "Description": "A delicious Rosé Beer carbonated to perfection. The bubbles tickle your tongue!",
+                    "Type": "ArtisanGoods",
+                    "Edibility": 100,
+                    "IsDrink": true,
+                    "Category": -26,
+                    "Price": 1000,
+                    "SpriteIndex": 0,
+                    "Texture": "bonghits.BearHoneyMead/Objects/Natalie/BubbleRoseBeer",
+                    "Buffs": [
+                        {
+                            "BuffId": "bonghits.bubble.beer",
+                            "Duration": 90,
+                            "CustomFields": {
+                                "spacechase0.SpaceCore/HealthRegeneration": 20
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "color_gold",
+                        "bh.sparkling_mead",
+                        "alcohol_item",
+                        "drink_item"
+                    ]
+                },
+                "bonghits.Cp_BubbleRoseMead": {
+                    "Name": "bonghits.Cp_BubbleRoseMead",
+                    "DisplayName": "Bubbly Health Potion",
+                    "Description": "A Rosé Mead carbonated to bring out the effervescent notes.",
+                    "Type": "ArtisanGoods",
+                    "Edibility": 100,
+                    "IsDrink": true,
+                    "Category": -26,
+                    "Price": 250,
+                    "SpriteIndex": 0,
+                    "Texture": "bonghits.BearHoneyMead/Objects/Natalie/BubbleRoseMead",
+                    "Buffs": [
+                        {
+                            "BuffId": "bonghits.bubble.beer",
+                            "Duration": 90,
+                            "CustomFields": {
+                                "spacechase0.SpaceCore/HealthRegeneration": 20
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "color_gold",
+                        "bh.sparkling_mead",
+                        "alcohol_item",
+                        "drink_item"
+                    ]
+                },
+                "bonghits.Cp_HealingBubbleMead": {
+                    "Name": "bonghits.Cp_HealingBubbleMead",
+                    "DisplayName": "Healing Bubble Mead",
+                    "Description": "A delicious carbonted mead crafting using naturally healing ingredients.",
+                    "Type": "ArtisanGoods",
+                    "Edibility": 100,
+                    "IsDrink": true,
+                    "Category": -26,
+                    "Price": 250,
+                    "SpriteIndex": 0,
+                    "Texture": "bonghits.BearHoneyMead/Objects/Natalie/HealthBubbleMead",
+                    "Buffs": [
+                        {
+                            "BuffId": "bonghits.bubble.beer",
+                            "Duration": 90,
+                            "CustomFields": {
+                                "spacechase0.SpaceCore/HealthRegeneration": 20
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "color_gold",
+                        "bh.sparkling_mead",
+                        "alcohol_item",
+                        "drink_item"
+                    ]
+                },
+                "bonghits.Cp_LovePotion": {
+                    "Name": "bonghits.Cp_LovePotion",
+                    "DisplayName": "Love Potion",
+                    "Description": "A potion that brings out warm fuzzy feelings.",
+                    "Type": "ArtisanGoods",
+                    "Edibility": 100,
+                    "IsDrink": true,
+                    "Category": -26,
+                    "Price": 250,
+                    "SpriteIndex": 0,
+                    "Texture": "bonghits.BearHoneyMead/Objects/Natalie/LovePotion",
+                    "Buffs": [
+                        {
+                            "BuffId": "bonghits.bubble.beer",
+                            "Duration": 90,
+                            "CustomFields": {
+                                "spacechase0.SpaceCore/HealthRegeneration": 20
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "color_gold",
+                        "bh.sparkling_mead",
+                        "alcohol_item",
+                        "drink_item"
+                    ]
+                },
+                "bonghits.Cp_MoonPotion": {
+                    "Name": "bonghits.Cp_MoonPotion",
+                    "DisplayName": "Moon Potion",
+                    "Description": "This potion was brewed under a full moon on the friday the 13th.",
+                    "Type": "ArtisanGoods",
+                    "Edibility": 100,
+                    "IsDrink": true,
+                    "Category": -26,
+                    "Price": 250,
+                    "SpriteIndex": 0,
+                    "Texture": "bonghits.BearHoneyMead/Objects/Natalie/MoonPotion",
+                    "Buffs": [
+                        {
+                            "BuffId": "bonghits.bubble.beer",
+                            "Duration": 90,
+                            "CustomFields": {
+                                "spacechase0.SpaceCore/HealthRegeneration": 20
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "color_gold",
+                        "bh.sparkling_mead",
+                        "alcohol_item",
+                        "drink_item"
+                    ]
+                },
+                "bonghits.Cp_PinkBubble": {
+                    "Name": "bonghits.PinkBubble",
+                    "DisplayName": "A Pink Bubble",
+                    "Description": "It's a Bubble. Surely I can't drink this?",
+                    "Type": "ArtisanGoods",
+                    "Edibility": 100,
+                    "IsDrink": true,
+                    "Category": -26,
+                    "Price": 250,
+                    "SpriteIndex": 0,
+                    "Texture": "bonghits.BearHoneyMead/Objects/Natalie/PinkBubble",
+                    "Buffs": [
+                        {
+                            "BuffId": "bonghits.bubble.beer",
+                            "Duration": 90,
+                            "CustomFields": {
+                                "spacechase0.SpaceCore/HealthRegeneration": 20
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "color_gold",
+                        "bh.sparkling_mead",
+                        "alcohol_item",
+                        "drink_item"
+                    ]
+                },
+                "bonghits.Cp_BubbleSingle": {
+                    "Name": "bonghits.Cp_SingleBubble",
+                    "DisplayName": "A Bubble",
+                    "Description": "It's a Bubble. Surely I can't drink this?",
+                    "Type": "ArtisanGoods",
+                    "Edibility": 100,
+                    "IsDrink": true,
+                    "Category": -26,
+                    "Price": 250,
+                    "SpriteIndex": 0,
+                    "Texture": "bonghits.BearHoneyMead/Objects/Natalie/BubbleSingle",
+                    "Buffs": [
+                        {
+                            "BuffId": "bonghits.bubble.beer",
+                            "Duration": 90,
+                            "CustomFields": {
+                                "spacechase0.SpaceCore/HealthRegeneration": 20
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "color_gold",
+                        "bh.sparkling_mead",
+                        "alcohol_item",
+                        "drink_item"
+                    ]
+                },
+            }
+        },
+        {
+            "LogName": "Healing Mead Overrides",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/ObjectExtensionData",
+            "Entries": {
+                "bonghits.Cp_HealingMead": {
+                    "EatenHealthRestoredOverride": 100,
+                    "EatenStaminaRestoredOverride": 0
+                }
+            }
+        },
+        {
+            "LogName": "Specialty Mead Overrides",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/ObjectExtensionData",
+            "Entries": {
+                "bonghits.Cp_SpecialtyHoneyMead": {
+                    "EatenHealthRestoredOverride": 0,
+                    "EatenStaminaRestoredOverride": 0
+                }
+            }
+        },
+        {
+            "LogName": "Specialty Mead Overrides",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/ObjectExtensionData",
+            "Entries": {
+                "bonghits.Cp_BubbleBeer": {
+                    "EatenHealthRestoredOverride": 0,
+                    "EatenStaminaRestoredOverride": 0
+                }
+            }
+        },
+        {
+            "LogName": "Specialty Mead Overrides",
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/ObjectExtensionData",
+            "Entries": {
+                "bonghits.Cp_BubbleMead": {
+                    "EatenHealthRestoredOverride": 0,
+                    "EatenStaminaRestoredOverride": 0
+                }
             }
         },
         {

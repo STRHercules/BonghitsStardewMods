@@ -13,5 +13,43 @@
     "config.CopyQualitySetting.description": "Enabled: The produced item has the same quality as the input item. \n\nAuto (default): Like Enabled but only when specific mods are installed. \n\nDisabled: Disable this feature.",
     "config.CopyQualitySetting.values.disabled": "Disabled",
     "config.CopyQualitySetting.values.enabled": "Enabled",
-    "config.CopyQualitySetting.values.auto": "Auto"
+    "config.CopyQualitySetting.values.auto": "Auto",
+    "bonghits.mead.healingbuff.DisplayName": "Mead Regeneration",
+    "bonghits.mead.healingbuff.Description": "Healing from that delicious mead!",
+    "bonghits.bubblemead.buff.DisplayName": "Feelin' bubbly!",
+    "bonghits.bubblemead.buff.Description": "So many bubbles! Do I feel lighter?",
+    "bonghits.bubble.health.DisplayName": "Bubbly Mead Regeneration",
+    "bonghits.bubble.health.Description": "Healing from that delicious bubble mead!",
+
+
+    "Mead_Shop1": "Hey there! I bet you've never tasted Mead as good as mine!",
+    "Mead_Shop2": "Welcome! Wanna learn something? Perhaps buy some recipes or materials?",
+    "Mead_Shop3": "Greetings, traveler! Ready to embark on a journey of flavors with my special mead brews?",
+    "Mead_Shop4": "Hello there! Ever tried a mead that's as adventurous as your spirit? Come taste the difference!",
+    "Mead_Shop5": "Welcome, friend! Let's explore the world of mead together. I've got stories and brews to share!",
+    "Mead_Shop6": "Hey there! Looking for a taste of adventure? My mead will take you on a journey like no other!",
+    "Mead_Shop7": "Greetings! Ready to discover the secrets of mead brewing? I've got recipes and tales to inspire you!",
+    "Mead_Shop8": "Hello, adventurer! Ever wondered what it's like to brew your own mead? Let me show you the way!",
+    "Mead_Shop9": "Welcome! Ready to embark on a flavorful adventure? My mead is the perfect companion for your journey!",
+    "Mead_Shop10": "Hey there! Looking for a taste of something new? My mead is brewed with adventure in mind!",
+    "Mead_Shop11": "Greetings, friend! Ready to explore the world of mead? I've got brews that will take you on a journey!",
+    "Mead_Shop12": "Hello there! Ever tried a mead that's as unique as your adventures? Come taste the difference!",
+
+
+    "BubbleMeadShop1": "Hi! Welcome to our little shop!",
+    "BubbleMeadShop2": "I made the bubbles myself!",
+    "BubbleMeadShop3": "Hiya! Ready to pop open a sparkling adventure with my fizzy mead brews? Let's dive in!",
+    "BubbleMeadShop4": "Hello! Ever tried a mead that dances on your tongue like tiny bubbles? Come taste the magic!",
+    "BubbleMeadShop5": "Welcome, friend! Let's explore the sparkling world of mead together. I've got bubbly brews and fun stories to share!",
+    "BubbleMeadShop6": "Hey there! Looking for a taste of adventure that's as bubbly as your personality? My sparkling mead is the perfect match!",
+    "BubbleMeadShop7": "Greetings! Ready to discover the secrets of sparkling mead? I've got recipes and tales that will make you bubble with joy!",
+    "BubbleMeadShop8": "Hello, adventurer! Ever wondered what it's like to brew your own bubbly mead? Let me show you the fizzy fun!",
+    "BubbleMeadShop9": "Welcome! Ready to embark on a bubbly adventure? My sparkling mead is the perfect companion for your journey!",
+    "BubbleMeadShop10": "Hey there! Looking for a taste of something new and bubbly? My sparkling mead will tickle your taste buds!",
+    "BubbleMeadShop11": "Greetings, friend! Ready to explore the bubbly world of mead? I've got sparkling brews that will make you smile!",
+    "BubbleMeadShop12": "Hello there! Ever tried a mead that's as bubbly and cute as you? Come taste the sparkling difference!",
+
+
+    "bonghits.Zachary.DisplayName": "Zachary",
+    "bonghits.Natalie.DisplayName": "Natalie"
 }

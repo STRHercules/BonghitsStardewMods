@@ -1,0 +1,175 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "Entries": {
+                "MeadShop": {
+                    "Owners": [
+                        {
+                            "Name": "Zachary",
+                            "Portrait": "Zachary",
+                            "Dialogues": [
+                                {
+                                    "Id": "bh.Zachary_dialogue",
+                                    "RandomDialogue": [
+                                        "{{i18n:Mead_Shop1}}",
+                                        "{{i18n:Mead_Shop2}}",
+                                        "{{i18n:Mead_Shop3}}",
+                                        "{{i18n:Mead_Shop4}}",
+                                        "{{i18n:Mead_Shop5}}",
+                                        "{{i18n:Mead_Shop6}}",
+                                        "{{i18n:Mead_Shop7}}",
+                                        "{{i18n:Mead_Shop8}}",
+                                        "{{i18n:Mead_Shop9}}",
+                                        "{{i18n:Mead_Shop10}}",
+                                        "{{i18n:Mead_Shop11}}",
+                                        "{{i18n:Mead_Shop12}}"
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "Items": [
+                        {
+                            "ItemId": "bonghits.Cp_BearHoneyMead",
+                            "Price": 975
+                        },
+                        {
+                            "ItemId": "bonghits.Cp_HealingMead",
+                            "Price": 250
+                        },
+                        {
+                            "ItemId": "bonghits.Cp_SpecialtyHoneyMead",
+                            "Price": 500
+                        },
+                        //
+                        //  Fruit
+                        //
+                        {
+                            "ItemId": "(O)254"
+                        },
+                        {
+                            "ItemId": "(O)258"
+                        },
+                        {
+                            "ItemId": "(O)296"
+                        },
+                        {
+                            "ItemId": "(O)400"
+                        },
+                        {
+                            "ItemId": "(O)410"
+                        },
+                        {
+                            "ItemId": "(O)613"
+                        },
+                        {
+                            "ItemId": "(O)637"
+                        },
+                        {
+                            "ItemId": "(O)834"
+                        },
+                        {
+                            "ItemId": "(BC){{ModId}}_MeadKeg",
+                            "AvailableStock": 1,
+                            "IsRecipe": false,
+                            "Price": 12500
+                        },
+                        {
+                            "ItemId": "(BC){{ModId}}_MeadKeg",
+                            "IsRecipe": true,
+                            "Price": 25000
+                        }
+                    ],
+                    "PriceModifiers": [
+                        {
+                            "Modification": "Multiply",
+                            "Amount": 2.0
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "Entries": {
+                "BubbleMeadShop": {
+                    "Owners": [
+                        {
+                            "Name": "Natalie",
+                            "Portrait": "Natalie",
+                            "Dialogues": [
+                                {
+                                    "Id": "bh.Natalie_dialogue",
+                                    "RandomDialogue": [
+                                        "{{i18n:BubbleMeadShop1}}",
+                                        "{{i18n:BubbleMeadShop2}}",
+                                        "{{i18n:BubbleMeadShop3}}",
+                                        "{{i18n:BubbleMeadShop4}}",
+                                        "{{i18n:BubbleMeadShop5}}",
+                                        "{{i18n:BubbleMeadShop6}}",
+                                        "{{i18n:BubbleMeadShop7}}",
+                                        "{{i18n:BubbleMeadShop8}}",
+                                        "{{i18n:BubbleMeadShop9}}",
+                                        "{{i18n:BubbleMeadShop10}}",
+                                        "{{i18n:BubbleMeadShop11}}",
+                                        "{{i18n:BubbleMeadShop12}}"
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "Items": [
+                        /*{
+                            "ItemId": "bonghits.Cp_BubbleBeer",
+                            "Price": 1000,
+                        },*/
+                        {
+                            "ItemId": "bonghits.Cp_BubbleHealth",
+                            "Price": 250
+                        },
+                        {
+                            "ItemId": "bonghits.Cp_BubbleMead",
+                            "Price": 1000
+                        },
+                        {
+                            "ItemId": "bonghits.Cp_BubbleRoseBeer",
+                            "Price": 1000
+                        },
+                        {
+                            "ItemId": "bonghits.Cp_BubbleRoseMead",
+                            "Price": 1000
+                        },
+                        {
+                            "ItemId": "bonghits.Cp_HealingBubbleMead",
+                            "Price": 1000
+                        },
+                        {
+                            "ItemId": "bonghits.Cp_LovePotion",
+                            "Price": 250
+                        },
+                        {
+                            "ItemId": "bonghits.Cp_MoonPotion",
+                            "Price": 250
+                        },
+                        {
+                            "ItemId": "bonghits.Cp_PinkBubble",
+                            "Price": 250
+                        },
+                        {
+                            "ItemId": "bonghits.Cp_BubbleSingle",
+                            "Price": 250
+                        },
+                        {
+                            "ItemId": "(BC){{ModId}}_Carbonator",
+                            "IsRecipe": true,
+                            "Price": 25000
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

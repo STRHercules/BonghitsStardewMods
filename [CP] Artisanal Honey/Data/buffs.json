@@ -81,6 +81,110 @@
                     "CustomFields": null
                 }
             }
-        }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Buffs",
+            "Entries": {
+                "bonghits.mead.healing": {
+                    "DisplayName": "{{i18n:bonghits.mead.healing.DisplayName}}",
+                    "Description": "{{i18n:bonghits.mead.healing.Description}}",
+                    "IsDebuff": false,
+                    //"GlowColor": "PaleGreen",
+                    "Duration": 20,
+                    "MaxDuration": 30,
+                    "IconTexture": "TileSheets\\BuffsIcons",
+                    "IconSpriteIndex": 17,
+                    "Effects": {
+                        "AttackMultiplier": 0.0,
+                        "Immunity": 0.0,
+                        "KnockbackMultiplier": 0.0,
+                        "WeaponSpeedMultiplier": 0.0,
+                        "CriticalChanceMultiplier": 0.0,
+                        "CriticalPowerMultiplier": 0.0,
+                        "WeaponPrecisionMultiplier": 0.0
+                    },
+                    "ActionsOnApply": null,
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Buffs",
+            "Entries": {
+                "bonghits.mead.specialty": {
+                    "DisplayName": "{{i18n:bonghits.mead.specialtybuff.DisplayName}}",
+                    "Description": "{{i18n:bonghits.mead.specialtybuff.Description}}",
+                    "IsDebuff": false,
+                    //"GlowColor": "PaleGreen",
+                    "Duration": 90,
+                    "MaxDuration": 120,
+                    "IconTexture": "TileSheets\\BuffsIcons",
+                    "IconSpriteIndex": 17,
+                    "Effects": {
+                        "AttackMultiplier": 0.0,
+                        "Immunity": 0.0,
+                        "KnockbackMultiplier": 0.0,
+                        "WeaponSpeedMultiplier": 0.0,
+                        "CriticalChanceMultiplier": 0.0,
+                        "CriticalPowerMultiplier": 0.0,
+                        "WeaponPrecisionMultiplier": 0.0
+                    },
+                    "ActionsOnApply": null,
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Buffs",
+            "Entries": {
+                "bonghits.bubble.health": {
+                    "DisplayName": "{{i18n:bonghits.bubble.health.DisplayName}}",
+                    "Description": "{{i18n:bonghits.bubble.health.Description}}",
+                    "IsDebuff": false,
+                    //"GlowColor": "PaleGreen",
+                    "Duration": 90,
+                    "MaxDuration": 120,
+                    "IconTexture": "TileSheets\\BuffsIcons",
+                    "IconSpriteIndex": 17,
+                    "Effects": {
+                        "AttackMultiplier": 0.0,
+                        "Immunity": 0.0,
+                        "KnockbackMultiplier": 0.0,
+                        "WeaponSpeedMultiplier": 0.0,
+                        "CriticalChanceMultiplier": 0.0,
+                        "CriticalPowerMultiplier": 0.0,
+                        "WeaponPrecisionMultiplier": 0.0
+                    },
+                    "ActionsOnApply": null,
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Buffs",
+            "Entries": {
+                "bonghits.bubble.mead": {
+                    "DisplayName": "{{i18n:bonghits.bubblemead.buff.DisplayName}}",
+                    "Description": "{{i18n:bonghits.bubblemead.buff.Description}}",
+                    "IsDebuff": false,
+                    //"GlowColor": "PaleGreen",
+                    "Duration": 90,
+                    "MaxDuration": 120,
+                    "IconTexture": "TileSheets\\BuffsIcons",
+                    "IconSpriteIndex": 17,
+                    "Effects": {
+                        "AttackMultiplier": 0.0,
+                        "Immunity": 0.0,
+                        "KnockbackMultiplier": 0.0,
+                        "WeaponSpeedMultiplier": 0.0,
+                        "CriticalChanceMultiplier": 0.0,
+                        "CriticalPowerMultiplier": 0.0,
+                        "WeaponPrecisionMultiplier": 0.0
+                    },
+                    "ActionsOnApply": null,
+                }
+            }
+        },
     ]
 }

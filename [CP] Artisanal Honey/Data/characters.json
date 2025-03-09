@@ -1,0 +1,219 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Entries": {
+                "Natalie": {
+                    "DisplayName": "{{i18n:bonghits.Natalie.DisplayName}}",
+                    "BirthSeason": "Summer",
+                    "BirthDay": 5,
+                    "HomeRegion": "Other",
+                    "Language": "Default",
+                    "Gender": "Female",
+                    "Age": "Adult",
+                    "Manner": "Polite",
+                    "SocialAnxiety": "Outgoing",
+                    "Optimism": "Positive",
+                    "IsDarkSkinned": false,
+                    "CanBeRomanced": false,
+                    "LoveInterest": "Zachary",
+                    "Calendar": "AlwaysShown",
+                    "SocialTab": "UnknownUntilMet",
+                    "CanSocialize": true,
+                    "CanReceiveGifts": true,
+                    "CanGreetNearbyCharacters": true,
+                    "CanCommentOnPurchasedShopItems": true,
+                    "CanVisitIsland": false,
+                    "IntroductionsQuest": true,
+                    "ItemDeliveryQuests": true,
+                    "PerfectionScore": true,
+                    "EndSlideShow": "Hidden",
+                    "SpouseAdopts": null,
+                    "SpouseWantsChildren": null,
+                    "SpouseGiftJealousy": null,
+                    "SpouseGiftJealousyFriendshipChange": -30,
+                    "SpouseRoom": null,
+                    "SpousePatio": null,
+                    "SpouseFloors": [],
+                    "SpouseWallpapers": [],
+                    "DumpsterDiveFriendshipEffect": 25,
+                    "DumpsterDiveEmote": 20,
+                    "FriendsAndFamily": {
+                        "Zachary": "hubby"
+                    },
+                    "FlowerDanceCanDance": false,
+                    "WinterStarGifts": null,
+                    "WinterStarParticipant": null,
+                    "UnlockConditions": null,
+                    "SpawnIfMissing": true,
+                    "Home": [
+                        {
+                            "Location": "MeadSaloon",
+                            "Tile": {
+                                "X": 24,
+                                "Y": 19
+                            },
+                            "Direction": "down"
+                        }
+                    ],
+                    "Appearance": [
+                        {
+                            "Id": "All Seasons",
+                            "Condition": null,
+                            "Season": null, //all
+                            "Indoors": true,
+                            "Outdoors": true,
+                            "Portrait": "Portraits/Natalie",
+                            "Sprite": "Characters/Natalie",
+                            "IsIslandAttire": false,
+                            "Precedence": -100,
+                            "Weight": 1
+                        }
+                    ],
+                    "MugShotSourceRect": null,
+                    "Size": {
+                        "X": 16,
+                        "Y": 32
+                    },
+                    "Breather": true,
+                    "BreathChestRect": null,
+                    "BreathChestPosition": null,
+                    "Shadow": null,
+                    "EmoteOffset": {
+                        "X": 0,
+                        "Y": 0
+                    },
+                    "ShakePortraits": [],
+                    "KissSpriteIndex": 28,
+                    "KissSpriteFacingRight": true,
+                    "HiddenProfileEmoteSound": null,
+                    "HiddenProfileEmoteDuration": -1,
+                    "HiddenProfileEmoteStartFrame": 39,
+                    "HiddenProfileEmoteFrameCount": 1,
+                    "HiddenProfileEmoteFrameDuration": 200.0,
+                    "FormerCharacterNames": [],
+                    "FestivalVanillaActorIndex": 2,
+                    "CustomFields": null
+                },
+                "Zachary": {
+                    "DisplayName": "{{i18n:bonghits.Zachary.DisplayName}}",
+                    "BirthSeason": "Summer",
+                    "BirthDay": 23,
+                    "HomeRegion": "Other",
+                    "Language": "Default",
+                    "Gender": "Male",
+                    "Age": "Adult",
+                    "Manner": "Polite",
+                    "SocialAnxiety": "Outgoing",
+                    "Optimism": "Positive",
+                    "IsDarkSkinned": false,
+                    "CanBeRomanced": false,
+                    "LoveInterest": "Natalie",
+                    "Calendar": "AlwaysShown",
+                    "SocialTab": "UnknownUntilMet",
+                    "CanSocialize": true,
+                    "CanReceiveGifts": true,
+                    "CanGreetNearbyCharacters": true,
+                    "CanCommentOnPurchasedShopItems": true,
+                    "CanVisitIsland": false,
+                    "IntroductionsQuest": true,
+                    "ItemDeliveryQuests": true,
+                    "PerfectionScore": true,
+                    "EndSlideShow": "Hidden",
+                    "SpouseAdopts": null,
+                    "SpouseWantsChildren": null,
+                    "SpouseGiftJealousy": null,
+                    "SpouseGiftJealousyFriendshipChange": -30,
+                    "SpouseRoom": null,
+                    "SpousePatio": null,
+                    "SpouseFloors": [],
+                    "SpouseWallpapers": [],
+                    "DumpsterDiveFriendshipEffect": 25,
+                    "DumpsterDiveEmote": 20,
+                    "FriendsAndFamily": {
+                        "Natalie": "wife"
+                    },
+                    "FlowerDanceCanDance": false,
+                    "WinterStarGifts": null,
+                    "WinterStarParticipant": null,
+                    "UnlockConditions": null,
+                    "SpawnIfMissing": true,
+                    "Home": [
+                        {
+                            "Location": "MeadSaloon",
+                            "Tile": {
+                                "X": 6,
+                                "Y": 18
+                            },
+                            "Direction": "down"
+                        }
+                    ],
+                    "Appearance": [
+                        {
+                            "Id": "All Seasons",
+                            "Condition": null,
+                            "Season": null, //all
+                            "Indoors": true,
+                            "Outdoors": true,
+                            "Portrait": "Portraits/Zachary",
+                            "Sprite": "Characters/Zachary",
+                            "IsIslandAttire": false,
+                            "Precedence": -100,
+                            "Weight": 1
+                        }
+                    ],
+                    "MugShotSourceRect": null,
+                    "Size": {
+                        "X": 16,
+                        "Y": 32
+                    },
+                    "Breather": true,
+                    "BreathChestRect": null,
+                    "BreathChestPosition": null,
+                    "Shadow": null,
+                    "EmoteOffset": {
+                        "X": 0,
+                        "Y": 0
+                    },
+                    "ShakePortraits": [],
+                    "KissSpriteIndex": 28,
+                    "KissSpriteFacingRight": true,
+                    "HiddenProfileEmoteSound": null,
+                    "HiddenProfileEmoteDuration": -1,
+                    "HiddenProfileEmoteStartFrame": 39,
+                    "HiddenProfileEmoteFrameCount": 1,
+                    "HiddenProfileEmoteFrameDuration": 200.0,
+                    "FormerCharacterNames": [],
+                    "FestivalVanillaActorIndex": 2,
+                    "CustomFields": null
+                }
+            }
+        },
+        {
+            "Action": "Load",
+            "Target": "Portraits/Large_Natalie",
+            "FromFile": "assets/natalie/BubblePortraitBig.png"
+        },
+        {
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "Entries": {
+                "{{ModId}}_Natalie": {
+                    "TargetTexture": "Portraits/Natalie",
+                    "TargetRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 64,
+                        "Height": 64
+                    },
+                    "SourceTexture": "Portraits/Large_Natalie:0",
+                    "SourceSizeOverride": {
+                        "X": 128,
+                        "Y": 128
+                    }
+                }
+            }
+        }
+    ]
+}

@@ -19,48 +19,13 @@
         //  Carbonator Recipe
         //
         //
-        //
-        //
-        //  Insert Artisanal Mead Keg Blueprint to Pierre's Shop
-        //
-        //
         {
             "Action": "EditData",
-            "Target": "Data/Shops",
-            "TargetField": [
-                "SeedShop",
-                "Items"
-            ],
+            "Target": "Data/CraftingRecipes",
             "Entries": {
-                "{{ModId}}_MeadKegSale": {
-                    "Id": "{{ModId}}_MeadKegRecipeSale",
-                    "ItemId": "(BC){{ModId}}_MeadKeg",
-                    "IsRecipe": true,
-                    "Price": 25000
-                }
-            }
-        },
-        //
-        //
-        //  Insert 5x Artisanal Mead Kegs to Pierre's Shop
-        //
-        //
-        {
-            "Action": "EditData",
-            "Target": "Data/Shops",
-            "TargetField": [
-                "SeedShop",
-                "Items"
-            ],
-            "Entries": {
-                "{{ModId}}_MeadKegSale": {
-                    "Id": "{{ModId}}_MeadKegSale",
-                    "ItemId": "(BC){{ModId}}_MeadKeg",
-                    "AvailableStock": 5,
-                    "IsRecipe": false,
-                    "Price": 12500
-                }
-            }
+                "{{ModId}}_Carbonator": "{{ModId}}_MeadKeg 1 bonghits.Cp_BearHoneyMead 1 bonghits.Cp_BubbleSingle 2 bonghits.Cp_PinkBubble 2/Home/{{ModId}}_Carbonator/true/none/" //1 Mead Keg, 1 Honey Mead, 2 Bubbles, 2 Pink Bubbles
+            },
+            "LogName": "Carbonator Recipe Definition"
         },
         //
         //

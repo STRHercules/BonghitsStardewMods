@@ -1,0 +1,85 @@
+{
+  "Changes": [
+    {
+      
+      "LogName": "Load Mead Shop Exterior for NON-SVE",
+      "Action": "EditMap",
+      "Target": "Maps/Forest",
+      "FromFile": "Maps/MeadShop.tmx",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Height": 10,
+        "Width": 9
+      },
+      "ToArea": {
+        "X": 36,
+        "Y": 2,
+        "Height": 10,
+        "Width": 9
+      },
+      "PatchMode": "Replace",
+      "When": {
+        "HasMod|contains=FlashShifter.StardewValleyExpandedCP": false
+      }
+    },
+    {
+      "LogName": "Load Mead Shop Exterior for SVE",
+      "Action": "EditMap",
+      "Target": "Maps/Forest",
+      "FromFile": "Maps/MeadShop_SVE.tmx",
+      "FromArea": {
+        "X": 0,
+        "Y": 0,
+        "Height": 10,
+        "Width": 9
+      },
+      "ToArea": {
+        "X": 36,
+        "Y": 2,
+        "Height": 10,
+        "Width": 9
+      },
+      "PatchMode": "Replace",
+      "When": {
+        "HasMod|contains=FlashShifter.StardewValleyExpandedCP": true
+      }
+    },
+    {
+      "LogName": "Load Mead Shop Interior",
+      "Action": "Load",
+      "Target": "Maps/MeadSaloon",
+      "FromFile": "Maps/MeadSaloon.tmx"
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Locations",
+      "Entries": {
+        "MeadSaloon": {
+          "DisplayName": "{{i18n:bh.MeadSaloon.DisplayName}}",
+          "DefaultArrivalTile": {
+            "X": 13,
+            "Y": 24
+          },
+          "CreateOnLoad": {
+            "MapPath": "Maps/MeadSaloon"
+          }
+        }
+      }
+    },
+    {
+      "Action": "EditMap",
+      "Target": "Maps/MeadSaloon",
+      "AddWarps": [
+        "13 26 Forest 38 11"
+      ]
+    },
+    /*{
+			"Action": "EditMap",
+			"Target": "Maps/Forest",
+			"AddWarps": [
+				"40 11 MeadSaloon 13 24"
+			]
+		}*/
+  ]
+}
