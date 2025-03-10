@@ -500,7 +500,7 @@
                 "{{ModId}}.Potion.Red.Huge": "80 3 296 6 768 1/Home/{{ModId}}.Potion.Red.Huge/false/Combat 8/",                      // 3 Quartz, 6 Salmonberry, 1 Solar Essence [Combat Level 8]
                 "{{ModId}}.Potion.Red.Small": "80 1 296 2 768 1/Home/{{ModId}}.Potion.Red.Small/false/Combat 2/",                     // 1 Quartz, 2 Salmonberry, 1 Solar Essence [Combat Level 2]
                 "{{ModId}}.Potion.Green.Small": "80 1 16 2 768 1/Home/{{ModId}}.Potion.Green.Small/false/Combat 2/",                    // 1 Quartz, 2 Horseradish, 1 Solar Essence [Combat Level 2]
-                "{{ModId}}.Potion.Green.Big": "80 2 16 4 768 1/Home/{{ModId}}.Potion.Green./false/Combat 4/",                      // 2 Quartz, 4 Horseradish, 1 Solar Essence [Combat Level 4]
+                "{{ModId}}.Potion.Green.Big": "80 2 16 4 768 1/Home/{{ModId}}.Potion.Green.Big/false/Combat 4/",                      // 2 Quartz, 4 Horseradish, 1 Solar Essence [Combat Level 4]
                 "{{ModId}}.Potion.Orange.Round": "80 5 78 5 769 1/Home/{{ModId}}.Potion.Orange.Round/false/Combat 10/",                 // 5  Quartz, 5 Cave Carrots, 1 Void Essence [Combat Level 10]
                 "{{ModId}}.Potion.Pink.Moon": "80 5 24 2 90 2 430 1/Home/{{ModId}}.Potion.Pink.Moon/false/Farming 6/",                  // 5 Quartz, 2 Parsnip, 2 Cactus Fruit, 1 Truffle [Farming level 6]
                 "{{ModId}}.Potion.Black.Diamond": "80 5 SeaJelly 1 153 1 152 1/Home/{{ModId}}.Potion.Black.Diamond/false/Fishing 6/",   // 5 Quartz, 1 SeaJelly, 1 Green Algae, 1 Seaweed [Fishing Level 6]
