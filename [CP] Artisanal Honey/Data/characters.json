@@ -209,8 +209,33 @@
                     },
                     "SourceTexture": "Portraits/Large_Natalie:0",
                     "SourceSizeOverride": {
-                        "X": 128,
-                        "Y": 128
+                        "X": 256,
+                        "Y": 256
+                    }
+                }
+            }
+        },
+        {
+            "Action": "Load",
+            "Target": "Portraits/Large_Zachary",
+            "FromFile": "assets/zachary/CharacterPortraitReady.png"
+        },
+        {
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/TextureOverrides",
+            "Entries": {
+                "{{ModId}}_Zachary": {
+                    "TargetTexture": "Portraits/Zachary",
+                    "TargetRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 64,
+                        "Height": 64
+                    },
+                    "SourceTexture": "Portraits/Large_Zachary:0",
+                    "SourceSizeOverride": {
+                        "X": 256,
+                        "Y": 256
                     }
                 }
             }

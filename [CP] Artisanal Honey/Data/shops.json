@@ -33,45 +33,71 @@
                     "Items": [
                         {
                             "ItemId": "bonghits.Cp_BearHoneyMead",
+                            // When the player ships their first honey mead, start selling it
+                            "Condition": "PLAYER_SHIPPED_BASIC_ITEM any bonghits.Cp_BearHoneyMead 1 1",
                             "Price": 975
                         },
                         {
                             "ItemId": "bonghits.Cp_HealingMead",
+                            // Sells after player reaches mines level 10
+                            "Condition": "MINE_LOWEST_LEVEL_REACHED 10",
                             "Price": 250
                         },
                         {
                             "ItemId": "bonghits.Cp_SpecialtyHoneyMead",
+                            // Only sell on Fridays (Special!)
+                            "Condition": "DAY_OF_WEEK Fri",
                             "Price": 500
                         },
                         //
                         //  Fruit
                         //
-                        {
-                            "ItemId": "(O)254"
+                        { // Melon
+                            "ItemId": "(O)254",
+                            "Condition": "SEASON summer"
                         },
-                        {
-                            "ItemId": "(O)258"
+                        { // Blueberry
+                            "ItemId": "(O)258",
+                            "Condition": "SEASON summer"
                         },
-                        {
-                            "ItemId": "(O)296"
+                        { // Salmonberry
+                            "ItemId": "(O)296",
+                            "Condition": "SEASON spring"
                         },
-                        {
-                            "ItemId": "(O)400"
+                        { // Strawberry
+                            "ItemId": "(O)400",
+                            "Condition": "SEASON spring"
                         },
-                        {
-                            "ItemId": "(O)410"
+                        { // Blackberry
+                            "ItemId": "(O)410",
+                            "Condition": "SEASON fall"
                         },
-                        {
-                            "ItemId": "(O)613"
+                        { // Apple
+                            "ItemId": "(O)613",
+                            "Condition": "SEASON fall"
                         },
-                        {
-                            "ItemId": "(O)637"
+                        { // Pomegranate
+                            "ItemId": "(O)637",
+                            "Condition": "SEASON fall"
                         },
-                        {
-                            "ItemId": "(O)834"
+                        { // Mango
+                            "ItemId": "(O)834",
+                            // If the player has been to Ginger, sell
+                            "Condition": "PLAYER_VISITED_LOCATION Target IslandSouth"
                         },
-                        {
-                            "ItemId": "(O)398"
+                        { // Coconut
+                            "ItemId": "(O)88",
+                            // If the player has been to Ginger, sell
+                            "Condition": "PLAYER_VISITED_LOCATION Target IslandSouth"
+                        },
+                        { // Cactus Fruit
+                            "ItemId": "(O)90",
+                            // If the player has been to the desert, sell
+                            "Condition": "PLAYER_VISITED_LOCATION Target Desert"
+                        },
+                        { // Grape
+                            "ItemId": "(O)398",
+                            "Condition": "SEASON summer"
                         },
                         {
                             "ItemId": "(BC){{ModId}}_MeadKeg",
@@ -127,26 +153,37 @@
                     "Items": [
                         /*{
                             "ItemId": "bonghits.Cp_BubbleBeer",
+                            "Condition": "DAY_OF_WEEK Wed,PLAYER_SHIPPED_BASIC_ITEM any bonghits.Cp_BearHoneyMead 1 1",
                             "Price": 1000,
                         },*/
                         {
                             "ItemId": "bonghits.Cp_BubbleHealth",
+                            // Sells after player reaches mines level 10
+                            "Condition": "MINE_LOWEST_LEVEL_REACHED 10",
                             "Price": 250
                         },
                         {
                             "ItemId": "bonghits.Cp_BubbleMead",
+                            // Only sell on Fridays
+                            "Condition": "DAY_OF_WEEK Fri",
                             "Price": 1000
                         },
                         {
                             "ItemId": "bonghits.Cp_BubbleRoseBeer",
+                            // Only sell on Fridays
+                            "Condition": "DAY_OF_WEEK Sat",
                             "Price": 1000
                         },
                         {
                             "ItemId": "bonghits.Cp_BubbleRoseMead",
+                            // Only sell on Fridays
+                            "Condition": "DAY_OF_WEEK Sun",
                             "Price": 1000
                         },
                         {
                             "ItemId": "bonghits.Cp_HealingBubbleMead",
+                            // Sells after player reaches mines level 20
+                            "Condition": "MINE_LOWEST_LEVEL_REACHED 20",
                             "Price": 1000
                         },
                         {
@@ -159,13 +196,19 @@
                         },
                         {
                             "ItemId": "bonghits.Cp_PinkBubble",
+                            // When the player ships their first honey mead, start selling it
+                            "Condition": "PLAYER_SHIPPED_BASIC_ITEM any bonghits.Cp_BearHoneyMead 1 1",
                             "Price": 250
                         },
                         {
                             "ItemId": "bonghits.Cp_BubbleSingle",
+                            // When the player ships their first honey mead, start selling it
+                            "Condition": "PLAYER_SHIPPED_BASIC_ITEM any bonghits.Cp_BearHoneyMead 1 1",
                             "Price": 250
                         },
                         {
+                            // When the player ships their first honey mead, start selling it
+                            "Condition": "PLAYER_SHIPPED_BASIC_ITEM any bonghits.Cp_BearHoneyMead 1 1",
                             "ItemId": "(BC){{ModId}}_Carbonator",
                             "IsRecipe": true,
                             "Price": 25000
@@ -190,36 +233,97 @@
                 "Items"
             ],
             "Entries": {
+                //
+                //  Summer Fruit
+                //
                 "Cornucopia_Kiwi": {
                     "ItemId": "(O)Cornucopia_Kiwi",
+                    "Condition": "SEASON summer",
+                    "IsRecipe": false
+                },
+                "Cornucopia_Nectarine": {
+                    "When": {
+                        "HasMod|contains=FlashShifter.StardewValleyExpandedCP": false
+                    },
+                    "ItemId": "(O)Cornucopia_Nectarine",
+                    "Condition": "SEASON summer",
                     "IsRecipe": false
                 },
                 "Cornucopia_Raspberry": {
                     "ItemId": "(O)Cornucopia_Raspberry",
+                    "Condition": "SEASON summer",
                     "IsRecipe": false
                 },
                 "Cornucopia_Watermelon": {
                     "ItemId": "(O)Cornucopia_Watermelon",
+                    "Condition": "SEASON summer",
                     "IsRecipe": false
                 },
                 "Cornucopia_Honeydew": {
                     "ItemId": "(O)Cornucopia_Honeydew",
+                    "Condition": "SEASON summer",
                     "IsRecipe": false
                 },
+                //
+                //  Fall Fruit
+                //
                 "Cornucopia_WhiteGrape": {
                     "ItemId": "(O)Cornucopia_WhiteGrape",
+                    "Condition": "SEASON fall",
                     "IsRecipe": false
                 },
+                "Cornucopia_Grapefruit": {
+                    "ItemId": "(O)Cornucopia_Grapefruit",
+                    "Condition": "SEASON fall",
+                    "IsRecipe": false
+                },
+                "Cornucopia_Habanero": {
+                    "ItemId": "(O)Cornucopia_Habanero",
+                    "Condition": "SEASON fall",
+                    "IsRecipe": false
+                },
+                //
+                //  Winter Fruit
+                //
                 "Cornucopia_Pear": {
+                    "When": {
+                        "HasMod|contains=FlashShifter.StardewValleyExpandedCP": false
+                    },
                     "ItemId": "(O)Cornucopia_Pear",
+                    "Condition": "SEASON winter",
                     "IsRecipe": false
                 },
+                "Cornucopia_JuniperBerries": {
+                    "ItemId": "(O)Cornucopia_JuniperBerries",
+                    "Condition": "SEASON winter",
+                    "IsRecipe": false
+                },
+                "Cornucopia_Elderberries": {
+                    "ItemId": "(O)Cornucopia_Elderberries",
+                    "Condition": "SEASON winter",
+                    "IsRecipe": false
+                },
+                //
+                //  Spring Fruit
+                //
                 "Cornucopia_Lemon": {
                     "ItemId": "(O)Cornucopia_Lemon",
+                    "Condition": "SEASON spring",
                     "IsRecipe": false
                 },
-                "Cornucopia_Nectarine": {
-                    "ItemId": "(O)Cornucopia_Nectarine",
+                "Cornucopia_Lime": {
+                    "ItemId": "(O)Cornucopia_Lime",
+                    "Condition": "SEASON spring",
+                    "IsRecipe": false
+                },
+                "Cornucopia_PassionFruit": {
+                    "ItemId": "(O)Cornucopia_PassionFruit",
+                    "Condition": "SEASON spring",
+                    "IsRecipe": false
+                },
+                "Cornucopia_Cantaloupe": {
+                    "ItemId": "(O)Cornucopia_Cantaloupe",
+                    "Condition": "SEASON spring",
                     "IsRecipe": false
                 }
             }
@@ -235,28 +339,29 @@
                 "Items"
             ],
             "Entries": {
-                "FlashShifter.StardewValleyExpandedCP_Dewdrop_Berry": {
-                    "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Dewdrop_Berry",
-                    "IsRecipe": false
-                },
                 "FlashShifter.StardewValleyExpandedCP_Bearberrys": {
                     "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Bearberrys",
+                    "Condition": "SEASON winter",
                     "IsRecipe": false
                 },
                 "FlashShifter.StardewValleyExpandedCP_Red_Baneberry": {
                     "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Red_Baneberry",
+                    "Condition": "SEASON summer",
                     "IsRecipe": false
                 },
                 "FlashShifter.StardewValleyExpandedCP_Pear": {
+                    "Condition": "SEASON spring",
                     "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Pear",
                     "IsRecipe": false
                 },
                 "FlashShifter.StardewValleyExpandedCP_Nectarine": {
                     "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Nectarine",
+                    "Condition": "SEASON summer",
                     "IsRecipe": false
                 },
                 "FlashShifter.StardewValleyExpandedCP_Persimmon": {
                     "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Persimmon",
+                    "Condition": "SEASON fall",
                     "IsRecipe": false
                 }
             }

@@ -11,6 +11,26 @@
         {
             "UniqueID": "selph.ExtraMachineConfig",
             "IsRequired": true
+        },
+        {
+            "UniqueID": "Lumisteria.LumiTilesheetsIndoor",
+            "IsRequired": true
+        },
+        {
+            "UniqueID": "Lumisteria.TtilesheetsOutdoor",
+            "IsRequired": true
+        },
+        {
+            "UniqueID": "xiddav.tilesheet",
+            "IsRequired": true
+        },
+        {
+            "UniqueID": "MV.MiscTilesheets",
+            "IsRequired": true
+        },
+        {
+            "UniqueID": "hxw.tilesheets",
+            "IsRequired": true
         }
     ],
     "ContentPackFor": {
