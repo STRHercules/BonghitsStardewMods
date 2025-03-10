@@ -71,6 +71,9 @@
                             "ItemId": "(O)834"
                         },
                         {
+                            "ItemId": "(O)398"
+                        },
+                        {
                             "ItemId": "(BC){{ModId}}_MeadKeg",
                             "AvailableStock": 1,
                             "IsRecipe": false,
@@ -170,6 +173,93 @@
                     ]
                 }
             }
-        }
+        },
+        //
+        //
+        //  Mod Compatability Shop Insertion
+        //
+        //
+        {
+            "When": {
+                "HasMod|contains=Cornucopia.MoreCrops": true
+            },
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "MeadShop",
+                "Items"
+            ],
+            "Entries": {
+                "Cornucopia_Kiwi": {
+                    "ItemId": "(O)Cornucopia_Kiwi",
+                    "IsRecipe": false
+                },
+                "Cornucopia_Raspberry": {
+                    "ItemId": "(O)Cornucopia_Raspberry",
+                    "IsRecipe": false
+                },
+                "Cornucopia_Watermelon": {
+                    "ItemId": "(O)Cornucopia_Watermelon",
+                    "IsRecipe": false
+                },
+                "Cornucopia_Honeydew": {
+                    "ItemId": "(O)Cornucopia_Honeydew",
+                    "IsRecipe": false
+                },
+                "Cornucopia_WhiteGrape": {
+                    "ItemId": "(O)Cornucopia_WhiteGrape",
+                    "IsRecipe": false
+                },
+                "Cornucopia_Pear": {
+                    "ItemId": "(O)Cornucopia_Pear",
+                    "IsRecipe": false
+                },
+                "Cornucopia_Lemon": {
+                    "ItemId": "(O)Cornucopia_Lemon",
+                    "IsRecipe": false
+                },
+                "Cornucopia_Nectarine": {
+                    "ItemId": "(O)Cornucopia_Nectarine",
+                    "IsRecipe": false
+                }
+            }
+        },
+        {
+            "When": {
+                "HasMod|contains=FlashShifter.StardewValleyExpandedCP": true
+            },
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "MeadShop",
+                "Items"
+            ],
+            "Entries": {
+                "FlashShifter.StardewValleyExpandedCP_Dewdrop_Berry": {
+                    "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Dewdrop_Berry",
+                    "IsRecipe": false
+                },
+                "FlashShifter.StardewValleyExpandedCP_Bearberrys": {
+                    "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Bearberrys",
+                    "IsRecipe": false
+                },
+                "FlashShifter.StardewValleyExpandedCP_Red_Baneberry": {
+                    "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Red_Baneberry",
+                    "IsRecipe": false
+                },
+                "FlashShifter.StardewValleyExpandedCP_Pear": {
+                    "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Pear",
+                    "IsRecipe": false
+                },
+                "FlashShifter.StardewValleyExpandedCP_Nectarine": {
+                    "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Nectarine",
+                    "IsRecipe": false
+                },
+                "FlashShifter.StardewValleyExpandedCP_Persimmon": {
+                    "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Persimmon",
+                    "IsRecipe": false
+                }
+            }
+        },
     ]
 }
