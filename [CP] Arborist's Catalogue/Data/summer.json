@@ -65,9 +65,9 @@
             "Action": "EditData",
             "Target": "Data/Furniture",
             "Entries": {
-                "{{ModId}}_SummerTree1": "{{ModId}}_SummerTree1/decor/3 6/2 1/1/1000/2/{{i18n:furniture.SummerTree.name}}/0/bonghits.cp.SummerTree_1/true/collection_bongTrees",
-                "{{ModId}}_SummerTree2": "{{ModId}}_SummerTree2/decor/3 6/2 1/1/1000/2/{{i18n:furniture.SummerTree.name}}/0/bonghits.cp.SummerTree_2/true/collection_bongTrees",
-                "{{ModId}}_SummerTree8": "{{ModId}}_SummerTree8/decor/3 6/2 1/1/1000/2/{{i18n:furniture.SummerTree.name}}/0/bonghits.cp.SummerTree_8/true/collection_bongTrees",
+                "{{ModId}}_SummerTree1": "{{ModId}}_SummerTree1/decor/3 6/2 1/1/1000/2/{{i18n:furniture.SummerTree1.name}}/0/bonghits.cp.SummerTree_1/true/collection_bongTrees",
+                "{{ModId}}_SummerTree2": "{{ModId}}_SummerTree2/decor/3 6/2 1/1/1000/2/{{i18n:furniture.SummerTree2.name}}/0/bonghits.cp.SummerTree_2/true/collection_bongTrees",
+                "{{ModId}}_SummerTree8": "{{ModId}}_SummerTree8/decor/3 6/2 1/1/1000/2/{{i18n:furniture.SummerTree8.name}}/0/bonghits.cp.SummerTree_8/true/collection_bongTrees",
                 "{{ModId}}_SummerFruitTree1": "{{ModId}}_SummerFruitTree1/decor/3 6/2 1/1/1000/2/{{i18n:furniture.SummerFruitTree.name}}/0/bonghits.cp.SummerFruitTree_1/true/collection_bongTrees",
                 "{{ModId}}_SummerFruitTree2": "{{ModId}}_SummerFruitTree2/decor/3 6/2 1/1/1000/2/{{i18n:furniture.SummerFruitTree.name}}/0/bonghits.cp.SummerFruitTree_2/true/collection_bongTrees",
                 "{{ModId}}_SummerFruitTree3": "{{ModId}}_SummerFruitTree3/decor/4 7/3 1/1/1000/2/{{i18n:furniture.SummerFruitTree.name}}/0/bonghits.cp.SummerFruitTree_3/true/collection_bongTrees",

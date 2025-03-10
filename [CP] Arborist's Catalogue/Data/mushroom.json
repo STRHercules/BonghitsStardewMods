@@ -1,0 +1,23 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Changes": [
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.MushroomTree_1",
+            "FromFile": "Assets/Trees/mushroom/mushroom_tree_1.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.MushroomTree_2",
+            "FromFile": "Assets/Trees/mushroom/mushroom_tree_2.png"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "Entries": {
+                "{{ModId}}_MushroomTree_1": "{{ModId}}_MushroomTree_1/decor/3 6/3 1/1/1000/2/{{i18n:furniture.MushroomTree.name}}/0/bonghits.cp.MushroomTree_1/true/collection_bongTrees",
+                "{{ModId}}_MushroomTree_2": "{{ModId}}_MushroomTree_2/decor/3 6/3 1/1/1000/2/{{i18n:furniture.MushroomTree.name}}/0/bonghits.cp.MushroomTree_2/true/collection_bongTrees"
+            }
+        }
+    ]
+}

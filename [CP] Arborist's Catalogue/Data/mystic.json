@@ -1,0 +1,17 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Changes": [
+		{
+			"Action": "Load",
+			"Target": "bonghits.cp.MysticTree",
+			"FromFile": "Assets/Trees/mystic/mystic_tree.png"
+		},
+        {
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "Entries": {
+                "{{ModId}}_MysticTree": "{{ModId}}_MysticTree/decor/3 6/2 1/1/1000/2/{{i18n:furniture.MysticTree.name}}/0/bonghits.cp.MysticTree/true/collection_bongTrees"
+            }
+        }
+    ]
+}

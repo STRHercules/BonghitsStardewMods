@@ -1,0 +1,29 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Changes": [
+		{
+			"Action": "Load",
+			"Target": "bonghits.cp.GiantCrop_1",
+			"FromFile": "Assets/Other/giant_cauliflower.png"
+		},
+		{
+			"Action": "Load",
+			"Target": "bonghits.cp.GiantCrop_2",
+			"FromFile": "Assets/Other/giant_melon.png"
+		},
+        {
+			"Action": "Load",
+			"Target": "bonghits.cp.GiantCrop_3",
+			"FromFile": "Assets/Other/giant_pumpkin.png"
+		},
+        {
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "Entries": {
+                "{{ModId}}_GiantCrop_1": "{{ModId}}_GiantCrop_1/decor/4 4/4 1/1/1000/2/{{i18n:furniture.GiantCrop_1.name}}/0/bonghits.cp.GiantCrop_1/true/collection_bongTrees",
+                "{{ModId}}_GiantCrop_2": "{{ModId}}_GiantCrop_2/decor/4 4/4 1/1/1000/2/{{i18n:furniture.GiantCrop_2.name}}/0/bonghits.cp.GiantCrop_2/true/collection_bongTrees",
+                "{{ModId}}_GiantCrop_3": "{{ModId}}_GiantCrop_3/decor/4 4/4 1/1/1000/2/{{i18n:furniture.GiantCrop_3.name}}/0/bonghits.cp.GiantCrop_3/true/collection_bongTrees",
+            }
+        }
+    ]
+}

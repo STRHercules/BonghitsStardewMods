@@ -1,0 +1,89 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Changes": [
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.SeasonalTree_1",
+            "FromFile": "Assets/Seasonal/Trees/{{season}}/{{season}}_tree_1.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.SeasonalTree_2",
+            "FromFile": "Assets/Seasonal/Trees/{{season}}/{{season}}_tree_2.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.SeasonalTree_3",
+            "FromFile": "Assets/Seasonal/Trees/{{season}}/{{season}}_tree_3.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.SeasonalTree_8",
+            "FromFile": "Assets/Seasonal/Trees/{{season}}/{{season}}_tree_8.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.SeasonalFruitTree_1",
+            "FromFile": "Assets/Seasonal/FruitTrees/{{season}}/{{season}}_tree_1.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.SeasonalFruitTree_2",
+            "FromFile": "Assets/Seasonal/FruitTrees/{{season}}/{{season}}_tree_2.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.SeasonalFruitTree_3",
+            "FromFile": "Assets/Seasonal/FruitTrees/{{season}}/{{season}}_tree_3.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.SeasonalFruitTree_4",
+            "FromFile": "Assets/Seasonal/FruitTrees/{{season}}/{{season}}_tree_4.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.SeasonalFruitTree_5",
+            "FromFile": "Assets/Seasonal/FruitTrees/{{season}}/{{season}}_tree_5.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.SeasonalBush_1",
+            "FromFile": "Assets/Seasonal/Bushes/{{season}}/{{season}}_bush_1.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.SeasonalBush_2",
+            "FromFile": "Assets/Seasonal/Bushes/{{season}}/{{season}}_bush_2.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.SeasonalBush_3",
+            "FromFile": "Assets/Seasonal/Bushes/{{season}}/{{season}}_bush_3.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.cp.SeasonalBush_4",
+            "FromFile": "Assets/Seasonal/Bushes/{{season}}/{{season}}_bush_4.png"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "Entries": {
+                "{{ModId}}_SeasonalTree1": "{{ModId}}_SeasonalTree1/decor/3 6/2 1/1/1000/2/{{i18n:furniture.SeasonalTree1.name}}/0/bonghits.cp.SeasonalTree_1/true/collection_bongTrees",
+                "{{ModId}}_SeasonalTree2": "{{ModId}}_SeasonalTree2/decor/3 6/2 1/1/1000/2/{{i18n:furniture.SeasonalTree2.name}}/0/bonghits.cp.SeasonalTree_2/true/collection_bongTrees",
+                "{{ModId}}_SeasonalTree3": "{{ModId}}_SeasonalTree3/decor/3 6/2 1/1/1000/2/{{i18n:furniture.SeasonalTree3.name}}/0/bonghits.cp.SeasonalTree_3/true/collection_bongTrees",
+                "{{ModId}}_SeasonalTree8": "{{ModId}}_SeasonalTree8/decor/3 6/2 1/1/1000/2/{{i18n:furniture.SeasonalTree8.name}}/0/bonghits.cp.SeasonalTree_8/true/collection_bongTrees",
+                "{{ModId}}_SeasonalFruitTree1": "{{ModId}}_SeasonalFruitTree1/decor/3 6/2 1/1/1000/2/{{i18n:furniture.SeasonalFruitTree.name}}/0/bonghits.cp.SeasonalFruitTree_1/true/collection_bongTrees",
+                "{{ModId}}_SeasonalFruitTree2": "{{ModId}}_SeasonalFruitTree2/decor/3 6/2 1/1/1000/2/{{i18n:furniture.SeasonalFruitTree.name}}/0/bonghits.cp.SeasonalFruitTree_2/true/collection_bongTrees",
+                "{{ModId}}_SeasonalFruitTree3": "{{ModId}}_SeasonalFruitTree3/decor/4 7/3 1/1/1000/2/{{i18n:furniture.SeasonalFruitTree.name}}/0/bonghits.cp.SeasonalFruitTree_3/true/collection_bongTrees",
+                "{{ModId}}_SeasonalFruitTree4": "{{ModId}}_SeasonalFruitTree4/decor/3 6/2 1/1/1000/2/{{i18n:furniture.SeasonalFruitTree.name}}/0/bonghits.cp.SeasonalFruitTree_4/true/collection_bongTrees",
+                "{{ModId}}_SeasonalFruitTree5": "{{ModId}}_SeasonalFruitTree5/decor/5 7/4 1/1/1000/2/{{i18n:furniture.SeasonalFruitTree.name}}/0/bonghits.cp.SeasonalFruitTree_5/true/collection_bongTrees",
+                "{{ModId}}_SeasonalBush1": "{{ModId}}_SeasonalBush1/decor/3 3/3 1/1/1000/2/{{i18n:furniture.SeasonalBush.name}}/0/bonghits.cp.SeasonalBush_1/true/collection_bongTrees",
+                "{{ModId}}_SeasonalBush2": "{{ModId}}_SeasonalBush2/decor/2 2/2 1/1/1000/2/{{i18n:furniture.SeasonalBush.name}}/0/bonghits.cp.SeasonalBush_2/true/collection_bongTrees",
+                "{{ModId}}_SeasonalBush3": "{{ModId}}_SeasonalBush3/decor/2 3/2 1/1/1000/2/{{i18n:furniture.SeasonalBush.name}}/0/bonghits.cp.SeasonalBush_3/true/collection_bongTrees",
+                "{{ModId}}_SeasonalBush4": "{{ModId}}_SeasonalBush4/decor/2 3/2 1/1/1000/2/{{i18n:furniture.SeasonalBush.name}}/0/bonghits.cp.SeasonalBush_4/true/collection_bongTrees",
+            }
+        }
+    ]
+}

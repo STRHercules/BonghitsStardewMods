@@ -10,6 +10,41 @@
 			"FromFile": "Data/catalogue.json"
 		},
 		//
+		//	Seasonal Tree Load
+		//
+		{
+			"Action": "Include",
+			"FromFile": "Data/seasonal.json"
+		},
+		//
+		//	Mushroom Tree Load
+		//
+		{
+			"Action": "Include",
+			"FromFile": "Data/mushroom.json"
+		},
+		//
+		//	Green Rain Tree Load
+		//
+		{
+			"Action": "Include",
+			"FromFile": "Data/green.json"
+		},
+		//
+		//	Mystic Tree Load
+		//
+		{
+			"Action": "Include",
+			"FromFile": "Data/mystic.json"
+		},
+		//
+		//	Crop Load
+		//
+		{
+			"Action": "Include",
+			"FromFile": "Data/crops.json"
+		},
+		//
 		//	Spring Tree Load
 		//
 		{

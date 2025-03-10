@@ -1,21 +1,55 @@
 {
-  "furniture.SpringTree.name": "A decorative Spring-time tree.",
-  "furniture.SpringFruitTree.name": "A decorative Spring-time fruit tree. Does not bear fruit.",
-  "furniture.SpringBush.name": "A decorative Spring-time bush.",
-  "furniture.SummerTree.name": "A decorative Summer-time tree.",
-  "furniture.SummerFruitTree.name": "A decorative Summer-time fruit tree. Does not bear fruit.",
-  "furniture.SummerBush.name": "A decorative Summer-time bush.",
-  "furniture.FallTree.name": "A decorative Fall-time tree.",
-  "furniture.FallFruitTree.name": "A decorative Fall-time fruit tree. Does not bear fruit.",
-  "furniture.FallBush.name": "A decorative Fall-time bush.",
-  "furniture.WinterTree.name": "A decorative Winter-time tree.",
-  "furniture.WinterFruitTree.name": "A decorative Winter-time fruit tree. Does not bear fruit.",
-  "furniture.WinterBush.name": "A decorative Winter-time bush.",
-  "furniture.IslandTree.name": "A decorative Island tree.",
-  "furniture.IslandFruitTree.name": "A decorative Island fruit tree. Does not bear fruit.",
-  "furniture.IslandBush.name": "A decorative Island bush.",
-  "furniture.DesertTree.name": "A decorative Desert tree.",
-  "furniture.DesertFruitTree.name": "A decorative Desert fruit tree. Does not bear fruit.",
-  "furniture.DesertCactus.name": "A decorative Desert cactus.",
+  // Catalogue Name
   "catalogue.name": "Arborist's Catalogue",
+  //Spring
+  "furniture.SpringTree1.name": "Decorative Spring Oak tree.",
+  "furniture.SpringTree2.name": "Decorative Spring Maple tree.",
+  "furniture.SpringTree3.name": "Decorative Spring Pine tree.",
+  "furniture.SpringTree8.name": "Decorative Spring Mahogany tree.",
+  "furniture.SpringFruitTree.name": "Decorative Spring-time fruit tree. Doesn't bear fruit.",
+  "furniture.SpringBush.name": "Decorative Spring-time bush.",
+  // Summer
+  "furniture.SummerTree1.name": "Decorative Summer Oak tree.",
+  "furniture.SummerTree2.name": "Decorative Summer Maple tree.",
+  "furniture.SummerTree3.name": "Decorative Summer Pine tree.",
+  "furniture.SummerTree8.name": "Decorative Summer Mahogany tree.",
+  "furniture.SummerFruitTree.name": "Decorative Summer-time fruit tree. Doesn't bear fruit.",
+  "furniture.SummerBush.name": "Decorative Summer-time bush.",
+  // Fall
+  "furniture.FallTree1.name": "Decorative Fall Oak tree.",
+  "furniture.FallTree2.name": "Decorative Fall Maple tree.",
+  "furniture.FallTree3.name": "Decorative Fall Pine tree.",
+  "furniture.FallTree8.name": "Decorative Fall Mahogany tree.",
+  "furniture.FallFruitTree.name": "Decorative Fall-time fruit tree. Doesn't bear fruit.",
+  "furniture.FallBush.name": "Decorative Fall-time bush.",
+  // Winter
+  "furniture.WinterTree1.name": "Decorative Winter Oak tree.",
+  "furniture.WinterTree2.name": "Decorative Winter Maple tree.",
+  "furniture.WinterTree3.name": "Decorative Winter Pine tree.",
+  "furniture.WinterTree8.name": "Decorative Winter Mahogany tree.",
+  "furniture.WinterFruitTree.name": "Decorative Winter-time fruit tree. Doesn't bear fruit.",
+  "furniture.WinterBush.name": "Decorative Winter-time bush.",
+  //Seasonal Versions
+  "furniture.SeasonalTree1.name": "A seasonal Oak Tree that changes with the season.",
+  "furniture.SeasonalTree2.name": "A seasonal Maple Tree that changes with the season.",
+  "furniture.SeasonalTree3.name": "A seasonal Pine Tree that changes with the season.",
+  "furniture.SeasonalTree8.name": "A seasonal Mahogany Tree that changes with the season.",
+  "furniture.SeasonalFruitTree.name": "A seasonal Fruit Tree that changes with the season.  Doesn't bear fruit.",
+  "furniture.SeasonalBush.name": "A seasonal Bush that changes with the season.",
+  // Special
+  "furniture.MysticTree.name": "Decorative Mystic Tree.",
+  "furniture.GiantCrop_1.name": "Decorative giant Cauliflower",
+  "furniture.GiantCrop_2.name": "Decorative giant Melon.",
+  "furniture.GiantCrop_3.name": "Decorative giant Pumpkin.",
+  "furniture.MushroomTree.name": "Decorative Mushroom Tree.",
+  // Green
+  "furniture.GreenTree.name": "Decorative Green-Rain Tree",
+  // Ginger Island
+  "furniture.IslandTree.name": "Decorative Island tree.",
+  "furniture.IslandFruitTree.name": "Decorative Island fruit tree. Doesn't bear fruit.",
+  "furniture.IslandBush.name": "Decorative Island bush.",
+  // Calico Desert
+  "furniture.DesertTree.name": "Decorative Desert tree.",
+  "furniture.DesertFruitTree.name": "Decorative Desert fruit tree. Doesn't bear fruit.",
+  "furniture.DesertCactus.name": "Decorative Desert cactus."
 }
