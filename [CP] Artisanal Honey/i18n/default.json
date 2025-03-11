@@ -20,7 +20,15 @@
     "bonghits.bubblemead.buff.Description": "So many bubbles! Do I feel lighter?",
     "bonghits.bubble.health.DisplayName": "Bubbly Mead Regeneration",
     "bonghits.bubble.health.Description": "Healing from that delicious bubble mead!",
-// Zach Shop Dialogue
+
+
+    "bonghits.mead.cider.DisplayName": "Drank some Cider",
+    "bonghits.mead.cider.Description": "Mmmm.. tastes so festive!",
+    "bonghits.mead.emptybottle.DisplayName": "Empty Bottle",
+    "bonghits.mead.emptybottle.Description": "Used to bottle meads and ciders.",
+
+    "message.invalidCount4": "Needs one Fire Quartz",
+    // Zach Shop Dialogue
     "Mead_Shop1": "Hey there! I bet you've never tasted Mead as good as mine!",
     "Mead_Shop2": "Welcome! Wanna learn something? Perhaps buy some recipes or materials?",
     "Mead_Shop3": "Greetings, traveler! Ready to embark on a journey of flavors with my special mead brews?",
@@ -33,7 +41,7 @@
     "Mead_Shop10": "Hey there! Looking for a taste of something new? My mead is brewed with adventure in mind!",
     "Mead_Shop11": "Greetings, friend! Ready to explore the world of mead? I've got brews that will take you on a journey!",
     "Mead_Shop12": "Hello there! Ever tried a mead that's as unique as your adventures? Come taste the difference!",
-// Natalie Shop Dialogue
+    // Natalie Shop Dialogue
     "BubbleMeadShop1": "Hi! Welcome to our little shop!",
     "BubbleMeadShop2": "I made the bubbles myself!",
     "BubbleMeadShop3": "Hiya! Ready to pop open a sparkling adventure with my fizzy mead brews? Let's dive in!",
@@ -46,7 +54,7 @@
     "BubbleMeadShop10": "Hey there! Looking for a taste of something new and bubbly? My sparkling mead will tickle your taste buds!",
     "BubbleMeadShop11": "Greetings, friend! Ready to explore the bubbly world of mead? I've got sparkling brews that will make you smile!",
     "BubbleMeadShop12": "Hello there! Ever tried a mead that's as bubbly and cute as you? Come taste the sparkling difference!",
-// NPC Names
+    // NPC Names
     "bonghits.Zachary.DisplayName": "Zachary",
     "bonghits.Natalie.DisplayName": "Natalie"
 }

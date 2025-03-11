@@ -1,0 +1,147 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/GarbageCans",
+            "TargetField": [
+                "GarbageCans"
+            ],
+            "Entries": {
+                "bonghits.Cp_GarbageCan": {
+                    "Items": [
+                        // 10% chance of empty bottle
+                        {
+                            "Id": "{{ModId}}_EmptyGlass",
+                            "Condition": "RANDOM 0.10",
+                            "ItemId": "bonghits.Cp_EmptyGlass",
+                            "StackModifierMode": "Stack",
+                            "StackModifiers": [
+                                {
+                                    "Id": "DefaultMultiplier",
+                                    // 5 Chance to add Multiplier
+                                    "Condition": "RANDOM .05",
+                                    "Modification": "Multiply",
+                                    "Amount": null,
+                                    // Can return 1, 2, or 3
+                                    "RandomAmount": [
+                                        1.0,
+                                        2.0,
+                                        3.0
+                                    ]
+                                }
+                            ],
+                        },
+                        // 5% chance of pink bubble
+                        {
+                            "Id": "{{ModId}}_PinkBubble",
+                            "Condition": "RANDOM 0.05",
+                            "ItemId": "bonghits.Cp_PinkBubble",
+                            "StackModifierMode": "Stack",
+                            "StackModifiers": [
+                                {
+                                    "Id": "DefaultMultiplier",
+                                    // 5 Chance to add Multiplier
+                                    "Condition": "RANDOM .05",
+                                    "Modification": "Multiply",
+                                    "Amount": null,
+                                    // Can return 1, 2, or 3
+                                    "RandomAmount": [
+                                        1.0,
+                                        2.0,
+                                        3.0
+                                    ]
+                                }
+                            ],
+                        },
+                        // 5% chance of single bubble
+                        {
+                            "Id": "{{ModId}}_BubbleSingle",
+                            "Condition": "RANDOM 0.05",
+                            "ItemId": "bonghits.Cp_BubbleSingle",
+                            "StackModifierMode": "Stack",
+                            "StackModifiers": [
+                                {
+                                    "Id": "DefaultMultiplier",
+                                    // 5 Chance to add Multiplier
+                                    "Condition": "RANDOM .05",
+                                    "Modification": "Multiply",
+                                    "Amount": null,
+                                    // Can return 1, 2, or 3
+                                    "RandomAmount": [
+                                        1.0,
+                                        2.0,
+                                        3.0
+                                    ]
+                                }
+                            ],
+                        },
+                        // 5% chance of treasure chest
+                        {
+                            "Id": "{{ModId}}_TreasureChest",
+                            "Condition": "RANDOM 0.05",
+                            "ItemId": "(O)166",
+                            "StackModifierMode": "Stack",
+                            "StackModifiers": [
+                                {
+                                    "Id": "DefaultMultiplier",
+                                    // 5 Chance to add Multiplier
+                                    "Condition": "RANDOM .05",
+                                    "Modification": "Multiply",
+                                    "Amount": null,
+                                    // Can return 1, 2, or 3
+                                    "RandomAmount": [
+                                        1.0,
+                                        2.0,
+                                        3.0
+                                    ]
+                                }
+                            ],
+                        },
+                        // 1% chance of zach's mead
+                        {
+                            "Id": "{{ModId}}_SpecialtyMead",
+                            "Condition": "RANDOM 0.01",
+                            "ItemId": "bonghits.Cp_SpecialtyHoneyMead",
+                            "StackModifierMode": "Stack",
+                            "StackModifiers": [
+                                {
+                                    "Id": "DefaultMultiplier",
+                                    // 5 Chance to add Multiplier
+                                    "Condition": "RANDOM .05",
+                                    "Modification": "Multiply",
+                                    "Amount": null,
+                                    // Can return 1, 2, or 3
+                                    "RandomAmount": [
+                                        1.0,
+                                        2.0,
+                                        3.0
+                                    ]
+                                }
+                            ],
+                        },
+                        // else guaranteed random food or seasonal items
+                        {
+                            "Id": "{{ModId}}_RandomGarbage",
+                            "ItemId": null,
+                            "RandomItemId": [
+                                "(O)167", // Joja Cola
+                                "(O)168", // Trash
+                                "(O)169", // Driftwood
+                                "(O)170", // Broken Glasses
+                                "(O)171", // Broken CD
+                                "(O)196", // Salad
+                                "(O)206", // Pizza
+                                "(O)224", // Spaghetti
+                                "(O)223", // Cookies
+                                "(O)213", // Fish Taco
+                                "(O)211", // Pancakes
+                                "RANDOM_BASE_SEASON_ITEM"
+                            ],
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

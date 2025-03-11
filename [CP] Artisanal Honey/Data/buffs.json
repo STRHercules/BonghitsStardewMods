@@ -186,5 +186,32 @@
                 }
             }
         },
+        //
+        //
+        {
+            "Action": "EditData",
+            "Target": "Data/Buffs",
+            "Entries": {
+                "bonghits.cider.buff": {
+                    "DisplayName": "{{i18n:bonghits.cider.buff.DisplayName}}",
+                    "Description": "{{i18n:bonghits.cider.buff.Description}}",
+                    "IsDebuff": false,
+                    "Duration": 300,
+                    "MaxDuration": 600,
+                    "IconTexture": "TileSheets\\BuffsIcons",
+                    "IconSpriteIndex": 17,
+                    "Effects": {
+                        "AttackMultiplier": 0.0,
+                        "Immunity": 0.0,
+                        "KnockbackMultiplier": 0.0,
+                        "WeaponSpeedMultiplier": 0.0,
+                        "CriticalChanceMultiplier": 0.0,
+                        "CriticalPowerMultiplier": 0.0,
+                        "WeaponPrecisionMultiplier": 0.0
+                    },
+                    "ActionsOnApply": null,
+                }
+            }
+        },
     ]
 }

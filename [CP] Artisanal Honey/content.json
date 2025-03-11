@@ -47,10 +47,14 @@
     ],
     "Changes": [
         {
-            // Load Strings
             "LogName": "Load Meadshop",
             "Action": "Include",
             "FromFile": "Maps/Data/meadshop.json"
+        },
+        {
+            // Cider Load
+            "Action": "Include",
+            "FromFile": "Maps/Data/garbage.json"
         },
         {
             "LogName": "Load shops",
@@ -58,13 +62,11 @@
             "FromFile": "Data/shops.json"
         },
         {
-            // Load Strings
             "LogName": "Load String Tokens",
             "Action": "Include",
             "FromFile": "Data/strings.json"
         },
         {
-            // Spritesheet Load
             "Action": "Load",
             "Target": "bonghits.BearHoneyMead/Objects",
             "FromFile": "assets/bh_mead.png"
@@ -114,11 +116,6 @@
             "Target": "Characters/Natalie",
             "FromFile": "assets/natalie/Bubble_sprite.png"
         },
-        /*{
-            "Action": "Load",
-            "Target": "bonghits.BearHoneyMead/Objects/Natalie/BubbleBeer",
-            "FromFile": "assets/natalie/BubbleBeer.png"
-        },*/
         {
             "Action": "Load",
             "Target": "bonghits.BearHoneyMead/Objects/Natalie/BubbleHealth",
@@ -182,6 +179,12 @@
             "FromFile": "assets/carbonator.png"
         },
         {
+            // Barrel Smoker Spritesheet Load
+            "Action": "Load",
+            "Target": "bonghits.BearHoneyMead/Smoker",
+            "FromFile": "assets/BarrelSmoker.png"
+        },
+        {
             // Beverages Spritesheet Load
             "Action": "Load",
             "Target": "bonghits.BearHoneyMead/Beverages",
@@ -207,6 +210,11 @@
             // Mead Load
             "Action": "Include",
             "FromFile": "Data/mead.json"
+        },
+        {
+            // Cider Load
+            "Action": "Include",
+            "FromFile": "Data/cider.json"
         },
         {
             // Operations Load

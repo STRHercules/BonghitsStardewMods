@@ -109,6 +109,13 @@
                             "ItemId": "(BC){{ModId}}_MeadKeg",
                             "IsRecipe": true,
                             "Price": 25000
+                        },
+                        {
+                            // When the player ships their first aged honey mead, start selling it
+                            "Condition": "PLAYER_SHIPPED_BASIC_ITEM any bonghits.Cp_AgedBearHoneyMead 1 1",
+                            "ItemId": "(BC){{ModId}}_BarrelSmoker",
+                            "IsRecipe": true,
+                            "Price": 50000
                         }
                     ],
                     "PriceModifiers": [

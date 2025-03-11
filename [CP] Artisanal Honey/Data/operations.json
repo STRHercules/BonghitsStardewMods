@@ -2195,8 +2195,9 @@
                 }
             ]
         },
+        
         {
-            // Sparkling Mead + 2 of any 4 Fruit -> Carbonator -> Flavored Sparkling Mead
+            // Stock Mead + 2 of any 3 Fruit -> Carbonator -> Flavored Sparkling Mead
             "Action": "EditData",
             "Target": "Data/Machines",
             "TargetField": [
@@ -2392,6 +2393,74 @@
                     "MinutesUntilReady": 3000 // '3000' 50 Hours - 2.083 Days
                 }
             }
-        }
+        },
+        //
+        //  Flavored Cider in Carbonator
+        //
+        {
+            // Empty Bottle + 5 {{Fruit}} = {{Fruit}} Cider
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC){{ModId}}_Carbonator",
+                "OutputRules"
+            ],
+            "Entries": {
+                "bh.cider_rule": {
+                    "Id": "bh.cider_rule",
+                    "Triggers": [
+                        {
+                            // Requires 1 Empty Bottle to Use on Machine
+                            "Id": "bh.cider_ruleInput",
+                            "RequiredTags": [
+                                "bh.bottle_item"
+                            ],
+                            "RequiredCount": 1
+                        }
+                    ],
+                    "UseFirstValidOutput": false,
+                    "OutputItem": [
+                        {
+                            "ItemId": "(O)bonghits.Cp_StockCider",
+                            "ObjectInternalName": "PRESERVE_ID_1 Cider",
+                            "ObjectDisplayName": "%EXTRA_PRESERVED_DISPLAY_NAME_1 Cider",
+                            "PreserveId": "DROP_IN_PRESERVE_1",
+                            "CopyPrice": true,
+                            "CopyQuality": "{{CopyQualityEnabled}}",
+                            "PriceModifierMode": "Stack",
+                            "StackModifiers": [
+                                {
+                                    // 5% Chance to Double your Cider
+                                    "Id": "RareDouble",
+                                    "Condition": "RANDOM .05",
+                                    "Modification": "Multiply",
+                                    "Amount": 2.0
+                                }
+                            ],
+                            "ModData": {
+                                "selph.ExtraMachineConfig.ExtraPreserveId.1": "DROP_IN_ID_1",
+                            },
+                            "CustomData": {
+                                "selph.ExtraMachineConfig.RequirementTags.1": "category_fruits",
+                                "selph.ExtraMachineConfig.RequirementCount.1": "5",
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.1": "2.5",
+                                "selph.ExtraMachineConfig.RequirementNoDuplicate.1": "true",
+                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 5 of any Fruit",
+                            },
+                            "PriceModifiers": [
+                                {
+                                    // Adds a 20% increase in price
+                                    "Modification": "Multiply",
+                                    "RandomAmount": [
+                                        1.20,
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "MinutesUntilReady": 960 // 16 Hours
+                },
+            },
+        },
     ]
 }

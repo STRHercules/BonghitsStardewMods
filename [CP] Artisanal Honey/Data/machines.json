@@ -23,9 +23,22 @@
             "Action": "EditData",
             "Target": "Data/CraftingRecipes",
             "Entries": {
-                "{{ModId}}_Carbonator": "{{ModId}}_MeadKeg 1 bonghits.Cp_BearHoneyMead 1 bonghits.Cp_BubbleSingle 2 bonghits.Cp_PinkBubble 2/Home/{{ModId}}_Carbonator/true/none/" //1 Mead Keg, 1 Honey Mead, 2 Bubbles, 2 Pink Bubbles
+                "{{ModId}}_Carbonator": "(BC){{ModId}}_MeadKeg 1 (O)bonghits.Cp_BearHoneyMead 1 (O)bonghits.Cp_BubbleSingle 2 (O)bonghits.Cp_PinkBubble 2/Home/{{ModId}}_Carbonator/true/none/" //1 Mead Keg, 1 Honey Mead, 2 Bubbles, 2 Pink Bubbles
             },
             "LogName": "Carbonator Recipe Definition"
+        },
+        //
+        //
+        //  Barrel Smoker Recipe
+        //
+        //
+        {
+            "Action": "EditData",
+            "Target": "Data/CraftingRecipes",
+            "Entries": {
+                "{{ModId}}_BarrelSmoker": "(BC){{ModId}}_Carbonator 1 (O)bonghits.Cp_AgedBearHoneyMead 1 (O)bonghits.Cp_SparklingHoneyMead 1 (O)82 10/Home/{{ModId}}_BarrelSmoker/true/none/" //1 Carbonator, 1 Aged Mead, 1 Sparkling Mead, 10 Fire Quartz
+            },
+            "LogName": "Barrel Smoker Recipe Definition"
         },
         //
         //
@@ -79,6 +92,42 @@
             },
             "LogName": "Carbonator BC definition"
         },
+        //
+        //
+        //  SMoking Barrel Definition
+        //
+        //
+        {
+            "Action": "EditData",
+            "Target": "Data/BigCraftables",
+            "Entries": {
+                "{{ModId}}_BarrelSmoker": {
+                    "Name": "{{ModId}}_BarrelSmoker",
+                    "DisplayName": "{{i18n: BarrelSmoker.name}}",
+                    "Description": "{{i18n: BarrelSmoker.description}}",
+                    "Price": 12500,
+                    "Fragility": 0,
+                    "CanBePlacedOutdoors": true,
+                    "CanBePlacedIndoors": true,
+                    "IsLamp": false,
+                    "Texture": "bonghits.BearHoneyMead/Smoker",
+                    "SpriteIndex": 0,
+                    "ContextTags": null,
+                    "CustomFields": null
+                }
+            },
+            "LogName": "Barrel Smoker BC definition"
+        },
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
+        //
         {
             "Action": "EditData",
             "Target": "Data/Machines",
@@ -297,9 +346,290 @@
                     ],
                     "ExperienceGainOnHarvest": null,
                     "CustomFields": null
-                }
+                },
+                "(BC){{ModId}}_BarrelSmoker": {
+                    "HasInput": false,
+                    "HasOutput": false,
+                    "InteractMethod": null,
+                    "OutputRules": [
+                        // Smoking Cider
+                        {
+                            "Id": "CiderTrigger",
+                            "Triggers": [
+                                {
+                                    "Id": "MeadPlacedInMachine",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O)bonghits.Cp_StockCider",
+                                    "RequiredTags": [
+                                        "!smoked_item"
+                                    ],
+                                    "RequiredCount": 1,
+                                    "Condition": null
+                                },
+                            ],
+                            "UseFirstValidOutput": false,
+                            "OutputItem": [
+                                {
+                                    "CustomData": {
+                                        "selph.ExtraMachineConfig.InheritPreserveId": "true",
+                                    },
+                                    "OutputMethod": null,
+                                    "CopyColor": false,
+                                    "CopyPrice": false,
+                                    "CopyQuality": "{{CopyQualityEnabled}}",
+                                    "PreserveType": null,
+                                    "PreserveId": "DROP_IN_PRESERVE",
+                                    "IncrementMachineParentSheetIndex": 0,
+                                    "PriceModifiers": [
+                                        {
+                                            "Id": "CiderPriceModification",
+                                            "Condition": null,
+                                            "Modification": "Multiply",
+                                            // 10-30% increase on price of your beverage when smoking it
+                                            "RandomAmount": [
+                                                1.10,
+                                                1.15,
+                                                1.20,
+                                                1.25,
+                                                1.30
+                                            ]
+                                        }
+                                    ],
+                                    "PriceModifierMode": "Stack",
+                                    "Condition": null,
+                                    "Id": "DROP_IN",
+                                    "ItemId": "DROP_IN_ID",
+                                    "RandomItemId": null,
+                                    "MaxItems": null,
+                                    "MinStack": 1,
+                                    "MaxStack": 1,
+                                    "Quality": -1,
+                                    "ObjectInternalName": "Smoked PRESERVE_ID PRESERVE_ID_1 Cider",
+                                    "ObjectDisplayName": "Smoked %EXTRA_PRESERVED_DISPLAY_NAME_1 Cider",
+                                    "ObjectColor": null,
+                                    "ToolUpgradeLevel": -1,
+                                    "IsRecipe": false,
+                                    "StackModifiers": [
+                                        {
+                                            "Id": "RareDouble",
+                                            "Condition": "RANDOM .10",
+                                            "Modification": "Multiply",
+                                            "Amount": 2.0
+                                        }
+                                    ],
+                                    "StackModifierMode": "Stack",
+                                    "QualityModifiers": null,
+                                    "QualityModifierMode": "Stack",
+                                    "ModData": {
+                                        "selph.ExtraMachineConfig.ExtraContextTags": "smoked_item",
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.1": "INPUT_EXTRA_ID_1",
+                                    },
+                                    "PerItemCondition": null
+                                }
+                            ],
+                            "DaysUntilReady": 2,
+                            "InvalidCountMessage": null,
+                            "RecalculateOnCollect": false
+                        },
+                        // Smoking Stock Mead
+                        {
+                            "Id": "MeadTrigger",
+                            "Triggers": [
+                                {
+                                    "Id": "RegMeadPlacedInMachine",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O)bonghits.Cp_HoneyMead",
+                                    "RequiredTags": [
+                                        "!smoked_item"
+                                    ],
+                                    "RequiredCount": 1,
+                                    "Condition": null
+                                },
+                            ],
+                            "UseFirstValidOutput": false,
+                            "OutputItem": [
+                                {
+                                    "OutputMethod": null,
+                                    "CopyColor": false,
+                                    "CopyPrice": false,
+                                    "CopyQuality": "{{CopyQualityEnabled}}",
+                                    "PreserveType": null,
+                                    "PreserveId": null,
+                                    "IncrementMachineParentSheetIndex": 0,
+                                    "PriceModifiers": [
+                                        {
+                                            "Id": "RegMeadPriceModification",
+                                            "Condition": null,
+                                            "Modification": "Multiply",
+                                            // 10-30% increase on price of your beverage when smoking it
+                                            "RandomAmount": [
+                                                1.10,
+                                                1.15,
+                                                1.20,
+                                                1.25,
+                                                1.30
+                                            ]
+                                        }
+                                    ],
+                                    "PriceModifierMode": "Stack",
+                                    "Condition": null,
+                                    "Id": "DROP_IN",
+                                    "ItemId": "DROP_IN_ID",
+                                    "RandomItemId": null,
+                                    "MaxItems": null,
+                                    "MinStack": 1,
+                                    "MaxStack": 1,
+                                    "Quality": -1,
+                                    "ObjectInternalName": "Smoked {0}",
+                                    "ObjectDisplayName": "Smoked %DISPLAY_NAME",
+                                    "ObjectColor": null,
+                                    "ToolUpgradeLevel": -1,
+                                    "IsRecipe": false,
+                                    "StackModifiers": [
+                                        {
+                                            "Id": "RareDouble",
+                                            "Condition": "RANDOM .10",
+                                            "Modification": "Multiply",
+                                            "Amount": 2.0
+                                        }
+                                    ],
+                                    "StackModifierMode": "Stack",
+                                    "QualityModifiers": null,
+                                    "QualityModifierMode": "Stack",
+                                    "ModData": {
+                                        "selph.ExtraMachineConfig.ExtraContextTags": "smoked_item",
+                                    },
+                                    "PerItemCondition": null
+                                }
+                            ],
+                            "DaysUntilReady": 2,
+                            "InvalidCountMessage": null,
+                            "RecalculateOnCollect": false
+                        },
+                        // Smoking Multi-Flavor Aged Mead
+                        {
+                            "Id": "AgedMeadTrigger",
+                            "Triggers": [
+                                {
+                                    "Id": "AgedMeadPlacedInMachine",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
+                                    "RequiredTags": [
+                                        "!smoked_item"
+                                    ],
+                                    "RequiredCount": 1,
+                                    "Condition": null
+                                },
+                            ],
+                            "UseFirstValidOutput": false,
+                            "OutputItem": [
+                                {
+                                    "CustomData": {
+                                        "selph.ExtraMachineConfig.InheritPreserveId": "true",
+                                    },
+                                    "OutputMethod": null,
+                                    "CopyColor": true,
+                                    "CopyPrice": false,
+                                    "CopyQuality": "{{CopyQualityEnabled}}",
+                                    "PreserveType": null,
+                                    "PreserveId": "DROP_IN_PRESERVE",
+                                    "IncrementMachineParentSheetIndex": 0,
+                                    "PriceModifiers": [
+                                        {
+                                            "Id": "AgedMeadPriceModification",
+                                            "Condition": null,
+                                            "Modification": "Multiply",
+                                            // 10-30% increase on price of your beverage when smoking it
+                                            "RandomAmount": [
+                                                1.10,
+                                                1.15,
+                                                1.20,
+                                                1.25,
+                                                1.30
+                                            ]
+                                        }
+                                    ],
+                                    "PriceModifierMode": "Stack",
+                                    "Condition": null,
+                                    "Id": "DROP_IN",
+                                    "ItemId": "DROP_IN_ID",
+                                    "RandomItemId": null,
+                                    "MaxItems": null,
+                                    "MinStack": 1,
+                                    "MaxStack": 1,
+                                    "Quality": -1,
+                                    "ObjectInternalName": "Smoked {0}",
+                                    "ObjectDisplayName": "Smoked Aged %EXTRA_PRESERVED_DISPLAY_NAME_1, %EXTRA_PRESERVED_DISPLAY_NAME_2 and %EXTRA_PRESERVED_DISPLAY_NAME_3 Honey Mead",
+                                    "ObjectColor": null,
+                                    "ToolUpgradeLevel": -1,
+                                    "IsRecipe": false,
+                                    "StackModifiers": [
+                                        {
+                                            "Id": "RareDouble",
+                                            "Condition": "RANDOM .10",
+                                            "Modification": "Multiply",
+                                            "Amount": 2.0
+                                        }
+                                    ],
+                                    "StackModifierMode": "Stack",
+                                    "QualityModifiers": null,
+                                    "QualityModifierMode": "Stack",
+                                    "ModData": {
+                                        "selph.ExtraMachineConfig.ExtraContextTags": "smoked_item",
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.1": "INPUT_EXTRA_ID_1",
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.2": "INPUT_EXTRA_ID_2",
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.3": "INPUT_EXTRA_ID_3",
+                                    },
+                                    "PerItemCondition": null
+                                }
+                            ],
+                            "DaysUntilReady": 2,
+                            "InvalidCountMessage": null,
+                            "RecalculateOnCollect": false
+                        }
+                    ],
+                    "AdditionalConsumedItems": [
+                        {
+                            "ItemId": "(O)82",
+                            "RequiredCount": 1,
+                            "InvalidCountMessage": "{{i18n:message.invalidCount4}}"
+                        }
+                    ],
+                    "ReadyTimeModifierMode": "Stack",
+                    "LoadEffects": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "Sounds": [
+                                {
+                                    "Id": "furnace",
+                                    "Delay": 0
+                                }
+                            ],
+                            "Interval": 100,
+                            "Frames": null,
+                            "ShakeDuration": -1,
+                            "TemporarySprites": null
+                        }
+                    ],
+                    "WorkingEffects": null,
+                    "WorkingEffectChance": 0.33,
+                    "AllowLoadWhenFull": false,
+                    "WobbleWhileWorking": true,
+                    "LightWhileWorking": null,
+                    "ShowNextIndexWhileWorking": false,
+                    "ShowNextIndexWhenReady": false,
+                    "AllowFairyDust": false,
+                    "IsIncubator": false,
+                    "OnlyCompleteOvernight": false,
+                    "ClearContentsOvernightCondition": null,
+                    "StatsToIncrementWhenLoaded": null,
+                    "StatsToIncrementWhenHarvested": null,
+                    "ExperienceGainOnHarvest": null,
+                    "CustomFields": null
+                },
             },
-            "LogName": "Mead Keg and Carbonator machine definitions"
+            "LogName": "Custom Machine Definitions"
         }
     ]
 }
