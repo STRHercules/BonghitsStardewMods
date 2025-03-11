@@ -1,31 +1,31 @@
 # Artisanal Honey Mead
 ### General
-* Potentially remove ability to flavor mead until final stage of process. Stage 3 currently undeveloped. This stage could potentially take aged mead and sparkling mead - combine them with fruit into a mead spritzer? [*Strawberry, Grape and Melon Mead Spritzer]*
+* ~~Potentially remove ability to flavor mead until final stage of process. Stage 3 currently undeveloped. This stage could potentially take aged mead and sparkling mead - combine them with fruit into a mead spritzer? [*Strawberry, Grape and Melon Mead Spritzer]*~~
 
-* For stage three, simply ignore flavor definition and create *[Fruity Mead Spritzer]*? This option is kinda lame considering previous stages.
+* ~~For stage three, simply ignore flavor definition and create *[Fruity Mead Spritzer]*? This option is kinda lame considering previous stages.~~
 
 * Translation support 
 
 
 ### Carbonation
-* Use Particle Framework to add bubbles to carbonator machine?
+* ~~Carbonator requires Bubbles to craft. Currently sold from Natalie, make bubbles a byproduct of brewing mead.~~
 
-* Potentially use carbonation machine to make other beverages such as cider from apples
+* ~~Potentially use carbonation machine to make other beverages such as cider from apples~~
 
-* Carbonation machine - create sparkling mead. Additional second step in the mead refining process. Does not replace aging, works in tandem.
+* ~~Carbonation machine - create sparkling mead. Additional second step in the mead refining process. Does not replace aging, works in tandem.~~
 
-* Currently using placeholder art for sparkling mead object
+* ~~Currently using placeholder art for sparkling mead object~~
 
 * Refine differneces between aged and sparkling mead. Craft time, pricing, etc
 
-* Expand Carbonation to other vanilla/modded items. Convert vanilla wine into champagne?
+* E~~xpand Carbonation to other vanilla/modded items. Convert vanilla wine into champagne?~~
 
 * Create meads only craftable at certain points. [Seasons, Time, Etc](I think this is possible)
 
-### Barrel Aging [Smoking]
-* Create Barrel Sprite
+~~### Barrel Aging [Smoking]~~
+* ~~Create Barrel Sprite~~
 
-* Potential Stage Three - Take your stage 2 Flavored Mead (Aged/Sparkling) and further age it in a smoked oaken barrel - this will add the 'smoked' effect to the sprite similar to smoked fish. Attempt the copy the cask operation? if not possible, use keg/jar operation and just make it take a long ass time
+* ~~Potential Stage Three - Take your stage 2 Flavored Mead (Aged/Sparkling) and further age it in a smoked oaken barrel - this will add the 'smoked' effect to the sprite similar to smoked fish. Attempt the copy the cask operation? if not possible, use keg/jar operation and just make it take a long ass time~~
 
 ### Filtering
 * Add new machine, filter/strainer that will filter particulates left behind from fruit.
@@ -41,31 +41,32 @@
 * Filtered mead can be called for recipes, gifts etc
 
 ### NPCs
-* Add mead definition to some NPC's liked items
+* Add mead/cider definition to some NPC's liked items
 
 * Add random dialogue to some NPCs
 
-* Create NPC for Zach (Sprite/Portrait)
+* ~~Create NPC for Zach (Sprite/Portrait)~~
 
-* Create NPC for Natalie (Sprite/Portrait)
+* ~~Create NPC for Natalie (Sprite/Portrait)~~
 
-* Mead Vendors Zach and Nat will sell specialized mead recipes, machines, and ingredients to refine your mead
+* ~~Mead Vendors Zach and Nat will sell specialized mead recipes, machines, and ingredients to refine your mead~~
 
 
 ### Shops
-* Create Mead Shop - Zach
-* Create Bubbly Vendor - Nat
+* ~~Create Mead Shop - Zach~~
+* ~~Create Bubbly Vendor - Nat~~
 
 
 ### Specialty Beverages
 * Create 'Legendary' meads players can brew from legendary materials?
+* ~~Create Specialty Meads/Drinks for Natalie and/or Zach~~
 
 
 ### Map
-* Create location entrance/warp for custom shops [Zach, Nat]
-* Create location exterior?
-* If has exterior, create interior shop area
-* Duplicate for each vendor? [Zach, Nat] | Create singular mead shop
+* ~~Create location entrance/warp for custom shops [Zach, Nat]~~
+* ~~Create location exterior?~~
+* ~~If has exterior, create interior shop area~~
+* ~~Duplicate for each vendor? [Zach, Nat] | Create singular mead shop~~
 
 
 ### Cooking Skill Integration
@@ -80,13 +81,12 @@
 
 # Bonghits' Weapon and Magic Expansion
 ### General
-* Tinker with the particle framework - add them to a weapon? Use small sprites for twinkling or fire effect?
 
 * Add custom trinkets?
 
 * Figure out what the hell the determination for drop rates/locations are
 
-* Translation support
+* ~~Translation support~~
 
 ### Advanced Melee Framework
 * Finish AMF integration - decide which weapons will recieve special treatment
@@ -97,7 +97,7 @@
 
 * laser beam ala Link? (Master sword)
 
-* Wands?
+* ~~Wands?~~
 
 ### Weapons
 * Create additional magical weapons using AMF - Lightning staff, etc
@@ -105,15 +105,15 @@
 * have weapon with empty/small sprite for magic projectile?
 
 ### Armor
-* Sword & Sorcery for East Scarp has armor slots - make items for that? Particle integration?
+* Sword & Sorcery for East Scarp has armor slots - make items for that? ~~Particle integration?~~
 
 ### Shields
 * Ive seen mods with shields for use with AMF, look into this to see if I can implement shields
 
-### Potions
-* Add various potions - need to learn how this would work. Probably just foodItems with buffs
+### ~~Potions~~
+* ~~Add various potions - need to learn how this would work. Probably just foodItems with buffs~~
 
-* Create unique buffs for potions
+* ~~Create unique buffs for potions~~
 
 ### Crafting
 * Add additional crafting recipes for weapons - basic and legendary?
@@ -128,3 +128,17 @@
 
 * Create custom projectiles for Slingshot-like weapon - crossbow?
 
+# Arborist's Catalogue
+### General
+* Add SVE Trees
+
+* Add other custom trees
+
+* Earthy support
+
+# High-Tech Backpacks
+### General
+
+* Add support for [Item Bags](https://www.nexusmods.com/stardewvalley/mods/5382)?
+
+* Maybe make an animated RGB bag for [Item Bags](https://www.nexusmods.com/stardewvalley/mods/5382)?
