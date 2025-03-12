@@ -6,6 +6,8 @@
 
 * Translation support 
 
+* ~~Add mail system~~
+
 
 ### Carbonation
 * ~~Carbonator requires Bubbles to craft. Currently sold from Natalie, make bubbles a byproduct of brewing mead.~~
@@ -41,9 +43,9 @@
 * Filtered mead can be called for recipes, gifts etc
 
 ### NPCs
-* Add mead/cider definition to some NPC's liked items
+* ~~Add mead/cider definition to some NPC's liked items~~
 
-* Add random dialogue to some NPCs
+* Add random dialogue to some NPCs - mail?
 
 * ~~Create NPC for Zach (Sprite/Portrait)~~
 
