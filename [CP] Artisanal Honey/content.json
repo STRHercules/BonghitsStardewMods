@@ -57,6 +57,11 @@
             "FromFile": "Data/mail.json"
         },
         {
+            "LogName": "Load Mail Data",
+            "Action": "Include",
+            "FromFile": "Data/gifttastes.json"
+        },
+        {
             // Cider Load
             "Action": "Include",
             "FromFile": "Maps/Data/garbage.json"
