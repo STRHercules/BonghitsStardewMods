@@ -46,36 +46,17 @@
         }
     ],
     "Changes": [
+        // Load Data JSON Files
         {
-            "LogName": "Load Meadshop",
+            "LogName": "Load Data JSON Files",
             "Action": "Include",
-            "FromFile": "Maps/Data/meadshop.json"
+            "FromFile": "Maps/Data/meadshop.json, Data/mail.json, Data/gifttastes.json, Maps/Data/garbage.json, Data/shops.json, Data/strings.json, Data/machines.json, Data/buffs.json, Data/mead.json, Data/cider.json, Data/operations.json, Data/characters.json"
         },
-        {
-            "LogName": "Load Mail Data",
-            "Action": "Include",
-            "FromFile": "Data/mail.json"
-        },
-        {
-            "LogName": "Load Mail Data",
-            "Action": "Include",
-            "FromFile": "Data/gifttastes.json"
-        },
-        {
-            // Cider Load
-            "Action": "Include",
-            "FromFile": "Maps/Data/garbage.json"
-        },
-        {
-            "LogName": "Load shops",
-            "Action": "Include",
-            "FromFile": "Data/shops.json"
-        },
-        {
-            "LogName": "Load String Tokens",
-            "Action": "Include",
-            "FromFile": "Data/strings.json"
-        },
+        //
+        //
+        //  Asset Loading
+        //
+        //
         {
             "Action": "Load",
             "Target": "bonghits.BearHoneyMead/Objects",
@@ -206,35 +187,5 @@
             "Target": "bonghits.BearHoneyMead/SparklingMead",
             "FromFile": "assets/sparklingmead.png"
         },
-        {
-            // Machine Load
-            "Action": "Include",
-            "FromFile": "Data/machines.json"
-        },
-        {
-            // Buffs Load
-            "Action": "Include",
-            "FromFile": "Data/buffs.json"
-        },
-        {
-            // Mead Load
-            "Action": "Include",
-            "FromFile": "Data/mead.json"
-        },
-        {
-            // Cider Load
-            "Action": "Include",
-            "FromFile": "Data/cider.json"
-        },
-        {
-            // Operations Load
-            "Action": "Include",
-            "FromFile": "Data/operations.json"
-        },
-        {
-            // Character Load
-            "Action": "Include",
-            "FromFile": "Data/characters.json"
-        }
     ]
 }
