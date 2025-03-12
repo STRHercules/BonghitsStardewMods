@@ -36,7 +36,7 @@
                     "Trigger": "DayEnding",
                     "Condition": "PLAYER_SHIPPED_BASIC_ITEM Any (O)bonghits.Cp_BearHoneyMead 1 1",
                     "Actions": [
-                        "AddMail Current Mail.ShippedMead"
+                        "AddMail Current Mail.ShippedMead now"
                     ]
                 },
                 "{{ModId}}_OnShipAgedMead": {
@@ -44,7 +44,7 @@
                     "Trigger": "DayEnding",
                     "Condition": "PLAYER_SHIPPED_BASIC_ITEM Any (O)bonghits.Cp_AgedBearHoneyMead 1 1",
                     "Actions": [
-                        "AddMail Current Mail.ShippedAgedMead"
+                        "AddMail Current Mail.ShippedAgedMead now"
                     ]
                 },
                 "{{ModId}}_OnShipAgedMead.Nat": {
@@ -52,7 +52,7 @@
                     "Trigger": "DayEnding",
                     "Condition": "PLAYER_SHIPPED_BASIC_ITEM Any (O)bonghits.Cp_AgedBearHoneyMead 1 1",
                     "Actions": [
-                        "AddMail Current Mail.NatMeadShipped"
+                        "AddMail Current Mail.NatMeadShipped now"
                     ]
                 },
                 "{{ModId}}_Mine10Reached": {
