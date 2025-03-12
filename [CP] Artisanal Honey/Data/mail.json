@@ -1,0 +1,93 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/Mail",
+            "Entries": {
+                "Mail.MeadKegAcquire": "{{i18n:Mail1}}",
+                "Mail.ShippedMead": "{{i18n:Mail2}}",
+                "Mail.ShippedAgedMead": "{{i18n:Mail3}}",
+                "spring_10": "{{i18n:Mail4}}",
+                "Mail.MineLevel10Reached": "{{i18n:Mail5}}",
+                "Mail.MineLevel20Reached": "{{i18n:Mail6}}",
+                "spring_12": "{{i18n:Mail7}}",
+                "spring_13": "{{i18n:Mail8}}",
+                "spring_14": "{{i18n:Mail9}}",
+                "Mail.NatMeadShipped": "{{i18n:Mail10}}",
+                "spring_20": "{{i18n:Mail11}}",
+                "Mail.DesertUnlocked": "{{i18n:Mail12}}",
+                "Mail.IslandUnlocked": "{{i18n:Mail13}}"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModId}}_OnKegAcquire": {
+                    "Id": "{{ModId}}_OnKegAcquire",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_CRAFTING_RECIPE Current {{ModId}}_MeadKeg",
+                    "Actions": [
+                        "AddMail Current Mail.MeadKegAcquire"
+                    ]
+                },
+                "{{ModId}}_OnShipMead": {
+                    "Id": "{{ModId}}_OnMeadShip",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_SHIPPED_BASIC_ITEM Any (O)bonghits.Cp_BearHoneyMead 1 1",
+                    "Actions": [
+                        "AddMail Current Mail.ShippedMead"
+                    ]
+                },
+                "{{ModId}}_OnShipAgedMead": {
+                    "Id": "{{ModId}}_OnAgedMeadShip",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_SHIPPED_BASIC_ITEM Any (O)bonghits.Cp_AgedBearHoneyMead 1 1",
+                    "Actions": [
+                        "AddMail Current Mail.ShippedAgedMead"
+                    ]
+                },
+                "{{ModId}}_OnShipAgedMead.Nat": {
+                    "Id": "{{ModId}}_OnAgedMeadShip.Nat",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_SHIPPED_BASIC_ITEM Any (O)bonghits.Cp_AgedBearHoneyMead 1 1",
+                    "Actions": [
+                        "AddMail Current Mail.NatMeadShipped"
+                    ]
+                },
+                "{{ModId}}_Mine10Reached": {
+                    "Id": "{{ModId}}_Mine10Reached",
+                    "Trigger": "DayEnding",
+                    "Condition": "MINE_LOWEST_LEVEL_REACHED 10 10",
+                    "Actions": [
+                        "AddMail Current Mail.MineLevel10Reached"
+                    ]
+                },
+                "{{ModId}}_Mine20Reached": {
+                    "Id": "{{ModId}}_Mine20Reached",
+                    "Trigger": "DayEnding",
+                    "Condition": "MINE_LOWEST_LEVEL_REACHED 20 20",
+                    "Actions": [
+                        "AddMail Current Mail.MineLevel20Reached"
+                    ]
+                },
+                "{{ModId}}_IslandVisited": {
+                    "Id": "{{ModId}}_IslandVisited",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_VISITED_LOCATION Any IslandSouth",
+                    "Actions": [
+                        "AddMail Current Mail.IslandUnlocked"
+                    ]
+                },
+                "{{ModId}}_DesertVisited": {
+                    "Id": "{{ModId}}_Desert Visited",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_VISITED_LOCATION Any Desert",
+                    "Actions": [
+                        "AddMail Current Mail.DesertUnlocked"
+                    ]
+                }
+            }
+        }
+    ]
+}

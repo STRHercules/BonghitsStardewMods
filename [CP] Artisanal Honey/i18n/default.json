@@ -20,14 +20,27 @@
     "bonghits.bubblemead.buff.Description": "So many bubbles! Do I feel lighter?",
     "bonghits.bubble.health.DisplayName": "Bubbly Mead Regeneration",
     "bonghits.bubble.health.Description": "Healing from that delicious bubble mead!",
-
-
     "bonghits.mead.cider.DisplayName": "Drank some Cider",
     "bonghits.mead.cider.Description": "Mmmm.. tastes so festive!",
     "bonghits.mead.emptybottle.DisplayName": "Empty Bottle",
     "bonghits.mead.emptybottle.Description": "Used to bottle meads and ciders.",
-
     "message.invalidCount4": "Needs one Fire Quartz",
+    "BarrelSmoker.name": "Barrel Smoker",
+    "BarrelSmoker.description": "Used to refine your meads and ciders to increase their flavor and add a dash of smoke. Increases value of input.",
+    // Mail Data
+    "Mail1": "Well hey there, @! ^I heard you recently started farming at your grandpa's old place. Great to hear you are following in his footsteps! He often visited my Saloon and provided me with some of the highest quality mead I've ever seen. ^Did you know that you can take the honey from your Bee House and craft artisanal mead? I hear you learned how to craft the Artisanal Mead Keg, I helped pioneer its' conception! Glad to see it's being put to good use! ^Brewing mead can be a really lucrative hobby, you can eventually age it with fruit, brew ciders, and even create sparkling versions of mead! ^Tell you what, you put some mead into your shipping bin, I'll swing by after the saloon closes and pick it up, and make it worth your while! ^ Zach [#]LearnedMeadKeg",
+    "Mail2": "@,^ That was some impressive Mead I picked up last night, my patrons went crazy for it! ^They loved it so much they requested another order, I've never had this much positive feedback from a mead before! If you were able to produce that quality mead you should definitely try aging some! ^In order to age your mead, take it over to a preserving Jar and combine that with 2 of any 3 fruits and viola, you'll have some deliciously flavored mead in no time! Same deal as before @, any mead you leave in your shipping bin I will happily come collect. I can't wait to see what kind of aged mead you brew up! ^Speaking of, since you have showed such an interest in brewing mead I updated my stock in my Saloon, come check it out sometime! ^ Zach [#]ShippedMead",
+    "Mail3": "@!,^Wow! That aged mead was perfection! Absolutely amazing! I don't think the bottom of the bottle ever even touched the bar haha! ^The highest quality meads are often full of fruity notes, but the best meads I've ever tasted have been smoke aged in a barrel. I can pay even more per bottle once they have been aged in a barrel smoker. ^Speaking of the Barrel Smoker, I recently found some old blueprints for ones your grandpa used back in the day, but these are antique and I can't just let them go. Come down to my shop and we can work out a good price on 'em! [#]ShippedAgedMead",
+    "Mail4": "@, ^Did you know I sell my very own specialty mead every Friday? I have a limited stock so I can't sell it all week, it's too good! Come down to the Saloon friday night and get yourself a pint! It's right by Marnie's you can't miss it! ^ Zach [#]SpecialtyMeadReminder",
+    "Mail5": "@, ^We heard you have made a little progress down in those mines, it can get pretty rough down there. We recommend taking some high quality healing mead down with you! It's brewed with medicinal ingredients and should help you out quite a bit down there! ^Swing by our Saloon sometime, Nat and I recently got shipments of some from a distant farmer who claims they pack quite a punch. If they are good we'll keep a consistent stock of them for you! ^ Zach and Nat [#]Level10MineReached",
+    "Mail6": "@, ^Wow, you made it so much farther into the mines than I did! Was it scary? Zach always comes with me to keep me safe! Who had your back out there? I made a special potion for you to take next time to keep you safe! Starting today, I'm offering new and improved Bubble Health Meads! Come grab a bubbly health potion, so you can stay safe and sparkle through the mines! ^ Nat [#]Level20MineReached",
+    "Mail7": "@, ^Just a bubbly reminder that every Friday I'm gonna be selling my exclusive Bubble Mead! This delicious treat was brewed by yours truly! Shocked? Me neither! So I'll see you Friday, right?! Yay! ^ Nat [#]FridayStockReminder",
+    "Mail8": "@, ^Rosé weekend is here! The perfect weekend starts with a drink in hand! Let it be my Bubbly Rosé Beer! ^Every saturday Nat's Bubble Bar is going to be offering delicious Bubbly Rose Beer! ^ Nat [#]SaturdayStockReminder",
+    "Mail9": "@, ^Your weekend isn't done until you've had Rosé both days - only at Nat's Bubble Bar! Sunday I will be serving my specialty Bubbly Rose Mead, it tastes so delicious and the rose bubbles taste like fireworks in spring!  ^ Nat [#]SundayStockReminder",
+    "Mail10": "@, ^Wow! Zach and I are absolutely gushing to everyone we know about your aged mead, its so close to perfect the only thing i can possibly imagine that could make it better would be to add bubbles of course! ^Swing by my Bubble Bar sometime I have a little something you may be interested in if you're feeling bubbly! ^ Nat [#]Nat_MeadShipped",
+    "Mail11": "@, ^Just wanted to let you know that next season I will be completely changing my stock. I typically try to keep with the seasons so everything I sell is nice and ripe, bad reviews can kill a small business like ours! What helps the most though is support from our local farmers! Swing by sometime and take some of this fruit off my hands, I know you are much more suited for mead production than we our here in our little shop! ^ Zach and Nat [#]SeasonalFruitReminder",
+    "Mail12": "@, ^Thank you so much for repairing that bus, I was able to take Nat back to the desert, how was it? I love the heat myself. So much so I decided to take Natlie to see the cactus fruit, she loved them! ^We decided to bring a whole haul of them back with us, so we are proud to announce we now offer Cactus Fruit in our shop! Just come see me and we can work out a price on 'em!  ^ Zach [#]VistedDesert",
+    "Mail13": "@, ^Hey 'mon! Enjoying the island life? Nat and I spent a while there last year and fell in love with the scenery! The weather is always so gorgeous over on Ginger Island ^Now that I'm writing this to you come to think of it I believe Nat recently put an order through for some Coconuts for me, what a doll! Next time you swing by I'll probably have some out for you to snag if you want! Take care @! ^ Zach [#]VistedIsland",
     // Zach Shop Dialogue
     "Mead_Shop1": "Hey there! I bet you've never tasted Mead as good as mine!",
     "Mead_Shop2": "Welcome! Wanna learn something? Perhaps buy some recipes or materials?",
@@ -41,7 +54,7 @@
     "Mead_Shop10": "Hey there! Looking for a taste of something new? My mead is brewed with adventure in mind!",
     "Mead_Shop11": "Greetings, friend! Ready to explore the world of mead? I've got brews that will take you on a journey!",
     "Mead_Shop12": "Hello there! Ever tried a mead that's as unique as your adventures? Come taste the difference!",
-    // Natalie Shop Dialogue
+    // Nat Shop Dialogue
     "BubbleMeadShop1": "Hi! Welcome to our little shop!",
     "BubbleMeadShop2": "I made the bubbles myself!",
     "BubbleMeadShop3": "Hiya! Ready to pop open a sparkling adventure with my fizzy mead brews? Let's dive in!",
@@ -56,5 +69,5 @@
     "BubbleMeadShop12": "Hello there! Ever tried a mead that's as bubbly and cute as you? Come taste the sparkling difference!",
     // NPC Names
     "bonghits.Zachary.DisplayName": "Zachary",
-    "bonghits.Natalie.DisplayName": "Natalie"
+    "bonghits.Nat.DisplayName": "Nat"
 }

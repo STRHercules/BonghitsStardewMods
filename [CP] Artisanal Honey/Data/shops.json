@@ -115,7 +115,7 @@
                             "Condition": "PLAYER_SHIPPED_BASIC_ITEM any bonghits.Cp_AgedBearHoneyMead 1 1",
                             "ItemId": "(BC){{ModId}}_BarrelSmoker",
                             "IsRecipe": true,
-                            "Price": 50000
+                            "Price": 25000
                         }
                     ],
                     "PriceModifiers": [
