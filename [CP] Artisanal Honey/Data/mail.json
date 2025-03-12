@@ -16,7 +16,9 @@
                 "Mail.NatMeadShipped": "{{i18n:Mail10}}",
                 "spring_20": "{{i18n:Mail11}}",
                 "Mail.DesertUnlocked": "{{i18n:Mail12}}",
-                "Mail.IslandUnlocked": "{{i18n:Mail13}}"
+                "Mail.IslandUnlocked": "{{i18n:Mail13}}",
+                "Mail.BearHoneyAcquired": "{{i18n:MailSVE}}",
+                "Mail.CiderSuggestion": "{{i18n:Mail14}}"
             }
         },
         {
@@ -80,11 +82,30 @@
                     ]
                 },
                 "{{ModId}}_DesertVisited": {
-                    "Id": "{{ModId}}_Desert Visited",
+                    "Id": "{{ModId}}_DesertVisited",
                     "Trigger": "DayEnding",
                     "Condition": "PLAYER_VISITED_LOCATION Any Desert",
                     "Actions": [
                         "AddMail Current Mail.DesertUnlocked"
+                    ]
+                },
+                "{{ModId}}_BearHoneyAcquired": {
+                    "When": {
+                        "HasMod": "FlashShifter.StardewValleyExpandedCP"
+                    },
+                    "Id": "{{ModId}}_BearHoneyAcquired",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_ITEM Any (O)FlashShifter.StardewValleyExpandedCP_Honey_Jar 1 1",
+                    "Actions": [
+                        "AddMail Current Mail.BearHoneyAcquired tomorrow"
+                    ]
+                },
+                "{{ModId}}_CiderSuggestion": {
+                    "Id": "{{ModId}}_CiderSuggestion",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_ITEM Any (BC){{ModId}}_Carbonator 1 1",
+                    "Actions": [
+                        "AddMail Current Mail.CiderSuggestion tomorrow"
                     ]
                 }
             }

@@ -9,10 +9,13 @@
                 //
                 // Create Original Honey Mead Item
                 //
-                "bonghits.Cp_BearHoneyMead": {
+                "bonghits.Cp_SVEBearHoneyMead": {
+                    "When": {
+                        "HasMod": "FlashShifter.StardewValleyExpandedCP"
+                    },
                     "Name": "bonghits.Cp_HoneyMead",
                     "DisplayName": "Bear Honey Mead",
-                    "Description": "A handcrafted honey mead with a rich, golden hue and a sweet, floral aroma. Perfect for a relaxing evening.",
+                    "Description": "An artisanal mead crafted to perfection using honey harvested by happy Bears.",
                     "Type": "ArtisanGoods",
                     "Edibility": 100,
                     "IsDrink": true,
@@ -28,9 +31,46 @@
                                 "FarmingLevel": 0,
                                 "FishingLevel": 0,
                                 "MiningLevel": 0,
-                                "LuckLevel": 3,
+                                "LuckLevel": 4,
                                 "ForagingLevel": 2,
                                 "MaxStamina": 50,
+                                "MagneticRadius": 0,
+                                "Speed": 2,
+                                "Defense": 1,
+                                "Attack": 2
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "color_gold",
+                        "bh.stock_mead",
+                        "bh.stock_mead_SVE",
+                        "alcohol_item",
+                        "drink_item"
+                    ]
+                },
+                "bonghits.Cp_BearHoneyMead": {
+                    "Name": "bonghits.Cp_HoneyMead",
+                    "DisplayName": "Honey Mead",
+                    "Description": "A handcrafted honey mead with a rich, golden hue and a sweet, floral aroma. Perfect for a relaxing evening.",
+                    "Type": "ArtisanGoods",
+                    "Edibility": 100,
+                    "IsDrink": true,
+                    "Category": -26,
+                    "Price": 950,
+                    "SpriteIndex": 0,
+                    "Texture": "bonghits.BearHoneyMead/Objects",
+                    "Buffs": [
+                        {
+                            "BuffId": "bonghits.mead_tipsy",
+                            "Duration": 750, // 12.5 In-Game Hours
+                            "CustomAttributes": {
+                                "FarmingLevel": 0,
+                                "FishingLevel": 0,
+                                "MiningLevel": 0,
+                                "LuckLevel": 2,
+                                "ForagingLevel": 2,
+                                "MaxStamina": 25,
                                 "MagneticRadius": 0,
                                 "Speed": 2,
                                 "Defense": 0,

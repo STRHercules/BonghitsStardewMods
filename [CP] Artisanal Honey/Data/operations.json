@@ -92,8 +92,8 @@
                     ],
                     "OutputItem": [
                         {
-                            "Id": "bonghits.Cp_BearHoneyMead",
-                            "ItemId": "bonghits.Cp_BearHoneyMead",
+                            "Id": "bonghits.Cp_SVEBearHoneyMead",
+                            "ItemId": "bonghits.Cp_SVEBearHoneyMead",
                             "CopyQuality": "{{CopyQualityEnabled}}",
                             "PriceModifierMode": "Stack",
                             // 2% Chance to Double
@@ -156,8 +156,8 @@
                     ],
                     "OutputItem": [
                         {
-                            "Id": "bonghits.Cp_BearHoneyMead",
-                            "ItemId": "bonghits.Cp_BearHoneyMead",
+                            "Id": "bonghits.Cp_SVEBearHoneyMead",
+                            "ItemId": "bonghits.Cp_SVEBearHoneyMead",
                             "CopyQuality": "{{CopyQualityEnabled}}",
                             "PriceModifierMode": "Stack",
                             // 5% Chance to double
@@ -204,8 +204,8 @@
                     ],
                     "OutputItem": [
                         {
-                            "Id": "bonghits.Cp_BearHoneyMead",
-                            "ItemId": "bonghits.Cp_BearHoneyMead",
+                            "Id": "bonghits.Cp_SVEBearHoneyMead",
+                            "ItemId": "bonghits.Cp_SVEBearHoneyMead",
                             "CopyQuality": "{{CopyQualityEnabled}}",
                             "PriceModifierMode": "Stack",
                             // 10% Chance to Double
@@ -252,8 +252,8 @@
                     ],
                     "OutputItem": [
                         {
-                            "Id": "bonghits.Cp_BearHoneyMead",
-                            "ItemId": "bonghits.Cp_BearHoneyMead",
+                            "Id": "bonghits.Cp_SVEBearHoneyMead",
+                            "ItemId": "bonghits.Cp_SVEBearHoneyMead",
                             "CopyQuality": "{{CopyQualityEnabled}}",
                             "PriceModifierMode": "Stack",
                             // 12% Chance to Double
@@ -300,8 +300,8 @@
                     ],
                     "OutputItem": [
                         {
-                            "Id": "bonghits.Cp_BearHoneyMead",
-                            "ItemId": "bonghits.Cp_BearHoneyMead",
+                            "Id": "bonghits.Cp_SVEBearHoneyMead",
+                            "ItemId": "bonghits.Cp_SVEBearHoneyMead",
                             "CopyQuality": "{{CopyQualityEnabled}}",
                             "PriceModifierMode": "Stack",
                             // 15% Chance to Double
@@ -348,8 +348,8 @@
                     ],
                     "OutputItem": [
                         {
-                            "Id": "bonghits.Cp_BearHoneyMead",
-                            "ItemId": "bonghits.Cp_BearHoneyMead",
+                            "Id": "bonghits.Cp_SVEBearHoneyMead",
+                            "ItemId": "bonghits.Cp_SVEBearHoneyMead",
                             "CopyQuality": "{{CopyQualityEnabled}}",
                             "PriceModifierMode": "Stack",
                             // 20% Chance to Double
@@ -700,7 +700,82 @@
                     "Id": "CaskHoneyMead",
                     "Triggers": [
                         {
-                            "RequiredItemId": "bonghits.Cp_HoneyMead",
+                            "RequiredItemId": "bonghits.Cp_AgedBearHoneyMead",
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredCount": "1"
+                        }
+                    ],
+                    "OutputItem": [
+                        {
+                            "OutputMethod": "StardewValley.Objects.Cask, Stardew Valley: OutputCask",
+                            "CustomData": {
+                                "AgingMultiplier": "4"
+                            }
+                        }
+                    ],
+                },
+                "bearhoneycask": {
+                    "Id": "CaskHoneyMead",
+                    "Triggers": [
+                        {
+                            "RequiredItemId": "bonghits.Cp_BearHoneyMead",
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredCount": "1"
+                        }
+                    ],
+                    "OutputItem": [
+                        {
+                            "OutputMethod": "StardewValley.Objects.Cask, Stardew Valley: OutputCask",
+                            "CustomData": {
+                                "AgingMultiplier": "4"
+                            }
+                        }
+                    ],
+                },
+                "SVEbearhoneycask": {
+                    "When": {
+                        "HasMod": "FlashShifter.StardewValleyExpandedCP"
+                    },
+                    "Id": "CaskHoneyMead",
+                    "Triggers": [
+                        {
+                            "RequiredItemId": "bonghits.Cp_SVEBearHoneyMead",
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredCount": "1"
+                        }
+                    ],
+                    "OutputItem": [
+                        {
+                            "OutputMethod": "StardewValley.Objects.Cask, Stardew Valley: OutputCask",
+                            "CustomData": {
+                                "AgingMultiplier": "4"
+                            }
+                        }
+                    ],
+                },
+                "cidercask": {
+                    "Id": "CaskCider",
+                    "Triggers": [
+                        {
+                            "RequiredItemId": "bonghits.Cp_StockCider",
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredCount": "1"
+                        }
+                    ],
+                    "OutputItem": [
+                        {
+                            "OutputMethod": "StardewValley.Objects.Cask, Stardew Valley: OutputCask",
+                            "CustomData": {
+                                "AgingMultiplier": "4"
+                            }
+                        }
+                    ],
+                },
+                "sparklingmeadcask": {
+                    "Id": "CaskSparklingMead",
+                    "Triggers": [
+                        {
+                            "RequiredItemId": "bonghits.Cp_SparklingHoneyMead",
                             "Trigger": "ItemPlacedInMachine",
                             "RequiredCount": "1"
                         }
