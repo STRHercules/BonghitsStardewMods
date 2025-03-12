@@ -46,15 +46,19 @@
         }
     ],
     "Changes": [
-        // Load Data JSON Files
+        //
+        //
+        // Load Data Files
+        //
+        //
         {
-            "LogName": "Load Data JSON Files",
+            "LogName": "Load Data Files",
             "Action": "Include",
             "FromFile": "Maps/Data/meadshop.json, Data/mail.json, Data/gifttastes.json, Maps/Data/garbage.json, Data/shops.json, Data/strings.json, Data/machines.json, Data/buffs.json, Data/mead.json, Data/cider.json, Data/operations.json, Data/characters.json"
         },
         //
         //
-        //  Asset Loading
+        //  Load Assets
         //
         //
         {
@@ -74,9 +78,6 @@
             "Target": "Maps/machines",
             "FromFile": "Maps/Data/machines.png",
         },
-        //
-        //  Zach Data
-        //
         {
             "Action": "Load",
             "Target": "bonghits.BearHoneyMead/Objects/Zachary/MeadHealth",
@@ -98,9 +99,6 @@
             "Target": "Characters/Zachary",
             "FromFile": "assets/zachary/Zacharysprite.png"
         },
-        //
-        //  Natalie Data
-        //
         {
             "LogName": "Natalie Sprite",
             "Action": "Load",
@@ -158,31 +156,26 @@
             "FromFile": "assets/natalie/PinkBubble.png"
         },
         {
-            // Machine Spritesheet Load
             "Action": "Load",
             "Target": "bonghits.BearHoneyMead/Machines",
             "FromFile": "assets/machines.png"
         },
         {
-            // Carbonator Spritesheet Load
             "Action": "Load",
             "Target": "bonghits.BearHoneyMead/Carbonator",
             "FromFile": "assets/carbonator.png"
         },
         {
-            // Barrel Smoker Spritesheet Load
             "Action": "Load",
             "Target": "bonghits.BearHoneyMead/Smoker",
             "FromFile": "assets/BarrelSmoker.png"
         },
         {
-            // Beverages Spritesheet Load
             "Action": "Load",
             "Target": "bonghits.BearHoneyMead/Beverages",
             "FromFile": "assets/bevs.png"
         },
         {
-            // Beverages Spritesheet Load
             "Action": "Load",
             "Target": "bonghits.BearHoneyMead/SparklingMead",
             "FromFile": "assets/sparklingmead.png"
