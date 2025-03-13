@@ -135,7 +135,8 @@
         //
         {
             "When": {
-                "HasMod": "FlashShifter.StardewValleyExpandedCP"
+                "hasmod: |contains= FlashShifter.StardewValleyExpandedCP": true,
+                "hasmod: |contains= nachonline.mps": true,
             },
             "Action": "EditData",
             "Target": "Data/Machines",
@@ -183,7 +184,8 @@
         //
         {
             "When": {
-                "HasMod": "FlashShifter.StardewValleyExpandedCP"
+                "hasmod: |contains= FlashShifter.StardewValleyExpandedCP": true,
+                "hasmod: |contains= nachonline.mps": true,
             },
             "Action": "EditData",
             "Target": "Data/Machines",
@@ -231,7 +233,8 @@
         //
         {
             "When": {
-                "HasMod": "FlashShifter.StardewValleyExpandedCP"
+                "hasmod: |contains= FlashShifter.StardewValleyExpandedCP": true,
+                "hasmod: |contains= nachonline.mps": true,
             },
             "Action": "EditData",
             "Target": "Data/Machines",
@@ -279,7 +282,8 @@
         //
         {
             "When": {
-                "HasMod": "FlashShifter.StardewValleyExpandedCP"
+                "hasmod: |contains= FlashShifter.StardewValleyExpandedCP": true,
+                "hasmod: |contains= nachonline.mps": true,
             },
             "Action": "EditData",
             "Target": "Data/Machines",
@@ -327,7 +331,8 @@
         //
         {
             "When": {
-                "HasMod": "FlashShifter.StardewValleyExpandedCP"
+                "hasmod: |contains= FlashShifter.StardewValleyExpandedCP": true,
+                "hasmod: |contains= nachonline.mps": true,
             },
             "Action": "EditData",
             "Target": "Data/Machines",
@@ -390,6 +395,9 @@
         //  Raw Bear Honey to Mead Recipe
         //
         {
+            "When": {
+                "HasMod": "nachonline.mps",
+            },
             "Action": "EditData",
             "Target": "Data/Machines",
             "TargetField": [
@@ -448,6 +456,9 @@
         //  Raw Bear Honey to Mead Recipe
         //
         {
+            "When": {
+                "HasMod": "nachonline.mps",
+            },
             "Action": "EditData",
             "Target": "Data/Machines",
             "TargetField": [
@@ -506,6 +517,9 @@
         //  Raw Bear Honey to Mead Recipe
         //
         {
+            "When": {
+                "HasMod": "nachonline.mps",
+            },
             "Action": "EditData",
             "Target": "Data/Machines",
             "TargetField": [
@@ -564,6 +578,9 @@
         //  Raw Bear Honey to Mead Recipe
         //
         {
+            "When": {
+                "HasMod": "nachonline.mps",
+            },
             "Action": "EditData",
             "Target": "Data/Machines",
             "TargetField": [
@@ -622,6 +639,9 @@
         //  Raw Bear Honey to Mead Recipe
         //
         {
+            "When": {
+                "HasMod": "nachonline.mps",
+            },
             "Action": "EditData",
             "Target": "Data/Machines",
             "TargetField": [
@@ -1017,6 +1037,9 @@
         //
         //
         {
+            "When": {
+                "HasMod": "nachonline.mps",
+            },
             // Bear Honey Mead +  2 of any 4 Fruit -> Preserving Jar -> Flavored Bear Honey Mead
             "Action": "EditData",
             "Target": "Data/Machines",
@@ -1227,6 +1250,9 @@
         //
         //
         {
+            "When": {
+                "HasMod": "nachonline.mps",
+            },
             // Bear Honey Mead +  2 of any 4 Fruit -> Preserving Jar -> Flavored Bear Honey Mead
             "Action": "EditData",
             "Target": "Data/Machines",
@@ -1437,6 +1463,9 @@
         //
         //
         {
+            "When": {
+                "HasMod": "nachonline.mps",
+            },
             // Bear Honey Mead +  2 of any 4 Fruit -> Preserving Jar -> Flavored Bear Honey Mead
             "Action": "EditData",
             "Target": "Data/Machines",
@@ -1647,6 +1676,9 @@
         //
         //
         {
+            "When": {
+                "HasMod": "nachonline.mps",
+            },
             // Bear Honey Mead +  2 of any 4 Fruit -> Preserving Jar -> Flavored Bear Honey Mead
             "Action": "EditData",
             "Target": "Data/Machines",
@@ -1857,6 +1889,9 @@
         //
         //
         {
+            "When": {
+                "HasMod": "nachonline.mps",
+            },
             // Bear Honey Mead +  2 of any 4 Fruit -> Preserving Jar -> Flavored Bear Honey Mead
             "Action": "EditData",
             "Target": "Data/Machines",
@@ -2067,6 +2102,9 @@
         //
         //
         {
+            "When": {
+                "HasMod": "nachonline.mps",
+            },
             // Bear Honey Mead +  2 of any 4 Fruit -> Preserving Jar -> Flavored Bear Honey Mead
             "Action": "EditData",
             "Target": "Data/Machines",
