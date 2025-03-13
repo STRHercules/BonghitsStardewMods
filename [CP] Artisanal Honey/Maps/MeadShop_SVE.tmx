@@ -5221,7 +5221,7 @@
 0,0,0,0,0,0,0,0,0,
 0,9962,9963,9964,0,9791,9792,0,3948,
 0,9987,9988,9989,0,9816,9817,0,3948,
-0,10012,10013,10014,106,939,5592,5555,9742,
+0,10012,10013,10014,0,0,5592,5555,9742,
 0,0,0,0,0,0,9735,9736,9737,
 0,0,0,0,0,0,9760,9761,9762,
 0,0,0,0,0,0,0,0,0
@@ -5258,7 +5258,7 @@
  <objectgroup id="10" name="Buildings">
   <object id="2" name="TileData" x="32" y="128" width="16" height="16">
    <properties>
-    <property name="Action" value="LockedDoorWarp 13 24 MeadSaloon 600 2300"/>
+    <property name="Action" value="LockedDoorWarp 13 24 MeadSaloon 1800 0200"/>
    </properties>
   </object>
   <object id="3" name="TileData" x="96" y="112" width="16" height="16">

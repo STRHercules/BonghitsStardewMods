@@ -3651,7 +3651,7 @@
  <objectgroup id="10" name="Buildings">
   <object id="2" name="TileData" x="32" y="128" width="16" height="16">
    <properties>
-    <property name="Action" value="LockedDoorWarp 13 24 MeadSaloon 600 2300"/>
+    <property name="Action" value="LockedDoorWarp 13 24 MeadSaloon 1800 0200"/>
    </properties>
   </object>
   <object id="4" name="TileData" x="96" y="112" width="16" height="16">
