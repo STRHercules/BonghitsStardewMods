@@ -31,6 +31,10 @@
         {
             "UniqueID": "hxw.tilesheets",
             "IsRequired": true
+        },
+        {
+            "UniqueID": "Spiderbuttons.BETAS",
+            "IsRequired": true
         }
     ],
     "ContentPackFor": {

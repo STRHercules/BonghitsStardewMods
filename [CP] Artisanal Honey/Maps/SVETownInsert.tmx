@@ -5058,12 +5058,12 @@
  <objectgroup id="10" name="Buildings">
   <object id="433" name="TileData" x="96" y="160" width="16" height="16">
    <properties>
-    <property name="Action" value="LockedDoorWarp 13 24 MeadSaloon 0600 1800"/>
+    <property name="Action" value="LockedDoorWarp 13 24 MeadSaloon 1400 2300"/>
    </properties>
   </object>
   <object id="434" name="TileData" x="128" y="176" width="16" height="16">
    <properties>
-    <property name="Action" value="Dialogue A guest list! I better sign....   @ wuz here"/>
+    <property name="Action" value="Dialogue A guest list! I better sign.."/>
    </properties>
   </object>
   <object id="435" name="TileData" x="256" y="192" width="16" height="16">

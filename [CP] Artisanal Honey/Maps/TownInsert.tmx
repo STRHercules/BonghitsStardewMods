@@ -4947,7 +4947,7 @@
  <objectgroup id="9" name="Back"/>
  <objectgroup id="10" name="Back2"/>
  <objectgroup id="11" name="Back3"/>
- <objectgroup id="12" name="Buildings" visible="0">
+ <objectgroup id="12" name="Buildings">
   <object id="52" name="TileData" x="144" y="176" width="16" height="16">
    <properties>
     <property name="Action" value="Dialogue A guest list! I better sign.."/>
@@ -5015,7 +5015,7 @@
   </object>
   <object id="73" name="TileData" x="112" y="160" width="16" height="16">
    <properties>
-    <property name="Action" value="LockedDoorWarp 13 24 MeadSaloon 0600 1800"/>
+    <property name="Action" value="LockedDoorWarp 13 24 MeadSaloon 1400 2300"/>
    </properties>
   </object>
  </objectgroup>
