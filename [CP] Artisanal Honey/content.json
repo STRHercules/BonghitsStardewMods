@@ -6,12 +6,28 @@
             "AllowValues": "disabled, enabled, auto",
             "Default": "auto",
             "Section": "Behavior"
+        },
+        "ShopEnabledSetting": {
+            "AllowValues": "disabled, enabled",
+            "Default": "enabled",
+            "Section": "Map Changes"
         }
     },
     "DynamicTokens": [
         {
             "Name": "CopyQualityEnabled",
             "Value": false
+        },
+        {
+            "Name": "MeadShopEnabled",
+            "Value": false
+        },
+        {
+            "Name": "MeadShopEnabled",
+            "Value": true,
+            "When": {
+                "ShopEnabledSetting": "enabled"
+            }
         },
         {
             "Name": "CopyQualityEnabled",
@@ -54,7 +70,15 @@
         {
             "LogName": "Load Data Files",
             "Action": "Include",
-            "FromFile": "Maps/Data/meadshop.json, Data/mail.json, Data/gifttastes.json, Maps/Data/garbage.json, Data/shops.json, Data/strings.json, Data/machines.json, Data/buffs.json, Data/mead.json, Data/cider.json, Data/operations.json, Data/characters.json"
+            "FromFile": "Data/strings.json, Data/machines.json, Data/buffs.json, Data/mead.json, Data/cider.json, Data/operations.json"
+        },
+        {
+            "When": {
+                "ShopEnabledSetting": "enabled"
+            },
+            "LogName": "Load Map Data Files",
+            "Action": "Include",
+            "FromFile": "Maps/Data/meadshop.json, Data/mail.json, Data/gifttastes.json, Maps/Data/garbage.json, Data/shops.json, Data/characters.json"
         },
         //
         //
