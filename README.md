@@ -1,4 +1,4 @@
-# MajorBonghits' Stardew Valley Mod Collection
+# ThatKaingKai's Stardew Valley Mod Collection
 
 ### [My Current Mod Plans](https://github.com/STRHercules/BonghitsStardewMods/blob/main/Mod%20Plans.md)
 
