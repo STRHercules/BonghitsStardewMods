@@ -7,11 +7,11 @@
                 "MeadShop": {
                     "Owners": [
                         {
-                            "Name": "Zachary",
-                            "Portrait": "Zachary",
+                            "Name": "Zachary2",
+                            "Portrait": "Zachary2",
                             "Dialogues": [
                                 {
-                                    "Id": "bh.Zachary_dialogue",
+                                    "Id": "bh.Zachary2_dialogue",
                                     "RandomDialogue": [
                                         "{{i18n:Mead_Shop1}}",
                                         "{{i18n:Mead_Shop2}}",

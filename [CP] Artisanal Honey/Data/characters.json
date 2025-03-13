@@ -17,7 +17,7 @@
                     "Optimism": "Positive",
                     "IsDarkSkinned": false,
                     "CanBeRomanced": false,
-                    "LoveInterest": "Zachary",
+                    "LoveInterest": "Zachary2",
                     "Calendar": "AlwaysShown",
                     "SocialTab": "UnknownUntilMet",
                     "CanSocialize": true,
@@ -40,7 +40,7 @@
                     "DumpsterDiveFriendshipEffect": 25,
                     "DumpsterDiveEmote": 20,
                     "FriendsAndFamily": {
-                        "Zachary": "hubby"
+                        "Zachary2": "hubby"
                     },
                     "FlowerDanceCanDance": false,
                     "WinterStarGifts": null,
@@ -96,7 +96,7 @@
                     "FestivalVanillaActorIndex": 2,
                     "CustomFields": null
                 },
-                "Zachary": {
+                "Zachary2": {
                     "DisplayName": "{{i18n:bonghits.Zachary.DisplayName}}",
                     "BirthSeason": "Summer",
                     "BirthDay": 23,
@@ -156,8 +156,8 @@
                             "Season": null, //all
                             "Indoors": true,
                             "Outdoors": true,
-                            "Portrait": "Portraits/Zachary",
-                            "Sprite": "Characters/Zachary",
+                            "Portrait": "Portraits/Zachary2",
+                            "Sprite": "Characters/Zachary2",
                             "IsIslandAttire": false,
                             "Precedence": -100,
                             "Weight": 1
@@ -224,8 +224,8 @@
             "Action": "EditData",
             "Target": "spacechase0.SpaceCore/TextureOverrides",
             "Entries": {
-                "{{ModId}}_Zachary": {
-                    "TargetTexture": "Portraits/Zachary",
+                "{{ModId}}_Zachary2": {
+                    "TargetTexture": "Portraits/Zachary2",
                     "TargetRect": {
                         "X": 0,
                         "Y": 0,

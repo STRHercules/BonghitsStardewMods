@@ -90,13 +90,13 @@
         },
         {
             "Action": "Load",
-            "Target": "Portraits/Zachary",
+            "Target": "Portraits/Zachary2",
             "FromFile": "assets/zachary/CharacterPortraitReady.png"
         },
         {
             "LogName": "Zach Sprite",
             "Action": "Load",
-            "Target": "Characters/Zachary",
+            "Target": "Characters/Zachary2",
             "FromFile": "assets/zachary/Zacharysprite.png"
         },
         {
