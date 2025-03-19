@@ -33,7 +33,38 @@
             "IsRequired": true
         },
         {
+            "UniqueID": "alvadea.tilesheet",
+            "IsRequired": true
+        },
+        {
+            "UniqueID": "DaisyNiko.Tilesheets",
+            "IsRequired": true
+        },
+        {
+            "UniqueID": "crystalinerose.Tilesheets",
+            "IsRequired": true
+        },
+        {
+            "UniqueID": "Luan125gui.Indoor",
+            "IsRequired": true
+        },
+        {
+            "UniqueID": "A_TK.AToMS",
+            "IsRequired": true
+        },
+        {
             "UniqueID": "Spiderbuttons.BETAS",
+            "IsRequired": true
+        },
+        //
+        //
+        //  Required but No manifest?
+        //  https://www.nexusmods.com/stardewvalley/mods/14371
+        //
+        //
+        //
+        {
+            "UniqueID": "Pathoschild.CentralStation",
             "IsRequired": true
         }
     ],

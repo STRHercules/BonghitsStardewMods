@@ -1,128 +1,96 @@
 {
-  "Changes": [
-    {
-      "LogName": "Load Mead Shop Exterior for NON-SVE",
-      "Action": "EditMap",
-      "Target": "Maps/Town",
-      "FromFile": "Maps/TownInsert.tmx",
-      "FromArea": {
-        "X": 0,
-        "Y": 0,
-        "Height": 20,
-        "Width": 20
-      },
-      "ToArea": {
-        "X": 110,
-        "Y": 36,
-        "Height": 20,
-        "Width": 20
-      },
-      "PatchMode": "Replace",
-      "When": {
-        "HasMod|contains=FlashShifter.StardewValleyExpandedCP": false
-      }
-    },
-    {
-      "LogName": "Load Mead Shop Exterior for SVE",
-      "Action": "EditMap",
-      "Target": "Maps/Town",
-      "FromFile": "Maps/SVETownInsert.tmx",
-      "FromArea": {
-        "X": 0,
-        "Y": 0,
-        "Height": 21,
-        "Width": 22
-      },
-      "ToArea": {
-        "X": 108,
-        "Y": 37,
-        "Height": 21,
-        "Width": 22
-      },
-      "PatchMode": "Replace",
-      "When": {
-        "HasMod|contains=FlashShifter.StardewValleyExpandedCP": true
-      }
-    },
-    {
-      "Action": "EditData",
-      "Target": "Data/TriggerActions",
-      "Entries": {
-        "{{ModId}}_ClearBushesSVE": {
-          "When": {
-            "HasMod|contains=FlashShifter.StardewValleyExpandedCP": true
-          },
-          "Id": "{{ModId}}_ClearBushesSVE",
-          "Trigger": "DayStarted",
-          "Actions": [
-            "Spiderbuttons.BETAS_ClearTerrainFeatures Town Bush 108 38 129 57",
-          ]
+    "Changes": [
+        {
+            "LogName": "Load Tilesheet 1",
+            "Action": "Load",
+            "Target": "Maps/crops",
+            "FromFile": "assets/crops.png"
         },
-        "{{ModId}}_ClearBushes": {
-          "When": {
-            "HasMod|contains=FlashShifter.StardewValleyExpandedCP": false
-          },
-          "Id": "{{ModId}}_ClearBushes",
-          "Trigger": "DayStarted",
-          "Actions": [
-            "Spiderbuttons.BETAS_ClearTerrainFeatures Town Bush 111 37 129 54",
-          ]
+        {
+            "LogName": "Load Tilesheet 2",
+            "Action": "Load",
+            "Target": "Maps/fruitTrees",
+            "FromFile": "assets/fruitTrees.png"
+        },
+        {
+            "LogName": "Load Tilesheet 3",
+            "Action": "Load",
+            "Target": "Maps/springObjects",
+            "FromFile": "assets/springObjects.png"
+        },
+        {
+            "LogName": "Load Tilesheet 4",
+            "Action": "Load",
+            "Target": "Maps/spring_logs",
+            "FromFile": "assets/spring_logs.png"
+        },
+        {
+            "LogName": "Load Meadery Shop Exterior",
+            "Action": "Load",
+            "Target": "Maps/Meadery",
+            "FromFile": "Maps/Meadery.tmx"
+        },
+        {
+            "LogName": "Load Mead Shop Interior",
+            "Action": "Load",
+            "Target": "Maps/MeadSaloon",
+            "FromFile": "Maps/MeadSaloon.tmx"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "MeadSaloon": {
+                    "DisplayName": "{{i18n:bh.MeadSaloon.DisplayName}}",
+                    "DefaultArrivalTile": {
+                        "X": 13,
+                        "Y": 24
+                    },
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/MeadSaloon"
+                    }
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "Meadery": {
+                    "DisplayName": "{{i18n:bh.Meadery.DisplayName}}",
+                    "DefaultArrivalTile": {
+                        "X": 38,
+                        "Y": 44
+                    },
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/Meadery"
+                    }
+                }
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/MeadSaloon",
+            "AddWarps": [
+                "13 26 Meadery 16 16"
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Mods/Pathoschild.CentralStation/Stops",
+            "Entries": {
+                "{{ModID}}_Meadery_Stop": {
+                    "DisplayName": "Artisan Meadery",
+                    "ToLocation": "Meadery",
+                    "Network": "Bus",
+                    "ToTile": {
+                        "X": 38,
+                        "Y": 44
+                    },
+                    "ToFacingDirection": "down",
+                    "Cost": 50
+                }
+            }
         }
-      }
-    },
-    {
-      "When": {
-        "HasMod|contains=FlashShifter.StardewValleyExpandedCP": false
-      },
-      "LogName": "Load Mead Shop Interior",
-      "Action": "Load",
-      "Target": "Maps/MeadSaloon",
-      "FromFile": "Maps/MeadSaloon.tmx"
-    },
-    {
-      "When": {
-        "HasMod|contains=FlashShifter.StardewValleyExpandedCP": true
-      },
-      "LogName": "Load SVE Mead Shop Interior",
-      "Action": "Load",
-      "Target": "Maps/MeadSaloon",
-      "FromFile": "Maps/MeadSaloonSVE.tmx"
-    },
-    {
-      "Action": "EditData",
-      "Target": "Data/Locations",
-      "Entries": {
-        "MeadSaloon": {
-          "DisplayName": "{{i18n:bh.MeadSaloon.DisplayName}}",
-          "DefaultArrivalTile": {
-            "X": 13,
-            "Y": 24
-          },
-          "CreateOnLoad": {
-            "MapPath": "Maps/MeadSaloon"
-          }
-        }
-      }
-    },
-    {
-      "When": {
-        "HasMod|contains=FlashShifter.StardewValleyExpandedCP": true
-      },
-      "Action": "EditMap",
-      "Target": "Maps/MeadSaloon",
-      "AddWarps": [
-        "13 26 Town 114 48"
-      ]
-    },
-    {
-      "When": {
-        "HasMod|contains=FlashShifter.StardewValleyExpandedCP": false
-      },
-      "Action": "EditMap",
-      "Target": "Maps/MeadSaloon",
-      "AddWarps": [
-        "13 26 Town 117 47"
-      ]
-    },
-  ]
+    ]
 }

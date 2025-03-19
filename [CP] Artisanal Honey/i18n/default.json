@@ -14,10 +14,6 @@
     "config.CopyQualitySetting.values.disabled": "Disabled",
     "config.CopyQualitySetting.values.enabled": "Enabled",
     "config.CopyQualitySetting.values.auto": "Auto",
-    "config.ShopEnabledSetting.name": "Mead Saloon Insertion",
-    "config.ShopEnabledSetting.description": "Enabled: Places the Mead Saloon in Pelican Town east of Joja Mart (RECOMMENDED)\n\nDisabled: Disable this feature.\n\n(Disabling this feature also disables the shops, mail, NPCs, and the trash can. (This may break immersion and progression))\n\n(You can spawn the Carbonator and Barrel Smoker with CJB Item Spawner.)",
-    "config.ShopEnabledSetting.values.disabled": "Disabled",
-    "config.ShopEnabledSetting.values.enabled": "Enabled",
     "bonghits.mead.healingbuff.DisplayName": "Mead Regeneration",
     "bonghits.mead.healingbuff.Description": "Healing from that delicious mead!",
     "bonghits.bubblemead.buff.DisplayName": "Feelin' bubbly!",
@@ -48,6 +44,9 @@
     "Mail12": "@, ^Thank you so much for repairing that bus, I was able to take Nat back to the desert, how was it? I love the heat myself. So much so I decided to take Natlie to see the cactus fruit, she loved them! ^We decided to bring a whole haul of them back with us, so we are proud to announce we now offer Cactus Fruit in our shop! Just come see me and we can work out a price on 'em!  ^ -Zach [#]VistedDesert",
     "Mail13": "@, ^Hey 'mon! Enjoying the island life? Nat and I spent a while there last year and fell in love with the scenery! The weather is always so gorgeous over on Ginger Island ^Now that I'm writing this to you come to think of it I believe Nat recently put an order through for some Coconuts for me, what a doll! Next time you swing by I'll probably have some out for you to snag if you want! Take care @! ^ -Zach [#]VistedIsland",
     "Mail14": "@, ^Just writing you to make sure you knew that you can do a lot more with the carbonator than just adding some fun bubbles to your mead? You can actually take 5 of any Fruit over to the machine with an Empty Bottle and you can get delicious bubbly cider in no time! ^Try it out and let me know how it goes, okay?! ^ -Nat [#]CiderSuggestion",
+    
+    "bh.Meadery.DisplayName": "Meadery",
+    "bh.MeadSaloon.DisplayName": "Mead Saloon",
     // Zach Shop Dialogue
     "Mead_Shop1": "Hey there! I bet you've never tasted Mead as good as mine!",
     "Mead_Shop2": "Welcome! Wanna learn something? Perhaps buy some recipes or materials?",
