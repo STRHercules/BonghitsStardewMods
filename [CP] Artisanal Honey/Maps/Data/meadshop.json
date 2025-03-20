@@ -25,6 +25,18 @@
             "FromFile": "assets/spring_logs.png"
         },
         {
+            "LogName": "Load Tilesheet 5",
+            "Action": "Load",
+            "Target": "Maps/Bear",
+            "FromFile": "assets/Bear.png"
+        },
+        {
+            "LogName": "Load Tilesheet 6",
+            "Action": "Load",
+            "Target": "Maps/sproomsts",
+            "FromFile": "assets/sproomsts.png"
+        },
+        {
             "LogName": "Load Meadery Shop Exterior",
             "Action": "Load",
             "Target": "Maps/Meadery",
@@ -35,6 +47,12 @@
             "Action": "Load",
             "Target": "Maps/MeadSaloon",
             "FromFile": "Maps/MeadSaloon.tmx"
+        },
+        {
+            "LogName": "Load Meadery Trailer Interior",
+            "Action": "Load",
+            "Target": "Maps/Meadery_Trailer",
+            "FromFile": "Maps/Meadery_Trailer.tmx"
         },
         {
             "Action": "EditData",
@@ -69,10 +87,33 @@
             }
         },
         {
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "Meadery_Trailer": {
+                    "DisplayName": "{{i18n:bh.Meadery_Trailer.DisplayName}}",
+                    "DefaultArrivalTile": {
+                        "X": 12,
+                        "Y": 8
+                    },
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/Meadery_Trailer"
+                    }
+                }
+            }
+        },
+        {
             "Action": "EditMap",
             "Target": "Maps/MeadSaloon",
             "AddWarps": [
                 "13 26 Meadery 16 16"
+            ]
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Meadery_Trailer",
+            "AddWarps": [
+                "12 10 Meadery 36 8"
             ]
         },
         {
