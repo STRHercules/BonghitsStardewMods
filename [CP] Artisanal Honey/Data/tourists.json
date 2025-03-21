@@ -1,0 +1,815 @@
+{
+    "Changes": [
+        //  Delphy
+        {
+            "LogName": "Delphy Sprite Load",
+            "Action": "Load",
+            "Target": "Characters/Delphy",
+            "FromFile": "assets/delly/spritesheet.png"
+        },
+        {
+            "LogName": "Delphy Portrait Load",
+            "Action": "Load",
+            "Target": "Portraits/Delphy",
+            "FromFile": "assets/delly/portrait.png"
+        },
+        //  Mandy
+        {
+            "LogName": "Mandy Sprite Load",
+            "Action": "Load",
+            "Target": "Characters/Mandy",
+            "FromFile": "assets/pauline/spritesheet-Default-Sprite.png"
+        },
+        {
+            "LogName": "Mandy Portrait Load",
+            "Action": "Load",
+            "Target": "Portraits/Mandy",
+            "FromFile": "assets/pauline/portrait-Default-Pauline.png"
+        },
+        //  Kristoff
+        {
+            "LogName": "Kristoff Sprite Load",
+            "Action": "Load",
+            "Target": "Characters/Kristoff",
+            "FromFile": "assets/richie/sprites.png"
+        },
+        {
+            "LogName": "Kristoff Portrait Load",
+            "Action": "Load",
+            "Target": "Portraits/Kristoff",
+            "FromFile": "assets/richie/portraits.png"
+        },
+        //  Malik
+        {
+            "LogName": "Malik Sprite Load",
+            "Action": "Load",
+            "Target": "Characters/Malik",
+            "FromFile": "assets/malik/MarcusSpritesSpirits.png"
+        },
+        {
+            "LogName": "Malik Portrait Load",
+            "Action": "Load",
+            "Target": "Portraits/Malik",
+            "FromFile": "assets/malik/portraits/MarcusPortraitsSpirits.png"
+        },
+        //  Mona
+        {
+            "LogName": "Mona Sprite Load",
+            "Action": "Load",
+            "Target": "Characters/Mona",
+            "FromFile": "assets/mona/MoraSpritesSpring.png"
+        },
+        {
+            "LogName": "Mona Portrait Load",
+            "Action": "Load",
+            "Target": "Portraits/Mona",
+            "FromFile": "assets/mona/portraits/MoraPortraitsSpring.png"
+        },
+        //
+        //
+        //  Tourist Depositions
+        //
+        //
+        {
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Entries": {
+                "Delphy": {
+                    "DisplayName": "{{i18n:bonghits.Delphy.DisplayName}}",
+                    "BirthSeason": "Spring",
+                    "BirthDay": 15,
+                    "HomeRegion": "Other",
+                    "Language": "Default",
+                    "Gender": "Female",
+                    "Age": "Adult",
+                    "Manner": "Polite",
+                    "SocialAnxiety": "Outgoing",
+                    "Optimism": "Positive",
+                    "IsDarkSkinned": false,
+                    "CanBeRomanced": false,
+                    "LoveInterest": null,
+                    "Calendar": "AlwaysShown",
+                    "SocialTab": "UnknownUntilMet",
+                    "CanSocialize": true,
+                    "CanReceiveGifts": true,
+                    "CanGreetNearbyCharacters": true,
+                    "CanCommentOnPurchasedShopItems": true,
+                    "CanVisitIsland": true,
+                    "IntroductionsQuest": true,
+                    "ItemDeliveryQuests": true,
+                    "PerfectionScore": true,
+                    "EndSlideShow": "Hidden",
+                    "SpouseAdopts": null,
+                    "SpouseWantsChildren": null,
+                    "SpouseGiftJealousy": null,
+                    "SpouseGiftJealousyFriendshipChange": -30,
+                    "SpouseRoom": null,
+                    "SpousePatio": null,
+                    "SpouseFloors": [],
+                    "SpouseWallpapers": [],
+                    "DumpsterDiveFriendshipEffect": 25,
+                    "DumpsterDiveEmote": 20,
+                    "FriendsAndFamily": null,
+                    "FlowerDanceCanDance": false,
+                    "WinterStarGifts": null,
+                    "WinterStarParticipant": null,
+                    "UnlockConditions": null,
+                    "SpawnIfMissing": true,
+                    "Home": [
+                        {
+                            "Location": "Meadery",
+                            "Tile": {
+                                "X": 45,
+                                "Y": 23
+                            },
+                            "Direction": "down"
+                        }
+                    ],
+                    "Appearance": [
+                        {
+                            "Id": "All Seasons",
+                            "Condition": null,
+                            "Season": null, //all
+                            "Indoors": true,
+                            "Outdoors": true,
+                            "Portrait": "Portraits/Delphy",
+                            "Sprite": "Characters/Delphy",
+                            "IsIslandAttire": false,
+                            "Precedence": -100,
+                            "Weight": 1
+                        }
+                    ],
+                    "MugShotSourceRect": null,
+                    "Size": {
+                        "X": 16,
+                        "Y": 32
+                    },
+                    "Breather": true,
+                    "BreathChestRect": null,
+                    "BreathChestPosition": null,
+                    "Shadow": null,
+                    "EmoteOffset": {
+                        "X": 0,
+                        "Y": 0
+                    },
+                    "ShakePortraits": [],
+                    "KissSpriteIndex": 28,
+                    "KissSpriteFacingRight": true,
+                    "HiddenProfileEmoteSound": null,
+                    "HiddenProfileEmoteDuration": -1,
+                    "HiddenProfileEmoteStartFrame": 39,
+                    "HiddenProfileEmoteFrameCount": 1,
+                    "HiddenProfileEmoteFrameDuration": 200.0,
+                    "FormerCharacterNames": [],
+                    "FestivalVanillaActorIndex": 2,
+                    "CustomFields": null
+                },
+                "Mandy": {
+                    "DisplayName": "{{i18n:bonghits.Mandy.DisplayName}}",
+                    "BirthSeason": "Spring",
+                    "BirthDay": 15,
+                    "HomeRegion": "Other",
+                    "Language": "Default",
+                    "Gender": "Female",
+                    "Age": "Adult",
+                    "Manner": "Polite",
+                    "SocialAnxiety": "Outgoing",
+                    "Optimism": "Positive",
+                    "IsDarkSkinned": false,
+                    "CanBeRomanced": false,
+                    "LoveInterest": null,
+                    "Calendar": "AlwaysShown",
+                    "SocialTab": "UnknownUntilMet",
+                    "CanSocialize": true,
+                    "CanReceiveGifts": true,
+                    "CanGreetNearbyCharacters": true,
+                    "CanCommentOnPurchasedShopItems": true,
+                    "CanVisitIsland": true,
+                    "IntroductionsQuest": true,
+                    "ItemDeliveryQuests": true,
+                    "PerfectionScore": true,
+                    "EndSlideShow": "Hidden",
+                    "SpouseAdopts": null,
+                    "SpouseWantsChildren": null,
+                    "SpouseGiftJealousy": null,
+                    "SpouseGiftJealousyFriendshipChange": -30,
+                    "SpouseRoom": null,
+                    "SpousePatio": null,
+                    "SpouseFloors": [],
+                    "SpouseWallpapers": [],
+                    "DumpsterDiveFriendshipEffect": 25,
+                    "DumpsterDiveEmote": 20,
+                    "FriendsAndFamily": null,
+                    "FlowerDanceCanDance": false,
+                    "WinterStarGifts": null,
+                    "WinterStarParticipant": null,
+                    "UnlockConditions": null,
+                    "SpawnIfMissing": true,
+                    "Home": [
+                        {
+                            "Location": "Meadery",
+                            "Tile": {
+                                "X": 36,
+                                "Y": 8
+                            },
+                            "Direction": "down"
+                        }
+                    ],
+                    "Appearance": [
+                        {
+                            "Id": "All Seasons",
+                            "Condition": null,
+                            "Season": null, //all
+                            "Indoors": true,
+                            "Outdoors": true,
+                            "Portrait": "Portraits/Mandy",
+                            "Sprite": "Characters/Mandy",
+                            "IsIslandAttire": false,
+                            "Precedence": -100,
+                            "Weight": 1
+                        }
+                    ],
+                    "MugShotSourceRect": null,
+                    "Size": {
+                        "X": 16,
+                        "Y": 32
+                    },
+                    "Breather": true,
+                    "BreathChestRect": null,
+                    "BreathChestPosition": null,
+                    "Shadow": null,
+                    "EmoteOffset": {
+                        "X": 0,
+                        "Y": 0
+                    },
+                    "ShakePortraits": [],
+                    "KissSpriteIndex": 28,
+                    "KissSpriteFacingRight": true,
+                    "HiddenProfileEmoteSound": null,
+                    "HiddenProfileEmoteDuration": -1,
+                    "HiddenProfileEmoteStartFrame": 39,
+                    "HiddenProfileEmoteFrameCount": 1,
+                    "HiddenProfileEmoteFrameDuration": 200.0,
+                    "FormerCharacterNames": [],
+                    "FestivalVanillaActorIndex": 2,
+                    "CustomFields": null
+                },
+                "Kristoff": {
+                    "DisplayName": "{{i18n:bonghits.Kristoff.DisplayName}}",
+                    "BirthSeason": "Winter",
+                    "BirthDay": 5,
+                    "HomeRegion": "Other",
+                    "Language": "Default",
+                    "Gender": "Male",
+                    "Age": "Adult",
+                    "Manner": "Polite",
+                    "SocialAnxiety": "Outgoing",
+                    "Optimism": "Positive",
+                    "IsDarkSkinned": false,
+                    "CanBeRomanced": false,
+                    "LoveInterest": null,
+                    "Calendar": "AlwaysShown",
+                    "SocialTab": "UnknownUntilMet",
+                    "CanSocialize": true,
+                    "CanReceiveGifts": true,
+                    "CanGreetNearbyCharacters": true,
+                    "CanCommentOnPurchasedShopItems": true,
+                    "CanVisitIsland": true,
+                    "IntroductionsQuest": true,
+                    "ItemDeliveryQuests": true,
+                    "PerfectionScore": true,
+                    "EndSlideShow": "Hidden",
+                    "SpouseAdopts": null,
+                    "SpouseWantsChildren": null,
+                    "SpouseGiftJealousy": null,
+                    "SpouseGiftJealousyFriendshipChange": -30,
+                    "SpouseRoom": null,
+                    "SpousePatio": null,
+                    "SpouseFloors": [],
+                    "SpouseWallpapers": [],
+                    "DumpsterDiveFriendshipEffect": 25,
+                    "DumpsterDiveEmote": 20,
+                    "FriendsAndFamily": null,
+                    "FlowerDanceCanDance": false,
+                    "WinterStarGifts": null,
+                    "WinterStarParticipant": null,
+                    "UnlockConditions": null,
+                    "SpawnIfMissing": true,
+                    "Home": [
+                        {
+                            "Location": "Meadery",
+                            "Tile": {
+                                "X": 38,
+                                "Y": 24
+                            },
+                            "Direction": "down"
+                        }
+                    ],
+                    "Appearance": [
+                        {
+                            "Id": "All Seasons",
+                            "Condition": null,
+                            "Season": null, //all
+                            "Indoors": true,
+                            "Outdoors": true,
+                            "Portrait": "Portraits/Kristoff",
+                            "Sprite": "Characters/Kristoff",
+                            "IsIslandAttire": false,
+                            "Precedence": -100,
+                            "Weight": 1
+                        }
+                    ],
+                    "MugShotSourceRect": null,
+                    "Size": {
+                        "X": 16,
+                        "Y": 32
+                    },
+                    "Breather": true,
+                    "BreathChestRect": null,
+                    "BreathChestPosition": null,
+                    "Shadow": null,
+                    "EmoteOffset": {
+                        "X": 0,
+                        "Y": 0
+                    },
+                    "ShakePortraits": [],
+                    "KissSpriteIndex": 28,
+                    "KissSpriteFacingRight": true,
+                    "HiddenProfileEmoteSound": null,
+                    "HiddenProfileEmoteDuration": -1,
+                    "HiddenProfileEmoteStartFrame": 39,
+                    "HiddenProfileEmoteFrameCount": 1,
+                    "HiddenProfileEmoteFrameDuration": 200.0,
+                    "FormerCharacterNames": [],
+                    "FestivalVanillaActorIndex": 2,
+                    "CustomFields": null
+                },
+                "Malik": {
+                    "DisplayName": "{{i18n:bonghits.Malik.DisplayName}}",
+                    "BirthSeason": "Summer",
+                    "BirthDay": 23,
+                    "HomeRegion": "Other",
+                    "Language": "Default",
+                    "Gender": "Male",
+                    "Age": "Adult",
+                    "Manner": "Polite",
+                    "SocialAnxiety": "Outgoing",
+                    "Optimism": "Positive",
+                    "IsDarkSkinned": false,
+                    "CanBeRomanced": false,
+                    "LoveInterest": null,
+                    "Calendar": "AlwaysShown",
+                    "SocialTab": "UnknownUntilMet",
+                    "CanSocialize": true,
+                    "CanReceiveGifts": true,
+                    "CanGreetNearbyCharacters": true,
+                    "CanCommentOnPurchasedShopItems": true,
+                    "CanVisitIsland": true,
+                    "IntroductionsQuest": true,
+                    "ItemDeliveryQuests": true,
+                    "PerfectionScore": true,
+                    "EndSlideShow": "Hidden",
+                    "SpouseAdopts": null,
+                    "SpouseWantsChildren": null,
+                    "SpouseGiftJealousy": null,
+                    "SpouseGiftJealousyFriendshipChange": -30,
+                    "SpouseRoom": null,
+                    "SpousePatio": null,
+                    "SpouseFloors": [],
+                    "SpouseWallpapers": [],
+                    "DumpsterDiveFriendshipEffect": 25,
+                    "DumpsterDiveEmote": 20,
+                    "FriendsAndFamily": null,
+                    "FlowerDanceCanDance": false,
+                    "WinterStarGifts": null,
+                    "WinterStarParticipant": null,
+                    "UnlockConditions": null,
+                    "SpawnIfMissing": true,
+                    "Home": [
+                        {
+                            "Location": "Meadery",
+                            "Tile": {
+                                "X": 7,
+                                "Y": 41
+                            },
+                            "Direction": "down"
+                        }
+                    ],
+                    "Appearance": [
+                        {
+                            "Id": "All Seasons",
+                            "Condition": null,
+                            "Season": null, //all
+                            "Indoors": true,
+                            "Outdoors": true,
+                            "Portrait": "Portraits/Malik",
+                            "Sprite": "Characters/Malik",
+                            "IsIslandAttire": false,
+                            "Precedence": -100,
+                            "Weight": 1
+                        }
+                    ],
+                    "MugShotSourceRect": null,
+                    "Size": {
+                        "X": 16,
+                        "Y": 32
+                    },
+                    "Breather": true,
+                    "BreathChestRect": null,
+                    "BreathChestPosition": null,
+                    "Shadow": null,
+                    "EmoteOffset": {
+                        "X": 0,
+                        "Y": 0
+                    },
+                    "ShakePortraits": [],
+                    "KissSpriteIndex": 28,
+                    "KissSpriteFacingRight": true,
+                    "HiddenProfileEmoteSound": null,
+                    "HiddenProfileEmoteDuration": -1,
+                    "HiddenProfileEmoteStartFrame": 39,
+                    "HiddenProfileEmoteFrameCount": 1,
+                    "HiddenProfileEmoteFrameDuration": 200.0,
+                    "FormerCharacterNames": [],
+                    "FestivalVanillaActorIndex": 2,
+                    "CustomFields": null
+                },
+                "Mona": {
+                    "DisplayName": "{{i18n:bonghits.Mona.DisplayName}}",
+                    "BirthSeason": "Summer",
+                    "BirthDay": 8,
+                    "HomeRegion": "Other",
+                    "Language": "Default",
+                    "Gender": "Female",
+                    "Age": "Adult",
+                    "Manner": "Polite",
+                    "SocialAnxiety": "Outgoing",
+                    "Optimism": "Positive",
+                    "IsDarkSkinned": false,
+                    "CanBeRomanced": false,
+                    "LoveInterest": null,
+                    "Calendar": "AlwaysShown",
+                    "SocialTab": "UnknownUntilMet",
+                    "CanSocialize": true,
+                    "CanReceiveGifts": true,
+                    "CanGreetNearbyCharacters": true,
+                    "CanCommentOnPurchasedShopItems": true,
+                    "CanVisitIsland": true,
+                    "IntroductionsQuest": true,
+                    "ItemDeliveryQuests": true,
+                    "PerfectionScore": true,
+                    "EndSlideShow": "Hidden",
+                    "SpouseAdopts": null,
+                    "SpouseWantsChildren": null,
+                    "SpouseGiftJealousy": null,
+                    "SpouseGiftJealousyFriendshipChange": -30,
+                    "SpouseRoom": null,
+                    "SpousePatio": null,
+                    "SpouseFloors": [],
+                    "SpouseWallpapers": [],
+                    "DumpsterDiveFriendshipEffect": 25,
+                    "DumpsterDiveEmote": 20,
+                    "FriendsAndFamily": null,
+                    "FlowerDanceCanDance": false,
+                    "WinterStarGifts": null,
+                    "WinterStarParticipant": null,
+                    "UnlockConditions": null,
+                    "SpawnIfMissing": true,
+                    "Home": [
+                        {
+                            "Location": "Meadery",
+                            "Tile": {
+                                "X": 14,
+                                "Y": 6
+                            },
+                            "Direction": "down"
+                        }
+                    ],
+                    "Appearance": [
+                        {
+                            "Id": "All Seasons",
+                            "Condition": null,
+                            "Season": null, //all
+                            "Indoors": true,
+                            "Outdoors": true,
+                            "Portrait": "Portraits/Mona",
+                            "Sprite": "Characters/Mona",
+                            "IsIslandAttire": false,
+                            "Precedence": -100,
+                            "Weight": 1
+                        }
+                    ],
+                    "MugShotSourceRect": null,
+                    "Size": {
+                        "X": 16,
+                        "Y": 32
+                    },
+                    "Breather": true,
+                    "BreathChestRect": null,
+                    "BreathChestPosition": null,
+                    "Shadow": null,
+                    "EmoteOffset": {
+                        "X": 0,
+                        "Y": 0
+                    },
+                    "ShakePortraits": [],
+                    "KissSpriteIndex": 28,
+                    "KissSpriteFacingRight": true,
+                    "HiddenProfileEmoteSound": null,
+                    "HiddenProfileEmoteDuration": -1,
+                    "HiddenProfileEmoteStartFrame": 39,
+                    "HiddenProfileEmoteFrameCount": 1,
+                    "HiddenProfileEmoteFrameDuration": 200.0,
+                    "FormerCharacterNames": [],
+                    "FestivalVanillaActorIndex": 2,
+                    "CustomFields": null
+                }
+            }
+        },
+        //
+        //  Universal Gift Taste List Insert (Copied Gus)
+        //
+        {
+            "LogName": "Gift Taste Data",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Entries": {
+                "Delphy": "You're giving this... to me? I'm speechless./72 213 635 729 907/Oh, goodness! Are you sure?/348 303 -7 18 430/No, no, no.../16 330/This is absolute junk. I'm offended./80 167 648/Oh, that's sweet. Thank you.//",
+                "Mandy": "You're giving this... to me? I'm speechless./72 213 635 729 907/Oh, goodness! Are you sure?/348 303 -7 18 430/No, no, no.../16 330/This is absolute junk. I'm offended./80 167 648/Oh, that's sweet. Thank you.//",
+                "Kristoff": "You're giving this... to me? I'm speechless./72 213 635 729 907/Oh, goodness! Are you sure?/348 303 -7 18 430/No, no, no.../16 330/This is absolute junk. I'm offended./80 167 648/Oh, that's sweet. Thank you.//",
+                "Malik": "You're giving this... to me? I'm speechless./72 213 635 729 907/Oh, goodness! Are you sure?/348 303 -7 18 430/No, no, no.../16 330/This is absolute junk. I'm offended./80 167 648/Oh, that's sweet. Thank you.//",
+                "Mona": "You're giving this... to me? I'm speechless./72 213 635 729 907/Oh, goodness! Are you sure?/348 303 -7 18 430/No, no, no.../16 330/This is absolute junk. I'm offended./80 167 648/Oh, that's sweet. Thank you.//"
+            }
+        },
+        // Delphy Data
+        {
+            "LogName": "Delphy Blank Schedule Load",
+            "Action": "Load",
+            "Target": "Characters/schedules/Delphy",
+            "FromFile": "Data/blank.json"
+        },
+        {
+            "LogName": "Delphy Blank Dialogue Load",
+            "Action": "Load",
+            "Target": "Characters/Dialogue/Delphy",
+            "FromFile": "Data/blank.json"
+        },
+        {
+            "LogName": "Delphy Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Delphy",
+            "Entries": {
+                //Conversation Topics
+                //Vanilla
+                "Introduction": "{{i18n:npc.Delphy.Introduction}}",
+                "AcceptBirthdayGift": "{{i18n:npc.Delphy.AcceptBirthdayGift}}",
+                "AcceptBirthdayGift_Loved": "{{i18n:npc.Delphy.AcceptBirthdayGift_Loved}}",
+                "AcceptBirthdayGift_Negative": "{{i18n:npc.Delphy.AcceptBirthdayGift_Negative}}",
+                "AcceptBirthdayGift_Positive": "{{i18n:npc.Delphy.AcceptBirthdayGift_Positive}}",
+                "DumpsterDiveComment": "{{i18n:npc.Delphy.DumpsterDiveComment}}",
+                "GreenRain": "{{i18n:npc.Delphy.GreenRain}}",
+                "GreenRainFinished": "{{i18n:npc.Delphy.GreenRainFinished}}",
+                // GENERIC DIALOGUE
+                "Mon": "{{i18n:npc.Delphy.Mon}}",
+                "Tue": "{{i18n:npc.Delphy.Tue}}",
+                "Wed": "{{i18n:npc.Delphy.Wed}}",
+                "Thu": "{{i18n:npc.Delphy.Thu}}",
+                "Fri": "{{i18n:npc.Delphy.Fri}}",
+                "Sat": "{{i18n:npc.Delphy.Sat}}",
+                "Sun": "{{i18n:npc.Delphy.Sun}}"
+            }
+        },
+        {
+            "LogName": "Delphy Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Delphy",
+            "Entries": {
+                "Spring": "0610 Meadery 20 19 2/0630 Meadery 20 19 2 square_4_4_2/a1000 Meadery 49 7 2 square_4_4_2/a1600 Meadery 14 21 2 square_4_4_2",
+                "Mon": "GOTO Spring",
+                "Tue": "GOTO Spring",
+                "Wed": "GOTO Spring",
+                "Thu": "GOTO Spring",
+                "Fri": "GOTO Spring",
+                "Summer": "GOTO Spring",
+                "Fall": "GOTO Spring",
+                "Winter": "GOTO Spring"
+            }
+        },
+        // Malik Data
+        {
+            "LogName": "Malik Blank Schedule Load",
+            "Action": "Load",
+            "Target": "Characters/schedules/Malik",
+            "FromFile": "Data/blank.json"
+        },
+        {
+            "LogName": "Malik Blank Dialogue Load",
+            "Action": "Load",
+            "Target": "Characters/Dialogue/Malik",
+            "FromFile": "Data/blank.json"
+        },
+        {
+            "LogName": "Malik Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Malik",
+            "Entries": {
+                //Conversation Topics
+                //Vanilla
+                "Introduction": "{{i18n:npc.Malik.Introduction}}",
+                "AcceptBirthdayGift": "{{i18n:npc.Malik.AcceptBirthdayGift}}",
+                "AcceptBirthdayGift_Loved": "{{i18n:npc.Malik.AcceptBirthdayGift_Loved}}",
+                "AcceptBirthdayGift_Negative": "{{i18n:npc.Malik.AcceptBirthdayGift_Negative}}",
+                "AcceptBirthdayGift_Positive": "{{i18n:npc.Malik.AcceptBirthdayGift_Positive}}",
+                "DumpsterDiveComment": "{{i18n:npc.Malik.DumpsterDiveComment}}",
+                "GreenRain": "{{i18n:npc.Malik.GreenRain}}",
+                "GreenRainFinished": "{{i18n:npc.Malik.GreenRainFinished}}",
+                // GENERIC DIALOGUE
+                "Mon": "{{i18n:npc.Malik.Mon}}",
+                "Tue": "{{i18n:npc.Malik.Tue}}",
+                "Wed": "{{i18n:npc.Malik.Wed}}",
+                "Thu": "{{i18n:npc.Malik.Thu}}",
+                "Fri": "{{i18n:npc.Malik.Fri}}",
+                "Sat": "{{i18n:npc.Malik.Sat}}",
+                "Sun": "{{i18n:npc.Malik.Sun}}"
+            }
+        },
+        {
+            "LogName": "Malik Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Malik",
+            "Entries": {
+                "Spring": "0610 Meadery 4 41 2/0830 Meadery 23 41 2/1000 Meadery 14 41 2/1200 Meadery 14 47 2 square_4_4_2/1600 Meadery 35 47 2 square_3_3_2/1800 Meadery 21 17 2 square_2_2_2",
+                "Mon": "GOTO Spring",
+                "Tue": "GOTO Spring",
+                "Wed": "GOTO Spring",
+                "Thu": "GOTO Spring",
+                "Fri": "GOTO Spring",
+                "Summer": "GOTO Spring",
+                "Fall": "GOTO Spring",
+                "Winter": "GOTO Spring"
+            }
+        },
+        // Mandy Data
+        {
+            "LogName": "Mandy Blank Schedule Load",
+            "Action": "Load",
+            "Target": "Characters/schedules/Mandy",
+            "FromFile": "Data/blank.json"
+        },
+        {
+            "LogName": "Mandy Blank Dialogue Load",
+            "Action": "Load",
+            "Target": "Characters/Dialogue/Mandy",
+            "FromFile": "Data/blank.json"
+        },
+        {
+            "LogName": "Mandy Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Mandy",
+            "Entries": {
+                //Conversation Topics
+                //Vanilla
+                "Introduction": "{{i18n:npc.Mandy.Introduction}}",
+                "AcceptBirthdayGift": "{{i18n:npc.Mandy.AcceptBirthdayGift}}",
+                "AcceptBirthdayGift_Loved": "{{i18n:npc.Mandy.AcceptBirthdayGift_Loved}}",
+                "AcceptBirthdayGift_Negative": "{{i18n:npc.Mandy.AcceptBirthdayGift_Negative}}",
+                "AcceptBirthdayGift_Positive": "{{i18n:npc.Mandy.AcceptBirthdayGift_Positive}}",
+                "DumpsterDiveComment": "{{i18n:npc.Mandy.DumpsterDiveComment}}",
+                "GreenRain": "{{i18n:npc.Mandy.GreenRain}}",
+                "GreenRainFinished": "{{i18n:npc.Mandy.GreenRainFinished}}",
+                // GENERIC DIALOGUE
+                "Mon": "{{i18n:npc.Mandy.Mon}}",
+                "Tue": "{{i18n:npc.Mandy.Tue}}",
+                "Wed": "{{i18n:npc.Mandy.Wed}}",
+                "Thu": "{{i18n:npc.Mandy.Thu}}",
+                "Fri": "{{i18n:npc.Mandy.Fri}}",
+                "Sat": "{{i18n:npc.Mandy.Sat}}",
+                "Sun": "{{i18n:npc.Mandy.Sun}}"
+            }
+        },
+        {
+            "LogName": "Mandy Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Mandy",
+            "Entries": {
+                "Spring": "0610 Meadery 29 10 2/0630 Meadery 27 17 2 square_4_4_2/a1000 Meadery 10 9 2 square_4_4_2/a1600 Meadery 28 24 2 square_4_4_2",
+                "Mon": "GOTO Spring",
+                "Tue": "GOTO Spring",
+                "Wed": "GOTO Spring",
+                "Thu": "GOTO Spring",
+                "Fri": "GOTO Spring",
+                "Summer": "GOTO Spring",
+                "Fall": "GOTO Spring",
+                "Winter": "GOTO Spring"
+            }
+        },
+        // Kristoff Data
+        {
+            "LogName": "Kristoff Blank Schedule Load",
+            "Action": "Load",
+            "Target": "Characters/schedules/Kristoff",
+            "FromFile": "Data/blank.json"
+        },
+        {
+            "LogName": "Kristoff Blank Dialogue Load",
+            "Action": "Load",
+            "Target": "Characters/Dialogue/Kristoff",
+            "FromFile": "Data/blank.json"
+        },
+        {
+            "LogName": "Kristoff Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Kristoff",
+            "Entries": {
+                //Conversation Topics
+                //Vanilla
+                "Introduction": "{{i18n:npc.Kristoff.Introduction}}",
+                "AcceptBirthdayGift": "{{i18n:npc.Kristoff.AcceptBirthdayGift}}",
+                "AcceptBirthdayGift_Loved": "{{i18n:npc.Kristoff.AcceptBirthdayGift_Loved}}",
+                "AcceptBirthdayGift_Negative": "{{i18n:npc.Kristoff.AcceptBirthdayGift_Negative}}",
+                "AcceptBirthdayGift_Positive": "{{i18n:npc.Kristoff.AcceptBirthdayGift_Positive}}",
+                "DumpsterDiveComment": "{{i18n:npc.Kristoff.DumpsterDiveComment}}",
+                "GreenRain": "{{i18n:npc.Kristoff.GreenRain}}",
+                "GreenRainFinished": "{{i18n:npc.Kristoff.GreenRainFinished}}",
+                // GENERIC DIALOGUE
+                "Mon": "{{i18n:npc.Kristoff.Mon}}",
+                "Tue": "{{i18n:npc.Kristoff.Tue}}",
+                "Wed": "{{i18n:npc.Kristoff.Wed}}",
+                "Thu": "{{i18n:npc.Kristoff.Thu}}",
+                "Fri": "{{i18n:npc.Kristoff.Fri}}",
+                "Sat": "{{i18n:npc.Kristoff.Sat}}",
+                "Sun": "{{i18n:npc.Kristoff.Sun}}"
+            }
+        },
+        {
+            "LogName": "Kristoff Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Kristoff",
+            "Entries": {
+                "Spring": "0610 Meadery 33 24 2/0630 Meadery 51 21 2 square_4_4_2/a1000 Meadery 36 46 2 square_4_4_2/a1600 Meadery 43 8 2 square_4_4_2",
+                "Mon": "GOTO Spring",
+                "Tue": "GOTO Spring",
+                "Wed": "GOTO Spring",
+                "Thu": "GOTO Spring",
+                "Fri": "GOTO Spring",
+                "Summer": "GOTO Spring",
+                "Fall": "GOTO Spring",
+                "Winter": "GOTO Spring"
+            }
+        },
+        // Mona Data
+        {
+            "LogName": "Mona Blank Schedule Load",
+            "Action": "Load",
+            "Target": "Characters/schedules/Mona",
+            "FromFile": "Data/blank.json"
+        },
+        {
+            "LogName": "Mona Blank Dialogue Load",
+            "Action": "Load",
+            "Target": "Characters/Dialogue/Mona",
+            "FromFile": "Data/blank.json"
+        },
+        {
+            "LogName": "Mona Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Mona",
+            "Entries": {
+                //Conversation Topics
+                //Vanilla
+                "Introduction": "{{i18n:npc.Mona.Introduction}}",
+                "AcceptBirthdayGift": "{{i18n:npc.Mona.AcceptBirthdayGift}}",
+                "AcceptBirthdayGift_Loved": "{{i18n:npc.Mona.AcceptBirthdayGift_Loved}}",
+                "AcceptBirthdayGift_Negative": "{{i18n:npc.Mona.AcceptBirthdayGift_Negative}}",
+                "AcceptBirthdayGift_Positive": "{{i18n:npc.Mona.AcceptBirthdayGift_Positive}}",
+                "DumpsterDiveComment": "{{i18n:npc.Mona.DumpsterDiveComment}}",
+                "GreenRain": "{{i18n:npc.Mona.GreenRain}}",
+                "GreenRainFinished": "{{i18n:npc.Mona.GreenRainFinished}}",
+                // GENERIC DIALOGUE
+                "Mon": "{{i18n:npc.Mona.Mon}}",
+                "Tue": "{{i18n:npc.Mona.Tue}}",
+                "Wed": "{{i18n:npc.Mona.Wed}}",
+                "Thu": "{{i18n:npc.Mona.Thu}}",
+                "Fri": "{{i18n:npc.Mona.Fri}}",
+                "Sat": "{{i18n:npc.Mona.Sat}}",
+                "Sun": "{{i18n:npc.Mona.Sun}}"
+            }
+        },
+        {
+            "LogName": "Mona Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Mona",
+            "Entries": {
+                "Spring": "0610 Meadery 22 7 2/0630 Meadery 8 11 2 square_4_4_2/a1000 Meadery 35 27 2 square_4_4_2/a1600 Meadery 28 17 2 square_4_4_2",
+                "Mon": "GOTO Spring",
+                "Tue": "GOTO Spring",
+                "Wed": "GOTO Spring",
+                "Thu": "GOTO Spring",
+                "Fri": "GOTO Spring",
+                "Summer": "GOTO Spring",
+                "Fall": "GOTO Spring",
+                "Winter": "GOTO Spring"
+            }
+        },
+    ]
+}

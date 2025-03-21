@@ -62,6 +62,14 @@
             "FromFile": "Maps/Data/meadshop.json, Data/mail.json, Data/gifttastes.json, Maps/Data/garbage.json, Data/shops.json, Data/characters.json"
         },
         //
+        //  Tourists
+        //
+        {
+            "LogName": "Load Tourist Data Files",
+            "Action": "Include",
+            "FromFile": "Data/tourists.json"
+        },
+        //
         //
         //  Load Assets
         //

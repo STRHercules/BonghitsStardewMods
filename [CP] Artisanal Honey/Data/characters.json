@@ -191,6 +191,78 @@
             }
         },
         {
+            "LogName": "Shopkeeper Gift Taste Data",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Entries": {
+                "Zachary2": "You're giving this... to me? I'm speechless./72 213 635 729 907/Oh, goodness! Are you sure?/348 303 -7 18 430/No, no, no.../16 330/This is absolute junk. I'm offended./80 167 648/Oh, that's sweet. Thank you.//",
+                "Natalie": "You're giving this... to me? I'm speechless./72 213 635 729 907/Oh, goodness! Are you sure?/348 303 -7 18 430/No, no, no.../16 330/This is absolute junk. I'm offended./80 167 648/Oh, that's sweet. Thank you.//",
+                
+            }
+        },
+        {
+            "LogName": "Zachary Blank Dialogue Load",
+            "Action": "Load",
+            "Target": "Characters/Dialogue/Zachary2",
+            "FromFile": "Data/blank.json"
+        },
+        {
+            "LogName": "Natalie Blank Dialogue Load",
+            "Action": "Load",
+            "Target": "Characters/Dialogue/Natalie",
+            "FromFile": "Data/blank.json"
+        },
+        {
+            "LogName": "Zachary Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Zachary2",
+            "Entries": {
+                //Conversation Topics
+                //Vanilla
+                "Introduction": "{{i18n:npc.Zachary.Introduction}}",
+                "AcceptBirthdayGift": "{{i18n:npc.Zachary.AcceptBirthdayGift}}",
+                "AcceptBirthdayGift_Loved": "{{i18n:npc.Zachary.AcceptBirthdayGift_Loved}}",
+                "AcceptBirthdayGift_Negative": "{{i18n:npc.Zachary.AcceptBirthdayGift_Negative}}",
+                "AcceptBirthdayGift_Positive": "{{i18n:npc.Zachary.AcceptBirthdayGift_Positive}}",
+                "DumpsterDiveComment": "{{i18n:npc.Zachary.DumpsterDiveComment}}",
+                "GreenRain": "{{i18n:npc.Zachary.GreenRain}}",
+                "GreenRainFinished": "{{i18n:npc.Zachary.GreenRainFinished}}",
+                // GENERIC DIALOGUE
+                "Mon": "{{i18n:npc.Zachary.Mon}}",
+                "Tue": "{{i18n:npc.Zachary.Tue}}",
+                "Wed": "{{i18n:npc.Zachary.Wed}}",
+                "Thu": "{{i18n:npc.Zachary.Thu}}",
+                "Fri": "{{i18n:npc.Zachary.Fri}}",
+                "Sat": "{{i18n:npc.Zachary.Sat}}",
+                "Sun": "{{i18n:npc.Zachary.Sun}}"
+            }
+        },
+        {
+            "LogName": "Natalie Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Natalie",
+            "Entries": {
+                //Conversation Topics
+                //Vanilla
+                "Introduction": "{{i18n:npc.Natalie.Introduction}}",
+                "AcceptBirthdayGift": "{{i18n:npc.Natalie.AcceptBirthdayGift}}",
+                "AcceptBirthdayGift_Loved": "{{i18n:npc.Natalie.AcceptBirthdayGift_Loved}}",
+                "AcceptBirthdayGift_Negative": "{{i18n:npc.Natalie.AcceptBirthdayGift_Negative}}",
+                "AcceptBirthdayGift_Positive": "{{i18n:npc.Natalie.AcceptBirthdayGift_Positive}}",
+                "DumpsterDiveComment": "{{i18n:npc.Natalie.DumpsterDiveComment}}",
+                "GreenRain": "{{i18n:npc.Natalie.GreenRain}}",
+                "GreenRainFinished": "{{i18n:npc.Natalie.GreenRainFinished}}",
+                // GENERIC DIALOGUE
+                "Mon": "{{i18n:npc.Natalie.Mon}}",
+                "Tue": "{{i18n:npc.Natalie.Tue}}",
+                "Wed": "{{i18n:npc.Natalie.Wed}}",
+                "Thu": "{{i18n:npc.Natalie.Thu}}",
+                "Fri": "{{i18n:npc.Natalie.Fri}}",
+                "Sat": "{{i18n:npc.Natalie.Sat}}",
+                "Sun": "{{i18n:npc.Natalie.Sun}}"
+            }
+        },
+        {
             "Action": "Load",
             "Target": "Portraits/Large_Natalie",
             "FromFile": "assets/natalie/BubblePortraitBig.png"
