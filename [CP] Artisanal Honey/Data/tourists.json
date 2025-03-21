@@ -2,42 +2,96 @@
     "Changes": [
         //  Delphy
         {
-            "LogName": "Delphy Sprite Load",
             "Action": "Load",
             "Target": "Characters/Delphy",
             "FromFile": "assets/delly/spritesheet.png"
         },
         {
-            "LogName": "Delphy Portrait Load",
+            "Action": "Load",
+            "Target": "Characters/Delphy_Spring",
+            "FromFile": "assets/delly/seasonal/Characters/spring.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/Delphy_Summer",
+            "FromFile": "assets/delly/seasonal/Characters/summer.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/Delphy_Fall",
+            "FromFile": "assets/delly/seasonal/Characters/fall.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/Delphy_Winter",
+            "FromFile": "assets/delly/seasonal/Characters/winter.png"
+        },
+        {
             "Action": "Load",
             "Target": "Portraits/Delphy",
             "FromFile": "assets/delly/portrait.png"
         },
+        {
+            "Action": "Load",
+            "Target": "Portraits/Delphy_Spring",
+            "FromFile": "assets/delly/seasonal/Portraits/spring.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Portraits/Delphy_Summer",
+            "FromFile": "assets/delly/seasonal/Portraits/summer.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Portraits/Delphy_Fall",
+            "FromFile": "assets/delly/seasonal/Portraits/fall.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Portraits/Delphy_Winter",
+            "FromFile": "assets/delly/seasonal/Portraits/winter.png"
+        },
         //  Mandy
         {
-            "LogName": "Mandy Sprite Load",
             "Action": "Load",
             "Target": "Characters/Mandy",
             "FromFile": "assets/pauline/spritesheet-Default-Sprite.png"
         },
         {
-            "LogName": "Mandy Portrait Load",
             "Action": "Load",
             "Target": "Portraits/Mandy",
             "FromFile": "assets/pauline/portrait-Default-Pauline.png"
         },
+        {
+            "Action": "Load",
+            "Target": "Characters/Mandy_Winter",
+            "FromFile": "assets/pauline/spritesheet-Default-SpriteW.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Portraits/Mandy_Winter",
+            "FromFile": "assets/pauline/portrait-Default-WinterPauline.png"
+        },
         //  Kristoff
         {
-            "LogName": "Kristoff Sprite Load",
             "Action": "Load",
             "Target": "Characters/Kristoff",
             "FromFile": "assets/richie/sprites.png"
         },
         {
-            "LogName": "Kristoff Portrait Load",
             "Action": "Load",
             "Target": "Portraits/Kristoff",
             "FromFile": "assets/richie/portraits.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/Kristoff_Winter",
+            "FromFile": "assets/richie/sprites_winter.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Portraits/Kristoff_Winter",
+            "FromFile": "assets/richie/portraits_winter.png"
         },
         //  Malik
         {
@@ -54,16 +108,54 @@
         },
         //  Mona
         {
-            "LogName": "Mona Sprite Load",
             "Action": "Load",
             "Target": "Characters/Mona",
             "FromFile": "assets/mona/MoraSpritesSpring.png"
         },
         {
-            "LogName": "Mona Portrait Load",
             "Action": "Load",
             "Target": "Portraits/Mona",
             "FromFile": "assets/mona/portraits/MoraPortraitsSpring.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/Mona_Spring",
+            "FromFile": "assets/mona/MoraSpritesSpring.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Portraits/Mona_Spring",
+            "FromFile": "assets/mona/portraits/MoraPortraitsSpring.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/Mona_Summer",
+            "FromFile": "assets/mona/MoraSpritesSummerOutdoors.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Portraits/Mona_Summer",
+            "FromFile": "assets/mona/portraits/MoraPortraitsSummerOutdoors.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/Mona_Fall",
+            "FromFile": "assets/mona/MoraSpritesFall.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Portraits/Mona_Fall",
+            "FromFile": "assets/mona/portraits/MoraPortraitsFall.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/Mona_Winter",
+            "FromFile": "assets/mona/MoraSpritesWinter.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Portraits/Mona_Winter",
+            "FromFile": "assets/mona/portraits/MoraPortraitsWinter.png"
         },
         //
         //
@@ -76,8 +168,8 @@
             "Entries": {
                 "Delphy": {
                     "DisplayName": "{{i18n:bonghits.Delphy.DisplayName}}",
-                    "BirthSeason": "Spring",
-                    "BirthDay": 15,
+                    "BirthSeason": "Fall",
+                    "BirthDay": 8,
                     "HomeRegion": "Other",
                     "Language": "Default",
                     "Gender": "Female",
@@ -95,9 +187,9 @@
                     "CanGreetNearbyCharacters": true,
                     "CanCommentOnPurchasedShopItems": true,
                     "CanVisitIsland": true,
-                    "IntroductionsQuest": true,
+                    "IntroductionsQuest": false,
                     "ItemDeliveryQuests": true,
-                    "PerfectionScore": true,
+                    "PerfectionScore": false,
                     "EndSlideShow": "Hidden",
                     "SpouseAdopts": null,
                     "SpouseWantsChildren": null,
@@ -129,11 +221,59 @@
                         {
                             "Id": "All Seasons",
                             "Condition": null,
-                            "Season": null, //all
+                            "Season": null,
                             "Indoors": true,
                             "Outdoors": true,
                             "Portrait": "Portraits/Delphy",
                             "Sprite": "Characters/Delphy",
+                            "IsIslandAttire": false,
+                            "Precedence": 0,
+                            "Weight": 1
+                        },
+                        {
+                            "Id": "Spring",
+                            "Condition": null,
+                            "Season": "Spring",
+                            "Indoors": true,
+                            "Outdoors": true,
+                            "Portrait": "Portraits/Delphy_Spring",
+                            "Sprite": "Characters/Delphy_Spring",
+                            "IsIslandAttire": false,
+                            "Precedence": -100,
+                            "Weight": 1
+                        },
+                        {
+                            "Id": "Summer",
+                            "Condition": null,
+                            "Season": "Summer",
+                            "Indoors": true,
+                            "Outdoors": true,
+                            "Portrait": "Portraits/Delphy_Summer",
+                            "Sprite": "Characters/Delphy_Summer",
+                            "IsIslandAttire": false,
+                            "Precedence": -100,
+                            "Weight": 1
+                        },
+                        {
+                            "Id": "Fall",
+                            "Condition": null,
+                            "Season": "Fall",
+                            "Indoors": true,
+                            "Outdoors": true,
+                            "Portrait": "Portraits/Delphy_Fall",
+                            "Sprite": "Characters/Delphy_Fall",
+                            "IsIslandAttire": false,
+                            "Precedence": -100,
+                            "Weight": 1
+                        },
+                        {
+                            "Id": "Winter",
+                            "Condition": null,
+                            "Season": "Winter",
+                            "Indoors": true,
+                            "Outdoors": true,
+                            "Portrait": "Portraits/Delphy_Winter",
+                            "Sprite": "Characters/Delphy_Winter",
                             "IsIslandAttire": false,
                             "Precedence": -100,
                             "Weight": 1
@@ -185,9 +325,9 @@
                     "CanGreetNearbyCharacters": true,
                     "CanCommentOnPurchasedShopItems": true,
                     "CanVisitIsland": true,
-                    "IntroductionsQuest": true,
+                    "IntroductionsQuest": false,
                     "ItemDeliveryQuests": true,
-                    "PerfectionScore": true,
+                    "PerfectionScore": false,
                     "EndSlideShow": "Hidden",
                     "SpouseAdopts": null,
                     "SpouseWantsChildren": null,
@@ -224,6 +364,18 @@
                             "Outdoors": true,
                             "Portrait": "Portraits/Mandy",
                             "Sprite": "Characters/Mandy",
+                            "IsIslandAttire": false,
+                            "Precedence": -100,
+                            "Weight": 1
+                        },
+                        {
+                            "Id": "Winter",
+                            "Condition": null,
+                            "Season": "Winter",
+                            "Indoors": true,
+                            "Outdoors": true,
+                            "Portrait": "Portraits/Mandy_Winter",
+                            "Sprite": "Characters/Mandy_Winter",
                             "IsIslandAttire": false,
                             "Precedence": -100,
                             "Weight": 1
@@ -275,9 +427,9 @@
                     "CanGreetNearbyCharacters": true,
                     "CanCommentOnPurchasedShopItems": true,
                     "CanVisitIsland": true,
-                    "IntroductionsQuest": true,
+                    "IntroductionsQuest": false,
                     "ItemDeliveryQuests": true,
-                    "PerfectionScore": true,
+                    "PerfectionScore": false,
                     "EndSlideShow": "Hidden",
                     "SpouseAdopts": null,
                     "SpouseWantsChildren": null,
@@ -314,6 +466,18 @@
                             "Outdoors": true,
                             "Portrait": "Portraits/Kristoff",
                             "Sprite": "Characters/Kristoff",
+                            "IsIslandAttire": false,
+                            "Precedence": -100,
+                            "Weight": 1
+                        },
+                        {
+                            "Id": "Winter",
+                            "Condition": null,
+                            "Season": "Winter",
+                            "Indoors": true,
+                            "Outdoors": true,
+                            "Portrait": "Portraits/Kristoff_Winter",
+                            "Sprite": "Characters/Kristoff_Winter",
                             "IsIslandAttire": false,
                             "Precedence": -100,
                             "Weight": 1
@@ -365,9 +529,9 @@
                     "CanGreetNearbyCharacters": true,
                     "CanCommentOnPurchasedShopItems": true,
                     "CanVisitIsland": true,
-                    "IntroductionsQuest": true,
+                    "IntroductionsQuest": false,
                     "ItemDeliveryQuests": true,
-                    "PerfectionScore": true,
+                    "PerfectionScore": false,
                     "EndSlideShow": "Hidden",
                     "SpouseAdopts": null,
                     "SpouseWantsChildren": null,
@@ -455,9 +619,9 @@
                     "CanGreetNearbyCharacters": true,
                     "CanCommentOnPurchasedShopItems": true,
                     "CanVisitIsland": true,
-                    "IntroductionsQuest": true,
+                    "IntroductionsQuest": false,
                     "ItemDeliveryQuests": true,
-                    "PerfectionScore": true,
+                    "PerfectionScore": false,
                     "EndSlideShow": "Hidden",
                     "SpouseAdopts": null,
                     "SpouseWantsChildren": null,
@@ -494,6 +658,54 @@
                             "Outdoors": true,
                             "Portrait": "Portraits/Mona",
                             "Sprite": "Characters/Mona",
+                            "IsIslandAttire": false,
+                            "Precedence": 0,
+                            "Weight": 1
+                        },
+                        {
+                            "Id": "Spring",
+                            "Condition": null,
+                            "Season": "Spring",
+                            "Indoors": true,
+                            "Outdoors": true,
+                            "Portrait": "Portraits/Mona_Spring",
+                            "Sprite": "Characters/Mona_Spring",
+                            "IsIslandAttire": false,
+                            "Precedence": -100,
+                            "Weight": 1
+                        },
+                        {
+                            "Id": "Summer",
+                            "Condition": null,
+                            "Season": "Summer",
+                            "Indoors": true,
+                            "Outdoors": true,
+                            "Portrait": "Portraits/Mona_Summer",
+                            "Sprite": "Characters/Mona_Summer",
+                            "IsIslandAttire": false,
+                            "Precedence": -100,
+                            "Weight": 1
+                        },
+                        {
+                            "Id": "Fall",
+                            "Condition": null,
+                            "Season": "Fall",
+                            "Indoors": true,
+                            "Outdoors": true,
+                            "Portrait": "Portraits/Mona_Fall",
+                            "Sprite": "Characters/Mona_Fall",
+                            "IsIslandAttire": false,
+                            "Precedence": -100,
+                            "Weight": 1
+                        },
+                        {
+                            "Id": "Winter",
+                            "Condition": null,
+                            "Season": "Winter",
+                            "Indoors": true,
+                            "Outdoors": true,
+                            "Portrait": "Portraits/Mona_Winter",
+                            "Sprite": "Characters/Mona_Winter",
                             "IsIslandAttire": false,
                             "Precedence": -100,
                             "Weight": 1
