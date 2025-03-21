@@ -1,4 +1,5 @@
 {
+// Misc
     "bonghits.agedmead_name": "Aged {0} Honey Mead",
     "bonghits.mead_name": "{0} Honey Mead",
     "message.invalidCount": "Need 10 fruit, one Honey",
@@ -27,9 +28,9 @@
     "message.invalidCount4": "Needs one Fire Quartz",
     "BarrelSmoker.name": "Barrel Smoker",
     "BarrelSmoker.description": "Used to refine your meads and ciders to increase their flavor and add a dash of smoke. Increases value of input.",
-    // SVE Mail Data
+// SVE Mail Data
     "MailSVE": "@, ^I've been hearing more and more about this phenomenon where people are actually having bears harvest honey for them? Crazy right! ^I wonder what mead brewed from that honey would taste like... ^^If you ever find out I'd love to know! ^ -Zach [#]EarnedJarOfHoney",
-    // Mail Data
+// Mail Data
     "Mail1": "Well hey there, @! ^I heard you recently started farming at your grandpa's old place. Great to hear you are following in his footsteps! He often visited my Saloon and provided me with some of the highest quality mead I've ever seen. ^Did you know that you can take the honey from your Bee House and craft artisanal mead? I hear you learned how to craft the Artisanal Mead Keg, I helped pioneer its' conception! Glad to see it's being put to good use! ^Brewing mead can be a really lucrative hobby, you can eventually age it with fruit, brew ciders, and even create sparkling versions of mead! ^Tell you what, you put some mead into your shipping bin, I'll swing by after the saloon closes and pick it up, and make it worth your while! ^ -Zach [#]LearnedMeadKeg",
     "Mail2": "@,^ That was some impressive Mead I picked up last night, my patrons went crazy for it! ^They loved it so much they requested another order, I've never had this much positive feedback from a mead before! If you were able to produce that quality mead you should definitely try aging some! ^In order to age your mead, take it over to a preserving Jar and combine that with 2 of any 3 fruits and viola, you'll have some deliciously flavored mead in no time! Same deal as before @, any mead you leave in your shipping bin I will happily come collect. I can't wait to see what kind of aged mead you brew up! ^Speaking of, since you have showed such an interest in brewing mead I updated my stock in my Saloon, come check it out sometime! ^ -Zach [#]ShippedMead",
     "Mail3": "@!,^Wow! That aged mead was perfection! Absolutely amazing! I don't think the bottom of the bottle ever even touched the bar haha! ^The highest quality meads are often full of fruity notes, but the best meads I've ever tasted have been smoke aged in a barrel. I can pay even more per bottle once they have been aged in a barrel smoker. ^Speaking of the Barrel Smoker, I recently found some old blueprints for ones your grandpa used back in the day, but these are antique and I can't just let them go. Come down to my shop and we can work out a good price on 'em! [#]ShippedAgedMead",
@@ -47,36 +48,10 @@
     
     "bh.Meadery.DisplayName": "Meadery",
     "bh.MeadSaloon.DisplayName": "Mead Saloon",
-    // Zach Shop Dialogue
-    "Mead_Shop1": "Hey there! I bet you've never tasted Mead as good as mine!",
-    "Mead_Shop2": "Welcome! Wanna learn something? Perhaps buy some recipes or materials?",
-    "Mead_Shop3": "Greetings, traveler! Ready to embark on a journey of flavors with my special mead brews?",
-    "Mead_Shop4": "Hello there! Ever tried a mead that's as adventurous as your spirit? Come taste the difference!",
-    "Mead_Shop5": "Welcome, friend! Let's explore the world of mead together. I've got stories and brews to share!",
-    "Mead_Shop6": "Hey there! Looking for a taste of adventure? My mead will take you on a journey like no other!",
-    "Mead_Shop7": "Greetings! Ready to discover the secrets of mead brewing? I've got recipes and tales to inspire you!",
-    "Mead_Shop8": "Hello, adventurer! Ever wondered what it's like to brew your own mead? Let me show you the way!",
-    "Mead_Shop9": "Welcome! Ready to embark on a flavorful adventure? My mead is the perfect companion for your journey!",
-    "Mead_Shop10": "Hey there! Looking for a taste of something new? My mead is brewed with adventure in mind!",
-    "Mead_Shop11": "Greetings, friend! Ready to explore the world of mead? I've got brews that will take you on a journey!",
-    "Mead_Shop12": "Hello there! Ever tried a mead that's as unique as your adventures? Come taste the difference!",
-    // Nat Shop Dialogue
-    "BubbleMeadShop1": "Hi! Welcome to our little shop!",
-    "BubbleMeadShop2": "I made the bubbles myself!",
-    "BubbleMeadShop3": "Hiya! Ready to pop open a sparkling adventure with my fizzy mead brews? Let's dive in!",
-    "BubbleMeadShop4": "Hello! Ever tried a mead that dances on your tongue like tiny bubbles? Come taste the magic!",
-    "BubbleMeadShop5": "Welcome, friend! Let's explore the sparkling world of mead together. I've got bubbly brews and fun stories to share!",
-    "BubbleMeadShop6": "Hey there! Looking for a taste of adventure that's as bubbly as your personality? My sparkling mead is the perfect match!",
-    "BubbleMeadShop7": "Greetings! Ready to discover the secrets of sparkling mead? I've got recipes and tales that will make you bubble with joy!",
-    "BubbleMeadShop8": "Hello, adventurer! Ever wondered what it's like to brew your own bubbly mead? Let me show you the fizzy fun!",
-    "BubbleMeadShop9": "Welcome! Ready to embark on a bubbly adventure? My sparkling mead is the perfect companion for your journey!",
-    "BubbleMeadShop10": "Hey there! Looking for a taste of something new and bubbly? My sparkling mead will tickle your taste buds!",
-    "BubbleMeadShop11": "Greetings, friend! Ready to explore the bubbly world of mead? I've got sparkling brews that will make you smile!",
-    "BubbleMeadShop12": "Hello there! Ever tried a mead that's as bubbly and cute as you? Come taste the sparkling difference!",
-    //
-    // Tourist NPC Data
-    //
-        // Delphy
+//
+// Tourist NPC Data
+//
+// Delphy
     "bonghits.Delphy.DisplayName": "Delphy",
     "npc.Delphy.Introduction": "Hey, you must be @, I'm Delphy! have you tasted the mead here? It's insane!",
     "npc.Delphy.AcceptBirthdayGift": "Wow, for me?",
@@ -93,7 +68,7 @@
     "npc.Delphy.Fri": "Have you tried Zach's specialty mead? It's sooo good!",
     "npc.Delphy.Sat": "I heard Nat has a special going this weekend you should check it out!",
     "npc.Delphy.Sun": "Man, sundays always feel so boring huh?",
-        // Malik (Ghostface)
+// Malik (Ghostface)
     "bonghits.Malik.DisplayName": "Malik",
     "npc.Malik.Introduction": "What's your favorite scary movie, @?",
     "npc.Malik.AcceptBirthdayGift": "Okay?",
@@ -110,7 +85,7 @@
     "npc.Malik.Fri": "I was at home watching television and uh the exorcist was on, it got me thinking of ..Oh..You again?",
     "npc.Malik.Sat": "Be careful what you wish for.",
     "npc.Malik.Sun": "Now I see something red.",
-        // Mandy
+// Mandy
     "bonghits.Mandy.DisplayName": "Mandy",
     "npc.Mandy.Introduction": "Oh hey, you're @ right? I knew your grandpa he was a pretty cool guy. Glad to see someone is taking care of that Farm.",
     "npc.Mandy.AcceptBirthdayGift": "Thanks!",
@@ -127,7 +102,7 @@
     "npc.Mandy.Fri": "The crow on the roof squacks every time I walk past, is he trying to tell me something?",
     "npc.Mandy.Sat": "I don't think I wore the right shoes.. oh well.",
     "npc.Mandy.Sun": "Hangover is an understatement, can you keep your voice down?",
-        // Kristoff
+// Kristoff
     "bonghits.Kristoff.DisplayName": "Kristoff",
     "npc.Kristoff.Introduction": "Oh, you're @ aren't you? I heard you moved back into the Valley and I don't blame you. Joja is the worst, I left myself a couple years ago and have zero regrets. Welcome back to sanity @!",
     "npc.Kristoff.AcceptBirthdayGift": "Thanks!",
@@ -144,7 +119,7 @@
     "npc.Kristoff.Fri": "Did you see that guy dressed up down by the old meadery? He gives me the creeps to be honest.",
     "npc.Kristoff.Sat": "The old meadery used to be the only thing down here off this old highway, Zach and Nat really performed a miracle making this place what it is. It was really cool to see it grow.",
     "npc.Kristoff.Sun": "I tried opening the kegs over by that big Sign, Zach came out and stopped me immediately.. how did he even know I was trying?",
-        // Mona
+// Mona
     "bonghits.Mona.DisplayName": "Mona",
     "npc.Mona.Introduction": "Nice to meet you! I'm Mona, you must be @! I've heard a lot about your grandpa, I'm really happy to see you decided to take up his offer and work the land. I find it really fulfilling to watch something you planted as a seed become something delicious or beautiful.",
     "npc.Mona.AcceptBirthdayGift": "Thank youuu!",
@@ -161,10 +136,10 @@
     "npc.Mona.Fri": "20 MPH doesn't sound fast, but could you believe that is actually how fast a little squirrel can run? Makes them challengeing prey for predators I tell you what!",
     "npc.Mona.Sat": "Squirrels have *incredible* memory! Little Curtis over there can remember the exact locations of thousands of buried nuts, using his spatial memory and keen sense of smell. Fascinating little creatures eh?",
     "npc.Mona.Sun": "Little Curtis can live to be over 20 years old! The longer he stays here in this safe little orchard eating all the fruits and honey he would ever need he is gonna be around for a loooong time!",
-    //
-    // Shopkeeper Data
-    //
-        // Zach
+//
+// Shopkeeper Data
+//
+// Zach
     "bonghits.Zachary.DisplayName": "Zachary",
     "npc.Zachary.Introduction": "You must be @, I'm Zach! I moved here with Nat last year and we bought this old orchard. Fast forward a year and here we are! I'm really enthusiastic about Mead if you couldnt tell, and I hope that rubs off on you a little, your grandpa sure loved the stuff!",
     "npc.Zachary.AcceptBirthdayGift": "Whoa no way! This is for me?",
@@ -181,7 +156,20 @@
     "npc.Zachary.Fri": "Check out my specialty mead! I brew it myself and put a slough of secret ingredients in it! I guarantee you will dig it!",
     "npc.Zachary.Sat": "@! Nat and I have been waiting for you to come in to tell you something... ugh damn what was it?",
     "npc.Zachary.Sun": "Sunday funday! Today is for drinking mead and kicking back.",
-        // Nat
+// Zach Shop Dialogue
+    "Mead_Shop1": "Hey there! I bet you've never tasted Mead as good as mine!",
+    "Mead_Shop2": "Welcome! Wanna learn something? Perhaps buy some recipes or materials?",
+    "Mead_Shop3": "Greetings, traveler! Ready to embark on a journey of flavors with my special mead brews?",
+    "Mead_Shop4": "Hello there! Ever tried a mead that's as adventurous as your spirit? Come taste the difference!",
+    "Mead_Shop5": "Welcome, friend! Let's explore the world of mead together. I've got stories and brews to share!",
+    "Mead_Shop6": "Hey there! Looking for a taste of adventure? My mead will take you on a journey like no other!",
+    "Mead_Shop7": "Greetings! Ready to discover the secrets of mead brewing? I've got recipes and tales to inspire you!",
+    "Mead_Shop8": "Hello, adventurer! Ever wondered what it's like to brew your own mead? Let me show you the way!",
+    "Mead_Shop9": "Welcome! Ready to embark on a flavorful adventure? My mead is the perfect companion for your journey!",
+    "Mead_Shop10": "Hey there! Looking for a taste of something new? My mead is brewed with adventure in mind!",
+    "Mead_Shop11": "Greetings, friend! Ready to explore the world of mead? I've got brews that will take you on a journey!",
+    "Mead_Shop12": "Hello there! Ever tried a mead that's as unique as your adventures? Come taste the difference!",
+// Nat
     "bonghits.Natalie.DisplayName": "Nat",
     "npc.Natalie.Introduction": "What's your favorite scary movie, @?",
     "npc.Natalie.AcceptBirthdayGift": "Okay?",
@@ -197,5 +185,18 @@
     "npc.Natalie.Thu": "Cause I wanna know who I'm looking at.",
     "npc.Natalie.Fri": "I was at home watching television and uh the exorcist was on, it got me thinking of ..Oh..You again?",
     "npc.Natalie.Sat": "Be careful what you wish for.",
-    "npc.Natalie.Sun": "Now I see something red."
+    "npc.Natalie.Sun": "Now I see something red.",
+// Nat Shop Dialogue
+    "BubbleMeadShop1": "Hi! Welcome to our little shop!",
+    "BubbleMeadShop2": "I made the bubbles myself!",
+    "BubbleMeadShop3": "Hiya! Ready to pop open a sparkling adventure with my fizzy mead brews? Let's dive in!",
+    "BubbleMeadShop4": "Hello! Ever tried a mead that dances on your tongue like tiny bubbles? Come taste the magic!",
+    "BubbleMeadShop5": "Welcome, friend! Let's explore the sparkling world of mead together. I've got bubbly brews and fun stories to share!",
+    "BubbleMeadShop6": "Hey there! Looking for a taste of adventure that's as bubbly as your personality? My sparkling mead is the perfect match!",
+    "BubbleMeadShop7": "Greetings! Ready to discover the secrets of sparkling mead? I've got recipes and tales that will make you bubble with joy!",
+    "BubbleMeadShop8": "Hello, adventurer! Ever wondered what it's like to brew your own bubbly mead? Let me show you the fizzy fun!",
+    "BubbleMeadShop9": "Welcome! Ready to embark on a bubbly adventure? My sparkling mead is the perfect companion for your journey!",
+    "BubbleMeadShop10": "Hey there! Looking for a taste of something new and bubbly? My sparkling mead will tickle your taste buds!",
+    "BubbleMeadShop11": "Greetings, friend! Ready to explore the bubbly world of mead? I've got sparkling brews that will make you smile!",
+    "BubbleMeadShop12": "Hello there! Ever tried a mead that's as bubbly and cute as you? Come taste the sparkling difference!"
 }

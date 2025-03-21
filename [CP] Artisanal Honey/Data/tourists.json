@@ -810,6 +810,6 @@
                 "Fall": "GOTO Spring",
                 "Winter": "GOTO Spring"
             }
-        },
+        }
     ]
 }
