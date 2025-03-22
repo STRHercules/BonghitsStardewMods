@@ -164,6 +164,26 @@
                             "Price": 1000,
                         },*/
                         {
+                            "ItemId": "{{ModId}}_Hazelnut",
+                            "Condition": "SEASON Spring",
+                            "Price": 250
+                        },
+                        {
+                            "ItemId": "{{ModId}}_Pistachio",
+                            "Condition": "SEASON Summer",
+                            "Price": 250
+                        },
+                        {
+                            "ItemId": "{{ModId}}_Almond",
+                            "Condition": "SEASON Fall",
+                            "Price": 250
+                        },
+                        {
+                            "ItemId": "{{ModId}}_Macadamia",
+                            "Condition": "SEASON Winter",
+                            "Price": 250
+                        },
+                        {
                             "ItemId": "bonghits.Cp_BubbleHealth",
                             // Sells after player reaches mines level 10
                             "Condition": "MINE_LOWEST_LEVEL_REACHED 10",

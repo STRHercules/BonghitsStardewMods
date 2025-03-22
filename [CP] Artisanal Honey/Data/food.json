@@ -1,0 +1,255 @@
+{
+    "Changes": [
+        //
+        //  Food Data
+        //
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_CheeseCake": {
+                    "Name": "{{ModId}}_CheeseCake",
+                    "DisplayName": "{{i18n:CheeseCake_Name}}",
+                    "Description": "{{i18n:CheeseCake_Description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 100,
+                    "Texture": "bonghits.BearHoneyMead/FoodStuffs",
+                    "SpriteIndex": 7,
+                    "Edibility": 60,
+                    "IsDrink": false,
+                    "ContextTags": [
+                        "color_red",
+                        "food_bakery",
+                        "food_cake",
+                        "food_sweet"
+                    ],
+                    "CustomFields": null
+                },
+                "{{ModId}}_ChocolateCake": {
+                    "Name": "{{ModId}}_ChocolateCake",
+                    "DisplayName": "{{i18n:ChocolateCake_Name}}",
+                    "Description": "{{i18n:ChocolateCake_Description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 100,
+                    "Texture": "bonghits.BearHoneyMead/FoodStuffs",
+                    "SpriteIndex": 8,
+                    "Edibility": 60,
+                    "IsDrink": false,
+                    "ContextTags": [
+                        "color_brown",
+                        "food_bakery",
+                        "food_cake",
+                        "food_sweet"
+                    ],
+                    "CustomFields": null
+                },
+                "{{ModId}}_PistachioCake": {
+                    "Name": "{{ModId}}_PistachioCake",
+                    "DisplayName": "{{i18n:PistachioCake_Name}}",
+                    "Description": "{{i18n:PistachioCake_Description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 100,
+                    "Texture": "bonghits.BearHoneyMead/FoodStuffs",
+                    "SpriteIndex": 9,
+                    "Edibility": 60,
+                    "IsDrink": false,
+                    "ContextTags": [
+                        "color_green",
+                        "food_bakery",
+                        "food_cake",
+                        "food_sweet"
+                    ],
+                    "CustomFields": null
+                },
+                "{{ModId}}_RedVelvetCake": {
+                    "Name": "{{ModId}}_RedVelvetCake",
+                    "DisplayName": "{{i18n:RedVelvetCake_Name}}",
+                    "Description": "{{i18n:RedVelvetCake_Description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 100,
+                    "Texture": "bonghits.BearHoneyMead/FoodStuffs",
+                    "SpriteIndex": 10,
+                    "Edibility": 60,
+                    "IsDrink": false,
+                    "ContextTags": [
+                        "color_red",
+                        "food_bakery",
+                        "food_cake",
+                        "food_sweet"
+                    ],
+                    "CustomFields": null
+                },
+                "{{ModId}}_BirthdayCake": {
+                    "Name": "{{ModId}}_BirthdayCake",
+                    "DisplayName": "{{i18n:BirthdayCake_Name}}",
+                    "Description": "{{i18n:BirthdayCake_Description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 100,
+                    "Texture": "bonghits.BearHoneyMead/FoodStuffs",
+                    "SpriteIndex": 11,
+                    "Edibility": 60,
+                    "IsDrink": false,
+                    "Buffs": [
+                        {
+                            "Id": "Food",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 430,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "FarmingLevel": 5,
+                                "FishingLevel": 5,
+                                "MiningLevel": 5,
+                                "LuckLevel": 5,
+                                "ForagingLevel": 5,
+                                "MaxStamina": 125,
+                                "MagneticRadius": 0.0,
+                                "Speed": 2.5,
+                                "Defense": 0.0,
+                                "Attack": 0.0
+                            },
+                            "CustomFields": null
+                        }
+                    ],
+                    "ContextTags": [
+                        "color_white",
+                        "food_bakery",
+                        "food_cake",
+                        "food_sweet"
+                    ],
+                    "CustomFields": null
+                },
+                "{{ModId}}_Hazelnut": {
+                    "Name": "{{ModId}}_Hazelnut",
+                    "DisplayName": "{{i18n:Hazelnut_Name}}",
+                    "Description": "{{i18n:Hazelnut_Description}}",
+                    "Type": "Forage",
+                    "Category": -81,
+                    "Price": 100,
+                    "Texture": "bonghits.BearHoneyMead/Nuts",
+                    "SpriteIndex": 1,
+                    "Edibility": 20,
+                    "IsDrink": false,
+                    "ContextTags": [
+                        "nut_item",
+                        "color_white",
+                        "food_nut",
+                        "food_sweet"
+                    ],
+                    "CustomFields": null
+                },
+                "{{ModId}}_Pistachio": {
+                    "Name": "{{ModId}}_Pistachio",
+                    "DisplayName": "{{i18n:Pistachio_Name}}",
+                    "Description": "{{i18n:Pistachio_Description}}",
+                    "Type": "Forage",
+                    "Category": -81,
+                    "Price": 100,
+                    "Texture": "bonghits.BearHoneyMead/Nuts",
+                    "SpriteIndex": 3,
+                    "Edibility": 20,
+                    "IsDrink": false,
+                    "ContextTags": [
+                        "nut_item",
+                        "color_green",
+                        "food_nut",
+                        "food_sweet"
+                    ],
+                    "CustomFields": null
+                },
+                "{{ModId}}_Almond": {
+                    "Name": "{{ModId}}_Almond",
+                    "DisplayName": "{{i18n:Almond_Name}}",
+                    "Description": "{{i18n:Almond_Description}}",
+                    "Type": "Forage",
+                    "Category": -81,
+                    "Price": 100,
+                    "Texture": "bonghits.BearHoneyMead/Nuts",
+                    "SpriteIndex": 0,
+                    "Edibility": 20,
+                    "IsDrink": false,
+                    "ContextTags": [
+                        "nut_item",
+                        "color_brown",
+                        "food_nut",
+                        "food_sweet"
+                    ],
+                    "CustomFields": null
+                },
+                "{{ModId}}_Macadamia": {
+                    "Name": "{{ModId}}_Macadamia",
+                    "DisplayName": "{{i18n:Macadamia_Name}}",
+                    "Description": "{{i18n:Macadamia_Description}}",
+                    "Type": "Forage",
+                    "Category": -81,
+                    "Price": 100,
+                    "Texture": "bonghits.BearHoneyMead/Nuts",
+                    "SpriteIndex": 2,
+                    "Edibility": 20,
+                    "IsDrink": false,
+                    "ContextTags": [
+                        "nut_item",
+                        "color_brown",
+                        "food_nut",
+                        "food_sweet"
+                    ],
+                    "CustomFields": null
+                },
+            }
+        },
+        //
+        //  Forage Data
+        //
+        {
+        	"Action": "EditData",
+        	"Target": "Data/Locations",
+        	"TargetField": [ "Summit", "Forage" ],
+        	"Entries": {
+                "{{ModId}}_Hazelnut": {
+					"Chance": 0.2,
+                	"ItemId": "{{ModId}}_Hazelnut"
+                }
+        	}
+        },
+        {
+        	"Action": "EditData",
+        	"Target": "Data/Locations",
+        	"TargetField": [ "Woods", "Forage" ],
+        	"Entries": {
+                "{{ModId}}_Almond": {
+					"Chance": 0.2,
+                	"ItemId": "{{ModId}}_Almond"
+                }
+        	}
+        },
+        {
+        	"Action": "EditData",
+        	"Target": "Data/Locations",
+        	"TargetField": [ "IslandWest", "Forage" ],
+        	"Entries": {
+                "{{ModId}}_Pistachio": {
+					"Chance": 0.2,
+                	"ItemId": "{{ModId}}_Pistachio"
+                }
+        	}
+        },
+        {
+        	"Action": "EditData",
+        	"Target": "Data/Locations",
+        	"TargetField": [ "Desert", "Forage" ],
+        	"Entries": {
+                "{{ModId}}_Macadamia": {
+					"Chance": 0.2,
+                	"ItemId": "{{ModId}}_Macadamia"
+                }
+        	}
+        }
+    ]
+}

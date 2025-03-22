@@ -54,7 +54,7 @@
         {
             "LogName": "Load Data Files",
             "Action": "Include",
-            "FromFile": "Data/strings.json, Data/machines.json, Data/buffs.json, Data/mead.json, Data/cider.json, Data/operations.json"
+            "FromFile": "Data/strings.json, Data/machines.json, Data/buffs.json, Data/mead.json, Data/cider.json, Data/operations.json, Data/food.json, Data/cooking.json"
         },
         {
             "LogName": "Load Map Data Files",
@@ -78,6 +78,16 @@
             "Action": "Load",
             "Target": "bonghits.BearHoneyMead/Objects",
             "FromFile": "assets/bh_mead.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.BearHoneyMead/FoodStuffs",
+            "FromFile": "assets/foodstuffs.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "bonghits.BearHoneyMead/Nuts",
+            "FromFile": "assets/nuts.png"
         },
         {
             "LogName": "Load Tilesheet",

@@ -904,7 +904,7 @@
             "Action": "EditData",
             "Target": "Characters/schedules/Mandy",
             "Entries": {
-                "Spring": "0610 Meadery 29 10 2/0630 Meadery 27 17 2 square_4_4_2/a1000 Meadery 10 9 2 square_4_4_2/a1600 Meadery 28 24 2 square_4_4_2",
+                "Spring": "0610 Meadery 29 10 2/0630 Meadery 28 22 2 square_4_4_2/a1000 Meadery 10 9 2 square_4_4_2/a1600 Meadery 28 24 2 square_4_4_2",
                 "Mon": "GOTO Spring",
                 "Tue": "GOTO Spring",
                 "Wed": "GOTO Spring",

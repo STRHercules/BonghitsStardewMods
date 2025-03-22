@@ -1,0 +1,15 @@
+{
+    "Changes": [
+      {
+        "Action": "EditData",
+        "Target": "Data/CookingRecipes",
+        "Entries": {
+          "{{ModId}}_CheeseCake": "bonghits.Cp_BearHoneyMead 1 246 1 426 1/999 999/{{ModId}}_CheeseCake/s Farming 3/",                                                              // 1 Artisanal Honey Mead, 1 Wheat Flour, 1 Goat Cheese
+          "{{ModId}}_ChocolateCake": "bonghits.Cp_BearHoneyMead 1 {{ModId}}_Hazelnut 5 246 1/999 999/{{ModId}}_ChocolateCake/s Farming 6/",                                         // 1 Artisanal Honey Mead, 5 Hazelnut, 1 Wheat Flour
+          "{{ModId}}_PistachioCake": "bonghits.Cp_BearHoneyMead 1 246 1 {{ModId}}_Pistachio 5/999 999/{{ModId}}_PistachioCake/s Farming 7/",                                        // 1 Artisanal Honey Mead, 1 Wheat Flour, 5 Pistachio
+          "{{ModId}}_RedVelvetCake": "bonghits.Cp_BearHoneyMead 1 246 1 {{ModId}}_Hazelnut 5 400 1/999 999/{{ModId}}_RedVelvetCake/s Farming 8/",                                   // 1 Artisanal Honey Mead, 1 Wheat Flour, 5 Hazelnut, 1 Strawberry
+          "{{ModId}}_BirthdayCake": "bonghits.Cp_BearHoneyMead 1 246 1 {{ModId}}_Almond 5 {{ModId}}_Hazelnut 5 {{ModId}}_Macadamia 5/999 999/{{ModId}}_BirthdayCake/s Farming 9/"   // 1 Artisanal Honey Mead, 1 What Flour, 5 Almond, 5 Hazelnut, 5 Macadamia
+        }
+      }
+    ]
+  }
