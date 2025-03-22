@@ -19,10 +19,28 @@
             "FromFile": "assets/springObjects.png"
         },
         {
-            "LogName": "Load Tilesheet 4",
+            "LogName": "Load Tilesheet 4-1",
             "Action": "Load",
             "Target": "Maps/spring_logs",
             "FromFile": "assets/spring_logs.png"
+        },
+        {
+            "LogName": "Load Tilesheet 4-2",
+            "Action": "Load",
+            "Target": "Maps/summer_logs",
+            "FromFile": "assets/summer_logs.png"
+        },
+        {
+            "LogName": "Load Tilesheet 4-3",
+            "Action": "Load",
+            "Target": "Maps/fall_logs",
+            "FromFile": "assets/fall_logs.png"
+        },
+        {
+            "LogName": "Load Tilesheet 4-4",
+            "Action": "Load",
+            "Target": "Maps/winter_logs",
+            "FromFile": "assets/winter_logs.png"
         },
         {
             "LogName": "Load Tilesheet 5",

@@ -96,13 +96,9 @@
                     "IsDrink": false,
                     "Buffs": [
                         {
-                            "Id": "Food",
-                            "BuffId": null,
-                            "IconTexture": null,
-                            "IconSpriteIndex": 0,
-                            "Duration": 430,
-                            "IsDebuff": false,
-                            "GlowColor": null,
+                            "Id": "HappyBirthdayMeadcake",
+                            "BuffId": "bonghits.happy_birthday",
+                            "Duration": 14400,
                             "CustomAttributes": {
                                 "FarmingLevel": 5,
                                 "FishingLevel": 5,
@@ -114,8 +110,7 @@
                                 "Speed": 2.5,
                                 "Defense": 0.0,
                                 "Attack": 0.0
-                            },
-                            "CustomFields": null
+                            }
                         }
                     ],
                     "ContextTags": [

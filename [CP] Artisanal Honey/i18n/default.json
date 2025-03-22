@@ -209,7 +209,7 @@
     "RedVelvetCake_Name": "Red Velvet Meadcake",
     "RedVelvetCake_Description": "A delectable red velvet cake baked using Artisanal Honey Mead, giving it fluff while the Strawberry provides the perfect amount of sweetness.",
     "BirthdayCake_Name": "Birthday Meadcake",
-    "BirthdayCake_Description": "Happy Birthday! A celebratory cake for you on your special day! it wasn't eaasy to make, but it will be worth the wait!",
+    "BirthdayCake_Description": "Happy Birthday! A celebratory cake for you on your special day! It wasn't easy to make, but it will be worth the wait!",
     "Hazelnut_Name": "European Hazelnut",
     "Hazelnut_Description": "A small, round nut with a sweet, earthy flavor, commonly used in chocolate spreads and pralines. This cultivar is particularly rich in flavor.",
     "Pistachio_Name": "Kerman Pistachio",
@@ -217,5 +217,7 @@
     "Almond_Name": "Butte Almond",
     "Almond_Description": "A semi-soft shelled variety that matures earlier than Nonpareil and has a sweet, nutty taste.",
     "Macadamia_Name": "Macadamia",
-    "Macadamia_Description": "A rich, buttery-flavored nut with a smooth, hard shell, prized for its creamy texture and high oil content."
+    "Macadamia_Description": "A rich, buttery-flavored nut with a smooth, hard shell, prized for its creamy texture and high oil content.",
+    "bonghits.birthday.DisplayName": "Happy Birthday!",
+    "bonghits.birthday.Description": "What a way to celebrate!"
 }

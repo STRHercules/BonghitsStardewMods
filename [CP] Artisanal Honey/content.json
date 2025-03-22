@@ -90,6 +90,11 @@
             "FromFile": "assets/nuts.png"
         },
         {
+            "Action": "Load",
+            "Target": "bonghits.BearHoneyMead/Buff",
+            "FromFile": "assets/BirthdayBuff.png"
+        },
+        {
             "LogName": "Load Tilesheet",
             "Action": "Load",
             "Target": "Maps/bonghitsObjects",

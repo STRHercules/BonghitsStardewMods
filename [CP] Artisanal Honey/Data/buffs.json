@@ -213,5 +213,19 @@
                 }
             }
         },
+        {
+            "Action": "EditData",
+            "Target": "Data/Buffs",
+            "Entries": {
+                "bonghits.happy_birthday": {
+                    "DisplayName": "{{i18n:bonghits.birthday.DisplayName}}",
+                    "Description": "{{i18n:bonghits.birthday.Description}}",
+                    "IsDebuff": false,
+                    "MaxDuration": -1,
+                    "IconTexture": "bonghits.BearHoneyMead/Buff",
+                    "IconSpriteIndex": 0,
+                }
+            }
+        },
     ]
 }
