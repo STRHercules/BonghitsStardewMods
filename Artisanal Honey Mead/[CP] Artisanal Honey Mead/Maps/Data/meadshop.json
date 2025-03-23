@@ -1,0 +1,303 @@
+{
+    "Changes": [
+        {
+            "LogName": "Load Tilesheet 1",
+            "Action": "Load",
+            "Target": "Maps/crops",
+            "FromFile": "assets/crops.png"
+        },
+        {
+            "LogName": "Load Tilesheet 2",
+            "Action": "Load",
+            "Target": "Maps/fruitTrees",
+            "FromFile": "assets/fruitTrees.png"
+        },
+        {
+            "LogName": "Load Tilesheet 3",
+            "Action": "Load",
+            "Target": "Maps/springObjects",
+            "FromFile": "assets/springObjects.png"
+        },
+        {
+            "LogName": "Load Tilesheet 4-1",
+            "Action": "Load",
+            "Target": "Maps/spring_logs",
+            "FromFile": "assets/spring_logs.png"
+        },
+        {
+            "LogName": "Load Tilesheet 4-2",
+            "Action": "Load",
+            "Target": "Maps/summer_logs",
+            "FromFile": "assets/summer_logs.png"
+        },
+        {
+            "LogName": "Load Tilesheet 4-3",
+            "Action": "Load",
+            "Target": "Maps/fall_logs",
+            "FromFile": "assets/fall_logs.png"
+        },
+        {
+            "LogName": "Load Tilesheet 4-4",
+            "Action": "Load",
+            "Target": "Maps/winter_logs",
+            "FromFile": "assets/winter_logs.png"
+        },
+        {
+            "LogName": "Load Tilesheet 5",
+            "Action": "Load",
+            "Target": "Maps/Bear",
+            "FromFile": "assets/Bear.png"
+        },
+        {
+            "LogName": "Load Tilesheet 6",
+            "Action": "Load",
+            "Target": "Maps/sproomsts",
+            "FromFile": "assets/sproomsts.png"
+        },
+        {
+            "LogName": "Load Meadery Shop Exterior",
+            "Action": "Load",
+            "Target": "Maps/Meadery",
+            "FromFile": "Maps/Meadery.tmx"
+        },
+        {
+            "LogName": "Load Mead Shop Interior",
+            "Action": "Load",
+            "Target": "Maps/MeadSaloon",
+            "FromFile": "Maps/MeadSaloon.tmx"
+        },
+        {
+            "LogName": "Load Meadery Trailer Interior",
+            "Action": "Load",
+            "Target": "Maps/Meadery_Trailer",
+            "FromFile": "Maps/Meadery_Trailer.tmx"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "MeadSaloon": {
+                    "DisplayName": "{{i18n:bh.MeadSaloon.DisplayName}}",
+                    "DefaultArrivalTile": {
+                        "X": 13,
+                        "Y": 24
+                    },
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/MeadSaloon"
+                    }
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "Meadery": {
+                    "DisplayName": "{{i18n:bh.Meadery.DisplayName}}",
+                    "DefaultArrivalTile": {
+                        "X": 38,
+                        "Y": 44
+                    },
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/Meadery"
+                    },
+                    "FishAreas": {
+                        "FreshWater": {
+                            "DisplayName": null,
+                            "Position": {
+                                "X": 1,
+                                "Y": 1,
+                                "Width": 80,
+                                "Height": 52
+                            },
+                            "CrabPotFishTypes": [
+                                "freshwater"
+                            ]
+                        }
+                    },
+                    "Fish": [
+                        {
+                            "Id": "{{ModId}}_Fish_128", //Pufferfish
+                            "ItemId": "(O)128",
+                            "FishAreaID": "FreshWater",
+                            "Condition": "LOCATION_Season Here Summer"
+                        },
+                        {
+                            "Id": "{{ModId}}_Fish_130", //Tuna
+                            "ItemId": "(O)130",
+                            "FishAreaID": "FreshWater",
+                            "Condition": "LOCATION_Season Here Summer Winter"
+                        },
+                        {
+                            "Id": "{{ModId}}_Fish_148", //Eel
+                            "ItemId": "(O)148",
+                            "FishAreaID": "FreshWater",
+                            "Condition": "LOCATION_Season Here Spring Fall"
+                        },
+                        {
+                            "Id": "{{ModId}}_Fish_149", //Octopus
+                            "ItemId": "(O)149",
+                            "FishAreaID": "FreshWater",
+                            "Condition": "LOCATION_Season Here Summer"
+                        },
+                        {
+                            "Id": "{{ModId}}_Fish_151", //Squid
+                            "ItemId": "(O)151",
+                            "FishAreaID": "FreshWater",
+                            "Condition": "LOCATION_Season Here Winter"
+                        },
+                        {
+                            "Id": "{{ModId}}_Fish_152", //Seaweed
+                            "ItemId": "(O)152",
+                            "FishAreaID": "FreshWater"
+                        },
+                        {
+                            "Id": "{{ModId}}_Fish_154", //Sea Cucumber
+                            "ItemId": "(O)154",
+                            "FishAreaID": "FreshWater",
+                            "Condition": "LOCATION_Season Here Summer Fall"
+                        },
+                        {
+                            "Id": "{{ModId}}_Fish_155", //Super Cucumber
+                            "ItemId": "(O)155",
+                            "FishAreaID": "FreshWater",
+                            "Condition": "LOCATION_Season Here Summer Fall"
+                        },
+                        {
+                            "Id": "{{ModId}}_Fish_161", //Ice Pip
+                            "ItemId": "(O)161",
+                            "FishAreaID": "FreshWater",
+                            "Condition": "LOCATION_Season Here Winter"
+                        },
+                        {
+                            "Id": "{{ModId}}_Fish_705", //Weißer Tunfisch
+                            "ItemId": "(O)705",
+                            "FishAreaID": "FreshWater",
+                            "Condition": "LOCATION_Season Here Winter"
+                        },
+                        {
+                            "Id": "{{ModId}}_Fish_267", //Flounder
+                            "ItemId": "(O)267",
+                            "FishAreaID": "FreshWater",
+                            "Condition": "LOCATION_Season Here Spring Summer"
+                        },
+                        {
+                            "Id": "{{ModId}}_Fish_701", //Tilapia
+                            "ItemId": "(O)701",
+                            "FishAreaID": "FreshWater",
+                            "Condition": "LOCATION_Season Here Summer Fall"
+                        },
+                        {
+                            "Id": "{{ModId}}_Fish_708", //Halibut
+                            "ItemId": "(O)708",
+                            "FishAreaID": "FreshWater",
+                            "Condition": "LOCATION_Season Here Spring Summer Winter"
+                        },
+                        {
+                            "Id": "{{ModId}}_Fish_798", //Midnight Squid
+                            "ItemId": "(O)798",
+                            "FishAreaID": "FreshWater",
+                            "Condition": "LOCATION_Season Here Winter"
+                        },
+                        {
+                            "Id": "{{ModId}}_Fish_SeaJelly", //SeaJelly
+                            "ItemId": "(O)SeaJelly",
+                            "FishAreaID": "FreshWater",
+                            "Chance": 0.06
+                        },
+                        {
+                            "Id": "{{ModId}}_Fish_129", //Anchovy
+                            "ItemId": "(O)129",
+                            "FishAreaID": "FreshWater",
+                            "Condition": "LOCATION_Season Here Spring Fall"
+                        },
+                        {
+                            "Id": "{{ModId}}_Fish_131", //Sardine
+                            "ItemId": "(O)131",
+                            "FishAreaID": "FreshWater",
+                            "Condition": "LOCATION_Season Here Spring"
+                        },
+                        {
+                            "Id": "{{ModId}}_Fish_147", //Hering
+                            "ItemId": "(O)147",
+                            "FishAreaID": "FreshWater",
+                            "Condition": "LOCATION_Season Here Spring Winter"
+                        },
+                        {
+                            "Id": "{{ModId}}_Fish_146", //Red Mullet
+                            "ItemId": "(O)147",
+                            "FishAreaID": "FreshWater",
+                            "Condition": "LOCATION_Season Here Summer Winter"
+                        },
+                        {
+                            "Id": "{{ModId}}_Fish_150", //Red Snapper
+                            "ItemId": "(O)150",
+                            "FishAreaID": "FreshWater",
+                            "Condition": "LOCATION_Season Here Summer Fall Winter"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "Meadery_Trailer": {
+                    "DisplayName": "{{i18n:bh.Meadery_Trailer.DisplayName}}",
+                    "DefaultArrivalTile": {
+                        "X": 12,
+                        "Y": 8
+                    },
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/Meadery_Trailer"
+                    }
+                }
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/MeadSaloon",
+            "AddWarps": [
+                "13 26 Meadery 16 16"
+            ]
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Meadery_Trailer",
+            "AddWarps": [
+                "12 10 Meadery 36 8"
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Mods/Pathoschild.CentralStation/Stops",
+            "Entries": {
+                "{{ModID}}_Meadery_Stop": {
+                    "DisplayName": "Artisan Meadery",
+                    "ToLocation": "Meadery",
+                    "Network": "Bus",
+                    "ToTile": {
+                        "X": 38,
+                        "Y": 44
+                    },
+                    "ToFacingDirection": "down",
+                    "Cost": 50
+                }
+            }
+        },
+        {
+			"Action": "EditData",
+			"Target": "Data/TriggerActions",
+			"Entries": {
+				"Meadery_EnableFTM": {
+					"Id": "Meadery_EnableFTM",
+					"Trigger": "DayStarted",
+					"HostOnly": true,
+					"Action": "{{EnableFTMToken}} Current Meadery_EnableFTM received",
+					"MarkActionApplied": false
+				}
+			}
+		}
+    ]
+}

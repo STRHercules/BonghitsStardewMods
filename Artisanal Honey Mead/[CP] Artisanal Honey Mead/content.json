@@ -7,8 +7,24 @@
             "Default": "auto",
             "Section": "Behavior"
         },
+        "EnableFTM": {
+            "AllowValues": "true, false",
+            "Default": "true",
+            "Description": "Toggle Farm Type Manager Forage spawns for the Meadery."
+        }
     },
     "DynamicTokens": [
+        {
+			"Name": "EnableFTMToken",
+			"Value": "AddMail",
+		},
+		{
+			"Name": "EnableFTMToken",
+			"Value": "RemoveMail",
+			"When": {
+				"EnableFTM": "false"
+			}
+		},
         {
             "Name": "CopyQualityEnabled",
             "Value": false

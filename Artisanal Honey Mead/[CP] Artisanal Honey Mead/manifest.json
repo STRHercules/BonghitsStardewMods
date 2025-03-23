@@ -1,6 +1,6 @@
 {
-    "Name": "[CP] Expanded Artisanal Goods",
-    "Author": "Major Bonghits",
+    "Name": "[CP] Artisanal Honey Mead",
+    "Author": "ThatKingKai",
     "Version": "2.5",
     "Description": "Artisanal Mead Expansion",
     "UniqueID": "bonghits.cp.BearHoneyMead",
@@ -8,6 +8,10 @@
         "Nexus:31786"
     ],
     "Dependencies": [
+        {
+            "UniqueID": "nachonline.mps",
+            "IsRequired": false
+        },
         {
             "UniqueID": "selph.ExtraMachineConfig",
             "IsRequired": true
@@ -54,6 +58,10 @@
         },
         {
             "UniqueID": "Spiderbuttons.BETAS",
+            "IsRequired": true
+        },
+        {
+            "UniqueID": "Esca.FarmTypeManager",
             "IsRequired": true
         },
         //
