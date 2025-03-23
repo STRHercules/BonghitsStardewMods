@@ -51,8 +51,8 @@
         {
             "LogName": "Load Tilesheet 6",
             "Action": "Load",
-            "Target": "Maps/sproomsts",
-            "FromFile": "assets/sproomsts.png"
+            "Target": "Maps/kitty_animated",
+            "FromFile": "assets/kitty_animated.png"
         },
         {
             "LogName": "Load Meadery Shop Exterior",
