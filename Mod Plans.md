@@ -45,7 +45,7 @@
 ### NPCs
 * ~~Add mead/cider definition to some NPC's liked items~~
 
-* Add random dialogue to some NPCs - mail?
+* ~~Add random dialogue to some NPCs - mail?~~
 
 * ~~Create NPC for Zach (Sprite/Portrait)~~
 
@@ -74,9 +74,7 @@
 ### Cooking Skill Integration
 * Use Mead, Aged Mead and Sparkling Mead to 'craft' single-serve beverages. (Convert Bottles into cups/mugs)
 
-* Use Mead and/or Aged Mead to craft signature dishes that require it.
-
-* Add Cooking skill exp output to artisanal keg, carbonator
+* ~~Use Mead and/or Aged Mead to craft signature dishes that require it.~~
 
 * Combine mead with other beverages to get more exotic beverages (Bottles or single-serve)?
 
