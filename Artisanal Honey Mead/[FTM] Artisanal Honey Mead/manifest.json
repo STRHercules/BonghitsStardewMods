@@ -1,7 +1,7 @@
 {
     "Name": "[FTM] Artisanal Honey Mead",
     "Author": "ThatKingKai",
-    "Version": "2.5",
+    "Version": "2.6",
     "Description": "FTM Component to Artisanal Honey Mead.",
     "UniqueID": "bonghits.cp.BearHoneyMead.FTM",
     "MinimumApiVersion": "4.0.0",
