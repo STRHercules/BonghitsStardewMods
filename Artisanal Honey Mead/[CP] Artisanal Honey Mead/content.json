@@ -135,7 +135,7 @@
         {
             "Action": "Load",
             "Target": "Portraits/Zachary2",
-            "FromFile": "assets/zachary/CharacterPortraitReady.png"
+            "FromFile": "assets/zachary/zachary.png"
         },
         {
             "LogName": "Zach Sprite",
@@ -162,7 +162,7 @@
         {
             "Action": "Load",
             "Target": "Portraits/Natalie",
-            "FromFile": "assets/natalie/BubblePortraitReady1.png"
+            "FromFile": "assets/natalie/natalie.png"
         },
         {
             "Action": "Load",
