@@ -72,25 +72,25 @@
             "Target": "Portraits/Mandy_Winter",
             "FromFile": "assets/pauline/portrait-Default-WinterPauline.png"
         },
-        //  Kristoff
+        //  Jaoquin
         {
             "Action": "Load",
-            "Target": "Characters/Kristoff",
+            "Target": "Characters/Jaoquin",
             "FromFile": "assets/richie/sprites.png"
         },
         {
             "Action": "Load",
-            "Target": "Portraits/Kristoff",
+            "Target": "Portraits/Jaoquin",
             "FromFile": "assets/richie/portraits.png"
         },
         {
             "Action": "Load",
-            "Target": "Characters/Kristoff_Winter",
+            "Target": "Characters/Jaoquin_Winter",
             "FromFile": "assets/richie/sprites_winter.png"
         },
         {
             "Action": "Load",
-            "Target": "Portraits/Kristoff_Winter",
+            "Target": "Portraits/Jaoquin_Winter",
             "FromFile": "assets/richie/portraits_winter.png"
         },
         //  Malik
@@ -406,8 +406,8 @@
                     "FestivalVanillaActorIndex": 2,
                     "CustomFields": null
                 },
-                "Kristoff": {
-                    "DisplayName": "{{i18n:bonghits.Kristoff.DisplayName}}",
+                "Jaoquin": {
+                    "DisplayName": "{{i18n:bonghits.Jaoquin.DisplayName}}",
                     "BirthSeason": "Winter",
                     "BirthDay": 5,
                     "HomeRegion": "Other",
@@ -464,8 +464,8 @@
                             "Season": null, //all
                             "Indoors": true,
                             "Outdoors": true,
-                            "Portrait": "Portraits/Kristoff",
-                            "Sprite": "Characters/Kristoff",
+                            "Portrait": "Portraits/Jaoquin",
+                            "Sprite": "Characters/Jaoquin",
                             "IsIslandAttire": false,
                             "Precedence": -100,
                             "Weight": 1
@@ -476,8 +476,8 @@
                             "Season": "Winter",
                             "Indoors": true,
                             "Outdoors": true,
-                            "Portrait": "Portraits/Kristoff_Winter",
-                            "Sprite": "Characters/Kristoff_Winter",
+                            "Portrait": "Portraits/Jaoquin_Winter",
+                            "Sprite": "Characters/Jaoquin_Winter",
                             "IsIslandAttire": false,
                             "Precedence": -100,
                             "Weight": 1
@@ -748,7 +748,7 @@
             "Entries": {
                 "Delphy": "You're giving this... to me? I'm speechless./72 213 635 729 907/Oh, goodness! Are you sure?/348 303 -7 18 430/No, no, no.../16 330/This is absolute junk. I'm offended./80 167 648/Oh, that's sweet. Thank you.//",
                 "Mandy": "You're giving this... to me? I'm speechless./72 213 635 729 907/Oh, goodness! Are you sure?/348 303 -7 18 430/No, no, no.../16 330/This is absolute junk. I'm offended./80 167 648/Oh, that's sweet. Thank you.//",
-                "Kristoff": "You're giving this... to me? I'm speechless./72 213 635 729 907/Oh, goodness! Are you sure?/348 303 -7 18 430/No, no, no.../16 330/This is absolute junk. I'm offended./80 167 648/Oh, that's sweet. Thank you.//",
+                "Jaoquin": "You're giving this... to me? I'm speechless./72 213 635 729 907/Oh, goodness! Are you sure?/348 303 -7 18 430/No, no, no.../16 330/This is absolute junk. I'm offended./80 167 648/Oh, that's sweet. Thank you.//",
                 "Malik": "You're giving this... to me? I'm speechless./72 213 635 729 907/Oh, goodness! Are you sure?/348 303 -7 18 430/No, no, no.../16 330/This is absolute junk. I'm offended./80 167 648/Oh, that's sweet. Thank you.//",
                 "Mona": "You're giving this... to me? I'm speechless./72 213 635 729 907/Oh, goodness! Are you sure?/348 303 -7 18 430/No, no, no.../16 330/This is absolute junk. I'm offended./80 167 648/Oh, that's sweet. Thank you.//"
             }
@@ -915,48 +915,48 @@
                 "Winter": "GOTO Spring"
             }
         },
-        // Kristoff Data
+        // Jaoquin Data
         {
-            "LogName": "Kristoff Blank Schedule Load",
+            "LogName": "Jaoquin Blank Schedule Load",
             "Action": "Load",
-            "Target": "Characters/schedules/Kristoff",
+            "Target": "Characters/schedules/Jaoquin",
             "FromFile": "Data/blank.json"
         },
         {
-            "LogName": "Kristoff Blank Dialogue Load",
+            "LogName": "Jaoquin Blank Dialogue Load",
             "Action": "Load",
-            "Target": "Characters/Dialogue/Kristoff",
+            "Target": "Characters/Dialogue/Jaoquin",
             "FromFile": "Data/blank.json"
         },
         {
-            "LogName": "Kristoff Dialogue",
+            "LogName": "Jaoquin Dialogue",
             "Action": "EditData",
-            "Target": "Characters/Dialogue/Kristoff",
+            "Target": "Characters/Dialogue/Jaoquin",
             "Entries": {
                 //Conversation Topics
                 //Vanilla
-                "Introduction": "{{i18n:npc.Kristoff.Introduction}}",
-                "AcceptBirthdayGift": "{{i18n:npc.Kristoff.AcceptBirthdayGift}}",
-                "AcceptBirthdayGift_Loved": "{{i18n:npc.Kristoff.AcceptBirthdayGift_Loved}}",
-                "AcceptBirthdayGift_Negative": "{{i18n:npc.Kristoff.AcceptBirthdayGift_Negative}}",
-                "AcceptBirthdayGift_Positive": "{{i18n:npc.Kristoff.AcceptBirthdayGift_Positive}}",
-                "DumpsterDiveComment": "{{i18n:npc.Kristoff.DumpsterDiveComment}}",
-                "GreenRain": "{{i18n:npc.Kristoff.GreenRain}}",
-                "GreenRainFinished": "{{i18n:npc.Kristoff.GreenRainFinished}}",
+                "Introduction": "{{i18n:npc.Jaoquin.Introduction}}",
+                "AcceptBirthdayGift": "{{i18n:npc.Jaoquin.AcceptBirthdayGift}}",
+                "AcceptBirthdayGift_Loved": "{{i18n:npc.Jaoquin.AcceptBirthdayGift_Loved}}",
+                "AcceptBirthdayGift_Negative": "{{i18n:npc.Jaoquin.AcceptBirthdayGift_Negative}}",
+                "AcceptBirthdayGift_Positive": "{{i18n:npc.Jaoquin.AcceptBirthdayGift_Positive}}",
+                "DumpsterDiveComment": "{{i18n:npc.Jaoquin.DumpsterDiveComment}}",
+                "GreenRain": "{{i18n:npc.Jaoquin.GreenRain}}",
+                "GreenRainFinished": "{{i18n:npc.Jaoquin.GreenRainFinished}}",
                 // GENERIC DIALOGUE
-                "Mon": "{{i18n:npc.Kristoff.Mon}}",
-                "Tue": "{{i18n:npc.Kristoff.Tue}}",
-                "Wed": "{{i18n:npc.Kristoff.Wed}}",
-                "Thu": "{{i18n:npc.Kristoff.Thu}}",
-                "Fri": "{{i18n:npc.Kristoff.Fri}}",
-                "Sat": "{{i18n:npc.Kristoff.Sat}}",
-                "Sun": "{{i18n:npc.Kristoff.Sun}}"
+                "Mon": "{{i18n:npc.Jaoquin.Mon}}",
+                "Tue": "{{i18n:npc.Jaoquin.Tue}}",
+                "Wed": "{{i18n:npc.Jaoquin.Wed}}",
+                "Thu": "{{i18n:npc.Jaoquin.Thu}}",
+                "Fri": "{{i18n:npc.Jaoquin.Fri}}",
+                "Sat": "{{i18n:npc.Jaoquin.Sat}}",
+                "Sun": "{{i18n:npc.Jaoquin.Sun}}"
             }
         },
         {
-            "LogName": "Kristoff Schedule",
+            "LogName": "Jaoquin Schedule",
             "Action": "EditData",
-            "Target": "Characters/schedules/Kristoff",
+            "Target": "Characters/schedules/Jaoquin",
             "Entries": {
                 "Spring": "0610 Meadery 33 24 2/0630 Meadery 51 21 2 square_4_4_2/a1000 Meadery 36 46 2 square_4_4_2/a1600 Meadery 43 8 2 square_4_4_2",
                 "Mon": "GOTO Spring",
