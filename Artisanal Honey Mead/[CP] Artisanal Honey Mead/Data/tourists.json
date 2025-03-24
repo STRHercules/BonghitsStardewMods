@@ -72,25 +72,25 @@
             "Target": "Portraits/Mandy_Winter",
             "FromFile": "assets/pauline/portrait-Default-WinterPauline.png"
         },
-        //  Jaoquin
+        //  Joaquin
         {
             "Action": "Load",
-            "Target": "Characters/Jaoquin",
+            "Target": "Characters/Joaquin",
             "FromFile": "assets/richie/sprites.png"
         },
         {
             "Action": "Load",
-            "Target": "Portraits/Jaoquin",
+            "Target": "Portraits/Joaquin",
             "FromFile": "assets/richie/portraits.png"
         },
         {
             "Action": "Load",
-            "Target": "Characters/Jaoquin_Winter",
+            "Target": "Characters/Joaquin_Winter",
             "FromFile": "assets/richie/sprites_winter.png"
         },
         {
             "Action": "Load",
-            "Target": "Portraits/Jaoquin_Winter",
+            "Target": "Portraits/Joaquin_Winter",
             "FromFile": "assets/richie/portraits_winter.png"
         },
         //  Malik
@@ -406,8 +406,8 @@
                     "FestivalVanillaActorIndex": 2,
                     "CustomFields": null
                 },
-                "Jaoquin": {
-                    "DisplayName": "{{i18n:bonghits.Jaoquin.DisplayName}}",
+                "Joaquin": {
+                    "DisplayName": "{{i18n:bonghits.Joaquin.DisplayName}}",
                     "BirthSeason": "Winter",
                     "BirthDay": 5,
                     "HomeRegion": "Other",
@@ -464,8 +464,8 @@
                             "Season": null, //all
                             "Indoors": true,
                             "Outdoors": true,
-                            "Portrait": "Portraits/Jaoquin",
-                            "Sprite": "Characters/Jaoquin",
+                            "Portrait": "Portraits/Joaquin",
+                            "Sprite": "Characters/Joaquin",
                             "IsIslandAttire": false,
                             "Precedence": -100,
                             "Weight": 1
@@ -476,8 +476,8 @@
                             "Season": "Winter",
                             "Indoors": true,
                             "Outdoors": true,
-                            "Portrait": "Portraits/Jaoquin_Winter",
-                            "Sprite": "Characters/Jaoquin_Winter",
+                            "Portrait": "Portraits/Joaquin_Winter",
+                            "Sprite": "Characters/Joaquin_Winter",
                             "IsIslandAttire": false,
                             "Precedence": -100,
                             "Weight": 1
@@ -748,7 +748,7 @@
             "Entries": {
                 "Delphy": "You're giving this... to me? I'm speechless./72 213 635 729 907/Oh, goodness! Are you sure?/348 303 -7 18 430/No, no, no.../16 330/This is absolute junk. I'm offended./80 167 648/Oh, that's sweet. Thank you.//",
                 "Mandy": "You're giving this... to me? I'm speechless./72 213 635 729 907/Oh, goodness! Are you sure?/348 303 -7 18 430/No, no, no.../16 330/This is absolute junk. I'm offended./80 167 648/Oh, that's sweet. Thank you.//",
-                "Jaoquin": "You're giving this... to me? I'm speechless./72 213 635 729 907/Oh, goodness! Are you sure?/348 303 -7 18 430/No, no, no.../16 330/This is absolute junk. I'm offended./80 167 648/Oh, that's sweet. Thank you.//",
+                "Joaquin": "You're giving this... to me? I'm speechless./72 213 635 729 907/Oh, goodness! Are you sure?/348 303 -7 18 430/No, no, no.../16 330/This is absolute junk. I'm offended./80 167 648/Oh, that's sweet. Thank you.//",
                 "Malik": "You're giving this... to me? I'm speechless./72 213 635 729 907/Oh, goodness! Are you sure?/348 303 -7 18 430/No, no, no.../16 330/This is absolute junk. I'm offended./80 167 648/Oh, that's sweet. Thank you.//",
                 "Mona": "You're giving this... to me? I'm speechless./72 213 635 729 907/Oh, goodness! Are you sure?/348 303 -7 18 430/No, no, no.../16 330/This is absolute junk. I'm offended./80 167 648/Oh, that's sweet. Thank you.//"
             }
@@ -915,48 +915,48 @@
                 "Winter": "GOTO Spring"
             }
         },
-        // Jaoquin Data
+        // Joaquin Data
         {
-            "LogName": "Jaoquin Blank Schedule Load",
+            "LogName": "Joaquin Blank Schedule Load",
             "Action": "Load",
-            "Target": "Characters/schedules/Jaoquin",
+            "Target": "Characters/schedules/Joaquin",
             "FromFile": "Data/blank.json"
         },
         {
-            "LogName": "Jaoquin Blank Dialogue Load",
+            "LogName": "Joaquin Blank Dialogue Load",
             "Action": "Load",
-            "Target": "Characters/Dialogue/Jaoquin",
+            "Target": "Characters/Dialogue/Joaquin",
             "FromFile": "Data/blank.json"
         },
         {
-            "LogName": "Jaoquin Dialogue",
+            "LogName": "Joaquin Dialogue",
             "Action": "EditData",
-            "Target": "Characters/Dialogue/Jaoquin",
+            "Target": "Characters/Dialogue/Joaquin",
             "Entries": {
                 //Conversation Topics
                 //Vanilla
-                "Introduction": "{{i18n:npc.Jaoquin.Introduction}}",
-                "AcceptBirthdayGift": "{{i18n:npc.Jaoquin.AcceptBirthdayGift}}",
-                "AcceptBirthdayGift_Loved": "{{i18n:npc.Jaoquin.AcceptBirthdayGift_Loved}}",
-                "AcceptBirthdayGift_Negative": "{{i18n:npc.Jaoquin.AcceptBirthdayGift_Negative}}",
-                "AcceptBirthdayGift_Positive": "{{i18n:npc.Jaoquin.AcceptBirthdayGift_Positive}}",
-                "DumpsterDiveComment": "{{i18n:npc.Jaoquin.DumpsterDiveComment}}",
-                "GreenRain": "{{i18n:npc.Jaoquin.GreenRain}}",
-                "GreenRainFinished": "{{i18n:npc.Jaoquin.GreenRainFinished}}",
+                "Introduction": "{{i18n:npc.Joaquin.Introduction}}",
+                "AcceptBirthdayGift": "{{i18n:npc.Joaquin.AcceptBirthdayGift}}",
+                "AcceptBirthdayGift_Loved": "{{i18n:npc.Joaquin.AcceptBirthdayGift_Loved}}",
+                "AcceptBirthdayGift_Negative": "{{i18n:npc.Joaquin.AcceptBirthdayGift_Negative}}",
+                "AcceptBirthdayGift_Positive": "{{i18n:npc.Joaquin.AcceptBirthdayGift_Positive}}",
+                "DumpsterDiveComment": "{{i18n:npc.Joaquin.DumpsterDiveComment}}",
+                "GreenRain": "{{i18n:npc.Joaquin.GreenRain}}",
+                "GreenRainFinished": "{{i18n:npc.Joaquin.GreenRainFinished}}",
                 // GENERIC DIALOGUE
-                "Mon": "{{i18n:npc.Jaoquin.Mon}}",
-                "Tue": "{{i18n:npc.Jaoquin.Tue}}",
-                "Wed": "{{i18n:npc.Jaoquin.Wed}}",
-                "Thu": "{{i18n:npc.Jaoquin.Thu}}",
-                "Fri": "{{i18n:npc.Jaoquin.Fri}}",
-                "Sat": "{{i18n:npc.Jaoquin.Sat}}",
-                "Sun": "{{i18n:npc.Jaoquin.Sun}}"
+                "Mon": "{{i18n:npc.Joaquin.Mon}}",
+                "Tue": "{{i18n:npc.Joaquin.Tue}}",
+                "Wed": "{{i18n:npc.Joaquin.Wed}}",
+                "Thu": "{{i18n:npc.Joaquin.Thu}}",
+                "Fri": "{{i18n:npc.Joaquin.Fri}}",
+                "Sat": "{{i18n:npc.Joaquin.Sat}}",
+                "Sun": "{{i18n:npc.Joaquin.Sun}}"
             }
         },
         {
-            "LogName": "Jaoquin Schedule",
+            "LogName": "Joaquin Schedule",
             "Action": "EditData",
-            "Target": "Characters/schedules/Jaoquin",
+            "Target": "Characters/schedules/Joaquin",
             "Entries": {
                 "Spring": "0610 Meadery 33 24 2/0630 Meadery 51 21 2 square_4_4_2/a1000 Meadery 36 46 2 square_4_4_2/a1600 Meadery 43 8 2 square_4_4_2",
                 "Mon": "GOTO Spring",
