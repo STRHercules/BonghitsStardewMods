@@ -1,0 +1,16 @@
+{
+    "Name": "[CP] Stardew Galaxy",
+    "Author": "ThatKingKai",
+    "Version": "1.0.0",
+    "Description": "A celestial exploration expansion mod.",
+    "UniqueID": "kai.stardewgalaxy",
+    "UpdateKeys": [
+        "Nexus:xxxxx"
+    ],
+    "Dependencies": [
+
+    ],
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    }
+}
