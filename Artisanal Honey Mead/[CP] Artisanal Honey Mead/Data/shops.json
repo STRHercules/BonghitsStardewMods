@@ -234,6 +234,12 @@
                             "Price": 250
                         },
                         {
+                            // When the player ships their first aged honey mead, start selling it
+                            "Condition": "PLAYER_SHIPPED_BASIC_ITEM any bonghits.Cp_AgedBearHoneyMead 1 1",
+                            "ItemId": "bonghits.Cp_EmptyGlass",
+                            "Price": 100
+                        },
+                        {
                             // When the player ships their first honey mead, start selling it
                             "Condition": "PLAYER_SHIPPED_BASIC_ITEM any bonghits.Cp_BearHoneyMead 1 1",
                             "ItemId": "(BC){{ModId}}_Carbonator",
