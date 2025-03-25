@@ -242,22 +242,3 @@
 * Add support for [Item Bags](https://www.nexusmods.com/stardewvalley/mods/5382)?
 
 * Maybe make an animated RGB bag for [Item Bags](https://www.nexusmods.com/stardewvalley/mods/5382)?
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Planetary Exploration Mod (WIP Name)
-
-Basic premise; The player is introduced to a new NPC (Holden) who informs them a space ship has crash landed just outside stardew valley and tasks the player with assisting with cleaning up/repairing the wreckage. Through questing and work orders, the player will amass enough resources to repair the ship. Once the ship is repaired, the player can them add fuel to the ship and liftoff. once the player has lifted off they will be greeted with a window to choose where to go. (Come up with planet names) Once the player decides on a destination, the ship will land and establish a base of operations for the player which will act as an additional farm. Once the player has their 
