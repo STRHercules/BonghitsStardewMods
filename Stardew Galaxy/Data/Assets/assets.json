@@ -1,0 +1,70 @@
+{
+    "Changes": [
+        {
+            "LogName": "Load Animated Building Tilesheet",
+            "Action": "Load",
+            "Target": "Maps/building_1",
+            "FromFile": "Data/Assets/building_1.png"
+        },
+        {
+            "LogName": "Load Buildings Tilesheet",
+            "Action": "Load",
+            "Target": "Maps/buildings",
+            "FromFile": "Data/Assets/buildings.png"
+        },
+        {
+            "LogName": "Load Space Station Tilesheet",
+            "Action": "Load",
+            "Target": "Maps/SpaceStation_tileset",
+            "FromFile": "Data/Assets/SpaceStation_tileset.png"
+        },
+        {
+            "LogName": "Load Space Station Tilesheet 2",
+            "Action": "Load",
+            "Target": "Maps/SpaceStation_tileset2",
+            "FromFile": "Data/Assets/SpaceStation_tileset2.png"
+        },
+        {
+            "LogName": "Load Custom Town Interior Tilesheet",
+            "Action": "Load",
+            "Target": "Maps/townInterior_Dk",
+            "FromFile": "Data/Assets/townInterior_Dk.png"
+        },
+        {
+            "LogName": "Load Scifi Dungeon Tileset",
+            "Action": "Load",
+            "Target": "Maps/SciFi_DungeonTileset_Thetra00",
+            "FromFile": "Data/Assets/SciFi_DungeonTileset_Thetra00.png"
+        },
+        {
+            "LogName": "Load Alien Guys Tileset",
+            "Action": "Load",
+            "Target": "Maps/alienguys",
+            "FromFile": "Data/Assets/alienguys.png"
+        },
+        {
+            "LogName": "Load Communications Table Tileset",
+            "Action": "Load",
+            "Target": "Maps/CommunicationTable",
+            "FromFile": "Data/Assets/CommunicationTable.png"
+        },
+        {
+            "LogName": "Load Cruiser Ship Tileset",
+            "Action": "Load",
+            "Target": "Maps/Cruiser2",
+            "FromFile": "Data/Assets/Cruiser2.png"
+        },
+        {
+            "LogName": "Load FellowClown Tileset",
+            "Action": "Load",
+            "Target": "Maps/Fellowclown.CS",
+            "FromFile": "Data/Assets/Fellowclown.CS.png"
+        },
+        {
+            "LogName": "Load Custom Tents Tileset",
+            "Action": "Load",
+            "Target": "Maps/tents",
+            "FromFile": "Data/Assets/tents.png"
+        }
+    ]
+}

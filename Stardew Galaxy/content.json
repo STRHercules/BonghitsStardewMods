@@ -1,13 +1,17 @@
 {
-    "$schema": "https://smapi.io/schemas/content-patcher.json",
     "Format": "2.5.0",
-    "ConfigSchema": {
-        
-    },
-    "DynamicTokens": [
-       
-    ],
     "Changes": [
-        
+        //Load Tilesheets
+        {
+            "LogName": "Load All Assets",
+            "Action": "Include",
+            "FromFile": "Data/Assets/assets.json"
+        },
+        // Load Data Files
+        {
+            "LogName": "Load Data Files",
+            "Action": "Include",
+            "FromFile": "Data/Code/world.json"
+        }
     ]
 }

@@ -1,0 +1,73 @@
+{
+    "Changes": [
+        //
+        //  Crash Site - Spaceship Exterior
+        //
+        {
+            "LogName": "Load Crash Site Map",
+            "Action": "Load",
+            "Target": "Maps/CrashSite",
+            "FromFile": "Data/Maps/CrashSite.tmx"
+        },
+        {
+            "LogName": "Assign Crash Site Data",
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "CrashSite": {
+                    "DisplayName": "{{i18n:kai.CrashSite.DisplayName}}",
+                    "DefaultArrivalTile": {
+                        "X": 25,
+                        "Y": 41
+                    },
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/CrashSite"
+                    }
+                }
+            }
+        },
+        //
+        //  Spaceship Interior
+        //
+        {
+            "LogName": "Load Spaceship Interior",
+            "Action": "Load",
+            "Target": "Maps/Spaceship_Interior",
+            "FromFile": "Data/Maps/spaceship.tmx"
+        },
+        {
+            "LogName": "Assign Spaceship Interior Data",
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "Spaceship": {
+                    "DisplayName": "{{i18n:kai.spaceship.DisplayName}}",
+                    "DefaultArrivalTile": {
+                        "X": 15,
+                        "Y": 3
+                    },
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/Spaceship_Interior"
+                    }
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Mods/Pathoschild.CentralStation/Stops",
+            "Entries": {
+                "{{ModID}}_CrashSite_Stop": {
+                    "DisplayName": "{{i18n:kai.CrashSite.DisplayName}}",
+                    "ToLocation": "CrashSite",
+                    "Network": "Train",
+                    "ToTile": {
+                        "X": 25,
+                        "Y": 41
+                    },
+                    "ToFacingDirection": "down",
+                    "Cost": 1200
+                }
+            }
+        }
+    ]
+}
