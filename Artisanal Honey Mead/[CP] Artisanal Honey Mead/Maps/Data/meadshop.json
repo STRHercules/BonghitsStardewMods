@@ -73,6 +73,12 @@
             "FromFile": "Maps/Meadery_Trailer.tmx"
         },
         {
+            "LogName": "Load MeadBarn Interior",
+            "Action": "Load",
+            "Target": "Maps/MeadBarn",
+            "FromFile": "Maps/MeadBarn.tmx"
+        },
+        {
             "Action": "EditData",
             "Target": "Data/Locations",
             "Entries": {
@@ -85,17 +91,31 @@
                     "CreateOnLoad": {
                         "MapPath": "Maps/MeadSaloon"
                     }
-                }
-            }
-        },
-        {
-            "Action": "EditData",
-            "Target": "Data/Locations",
-            "Entries": {
+                },
+                "Meadery_Trailer": {
+                    "DisplayName": "{{i18n:bh.Meadery_Trailer.DisplayName}}",
+                    "DefaultArrivalTile": {
+                        "X": 12,
+                        "Y": 8
+                    },
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/Meadery_Trailer"
+                    }
+                },
+                "MeadBarn": {
+                    "DisplayName": "{{i18n:bh.MeadBarn.DisplayName}}",
+                    "DefaultArrivalTile": {
+                        "X": 9,
+                        "Y": 15
+                    },
+                    "CreateOnLoad": {
+                        "MapPath": "Maps/MeadBarn"
+                    }
+                },
                 "Meadery": {
                     "DisplayName": "{{i18n:bh.Meadery.DisplayName}}",
                     "DefaultArrivalTile": {
-                        "X": 38,
+                        "X": 73,
                         "Y": 44
                     },
                     "CreateOnLoad": {
@@ -240,33 +260,17 @@
             }
         },
         {
-            "Action": "EditData",
-            "Target": "Data/Locations",
-            "Entries": {
-                "Meadery_Trailer": {
-                    "DisplayName": "{{i18n:bh.Meadery_Trailer.DisplayName}}",
-                    "DefaultArrivalTile": {
-                        "X": 12,
-                        "Y": 8
-                    },
-                    "CreateOnLoad": {
-                        "MapPath": "Maps/Meadery_Trailer"
-                    }
-                }
-            }
-        },
-        {
             "Action": "EditMap",
             "Target": "Maps/MeadSaloon",
             "AddWarps": [
-                "13 26 Meadery 16 16"
+                "13 26 Meadery 51 16"
             ]
         },
         {
             "Action": "EditMap",
             "Target": "Maps/Meadery_Trailer",
             "AddWarps": [
-                "12 10 Meadery 36 8"
+                "12 10 Meadery 71 8"
             ]
         },
         {
@@ -278,7 +282,7 @@
                     "ToLocation": "Meadery",
                     "Network": "Bus",
                     "ToTile": {
-                        "X": 38,
+                        "X": 73,
                         "Y": 44
                     },
                     "ToFacingDirection": "down",
@@ -287,17 +291,33 @@
             }
         },
         {
-			"Action": "EditData",
-			"Target": "Data/TriggerActions",
-			"Entries": {
-				"Meadery_EnableFTM": {
-					"Id": "Meadery_EnableFTM",
-					"Trigger": "DayStarted",
-					"HostOnly": true,
-					"Action": "{{EnableFTMToken}} Current Meadery_EnableFTM received",
-					"MarkActionApplied": false
-				}
-			}
-		}
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "Meadery_EnableFTM": {
+                    "Id": "Meadery_EnableFTM",
+                    "Trigger": "DayStarted",
+                    "HostOnly": true,
+                    "Action": "{{EnableFTMToken}} Current Meadery_EnableFTM received",
+                    "MarkActionApplied": false
+                }
+            }
+        },
+        {
+            // If this isn't a brand new save, we need to clear the terrain features in the Meadery
+            // If the player has played for 2 days, we can assume the original meadery location is full of misplaced terrain features
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModId}}_ClearMeaderyTerrain": {
+                    "Id": "{{ModId}}_ClearMeaderyTerrain",
+                    "Condition": "DAYS_PLAYED 2",
+                    "Trigger": "DayStarted",
+                    "Actions": [
+                        "Spiderbuttons.BETAS_ClearTerrainFeatures Meadery All 0 0 116 53"
+                    ]
+                }
+            }
+        }
     ]
 }

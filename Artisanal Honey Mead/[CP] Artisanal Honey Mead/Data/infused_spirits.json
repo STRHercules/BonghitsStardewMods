@@ -1,0 +1,201 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "bonghits_OnShipSpirits": {
+                    "Id": "bonghits_OnShipSpirits",
+                    "Trigger": "DayEnding",
+                    "Condition": "ANY \"PLAYER_SHIPPED_BASIC_ITEM Any {{ModId}}_Whiskey 1\" \"PLAYER_SHIPPED_BASIC_ITEM Any {{ModId}}_Rum 1\" \"PLAYER_SHIPPED_BASIC_ITEM Any {{ModId}}_Vodka 1\"",
+                    "Actions": [
+                        "AddMail Current mail.InfusionIntro tomorrow"
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Mail",
+            "Entries": {
+                "mail.InfusionIntro": "{{i18n:mail.InfusionIntro}}"
+            }
+        },
+        {
+            "LogName": "Add Infused Spirits",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_InfusedWhiskey": {
+                    "Name": "{{ModId}}_InfusedWhiskey",
+                    "DisplayName": "Apple-Infused Whiskey",
+                    "Description": "Fruit infused Whiskey. Smooth, crisp flavor with a comforting warmth.",
+                    "Type": "ArtisanGoods",
+                    "Category": -26,
+                    "Price": 1800,
+                    "Edibility": 50,
+                    "IsDrink": true,
+                    "SpriteIndex": 0,
+                    "Texture": "bonghits.BearHoneyMead/Booze",
+                    "Buffs": [
+                        {
+                            "BuffId": "bonghits.spirit_drunk",
+                            "Duration": 4000, // 2 In-Game Days (46.5 Hours)
+                            "CustomAttributes": {
+                                "LuckLevel": 2,
+                                "Speed": 1,
+                                "ForagingLevel": 1
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "infused_spirit",
+                        "alcohol_item",
+                        "drink_item"
+                    ]
+                },
+                "{{ModId}}_SpicedRum": {
+                    "Name": "{{ModId}}_SpicedRum",
+                    "DisplayName": "Spiced Rum",
+                    "Description": "Rum blended with a hot kick of sweet spicy berries. Warms the throat with each sip.",
+                    "Type": "ArtisanGoods",
+                    "Category": -26,
+                    "Price": 1600,
+                    "Edibility": 50,
+                    "IsDrink": true,
+                    "SpriteIndex": 17,
+                    "Texture": "bonghits.BearHoneyMead/Booze",
+                    "Buffs": [
+                        {
+                            "BuffId": "bonghits.spirit_drunk",
+                            "Duration": 4000, // 2 In-Game Days (46.5 Hours)
+                            "CustomAttributes": {
+                                "Attack": 2,
+                                "LuckLevel": 1,
+                                "Speed": 1
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "infused_spirit",
+                        "alcohol_item",
+                        "drink_item"
+                    ]
+                },
+                "{{ModId}}_HerbalVodka": {
+                    "Name": "{{ModId}}_HerbalVodka",
+                    "DisplayName": "Herbal Vodka",
+                    "Description": "Fruity infused Vodka. A refreshing drink with a hint of sweetness. Perfect for a hot summer day, just add ice and garnish!",
+                    "Type": "ArtisanGoods",
+                    "Category": -26,
+                    "Price": 1500,
+                    "Edibility": 50,
+                    "IsDrink": true,
+                    "SpriteIndex": 14,
+                    "Texture": "bonghits.BearHoneyMead/Booze",
+                    "Buffs": [
+                        {
+                            "BuffId": "bonghits.spirit_drunk",
+                            "Duration": 4000, // 2 In-Game Days (46.5 Hours)
+                            "CustomAttributes": {
+                                "MiningLevel": 2,
+                                "LuckLevel": 2,
+                                "Speed": 1
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "infused_spirit",
+                        "alcohol_item",
+                        "drink_item"
+                    ]
+                },
+                "{{ModId}}_InfusedTequila": {
+                    "Name": "{{ModId}}_InfusedTequila",
+                    "DisplayName": "Infused Tequila",
+                    "Description": "Tequila meticulously infused with fresh fruit. A bright, aromatic spirit that surprises the senses.",
+                    "Type": "ArtisanGoods",
+                    "Category": -26,
+                    "Price": 1500,
+                    "Edibility": 50,
+                    "IsDrink": true,
+                    "SpriteIndex": 19,
+                    "Texture": "bonghits.BearHoneyMead/Booze",
+                    "Buffs": [
+                        {
+                            "BuffId": "bonghits.spirit_drunk",
+                            "Duration": 4000, // 2 In-Game Days (46.5 Hours)
+                            "CustomAttributes": {
+                                "Speed": 1,
+                                "LuckLevel": 3
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "distilled_spirit",
+                        "infused_spirit",
+                        "alcohol_item",
+                        "drink_item"
+                    ]
+                },
+                "{{ModId}}_InfusedSake": {
+                    "Name": "{{ModId}}_InfusedSake",
+                    "DisplayName": "Infused Sake",
+                    "Description": "A gentle rice wine steeped with subtle fruit flavors, capturing the essence of each season.",
+                    "Type": "ArtisanGoods",
+                    "Category": -26,
+                    "Price": 1400,
+                    "Edibility": 50,
+                    "IsDrink": true,
+                    "SpriteIndex": 15,
+                    "Texture": "bonghits.BearHoneyMead/Booze",
+                    "Buffs": [
+                        {
+                            "BuffId": "bonghits.spirit_drunk",
+                            "Duration": 4000, // 2 In-Game Days (46.5 Hours)
+                            "CustomAttributes": {
+                                "LuckLevel": 3,
+                                "ForagingLevel": 2
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "distilled_spirit",
+                        "infused_spirit",
+                        "alcohol_item",
+                        "drink_item"
+                    ]
+                },
+                "{{ModId}}_InfusedBourbon": {
+                    "Name": "{{ModId}}_InfusedBourbon",
+                    "DisplayName": "Infused Bourbon",
+                    "Description": "A smooth bourbon flavored with fresh fruit notes. Complex yet comforting, perfect for sipping.",
+                    "Type": "ArtisanGoods",
+                    "Category": -26,
+                    "Price": 1600,
+                    "Edibility": 50,
+                    "IsDrink": true,
+                    "SpriteIndex": 18,
+                    "Texture": "bonghits.BearHoneyMead/Booze",
+                    "Buffs": [
+                        {
+                            "BuffId": "bonghits.spirit_drunk",
+                            "Duration": 4000, // 2 In-Game Days (46.5 Hours)
+                            "CustomAttributes": {
+                                "Attack": 1,
+                                "Speed": 1,
+                                "LuckLevel": 2
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "distilled_spirit",
+                        "infused_spirit",
+                        "alcohol_item",
+                        "drink_item"
+                    ]
+                }
+            }
+        }
+    ]
+}

@@ -4,6 +4,7 @@
             "Action": "EditData",
             "Target": "Data/Mail",
             "Entries": {
+                "Mail.CropSuggestion": "{{i18n:Mail.CropSuggestion}}",
                 "Mail.MeadKegAcquire": "{{i18n:Mail1}}",
                 "Mail.ShippedMead": "{{i18n:Mail2}}",
                 "Mail.ShippedAgedMead": "{{i18n:Mail3}}",
@@ -25,12 +26,20 @@
             "Action": "EditData",
             "Target": "Data/TriggerActions",
             "Entries": {
+                "{{ModId}}_CropSuggestion": {
+                    "Id": "{{ModId}}_CropSuggestion",
+                    "Trigger": "DayEnding",
+                    "Condition": "DAYS_PLAYED 10 10",
+                    "Actions": [
+                        "AddMail Current Mail.CropSuggestion now"
+                    ]
+                },
                 "{{ModId}}_OnKegAcquire": {
                     "Id": "{{ModId}}_OnKegAcquire",
                     "Trigger": "DayEnding",
                     "Condition": "PLAYER_HAS_CRAFTING_RECIPE Current {{ModId}}_MeadKeg",
                     "Actions": [
-                        "AddMail Current Mail.MeadKegAcquire"
+                        "AddMail Current Mail.MeadKegAcquire now"
                     ]
                 },
                 "{{ModId}}_OnShipMead": {
@@ -62,7 +71,7 @@
                     "Trigger": "DayEnding",
                     "Condition": "MINE_LOWEST_LEVEL_REACHED 10 10",
                     "Actions": [
-                        "AddMail Current Mail.MineLevel10Reached"
+                        "AddMail Current Mail.MineLevel10Reached now"
                     ]
                 },
                 "{{ModId}}_Mine20Reached": {
@@ -70,7 +79,7 @@
                     "Trigger": "DayEnding",
                     "Condition": "MINE_LOWEST_LEVEL_REACHED 20 20",
                     "Actions": [
-                        "AddMail Current Mail.MineLevel20Reached"
+                        "AddMail Current Mail.MineLevel20Reached now"
                     ]
                 },
                 "{{ModId}}_IslandVisited": {
@@ -78,7 +87,7 @@
                     "Trigger": "DayEnding",
                     "Condition": "PLAYER_VISITED_LOCATION Any IslandSouth",
                     "Actions": [
-                        "AddMail Current Mail.IslandUnlocked"
+                        "AddMail Current Mail.IslandUnlocked now"
                     ]
                 },
                 "{{ModId}}_DesertVisited": {
@@ -86,7 +95,7 @@
                     "Trigger": "DayEnding",
                     "Condition": "PLAYER_VISITED_LOCATION Any Desert",
                     "Actions": [
-                        "AddMail Current Mail.DesertUnlocked"
+                        "AddMail Current Mail.DesertUnlocked now"
                     ]
                 },
                 "{{ModId}}_BearHoneyAcquired": {
@@ -95,17 +104,17 @@
                     },
                     "Id": "{{ModId}}_BearHoneyAcquired",
                     "Trigger": "DayEnding",
-                    "Condition": "PLAYER_HAS_ITEM Any (O)FlashShifter.StardewValleyExpandedCP_Honey_Jar 1 1",
+                    "Condition": "PLAYER_HAS_ITEM Any (O)FlashShifter.StardewValleyExpandedCP_Honey_Jar 1",
                     "Actions": [
-                        "AddMail Current Mail.BearHoneyAcquired tomorrow"
+                        "AddMail Current Mail.BearHoneyAcquired now"
                     ]
                 },
                 "{{ModId}}_CiderSuggestion": {
                     "Id": "{{ModId}}_CiderSuggestion",
                     "Trigger": "DayEnding",
-                    "Condition": "PLAYER_HAS_ITEM Any (BC){{ModId}}_Carbonator 1 1",
+                    "Condition": "PLAYER_HAS_ITEM Any (BC){{ModId}}_Carbonator 1",
                     "Actions": [
-                        "AddMail Current Mail.CiderSuggestion tomorrow"
+                        "AddMail Current Mail.CiderSuggestion now"
                     ]
                 }
             }

@@ -25,13 +25,7 @@
                     },
                     "ActionsOnApply": null,
                     "CustomFields": null
-                }
-            }
-        },
-        {
-            "Action": "EditData",
-            "Target": "Data/Buffs",
-            "Entries": {
+                },
                 "bonghits.mead_drunk": {
                     "DisplayName": "Smashed on Honey Mead",
                     "Description": "Enjoyed a bit too much mead! You're not complaining!",
@@ -52,13 +46,7 @@
                     },
                     "ActionsOnApply": null,
                     "CustomFields": null
-                }
-            }
-        },
-        {
-            "Action": "EditData",
-            "Target": "Data/Buffs",
-            "Entries": {
+                },
                 "bonghits.mead_sparkling": {
                     "DisplayName": "Feeling Bubbly",
                     "Description": "Feeling light and bubbly after enjoying some sparkling mead!",
@@ -79,13 +67,7 @@
                     },
                     "ActionsOnApply": null,
                     "CustomFields": null
-                }
-            }
-        },
-        {
-            "Action": "EditData",
-            "Target": "Data/Buffs",
-            "Entries": {
+                },
                 "bonghits.mead.healing": {
                     "DisplayName": "{{i18n:bonghits.mead.healing.DisplayName}}",
                     "Description": "{{i18n:bonghits.mead.healing.Description}}",
@@ -105,13 +87,7 @@
                         "WeaponPrecisionMultiplier": 0.0
                     },
                     "ActionsOnApply": null,
-                }
-            }
-        },
-        {
-            "Action": "EditData",
-            "Target": "Data/Buffs",
-            "Entries": {
+                },
                 "bonghits.mead.specialty": {
                     "DisplayName": "{{i18n:bonghits.mead.specialtybuff.DisplayName}}",
                     "Description": "{{i18n:bonghits.mead.specialtybuff.Description}}",
@@ -131,13 +107,7 @@
                         "WeaponPrecisionMultiplier": 0.0
                     },
                     "ActionsOnApply": null,
-                }
-            }
-        },
-        {
-            "Action": "EditData",
-            "Target": "Data/Buffs",
-            "Entries": {
+                },
                 "bonghits.bubble.health": {
                     "DisplayName": "{{i18n:bonghits.bubble.health.DisplayName}}",
                     "Description": "{{i18n:bonghits.bubble.health.Description}}",
@@ -157,13 +127,7 @@
                         "WeaponPrecisionMultiplier": 0.0
                     },
                     "ActionsOnApply": null,
-                }
-            }
-        },
-        {
-            "Action": "EditData",
-            "Target": "Data/Buffs",
-            "Entries": {
+                },
                 "bonghits.bubble.mead": {
                     "DisplayName": "{{i18n:bonghits.bubblemead.buff.DisplayName}}",
                     "Description": "{{i18n:bonghits.bubblemead.buff.Description}}",
@@ -183,15 +147,7 @@
                         "WeaponPrecisionMultiplier": 0.0
                     },
                     "ActionsOnApply": null,
-                }
-            }
-        },
-        //
-        //
-        {
-            "Action": "EditData",
-            "Target": "Data/Buffs",
-            "Entries": {
+                },
                 "bonghits.cider.buff": {
                     "DisplayName": "{{i18n:bonghits.cider.buff.DisplayName}}",
                     "Description": "{{i18n:bonghits.cider.buff.Description}}",
@@ -210,13 +166,7 @@
                         "WeaponPrecisionMultiplier": 0.0
                     },
                     "ActionsOnApply": null,
-                }
-            }
-        },
-        {
-            "Action": "EditData",
-            "Target": "Data/Buffs",
-            "Entries": {
+                },
                 "bonghits.happy_birthday": {
                     "DisplayName": "{{i18n:bonghits.birthday.DisplayName}}",
                     "Description": "{{i18n:bonghits.birthday.Description}}",
@@ -224,8 +174,50 @@
                     "MaxDuration": -1,
                     "IconTexture": "bonghits.BearHoneyMead/Buff",
                     "IconSpriteIndex": 0,
+                },
+                "bonghits.spirit_tipsy": {
+                    "DisplayName": "Tipsy on Spirits",
+                    "Description": "Enjoyed a delicious spirit!",
+                    "IsDebuff": false,
+                    "GlowColor": null,
+                    "Duration": 30000,
+                    "MaxDuration": -1,
+                    "IconTexture": "TileSheets\\BuffsIcons",
+                    "IconSpriteIndex": 17,
+                    "Effects": {
+                        "AttackMultiplier": 0.0,
+                        "Immunity": 0.0,
+                        "KnockbackMultiplier": 0.0,
+                        "WeaponSpeedMultiplier": 0.0,
+                        "CriticalChanceMultiplier": 0.0,
+                        "CriticalPowerMultiplier": 0.0,
+                        "WeaponPrecisionMultiplier": 0.0
+                    },
+                    "ActionsOnApply": null,
+                    "CustomFields": null
+                },
+                "bonghits.spirit_drunk": {
+                    "DisplayName": "Smashed on Spirits",
+                    "Description": "Enjoyed a bit too much spirits! You're not complaining!",
+                    "IsDebuff": false,
+                    "GlowColor": null,
+                    "Duration": 30000,
+                    "MaxDuration": -1,
+                    "IconTexture": "TileSheets\\BuffsIcons",
+                    "IconSpriteIndex": 17,
+                    "Effects": {
+                        "AttackMultiplier": 0.0,
+                        "Immunity": 0.0,
+                        "KnockbackMultiplier": 0.0,
+                        "WeaponSpeedMultiplier": 0.0,
+                        "CriticalChanceMultiplier": 0.0,
+                        "CriticalPowerMultiplier": 0.0,
+                        "WeaponPrecisionMultiplier": 0.0
+                    },
+                    "ActionsOnApply": null,
+                    "CustomFields": null
                 }
             }
-        },
+        }
     ]
 }

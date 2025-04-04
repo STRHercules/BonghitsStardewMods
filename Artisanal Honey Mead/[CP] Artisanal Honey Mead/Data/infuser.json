@@ -1,0 +1,518 @@
+{
+    "Changes": [
+        //
+        // New BigCraftable: Spirit Infuser
+        //
+        {
+            "LogName": "Define Spirit Infuser BC",
+            "Action": "EditData",
+            "Target": "Data/BigCraftables",
+            "Entries": {
+                "{{ModId}}_SpiritInfuser": {
+                    "Name": "{{ModId}}_SpiritInfuser",
+                    "DisplayName": "{{i18n: infuser.machine.name}}",
+                    "Description": "{{i18n: infuser.machine.description}}",
+                    "Price": 15000,
+                    "Fragility": 0,
+                    "CanBePlacedOutdoors": true,
+                    "CanBePlacedIndoors": true,
+                    "IsLamp": false,
+                    "Texture": "bonghits.BearHoneyMead/Infuser",
+                    "SpriteIndex": 0
+                }
+            }
+        },
+        //
+        // Crafting Recipe for Spirit Infuser
+        //
+        {
+            "LogName": "Spirit Infuser Crafting Recipe",
+            "Action": "EditData",
+            "Target": "Data/CraftingRecipes",
+            "Entries": {
+                "{{ModId}}_SpiritInfuser": "390 20 334 5/Home/{{ModId}}_SpiritInfuser/true/none/{{i18n:infuser.machine.name}}"
+                /*
+                    20 Wood (390) + 5 Copper Bars (334)
+                */
+            }
+        },
+        //
+        // Machine Logic in Data/Machines
+        //
+        {
+            "LogName": "Spirit Infuser Machine Rules",
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "Entries": {
+                "(BC){{ModId}}_SpiritInfuser": {
+                    "HasInput": false,
+                    "HasOutput": false,
+                    "InteractMethod": null,
+                    "OutputRules": [
+                        {
+                            "Id": "Whiskey Infusion",
+                            "Triggers": [
+                                {
+                                    "Id": "ItemPlacedInMachine",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O){{ModId}}_Whiskey",
+                                    "RequiredTags": null,
+                                    "RequiredCount": 1,
+                                    "Condition": null
+                                }
+                            ],
+                            "UseFirstValidOutput": false,
+                            "OutputItem": [
+                                {
+                                    "OutputMethod": null,
+                                    "CopyColor": false,
+                                    "CopyPrice": false,
+                                    "CopyQuality": "{{CopyQualityEnabled}}",
+                                    "PreserveType": null,
+                                    "PreserveId": "DROP_IN",
+                                    "IncrementMachineParentSheetIndex": 0,
+                                    "PriceModifierMode": "Stack",
+                                    "Condition": null,
+                                    "Id": "(O){{ModId}}_InfusedWhiskey",
+                                    "ItemId": "(O){{ModId}}_InfusedWhiskey",
+                                    "RandomItemId": null,
+                                    "MaxItems": null,
+                                    "MinStack": 1,
+                                    "MaxStack": 1,
+                                    "Quality": -1,
+                                    "ObjectInternalName": "PRESERVE_ID Whiskey",
+                                    "ObjectDisplayName": "%EXTRA_PRESERVED_DISPLAY_NAME_1 Whiskey",
+                                    "ToolUpgradeLevel": -1,
+                                    "IsRecipe": false,
+                                    "StackModifierMode": "Stack",
+                                    "StackModifiers": [
+                                        {
+                                            "Id": "RareDouble",
+                                            "Condition": "RANDOM .10",
+                                            "Modification": "Multiply",
+                                            "Amount": 2.0
+                                        }
+                                    ],
+                                    "PriceModifiers": [
+                                        {
+                                            // Adds 450 to price
+                                            "Modification": "Add",
+                                            "RandomAmount": [
+                                                450
+                                            ]
+                                        },
+                                        {
+                                            // Adds a 8% increase in price
+                                            "Modification": "Multiply",
+                                            "RandomAmount": [
+                                                1.08
+                                            ]
+                                        }
+                                    ],
+                                    "QualityModifiers": null,
+                                    "QualityModifierMode": "Stack",
+                                    "ModData": {
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.1": "DROP_IN_ID_1"
+                                    },
+                                    "CustomData": {
+                                        "selph.ExtraMachineConfig.RequirementTags.1": "category_fruits",
+                                        "selph.ExtraMachineConfig.RequirementCount.1": "2",
+                                        "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.1": "2",
+                                        "selph.ExtraMachineConfig.RequirementNoDuplicate.1": "true",
+                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any Fruit to infuse!"
+                                    },
+                                    "PerItemCondition": null
+                                }
+                            ],
+                            "MinutesUntilReady": 1980, // 33 Hours
+                            "DaysUntilReady": -1,
+                            "InvalidCountMessage": "Requires 2 of any Fruit to infuse!",
+                            "RecalculateOnCollect": false
+                        },
+                        {
+                            "Id": "Spiced_Rum",
+                            "Triggers": [
+                                {
+                                    "Id": "ItemPlacedInMachine",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O){{ModId}}_Rum",
+                                    "RequiredTags": null,
+                                    "RequiredCount": 1,
+                                    "Condition": null
+                                }
+                            ],
+                            "UseFirstValidOutput": false,
+                            "OutputItem": [
+                                {
+                                    "OutputMethod": null,
+                                    "CopyColor": false,
+                                    "CopyPrice": false,
+                                    "CopyQuality": "{{CopyQualityEnabled}}",
+                                    "PreserveType": null,
+                                    "PreserveId": "DROP_IN",
+                                    "IncrementMachineParentSheetIndex": 0,
+                                    "PriceModifierMode": "Stack",
+                                    "Condition": null,
+                                    "Id": "(O){{ModId}}_SpicedRum",
+                                    "ItemId": "(O){{ModId}}_SpicedRum",
+                                    "RandomItemId": null,
+                                    "MaxItems": null,
+                                    "MinStack": 1,
+                                    "MaxStack": 1,
+                                    "Quality": -1,
+                                    "ObjectInternalName": "PRESERVE_ID Rum",
+                                    "ObjectDisplayName": "%EXTRA_PRESERVED_DISPLAY_NAME_1 Rum",
+                                    "ToolUpgradeLevel": -1,
+                                    "IsRecipe": false,
+                                    "StackModifierMode": "Stack",
+                                    "StackModifiers": [
+                                        {
+                                            "Id": "RareDouble",
+                                            "Condition": "RANDOM .10",
+                                            "Modification": "Multiply",
+                                            "Amount": 2.0
+                                        }
+                                    ],
+                                    "PriceModifiers": [
+                                        {
+                                            // Adds 450 to price
+                                            "Modification": "Add",
+                                            "RandomAmount": [
+                                                450
+                                            ]
+                                        },
+                                        {
+                                            // Adds a 8% increase in price
+                                            "Modification": "Multiply",
+                                            "RandomAmount": [
+                                                1.08
+                                            ]
+                                        }
+                                    ],
+                                    "QualityModifiers": null,
+                                    "QualityModifierMode": "Stack",
+                                    "ModData": {
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.1": "DROP_IN_ID_1"
+                                    },
+                                    "CustomData": {
+                                        "selph.ExtraMachineConfig.RequirementId.1": "(O)396", // Spice Berry
+                                        "selph.ExtraMachineConfig.RequirementCount.1": "2",
+                                        "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.1": "2",
+                                        "selph.ExtraMachineConfig.RequirementNoDuplicate.1": "true",
+                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 Spice Berries to infuse!"
+                                    },
+                                    "PerItemCondition": null
+                                }
+                            ],
+                            "MinutesUntilReady": 1980, // 33 Hours
+                            "DaysUntilReady": -1,
+                            "InvalidCountMessage": "Requires 2 of any Fruit to infuse!",
+                            "RecalculateOnCollect": false
+                        },
+                        {
+                            "Id": "Vodka Infusion",
+                            "Triggers": [
+                                {
+                                    "Id": "ItemPlacedInMachine",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O){{ModId}}_Vodka",
+                                    "RequiredTags": null,
+                                    "RequiredCount": 1,
+                                    "Condition": null
+                                }
+                            ],
+                            "UseFirstValidOutput": false,
+                            "OutputItem": [
+                                {
+                                    "OutputMethod": null,
+                                    "CopyColor": false,
+                                    "CopyPrice": false,
+                                    "CopyQuality": "{{CopyQualityEnabled}}",
+                                    "PreserveType": null,
+                                    "PreserveId": "DROP_IN",
+                                    "IncrementMachineParentSheetIndex": 0,
+                                    "PriceModifierMode": "Stack",
+                                    "Condition": null,
+                                    "Id": "(O){{ModId}}_HerbalVodka",
+                                    "ItemId": "(O){{ModId}}_HerbalVodka",
+                                    "RandomItemId": null,
+                                    "MaxItems": null,
+                                    "MinStack": 1,
+                                    "MaxStack": 1,
+                                    "Quality": -1,
+                                    "ObjectInternalName": "PRESERVE_ID Vodka",
+                                    "ObjectDisplayName": "%EXTRA_PRESERVED_DISPLAY_NAME_1 Vodka",
+                                    "ToolUpgradeLevel": -1,
+                                    "IsRecipe": false,
+                                    "StackModifierMode": "Stack",
+                                    "StackModifiers": [
+                                        {
+                                            "Id": "RareDouble",
+                                            "Condition": "RANDOM .10",
+                                            "Modification": "Multiply",
+                                            "Amount": 2.0
+                                        }
+                                    ],
+                                    "PriceModifiers": [
+                                        {
+                                            // Adds 450 to price
+                                            "Modification": "Add",
+                                            "RandomAmount": [
+                                                450
+                                            ]
+                                        },
+                                        {
+                                            // Adds a 8% increase in price
+                                            "Modification": "Multiply",
+                                            "RandomAmount": [
+                                                1.08
+                                            ]
+                                        }
+                                    ],
+                                    "QualityModifiers": null,
+                                    "QualityModifierMode": "Stack",
+                                    "ModData": {
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.1": "DROP_IN_ID_1"
+                                    },
+                                    "CustomData": {
+                                        "selph.ExtraMachineConfig.RequirementTags.1": "category_fruits",
+                                        "selph.ExtraMachineConfig.RequirementCount.1": "2",
+                                        "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.1": "2",
+                                        "selph.ExtraMachineConfig.RequirementNoDuplicate.1": "true",
+                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any Fruit to infuse!"
+                                    },
+                                    "PerItemCondition": null
+                                }
+                            ],
+                            "MinutesUntilReady": 1980, // 33 Hours
+                            "DaysUntilReady": -1,
+                            "InvalidCountMessage": "Invalid Recipe",
+                            "RecalculateOnCollect": false
+                        },
+                        {
+                            "Id": "Tequila Infusion",
+                            "Triggers": [
+                                {
+                                    "Id": "ItemPlacedInMachine",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O){{ModId}}_Tequila",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "UseFirstValidOutput": false,
+                            "OutputItem": [
+                                {
+                                    "CopyColor": false,
+                                    "CopyPrice": false,
+                                    "CopyQuality": "{{CopyQualityEnabled}}",
+                                    "PreserveId": "DROP_IN",
+                                    "PriceModifierMode": "Stack",
+                                    "Id": "(O){{ModId}}_InfusedTequila",
+                                    "ItemId": "(O){{ModId}}_InfusedTequila",
+                                    "ObjectInternalName": "PRESERVE_ID Tequila",
+                                    "ObjectDisplayName": "%EXTRA_PRESERVED_DISPLAY_NAME_1 Tequila",
+                                    "StackModifiers": [
+                                        {
+                                            "Id": "RareDouble",
+                                            "Condition": "RANDOM .10",
+                                            "Modification": "Multiply",
+                                            "Amount": 2.0
+                                        }
+                                    ],
+                                    "PriceModifiers": [
+                                        {
+                                            "Modification": "Add",
+                                            "RandomAmount": [
+                                                450
+                                            ]
+                                        },
+                                        {
+                                            "Modification": "Multiply",
+                                            "RandomAmount": [
+                                                1.08
+                                            ]
+                                        }
+                                    ],
+                                    "ModData": {
+                                        // indicates we're copying the 'extra preserve ID' from the fruit
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.1": "DROP_IN_ID_1"
+                                    },
+                                    "CustomData": {
+                                        // require 2 fruit (category_fruits) in the machine for infusion
+                                        "selph.ExtraMachineConfig.RequirementTags.1": "category_fruits",
+                                        "selph.ExtraMachineConfig.RequirementCount.1": "2",
+                                        "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.1": "2",
+                                        "selph.ExtraMachineConfig.RequirementNoDuplicate.1": "true",
+                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any Fruit to infuse!"
+                                    }
+                                }
+                            ],
+                            "MinutesUntilReady": 1980, // ~33 Hours
+                            "InvalidCountMessage": "Invalid Recipe"
+                        },
+                        {
+                            "Id": "Sake Infusion",
+                            "Triggers": [
+                                {
+                                    "Id": "ItemPlacedInMachine",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O){{ModId}}_Sake",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "UseFirstValidOutput": false,
+                            "OutputItem": [
+                                {
+                                    "CopyColor": false,
+                                    "CopyPrice": false,
+                                    "CopyQuality": "{{CopyQualityEnabled}}",
+                                    "PreserveId": "DROP_IN",
+                                    "PriceModifierMode": "Stack",
+                                    "Id": "(O){{ModId}}_InfusedSake",
+                                    "ItemId": "(O){{ModId}}_InfusedSake",
+                                    "ObjectInternalName": "PRESERVE_ID Sake",
+                                    "ObjectDisplayName": "%EXTRA_PRESERVED_DISPLAY_NAME_1 Sake",
+                                    "StackModifiers": [
+                                        {
+                                            "Id": "RareDouble",
+                                            "Condition": "RANDOM .10",
+                                            "Modification": "Multiply",
+                                            "Amount": 2.0
+                                        }
+                                    ],
+                                    "PriceModifiers": [
+                                        {
+                                            "Modification": "Add",
+                                            "RandomAmount": [
+                                                450
+                                            ]
+                                        },
+                                        {
+                                            "Modification": "Multiply",
+                                            "RandomAmount": [
+                                                1.08
+                                            ]
+                                        }
+                                    ],
+                                    "ModData": {
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.1": "DROP_IN_ID_1"
+                                    },
+                                    "CustomData": {
+                                        "selph.ExtraMachineConfig.RequirementTags.1": "category_fruits",
+                                        "selph.ExtraMachineConfig.RequirementCount.1": "2",
+                                        "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.1": "2",
+                                        "selph.ExtraMachineConfig.RequirementNoDuplicate.1": "true",
+                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any Fruit to infuse!"
+                                    }
+                                }
+                            ],
+                            "MinutesUntilReady": 1980,
+                            "InvalidCountMessage": "Invalid Recipe"
+                        },
+                        {
+                            "Id": "Bourbon Infusion",
+                            "Triggers": [
+                                {
+                                    "Id": "ItemPlacedInMachine",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O){{ModId}}_Bourbon",
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "UseFirstValidOutput": false,
+                            "OutputItem": [
+                                {
+                                    "CopyColor": false,
+                                    "CopyPrice": false,
+                                    "CopyQuality": "{{CopyQualityEnabled}}",
+                                    "PreserveId": "DROP_IN",
+                                    "PriceModifierMode": "Stack",
+                                    "Id": "(O){{ModId}}_InfusedBourbon",
+                                    "ItemId": "(O){{ModId}}_InfusedBourbon",
+                                    "ObjectInternalName": "PRESERVE_ID Bourbon",
+                                    "ObjectDisplayName": "%EXTRA_PRESERVED_DISPLAY_NAME_1 Bourbon",
+                                    "StackModifiers": [
+                                        {
+                                            "Id": "RareDouble",
+                                            "Condition": "RANDOM .10",
+                                            "Modification": "Multiply",
+                                            "Amount": 2.0
+                                        }
+                                    ],
+                                    "PriceModifiers": [
+                                        {
+                                            "Modification": "Add",
+                                            "RandomAmount": [
+                                                450
+                                            ]
+                                        },
+                                        {
+                                            "Modification": "Multiply",
+                                            "RandomAmount": [
+                                                1.08
+                                            ]
+                                        }
+                                    ],
+                                    "ModData": {
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.1": "DROP_IN_ID_1"
+                                    },
+                                    "CustomData": {
+                                        "selph.ExtraMachineConfig.RequirementTags.1": "category_fruits",
+                                        "selph.ExtraMachineConfig.RequirementCount.1": "2",
+                                        "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.1": "2",
+                                        "selph.ExtraMachineConfig.RequirementNoDuplicate.1": "true",
+                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any Fruit to infuse!"
+                                    }
+                                }
+                            ],
+                            "MinutesUntilReady": 1980,
+                            "InvalidCountMessage": "Invalid Recipe"
+                        }
+                    ],
+                    "AdditionalConsumedItems": null,
+                    "PreventTimePass": null,
+                    "ReadyTimeModifiers": null,
+                    "ReadyTimeModifierMode": "Stack",
+                    "InvalidItemMessage": null,
+                    "InvalidItemMessageCondition": null,
+                    "InvalidCountMessage": "Invalid Recipe",
+                    "LoadEffects": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "Sounds": [
+                                {
+                                    "Id": "Ship",
+                                    "Delay": 0
+                                },
+                                {
+                                    "Id": "bubbles",
+                                    "Delay": 0
+                                }
+                            ]
+                        }
+                    ],
+                    "WorkingEffectChance": 1,
+                    "AllowLoadWhenFull": false,
+                    "WobbleWhileWorking": true,
+                    "LightWhileWorking": null,
+                    "ShowNextIndexWhileWorking": false,
+                    "ShowNextIndexWhenReady": false,
+                    "AllowFairyDust": true,
+                    "IsIncubator": false,
+                    "ClearContentsOvernightCondition": null,
+                    "StatsToIncrementWhenLoaded": null,
+                    "StatsToIncrementWhenHarvested": [
+                        {
+                            "RequiredItemId": null,
+                            "RequiredTags": null,
+                            "StatName": "BeveragesMade"
+                        }
+                    ],
+                    "ExperienceGainOnHarvest": null,
+                    "CustomFields": null
+                }
+            }
+        }
+    ]
+}

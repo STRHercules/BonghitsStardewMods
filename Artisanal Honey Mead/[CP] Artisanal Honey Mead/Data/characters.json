@@ -265,7 +265,7 @@
         {
             "Action": "Load",
             "Target": "Portraits/Large_Natalie",
-            "FromFile": "assets/natalie/natalie_big.png"
+            "FromFile": "assets/natalie/NatVendorPic.png"
         },
         {
             "Action": "EditData",
@@ -290,7 +290,7 @@
         {
             "Action": "Load",
             "Target": "Portraits/Large_Zachary",
-            "FromFile": "assets/zachary/zachary_big.png"
+            "FromFile": "assets/zachary/ZacharyVendorPic.png"
         },
         {
             "Action": "EditData",

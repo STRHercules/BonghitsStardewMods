@@ -1,0 +1,2560 @@
+{
+    "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Changes": [
+        {
+            "When": {
+                "HasMod": "nachonline.mps",
+            },
+            "Action": "EditData",
+            "Target": "Data/Mail",
+            "Entries": {
+                "bh.AgingVatRecipes": "{{i18n:mail.AgingVatProgression}}"
+            }
+        },
+        {
+            "When": {
+                "HasMod": "nachonline.mps",
+            },
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "bh.AgingVatRecipes": {
+                    "Id": "bh.AgingVatRecipes",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HAS_CRAFTING_RECIPE Current bh.AgingVat",
+                    "Action": "AddMail Current bh.AgingVatRecipes now"
+                }
+            }
+        },
+        {
+            "LogName": "Aging Vat Crafting Recipe",
+            "Action": "EditData",
+            "Target": "Data/CraftingRecipes",
+            "Entries": {
+                "bh.AgingVat": "388 75 334 5/Home/bh.AgingVat/true/Farming 4/"
+                /*
+                75 Wood (#388) + 5 Copper Bars (#334)
+                Gains recipe at Farming level 4
+              */
+            }
+        },
+        {
+            "When": {
+                "HasMod": "nachonline.mps",
+            },
+            "LogName": "MPS Aging Vat Crafting Recipe",
+            "Action": "EditData",
+            "Target": "Data/CraftingRecipes",
+            "Entries": {
+                "bh.AgingVatGold": "bh.AgingVat 1 336 1/Home/bh.AgingVatGold/true/none/{{i18n:agingvatGold.name}}",
+                "bh.AgingVatDiamond": "bh.AgingVatGold 1 72 1/Home/bh.AgingVatDiamond/true/none/{{i18n:agingvatDiamond.name}}",
+                "bh.AgingVatIridium": "bh.AgingVatDiamond 1 337 1/Home/bh.AgingVatIridium/true/none/{{i18n:agingvatIridium.name}}",
+                "bh.AgingVatRadioactive": "bh.AgingVatIridium 1 910 1/Home/bh.AgingVatRadioactive/true/none/{{i18n:agingvatRadioactive.name}}",
+                "bh.AgingVatPrismatic": "bh.AgingVatRadioactive 1 74 1/Home/bh.AgingVatPrismatic/true/none/{{i18n:agingvatPrismatic.name}}",
+            }
+        },
+        {
+            "LogName": "Define Vanilla Aging Vat BC",
+            "Action": "EditData",
+            "Target": "Data/BigCraftables",
+            "Entries": {
+                "bh.AgingVat": {
+                    "Name": "bh.AgingVat",
+                    "DisplayName": "Aging Vat",
+                    "Description": "A specialized vat for aging meads with fruit, spices, or other flavorings to create premium artisanal goods.",
+                    "Price": 12500,
+                    "Fragility": 0,
+                    "CanBePlacedOutdoors": true,
+                    "CanBePlacedIndoors": true,
+                    "IsLamp": false,
+                    "Texture": "bonghits.BearHoneyMead/Still",
+                    "SpriteIndex": 0
+                }
+            }
+        },
+        {
+            "When": {
+                "HasMod": "nachonline.mps",
+            },
+            "LogName": "Define MPS Aging Vat BC",
+            "Action": "EditData",
+            "Target": "Data/BigCraftables",
+            "Entries": {
+                "bh.AgingVatGold": {
+                    "Name": "bh.AgingVatGold",
+                    "DisplayName": "{{i18n: agingvatGold.name}}",
+                    "Description": "{{i18n: agingvatGold.description}}",
+                    "Price": 12500,
+                    "Fragility": 0,
+                    "CanBePlacedOutdoors": true,
+                    "CanBePlacedIndoors": true,
+                    "IsLamp": false,
+                    "Texture": "bonghits.BearHoneyMead/Still",
+                    "SpriteIndex": 1
+                },
+                "bh.AgingVatDiamond": {
+                    "Name": "bh.AgingVatDiamond",
+                    "DisplayName": "{{i18n: agingvatDiamond.name}}",
+                    "Description": "{{i18n: agingvatDiamond.description}}",
+                    "Price": 12500,
+                    "Fragility": 0,
+                    "CanBePlacedOutdoors": true,
+                    "CanBePlacedIndoors": true,
+                    "IsLamp": false,
+                    "Texture": "bonghits.BearHoneyMead/Still",
+                    "SpriteIndex": 2
+                },
+                "bh.AgingVatIridium": {
+                    "Name": "bh.AgingVatIridium",
+                    "DisplayName": "{{i18n: agingvatIridium.name}}",
+                    "Description": "{{i18n: agingvatIridium.description}}",
+                    "Price": 12500,
+                    "Fragility": 0,
+                    "CanBePlacedOutdoors": true,
+                    "CanBePlacedIndoors": true,
+                    "IsLamp": false,
+                    "Texture": "bonghits.BearHoneyMead/Still",
+                    "SpriteIndex": 3
+                },
+                "bh.AgingVatRadioactive": {
+                    "Name": "bh.AgingVatRadioactive",
+                    "DisplayName": "{{i18n: agingvatRadioactive.name}}",
+                    "Description": "{{i18n: agingvatRadioactive.description}}",
+                    "Price": 12500,
+                    "Fragility": 0,
+                    "CanBePlacedOutdoors": true,
+                    "CanBePlacedIndoors": true,
+                    "IsLamp": false,
+                    "Texture": "bonghits.BearHoneyMead/Still",
+                    "SpriteIndex": 4
+                },
+                "bh.AgingVatPrismatic": {
+                    "Name": "bh.AgingVatPrismatic",
+                    "DisplayName": "{{i18n: agingvatPrismatic.name}}",
+                    "Description": "{{i18n: agingvatPrismatic.description}}",
+                    "Price": 12500,
+                    "Fragility": 0,
+                    "CanBePlacedOutdoors": true,
+                    "CanBePlacedIndoors": true,
+                    "IsLamp": false,
+                    "Texture": "bonghits.BearHoneyMead/Still",
+                    "SpriteIndex": 5
+                }
+            }
+        },
+        {
+            "LogName": "Vanilla Aging Vat Machine Rules",
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "Entries": {
+                "(BC)bh.AgingVat": {
+                    "HasInput": false,
+                    "HasOutput": false,
+                    "OutputRules": [
+                        {
+                            "Id": "bh.jarmeadrule",
+                            "Triggers": [
+                                {
+                                    "Id": "bh.jarmeadrule_AgedMeadInput",
+                                    "RequiredTags": [
+                                        "bh.stock_mead"
+                                    ],
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
+                                    "ObjectInternalName": "Aged PRESERVE_ID_1 PRESERVE_ID PRESERVE_ID_2 PRESERVE_ID_3 Mead",
+                                    "ObjectDisplayName": "Aged %EXTRA_PRESERVED_DISPLAY_NAME_1, %EXTRA_PRESERVED_DISPLAY_NAME_2 and %EXTRA_PRESERVED_DISPLAY_NAME_3 Honey Mead",
+                                    "PreserveId": "DROP_IN",
+                                    "CopyColor": true,
+                                    "CopyPrice": true,
+                                    "CopyQuality": "{{CopyQualityEnabled}}",
+                                    "PriceModifierMode": "Stack",
+                                    // 2% Chance to Double your Aged Mead
+                                    "StackModifiers": [
+                                        {
+                                            "Id": "RareDouble",
+                                            "Condition": "RANDOM .02",
+                                            "Modification": "Multiply",
+                                            "Amount": 2.0
+                                        }
+                                    ],
+                                    "ModData": {
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.1": "DROP_IN_ID_1",
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.2": "DROP_IN_ID_2",
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.3": "DROP_IN_ID_3",
+                                        "selph.ExtraMachineConfig.ExtraColor.1": "DROP_IN_ID_1",
+                                    },
+                                    "CustomData": {
+                                        "selph.ExtraMachineConfig.RequirementTags.1": "category_fruits",
+                                        "selph.ExtraMachineConfig.RequirementCount.1": "2",
+                                        "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.1": "2.5",
+                                        "selph.ExtraMachineConfig.RequirementNoDuplicate.1": "true",
+                                        "selph.ExtraMachineConfig.RequirementTags.2": "category_fruits",
+                                        "selph.ExtraMachineConfig.RequirementCount.2": "2",
+                                        "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.2": "2",
+                                        "selph.ExtraMachineConfig.RequirementNoDuplicate.2": "true",
+                                        "selph.ExtraMachineConfig.RequirementTags.3": "category_fruits",
+                                        "selph.ExtraMachineConfig.RequirementCount.3": "2",
+                                        "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2",
+                                        "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
+                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                        "selph.ExtraMachineConfig.CopyColor": "true",
+                                    },
+                                    "PriceModifiers": [
+                                        {
+                                            // Adds 1000 to price
+                                            "Modification": "Add",
+                                            "RandomAmount": [
+                                                1000
+                                            ]
+                                        },
+                                        {
+                                            // Adds a 5% increase in price
+                                            "Modification": "Multiply",
+                                            "RandomAmount": [
+                                                1.05,
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
+                                    "ObjectInternalName": "Aged PRESERVE_ID_2 PRESERVE_ID PRESERVE_ID_1 PRESERVE_ID_3 Mead",
+                                    "ObjectDisplayName": "Aged %EXTRA_PRESERVED_DISPLAY_NAME_2, %EXTRA_PRESERVED_DISPLAY_NAME_1 and %EXTRA_PRESERVED_DISPLAY_NAME_3 Honey Mead",
+                                    "PreserveId": "DROP_IN",
+                                    "CopyColor": true,
+                                    "CopyPrice": true,
+                                    "CopyQuality": "{{CopyQualityEnabled}}",
+                                    "PriceModifierMode": "Stack",
+                                    // 2% Chance to Double your Aged Mead
+                                    "StackModifiers": [
+                                        {
+                                            "Id": "RareDouble",
+                                            "Condition": "RANDOM .02",
+                                            "Modification": "Multiply",
+                                            "Amount": 2.0
+                                        }
+                                    ],
+                                    "ModData": {
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.1": "DROP_IN_ID_1",
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.2": "DROP_IN_ID_2",
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.3": "DROP_IN_ID_3",
+                                        "selph.ExtraMachineConfig.ExtraColor.1": "DROP_IN_ID_2",
+                                    },
+                                    "CustomData": {
+                                        "selph.ExtraMachineConfig.RequirementTags.1": "category_fruits",
+                                        "selph.ExtraMachineConfig.RequirementCount.1": "2",
+                                        "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.1": "2",
+                                        "selph.ExtraMachineConfig.RequirementNoDuplicate.1": "true",
+                                        "selph.ExtraMachineConfig.RequirementTags.2": "category_fruits",
+                                        "selph.ExtraMachineConfig.RequirementCount.2": "2",
+                                        "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.2": "2.5",
+                                        "selph.ExtraMachineConfig.RequirementNoDuplicate.2": "true",
+                                        "selph.ExtraMachineConfig.RequirementTags.3": "category_fruits",
+                                        "selph.ExtraMachineConfig.RequirementCount.3": "2",
+                                        "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2",
+                                        "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
+                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                        "selph.ExtraMachineConfig.CopyColor": "true",
+                                    },
+                                    "PriceModifiers": [
+                                        {
+                                            // Adds 1000 to price
+                                            "Modification": "Add",
+                                            "RandomAmount": [
+                                                1000
+                                            ]
+                                        },
+                                        {
+                                            // Adds a 5% increase in price
+                                            "Modification": "Multiply",
+                                            "RandomAmount": [
+                                                1.05,
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
+                                    "ObjectInternalName": "Aged PRESERVE_ID_3 PRESERVE_ID PRESERVE_ID_1 PRESERVE_ID_2 Mead",
+                                    "ObjectDisplayName": "Aged %EXTRA_PRESERVED_DISPLAY_NAME_3, %EXTRA_PRESERVED_DISPLAY_NAME_2 and %EXTRA_PRESERVED_DISPLAY_NAME_1 Honey Mead",
+                                    "PreserveId": "DROP_IN",
+                                    "CopyColor": true,
+                                    "CopyPrice": true,
+                                    "CopyQuality": "{{CopyQualityEnabled}}",
+                                    "PriceModifierMode": "Stack",
+                                    // 2% Chance to Double your Aged Mead
+                                    "StackModifiers": [
+                                        {
+                                            "Id": "RareDouble",
+                                            "Condition": "RANDOM .02",
+                                            "Modification": "Multiply",
+                                            "Amount": 2.0
+                                        }
+                                    ],
+                                    "ModData": {
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.1": "DROP_IN_ID_1",
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.2": "DROP_IN_ID_2",
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.3": "DROP_IN_ID_3",
+                                        "selph.ExtraMachineConfig.ExtraColor.1": "DROP_IN_ID_3",
+                                    },
+                                    "CustomData": {
+                                        "selph.ExtraMachineConfig.RequirementTags.1": "category_fruits",
+                                        "selph.ExtraMachineConfig.RequirementCount.1": "2",
+                                        "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.1": "2",
+                                        "selph.ExtraMachineConfig.RequirementNoDuplicate.1": "true",
+                                        "selph.ExtraMachineConfig.RequirementTags.2": "category_fruits",
+                                        "selph.ExtraMachineConfig.RequirementCount.2": "2",
+                                        "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.2": "2",
+                                        "selph.ExtraMachineConfig.RequirementNoDuplicate.2": "true",
+                                        "selph.ExtraMachineConfig.RequirementTags.3": "category_fruits",
+                                        "selph.ExtraMachineConfig.RequirementCount.3": "2",
+                                        "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2.5",
+                                        "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
+                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                        "selph.ExtraMachineConfig.CopyColor": "true",
+                                    },
+                                    "PriceModifiers": [
+                                        {
+                                            // Adds 1000 to price
+                                            "Modification": "Add",
+                                            "RandomAmount": [
+                                                1000
+                                            ]
+                                        },
+                                        {
+                                            // Adds a 5% increase in price
+                                            "Modification": "Multiply",
+                                            "RandomAmount": [
+                                                1.05,
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "MinutesUntilReady": 3000, // 50 Hours - 2.083 Days
+                            "InvalidCountMessage": "Requires 1 Honey Mead"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "When": {
+                "HasMod": "nachonline.mps",
+            },
+            "LogName": "MPS Aging Vat Machine Rules",
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "Entries": {
+                "(BC)bh.AgingVatGold": {
+                    "HasInput": false,
+                    "HasOutput": false,
+                    "OutputRules": [
+                        {
+                            "Id": "bh.jarmeadrule",
+                            "Triggers": [
+                                {
+                                    "Id": "bh.jarmeadrule_AgedMeadInput",
+                                    "RequiredTags": [
+                                        "bh.stock_mead"
+                                    ],
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
+                                    "ObjectInternalName": "Aged PRESERVE_ID_1 PRESERVE_ID PRESERVE_ID_2 PRESERVE_ID_3 Mead",
+                                    "ObjectDisplayName": "Aged %EXTRA_PRESERVED_DISPLAY_NAME_1, %EXTRA_PRESERVED_DISPLAY_NAME_2 and %EXTRA_PRESERVED_DISPLAY_NAME_3 Honey Mead",
+                                    "PreserveId": "DROP_IN",
+                                    "CopyColor": true,
+                                    "CopyPrice": true,
+                                    "CopyQuality": "{{CopyQualityEnabled}}",
+                                    "PriceModifierMode": "Stack",
+                                    // 2% Chance to Double your Aged Mead
+                                    "StackModifiers": [
+                                        {
+                                            "Id": "RareDouble",
+                                            "Condition": "RANDOM .02",
+                                            "Modification": "Multiply",
+                                            "Amount": 2.0
+                                        }
+                                    ],
+                                    "ModData": {
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.1": "DROP_IN_ID_1",
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.2": "DROP_IN_ID_2",
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.3": "DROP_IN_ID_3",
+                                        "selph.ExtraMachineConfig.ExtraColor.1": "DROP_IN_ID_1",
+                                    },
+                                    "CustomData": {
+                                        "selph.ExtraMachineConfig.RequirementTags.1": "category_fruits",
+                                        "selph.ExtraMachineConfig.RequirementCount.1": "2",
+                                        "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.1": "2.5",
+                                        "selph.ExtraMachineConfig.RequirementNoDuplicate.1": "true",
+                                        "selph.ExtraMachineConfig.RequirementTags.2": "category_fruits",
+                                        "selph.ExtraMachineConfig.RequirementCount.2": "2",
+                                        "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.2": "2",
+                                        "selph.ExtraMachineConfig.RequirementNoDuplicate.2": "true",
+                                        "selph.ExtraMachineConfig.RequirementTags.3": "category_fruits",
+                                        "selph.ExtraMachineConfig.RequirementCount.3": "2",
+                                        "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2",
+                                        "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
+                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                        "selph.ExtraMachineConfig.CopyColor": "true",
+                                    },
+                                    "PriceModifiers": [
+                                        {
+                                            // Adds 1000 to price
+                                            "Modification": "Add",
+                                            "RandomAmount": [
+                                                1000
+                                            ]
+                                        },
+                                        {
+                                            // Adds a 5% increase in price
+                                            "Modification": "Multiply",
+                                            "RandomAmount": [
+                                                1.05,
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
+                                    "ObjectInternalName": "Aged PRESERVE_ID_2 PRESERVE_ID PRESERVE_ID_1 PRESERVE_ID_3 Mead",
+                                    "ObjectDisplayName": "Aged %EXTRA_PRESERVED_DISPLAY_NAME_2, %EXTRA_PRESERVED_DISPLAY_NAME_1 and %EXTRA_PRESERVED_DISPLAY_NAME_3 Honey Mead",
+                                    "PreserveId": "DROP_IN",
+                                    "CopyColor": true,
+                                    "CopyPrice": true,
+                                    "CopyQuality": "{{CopyQualityEnabled}}",
+                                    "PriceModifierMode": "Stack",
+                                    // 2% Chance to Double your Aged Mead
+                                    "StackModifiers": [
+                                        {
+                                            "Id": "RareDouble",
+                                            "Condition": "RANDOM .02",
+                                            "Modification": "Multiply",
+                                            "Amount": 2.0
+                                        }
+                                    ],
+                                    "ModData": {
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.1": "DROP_IN_ID_1",
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.2": "DROP_IN_ID_2",
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.3": "DROP_IN_ID_3",
+                                        "selph.ExtraMachineConfig.ExtraColor.1": "DROP_IN_ID_2",
+                                    },
+                                    "CustomData": {
+                                        "selph.ExtraMachineConfig.RequirementTags.1": "category_fruits",
+                                        "selph.ExtraMachineConfig.RequirementCount.1": "2",
+                                        "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.1": "2",
+                                        "selph.ExtraMachineConfig.RequirementNoDuplicate.1": "true",
+                                        "selph.ExtraMachineConfig.RequirementTags.2": "category_fruits",
+                                        "selph.ExtraMachineConfig.RequirementCount.2": "2",
+                                        "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.2": "2.5",
+                                        "selph.ExtraMachineConfig.RequirementNoDuplicate.2": "true",
+                                        "selph.ExtraMachineConfig.RequirementTags.3": "category_fruits",
+                                        "selph.ExtraMachineConfig.RequirementCount.3": "2",
+                                        "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2",
+                                        "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
+                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                        "selph.ExtraMachineConfig.CopyColor": "true",
+                                    },
+                                    "PriceModifiers": [
+                                        {
+                                            // Adds 1000 to price
+                                            "Modification": "Add",
+                                            "RandomAmount": [
+                                                1000
+                                            ]
+                                        },
+                                        {
+                                            // Adds a 5% increase in price
+                                            "Modification": "Multiply",
+                                            "RandomAmount": [
+                                                1.05,
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
+                                    "ObjectInternalName": "Aged PRESERVE_ID_3 PRESERVE_ID PRESERVE_ID_1 PRESERVE_ID_2 Mead",
+                                    "ObjectDisplayName": "Aged %EXTRA_PRESERVED_DISPLAY_NAME_3, %EXTRA_PRESERVED_DISPLAY_NAME_2 and %EXTRA_PRESERVED_DISPLAY_NAME_1 Honey Mead",
+                                    "PreserveId": "DROP_IN",
+                                    "CopyColor": true,
+                                    "CopyPrice": true,
+                                    "CopyQuality": "{{CopyQualityEnabled}}",
+                                    "PriceModifierMode": "Stack",
+                                    // 2% Chance to Double your Aged Mead
+                                    "StackModifiers": [
+                                        {
+                                            "Id": "RareDouble",
+                                            "Condition": "RANDOM .02",
+                                            "Modification": "Multiply",
+                                            "Amount": 2.0
+                                        }
+                                    ],
+                                    "ModData": {
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.1": "DROP_IN_ID_1",
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.2": "DROP_IN_ID_2",
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.3": "DROP_IN_ID_3",
+                                        "selph.ExtraMachineConfig.ExtraColor.1": "DROP_IN_ID_3",
+                                    },
+                                    "CustomData": {
+                                        "selph.ExtraMachineConfig.RequirementTags.1": "category_fruits",
+                                        "selph.ExtraMachineConfig.RequirementCount.1": "2",
+                                        "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.1": "2",
+                                        "selph.ExtraMachineConfig.RequirementNoDuplicate.1": "true",
+                                        "selph.ExtraMachineConfig.RequirementTags.2": "category_fruits",
+                                        "selph.ExtraMachineConfig.RequirementCount.2": "2",
+                                        "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.2": "2",
+                                        "selph.ExtraMachineConfig.RequirementNoDuplicate.2": "true",
+                                        "selph.ExtraMachineConfig.RequirementTags.3": "category_fruits",
+                                        "selph.ExtraMachineConfig.RequirementCount.3": "2",
+                                        "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2.5",
+                                        "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
+                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                        "selph.ExtraMachineConfig.CopyColor": "true",
+                                    },
+                                    "PriceModifiers": [
+                                        {
+                                            // Adds 1000 to price
+                                            "Modification": "Add",
+                                            "RandomAmount": [
+                                                1000
+                                            ]
+                                        },
+                                        {
+                                            // Adds a 5% increase in price
+                                            "Modification": "Multiply",
+                                            "RandomAmount": [
+                                                1.05,
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "MinutesUntilReady": 1980, // 33 Hours
+                            "InvalidCountMessage": "Requires 1 Honey Mead"
+                        }
+                    ]
+                },
+                "(BC)bh.AgingVatDiamond": {
+                    "HasInput": false,
+                    "HasOutput": false,
+                    "OutputRules": [
+                        {
+                            "Id": "bh.jarmeadrule",
+                            "Triggers": [
+                                {
+                                    "Id": "bh.jarmeadrule_AgedMeadInput",
+                                    "RequiredTags": [
+                                        "bh.stock_mead"
+                                    ],
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
+                                    "ObjectInternalName": "Aged PRESERVE_ID_1 PRESERVE_ID PRESERVE_ID_2 PRESERVE_ID_3 Mead",
+                                    "ObjectDisplayName": "Aged %EXTRA_PRESERVED_DISPLAY_NAME_1, %EXTRA_PRESERVED_DISPLAY_NAME_2 and %EXTRA_PRESERVED_DISPLAY_NAME_3 Honey Mead",
+                                    "PreserveId": "DROP_IN",
+                                    "CopyColor": true,
+                                    "CopyPrice": true,
+                                    "CopyQuality": "{{CopyQualityEnabled}}",
+                                    "PriceModifierMode": "Stack",
+                                    // 2% Chance to Double your Aged Mead
+                                    "StackModifiers": [
+                                        {
+                                            "Id": "RareDouble",
+                                            "Condition": "RANDOM .02",
+                                            "Modification": "Multiply",
+                                            "Amount": 2.0
+                                        }
+                                    ],
+                                    "ModData": {
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.1": "DROP_IN_ID_1",
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.2": "DROP_IN_ID_2",
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.3": "DROP_IN_ID_3",
+                                        "selph.ExtraMachineConfig.ExtraColor.1": "DROP_IN_ID_1",
+                                    },
+                                    "CustomData": {
+                                        "selph.ExtraMachineConfig.RequirementTags.1": "category_fruits",
+                                        "selph.ExtraMachineConfig.RequirementCount.1": "2",
+                                        "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.1": "2.5",
+                                        "selph.ExtraMachineConfig.RequirementNoDuplicate.1": "true",
+                                        "selph.ExtraMachineConfig.RequirementTags.2": "category_fruits",
+                                        "selph.ExtraMachineConfig.RequirementCount.2": "2",
+                                        "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.2": "2",
+                                        "selph.ExtraMachineConfig.RequirementNoDuplicate.2": "true",
+                                        "selph.ExtraMachineConfig.RequirementTags.3": "category_fruits",
+                                        "selph.ExtraMachineConfig.RequirementCount.3": "2",
+                                        "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2",
+                                        "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
+                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                        "selph.ExtraMachineConfig.CopyColor": "true",
+                                    },
+                                    "PriceModifiers": [
+                                        {
+                                            // Adds 1000 to price
+                                            "Modification": "Add",
+                                            "RandomAmount": [
+                                                1000
+                                            ]
+                                        },
+                                        {
+                                            // Adds a 5% increase in price
+                                            "Modification": "Multiply",
+                                            "RandomAmount": [
+                                                1.05,
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
+                                    "ObjectInternalName": "Aged PRESERVE_ID_2 PRESERVE_ID PRESERVE_ID_1 PRESERVE_ID_3 Mead",
+                                    "ObjectDisplayName": "Aged %EXTRA_PRESERVED_DISPLAY_NAME_2, %EXTRA_PRESERVED_DISPLAY_NAME_1 and %EXTRA_PRESERVED_DISPLAY_NAME_3 Honey Mead",
+                                    "PreserveId": "DROP_IN",
+                                    "CopyColor": true,
+                                    "CopyPrice": true,
+                                    "CopyQuality": "{{CopyQualityEnabled}}",
+                                    "PriceModifierMode": "Stack",
+                                    // 2% Chance to Double your Aged Mead
+                                    "StackModifiers": [
+                                        {
+                                            "Id": "RareDouble",
+                                            "Condition": "RANDOM .02",
+                                            "Modification": "Multiply",
+                                            "Amount": 2.0
+                                        }
+                                    ],
+                                    "ModData": {
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.1": "DROP_IN_ID_1",
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.2": "DROP_IN_ID_2",
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.3": "DROP_IN_ID_3",
+                                        "selph.ExtraMachineConfig.ExtraColor.1": "DROP_IN_ID_2",
+                                    },
+                                    "CustomData": {
+                                        "selph.ExtraMachineConfig.RequirementTags.1": "category_fruits",
+                                        "selph.ExtraMachineConfig.RequirementCount.1": "2",
+                                        "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.1": "2",
+                                        "selph.ExtraMachineConfig.RequirementNoDuplicate.1": "true",
+                                        "selph.ExtraMachineConfig.RequirementTags.2": "category_fruits",
+                                        "selph.ExtraMachineConfig.RequirementCount.2": "2",
+                                        "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.2": "2.5",
+                                        "selph.ExtraMachineConfig.RequirementNoDuplicate.2": "true",
+                                        "selph.ExtraMachineConfig.RequirementTags.3": "category_fruits",
+                                        "selph.ExtraMachineConfig.RequirementCount.3": "2",
+                                        "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2",
+                                        "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
+                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                        "selph.ExtraMachineConfig.CopyColor": "true",
+                                    },
+                                    "PriceModifiers": [
+                                        {
+                                            // Adds 1000 to price
+                                            "Modification": "Add",
+                                            "RandomAmount": [
+                                                1000
+                                            ]
+                                        },
+                                        {
+                                            // Adds a 5% increase in price
+                                            "Modification": "Multiply",
+                                            "RandomAmount": [
+                                                1.05,
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
+                                    "ObjectInternalName": "Aged PRESERVE_ID_3 PRESERVE_ID PRESERVE_ID_1 PRESERVE_ID_2 Mead",
+                                    "ObjectDisplayName": "Aged %EXTRA_PRESERVED_DISPLAY_NAME_3, %EXTRA_PRESERVED_DISPLAY_NAME_2 and %EXTRA_PRESERVED_DISPLAY_NAME_1 Honey Mead",
+                                    "PreserveId": "DROP_IN",
+                                    "CopyColor": true,
+                                    "CopyPrice": true,
+                                    "CopyQuality": "{{CopyQualityEnabled}}",
+                                    "PriceModifierMode": "Stack",
+                                    // 2% Chance to Double your Aged Mead
+                                    "StackModifiers": [
+                                        {
+                                            "Id": "RareDouble",
+                                            "Condition": "RANDOM .02",
+                                            "Modification": "Multiply",
+                                            "Amount": 2.0
+                                        }
+                                    ],
+                                    "ModData": {
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.1": "DROP_IN_ID_1",
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.2": "DROP_IN_ID_2",
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.3": "DROP_IN_ID_3",
+                                        "selph.ExtraMachineConfig.ExtraColor.1": "DROP_IN_ID_3",
+                                    },
+                                    "CustomData": {
+                                        "selph.ExtraMachineConfig.RequirementTags.1": "category_fruits",
+                                        "selph.ExtraMachineConfig.RequirementCount.1": "2",
+                                        "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.1": "2",
+                                        "selph.ExtraMachineConfig.RequirementNoDuplicate.1": "true",
+                                        "selph.ExtraMachineConfig.RequirementTags.2": "category_fruits",
+                                        "selph.ExtraMachineConfig.RequirementCount.2": "2",
+                                        "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.2": "2",
+                                        "selph.ExtraMachineConfig.RequirementNoDuplicate.2": "true",
+                                        "selph.ExtraMachineConfig.RequirementTags.3": "category_fruits",
+                                        "selph.ExtraMachineConfig.RequirementCount.3": "2",
+                                        "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2.5",
+                                        "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
+                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                        "selph.ExtraMachineConfig.CopyColor": "true",
+                                    },
+                                    "PriceModifiers": [
+                                        {
+                                            // Adds 1000 to price
+                                            "Modification": "Add",
+                                            "RandomAmount": [
+                                                1000
+                                            ]
+                                        },
+                                        {
+                                            // Adds a 5% increase in price
+                                            "Modification": "Multiply",
+                                            "RandomAmount": [
+                                                1.05,
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "MinutesUntilReady": 1500, // 25 Hours
+                            "InvalidCountMessage": "Requires 1 Honey Mead"
+                        }
+                    ]
+                },
+                "(BC)bh.AgingVatIridium": {
+                    "HasInput": false,
+                    "HasOutput": false,
+                    "OutputRules": [
+                        {
+                            "Id": "bh.jarmeadrule",
+                            "Triggers": [
+                                {
+                                    "Id": "bh.jarmeadrule_AgedMeadInput",
+                                    "RequiredTags": [
+                                        "bh.stock_mead"
+                                    ],
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
+                                    "ObjectInternalName": "Aged PRESERVE_ID_1 PRESERVE_ID PRESERVE_ID_2 PRESERVE_ID_3 Mead",
+                                    "ObjectDisplayName": "Aged %EXTRA_PRESERVED_DISPLAY_NAME_1, %EXTRA_PRESERVED_DISPLAY_NAME_2 and %EXTRA_PRESERVED_DISPLAY_NAME_3 Honey Mead",
+                                    "PreserveId": "DROP_IN",
+                                    "CopyColor": true,
+                                    "CopyPrice": true,
+                                    "CopyQuality": "{{CopyQualityEnabled}}",
+                                    "PriceModifierMode": "Stack",
+                                    // 2% Chance to Double your Aged Mead
+                                    "StackModifiers": [
+                                        {
+                                            "Id": "RareDouble",
+                                            "Condition": "RANDOM .02",
+                                            "Modification": "Multiply",
+                                            "Amount": 2.0
+                                        }
+                                    ],
+                                    "ModData": {
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.1": "DROP_IN_ID_1",
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.2": "DROP_IN_ID_2",
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.3": "DROP_IN_ID_3",
+                                        "selph.ExtraMachineConfig.ExtraColor.1": "DROP_IN_ID_1",
+                                    },
+                                    "CustomData": {
+                                        "selph.ExtraMachineConfig.RequirementTags.1": "category_fruits",
+                                        "selph.ExtraMachineConfig.RequirementCount.1": "2",
+                                        "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.1": "2.5",
+                                        "selph.ExtraMachineConfig.RequirementNoDuplicate.1": "true",
+                                        "selph.ExtraMachineConfig.RequirementTags.2": "category_fruits",
+                                        "selph.ExtraMachineConfig.RequirementCount.2": "2",
+                                        "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.2": "2",
+                                        "selph.ExtraMachineConfig.RequirementNoDuplicate.2": "true",
+                                        "selph.ExtraMachineConfig.RequirementTags.3": "category_fruits",
+                                        "selph.ExtraMachineConfig.RequirementCount.3": "2",
+                                        "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2",
+                                        "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
+                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                        "selph.ExtraMachineConfig.CopyColor": "true",
+                                    },
+                                    "PriceModifiers": [
+                                        {
+                                            // Adds 1000 to price
+                                            "Modification": "Add",
+                                            "RandomAmount": [
+                                                1000
+                                            ]
+                                        },
+                                        {
+                                            // Adds a 5% increase in price
+                                            "Modification": "Multiply",
+                                            "RandomAmount": [
+                                                1.05,
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
+                                    "ObjectInternalName": "Aged PRESERVE_ID_2 PRESERVE_ID PRESERVE_ID_1 PRESERVE_ID_3 Mead",
+                                    "ObjectDisplayName": "Aged %EXTRA_PRESERVED_DISPLAY_NAME_2, %EXTRA_PRESERVED_DISPLAY_NAME_1 and %EXTRA_PRESERVED_DISPLAY_NAME_3 Honey Mead",
+                                    "PreserveId": "DROP_IN",
+                                    "CopyColor": true,
+                                    "CopyPrice": true,
+                                    "CopyQuality": "{{CopyQualityEnabled}}",
+                                    "PriceModifierMode": "Stack",
+                                    // 2% Chance to Double your Aged Mead
+                                    "StackModifiers": [
+                                        {
+                                            "Id": "RareDouble",
+                                            "Condition": "RANDOM .02",
+                                            "Modification": "Multiply",
+                                            "Amount": 2.0
+                                        }
+                                    ],
+                                    "ModData": {
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.1": "DROP_IN_ID_1",
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.2": "DROP_IN_ID_2",
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.3": "DROP_IN_ID_3",
+                                        "selph.ExtraMachineConfig.ExtraColor.1": "DROP_IN_ID_2",
+                                    },
+                                    "CustomData": {
+                                        "selph.ExtraMachineConfig.RequirementTags.1": "category_fruits",
+                                        "selph.ExtraMachineConfig.RequirementCount.1": "2",
+                                        "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.1": "2",
+                                        "selph.ExtraMachineConfig.RequirementNoDuplicate.1": "true",
+                                        "selph.ExtraMachineConfig.RequirementTags.2": "category_fruits",
+                                        "selph.ExtraMachineConfig.RequirementCount.2": "2",
+                                        "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.2": "2.5",
+                                        "selph.ExtraMachineConfig.RequirementNoDuplicate.2": "true",
+                                        "selph.ExtraMachineConfig.RequirementTags.3": "category_fruits",
+                                        "selph.ExtraMachineConfig.RequirementCount.3": "2",
+                                        "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2",
+                                        "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
+                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                        "selph.ExtraMachineConfig.CopyColor": "true",
+                                    },
+                                    "PriceModifiers": [
+                                        {
+                                            // Adds 1000 to price
+                                            "Modification": "Add",
+                                            "RandomAmount": [
+                                                1000
+                                            ]
+                                        },
+                                        {
+                                            // Adds a 5% increase in price
+                                            "Modification": "Multiply",
+                                            "RandomAmount": [
+                                                1.05,
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
+                                    "ObjectInternalName": "Aged PRESERVE_ID_3 PRESERVE_ID PRESERVE_ID_1 PRESERVE_ID_2 Mead",
+                                    "ObjectDisplayName": "Aged %EXTRA_PRESERVED_DISPLAY_NAME_3, %EXTRA_PRESERVED_DISPLAY_NAME_2 and %EXTRA_PRESERVED_DISPLAY_NAME_1 Honey Mead",
+                                    "PreserveId": "DROP_IN",
+                                    "CopyColor": true,
+                                    "CopyPrice": true,
+                                    "CopyQuality": "{{CopyQualityEnabled}}",
+                                    "PriceModifierMode": "Stack",
+                                    // 2% Chance to Double your Aged Mead
+                                    "StackModifiers": [
+                                        {
+                                            "Id": "RareDouble",
+                                            "Condition": "RANDOM .02",
+                                            "Modification": "Multiply",
+                                            "Amount": 2.0
+                                        }
+                                    ],
+                                    "ModData": {
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.1": "DROP_IN_ID_1",
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.2": "DROP_IN_ID_2",
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.3": "DROP_IN_ID_3",
+                                        "selph.ExtraMachineConfig.ExtraColor.1": "DROP_IN_ID_3",
+                                    },
+                                    "CustomData": {
+                                        "selph.ExtraMachineConfig.RequirementTags.1": "category_fruits",
+                                        "selph.ExtraMachineConfig.RequirementCount.1": "2",
+                                        "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.1": "2",
+                                        "selph.ExtraMachineConfig.RequirementNoDuplicate.1": "true",
+                                        "selph.ExtraMachineConfig.RequirementTags.2": "category_fruits",
+                                        "selph.ExtraMachineConfig.RequirementCount.2": "2",
+                                        "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.2": "2",
+                                        "selph.ExtraMachineConfig.RequirementNoDuplicate.2": "true",
+                                        "selph.ExtraMachineConfig.RequirementTags.3": "category_fruits",
+                                        "selph.ExtraMachineConfig.RequirementCount.3": "2",
+                                        "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2.5",
+                                        "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
+                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                        "selph.ExtraMachineConfig.CopyColor": "true",
+                                    },
+                                    "PriceModifiers": [
+                                        {
+                                            // Adds 1000 to price
+                                            "Modification": "Add",
+                                            "RandomAmount": [
+                                                1000
+                                            ]
+                                        },
+                                        {
+                                            // Adds a 5% increase in price
+                                            "Modification": "Multiply",
+                                            "RandomAmount": [
+                                                1.05,
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "MinutesUntilReady": 960, // 16 Hours
+                            "InvalidCountMessage": "Requires 1 Honey Mead"
+                        }
+                    ]
+                },
+                "(BC)bh.AgingVatRadioactive": {
+                    "HasInput": false,
+                    "HasOutput": false,
+                    "OutputRules": [
+                        {
+                            "Id": "bh.jarmeadrule",
+                            "Triggers": [
+                                {
+                                    "Id": "bh.jarmeadrule_AgedMeadInput",
+                                    "RequiredTags": [
+                                        "bh.stock_mead"
+                                    ],
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
+                                    "ObjectInternalName": "Aged PRESERVE_ID_1 PRESERVE_ID PRESERVE_ID_2 PRESERVE_ID_3 Mead",
+                                    "ObjectDisplayName": "Aged %EXTRA_PRESERVED_DISPLAY_NAME_1, %EXTRA_PRESERVED_DISPLAY_NAME_2 and %EXTRA_PRESERVED_DISPLAY_NAME_3 Honey Mead",
+                                    "PreserveId": "DROP_IN",
+                                    "CopyColor": true,
+                                    "CopyPrice": true,
+                                    "CopyQuality": "{{CopyQualityEnabled}}",
+                                    "PriceModifierMode": "Stack",
+                                    // 2% Chance to Double your Aged Mead
+                                    "StackModifiers": [
+                                        {
+                                            "Id": "RareDouble",
+                                            "Condition": "RANDOM .02",
+                                            "Modification": "Multiply",
+                                            "Amount": 2.0
+                                        }
+                                    ],
+                                    "ModData": {
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.1": "DROP_IN_ID_1",
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.2": "DROP_IN_ID_2",
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.3": "DROP_IN_ID_3",
+                                        "selph.ExtraMachineConfig.ExtraColor.1": "DROP_IN_ID_1",
+                                    },
+                                    "CustomData": {
+                                        "selph.ExtraMachineConfig.RequirementTags.1": "category_fruits",
+                                        "selph.ExtraMachineConfig.RequirementCount.1": "2",
+                                        "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.1": "2.5",
+                                        "selph.ExtraMachineConfig.RequirementNoDuplicate.1": "true",
+                                        "selph.ExtraMachineConfig.RequirementTags.2": "category_fruits",
+                                        "selph.ExtraMachineConfig.RequirementCount.2": "2",
+                                        "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.2": "2",
+                                        "selph.ExtraMachineConfig.RequirementNoDuplicate.2": "true",
+                                        "selph.ExtraMachineConfig.RequirementTags.3": "category_fruits",
+                                        "selph.ExtraMachineConfig.RequirementCount.3": "2",
+                                        "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2",
+                                        "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
+                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                        "selph.ExtraMachineConfig.CopyColor": "true",
+                                    },
+                                    "PriceModifiers": [
+                                        {
+                                            // Adds 1000 to price
+                                            "Modification": "Add",
+                                            "RandomAmount": [
+                                                1000
+                                            ]
+                                        },
+                                        {
+                                            // Adds a 5% increase in price
+                                            "Modification": "Multiply",
+                                            "RandomAmount": [
+                                                1.05,
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
+                                    "ObjectInternalName": "Aged PRESERVE_ID_2 PRESERVE_ID PRESERVE_ID_1 PRESERVE_ID_3 Mead",
+                                    "ObjectDisplayName": "Aged %EXTRA_PRESERVED_DISPLAY_NAME_2, %EXTRA_PRESERVED_DISPLAY_NAME_1 and %EXTRA_PRESERVED_DISPLAY_NAME_3 Honey Mead",
+                                    "PreserveId": "DROP_IN",
+                                    "CopyColor": true,
+                                    "CopyPrice": true,
+                                    "CopyQuality": "{{CopyQualityEnabled}}",
+                                    "PriceModifierMode": "Stack",
+                                    // 2% Chance to Double your Aged Mead
+                                    "StackModifiers": [
+                                        {
+                                            "Id": "RareDouble",
+                                            "Condition": "RANDOM .02",
+                                            "Modification": "Multiply",
+                                            "Amount": 2.0
+                                        }
+                                    ],
+                                    "ModData": {
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.1": "DROP_IN_ID_1",
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.2": "DROP_IN_ID_2",
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.3": "DROP_IN_ID_3",
+                                        "selph.ExtraMachineConfig.ExtraColor.1": "DROP_IN_ID_2",
+                                    },
+                                    "CustomData": {
+                                        "selph.ExtraMachineConfig.RequirementTags.1": "category_fruits",
+                                        "selph.ExtraMachineConfig.RequirementCount.1": "2",
+                                        "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.1": "2",
+                                        "selph.ExtraMachineConfig.RequirementNoDuplicate.1": "true",
+                                        "selph.ExtraMachineConfig.RequirementTags.2": "category_fruits",
+                                        "selph.ExtraMachineConfig.RequirementCount.2": "2",
+                                        "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.2": "2.5",
+                                        "selph.ExtraMachineConfig.RequirementNoDuplicate.2": "true",
+                                        "selph.ExtraMachineConfig.RequirementTags.3": "category_fruits",
+                                        "selph.ExtraMachineConfig.RequirementCount.3": "2",
+                                        "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2",
+                                        "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
+                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                        "selph.ExtraMachineConfig.CopyColor": "true",
+                                    },
+                                    "PriceModifiers": [
+                                        {
+                                            // Adds 1000 to price
+                                            "Modification": "Add",
+                                            "RandomAmount": [
+                                                1000
+                                            ]
+                                        },
+                                        {
+                                            // Adds a 5% increase in price
+                                            "Modification": "Multiply",
+                                            "RandomAmount": [
+                                                1.05,
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
+                                    "ObjectInternalName": "Aged PRESERVE_ID_3 PRESERVE_ID PRESERVE_ID_1 PRESERVE_ID_2 Mead",
+                                    "ObjectDisplayName": "Aged %EXTRA_PRESERVED_DISPLAY_NAME_3, %EXTRA_PRESERVED_DISPLAY_NAME_2 and %EXTRA_PRESERVED_DISPLAY_NAME_1 Honey Mead",
+                                    "PreserveId": "DROP_IN",
+                                    "CopyColor": true,
+                                    "CopyPrice": true,
+                                    "CopyQuality": "{{CopyQualityEnabled}}",
+                                    "PriceModifierMode": "Stack",
+                                    // 2% Chance to Double your Aged Mead
+                                    "StackModifiers": [
+                                        {
+                                            "Id": "RareDouble",
+                                            "Condition": "RANDOM .02",
+                                            "Modification": "Multiply",
+                                            "Amount": 2.0
+                                        }
+                                    ],
+                                    "ModData": {
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.1": "DROP_IN_ID_1",
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.2": "DROP_IN_ID_2",
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.3": "DROP_IN_ID_3",
+                                        "selph.ExtraMachineConfig.ExtraColor.1": "DROP_IN_ID_3",
+                                    },
+                                    "CustomData": {
+                                        "selph.ExtraMachineConfig.RequirementTags.1": "category_fruits",
+                                        "selph.ExtraMachineConfig.RequirementCount.1": "2",
+                                        "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.1": "2",
+                                        "selph.ExtraMachineConfig.RequirementNoDuplicate.1": "true",
+                                        "selph.ExtraMachineConfig.RequirementTags.2": "category_fruits",
+                                        "selph.ExtraMachineConfig.RequirementCount.2": "2",
+                                        "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.2": "2",
+                                        "selph.ExtraMachineConfig.RequirementNoDuplicate.2": "true",
+                                        "selph.ExtraMachineConfig.RequirementTags.3": "category_fruits",
+                                        "selph.ExtraMachineConfig.RequirementCount.3": "2",
+                                        "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2.5",
+                                        "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
+                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                        "selph.ExtraMachineConfig.CopyColor": "true",
+                                    },
+                                    "PriceModifiers": [
+                                        {
+                                            // Adds 1000 to price
+                                            "Modification": "Add",
+                                            "RandomAmount": [
+                                                1000
+                                            ]
+                                        },
+                                        {
+                                            // Adds a 5% increase in price
+                                            "Modification": "Multiply",
+                                            "RandomAmount": [
+                                                1.05,
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "MinutesUntilReady": 960, // 16 Hours
+                            "InvalidCountMessage": "Requires 1 Honey Mead"
+                        }
+                    ]
+                },
+                "(BC)bh.AgingVatPrismatic": {
+                    "HasInput": false,
+                    "HasOutput": false,
+                    "OutputRules": [
+                        {
+                            "Id": "bh.jarmeadrule",
+                            "Triggers": [
+                                {
+                                    "Id": "bh.jarmeadrule_AgedMeadInput",
+                                    "RequiredTags": [
+                                        "bh.stock_mead"
+                                    ],
+                                    "RequiredCount": 1
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
+                                    "ObjectInternalName": "Aged PRESERVE_ID_1 PRESERVE_ID PRESERVE_ID_2 PRESERVE_ID_3 Mead",
+                                    "ObjectDisplayName": "Aged %EXTRA_PRESERVED_DISPLAY_NAME_1, %EXTRA_PRESERVED_DISPLAY_NAME_2 and %EXTRA_PRESERVED_DISPLAY_NAME_3 Honey Mead",
+                                    "PreserveId": "DROP_IN",
+                                    "CopyColor": true,
+                                    "CopyPrice": true,
+                                    "CopyQuality": "{{CopyQualityEnabled}}",
+                                    "PriceModifierMode": "Stack",
+                                    // 2% Chance to Double your Aged Mead
+                                    "StackModifiers": [
+                                        {
+                                            "Id": "RareDouble",
+                                            "Condition": "RANDOM .02",
+                                            "Modification": "Multiply",
+                                            "Amount": 2.0
+                                        }
+                                    ],
+                                    "ModData": {
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.1": "DROP_IN_ID_1",
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.2": "DROP_IN_ID_2",
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.3": "DROP_IN_ID_3",
+                                        "selph.ExtraMachineConfig.ExtraColor.1": "DROP_IN_ID_1",
+                                    },
+                                    "CustomData": {
+                                        "selph.ExtraMachineConfig.RequirementTags.1": "category_fruits",
+                                        "selph.ExtraMachineConfig.RequirementCount.1": "2",
+                                        "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.1": "2.5",
+                                        "selph.ExtraMachineConfig.RequirementNoDuplicate.1": "true",
+                                        "selph.ExtraMachineConfig.RequirementTags.2": "category_fruits",
+                                        "selph.ExtraMachineConfig.RequirementCount.2": "2",
+                                        "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.2": "2",
+                                        "selph.ExtraMachineConfig.RequirementNoDuplicate.2": "true",
+                                        "selph.ExtraMachineConfig.RequirementTags.3": "category_fruits",
+                                        "selph.ExtraMachineConfig.RequirementCount.3": "2",
+                                        "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2",
+                                        "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
+                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                        "selph.ExtraMachineConfig.CopyColor": "true",
+                                    },
+                                    "PriceModifiers": [
+                                        {
+                                            // Adds 1000 to price
+                                            "Modification": "Add",
+                                            "RandomAmount": [
+                                                1000
+                                            ]
+                                        },
+                                        {
+                                            // Adds a 5% increase in price
+                                            "Modification": "Multiply",
+                                            "RandomAmount": [
+                                                1.05,
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
+                                    "ObjectInternalName": "Aged PRESERVE_ID_2 PRESERVE_ID PRESERVE_ID_1 PRESERVE_ID_3 Mead",
+                                    "ObjectDisplayName": "Aged %EXTRA_PRESERVED_DISPLAY_NAME_2, %EXTRA_PRESERVED_DISPLAY_NAME_1 and %EXTRA_PRESERVED_DISPLAY_NAME_3 Honey Mead",
+                                    "PreserveId": "DROP_IN",
+                                    "CopyColor": true,
+                                    "CopyPrice": true,
+                                    "CopyQuality": "{{CopyQualityEnabled}}",
+                                    "PriceModifierMode": "Stack",
+                                    // 2% Chance to Double your Aged Mead
+                                    "StackModifiers": [
+                                        {
+                                            "Id": "RareDouble",
+                                            "Condition": "RANDOM .02",
+                                            "Modification": "Multiply",
+                                            "Amount": 2.0
+                                        }
+                                    ],
+                                    "ModData": {
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.1": "DROP_IN_ID_1",
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.2": "DROP_IN_ID_2",
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.3": "DROP_IN_ID_3",
+                                        "selph.ExtraMachineConfig.ExtraColor.1": "DROP_IN_ID_2",
+                                    },
+                                    "CustomData": {
+                                        "selph.ExtraMachineConfig.RequirementTags.1": "category_fruits",
+                                        "selph.ExtraMachineConfig.RequirementCount.1": "2",
+                                        "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.1": "2",
+                                        "selph.ExtraMachineConfig.RequirementNoDuplicate.1": "true",
+                                        "selph.ExtraMachineConfig.RequirementTags.2": "category_fruits",
+                                        "selph.ExtraMachineConfig.RequirementCount.2": "2",
+                                        "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.2": "2.5",
+                                        "selph.ExtraMachineConfig.RequirementNoDuplicate.2": "true",
+                                        "selph.ExtraMachineConfig.RequirementTags.3": "category_fruits",
+                                        "selph.ExtraMachineConfig.RequirementCount.3": "2",
+                                        "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2",
+                                        "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
+                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                        "selph.ExtraMachineConfig.CopyColor": "true",
+                                    },
+                                    "PriceModifiers": [
+                                        {
+                                            // Adds 1000 to price
+                                            "Modification": "Add",
+                                            "RandomAmount": [
+                                                1000
+                                            ]
+                                        },
+                                        {
+                                            // Adds a 5% increase in price
+                                            "Modification": "Multiply",
+                                            "RandomAmount": [
+                                                1.05,
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
+                                    "ObjectInternalName": "Aged PRESERVE_ID_3 PRESERVE_ID PRESERVE_ID_1 PRESERVE_ID_2 Mead",
+                                    "ObjectDisplayName": "Aged %EXTRA_PRESERVED_DISPLAY_NAME_3, %EXTRA_PRESERVED_DISPLAY_NAME_2 and %EXTRA_PRESERVED_DISPLAY_NAME_1 Honey Mead",
+                                    "PreserveId": "DROP_IN",
+                                    "CopyColor": true,
+                                    "CopyPrice": true,
+                                    "CopyQuality": "{{CopyQualityEnabled}}",
+                                    "PriceModifierMode": "Stack",
+                                    // 2% Chance to Double your Aged Mead
+                                    "StackModifiers": [
+                                        {
+                                            "Id": "RareDouble",
+                                            "Condition": "RANDOM .02",
+                                            "Modification": "Multiply",
+                                            "Amount": 2.0
+                                        }
+                                    ],
+                                    "ModData": {
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.1": "DROP_IN_ID_1",
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.2": "DROP_IN_ID_2",
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.3": "DROP_IN_ID_3",
+                                        "selph.ExtraMachineConfig.ExtraColor.1": "DROP_IN_ID_3",
+                                    },
+                                    "CustomData": {
+                                        "selph.ExtraMachineConfig.RequirementTags.1": "category_fruits",
+                                        "selph.ExtraMachineConfig.RequirementCount.1": "2",
+                                        "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.1": "2",
+                                        "selph.ExtraMachineConfig.RequirementNoDuplicate.1": "true",
+                                        "selph.ExtraMachineConfig.RequirementTags.2": "category_fruits",
+                                        "selph.ExtraMachineConfig.RequirementCount.2": "2",
+                                        "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.2": "2",
+                                        "selph.ExtraMachineConfig.RequirementNoDuplicate.2": "true",
+                                        "selph.ExtraMachineConfig.RequirementTags.3": "category_fruits",
+                                        "selph.ExtraMachineConfig.RequirementCount.3": "2",
+                                        "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2.5",
+                                        "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
+                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                        "selph.ExtraMachineConfig.CopyColor": "true",
+                                    },
+                                    "PriceModifiers": [
+                                        {
+                                            // Adds 1000 to price
+                                            "Modification": "Add",
+                                            "RandomAmount": [
+                                                1000
+                                            ]
+                                        },
+                                        {
+                                            // Adds a 5% increase in price
+                                            "Modification": "Multiply",
+                                            "RandomAmount": [
+                                                1.05,
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ],
+                            "MinutesUntilReady": 720, // 12 Hours
+                            "InvalidCountMessage": "Requires 1 Honey Mead"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            // Bear Honey Mead +  2 of any 4 Fruit -> Aging Vat -> Flavored Bear Honey Mead
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)bh.AgingVat",
+                "OutputRules"
+            ],
+            "Entries": {
+                "bh.jarmeadrule_1": {
+                    "Id": "bh.jarmeadrule",
+                    "Triggers": [
+                        {
+                            "Id": "bh.jarmeadrule_AgedMeadInput",
+                            "RequiredTags": [
+                                "bh.stock_mead"
+                            ],
+                            "RequiredCount": 1
+                        }
+                    ],
+                    "UseFirstValidOutput": false,
+                    "OutputItem": [
+                        {
+                            "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
+                            "ObjectInternalName": "Aged PRESERVE_ID_1 PRESERVE_ID PRESERVE_ID_2 PRESERVE_ID_3 Mead",
+                            "ObjectDisplayName": "Aged %EXTRA_PRESERVED_DISPLAY_NAME_1, %EXTRA_PRESERVED_DISPLAY_NAME_2 and %EXTRA_PRESERVED_DISPLAY_NAME_3 Honey Mead",
+                            "PreserveId": "DROP_IN",
+                            "CopyColor": true,
+                            "CopyPrice": true,
+                            "CopyQuality": "{{CopyQualityEnabled}}",
+                            "PriceModifierMode": "Stack",
+                            // 2% Chance to Double your Aged Mead
+                            "StackModifiers": [
+                                {
+                                    "Id": "RareDouble",
+                                    "Condition": "RANDOM .02",
+                                    "Modification": "Multiply",
+                                    "Amount": 2.0
+                                }
+                            ],
+                            "ModData": {
+                                "selph.ExtraMachineConfig.ExtraPreserveId.1": "DROP_IN_ID_1",
+                                "selph.ExtraMachineConfig.ExtraPreserveId.2": "DROP_IN_ID_2",
+                                "selph.ExtraMachineConfig.ExtraPreserveId.3": "DROP_IN_ID_3",
+                                "selph.ExtraMachineConfig.ExtraColor.1": "DROP_IN_ID_1"
+                            },
+                            "CustomData": {
+                                "selph.ExtraMachineConfig.RequirementTags.1": "category_fruits",
+                                "selph.ExtraMachineConfig.RequirementCount.1": "2",
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.1": "2.5",
+                                "selph.ExtraMachineConfig.RequirementNoDuplicate.1": "true",
+                                "selph.ExtraMachineConfig.RequirementTags.2": "category_fruits",
+                                "selph.ExtraMachineConfig.RequirementCount.2": "2",
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.2": "2",
+                                "selph.ExtraMachineConfig.RequirementNoDuplicate.2": "true",
+                                "selph.ExtraMachineConfig.RequirementTags.3": "category_fruits",
+                                "selph.ExtraMachineConfig.RequirementCount.3": "2",
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2",
+                                "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
+                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                "selph.ExtraMachineConfig.CopyColor": "true"
+                            },
+                            "PriceModifiers": [
+                                {
+                                    // Adds 1000 to price
+                                    "Modification": "Add",
+                                    "RandomAmount": [
+                                        1000
+                                    ]
+                                },
+                                {
+                                    // Adds a 5% increase in price
+                                    "Modification": "Multiply",
+                                    "RandomAmount": [
+                                        1.05
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
+                            "ObjectInternalName": "Aged PRESERVE_ID_2 PRESERVE_ID PRESERVE_ID_1 PRESERVE_ID_3 Mead",
+                            "ObjectDisplayName": "Aged %EXTRA_PRESERVED_DISPLAY_NAME_2, %EXTRA_PRESERVED_DISPLAY_NAME_1 and %EXTRA_PRESERVED_DISPLAY_NAME_3 Honey Mead",
+                            "PreserveId": "DROP_IN",
+                            "CopyColor": true,
+                            "CopyPrice": true,
+                            "CopyQuality": "{{CopyQualityEnabled}}",
+                            "PriceModifierMode": "Stack",
+                            // 2% Chance to Double your Aged Mead
+                            "StackModifiers": [
+                                {
+                                    "Id": "RareDouble",
+                                    "Condition": "RANDOM .02",
+                                    "Modification": "Multiply",
+                                    "Amount": 2.0
+                                }
+                            ],
+                            "ModData": {
+                                "selph.ExtraMachineConfig.ExtraPreserveId.1": "DROP_IN_ID_1",
+                                "selph.ExtraMachineConfig.ExtraPreserveId.2": "DROP_IN_ID_2",
+                                "selph.ExtraMachineConfig.ExtraPreserveId.3": "DROP_IN_ID_3",
+                                "selph.ExtraMachineConfig.ExtraColor.1": "DROP_IN_ID_2"
+                            },
+                            "CustomData": {
+                                "selph.ExtraMachineConfig.RequirementTags.1": "category_fruits",
+                                "selph.ExtraMachineConfig.RequirementCount.1": "2",
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.1": "2",
+                                "selph.ExtraMachineConfig.RequirementNoDuplicate.1": "true",
+                                "selph.ExtraMachineConfig.RequirementTags.2": "category_fruits",
+                                "selph.ExtraMachineConfig.RequirementCount.2": "2",
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.2": "2.5",
+                                "selph.ExtraMachineConfig.RequirementNoDuplicate.2": "true",
+                                "selph.ExtraMachineConfig.RequirementTags.3": "category_fruits",
+                                "selph.ExtraMachineConfig.RequirementCount.3": "2",
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2",
+                                "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
+                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                "selph.ExtraMachineConfig.CopyColor": "true"
+                            },
+                            "PriceModifiers": [
+                                {
+                                    // Adds 1000 to price
+                                    "Modification": "Add",
+                                    "RandomAmount": [
+                                        1000
+                                    ]
+                                },
+                                {
+                                    // Adds a 5% increase in price
+                                    "Modification": "Multiply",
+                                    "RandomAmount": [
+                                        1.05
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
+                            "ObjectInternalName": "Aged PRESERVE_ID_3 PRESERVE_ID PRESERVE_ID_1 PRESERVE_ID_2 Mead",
+                            "ObjectDisplayName": "Aged %EXTRA_PRESERVED_DISPLAY_NAME_3, %EXTRA_PRESERVED_DISPLAY_NAME_2 and %EXTRA_PRESERVED_DISPLAY_NAME_1 Honey Mead",
+                            "PreserveId": "DROP_IN",
+                            "CopyColor": true,
+                            "CopyPrice": true,
+                            "CopyQuality": "{{CopyQualityEnabled}}",
+                            "PriceModifierMode": "Stack",
+                            // 2% Chance to Double your Aged Mead
+                            "StackModifiers": [
+                                {
+                                    "Id": "RareDouble",
+                                    "Condition": "RANDOM .02",
+                                    "Modification": "Multiply",
+                                    "Amount": 2.0
+                                }
+                            ],
+                            "ModData": {
+                                "selph.ExtraMachineConfig.ExtraPreserveId.1": "DROP_IN_ID_1",
+                                "selph.ExtraMachineConfig.ExtraPreserveId.2": "DROP_IN_ID_2",
+                                "selph.ExtraMachineConfig.ExtraPreserveId.3": "DROP_IN_ID_3",
+                                "selph.ExtraMachineConfig.ExtraColor.1": "DROP_IN_ID_3",
+                            },
+                            "CustomData": {
+                                "selph.ExtraMachineConfig.RequirementTags.1": "category_fruits",
+                                "selph.ExtraMachineConfig.RequirementCount.1": "2",
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.1": "2",
+                                "selph.ExtraMachineConfig.RequirementNoDuplicate.1": "true",
+                                "selph.ExtraMachineConfig.RequirementTags.2": "category_fruits",
+                                "selph.ExtraMachineConfig.RequirementCount.2": "2",
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.2": "2",
+                                "selph.ExtraMachineConfig.RequirementNoDuplicate.2": "true",
+                                "selph.ExtraMachineConfig.RequirementTags.3": "category_fruits",
+                                "selph.ExtraMachineConfig.RequirementCount.3": "2",
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2.5",
+                                "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
+                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                "selph.ExtraMachineConfig.CopyColor": "true",
+                            },
+                            "PriceModifiers": [
+                                {
+                                    // Adds 1000 to price
+                                    "Modification": "Add",
+                                    "RandomAmount": [
+                                        1000
+                                    ]
+                                },
+                                {
+                                    // Adds a 5% increase in price
+                                    "Modification": "Multiply",
+                                    "RandomAmount": [
+                                        1.05,
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "MinutesUntilReady": 3000 // 50 Hours - 2.083 Days
+                },
+            },
+            "MoveEntries": [
+                {
+                    "ID": "bh.jarmeadrule",
+                    "ToPosition": "Top"
+                }
+            ]
+        },
+        {
+            "When": {
+                "HasMod": "nachonline.mps",
+            },
+            // Bear Honey Mead +  2 of any 4 Fruit -> Aging Vat -> Flavored Bear Honey Mead
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)bh.AgingVatGold",
+                "OutputRules"
+            ],
+            "Entries": {
+                "bh.jarmeadrule_1": {
+                    "Id": "bh.jarmeadrule",
+                    "Triggers": [
+                        {
+                            "Id": "bh.jarmeadrule_AgedMeadInput",
+                            "RequiredTags": [
+                                "bh.stock_mead"
+                            ],
+                            "RequiredCount": 1
+                        }
+                    ],
+                    "UseFirstValidOutput": false,
+                    "OutputItem": [
+                        {
+                            "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
+                            "ObjectInternalName": "Aged PRESERVE_ID_1 PRESERVE_ID PRESERVE_ID_2 PRESERVE_ID_3 Mead",
+                            "ObjectDisplayName": "Aged %EXTRA_PRESERVED_DISPLAY_NAME_1, %EXTRA_PRESERVED_DISPLAY_NAME_2 and %EXTRA_PRESERVED_DISPLAY_NAME_3 Honey Mead",
+                            "PreserveId": "DROP_IN",
+                            "CopyColor": true,
+                            "CopyPrice": true,
+                            "CopyQuality": "{{CopyQualityEnabled}}",
+                            "PriceModifierMode": "Stack",
+                            // 2% Chance to Double your Aged Mead
+                            "StackModifiers": [
+                                {
+                                    "Id": "RareDouble",
+                                    "Condition": "RANDOM .02",
+                                    "Modification": "Multiply",
+                                    "Amount": 2.0
+                                }
+                            ],
+                            "ModData": {
+                                "selph.ExtraMachineConfig.ExtraPreserveId.1": "DROP_IN_ID_1",
+                                "selph.ExtraMachineConfig.ExtraPreserveId.2": "DROP_IN_ID_2",
+                                "selph.ExtraMachineConfig.ExtraPreserveId.3": "DROP_IN_ID_3",
+                                "selph.ExtraMachineConfig.ExtraColor.1": "DROP_IN_ID_1",
+                            },
+                            "CustomData": {
+                                "selph.ExtraMachineConfig.RequirementTags.1": "category_fruits",
+                                "selph.ExtraMachineConfig.RequirementCount.1": "2",
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.1": "2.5",
+                                "selph.ExtraMachineConfig.RequirementNoDuplicate.1": "true",
+                                "selph.ExtraMachineConfig.RequirementTags.2": "category_fruits",
+                                "selph.ExtraMachineConfig.RequirementCount.2": "2",
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.2": "2",
+                                "selph.ExtraMachineConfig.RequirementNoDuplicate.2": "true",
+                                "selph.ExtraMachineConfig.RequirementTags.3": "category_fruits",
+                                "selph.ExtraMachineConfig.RequirementCount.3": "2",
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2",
+                                "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
+                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                "selph.ExtraMachineConfig.CopyColor": "true",
+                            },
+                            "PriceModifiers": [
+                                {
+                                    // Adds 1000 to price
+                                    "Modification": "Add",
+                                    "RandomAmount": [
+                                        1000
+                                    ]
+                                },
+                                {
+                                    // Adds a 5% increase in price
+                                    "Modification": "Multiply",
+                                    "RandomAmount": [
+                                        1.05,
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
+                            "ObjectInternalName": "Aged PRESERVE_ID_2 PRESERVE_ID PRESERVE_ID_1 PRESERVE_ID_3 Mead",
+                            "ObjectDisplayName": "Aged %EXTRA_PRESERVED_DISPLAY_NAME_2, %EXTRA_PRESERVED_DISPLAY_NAME_1 and %EXTRA_PRESERVED_DISPLAY_NAME_3 Honey Mead",
+                            "PreserveId": "DROP_IN",
+                            "CopyColor": true,
+                            "CopyPrice": true,
+                            "CopyQuality": "{{CopyQualityEnabled}}",
+                            "PriceModifierMode": "Stack",
+                            // 2% Chance to Double your Aged Mead
+                            "StackModifiers": [
+                                {
+                                    "Id": "RareDouble",
+                                    "Condition": "RANDOM .02",
+                                    "Modification": "Multiply",
+                                    "Amount": 2.0
+                                }
+                            ],
+                            "ModData": {
+                                "selph.ExtraMachineConfig.ExtraPreserveId.1": "DROP_IN_ID_1",
+                                "selph.ExtraMachineConfig.ExtraPreserveId.2": "DROP_IN_ID_2",
+                                "selph.ExtraMachineConfig.ExtraPreserveId.3": "DROP_IN_ID_3",
+                                "selph.ExtraMachineConfig.ExtraColor.1": "DROP_IN_ID_2",
+                            },
+                            "CustomData": {
+                                "selph.ExtraMachineConfig.RequirementTags.1": "category_fruits",
+                                "selph.ExtraMachineConfig.RequirementCount.1": "2",
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.1": "2",
+                                "selph.ExtraMachineConfig.RequirementNoDuplicate.1": "true",
+                                "selph.ExtraMachineConfig.RequirementTags.2": "category_fruits",
+                                "selph.ExtraMachineConfig.RequirementCount.2": "2",
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.2": "2.5",
+                                "selph.ExtraMachineConfig.RequirementNoDuplicate.2": "true",
+                                "selph.ExtraMachineConfig.RequirementTags.3": "category_fruits",
+                                "selph.ExtraMachineConfig.RequirementCount.3": "2",
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2",
+                                "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
+                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                "selph.ExtraMachineConfig.CopyColor": "true",
+                            },
+                            "PriceModifiers": [
+                                {
+                                    // Adds 1000 to price
+                                    "Modification": "Add",
+                                    "RandomAmount": [
+                                        1000
+                                    ]
+                                },
+                                {
+                                    // Adds a 5% increase in price
+                                    "Modification": "Multiply",
+                                    "RandomAmount": [
+                                        1.05,
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
+                            "ObjectInternalName": "Aged PRESERVE_ID_3 PRESERVE_ID PRESERVE_ID_1 PRESERVE_ID_2 Mead",
+                            "ObjectDisplayName": "Aged %EXTRA_PRESERVED_DISPLAY_NAME_3, %EXTRA_PRESERVED_DISPLAY_NAME_2 and %EXTRA_PRESERVED_DISPLAY_NAME_1 Honey Mead",
+                            "PreserveId": "DROP_IN",
+                            "CopyColor": true,
+                            "CopyPrice": true,
+                            "CopyQuality": "{{CopyQualityEnabled}}",
+                            "PriceModifierMode": "Stack",
+                            // 2% Chance to Double your Aged Mead
+                            "StackModifiers": [
+                                {
+                                    "Id": "RareDouble",
+                                    "Condition": "RANDOM .02",
+                                    "Modification": "Multiply",
+                                    "Amount": 2.0
+                                }
+                            ],
+                            "ModData": {
+                                "selph.ExtraMachineConfig.ExtraPreserveId.1": "DROP_IN_ID_1",
+                                "selph.ExtraMachineConfig.ExtraPreserveId.2": "DROP_IN_ID_2",
+                                "selph.ExtraMachineConfig.ExtraPreserveId.3": "DROP_IN_ID_3",
+                                "selph.ExtraMachineConfig.ExtraColor.1": "DROP_IN_ID_3",
+                            },
+                            "CustomData": {
+                                "selph.ExtraMachineConfig.RequirementTags.1": "category_fruits",
+                                "selph.ExtraMachineConfig.RequirementCount.1": "2",
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.1": "2",
+                                "selph.ExtraMachineConfig.RequirementNoDuplicate.1": "true",
+                                "selph.ExtraMachineConfig.RequirementTags.2": "category_fruits",
+                                "selph.ExtraMachineConfig.RequirementCount.2": "2",
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.2": "2",
+                                "selph.ExtraMachineConfig.RequirementNoDuplicate.2": "true",
+                                "selph.ExtraMachineConfig.RequirementTags.3": "category_fruits",
+                                "selph.ExtraMachineConfig.RequirementCount.3": "2",
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2.5",
+                                "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
+                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                "selph.ExtraMachineConfig.CopyColor": "true",
+                            },
+                            "PriceModifiers": [
+                                {
+                                    // Adds 1000 to price
+                                    "Modification": "Add",
+                                    "RandomAmount": [
+                                        1000
+                                    ]
+                                },
+                                {
+                                    // Adds a 5% increase in price
+                                    "Modification": "Multiply",
+                                    "RandomAmount": [
+                                        1.05,
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "MinutesUntilReady": 1980 // 33 Hours
+                },
+            },
+            "MoveEntries": [
+                {
+                    "ID": "bh.jarmeadrule",
+                    "ToPosition": "Top"
+                }
+            ]
+        },
+        {
+            "When": {
+                "HasMod": "nachonline.mps",
+            },
+            // Bear Honey Mead +  2 of any 4 Fruit -> Aging Vat -> Flavored Bear Honey Mead
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)bh.AgingVatDiamond",
+                "OutputRules"
+            ],
+            "Entries": {
+                "bh.jarmeadrule_1": {
+                    "Id": "bh.jarmeadrule",
+                    "Triggers": [
+                        {
+                            "Id": "bh.jarmeadrule_AgedMeadInput",
+                            "RequiredTags": [
+                                "bh.stock_mead"
+                            ],
+                            "RequiredCount": 1
+                        }
+                    ],
+                    "UseFirstValidOutput": false,
+                    "OutputItem": [
+                        {
+                            "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
+                            "ObjectInternalName": "Aged PRESERVE_ID_1 PRESERVE_ID PRESERVE_ID_2 PRESERVE_ID_3 Mead",
+                            "ObjectDisplayName": "Aged %EXTRA_PRESERVED_DISPLAY_NAME_1, %EXTRA_PRESERVED_DISPLAY_NAME_2 and %EXTRA_PRESERVED_DISPLAY_NAME_3 Honey Mead",
+                            "PreserveId": "DROP_IN",
+                            "CopyColor": true,
+                            "CopyPrice": true,
+                            "CopyQuality": "{{CopyQualityEnabled}}",
+                            "PriceModifierMode": "Stack",
+                            // 2% Chance to Double your Aged Mead
+                            "StackModifiers": [
+                                {
+                                    "Id": "RareDouble",
+                                    "Condition": "RANDOM .02",
+                                    "Modification": "Multiply",
+                                    "Amount": 2.0
+                                }
+                            ],
+                            "ModData": {
+                                "selph.ExtraMachineConfig.ExtraPreserveId.1": "DROP_IN_ID_1",
+                                "selph.ExtraMachineConfig.ExtraPreserveId.2": "DROP_IN_ID_2",
+                                "selph.ExtraMachineConfig.ExtraPreserveId.3": "DROP_IN_ID_3",
+                                "selph.ExtraMachineConfig.ExtraColor.1": "DROP_IN_ID_1",
+                            },
+                            "CustomData": {
+                                "selph.ExtraMachineConfig.RequirementTags.1": "category_fruits",
+                                "selph.ExtraMachineConfig.RequirementCount.1": "2",
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.1": "2.5",
+                                "selph.ExtraMachineConfig.RequirementNoDuplicate.1": "true",
+                                "selph.ExtraMachineConfig.RequirementTags.2": "category_fruits",
+                                "selph.ExtraMachineConfig.RequirementCount.2": "2",
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.2": "2",
+                                "selph.ExtraMachineConfig.RequirementNoDuplicate.2": "true",
+                                "selph.ExtraMachineConfig.RequirementTags.3": "category_fruits",
+                                "selph.ExtraMachineConfig.RequirementCount.3": "2",
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2",
+                                "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
+                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                "selph.ExtraMachineConfig.CopyColor": "true",
+                            },
+                            "PriceModifiers": [
+                                {
+                                    // Adds 1000 to price
+                                    "Modification": "Add",
+                                    "RandomAmount": [
+                                        1000
+                                    ]
+                                },
+                                {
+                                    // Adds a 5% increase in price
+                                    "Modification": "Multiply",
+                                    "RandomAmount": [
+                                        1.05,
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
+                            "ObjectInternalName": "Aged PRESERVE_ID_2 PRESERVE_ID PRESERVE_ID_1 PRESERVE_ID_3 Mead",
+                            "ObjectDisplayName": "Aged %EXTRA_PRESERVED_DISPLAY_NAME_2, %EXTRA_PRESERVED_DISPLAY_NAME_1 and %EXTRA_PRESERVED_DISPLAY_NAME_3 Honey Mead",
+                            "PreserveId": "DROP_IN",
+                            "CopyColor": true,
+                            "CopyPrice": true,
+                            "CopyQuality": "{{CopyQualityEnabled}}",
+                            "PriceModifierMode": "Stack",
+                            // 2% Chance to Double your Aged Mead
+                            "StackModifiers": [
+                                {
+                                    "Id": "RareDouble",
+                                    "Condition": "RANDOM .02",
+                                    "Modification": "Multiply",
+                                    "Amount": 2.0
+                                }
+                            ],
+                            "ModData": {
+                                "selph.ExtraMachineConfig.ExtraPreserveId.1": "DROP_IN_ID_1",
+                                "selph.ExtraMachineConfig.ExtraPreserveId.2": "DROP_IN_ID_2",
+                                "selph.ExtraMachineConfig.ExtraPreserveId.3": "DROP_IN_ID_3",
+                                "selph.ExtraMachineConfig.ExtraColor.1": "DROP_IN_ID_2",
+                            },
+                            "CustomData": {
+                                "selph.ExtraMachineConfig.RequirementTags.1": "category_fruits",
+                                "selph.ExtraMachineConfig.RequirementCount.1": "2",
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.1": "2",
+                                "selph.ExtraMachineConfig.RequirementNoDuplicate.1": "true",
+                                "selph.ExtraMachineConfig.RequirementTags.2": "category_fruits",
+                                "selph.ExtraMachineConfig.RequirementCount.2": "2",
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.2": "2.5",
+                                "selph.ExtraMachineConfig.RequirementNoDuplicate.2": "true",
+                                "selph.ExtraMachineConfig.RequirementTags.3": "category_fruits",
+                                "selph.ExtraMachineConfig.RequirementCount.3": "2",
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2",
+                                "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
+                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                "selph.ExtraMachineConfig.CopyColor": "true",
+                            },
+                            "PriceModifiers": [
+                                {
+                                    // Adds 1000 to price
+                                    "Modification": "Add",
+                                    "RandomAmount": [
+                                        1000
+                                    ]
+                                },
+                                {
+                                    // Adds a 5% increase in price
+                                    "Modification": "Multiply",
+                                    "RandomAmount": [
+                                        1.05,
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
+                            "ObjectInternalName": "Aged PRESERVE_ID_3 PRESERVE_ID PRESERVE_ID_1 PRESERVE_ID_2 Mead",
+                            "ObjectDisplayName": "Aged %EXTRA_PRESERVED_DISPLAY_NAME_3, %EXTRA_PRESERVED_DISPLAY_NAME_2 and %EXTRA_PRESERVED_DISPLAY_NAME_1 Honey Mead",
+                            "PreserveId": "DROP_IN",
+                            "CopyColor": true,
+                            "CopyPrice": true,
+                            "CopyQuality": "{{CopyQualityEnabled}}",
+                            "PriceModifierMode": "Stack",
+                            // 2% Chance to Double your Aged Mead
+                            "StackModifiers": [
+                                {
+                                    "Id": "RareDouble",
+                                    "Condition": "RANDOM .02",
+                                    "Modification": "Multiply",
+                                    "Amount": 2.0
+                                }
+                            ],
+                            "ModData": {
+                                "selph.ExtraMachineConfig.ExtraPreserveId.1": "DROP_IN_ID_1",
+                                "selph.ExtraMachineConfig.ExtraPreserveId.2": "DROP_IN_ID_2",
+                                "selph.ExtraMachineConfig.ExtraPreserveId.3": "DROP_IN_ID_3",
+                                "selph.ExtraMachineConfig.ExtraColor.1": "DROP_IN_ID_3",
+                            },
+                            "CustomData": {
+                                "selph.ExtraMachineConfig.RequirementTags.1": "category_fruits",
+                                "selph.ExtraMachineConfig.RequirementCount.1": "2",
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.1": "2",
+                                "selph.ExtraMachineConfig.RequirementNoDuplicate.1": "true",
+                                "selph.ExtraMachineConfig.RequirementTags.2": "category_fruits",
+                                "selph.ExtraMachineConfig.RequirementCount.2": "2",
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.2": "2",
+                                "selph.ExtraMachineConfig.RequirementNoDuplicate.2": "true",
+                                "selph.ExtraMachineConfig.RequirementTags.3": "category_fruits",
+                                "selph.ExtraMachineConfig.RequirementCount.3": "2",
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2.5",
+                                "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
+                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                "selph.ExtraMachineConfig.CopyColor": "true",
+                            },
+                            "PriceModifiers": [
+                                {
+                                    // Adds 1000 to price
+                                    "Modification": "Add",
+                                    "RandomAmount": [
+                                        1000
+                                    ]
+                                },
+                                {
+                                    // Adds a 5% increase in price
+                                    "Modification": "Multiply",
+                                    "RandomAmount": [
+                                        1.05,
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "MinutesUntilReady": 1500 // 25 Hours
+                },
+            },
+            "MoveEntries": [
+                {
+                    "ID": "bh.jarmeadrule",
+                    "ToPosition": "Top"
+                }
+            ]
+        },
+        {
+            "When": {
+                "HasMod": "nachonline.mps",
+            },
+            // Bear Honey Mead +  2 of any 4 Fruit -> Aging Vat -> Flavored Bear Honey Mead
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)bh.AgingVatIridium",
+                "OutputRules"
+            ],
+            "Entries": {
+                "bh.jarmeadrule_1": {
+                    "Id": "bh.jarmeadrule",
+                    "Triggers": [
+                        {
+                            "Id": "bh.jarmeadrule_AgedMeadInput",
+                            "RequiredTags": [
+                                "bh.stock_mead"
+                            ],
+                            "RequiredCount": 1
+                        }
+                    ],
+                    "UseFirstValidOutput": false,
+                    "OutputItem": [
+                        {
+                            "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
+                            "ObjectInternalName": "Aged PRESERVE_ID_1 PRESERVE_ID PRESERVE_ID_2 PRESERVE_ID_3 Mead",
+                            "ObjectDisplayName": "Aged %EXTRA_PRESERVED_DISPLAY_NAME_1, %EXTRA_PRESERVED_DISPLAY_NAME_2 and %EXTRA_PRESERVED_DISPLAY_NAME_3 Honey Mead",
+                            "PreserveId": "DROP_IN",
+                            "CopyColor": true,
+                            "CopyPrice": true,
+                            "CopyQuality": "{{CopyQualityEnabled}}",
+                            "PriceModifierMode": "Stack",
+                            // 2% Chance to Double your Aged Mead
+                            "StackModifiers": [
+                                {
+                                    "Id": "RareDouble",
+                                    "Condition": "RANDOM .02",
+                                    "Modification": "Multiply",
+                                    "Amount": 2.0
+                                }
+                            ],
+                            "ModData": {
+                                "selph.ExtraMachineConfig.ExtraPreserveId.1": "DROP_IN_ID_1",
+                                "selph.ExtraMachineConfig.ExtraPreserveId.2": "DROP_IN_ID_2",
+                                "selph.ExtraMachineConfig.ExtraPreserveId.3": "DROP_IN_ID_3",
+                                "selph.ExtraMachineConfig.ExtraColor.1": "DROP_IN_ID_1",
+                            },
+                            "CustomData": {
+                                "selph.ExtraMachineConfig.RequirementTags.1": "category_fruits",
+                                "selph.ExtraMachineConfig.RequirementCount.1": "2",
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.1": "2.5",
+                                "selph.ExtraMachineConfig.RequirementNoDuplicate.1": "true",
+                                "selph.ExtraMachineConfig.RequirementTags.2": "category_fruits",
+                                "selph.ExtraMachineConfig.RequirementCount.2": "2",
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.2": "2",
+                                "selph.ExtraMachineConfig.RequirementNoDuplicate.2": "true",
+                                "selph.ExtraMachineConfig.RequirementTags.3": "category_fruits",
+                                "selph.ExtraMachineConfig.RequirementCount.3": "2",
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2",
+                                "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
+                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                "selph.ExtraMachineConfig.CopyColor": "true",
+                            },
+                            "PriceModifiers": [
+                                {
+                                    // Adds 1000 to price
+                                    "Modification": "Add",
+                                    "RandomAmount": [
+                                        1000
+                                    ]
+                                },
+                                {
+                                    // Adds a 5% increase in price
+                                    "Modification": "Multiply",
+                                    "RandomAmount": [
+                                        1.05,
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
+                            "ObjectInternalName": "Aged PRESERVE_ID_2 PRESERVE_ID PRESERVE_ID_1 PRESERVE_ID_3 Mead",
+                            "ObjectDisplayName": "Aged %EXTRA_PRESERVED_DISPLAY_NAME_2, %EXTRA_PRESERVED_DISPLAY_NAME_1 and %EXTRA_PRESERVED_DISPLAY_NAME_3 Honey Mead",
+                            "PreserveId": "DROP_IN",
+                            "CopyColor": true,
+                            "CopyPrice": true,
+                            "CopyQuality": "{{CopyQualityEnabled}}",
+                            "PriceModifierMode": "Stack",
+                            // 2% Chance to Double your Aged Mead
+                            "StackModifiers": [
+                                {
+                                    "Id": "RareDouble",
+                                    "Condition": "RANDOM .02",
+                                    "Modification": "Multiply",
+                                    "Amount": 2.0
+                                }
+                            ],
+                            "ModData": {
+                                "selph.ExtraMachineConfig.ExtraPreserveId.1": "DROP_IN_ID_1",
+                                "selph.ExtraMachineConfig.ExtraPreserveId.2": "DROP_IN_ID_2",
+                                "selph.ExtraMachineConfig.ExtraPreserveId.3": "DROP_IN_ID_3",
+                                "selph.ExtraMachineConfig.ExtraColor.1": "DROP_IN_ID_2",
+                            },
+                            "CustomData": {
+                                "selph.ExtraMachineConfig.RequirementTags.1": "category_fruits",
+                                "selph.ExtraMachineConfig.RequirementCount.1": "2",
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.1": "2",
+                                "selph.ExtraMachineConfig.RequirementNoDuplicate.1": "true",
+                                "selph.ExtraMachineConfig.RequirementTags.2": "category_fruits",
+                                "selph.ExtraMachineConfig.RequirementCount.2": "2",
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.2": "2.5",
+                                "selph.ExtraMachineConfig.RequirementNoDuplicate.2": "true",
+                                "selph.ExtraMachineConfig.RequirementTags.3": "category_fruits",
+                                "selph.ExtraMachineConfig.RequirementCount.3": "2",
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2",
+                                "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
+                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                "selph.ExtraMachineConfig.CopyColor": "true",
+                            },
+                            "PriceModifiers": [
+                                {
+                                    // Adds 1000 to price
+                                    "Modification": "Add",
+                                    "RandomAmount": [
+                                        1000
+                                    ]
+                                },
+                                {
+                                    // Adds a 5% increase in price
+                                    "Modification": "Multiply",
+                                    "RandomAmount": [
+                                        1.05,
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
+                            "ObjectInternalName": "Aged PRESERVE_ID_3 PRESERVE_ID PRESERVE_ID_1 PRESERVE_ID_2 Mead",
+                            "ObjectDisplayName": "Aged %EXTRA_PRESERVED_DISPLAY_NAME_3, %EXTRA_PRESERVED_DISPLAY_NAME_2 and %EXTRA_PRESERVED_DISPLAY_NAME_1 Honey Mead",
+                            "PreserveId": "DROP_IN",
+                            "CopyColor": true,
+                            "CopyPrice": true,
+                            "CopyQuality": "{{CopyQualityEnabled}}",
+                            "PriceModifierMode": "Stack",
+                            // 2% Chance to Double your Aged Mead
+                            "StackModifiers": [
+                                {
+                                    "Id": "RareDouble",
+                                    "Condition": "RANDOM .02",
+                                    "Modification": "Multiply",
+                                    "Amount": 2.0
+                                }
+                            ],
+                            "ModData": {
+                                "selph.ExtraMachineConfig.ExtraPreserveId.1": "DROP_IN_ID_1",
+                                "selph.ExtraMachineConfig.ExtraPreserveId.2": "DROP_IN_ID_2",
+                                "selph.ExtraMachineConfig.ExtraPreserveId.3": "DROP_IN_ID_3",
+                                "selph.ExtraMachineConfig.ExtraColor.1": "DROP_IN_ID_3",
+                            },
+                            "CustomData": {
+                                "selph.ExtraMachineConfig.RequirementTags.1": "category_fruits",
+                                "selph.ExtraMachineConfig.RequirementCount.1": "2",
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.1": "2",
+                                "selph.ExtraMachineConfig.RequirementNoDuplicate.1": "true",
+                                "selph.ExtraMachineConfig.RequirementTags.2": "category_fruits",
+                                "selph.ExtraMachineConfig.RequirementCount.2": "2",
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.2": "2",
+                                "selph.ExtraMachineConfig.RequirementNoDuplicate.2": "true",
+                                "selph.ExtraMachineConfig.RequirementTags.3": "category_fruits",
+                                "selph.ExtraMachineConfig.RequirementCount.3": "2",
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2.5",
+                                "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
+                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                "selph.ExtraMachineConfig.CopyColor": "true",
+                            },
+                            "PriceModifiers": [
+                                {
+                                    // Adds 1000 to price
+                                    "Modification": "Add",
+                                    "RandomAmount": [
+                                        1000
+                                    ]
+                                },
+                                {
+                                    // Adds a 5% increase in price
+                                    "Modification": "Multiply",
+                                    "RandomAmount": [
+                                        1.05,
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "MinutesUntilReady": 960 // 16 Hours
+                },
+            },
+            "MoveEntries": [
+                {
+                    "ID": "bh.jarmeadrule",
+                    "ToPosition": "Top"
+                }
+            ]
+        },
+        {
+            "When": {
+                "HasMod": "nachonline.mps",
+            },
+            // Bear Honey Mead +  2 of any 4 Fruit -> Aging Vat -> Flavored Bear Honey Mead
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)bh.AgingVatRadioactive",
+                "OutputRules"
+            ],
+            "Entries": {
+                "bh.jarmeadrule_1": {
+                    "Id": "bh.jarmeadrule",
+                    "Triggers": [
+                        {
+                            "Id": "bh.jarmeadrule_AgedMeadInput",
+                            "RequiredTags": [
+                                "bh.stock_mead"
+                            ],
+                            "RequiredCount": 1
+                        }
+                    ],
+                    "UseFirstValidOutput": false,
+                    "OutputItem": [
+                        {
+                            "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
+                            "ObjectInternalName": "Aged PRESERVE_ID_1 PRESERVE_ID PRESERVE_ID_2 PRESERVE_ID_3 Mead",
+                            "ObjectDisplayName": "Aged %EXTRA_PRESERVED_DISPLAY_NAME_1, %EXTRA_PRESERVED_DISPLAY_NAME_2 and %EXTRA_PRESERVED_DISPLAY_NAME_3 Honey Mead",
+                            "PreserveId": "DROP_IN",
+                            "CopyColor": true,
+                            "CopyPrice": true,
+                            "CopyQuality": "{{CopyQualityEnabled}}",
+                            "PriceModifierMode": "Stack",
+                            // 2% Chance to Double your Aged Mead
+                            "StackModifiers": [
+                                {
+                                    "Id": "RareDouble",
+                                    "Condition": "RANDOM .02",
+                                    "Modification": "Multiply",
+                                    "Amount": 2.0
+                                }
+                            ],
+                            "ModData": {
+                                "selph.ExtraMachineConfig.ExtraPreserveId.1": "DROP_IN_ID_1",
+                                "selph.ExtraMachineConfig.ExtraPreserveId.2": "DROP_IN_ID_2",
+                                "selph.ExtraMachineConfig.ExtraPreserveId.3": "DROP_IN_ID_3",
+                                "selph.ExtraMachineConfig.ExtraColor.1": "DROP_IN_ID_1",
+                            },
+                            "CustomData": {
+                                "selph.ExtraMachineConfig.RequirementTags.1": "category_fruits",
+                                "selph.ExtraMachineConfig.RequirementCount.1": "2",
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.1": "2.5",
+                                "selph.ExtraMachineConfig.RequirementNoDuplicate.1": "true",
+                                "selph.ExtraMachineConfig.RequirementTags.2": "category_fruits",
+                                "selph.ExtraMachineConfig.RequirementCount.2": "2",
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.2": "2",
+                                "selph.ExtraMachineConfig.RequirementNoDuplicate.2": "true",
+                                "selph.ExtraMachineConfig.RequirementTags.3": "category_fruits",
+                                "selph.ExtraMachineConfig.RequirementCount.3": "2",
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2",
+                                "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
+                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                "selph.ExtraMachineConfig.CopyColor": "true",
+                            },
+                            "PriceModifiers": [
+                                {
+                                    // Adds 1000 to price
+                                    "Modification": "Add",
+                                    "RandomAmount": [
+                                        1000
+                                    ]
+                                },
+                                {
+                                    // Adds a 5% increase in price
+                                    "Modification": "Multiply",
+                                    "RandomAmount": [
+                                        1.05,
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
+                            "ObjectInternalName": "Aged PRESERVE_ID_2 PRESERVE_ID PRESERVE_ID_1 PRESERVE_ID_3 Mead",
+                            "ObjectDisplayName": "Aged %EXTRA_PRESERVED_DISPLAY_NAME_2, %EXTRA_PRESERVED_DISPLAY_NAME_1 and %EXTRA_PRESERVED_DISPLAY_NAME_3 Honey Mead",
+                            "PreserveId": "DROP_IN",
+                            "CopyColor": true,
+                            "CopyPrice": true,
+                            "CopyQuality": "{{CopyQualityEnabled}}",
+                            "PriceModifierMode": "Stack",
+                            // 2% Chance to Double your Aged Mead
+                            "StackModifiers": [
+                                {
+                                    "Id": "RareDouble",
+                                    "Condition": "RANDOM .02",
+                                    "Modification": "Multiply",
+                                    "Amount": 2.0
+                                }
+                            ],
+                            "ModData": {
+                                "selph.ExtraMachineConfig.ExtraPreserveId.1": "DROP_IN_ID_1",
+                                "selph.ExtraMachineConfig.ExtraPreserveId.2": "DROP_IN_ID_2",
+                                "selph.ExtraMachineConfig.ExtraPreserveId.3": "DROP_IN_ID_3",
+                                "selph.ExtraMachineConfig.ExtraColor.1": "DROP_IN_ID_2",
+                            },
+                            "CustomData": {
+                                "selph.ExtraMachineConfig.RequirementTags.1": "category_fruits",
+                                "selph.ExtraMachineConfig.RequirementCount.1": "2",
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.1": "2",
+                                "selph.ExtraMachineConfig.RequirementNoDuplicate.1": "true",
+                                "selph.ExtraMachineConfig.RequirementTags.2": "category_fruits",
+                                "selph.ExtraMachineConfig.RequirementCount.2": "2",
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.2": "2.5",
+                                "selph.ExtraMachineConfig.RequirementNoDuplicate.2": "true",
+                                "selph.ExtraMachineConfig.RequirementTags.3": "category_fruits",
+                                "selph.ExtraMachineConfig.RequirementCount.3": "2",
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2",
+                                "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
+                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                "selph.ExtraMachineConfig.CopyColor": "true",
+                            },
+                            "PriceModifiers": [
+                                {
+                                    // Adds 1000 to price
+                                    "Modification": "Add",
+                                    "RandomAmount": [
+                                        1000
+                                    ]
+                                },
+                                {
+                                    // Adds a 5% increase in price
+                                    "Modification": "Multiply",
+                                    "RandomAmount": [
+                                        1.05,
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
+                            "ObjectInternalName": "Aged PRESERVE_ID_3 PRESERVE_ID PRESERVE_ID_1 PRESERVE_ID_2 Mead",
+                            "ObjectDisplayName": "Aged %EXTRA_PRESERVED_DISPLAY_NAME_3, %EXTRA_PRESERVED_DISPLAY_NAME_2 and %EXTRA_PRESERVED_DISPLAY_NAME_1 Honey Mead",
+                            "PreserveId": "DROP_IN",
+                            "CopyColor": true,
+                            "CopyPrice": true,
+                            "CopyQuality": "{{CopyQualityEnabled}}",
+                            "PriceModifierMode": "Stack",
+                            // 2% Chance to Double your Aged Mead
+                            "StackModifiers": [
+                                {
+                                    "Id": "RareDouble",
+                                    "Condition": "RANDOM .02",
+                                    "Modification": "Multiply",
+                                    "Amount": 2.0
+                                }
+                            ],
+                            "ModData": {
+                                "selph.ExtraMachineConfig.ExtraPreserveId.1": "DROP_IN_ID_1",
+                                "selph.ExtraMachineConfig.ExtraPreserveId.2": "DROP_IN_ID_2",
+                                "selph.ExtraMachineConfig.ExtraPreserveId.3": "DROP_IN_ID_3",
+                                "selph.ExtraMachineConfig.ExtraColor.1": "DROP_IN_ID_3",
+                            },
+                            "CustomData": {
+                                "selph.ExtraMachineConfig.RequirementTags.1": "category_fruits",
+                                "selph.ExtraMachineConfig.RequirementCount.1": "2",
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.1": "2",
+                                "selph.ExtraMachineConfig.RequirementNoDuplicate.1": "true",
+                                "selph.ExtraMachineConfig.RequirementTags.2": "category_fruits",
+                                "selph.ExtraMachineConfig.RequirementCount.2": "2",
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.2": "2",
+                                "selph.ExtraMachineConfig.RequirementNoDuplicate.2": "true",
+                                "selph.ExtraMachineConfig.RequirementTags.3": "category_fruits",
+                                "selph.ExtraMachineConfig.RequirementCount.3": "2",
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2.5",
+                                "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
+                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                "selph.ExtraMachineConfig.CopyColor": "true",
+                            },
+                            "PriceModifiers": [
+                                {
+                                    // Adds 1000 to price
+                                    "Modification": "Add",
+                                    "RandomAmount": [
+                                        1000
+                                    ]
+                                },
+                                {
+                                    // Adds a 5% increase in price
+                                    "Modification": "Multiply",
+                                    "RandomAmount": [
+                                        1.05,
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "MinutesUntilReady": 960 // 16 Hours
+                },
+            },
+            "MoveEntries": [
+                {
+                    "ID": "bh.jarmeadrule",
+                    "ToPosition": "Top"
+                }
+            ]
+        },
+        {
+            "When": {
+                "HasMod": "nachonline.mps",
+            },
+            // Bear Honey Mead +  2 of any 4 Fruit -> Aging Vat -> Flavored Bear Honey Mead
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)bh.AgingVatPrismatic",
+                "OutputRules"
+            ],
+            "Entries": {
+                "bh.jarmeadrule_1": {
+                    "Id": "bh.jarmeadrule",
+                    "Triggers": [
+                        {
+                            "Id": "bh.jarmeadrule_AgedMeadInput",
+                            "RequiredTags": [
+                                "bh.stock_mead"
+                            ],
+                            "RequiredCount": 1
+                        }
+                    ],
+                    "UseFirstValidOutput": false,
+                    "OutputItem": [
+                        {
+                            "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
+                            "ObjectInternalName": "Aged PRESERVE_ID_1 PRESERVE_ID PRESERVE_ID_2 PRESERVE_ID_3 Mead",
+                            "ObjectDisplayName": "Aged %EXTRA_PRESERVED_DISPLAY_NAME_1, %EXTRA_PRESERVED_DISPLAY_NAME_2 and %EXTRA_PRESERVED_DISPLAY_NAME_3 Honey Mead",
+                            "PreserveId": "DROP_IN",
+                            "CopyColor": true,
+                            "CopyPrice": true,
+                            "CopyQuality": "{{CopyQualityEnabled}}",
+                            "PriceModifierMode": "Stack",
+                            // 2% Chance to Double your Aged Mead
+                            "StackModifiers": [
+                                {
+                                    "Id": "RareDouble",
+                                    "Condition": "RANDOM .02",
+                                    "Modification": "Multiply",
+                                    "Amount": 2.0
+                                }
+                            ],
+                            "ModData": {
+                                "selph.ExtraMachineConfig.ExtraPreserveId.1": "DROP_IN_ID_1",
+                                "selph.ExtraMachineConfig.ExtraPreserveId.2": "DROP_IN_ID_2",
+                                "selph.ExtraMachineConfig.ExtraPreserveId.3": "DROP_IN_ID_3",
+                                "selph.ExtraMachineConfig.ExtraColor.1": "DROP_IN_ID_1",
+                            },
+                            "CustomData": {
+                                "selph.ExtraMachineConfig.RequirementTags.1": "category_fruits",
+                                "selph.ExtraMachineConfig.RequirementCount.1": "2",
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.1": "2.5",
+                                "selph.ExtraMachineConfig.RequirementNoDuplicate.1": "true",
+                                "selph.ExtraMachineConfig.RequirementTags.2": "category_fruits",
+                                "selph.ExtraMachineConfig.RequirementCount.2": "2",
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.2": "2",
+                                "selph.ExtraMachineConfig.RequirementNoDuplicate.2": "true",
+                                "selph.ExtraMachineConfig.RequirementTags.3": "category_fruits",
+                                "selph.ExtraMachineConfig.RequirementCount.3": "2",
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2",
+                                "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
+                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                "selph.ExtraMachineConfig.CopyColor": "true",
+                            },
+                            "PriceModifiers": [
+                                {
+                                    // Adds 1000 to price
+                                    "Modification": "Add",
+                                    "RandomAmount": [
+                                        1000
+                                    ]
+                                },
+                                {
+                                    // Adds a 5% increase in price
+                                    "Modification": "Multiply",
+                                    "RandomAmount": [
+                                        1.05,
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
+                            "ObjectInternalName": "Aged PRESERVE_ID_2 PRESERVE_ID PRESERVE_ID_1 PRESERVE_ID_3 Mead",
+                            "ObjectDisplayName": "Aged %EXTRA_PRESERVED_DISPLAY_NAME_2, %EXTRA_PRESERVED_DISPLAY_NAME_1 and %EXTRA_PRESERVED_DISPLAY_NAME_3 Honey Mead",
+                            "PreserveId": "DROP_IN",
+                            "CopyColor": true,
+                            "CopyPrice": true,
+                            "CopyQuality": "{{CopyQualityEnabled}}",
+                            "PriceModifierMode": "Stack",
+                            // 2% Chance to Double your Aged Mead
+                            "StackModifiers": [
+                                {
+                                    "Id": "RareDouble",
+                                    "Condition": "RANDOM .02",
+                                    "Modification": "Multiply",
+                                    "Amount": 2.0
+                                }
+                            ],
+                            "ModData": {
+                                "selph.ExtraMachineConfig.ExtraPreserveId.1": "DROP_IN_ID_1",
+                                "selph.ExtraMachineConfig.ExtraPreserveId.2": "DROP_IN_ID_2",
+                                "selph.ExtraMachineConfig.ExtraPreserveId.3": "DROP_IN_ID_3",
+                                "selph.ExtraMachineConfig.ExtraColor.1": "DROP_IN_ID_2",
+                            },
+                            "CustomData": {
+                                "selph.ExtraMachineConfig.RequirementTags.1": "category_fruits",
+                                "selph.ExtraMachineConfig.RequirementCount.1": "2",
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.1": "2",
+                                "selph.ExtraMachineConfig.RequirementNoDuplicate.1": "true",
+                                "selph.ExtraMachineConfig.RequirementTags.2": "category_fruits",
+                                "selph.ExtraMachineConfig.RequirementCount.2": "2",
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.2": "2.5",
+                                "selph.ExtraMachineConfig.RequirementNoDuplicate.2": "true",
+                                "selph.ExtraMachineConfig.RequirementTags.3": "category_fruits",
+                                "selph.ExtraMachineConfig.RequirementCount.3": "2",
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2",
+                                "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
+                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                "selph.ExtraMachineConfig.CopyColor": "true",
+                            },
+                            "PriceModifiers": [
+                                {
+                                    // Adds 1000 to price
+                                    "Modification": "Add",
+                                    "RandomAmount": [
+                                        1000
+                                    ]
+                                },
+                                {
+                                    // Adds a 5% increase in price
+                                    "Modification": "Multiply",
+                                    "RandomAmount": [
+                                        1.05,
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "ItemId": "(O)bonghits.Cp_AgedBearHoneyMead",
+                            "ObjectInternalName": "Aged PRESERVE_ID_3 PRESERVE_ID PRESERVE_ID_1 PRESERVE_ID_2 Mead",
+                            "ObjectDisplayName": "Aged %EXTRA_PRESERVED_DISPLAY_NAME_3, %EXTRA_PRESERVED_DISPLAY_NAME_2 and %EXTRA_PRESERVED_DISPLAY_NAME_1 Honey Mead",
+                            "PreserveId": "DROP_IN",
+                            "CopyColor": true,
+                            "CopyPrice": true,
+                            "CopyQuality": "{{CopyQualityEnabled}}",
+                            "PriceModifierMode": "Stack",
+                            // 2% Chance to Double your Aged Mead
+                            "StackModifiers": [
+                                {
+                                    "Id": "RareDouble",
+                                    "Condition": "RANDOM .02",
+                                    "Modification": "Multiply",
+                                    "Amount": 2.0
+                                }
+                            ],
+                            "ModData": {
+                                "selph.ExtraMachineConfig.ExtraPreserveId.1": "DROP_IN_ID_1",
+                                "selph.ExtraMachineConfig.ExtraPreserveId.2": "DROP_IN_ID_2",
+                                "selph.ExtraMachineConfig.ExtraPreserveId.3": "DROP_IN_ID_3",
+                                "selph.ExtraMachineConfig.ExtraColor.1": "DROP_IN_ID_3",
+                            },
+                            "CustomData": {
+                                "selph.ExtraMachineConfig.RequirementTags.1": "category_fruits",
+                                "selph.ExtraMachineConfig.RequirementCount.1": "2",
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.1": "2",
+                                "selph.ExtraMachineConfig.RequirementNoDuplicate.1": "true",
+                                "selph.ExtraMachineConfig.RequirementTags.2": "category_fruits",
+                                "selph.ExtraMachineConfig.RequirementCount.2": "2",
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.2": "2",
+                                "selph.ExtraMachineConfig.RequirementNoDuplicate.2": "true",
+                                "selph.ExtraMachineConfig.RequirementTags.3": "category_fruits",
+                                "selph.ExtraMachineConfig.RequirementCount.3": "2",
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2.5",
+                                "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
+                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                "selph.ExtraMachineConfig.CopyColor": "true",
+                            },
+                            "PriceModifiers": [
+                                {
+                                    // Adds 1000 to price
+                                    "Modification": "Add",
+                                    "RandomAmount": [
+                                        1000
+                                    ]
+                                },
+                                {
+                                    // Adds a 5% increase in price
+                                    "Modification": "Multiply",
+                                    "RandomAmount": [
+                                        1.05,
+                                    ]
+                                }
+                            ]
+                        }
+                    ],
+                    "MinutesUntilReady": 720 // 12 Hours
+                },
+            },
+            "MoveEntries": [
+                {
+                    "ID": "bh.jarmeadrule",
+                    "ToPosition": "Top"
+                }
+            ]
+        }
+    ]
+}

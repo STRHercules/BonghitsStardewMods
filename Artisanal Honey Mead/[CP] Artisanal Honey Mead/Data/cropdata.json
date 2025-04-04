@@ -1,0 +1,19 @@
+{
+    "Changes": [
+        {
+            "LogName": "Objects",
+            "Action": "Include",
+            "FromFile": "Data/crops.json"
+        },
+        {
+            "LogName": "Objects",
+            "Action": "Include",
+            "FromFile": "Data/harvestables.json"
+        },
+        {
+            "LogName": "Objects",
+            "Action": "Include",
+            "FromFile": "Data/seeds.json"
+        }
+    ]
+}

@@ -796,7 +796,7 @@
             "Action": "EditData",
             "Target": "Characters/schedules/Delphy",
             "Entries": {
-                "Spring": "0610 Meadery 20 19 2/0630 Meadery 20 19 2 square_4_4_2/a1000 Meadery 49 7 2 square_4_4_2/a1600 Meadery 14 21 2 square_4_4_2",
+                "Spring": "0610 Meadery 55 19 2/0630 Meadery 55 19 2 square_2_2_2/a1000 Meadery 84 7 2 square_2_2_2/a1600 Meadery 49 21 2 square_2_2_2",
                 "Mon": "GOTO Spring",
                 "Tue": "GOTO Spring",
                 "Wed": "GOTO Spring",
@@ -850,7 +850,7 @@
             "Action": "EditData",
             "Target": "Characters/schedules/Malik",
             "Entries": {
-                "Spring": "0610 Meadery 4 41 2/0830 Meadery 23 41 2/1000 Meadery 14 41 2/1200 Meadery 14 47 2 square_4_4_2/1600 Meadery 35 47 2 square_3_3_2/1800 Meadery 21 17 2 square_2_2_2",
+                "Spring": "0610 Meadery 39 41 2/0830 Meadery 58 41 2/1000 Meadery 49 41 2/1200 Meadery 49 47 2 square_2_2_2/1600 Meadery 70 47 2 square_3_3_2/1800 Meadery 56 17 2 square_2_2_2",
                 "Mon": "GOTO Spring",
                 "Tue": "GOTO Spring",
                 "Wed": "GOTO Spring",
@@ -904,7 +904,7 @@
             "Action": "EditData",
             "Target": "Characters/schedules/Mandy",
             "Entries": {
-                "Spring": "0610 Meadery 29 10 2/0630 Meadery 28 22 2 square_4_4_2/a1000 Meadery 10 9 2 square_4_4_2/a1600 Meadery 28 24 2 square_4_4_2",
+                "Spring": "0610 Meadery 64 10 2/0630 Meadery 63 22 2 square_2_2_2/a1000 Meadery 45 9 2 square_2_2_2/a1600 Meadery 63 24 2 square_2_2_2",
                 "Mon": "GOTO Spring",
                 "Tue": "GOTO Spring",
                 "Wed": "GOTO Spring",
@@ -958,7 +958,7 @@
             "Action": "EditData",
             "Target": "Characters/schedules/Joaquin",
             "Entries": {
-                "Spring": "0610 Meadery 33 24 2/0630 Meadery 51 21 2 square_4_4_2/a1000 Meadery 36 46 2 square_4_4_2/a1600 Meadery 43 8 2 square_4_4_2",
+                "Spring": "0610 Meadery 68 24 2/0630 Meadery 86 21 2 square_2_2_2/a1000 Meadery 71 46 2 square_2_2_2/a1600 Meadery 78 8 2 square_2_2_2",
                 "Mon": "GOTO Spring",
                 "Tue": "GOTO Spring",
                 "Wed": "GOTO Spring",
@@ -1012,7 +1012,7 @@
             "Action": "EditData",
             "Target": "Characters/schedules/Mona",
             "Entries": {
-                "Spring": "0610 Meadery 22 7 2/0630 Meadery 8 11 2 square_4_4_2/a1000 Meadery 35 27 2 square_4_4_2/a1600 Meadery 28 17 2 square_4_4_2",
+                "Spring": "0610 Meadery 57 7 2/0630 Meadery 43 11 2 square_2_2_2/a1000 Meadery 70 27 2 square_2_2_2/a1600 Meadery 63 17 2 square_2_2_2",
                 "Mon": "GOTO Spring",
                 "Tue": "GOTO Spring",
                 "Wed": "GOTO Spring",

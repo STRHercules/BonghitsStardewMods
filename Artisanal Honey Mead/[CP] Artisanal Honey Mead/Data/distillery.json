@@ -1,0 +1,190 @@
+{
+    "Changes": [
+        //
+        // Define new Mail entry for Distillery introduction
+        //
+        {
+            "LogName": "Distillery Mail Text",
+            "Action": "EditData",
+            "Target": "Data/Mail",
+            "Entries": {
+                "Mail.DistilleryIntro": "{{i18n:mail.distilleryIntro}}"
+            }
+        },
+        //
+        // Add mail trigger so that once the player ships relevant base ingredient, they receive "Mail.DistilleryIntro"
+        //
+        {
+            "LogName": "Distillery Mail Trigger",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "bonghits_OnShipDistilleryBase": {
+                    "Id": "bonghits_OnShipDistilleryBase",
+                    "Trigger": "DayEnding",
+                    "Condition": "ANY \"PLAYER_SHIPPED_BASIC_ITEM Any (O)262 1\" \"PLAYER_SHIPPED_BASIC_ITEM Any (O)245 1\" \"PLAYER_SHIPPED_BASIC_ITEM Any (O)192 1\"",
+                    "Actions": [
+                        "AddMail Current Mail.DistilleryIntro now"
+                    ]
+                }
+            }
+        },
+        //
+        // Define Distillery BigCraftable
+        //
+        {
+            "LogName": "Define Distillery BC",
+            "Action": "EditData",
+            "Target": "Data/BigCraftables",
+            "Entries": {
+                "{{ModId}}_Distillery": {
+                    "Name": "{{ModId}}_Distillery",
+                    "DisplayName": "{{i18n:distillery.machine.name}}",
+                    "Description": "{{i18n:distillery.machine.description}}",
+                    "Price": 20000,
+                    "Fragility": 0,
+                    "CanBePlacedOutdoors": true,
+                    "CanBePlacedIndoors": true,
+                    "IsLamp": false,
+                    "Texture": "bonghits.BearHoneyMead/Distillery",
+                    "SpriteIndex": 0
+                }
+            }
+        },
+        {
+            "LogName": "Define Distillery Crafting Recipe",
+            "Action": "EditData",
+            "Target": "Data/CraftingRecipes",
+            "Entries": {
+                "{{ModId}}_Distillery": "388 30 334 5/Home/{{ModId}}_Distillery/true/none/{{i18n:distillery.machine.name}}"
+                /*
+                    30 Wood + 5 Copper Bars => Distillery
+                */
+            }
+        },
+        //
+        // Distillery Machine Logic (Data/Machines)
+        //
+        {
+            "LogName": "Distillery Machine Rules",
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "Entries": {
+                "(BC){{ModId}}_Distillery": {
+                    "HasInput": false,
+                    "HasOutput": false,
+                    "OutputRules": [
+                        {
+                            "Id": "BuckwheatToWhiskey",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O){{ModId}}_Buckwheat", // Buckwheat
+                                    "RequiredCount": 5
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "(O){{ModId}}_Whiskey",
+                                    "ItemId": "(O){{ModId}}_Whiskey"
+                                }
+                            ],
+                            "MinutesUntilReady": 800,
+                            "InvalidCountMessage": "Requires 5 Buckwheat"
+                        },
+                        {
+                            "Id": "BarleyToRum",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O){{ModId}}_Barley", // Barley
+                                    "RequiredCount": 5
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "(O){{ModId}}_Rum",
+                                    "ItemId": "(O){{ModId}}_Rum"
+                                }
+                            ],
+                            "MinutesUntilReady": 800,
+                            "InvalidCountMessage": "Requires 5 Barley"
+                        },
+                        {
+                            "Id": "RyeToVodka",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O){{ModId}}_Rye", // Rye
+                                    "RequiredCount": 5
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "(O){{ModId}}_Vodka",
+                                    "ItemId": "(O){{ModId}}_Vodka"
+                                }
+                            ],
+                            "MinutesUntilReady": 800,
+                            "InvalidCountMessage": "Requires 5 Rye"
+                        },
+                        {
+                            "Id": "CactusToTequila",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O)90", // Cactus Fruit
+                                    "RequiredCount": 5
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "(O){{ModId}}_Tequila",
+                                    "ItemId": "(O){{ModId}}_Tequila"
+                                }
+                            ],
+                            "MinutesUntilReady": 900,
+                            "InvalidCountMessage": "Requires 5 Cactus Fruit"
+                        },
+                        {
+                            "Id": "MilletToSake",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O){{ModId}}_Millet", // Millet
+                                    "RequiredCount": 5
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "(O){{ModId}}_Sake",
+                                    "ItemId": "(O){{ModId}}_Sake"
+                                }
+                            ],
+                            "MinutesUntilReady": 800,
+                            "InvalidCountMessage": "Requires 5 Millet"
+                        },
+                        {
+                            "Id": "OatToBourbon",
+                            "Triggers": [
+                                {
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O){{ModId}}_Oat", // Oat
+                                    "RequiredCount": 5
+                                }
+                            ],
+                            "OutputItem": [
+                                {
+                                    "Id": "(O){{ModId}}_Bourbon",
+                                    "ItemId": "(O){{ModId}}_Bourbon"
+                                }
+                            ],
+                            "MinutesUntilReady": 1000,
+                            "InvalidCountMessage": "Requires 5 Oats"
+                        }
+                    ]
+                }
+            }
+        }
+    ]
+}

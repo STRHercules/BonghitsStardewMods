@@ -1,6 +1,31 @@
 {
     "$schema": "https://smapi.io/schemas/content-patcher.json",
     "Changes": [
+        {
+            "When": {
+                "HasMod": "nachonline.mps",
+            },
+            "Action": "EditData",
+            "Target": "Data/Mail",
+            "Entries": {
+                "bh.MeadKegRecipes": "{{i18n:mail.MeadKegProgression}}"
+            }
+        },
+        {
+            "When": {
+                "HasMod": "nachonline.mps",
+            },
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModId}}_MeadKegRecipes": {
+                    "Id": "{{ModId}}_MeadKegRecipes",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HAS_CRAFTING_RECIPE Current {{ModId}}_MeadKeg",
+                    "Action": "AddMail Current bh.MeadKegRecipes now"
+                }
+            }
+        },
         //
         //
         //  Artisanal Mead Keg Recipe
@@ -13,6 +38,22 @@
                 "{{ModId}}_MeadKeg": "388 125 725 2 726 2/Home/{{ModId}}_MeadKeg/true/Farming 4/" //125 Wood, 2 Pine Tar, 2 Oak Resin
             },
             "LogName": "Mead Keg Recipe Definition"
+        },
+        // MPS Mead Kegs
+        {
+            "When": {
+                "HasMod": "nachonline.mps",
+            },
+            "Action": "EditData",
+            "Target": "Data/CraftingRecipes",
+            "Entries": {
+                "bh.MeadKegGold": "{{ModId}}_MeadKeg 1 336 1/Home/bh.MeadKegGold/true/none/{{i18n:MeadKegGold.name}}",
+                "bh.MeadKegDiamond": "bh.MeadKegGold 1 72 1/Home/bh.MeadKegDiamond/true/none/{{i18n:MeadKegDiamond.name}}",
+                "bh.MeadKegIridium": "bh.MeadKegDiamond 1 337 1/Home/bh.MeadKegIridium/true/none/{{i18n:MeadKegIridium.name}}",
+                "bh.MeadKegRadioactive": "bh.MeadKegIridium 1 910 1/Home/bh.MeadKegRadioactive/true/none/{{i18n:MeadKegRadioactive.name}}",
+                "bh.MeadKegPrismatic": "bh.MeadKegRadioactive 1 74 1/Home/bh.MeadKegPrismatic/true/none/{{i18n:MeadKegPrismatic.name}}",
+            },
+            "LogName": "MPS Mead Keg Recipe Definition"
         },
         //
         //
@@ -66,6 +107,84 @@
             },
             "LogName": "Mead Keg BC definition"
         },
+        // MPS Mead Keg Definition
+        {
+            "Action": "EditData",
+            "Target": "Data/BigCraftables",
+            "Entries": {
+                "bh.MeadKegGold": {
+                    "Name": "bh.MeadKegGold",
+                    "DisplayName": "{{i18n: meadKegGold.name}}",
+                    "Description": "{{i18n: meadKegGold.description}}",
+                    "Price": 12500,
+                    "Fragility": 0,
+                    "CanBePlacedOutdoors": true,
+                    "CanBePlacedIndoors": true,
+                    "IsLamp": false,
+                    "Texture": "bonghits.BearHoneyMead/Machines",
+                    "SpriteIndex": 1,
+                    "ContextTags": null,
+                    "CustomFields": null
+                },
+                "bh.MeadKegDiamond": {
+                    "Name": "bh.MeadKegDiamond",
+                    "DisplayName": "{{i18n: meadKegDiamond.name}}",
+                    "Description": "{{i18n: meadKegDiamond.description}}",
+                    "Price": 12500,
+                    "Fragility": 0,
+                    "CanBePlacedOutdoors": true,
+                    "CanBePlacedIndoors": true,
+                    "IsLamp": false,
+                    "Texture": "bonghits.BearHoneyMead/Machines",
+                    "SpriteIndex": 2,
+                    "ContextTags": null,
+                    "CustomFields": null
+                },
+                "bh.MeadKegIridium": {
+                    "Name": "bh.MeadKegIridium",
+                    "DisplayName": "{{i18n: meadKegIridium.name}}",
+                    "Description": "{{i18n: meadKegIridium.description}}",
+                    "Price": 12500,
+                    "Fragility": 0,
+                    "CanBePlacedOutdoors": true,
+                    "CanBePlacedIndoors": true,
+                    "IsLamp": false,
+                    "Texture": "bonghits.BearHoneyMead/Machines",
+                    "SpriteIndex": 3,
+                    "ContextTags": null,
+                    "CustomFields": null
+                },
+                "bh.MeadKegRadioactive": {
+                    "Name": "bh.MeadKegRadioactive",
+                    "DisplayName": "{{i18n: meadKegRadioactive.name}}",
+                    "Description": "{{i18n: meadKegRadioactive.description}}",
+                    "Price": 12500,
+                    "Fragility": 0,
+                    "CanBePlacedOutdoors": true,
+                    "CanBePlacedIndoors": true,
+                    "IsLamp": false,
+                    "Texture": "bonghits.BearHoneyMead/Machines",
+                    "SpriteIndex": 4,
+                    "ContextTags": null,
+                    "CustomFields": null
+                },
+                "bh.MeadKegPrismatic": {
+                    "Name": "bh.MeadKegPrismatic",
+                    "DisplayName": "{{i18n: meadKegPrismatic.name}}",
+                    "Description": "{{i18n: meadKegPrismatic.description}}",
+                    "Price": 12500,
+                    "Fragility": 0,
+                    "CanBePlacedOutdoors": true,
+                    "CanBePlacedIndoors": true,
+                    "IsLamp": false,
+                    "Texture": "bonghits.BearHoneyMead/Machines",
+                    "SpriteIndex": 5,
+                    "ContextTags": null,
+                    "CustomFields": null
+                },
+            },
+            "LogName": "Mead Keg BC definition"
+        },
         //
         //
         //  Carbonator Definition
@@ -94,7 +213,7 @@
         },
         //
         //
-        //  SMoking Barrel Definition
+        //  Smoking Barrel Definition
         //
         //
         {
@@ -118,16 +237,6 @@
             },
             "LogName": "Barrel Smoker BC definition"
         },
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //
         {
             "Action": "EditData",
             "Target": "Data/Machines",
@@ -586,7 +695,931 @@
                             "DaysUntilReady": 2,
                             "InvalidCountMessage": null,
                             "RecalculateOnCollect": false
-                        }
+                        },
+                        // Smoking Stock Bourbon
+                        {
+                            "Id": "BourbonTrigger",
+                            "Triggers": [
+                                {
+                                    "Id": "RegBourbonPlacedInMachine",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O){{ModId}}_Bourbon",
+                                    "RequiredTags": [
+                                        "!smoked_item"
+                                    ],
+                                    "RequiredCount": 1,
+                                    "Condition": null
+                                },
+                            ],
+                            "UseFirstValidOutput": false,
+                            "OutputItem": [
+                                {
+                                    "OutputMethod": null,
+                                    "CopyColor": false,
+                                    "CopyPrice": false,
+                                    "CopyQuality": "{{CopyQualityEnabled}}",
+                                    "PreserveType": null,
+                                    "PreserveId": null,
+                                    "IncrementMachineParentSheetIndex": 0,
+                                    "PriceModifiers": [
+                                        {
+                                            "Id": "RegBourbonPriceModification",
+                                            "Condition": null,
+                                            "Modification": "Multiply",
+                                            // 10-30% increase on price of your beverage when smoking it
+                                            "RandomAmount": [
+                                                1.10,
+                                                1.15,
+                                                1.20,
+                                                1.25,
+                                                1.30
+                                            ]
+                                        }
+                                    ],
+                                    "PriceModifierMode": "Stack",
+                                    "Condition": null,
+                                    "Id": "DROP_IN",
+                                    "ItemId": "DROP_IN_ID",
+                                    "RandomItemId": null,
+                                    "MaxItems": null,
+                                    "MinStack": 1,
+                                    "MaxStack": 1,
+                                    "Quality": -1,
+                                    "ObjectInternalName": "Smoked {0}",
+                                    "ObjectDisplayName": "Smoked %DISPLAY_NAME",
+                                    "ObjectColor": null,
+                                    "ToolUpgradeLevel": -1,
+                                    "IsRecipe": false,
+                                    "StackModifiers": [
+                                        {
+                                            "Id": "RareDouble",
+                                            "Condition": "RANDOM .10",
+                                            "Modification": "Multiply",
+                                            "Amount": 2.0
+                                        }
+                                    ],
+                                    "StackModifierMode": "Stack",
+                                    "QualityModifiers": null,
+                                    "QualityModifierMode": "Stack",
+                                    "ModData": {
+                                        "selph.ExtraMachineConfig.ExtraContextTags": "smoked_item",
+                                    },
+                                    "PerItemCondition": null
+                                }
+                            ],
+                            "DaysUntilReady": 2,
+                            "InvalidCountMessage": null,
+                            "RecalculateOnCollect": false
+                        },
+                        // Smoking Stock Sake
+                        {
+                            "Id": "SakeTrigger",
+                            "Triggers": [
+                                {
+                                    "Id": "RegSakePlacedInMachine",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O){{ModId}}_Sake",
+                                    "RequiredTags": [
+                                        "!smoked_item"
+                                    ],
+                                    "RequiredCount": 1,
+                                    "Condition": null
+                                },
+                            ],
+                            "UseFirstValidOutput": false,
+                            "OutputItem": [
+                                {
+                                    "OutputMethod": null,
+                                    "CopyColor": false,
+                                    "CopyPrice": false,
+                                    "CopyQuality": "{{CopyQualityEnabled}}",
+                                    "PreserveType": null,
+                                    "PreserveId": null,
+                                    "IncrementMachineParentSheetIndex": 0,
+                                    "PriceModifiers": [
+                                        {
+                                            "Id": "RegSakePriceModification",
+                                            "Condition": null,
+                                            "Modification": "Multiply",
+                                            // 10-30% increase on price of your beverage when smoking it
+                                            "RandomAmount": [
+                                                1.10,
+                                                1.15,
+                                                1.20,
+                                                1.25,
+                                                1.30
+                                            ]
+                                        }
+                                    ],
+                                    "PriceModifierMode": "Stack",
+                                    "Condition": null,
+                                    "Id": "DROP_IN",
+                                    "ItemId": "DROP_IN_ID",
+                                    "RandomItemId": null,
+                                    "MaxItems": null,
+                                    "MinStack": 1,
+                                    "MaxStack": 1,
+                                    "Quality": -1,
+                                    "ObjectInternalName": "Smoked {0}",
+                                    "ObjectDisplayName": "Smoked %DISPLAY_NAME",
+                                    "ObjectColor": null,
+                                    "ToolUpgradeLevel": -1,
+                                    "IsRecipe": false,
+                                    "StackModifiers": [
+                                        {
+                                            "Id": "RareDouble",
+                                            "Condition": "RANDOM .10",
+                                            "Modification": "Multiply",
+                                            "Amount": 2.0
+                                        }
+                                    ],
+                                    "StackModifierMode": "Stack",
+                                    "QualityModifiers": null,
+                                    "QualityModifierMode": "Stack",
+                                    "ModData": {
+                                        "selph.ExtraMachineConfig.ExtraContextTags": "smoked_item",
+                                    },
+                                    "PerItemCondition": null
+                                }
+                            ],
+                            "DaysUntilReady": 2,
+                            "InvalidCountMessage": null,
+                            "RecalculateOnCollect": false
+                        },
+                        // Smoking Stock Tequila
+                        {
+                            "Id": "TequilaTrigger",
+                            "Triggers": [
+                                {
+                                    "Id": "RegTequilaPlacedInMachine",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O){{ModId}}_Tequila",
+                                    "RequiredTags": [
+                                        "!smoked_item"
+                                    ],
+                                    "RequiredCount": 1,
+                                    "Condition": null
+                                },
+                            ],
+                            "UseFirstValidOutput": false,
+                            "OutputItem": [
+                                {
+                                    "OutputMethod": null,
+                                    "CopyColor": false,
+                                    "CopyPrice": false,
+                                    "CopyQuality": "{{CopyQualityEnabled}}",
+                                    "PreserveType": null,
+                                    "PreserveId": null,
+                                    "IncrementMachineParentSheetIndex": 0,
+                                    "PriceModifiers": [
+                                        {
+                                            "Id": "RegTequilaPriceModification",
+                                            "Condition": null,
+                                            "Modification": "Multiply",
+                                            // 10-30% increase on price of your beverage when smoking it
+                                            "RandomAmount": [
+                                                1.10,
+                                                1.15,
+                                                1.20,
+                                                1.25,
+                                                1.30
+                                            ]
+                                        }
+                                    ],
+                                    "PriceModifierMode": "Stack",
+                                    "Condition": null,
+                                    "Id": "DROP_IN",
+                                    "ItemId": "DROP_IN_ID",
+                                    "RandomItemId": null,
+                                    "MaxItems": null,
+                                    "MinStack": 1,
+                                    "MaxStack": 1,
+                                    "Quality": -1,
+                                    "ObjectInternalName": "Smoked {0}",
+                                    "ObjectDisplayName": "Smoked %DISPLAY_NAME",
+                                    "ObjectColor": null,
+                                    "ToolUpgradeLevel": -1,
+                                    "IsRecipe": false,
+                                    "StackModifiers": [
+                                        {
+                                            "Id": "RareDouble",
+                                            "Condition": "RANDOM .10",
+                                            "Modification": "Multiply",
+                                            "Amount": 2.0
+                                        }
+                                    ],
+                                    "StackModifierMode": "Stack",
+                                    "QualityModifiers": null,
+                                    "QualityModifierMode": "Stack",
+                                    "ModData": {
+                                        "selph.ExtraMachineConfig.ExtraContextTags": "smoked_item",
+                                    },
+                                    "PerItemCondition": null
+                                }
+                            ],
+                            "DaysUntilReady": 2,
+                            "InvalidCountMessage": null,
+                            "RecalculateOnCollect": false
+                        },
+                        // Smoking Stock Vodka
+                        {
+                            "Id": "VodkaTrigger",
+                            "Triggers": [
+                                {
+                                    "Id": "RegVodkaPlacedInMachine",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O){{ModId}}_Vodka",
+                                    "RequiredTags": [
+                                        "!smoked_item"
+                                    ],
+                                    "RequiredCount": 1,
+                                    "Condition": null
+                                },
+                            ],
+                            "UseFirstValidOutput": false,
+                            "OutputItem": [
+                                {
+                                    "OutputMethod": null,
+                                    "CopyColor": false,
+                                    "CopyPrice": false,
+                                    "CopyQuality": "{{CopyQualityEnabled}}",
+                                    "PreserveType": null,
+                                    "PreserveId": null,
+                                    "IncrementMachineParentSheetIndex": 0,
+                                    "PriceModifiers": [
+                                        {
+                                            "Id": "RegVodkaPriceModification",
+                                            "Condition": null,
+                                            "Modification": "Multiply",
+                                            // 10-30% increase on price of your beverage when smoking it
+                                            "RandomAmount": [
+                                                1.10,
+                                                1.15,
+                                                1.20,
+                                                1.25,
+                                                1.30
+                                            ]
+                                        }
+                                    ],
+                                    "PriceModifierMode": "Stack",
+                                    "Condition": null,
+                                    "Id": "DROP_IN",
+                                    "ItemId": "DROP_IN_ID",
+                                    "RandomItemId": null,
+                                    "MaxItems": null,
+                                    "MinStack": 1,
+                                    "MaxStack": 1,
+                                    "Quality": -1,
+                                    "ObjectInternalName": "Smoked {0}",
+                                    "ObjectDisplayName": "Smoked %DISPLAY_NAME",
+                                    "ObjectColor": null,
+                                    "ToolUpgradeLevel": -1,
+                                    "IsRecipe": false,
+                                    "StackModifiers": [
+                                        {
+                                            "Id": "RareDouble",
+                                            "Condition": "RANDOM .10",
+                                            "Modification": "Multiply",
+                                            "Amount": 2.0
+                                        }
+                                    ],
+                                    "StackModifierMode": "Stack",
+                                    "QualityModifiers": null,
+                                    "QualityModifierMode": "Stack",
+                                    "ModData": {
+                                        "selph.ExtraMachineConfig.ExtraContextTags": "smoked_item",
+                                    },
+                                    "PerItemCondition": null
+                                }
+                            ],
+                            "DaysUntilReady": 2,
+                            "InvalidCountMessage": null,
+                            "RecalculateOnCollect": false
+                        },
+                        // Smoking Stock Rum
+                        {
+                            "Id": "RumTrigger",
+                            "Triggers": [
+                                {
+                                    "Id": "RegRumPlacedInMachine",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O){{ModId}}_Rum",
+                                    "RequiredTags": [
+                                        "!smoked_item"
+                                    ],
+                                    "RequiredCount": 1,
+                                    "Condition": null
+                                },
+                            ],
+                            "UseFirstValidOutput": false,
+                            "OutputItem": [
+                                {
+                                    "OutputMethod": null,
+                                    "CopyColor": false,
+                                    "CopyPrice": false,
+                                    "CopyQuality": "{{CopyQualityEnabled}}",
+                                    "PreserveType": null,
+                                    "PreserveId": null,
+                                    "IncrementMachineParentSheetIndex": 0,
+                                    "PriceModifiers": [
+                                        {
+                                            "Id": "RegRumPriceModification",
+                                            "Condition": null,
+                                            "Modification": "Multiply",
+                                            // 10-30% increase on price of your beverage when smoking it
+                                            "RandomAmount": [
+                                                1.10,
+                                                1.15,
+                                                1.20,
+                                                1.25,
+                                                1.30
+                                            ]
+                                        }
+                                    ],
+                                    "PriceModifierMode": "Stack",
+                                    "Condition": null,
+                                    "Id": "DROP_IN",
+                                    "ItemId": "DROP_IN_ID",
+                                    "RandomItemId": null,
+                                    "MaxItems": null,
+                                    "MinStack": 1,
+                                    "MaxStack": 1,
+                                    "Quality": -1,
+                                    "ObjectInternalName": "Smoked {0}",
+                                    "ObjectDisplayName": "Smoked %DISPLAY_NAME",
+                                    "ObjectColor": null,
+                                    "ToolUpgradeLevel": -1,
+                                    "IsRecipe": false,
+                                    "StackModifiers": [
+                                        {
+                                            "Id": "RareDouble",
+                                            "Condition": "RANDOM .10",
+                                            "Modification": "Multiply",
+                                            "Amount": 2.0
+                                        }
+                                    ],
+                                    "StackModifierMode": "Stack",
+                                    "QualityModifiers": null,
+                                    "QualityModifierMode": "Stack",
+                                    "ModData": {
+                                        "selph.ExtraMachineConfig.ExtraContextTags": "smoked_item",
+                                    },
+                                    "PerItemCondition": null
+                                }
+                            ],
+                            "DaysUntilReady": 2,
+                            "InvalidCountMessage": null,
+                            "RecalculateOnCollect": false
+                        },
+                        // Smoking Stock Whiskey
+                        {
+                            "Id": "WhiskeyTrigger",
+                            "Triggers": [
+                                {
+                                    "Id": "RegWhiskeyPlacedInMachine",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O){{ModId}}_Whiskey",
+                                    "RequiredTags": [
+                                        "!smoked_item"
+                                    ],
+                                    "RequiredCount": 1,
+                                    "Condition": null
+                                },
+                            ],
+                            "UseFirstValidOutput": false,
+                            "OutputItem": [
+                                {
+                                    "OutputMethod": null,
+                                    "CopyColor": false,
+                                    "CopyPrice": false,
+                                    "CopyQuality": "{{CopyQualityEnabled}}",
+                                    "PreserveType": null,
+                                    "PreserveId": null,
+                                    "IncrementMachineParentSheetIndex": 0,
+                                    "PriceModifiers": [
+                                        {
+                                            "Id": "RegWhiskeyPriceModification",
+                                            "Condition": null,
+                                            "Modification": "Multiply",
+                                            // 10-30% increase on price of your beverage when smoking it
+                                            "RandomAmount": [
+                                                1.10,
+                                                1.15,
+                                                1.20,
+                                                1.25,
+                                                1.30
+                                            ]
+                                        }
+                                    ],
+                                    "PriceModifierMode": "Stack",
+                                    "Condition": null,
+                                    "Id": "DROP_IN",
+                                    "ItemId": "DROP_IN_ID",
+                                    "RandomItemId": null,
+                                    "MaxItems": null,
+                                    "MinStack": 1,
+                                    "MaxStack": 1,
+                                    "Quality": -1,
+                                    "ObjectInternalName": "Smoked {0}",
+                                    "ObjectDisplayName": "Smoked %DISPLAY_NAME",
+                                    "ObjectColor": null,
+                                    "ToolUpgradeLevel": -1,
+                                    "IsRecipe": false,
+                                    "StackModifiers": [
+                                        {
+                                            "Id": "RareDouble",
+                                            "Condition": "RANDOM .10",
+                                            "Modification": "Multiply",
+                                            "Amount": 2.0
+                                        }
+                                    ],
+                                    "StackModifierMode": "Stack",
+                                    "QualityModifiers": null,
+                                    "QualityModifierMode": "Stack",
+                                    "ModData": {
+                                        "selph.ExtraMachineConfig.ExtraContextTags": "smoked_item",
+                                    },
+                                    "PerItemCondition": null
+                                }
+                            ],
+                            "DaysUntilReady": 2,
+                            "InvalidCountMessage": null,
+                            "RecalculateOnCollect": false
+                        },
+                        // Smoking Infused Whiskey
+                        {
+                            "Id": "InfusedWhiskeyTrigger",
+                            "Triggers": [
+                                {
+                                    "Id": "InfusedWhiskeyPlacedInMachine",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O){{ModId}}_InfusedWhiskey",
+                                    "RequiredTags": [
+                                        "!smoked_item"
+                                    ],
+                                    "RequiredCount": 1,
+                                    "Condition": null
+                                },
+                            ],
+                            "UseFirstValidOutput": false,
+                            "OutputItem": [
+                                {
+                                    "CustomData": {
+                                        "selph.ExtraMachineConfig.InheritPreserveId": "true",
+                                    },
+                                    "OutputMethod": null,
+                                    "CopyColor": true,
+                                    "CopyPrice": false,
+                                    "CopyQuality": "{{CopyQualityEnabled}}",
+                                    "PreserveType": null,
+                                    "PreserveId": "DROP_IN_PRESERVE",
+                                    "IncrementMachineParentSheetIndex": 0,
+                                    "PriceModifiers": [
+                                        {
+                                            "Id": "InfusedWhiskeyPriceModification",
+                                            "Condition": null,
+                                            "Modification": "Multiply",
+                                            // 10-30% increase on price of your beverage when smoking it
+                                            "RandomAmount": [
+                                                1.10,
+                                                1.15,
+                                                1.20,
+                                                1.25,
+                                                1.30
+                                            ]
+                                        }
+                                    ],
+                                    "PriceModifierMode": "Stack",
+                                    "Condition": null,
+                                    "Id": "DROP_IN",
+                                    "ItemId": "DROP_IN_ID",
+                                    "RandomItemId": null,
+                                    "MaxItems": null,
+                                    "MinStack": 1,
+                                    "MaxStack": 1,
+                                    "Quality": -1,
+                                    "ObjectInternalName": "Smoked {0}",
+                                    "ObjectDisplayName": "Smoked %EXTRA_PRESERVED_DISPLAY_NAME_1 Whiskey",
+                                    "ObjectColor": null,
+                                    "ToolUpgradeLevel": -1,
+                                    "IsRecipe": false,
+                                    "StackModifiers": [
+                                        {
+                                            "Id": "RareDouble",
+                                            "Condition": "RANDOM .10",
+                                            "Modification": "Multiply",
+                                            "Amount": 2.0
+                                        }
+                                    ],
+                                    "StackModifierMode": "Stack",
+                                    "QualityModifiers": null,
+                                    "QualityModifierMode": "Stack",
+                                    "ModData": {
+                                        "selph.ExtraMachineConfig.ExtraContextTags": "smoked_item",
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.1": "INPUT_EXTRA_ID_1"
+                                    },
+                                    "PerItemCondition": null
+                                }
+                            ],
+                            "DaysUntilReady": 2,
+                            "InvalidCountMessage": null,
+                            "RecalculateOnCollect": false
+                        },
+                        // Smoking Spiced Rum
+                        {
+                            "Id": "SpicedRumTrigger",
+                            "Triggers": [
+                                {
+                                    "Id": "SpicedRumPlacedInMachine",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O){{ModId}}_SpicedRum",
+                                    "RequiredTags": [
+                                        "!smoked_item"
+                                    ],
+                                    "RequiredCount": 1,
+                                    "Condition": null
+                                },
+                            ],
+                            "UseFirstValidOutput": false,
+                            "OutputItem": [
+                                {
+                                    "CustomData": {
+                                        "selph.ExtraMachineConfig.InheritPreserveId": "true",
+                                    },
+                                    "OutputMethod": null,
+                                    "CopyColor": true,
+                                    "CopyPrice": false,
+                                    "CopyQuality": "{{CopyQualityEnabled}}",
+                                    "PreserveType": null,
+                                    "PreserveId": "DROP_IN_PRESERVE",
+                                    "IncrementMachineParentSheetIndex": 0,
+                                    "PriceModifiers": [
+                                        {
+                                            "Id": "SpicedRumPriceModification",
+                                            "Condition": null,
+                                            "Modification": "Multiply",
+                                            // 10-30% increase on price of your beverage when smoking it
+                                            "RandomAmount": [
+                                                1.10,
+                                                1.15,
+                                                1.20,
+                                                1.25,
+                                                1.30
+                                            ]
+                                        }
+                                    ],
+                                    "PriceModifierMode": "Stack",
+                                    "Condition": null,
+                                    "Id": "DROP_IN",
+                                    "ItemId": "DROP_IN_ID",
+                                    "RandomItemId": null,
+                                    "MaxItems": null,
+                                    "MinStack": 1,
+                                    "MaxStack": 1,
+                                    "Quality": -1,
+                                    "ObjectInternalName": "Smoked {0}",
+                                    "ObjectDisplayName": "Smoked %EXTRA_PRESERVED_DISPLAY_NAME_1 Whiskey",
+                                    "ObjectColor": null,
+                                    "ToolUpgradeLevel": -1,
+                                    "IsRecipe": false,
+                                    "StackModifiers": [
+                                        {
+                                            "Id": "RareDouble",
+                                            "Condition": "RANDOM .10",
+                                            "Modification": "Multiply",
+                                            "Amount": 2.0
+                                        }
+                                    ],
+                                    "StackModifierMode": "Stack",
+                                    "QualityModifiers": null,
+                                    "QualityModifierMode": "Stack",
+                                    "ModData": {
+                                        "selph.ExtraMachineConfig.ExtraContextTags": "smoked_item",
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.1": "INPUT_EXTRA_ID_1"
+                                    },
+                                    "PerItemCondition": null
+                                }
+                            ],
+                            "DaysUntilReady": 2,
+                            "InvalidCountMessage": null,
+                            "RecalculateOnCollect": false
+                        },
+                        // Smoking Herbal Vodka
+                        {
+                            "Id": "HerbalVodkaTrigger",
+                            "Triggers": [
+                                {
+                                    "Id": "HerbalVodkaPlacedInMachine",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O){{ModId}}_HerbalVodka",
+                                    "RequiredTags": [
+                                        "!smoked_item"
+                                    ],
+                                    "RequiredCount": 1,
+                                    "Condition": null
+                                },
+                            ],
+                            "UseFirstValidOutput": false,
+                            "OutputItem": [
+                                {
+                                    "CustomData": {
+                                        "selph.ExtraMachineConfig.InheritPreserveId": "true",
+                                    },
+                                    "OutputMethod": null,
+                                    "CopyColor": true,
+                                    "CopyPrice": false,
+                                    "CopyQuality": "{{CopyQualityEnabled}}",
+                                    "PreserveType": null,
+                                    "PreserveId": "DROP_IN_PRESERVE",
+                                    "IncrementMachineParentSheetIndex": 0,
+                                    "PriceModifiers": [
+                                        {
+                                            "Id": "HerbalVodkaPriceModification",
+                                            "Condition": null,
+                                            "Modification": "Multiply",
+                                            // 10-30% increase on price of your beverage when smoking it
+                                            "RandomAmount": [
+                                                1.10,
+                                                1.15,
+                                                1.20,
+                                                1.25,
+                                                1.30
+                                            ]
+                                        }
+                                    ],
+                                    "PriceModifierMode": "Stack",
+                                    "Condition": null,
+                                    "Id": "DROP_IN",
+                                    "ItemId": "DROP_IN_ID",
+                                    "RandomItemId": null,
+                                    "MaxItems": null,
+                                    "MinStack": 1,
+                                    "MaxStack": 1,
+                                    "Quality": -1,
+                                    "ObjectInternalName": "Smoked {0}",
+                                    "ObjectDisplayName": "Smoked %EXTRA_PRESERVED_DISPLAY_NAME_1 Whiskey",
+                                    "ObjectColor": null,
+                                    "ToolUpgradeLevel": -1,
+                                    "IsRecipe": false,
+                                    "StackModifiers": [
+                                        {
+                                            "Id": "RareDouble",
+                                            "Condition": "RANDOM .10",
+                                            "Modification": "Multiply",
+                                            "Amount": 2.0
+                                        }
+                                    ],
+                                    "StackModifierMode": "Stack",
+                                    "QualityModifiers": null,
+                                    "QualityModifierMode": "Stack",
+                                    "ModData": {
+                                        "selph.ExtraMachineConfig.ExtraContextTags": "smoked_item",
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.1": "INPUT_EXTRA_ID_1"
+                                    },
+                                    "PerItemCondition": null
+                                }
+                            ],
+                            "DaysUntilReady": 2,
+                            "InvalidCountMessage": null,
+                            "RecalculateOnCollect": false
+                        },
+                        // Smoking Infused Tequila
+                        {
+                            "Id": "InfusedTequilaTrigger",
+                            "Triggers": [
+                                {
+                                    "Id": "InfusedTequilaPlacedInMachine",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O){{ModId}}_InfusedTequila",
+                                    "RequiredTags": [
+                                        "!smoked_item"
+                                    ],
+                                    "RequiredCount": 1,
+                                    "Condition": null
+                                },
+                            ],
+                            "UseFirstValidOutput": false,
+                            "OutputItem": [
+                                {
+                                    "CustomData": {
+                                        "selph.ExtraMachineConfig.InheritPreserveId": "true",
+                                    },
+                                    "OutputMethod": null,
+                                    "CopyColor": true,
+                                    "CopyPrice": false,
+                                    "CopyQuality": "{{CopyQualityEnabled}}",
+                                    "PreserveType": null,
+                                    "PreserveId": "DROP_IN_PRESERVE",
+                                    "IncrementMachineParentSheetIndex": 0,
+                                    "PriceModifiers": [
+                                        {
+                                            "Id": "InfusedTequilaPriceModification",
+                                            "Condition": null,
+                                            "Modification": "Multiply",
+                                            // 10-30% increase on price of your beverage when smoking it
+                                            "RandomAmount": [
+                                                1.10,
+                                                1.15,
+                                                1.20,
+                                                1.25,
+                                                1.30
+                                            ]
+                                        }
+                                    ],
+                                    "PriceModifierMode": "Stack",
+                                    "Condition": null,
+                                    "Id": "DROP_IN",
+                                    "ItemId": "DROP_IN_ID",
+                                    "RandomItemId": null,
+                                    "MaxItems": null,
+                                    "MinStack": 1,
+                                    "MaxStack": 1,
+                                    "Quality": -1,
+                                    "ObjectInternalName": "Smoked {0}",
+                                    "ObjectDisplayName": "Smoked %EXTRA_PRESERVED_DISPLAY_NAME_1 Whiskey",
+                                    "ObjectColor": null,
+                                    "ToolUpgradeLevel": -1,
+                                    "IsRecipe": false,
+                                    "StackModifiers": [
+                                        {
+                                            "Id": "RareDouble",
+                                            "Condition": "RANDOM .10",
+                                            "Modification": "Multiply",
+                                            "Amount": 2.0
+                                        }
+                                    ],
+                                    "StackModifierMode": "Stack",
+                                    "QualityModifiers": null,
+                                    "QualityModifierMode": "Stack",
+                                    "ModData": {
+                                        "selph.ExtraMachineConfig.ExtraContextTags": "smoked_item",
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.1": "INPUT_EXTRA_ID_1"
+                                    },
+                                    "PerItemCondition": null
+                                }
+                            ],
+                            "DaysUntilReady": 2,
+                            "InvalidCountMessage": null,
+                            "RecalculateOnCollect": false
+                        },
+                        // Smoking Infused Sake
+                        {
+                            "Id": "InfusedSakeTrigger",
+                            "Triggers": [
+                                {
+                                    "Id": "InfusedSakePlacedInMachine",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O){{ModId}}_InfusedSake",
+                                    "RequiredTags": [
+                                        "!smoked_item"
+                                    ],
+                                    "RequiredCount": 1,
+                                    "Condition": null
+                                },
+                            ],
+                            "UseFirstValidOutput": false,
+                            "OutputItem": [
+                                {
+                                    "CustomData": {
+                                        "selph.ExtraMachineConfig.InheritPreserveId": "true",
+                                    },
+                                    "OutputMethod": null,
+                                    "CopyColor": true,
+                                    "CopyPrice": false,
+                                    "CopyQuality": "{{CopyQualityEnabled}}",
+                                    "PreserveType": null,
+                                    "PreserveId": "DROP_IN_PRESERVE",
+                                    "IncrementMachineParentSheetIndex": 0,
+                                    "PriceModifiers": [
+                                        {
+                                            "Id": "InfusedSakePriceModification",
+                                            "Condition": null,
+                                            "Modification": "Multiply",
+                                            // 10-30% increase on price of your beverage when smoking it
+                                            "RandomAmount": [
+                                                1.10,
+                                                1.15,
+                                                1.20,
+                                                1.25,
+                                                1.30
+                                            ]
+                                        }
+                                    ],
+                                    "PriceModifierMode": "Stack",
+                                    "Condition": null,
+                                    "Id": "DROP_IN",
+                                    "ItemId": "DROP_IN_ID",
+                                    "RandomItemId": null,
+                                    "MaxItems": null,
+                                    "MinStack": 1,
+                                    "MaxStack": 1,
+                                    "Quality": -1,
+                                    "ObjectInternalName": "Smoked {0}",
+                                    "ObjectDisplayName": "Smoked %EXTRA_PRESERVED_DISPLAY_NAME_1 Whiskey",
+                                    "ObjectColor": null,
+                                    "ToolUpgradeLevel": -1,
+                                    "IsRecipe": false,
+                                    "StackModifiers": [
+                                        {
+                                            "Id": "RareDouble",
+                                            "Condition": "RANDOM .10",
+                                            "Modification": "Multiply",
+                                            "Amount": 2.0
+                                        }
+                                    ],
+                                    "StackModifierMode": "Stack",
+                                    "QualityModifiers": null,
+                                    "QualityModifierMode": "Stack",
+                                    "ModData": {
+                                        "selph.ExtraMachineConfig.ExtraContextTags": "smoked_item",
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.1": "INPUT_EXTRA_ID_1"
+                                    },
+                                    "PerItemCondition": null
+                                }
+                            ],
+                            "DaysUntilReady": 2,
+                            "InvalidCountMessage": null,
+                            "RecalculateOnCollect": false
+                        },
+                        // Smoking Infused Bourbon
+                        {
+                            "Id": "InfusedBourbonTrigger",
+                            "Triggers": [
+                                {
+                                    "Id": "InfusedBourbonPlacedInMachine",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O){{ModId}}_InfusedBourbon",
+                                    "RequiredTags": [
+                                        "!smoked_item"
+                                    ],
+                                    "RequiredCount": 1,
+                                    "Condition": null
+                                },
+                            ],
+                            "UseFirstValidOutput": false,
+                            "OutputItem": [
+                                {
+                                    "CustomData": {
+                                        "selph.ExtraMachineConfig.InheritPreserveId": "true",
+                                    },
+                                    "OutputMethod": null,
+                                    "CopyColor": true,
+                                    "CopyPrice": false,
+                                    "CopyQuality": "{{CopyQualityEnabled}}",
+                                    "PreserveType": null,
+                                    "PreserveId": "DROP_IN_PRESERVE",
+                                    "IncrementMachineParentSheetIndex": 0,
+                                    "PriceModifiers": [
+                                        {
+                                            "Id": "InfusedBourbonPriceModification",
+                                            "Condition": null,
+                                            "Modification": "Multiply",
+                                            // 10-30% increase on price of your beverage when smoking it
+                                            "RandomAmount": [
+                                                1.10,
+                                                1.15,
+                                                1.20,
+                                                1.25,
+                                                1.30
+                                            ]
+                                        }
+                                    ],
+                                    "PriceModifierMode": "Stack",
+                                    "Condition": null,
+                                    "Id": "DROP_IN",
+                                    "ItemId": "DROP_IN_ID",
+                                    "RandomItemId": null,
+                                    "MaxItems": null,
+                                    "MinStack": 1,
+                                    "MaxStack": 1,
+                                    "Quality": -1,
+                                    "ObjectInternalName": "Smoked {0}",
+                                    "ObjectDisplayName": "Smoked %EXTRA_PRESERVED_DISPLAY_NAME_1 Whiskey",
+                                    "ObjectColor": null,
+                                    "ToolUpgradeLevel": -1,
+                                    "IsRecipe": false,
+                                    "StackModifiers": [
+                                        {
+                                            "Id": "RareDouble",
+                                            "Condition": "RANDOM .10",
+                                            "Modification": "Multiply",
+                                            "Amount": 2.0
+                                        }
+                                    ],
+                                    "StackModifierMode": "Stack",
+                                    "QualityModifiers": null,
+                                    "QualityModifierMode": "Stack",
+                                    "ModData": {
+                                        "selph.ExtraMachineConfig.ExtraContextTags": "smoked_item",
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.1": "INPUT_EXTRA_ID_1"
+                                    },
+                                    "PerItemCondition": null
+                                }
+                            ],
+                            "DaysUntilReady": 2,
+                            "InvalidCountMessage": null,
+                            "RecalculateOnCollect": false
+                        },
                     ],
                     "AdditionalConsumedItems": [
                         {
@@ -630,6 +1663,569 @@
                 },
             },
             "LogName": "Custom Machine Definitions"
+        },
+        //
+        //  MPS Mead Keg Data
+        //
+        {
+            "When": {
+                "HasMod": "nachonline.mps",
+            },
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "Entries": {
+                // Mead Keg
+                "(BC)bh.MeadKegGold": {
+                    "HasInput": false,
+                    "HasOutput": false,
+                    "InteractMethod": null,
+                    "OutputRules": [
+                        {
+                            "Id": "Default_Honey",
+                            "Triggers": [
+                                {
+                                    "Id": "ItemPlacedInMachine",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O)340",
+                                    "RequiredTags": null,
+                                    "RequiredCount": 12,
+                                    "Condition": null
+                                }
+                            ],
+                            "UseFirstValidOutput": false,
+                            "OutputItem": [
+                                {
+                                    "CustomData": null,
+                                    "OutputMethod": null,
+                                    "CopyColor": false,
+                                    "CopyPrice": false,
+                                    "CopyQuality": "{{CopyQualityEnabled}}",
+                                    "PreserveType": null,
+                                    "PreserveId": "DROP_IN_PRESERVE",
+                                    "IncrementMachineParentSheetIndex": 0,
+                                    "PriceModifiers": null,
+                                    "PriceModifierMode": "Stack",
+                                    // 5% Chance to Quadrouple Mead
+                                    "StackModifiers": [
+                                        {
+                                            "Id": "RareDouble",
+                                            "Condition": "RANDOM .05",
+                                            "Modification": "Multiply",
+                                            "Amount": 2.0
+                                        }
+                                    ],
+                                    "Condition": null,
+                                    "Id": "(O)bonghits.Cp_BearHoneyMead",
+                                    "ItemId": "(O)bonghits.Cp_BearHoneyMead",
+                                    "RandomItemId": null,
+                                    "MaxItems": null,
+                                    "MinStack": 1,
+                                    "MaxStack": 1,
+                                    "Quality": -1,
+                                    "ObjectInternalName": "DROP_IN_ID DROP_IN_ID_1 PRESERVE_ID_1 PRESERVE_ID_2 Honey Mead",
+                                    "ObjectDisplayName": "[LocalizedText Strings/Objects:bonghits.mead_name %PRESERVED_DISPLAY_NAME]",
+                                    "ToolUpgradeLevel": -1,
+                                    "IsRecipe": false,
+                                    "StackModifierMode": "Stack",
+                                    "QualityModifiers": null,
+                                    "QualityModifierMode": "Stack",
+                                    "ModData": {
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.1": "DROP_IN_PRESERVE_1",
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.2": "DROP_IN",
+                                    },
+                                    "PerItemCondition": null
+                                }
+                            ],
+                            "MinutesUntilReady": 600, // 10 Hours
+                            "DaysUntilReady": -1,
+                            "InvalidCountMessage": "Requires 12 Honey",
+                            "RecalculateOnCollect": false
+                        }
+                    ],
+                    "AdditionalConsumedItems": null,
+                    "PreventTimePass": null,
+                    "ReadyTimeModifiers": null,
+                    "ReadyTimeModifierMode": "Stack",
+                    "InvalidItemMessage": null,
+                    "InvalidItemMessageCondition": null,
+                    "InvalidCountMessage": "{{i18n: message.invalidCount}}",
+                    "LoadEffects": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "Sounds": [
+                                {
+                                    "Id": "Ship",
+                                    "Delay": 0
+                                },
+                                {
+                                    "Id": "bubbles",
+                                    "Delay": 0
+                                }
+                            ]
+                        }
+                    ],
+                    "WorkingEffectChance": 0.33,
+                    "AllowLoadWhenFull": false,
+                    "WobbleWhileWorking": true,
+                    "LightWhileWorking": null,
+                    "ShowNextIndexWhileWorking": false,
+                    "ShowNextIndexWhenReady": false,
+                    "AllowFairyDust": true,
+                    "IsIncubator": false,
+                    "ClearContentsOvernightCondition": null,
+                    "StatsToIncrementWhenLoaded": null,
+                    "StatsToIncrementWhenHarvested": [
+                        {
+                            "RequiredItemId": null,
+                            "RequiredTags": null,
+                            "StatName": "BeveragesMade"
+                        }
+                    ],
+                    "ExperienceGainOnHarvest": null,
+                    "CustomFields": null
+                },
+                "(BC)bh.MeadKegDiamond": {
+                    "HasInput": false,
+                    "HasOutput": false,
+                    "InteractMethod": null,
+                    "OutputRules": [
+                        {
+                            "Id": "Default_Honey",
+                            "Triggers": [
+                                {
+                                    "Id": "ItemPlacedInMachine",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O)340",
+                                    "RequiredTags": null,
+                                    "RequiredCount": 12,
+                                    "Condition": null
+                                }
+                            ],
+                            "UseFirstValidOutput": false,
+                            "OutputItem": [
+                                {
+                                    "CustomData": null,
+                                    "OutputMethod": null,
+                                    "CopyColor": false,
+                                    "CopyPrice": false,
+                                    "CopyQuality": "{{CopyQualityEnabled}}",
+                                    "PreserveType": null,
+                                    "PreserveId": "DROP_IN_PRESERVE",
+                                    "IncrementMachineParentSheetIndex": 0,
+                                    "PriceModifiers": null,
+                                    "PriceModifierMode": "Stack",
+                                    // 5% Chance to Quadrouple Mead
+                                    "StackModifiers": [
+                                        {
+                                            "Id": "RareDouble",
+                                            "Condition": "RANDOM .05",
+                                            "Modification": "Multiply",
+                                            "Amount": 2.0
+                                        }
+                                    ],
+                                    "Condition": null,
+                                    "Id": "(O)bonghits.Cp_BearHoneyMead",
+                                    "ItemId": "(O)bonghits.Cp_BearHoneyMead",
+                                    "RandomItemId": null,
+                                    "MaxItems": null,
+                                    "MinStack": 1,
+                                    "MaxStack": 1,
+                                    "Quality": -1,
+                                    "ObjectInternalName": "DROP_IN_ID DROP_IN_ID_1 PRESERVE_ID_1 PRESERVE_ID_2 Honey Mead",
+                                    "ObjectDisplayName": "[LocalizedText Strings/Objects:bonghits.mead_name %PRESERVED_DISPLAY_NAME]",
+                                    "ToolUpgradeLevel": -1,
+                                    "IsRecipe": false,
+                                    "StackModifierMode": "Stack",
+                                    "QualityModifiers": null,
+                                    "QualityModifierMode": "Stack",
+                                    "ModData": {
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.1": "DROP_IN_PRESERVE_1",
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.2": "DROP_IN",
+                                    },
+                                    "PerItemCondition": null
+                                }
+                            ],
+                            "MinutesUntilReady": 600, // 10 Hours
+                            "DaysUntilReady": -1,
+                            "InvalidCountMessage": "Requires 12 Honey",
+                            "RecalculateOnCollect": false
+                        }
+                    ],
+                    "AdditionalConsumedItems": null,
+                    "PreventTimePass": null,
+                    "ReadyTimeModifiers": null,
+                    "ReadyTimeModifierMode": "Stack",
+                    "InvalidItemMessage": null,
+                    "InvalidItemMessageCondition": null,
+                    "InvalidCountMessage": "{{i18n: message.invalidCount}}",
+                    "LoadEffects": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "Sounds": [
+                                {
+                                    "Id": "Ship",
+                                    "Delay": 0
+                                },
+                                {
+                                    "Id": "bubbles",
+                                    "Delay": 0
+                                }
+                            ]
+                        }
+                    ],
+                    "WorkingEffectChance": 0.33,
+                    "AllowLoadWhenFull": false,
+                    "WobbleWhileWorking": true,
+                    "LightWhileWorking": null,
+                    "ShowNextIndexWhileWorking": false,
+                    "ShowNextIndexWhenReady": false,
+                    "AllowFairyDust": true,
+                    "IsIncubator": false,
+                    "ClearContentsOvernightCondition": null,
+                    "StatsToIncrementWhenLoaded": null,
+                    "StatsToIncrementWhenHarvested": [
+                        {
+                            "RequiredItemId": null,
+                            "RequiredTags": null,
+                            "StatName": "BeveragesMade"
+                        }
+                    ],
+                    "ExperienceGainOnHarvest": null,
+                    "CustomFields": null
+                },
+                "(BC)bh.MeadKegIridium": {
+                    "HasInput": false,
+                    "HasOutput": false,
+                    "InteractMethod": null,
+                    "OutputRules": [
+                        {
+                            "Id": "Default_Honey",
+                            "Triggers": [
+                                {
+                                    "Id": "ItemPlacedInMachine",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O)340",
+                                    "RequiredTags": null,
+                                    "RequiredCount": 12,
+                                    "Condition": null
+                                }
+                            ],
+                            "UseFirstValidOutput": false,
+                            "OutputItem": [
+                                {
+                                    "CustomData": null,
+                                    "OutputMethod": null,
+                                    "CopyColor": false,
+                                    "CopyPrice": false,
+                                    "CopyQuality": "{{CopyQualityEnabled}}",
+                                    "PreserveType": null,
+                                    "PreserveId": "DROP_IN_PRESERVE",
+                                    "IncrementMachineParentSheetIndex": 0,
+                                    "PriceModifiers": null,
+                                    "PriceModifierMode": "Stack",
+                                    // 5% Chance to Quadrouple Mead
+                                    "StackModifiers": [
+                                        {
+                                            "Id": "RareDouble",
+                                            "Condition": "RANDOM .05",
+                                            "Modification": "Multiply",
+                                            "Amount": 2.0
+                                        }
+                                    ],
+                                    "Condition": null,
+                                    "Id": "(O)bonghits.Cp_BearHoneyMead",
+                                    "ItemId": "(O)bonghits.Cp_BearHoneyMead",
+                                    "RandomItemId": null,
+                                    "MaxItems": null,
+                                    "MinStack": 1,
+                                    "MaxStack": 1,
+                                    "Quality": -1,
+                                    "ObjectInternalName": "DROP_IN_ID DROP_IN_ID_1 PRESERVE_ID_1 PRESERVE_ID_2 Honey Mead",
+                                    "ObjectDisplayName": "[LocalizedText Strings/Objects:bonghits.mead_name %PRESERVED_DISPLAY_NAME]",
+                                    "ToolUpgradeLevel": -1,
+                                    "IsRecipe": false,
+                                    "StackModifierMode": "Stack",
+                                    "QualityModifiers": null,
+                                    "QualityModifierMode": "Stack",
+                                    "ModData": {
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.1": "DROP_IN_PRESERVE_1",
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.2": "DROP_IN",
+                                    },
+                                    "PerItemCondition": null
+                                }
+                            ],
+                            "MinutesUntilReady": 600, // 10 Hours
+                            "DaysUntilReady": -1,
+                            "InvalidCountMessage": "Requires 12 Honey",
+                            "RecalculateOnCollect": false
+                        }
+                    ],
+                    "AdditionalConsumedItems": null,
+                    "PreventTimePass": null,
+                    "ReadyTimeModifiers": null,
+                    "ReadyTimeModifierMode": "Stack",
+                    "InvalidItemMessage": null,
+                    "InvalidItemMessageCondition": null,
+                    "InvalidCountMessage": "{{i18n: message.invalidCount}}",
+                    "LoadEffects": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "Sounds": [
+                                {
+                                    "Id": "Ship",
+                                    "Delay": 0
+                                },
+                                {
+                                    "Id": "bubbles",
+                                    "Delay": 0
+                                }
+                            ]
+                        }
+                    ],
+                    "WorkingEffectChance": 0.33,
+                    "AllowLoadWhenFull": false,
+                    "WobbleWhileWorking": true,
+                    "LightWhileWorking": null,
+                    "ShowNextIndexWhileWorking": false,
+                    "ShowNextIndexWhenReady": false,
+                    "AllowFairyDust": true,
+                    "IsIncubator": false,
+                    "ClearContentsOvernightCondition": null,
+                    "StatsToIncrementWhenLoaded": null,
+                    "StatsToIncrementWhenHarvested": [
+                        {
+                            "RequiredItemId": null,
+                            "RequiredTags": null,
+                            "StatName": "BeveragesMade"
+                        }
+                    ],
+                    "ExperienceGainOnHarvest": null,
+                    "CustomFields": null
+                },
+                "(BC)bh.MeadKegRadioactive": {
+                    "HasInput": false,
+                    "HasOutput": false,
+                    "InteractMethod": null,
+                    "OutputRules": [
+                        {
+                            "Id": "Default_Honey",
+                            "Triggers": [
+                                {
+                                    "Id": "ItemPlacedInMachine",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O)340",
+                                    "RequiredTags": null,
+                                    "RequiredCount": 12,
+                                    "Condition": null
+                                }
+                            ],
+                            "UseFirstValidOutput": false,
+                            "OutputItem": [
+                                {
+                                    "CustomData": null,
+                                    "OutputMethod": null,
+                                    "CopyColor": false,
+                                    "CopyPrice": false,
+                                    "CopyQuality": "{{CopyQualityEnabled}}",
+                                    "PreserveType": null,
+                                    "PreserveId": "DROP_IN_PRESERVE",
+                                    "IncrementMachineParentSheetIndex": 0,
+                                    "PriceModifiers": null,
+                                    "PriceModifierMode": "Stack",
+                                    // 5% Chance to Quadrouple Mead
+                                    "StackModifiers": [
+                                        {
+                                            "Id": "RareDouble",
+                                            "Condition": "RANDOM .05",
+                                            "Modification": "Multiply",
+                                            "Amount": 2.0
+                                        }
+                                    ],
+                                    "Condition": null,
+                                    "Id": "(O)bonghits.Cp_BearHoneyMead",
+                                    "ItemId": "(O)bonghits.Cp_BearHoneyMead",
+                                    "RandomItemId": null,
+                                    "MaxItems": null,
+                                    "MinStack": 1,
+                                    "MaxStack": 1,
+                                    "Quality": -1,
+                                    "ObjectInternalName": "DROP_IN_ID DROP_IN_ID_1 PRESERVE_ID_1 PRESERVE_ID_2 Honey Mead",
+                                    "ObjectDisplayName": "[LocalizedText Strings/Objects:bonghits.mead_name %PRESERVED_DISPLAY_NAME]",
+                                    "ToolUpgradeLevel": -1,
+                                    "IsRecipe": false,
+                                    "StackModifierMode": "Stack",
+                                    "QualityModifiers": null,
+                                    "QualityModifierMode": "Stack",
+                                    "ModData": {
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.1": "DROP_IN_PRESERVE_1",
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.2": "DROP_IN",
+                                    },
+                                    "PerItemCondition": null
+                                }
+                            ],
+                            "MinutesUntilReady": 600, // 10 Hours
+                            "DaysUntilReady": -1,
+                            "InvalidCountMessage": "Requires 12 Honey",
+                            "RecalculateOnCollect": false
+                        }
+                    ],
+                    "AdditionalConsumedItems": null,
+                    "PreventTimePass": null,
+                    "ReadyTimeModifiers": null,
+                    "ReadyTimeModifierMode": "Stack",
+                    "InvalidItemMessage": null,
+                    "InvalidItemMessageCondition": null,
+                    "InvalidCountMessage": "{{i18n: message.invalidCount}}",
+                    "LoadEffects": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "Sounds": [
+                                {
+                                    "Id": "Ship",
+                                    "Delay": 0
+                                },
+                                {
+                                    "Id": "bubbles",
+                                    "Delay": 0
+                                }
+                            ]
+                        }
+                    ],
+                    "WorkingEffectChance": 0.33,
+                    "AllowLoadWhenFull": false,
+                    "WobbleWhileWorking": true,
+                    "LightWhileWorking": null,
+                    "ShowNextIndexWhileWorking": false,
+                    "ShowNextIndexWhenReady": false,
+                    "AllowFairyDust": true,
+                    "IsIncubator": false,
+                    "ClearContentsOvernightCondition": null,
+                    "StatsToIncrementWhenLoaded": null,
+                    "StatsToIncrementWhenHarvested": [
+                        {
+                            "RequiredItemId": null,
+                            "RequiredTags": null,
+                            "StatName": "BeveragesMade"
+                        }
+                    ],
+                    "ExperienceGainOnHarvest": null,
+                    "CustomFields": null
+                },
+                "(BC)bh.MeadKegPrismatic": {
+                    "HasInput": false,
+                    "HasOutput": false,
+                    "InteractMethod": null,
+                    "OutputRules": [
+                        {
+                            "Id": "Default_Honey",
+                            "Triggers": [
+                                {
+                                    "Id": "ItemPlacedInMachine",
+                                    "Trigger": "ItemPlacedInMachine",
+                                    "RequiredItemId": "(O)340",
+                                    "RequiredTags": null,
+                                    "RequiredCount": 12,
+                                    "Condition": null
+                                }
+                            ],
+                            "UseFirstValidOutput": false,
+                            "OutputItem": [
+                                {
+                                    "CustomData": null,
+                                    "OutputMethod": null,
+                                    "CopyColor": false,
+                                    "CopyPrice": false,
+                                    "CopyQuality": "{{CopyQualityEnabled}}",
+                                    "PreserveType": null,
+                                    "PreserveId": "DROP_IN_PRESERVE",
+                                    "IncrementMachineParentSheetIndex": 0,
+                                    "PriceModifiers": null,
+                                    "PriceModifierMode": "Stack",
+                                    // 5% Chance to Quadrouple Mead
+                                    "StackModifiers": [
+                                        {
+                                            "Id": "RareDouble",
+                                            "Condition": "RANDOM .05",
+                                            "Modification": "Multiply",
+                                            "Amount": 2.0
+                                        }
+                                    ],
+                                    "Condition": null,
+                                    "Id": "(O)bonghits.Cp_BearHoneyMead",
+                                    "ItemId": "(O)bonghits.Cp_BearHoneyMead",
+                                    "RandomItemId": null,
+                                    "MaxItems": null,
+                                    "MinStack": 1,
+                                    "MaxStack": 1,
+                                    "Quality": -1,
+                                    "ObjectInternalName": "DROP_IN_ID DROP_IN_ID_1 PRESERVE_ID_1 PRESERVE_ID_2 Honey Mead",
+                                    "ObjectDisplayName": "[LocalizedText Strings/Objects:bonghits.mead_name %PRESERVED_DISPLAY_NAME]",
+                                    "ToolUpgradeLevel": -1,
+                                    "IsRecipe": false,
+                                    "StackModifierMode": "Stack",
+                                    "QualityModifiers": null,
+                                    "QualityModifierMode": "Stack",
+                                    "ModData": {
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.1": "DROP_IN_PRESERVE_1",
+                                        "selph.ExtraMachineConfig.ExtraPreserveId.2": "DROP_IN",
+                                    },
+                                    "PerItemCondition": null
+                                }
+                            ],
+                            "MinutesUntilReady": 600, // 10 Hours
+                            "DaysUntilReady": -1,
+                            "InvalidCountMessage": "Requires 12 Honey",
+                            "RecalculateOnCollect": false
+                        }
+                    ],
+                    "AdditionalConsumedItems": null,
+                    "PreventTimePass": null,
+                    "ReadyTimeModifiers": null,
+                    "ReadyTimeModifierMode": "Stack",
+                    "InvalidItemMessage": null,
+                    "InvalidItemMessageCondition": null,
+                    "InvalidCountMessage": "{{i18n: message.invalidCount}}",
+                    "LoadEffects": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "Sounds": [
+                                {
+                                    "Id": "Ship",
+                                    "Delay": 0
+                                },
+                                {
+                                    "Id": "bubbles",
+                                    "Delay": 0
+                                }
+                            ]
+                        }
+                    ],
+                    "WorkingEffectChance": 0.33,
+                    "AllowLoadWhenFull": false,
+                    "WobbleWhileWorking": true,
+                    "LightWhileWorking": null,
+                    "ShowNextIndexWhileWorking": false,
+                    "ShowNextIndexWhenReady": false,
+                    "AllowFairyDust": true,
+                    "IsIncubator": false,
+                    "ClearContentsOvernightCondition": null,
+                    "StatsToIncrementWhenLoaded": null,
+                    "StatsToIncrementWhenHarvested": [
+                        {
+                            "RequiredItemId": null,
+                            "RequiredTags": null,
+                            "StatName": "BeveragesMade"
+                        }
+                    ],
+                    "ExperienceGainOnHarvest": null,
+                    "CustomFields": null
+                },
+            },
         }
     ]
 }

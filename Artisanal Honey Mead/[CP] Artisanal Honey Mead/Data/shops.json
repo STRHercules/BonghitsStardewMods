@@ -32,19 +32,19 @@
                     ],
                     "Items": [
                         {
-                            "ItemId": "bonghits.Cp_BearHoneyMead",
+                            "ItemId": "(O)bonghits.Cp_BearHoneyMead",
                             // When the player ships their first honey mead, start selling it
                             "Condition": "PLAYER_SHIPPED_BASIC_ITEM any bonghits.Cp_BearHoneyMead 1",
                             "Price": 975
                         },
                         {
-                            "ItemId": "bonghits.Cp_HealingMead",
+                            "ItemId": "(O)bonghits.Cp_HealingMead",
                             // Sells after player reaches mines level 10
                             "Condition": "MINE_LOWEST_LEVEL_REACHED 10",
                             "Price": 250
                         },
                         {
-                            "ItemId": "bonghits.Cp_SpecialtyHoneyMead",
+                            "ItemId": "(O)bonghits.Cp_SpecialtyHoneyMead",
                             // Only sell on Fridays (Special!)
                             "Condition": "DAY_OF_WEEK Fri",
                             "Price": 500
@@ -111,11 +111,185 @@
                             "Price": 25000
                         },
                         {
+                            "ItemId": "(BC){{ModId}}_SpiritInfuser",
+                            "Condition": "ANY \"PLAYER_SHIPPED_BASIC_ITEM Any {{ModId}}_Whiskey 1\" \"PLAYER_SHIPPED_BASIC_ITEM Any {{ModId}}_Rum 1\" \"PLAYER_SHIPPED_BASIC_ITEM Any {{ModId}}_Vodka 1\"",
+                            "IsRecipe": true,
+                            "Price": 27500
+                        },
+                        {
+                            "ItemId": "(BC){{ModId}}_Distillery",
+                            "Condition": "ANY \"PLAYER_SHIPPED_BASIC_ITEM Any (O)262 1\" \"PLAYER_SHIPPED_BASIC_ITEM Any (O)245 1\" \"PLAYER_SHIPPED_BASIC_ITEM Any (O)192 1\"",
+                            "IsRecipe": true,
+                            "Price": 13750
+                        },
+                        {
                             // When the player ships their first aged honey mead, start selling it
                             "Condition": "PLAYER_SHIPPED_BASIC_ITEM any bonghits.Cp_AgedBearHoneyMead 1",
                             "ItemId": "(BC){{ModId}}_BarrelSmoker",
                             "IsRecipe": true,
                             "Price": 25000
+                        },
+                        {
+                            "When": {
+                                "HasMod|contains=FlashShifter.StardewValleyExpandedCP": true
+                            },
+                            "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Bearberrys",
+                            "Condition": "SEASON winter",
+                            "IsRecipe": false
+                        },
+                        {
+                            "When": {
+                                "HasMod|contains=FlashShifter.StardewValleyExpandedCP": true
+                            },
+                            "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Red_Baneberry",
+                            "Condition": "SEASON summer",
+                            "IsRecipe": false
+                        },
+                        {
+                            "When": {
+                                "HasMod|contains=FlashShifter.StardewValleyExpandedCP": true
+                            },
+                            "Condition": "SEASON spring",
+                            "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Pear",
+                            "IsRecipe": false
+                        },
+                        {
+                            "When": {
+                                "HasMod|contains=FlashShifter.StardewValleyExpandedCP": true
+                            },
+                            "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Nectarine",
+                            "Condition": "SEASON summer",
+                            "IsRecipe": false
+                        },
+                        {
+                            "When": {
+                                "HasMod|contains=FlashShifter.StardewValleyExpandedCP": true
+                            },
+                            "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Persimmon",
+                            "Condition": "SEASON fall",
+                            "IsRecipe": false
+                        },
+                        {
+                            "When": {
+                                "HasMod|contains=Cornucopia.MoreCrops": true
+                            },
+                            "ItemId": "(O)Cornucopia_Kiwi",
+                            "Condition": "SEASON summer",
+                            "IsRecipe": false
+                        },
+                        {
+                            "When": {
+                                "HasMod|contains=FlashShifter.StardewValleyExpandedCP": false,
+                                "HasMod|contains=Cornucopia.MoreCrops": true
+                            },
+                            "ItemId": "(O)Cornucopia_Nectarine",
+                            "Condition": "SEASON summer",
+                            "IsRecipe": false
+                        },
+                        {
+                            "When": {
+                                "HasMod|contains=Cornucopia.MoreCrops": true
+                            },
+                            "ItemId": "(O)Cornucopia_Raspberry",
+                            "Condition": "SEASON summer",
+                            "IsRecipe": false
+                        },
+                        {
+                            "When": {
+                                "HasMod|contains=Cornucopia.MoreCrops": true
+                            },
+                            "ItemId": "(O)Cornucopia_Watermelon",
+                            "Condition": "SEASON summer",
+                            "IsRecipe": false
+                        },
+                        {
+                            "When": {
+                                "HasMod|contains=Cornucopia.MoreCrops": true
+                            },
+                            "ItemId": "(O)Cornucopia_Honeydew",
+                            "Condition": "SEASON summer",
+                            "IsRecipe": false
+                        },
+                        {
+                            "When": {
+                                "HasMod|contains=Cornucopia.MoreCrops": true
+                            },
+                            "ItemId": "(O)Cornucopia_WhiteGrape",
+                            "Condition": "SEASON fall",
+                            "IsRecipe": false
+                        },
+                        {
+                            "When": {
+                                "HasMod|contains=Cornucopia.MoreCrops": true
+                            },
+                            "ItemId": "(O)Cornucopia_Grapefruit",
+                            "Condition": "SEASON fall",
+                            "IsRecipe": false
+                        },
+                        {
+                            "When": {
+                                "HasMod|contains=Cornucopia.MoreCrops": true
+                            },
+                            "ItemId": "(O)Cornucopia_Habanero",
+                            "Condition": "SEASON fall",
+                            "IsRecipe": false
+                        },
+                        {
+                            "When": {
+                                "HasMod|contains=FlashShifter.StardewValleyExpandedCP": false,
+                                "HasMod|contains=Cornucopia.MoreCrops": true
+                            },
+                            "ItemId": "(O)Cornucopia_Pear",
+                            "Condition": "SEASON winter",
+                            "IsRecipe": false
+                        },
+                        {
+                            "When": {
+                                "HasMod|contains=Cornucopia.MoreCrops": true
+                            },
+                            "ItemId": "(O)Cornucopia_JuniperBerries",
+                            "Condition": "SEASON winter",
+                            "IsRecipe": false
+                        },
+                        {
+                            "When": {
+                                "HasMod|contains=Cornucopia.MoreCrops": true
+                            },
+                            "ItemId": "(O)Cornucopia_Elderberries",
+                            "Condition": "SEASON winter",
+                            "IsRecipe": false
+                        },
+                        {
+                            "When": {
+                                "HasMod|contains=Cornucopia.MoreCrops": true
+                            },
+                            "ItemId": "(O)Cornucopia_Lemon",
+                            "Condition": "SEASON spring",
+                            "IsRecipe": false
+                        },
+                        {
+                            "When": {
+                                "HasMod|contains=Cornucopia.MoreCrops": true
+                            },
+                            "ItemId": "(O)Cornucopia_Lime",
+                            "Condition": "SEASON spring",
+                            "IsRecipe": false
+                        },
+                        {
+                            "When": {
+                                "HasMod|contains=Cornucopia.MoreCrops": true
+                            },
+                            "ItemId": "(O)Cornucopia_PassionFruit",
+                            "Condition": "SEASON spring",
+                            "IsRecipe": false
+                        },
+                        {
+                            "When": {
+                                "HasMod|contains=Cornucopia.MoreCrops": true
+                            },
+                            "ItemId": "(O)Cornucopia_Cantaloupe",
+                            "Condition": "SEASON spring",
+                            "IsRecipe": false
                         }
                     ],
                     "PriceModifiers": [
@@ -158,77 +332,126 @@
                         }
                     ],
                     "Items": [
-                        /*{
-                            "ItemId": "bonghits.Cp_BubbleBeer",
-                            "Condition": "DAY_OF_WEEK Wed,PLAYER_SHIPPED_BASIC_ITEM any bonghits.Cp_BearHoneyMead 1 1",
-                            "Price": 1000,
-                        },*/
                         {
-                            "ItemId": "{{ModId}}_Hazelnut",
+                            "When": {
+                                "Barley": true
+                            },
+                            "Condition": "SEASON spring",
+                            "Id": "{{ModId}}_Barley_Seeds",
+                            "ItemId": "{{ModId}}_Barley_Seeds",
+                            "Price": 5
+                        },
+                        {
+                            "When": {
+                                "Buckwheat": true
+                            },
+                            "Condition": "SEASON spring summer",
+                            "Id": "{{ModId}}_Buckwheat_Seeds",
+                            "ItemId": "{{ModId}}_Buckwheat_Seeds",
+                            "Price": 100
+                        },
+                        {
+                            "When": {
+                                "Millet": true
+                            },
+                            "Condition": "SEASON summer",
+                            "Id": "{{ModId}}_Millet_Seeds_Summer",
+                            "ItemId": "{{ModId}}_Millet_Seeds",
+                            "Price": 5
+                        },
+                        {
+                            "When": {
+                                "Oats": true
+                            },
+                            "Condition": "SEASON spring",
+                            "Id": "{{ModId}}_Oat_Seeds_Spring",
+                            "ItemId": "{{ModId}}_Oat_Seeds",
+                            "Price": 8
+                        },
+                        {
+                            "When": {
+                                "Rye": true
+                            },
+                            "Condition": "SEASON summer fall",
+                            "Id": "{{ModId}}_Rye_Seeds",
+                            "ItemId": "{{ModId}}_Rye_Seeds",
+                            "Price": 10
+                        },
+                        {
+                            "When": {
+                                "Sorghum": true
+                            },
+                            "Condition": "SEASON summer fall",
+                            "Id": "{{ModId}}_Sorghum_Seeds",
+                            "ItemId": "{{ModId}}_Sorghum_Seeds",
+                            "Price": 5
+                        },
+                        {
+                            "ItemId": "(O){{ModId}}_Hazelnut",
                             "Condition": "SEASON Spring",
                             "Price": 250
                         },
                         {
-                            "ItemId": "{{ModId}}_Pistachio",
+                            "ItemId": "(O){{ModId}}_Pistachio",
                             "Condition": "SEASON Summer",
                             "Price": 250
                         },
                         {
-                            "ItemId": "{{ModId}}_Almond",
+                            "ItemId": "(O){{ModId}}_Almond",
                             "Condition": "SEASON Fall",
                             "Price": 250
                         },
                         {
-                            "ItemId": "{{ModId}}_Macadamia",
+                            "ItemId": "(O){{ModId}}_Macadamia",
                             "Condition": "SEASON Winter",
                             "Price": 250
                         },
                         {
-                            "ItemId": "bonghits.Cp_BubbleHealth",
+                            "ItemId": "(O)bonghits.Cp_BubbleHealth",
                             // Sells after player reaches mines level 10
                             "Condition": "MINE_LOWEST_LEVEL_REACHED 10",
                             "Price": 250
                         },
                         {
-                            "ItemId": "bonghits.Cp_BubbleMead",
+                            "ItemId": "(O)bonghits.Cp_BubbleMead",
                             // Only sell on Fridays
                             "Condition": "DAY_OF_WEEK Fri",
                             "Price": 1000
                         },
                         {
-                            "ItemId": "bonghits.Cp_BubbleRoseBeer",
+                            "ItemId": "(O)bonghits.Cp_BubbleRoseBeer",
                             // Only sell on Fridays
                             "Condition": "DAY_OF_WEEK Sat",
                             "Price": 1000
                         },
                         {
-                            "ItemId": "bonghits.Cp_BubbleRoseMead",
+                            "ItemId": "(O)bonghits.Cp_BubbleRoseMead",
                             // Only sell on Fridays
                             "Condition": "DAY_OF_WEEK Sun",
                             "Price": 1000
                         },
                         {
-                            "ItemId": "bonghits.Cp_HealingBubbleMead",
+                            "ItemId": "(O)bonghits.Cp_HealingBubbleMead",
                             // Sells after player reaches mines level 20
                             "Condition": "MINE_LOWEST_LEVEL_REACHED 20",
                             "Price": 1000
                         },
                         {
-                            "ItemId": "bonghits.Cp_LovePotion",
+                            "ItemId": "(O)bonghits.Cp_LovePotion",
                             "Price": 250
                         },
                         {
-                            "ItemId": "bonghits.Cp_MoonPotion",
+                            "ItemId": "(O)bonghits.Cp_MoonPotion",
                             "Price": 250
                         },
                         {
-                            "ItemId": "bonghits.Cp_PinkBubble",
+                            "ItemId": "(O)bonghits.Cp_PinkBubble",
                             // When the player ships their first honey mead, start selling it
                             "Condition": "PLAYER_SHIPPED_BASIC_ITEM any bonghits.Cp_BearHoneyMead 1",
                             "Price": 250
                         },
                         {
-                            "ItemId": "bonghits.Cp_BubbleSingle",
+                            "ItemId": "(O)bonghits.Cp_BubbleSingle",
                             // When the player ships their first honey mead, start selling it
                             "Condition": "PLAYER_SHIPPED_BASIC_ITEM any bonghits.Cp_BearHoneyMead 1",
                             "Price": 250
@@ -236,7 +459,7 @@
                         {
                             // When the player ships their first aged honey mead, start selling empty bottles
                             "Condition": "PLAYER_SHIPPED_BASIC_ITEM any bonghits.Cp_AgedBearHoneyMead 1",
-                            "ItemId": "bonghits.Cp_EmptyGlass",
+                            "ItemId": "(O)bonghits.Cp_EmptyGlass",
                             "Price": 100
                         },
                         {
@@ -247,155 +470,6 @@
                             "Price": 25000
                         }
                     ]
-                }
-            }
-        },
-        //
-        //
-        //  Mod Compatability Shop Insertion
-        //
-        //
-        {
-            "When": {
-                "HasMod|contains=Cornucopia.MoreCrops": true
-            },
-            "Action": "EditData",
-            "Target": "Data/Shops",
-            "TargetField": [
-                "MeadShop",
-                "Items"
-            ],
-            "Entries": {
-                //
-                //  Summer Fruit
-                //
-                "Cornucopia_Kiwi": {
-                    "ItemId": "(O)Cornucopia_Kiwi",
-                    "Condition": "SEASON summer",
-                    "IsRecipe": false
-                },
-                "Cornucopia_Nectarine": {
-                    "When": {
-                        "HasMod|contains=FlashShifter.StardewValleyExpandedCP": false
-                    },
-                    "ItemId": "(O)Cornucopia_Nectarine",
-                    "Condition": "SEASON summer",
-                    "IsRecipe": false
-                },
-                "Cornucopia_Raspberry": {
-                    "ItemId": "(O)Cornucopia_Raspberry",
-                    "Condition": "SEASON summer",
-                    "IsRecipe": false
-                },
-                "Cornucopia_Watermelon": {
-                    "ItemId": "(O)Cornucopia_Watermelon",
-                    "Condition": "SEASON summer",
-                    "IsRecipe": false
-                },
-                "Cornucopia_Honeydew": {
-                    "ItemId": "(O)Cornucopia_Honeydew",
-                    "Condition": "SEASON summer",
-                    "IsRecipe": false
-                },
-                //
-                //  Fall Fruit
-                //
-                "Cornucopia_WhiteGrape": {
-                    "ItemId": "(O)Cornucopia_WhiteGrape",
-                    "Condition": "SEASON fall",
-                    "IsRecipe": false
-                },
-                "Cornucopia_Grapefruit": {
-                    "ItemId": "(O)Cornucopia_Grapefruit",
-                    "Condition": "SEASON fall",
-                    "IsRecipe": false
-                },
-                "Cornucopia_Habanero": {
-                    "ItemId": "(O)Cornucopia_Habanero",
-                    "Condition": "SEASON fall",
-                    "IsRecipe": false
-                },
-                //
-                //  Winter Fruit
-                //
-                "Cornucopia_Pear": {
-                    "When": {
-                        "HasMod|contains=FlashShifter.StardewValleyExpandedCP": false
-                    },
-                    "ItemId": "(O)Cornucopia_Pear",
-                    "Condition": "SEASON winter",
-                    "IsRecipe": false
-                },
-                "Cornucopia_JuniperBerries": {
-                    "ItemId": "(O)Cornucopia_JuniperBerries",
-                    "Condition": "SEASON winter",
-                    "IsRecipe": false
-                },
-                "Cornucopia_Elderberries": {
-                    "ItemId": "(O)Cornucopia_Elderberries",
-                    "Condition": "SEASON winter",
-                    "IsRecipe": false
-                },
-                //
-                //  Spring Fruit
-                //
-                "Cornucopia_Lemon": {
-                    "ItemId": "(O)Cornucopia_Lemon",
-                    "Condition": "SEASON spring",
-                    "IsRecipe": false
-                },
-                "Cornucopia_Lime": {
-                    "ItemId": "(O)Cornucopia_Lime",
-                    "Condition": "SEASON spring",
-                    "IsRecipe": false
-                },
-                "Cornucopia_PassionFruit": {
-                    "ItemId": "(O)Cornucopia_PassionFruit",
-                    "Condition": "SEASON spring",
-                    "IsRecipe": false
-                },
-                "Cornucopia_Cantaloupe": {
-                    "ItemId": "(O)Cornucopia_Cantaloupe",
-                    "Condition": "SEASON spring",
-                    "IsRecipe": false
-                }
-            }
-        },
-        {
-            "When": {
-                "HasMod|contains=FlashShifter.StardewValleyExpandedCP": true
-            },
-            "Action": "EditData",
-            "Target": "Data/Shops",
-            "TargetField": [
-                "MeadShop",
-                "Items"
-            ],
-            "Entries": {
-                "FlashShifter.StardewValleyExpandedCP_Bearberrys": {
-                    "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Bearberrys",
-                    "Condition": "SEASON winter",
-                    "IsRecipe": false
-                },
-                "FlashShifter.StardewValleyExpandedCP_Red_Baneberry": {
-                    "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Red_Baneberry",
-                    "Condition": "SEASON summer",
-                    "IsRecipe": false
-                },
-                "FlashShifter.StardewValleyExpandedCP_Pear": {
-                    "Condition": "SEASON spring",
-                    "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Pear",
-                    "IsRecipe": false
-                },
-                "FlashShifter.StardewValleyExpandedCP_Nectarine": {
-                    "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Nectarine",
-                    "Condition": "SEASON summer",
-                    "IsRecipe": false
-                },
-                "FlashShifter.StardewValleyExpandedCP_Persimmon": {
-                    "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Persimmon",
-                    "Condition": "SEASON fall",
-                    "IsRecipe": false
                 }
             }
         }

@@ -10,21 +10,64 @@
         "EnableFTM": {
             "AllowValues": "true, false",
             "Default": "true",
-            "Description": "Toggle Farm Type Manager Forage spawns for the Meadery."
-        }
+            "Description": "Toggle Farm Type Manager Forage spawns for the Meadery.",
+            "Section": "Behavior"
+        },
+        "Barley Insertion": {
+            "Section": "Crops",
+            "AllowValues": "true, false",
+            "Default": "true",
+            "AllowBlank": false,
+            "AllowMultiple": false
+        },
+        "Buckwheat Insertion": {
+            "Section": "Crops",
+            "AllowValues": "true, false",
+            "Default": "true",
+            "AllowBlank": false,
+            "AllowMultiple": false
+        },
+        "Millet Insertion": {
+            "Section": "Crops",
+            "AllowValues": "true, false",
+            "Default": "true",
+            "AllowBlank": false,
+            "AllowMultiple": false
+        },
+        "Oats Insertion": {
+            "Section": "Crops",
+            "AllowValues": "true, false",
+            "Default": "true",
+            "AllowBlank": false,
+            "AllowMultiple": false
+        },
+        "Rye Insertion": {
+            "Section": "Crops",
+            "AllowValues": "true, false",
+            "Default": "true",
+            "AllowBlank": false,
+            "AllowMultiple": false
+        },
+        "Sorghum Insertion": {
+            "Section": "Crops",
+            "AllowValues": "true, false",
+            "Default": "true",
+            "AllowBlank": false,
+            "AllowMultiple": false
+        },
     },
     "DynamicTokens": [
         {
-			"Name": "EnableFTMToken",
-			"Value": "AddMail",
-		},
-		{
-			"Name": "EnableFTMToken",
-			"Value": "RemoveMail",
-			"When": {
-				"EnableFTM": "false"
-			}
-		},
+            "Name": "EnableFTMToken",
+            "Value": "AddMail",
+        },
+        {
+            "Name": "EnableFTMToken",
+            "Value": "RemoveMail",
+            "When": {
+                "EnableFTM": "false"
+            }
+        },
         {
             "Name": "CopyQualityEnabled",
             "Value": false
@@ -62,167 +105,17 @@
         }
     ],
     "Changes": [
-        //
-        //
         // Load Data Files
-        //
-        //
         {
             "LogName": "Load Data Files",
             "Action": "Include",
-            "FromFile": "Data/strings.json, Data/machines.json, Data/buffs.json, Data/mead.json, Data/cider.json, Data/operations.json, Data/food.json, Data/cooking.json"
+            "FromFile": "Maps/Data/meadshop.json, Data/mail.json, Data/cropdata.json, Data/gifttastes.json, Maps/Data/garbage.json, Data/shops.json, Data/characters.json, Data/tourists.json, Data/strings.json, Data/machines.json, Data/buffs.json, Data/mead.json, Data/cider.json, Data/operations.json, Data/food.json, Data/cooking.json, Data/distillery.json, Data/spirits.json, Data/infused_spirits.json, Data/infuser.json, Data/aging_vat.json"
         },
-        {
-            "LogName": "Load Map Data Files",
-            "Action": "Include",
-            "FromFile": "Maps/Data/meadshop.json, Data/mail.json, Data/gifttastes.json, Maps/Data/garbage.json, Data/shops.json, Data/characters.json"
-        },
-        //
-        //  Tourists
-        //
-        {
-            "LogName": "Load Tourist Data Files",
-            "Action": "Include",
-            "FromFile": "Data/tourists.json"
-        },
-        //
-        //
         //  Load Assets
-        //
-        //
         {
-            "Action": "Load",
-            "Target": "bonghits.BearHoneyMead/Objects",
-            "FromFile": "assets/bh_mead.png"
-        },
-        {
-            "Action": "Load",
-            "Target": "bonghits.BearHoneyMead/FoodStuffs",
-            "FromFile": "assets/foodstuffs.png"
-        },
-        {
-            "Action": "Load",
-            "Target": "bonghits.BearHoneyMead/Nuts",
-            "FromFile": "assets/nuts.png"
-        },
-        {
-            "Action": "Load",
-            "Target": "bonghits.BearHoneyMead/Buff",
-            "FromFile": "assets/BirthdayBuff.png"
-        },
-        {
-            "LogName": "Load Tilesheet",
-            "Action": "Load",
-            "Target": "Maps/bonghitsObjects",
-            "FromFile": "Maps/Data/bonghitsObjects.png",
-        },
-        {
-            "LogName": "Load Tilesheet 2",
-            "Action": "Load",
-            "Target": "Maps/machines",
-            "FromFile": "Maps/Data/machines.png",
-        },
-        {
-            "Action": "Load",
-            "Target": "bonghits.BearHoneyMead/Objects/Zachary/MeadHealth",
-            "FromFile": "assets/zachary/MeadHealth.png"
-        },
-        {
-            "Action": "Load",
-            "Target": "bonghits.BearHoneyMead/Objects/Zachary/MeadMug",
-            "FromFile": "assets/zachary/MeadMug.png"
-        },
-        {
-            "Action": "Load",
-            "Target": "Portraits/Zachary2",
-            "FromFile": "assets/zachary/zachary.png"
-        },
-        {
-            "LogName": "Zach Sprite",
-            "Action": "Load",
-            "Target": "Characters/Zachary2",
-            "FromFile": "assets/zachary/Zacharysprite.png"
-        },
-        {
-            "LogName": "Natalie Sprite",
-            "Action": "Load",
-            "Target": "Characters/Natalie",
-            "FromFile": "assets/natalie/Bubble_sprite.png"
-        },
-        {
-            "Action": "Load",
-            "Target": "bonghits.BearHoneyMead/Objects/Natalie/BubbleHealth",
-            "FromFile": "assets/natalie/BubbleHealth.png"
-        },
-        {
-            "Action": "Load",
-            "Target": "bonghits.BearHoneyMead/Objects/Natalie/BubbleMead",
-            "FromFile": "assets/natalie/BubbleMead.png"
-        },
-        {
-            "Action": "Load",
-            "Target": "Portraits/Natalie",
-            "FromFile": "assets/natalie/natalie.png"
-        },
-        {
-            "Action": "Load",
-            "Target": "bonghits.BearHoneyMead/Objects/Natalie/BubbleRoseBeer",
-            "FromFile": "assets/natalie/BubbleRoseBeer.png"
-        },
-        {
-            "Action": "Load",
-            "Target": "bonghits.BearHoneyMead/Objects/Natalie/BubbleRoseMead",
-            "FromFile": "assets/natalie/BubbleRoseMead.png"
-        },
-        {
-            "Action": "Load",
-            "Target": "bonghits.BearHoneyMead/Objects/Natalie/BubbleSingle",
-            "FromFile": "assets/natalie/BubbleSingle.png"
-        },
-        {
-            "Action": "Load",
-            "Target": "bonghits.BearHoneyMead/Objects/Natalie/HealthBubbleMead",
-            "FromFile": "assets/natalie/Healthbubblemead.png"
-        },
-        {
-            "Action": "Load",
-            "Target": "bonghits.BearHoneyMead/Objects/Natalie/LovePotion",
-            "FromFile": "assets/natalie/LovePotion.png"
-        },
-        {
-            "Action": "Load",
-            "Target": "bonghits.BearHoneyMead/Objects/Natalie/MoonPotion",
-            "FromFile": "assets/natalie/MoonPotion.png"
-        },
-        {
-            "Action": "Load",
-            "Target": "bonghits.BearHoneyMead/Objects/Natalie/PinkBubble",
-            "FromFile": "assets/natalie/PinkBubble.png"
-        },
-        {
-            "Action": "Load",
-            "Target": "bonghits.BearHoneyMead/Machines",
-            "FromFile": "assets/machines.png"
-        },
-        {
-            "Action": "Load",
-            "Target": "bonghits.BearHoneyMead/Carbonator",
-            "FromFile": "assets/carbonator.png"
-        },
-        {
-            "Action": "Load",
-            "Target": "bonghits.BearHoneyMead/Smoker",
-            "FromFile": "assets/BarrelSmoker.png"
-        },
-        {
-            "Action": "Load",
-            "Target": "bonghits.BearHoneyMead/Beverages",
-            "FromFile": "assets/bevs.png"
-        },
-        {
-            "Action": "Load",
-            "Target": "bonghits.BearHoneyMead/SparklingMead",
-            "FromFile": "assets/sparklingmead.png"
-        },
+            "LogName": "Load Assets",
+            "Action": "Include",
+            "FromFile": "Data/assets.json"
+        }
     ]
 }

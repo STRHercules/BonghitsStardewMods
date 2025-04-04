@@ -1,0 +1,176 @@
+{
+    "Changes": [
+        {
+            "LogName": "Add Distilled Spirits (Whiskey, Rum, Vodka)",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "{{ModId}}_Whiskey": {
+                    "Name": "{{ModId}}_Whiskey",
+                    "DisplayName": "{{i18n:distillery.whiskey.name}}",
+                    "Description": "{{i18n:distillery.whiskey.description}}",
+                    "Type": "ArtisanGoods",
+                    "Category": -26,
+                    "Price": 800,
+                    "Edibility": 50,
+                    "IsDrink": true,
+                    "SpriteIndex": 7,
+                    "Texture": "bonghits.BearHoneyMead/Booze",
+                    "Buffs": [
+                        {
+                            "BuffId": "bonghits.spirit_tipsy",
+                            "Duration": 750, // 12.5 In-Game Hours
+                            "CustomAttributes": {
+                                "LuckLevel": 2,
+                                "Speed": 1
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "distilled_spirit",
+                        "alcohol_item",
+                        "drink_item"
+                    ]
+                },
+                "{{ModId}}_Rum": {
+                    "Name": "{{ModId}}_Rum",
+                    "DisplayName": "{{i18n:distillery.rum.name}}",
+                    "Description": "{{i18n:distillery.rum.description}}",
+                    "Type": "ArtisanGoods",
+                    "Category": -26,
+                    "Price": 750,
+                    "Edibility": 50,
+                    "IsDrink": true,
+                    "SpriteIndex": 4,
+                    "Texture": "bonghits.BearHoneyMead/Booze",
+                    "Buffs": [
+                        {
+                            "BuffId": "bonghits.spirit_tipsy",
+                            "Duration": 750, // 12.5 In-Game Hours
+                            "CustomAttributes": {
+                                "FishingLevel": 2,
+                                "MaxStamina": 25,
+                                "Speed": 1
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "distilled_spirit",
+                        "alcohol_item",
+                        "drink_item"
+                    ]
+                },
+                "{{ModId}}_Vodka": {
+                    "Name": "{{ModId}}_Vodka",
+                    "DisplayName": "{{i18n:distillery.vodka.name}}",
+                    "Description": "{{i18n:distillery.vodka.description}}",
+                    "Type": "ArtisanGoods",
+                    "Category": -26,
+                    "Price": 700,
+                    "Edibility": 50,
+                    "IsDrink": true,
+                    "SpriteIndex": 3,
+                    "Texture": "bonghits.BearHoneyMead/Booze",
+                    "Buffs": [
+                        {
+                            "BuffId": "bonghits.spirit_tipsy",
+                            "Duration": 750, // 12.5 In-Game Hours
+                            "CustomAttributes": {
+                                "MiningLevel": 2,
+                                "LuckLevel": 1,
+                                "Speed": 1,
+                                "Defense": 1
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "distilled_spirit",
+                        "alcohol_item",
+                        "drink_item"
+                    ]
+                },
+                "{{ModId}}_Tequila": {
+                    "Name": "{{ModId}}_Tequila",
+                    "DisplayName": "Tequila",
+                    "Description": "A strong spirit distilled from cactus fruit. Smooth with a desert kick.",
+                    "Type": "ArtisanGoods",
+                    "Category": -26,
+                    "Price": 900,
+                    "Edibility": 50,
+                    "IsDrink": true,
+                    "SpriteIndex": 8,
+                    "Texture": "bonghits.BearHoneyMead/Booze",
+                    "Buffs": [
+                        {
+                            "BuffId": "bonghits.spirit_tipsy",
+                            "Duration": 750, // 12.5 In-Game Hours
+                            "CustomAttributes": {
+                                "Speed": 1,
+                                "LuckLevel": 2
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "distilled_spirit",
+                        "alcohol_item",
+                        "drink_item"
+                    ]
+                },
+                "{{ModId}}_Sake": {
+                    "Name": "{{ModId}}_Sake",
+                    "DisplayName": "Sake",
+                    "Description": "A delicate rice wine with a mild, sweet fragrance.",
+                    "Type": "ArtisanGoods",
+                    "Category": -26,
+                    "Price": 750,
+                    "Edibility": 50,
+                    "IsDrink": true,
+                    "SpriteIndex": 13,
+                    "Texture": "bonghits.BearHoneyMead/Booze",
+                    "Buffs": [
+                        {
+                            "BuffId": "bonghits.spirit_tipsy",
+                            "Duration": 750, // 12.5 In-Game Hours
+                            "CustomAttributes": {
+                                "LuckLevel": 2,
+                                "ForagingLevel": 1
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "distilled_spirit",
+                        "alcohol_item",
+                        "drink_item"
+                    ]
+                },
+                "{{ModId}}_Bourbon": {
+                    "Name": "{{ModId}}_Bourbon",
+                    "DisplayName": "Bourbon",
+                    "Description": "A sweet, smoky whiskey distilled from corn. Perfect by the fire.",
+                    "Type": "ArtisanGoods",
+                    "Category": -26,
+                    "Price": 850,
+                    "Edibility": 50,
+                    "IsDrink": true,
+                    "SpriteIndex": 12,
+                    "Texture": "bonghits.BearHoneyMead/Booze",
+                    "Buffs": [
+                        {
+                            "BuffId": "bonghits.spirit_tipsy",
+                            "Duration": 750, // 12.5 In-Game Hours
+                            "CustomAttributes": {
+                                "Attack": 1,
+                                "Speed": 1
+                            }
+                        }
+                    ],
+                    "ContextTags": [
+                        "distilled_spirit",
+                        "alcohol_item",
+                        "drink_item"
+                    ]
+                }
+            }
+        }
+    ]
+}
