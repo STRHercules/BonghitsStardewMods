@@ -242,3 +242,20 @@
 * Add support for [Item Bags](https://www.nexusmods.com/stardewvalley/mods/5382)?
 
 * Maybe make an animated RGB bag for [Item Bags](https://www.nexusmods.com/stardewvalley/mods/5382)?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Garden Cloche
+
+### Add the garden cloche from minecraft to automatically generate crops
