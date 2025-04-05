@@ -50,11 +50,29 @@
             "Target": "Maps/booze",
             "FromFile": "Maps/Data/booze.png"
         },
+
         {
             "Action": "Load",
-            "Target": "Maps/houses",
-            "FromFile": "Maps/Data/houses.png"
+            "Target": "Maps/Spring_houses",
+            "FromFile": "Maps/Data/Spring_houses.png"
         },
+        {
+            "Action": "Load",
+            "Target": "Maps/Fall_houses",
+            "FromFile": "Maps/Data/Fall_houses.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/Summer_houses",
+            "FromFile": "Maps/Data/Summer_houses.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/Winter_houses",
+            "FromFile": "Maps/Data/Winter_houses.png"
+        },
+
+
         {
             "Action": "Load",
             "Target": "bonghits.BearHoneyMead/Objects/Zachary/MeadHealth",

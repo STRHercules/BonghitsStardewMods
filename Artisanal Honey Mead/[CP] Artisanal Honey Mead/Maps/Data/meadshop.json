@@ -55,6 +55,18 @@
             "FromFile": "assets/kitty_animated.png"
         },
         {
+            "LogName": "Load Tilesheet 7",
+            "Action": "Load",
+            "Target": "Maps/TilesetProps",
+            "FromFile": "Maps/Data/TilesetProps.png"
+        },
+        {
+            "LogName": "Load Tilesheet 8",
+            "Action": "Load",
+            "Target": "Maps/birds",
+            "FromFile": "Maps/Data/birds.png"
+        },
+        {
             "LogName": "Load Meadery Shop Exterior",
             "Action": "Load",
             "Target": "Maps/Meadery",
@@ -303,6 +315,7 @@
                 }
             }
         },
+        /*
         {
             // If this isn't a brand new save, we need to clear the terrain features in the Meadery
             // If the player has played for 2 days, we can assume the original meadery location is full of misplaced terrain features
@@ -319,5 +332,6 @@
                 }
             }
         }
+        */
     ]
 }

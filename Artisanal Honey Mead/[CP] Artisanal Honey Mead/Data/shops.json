@@ -118,7 +118,7 @@
                         },
                         {
                             "ItemId": "(BC){{ModId}}_Distillery",
-                            "Condition": "ANY \"PLAYER_SHIPPED_BASIC_ITEM Any (O)262 1\" \"PLAYER_SHIPPED_BASIC_ITEM Any (O)245 1\" \"PLAYER_SHIPPED_BASIC_ITEM Any (O)192 1\"",
+                            "Condition": "ANY \"PLAYER_SHIPPED_BASIC_ITEM Any (O){{ModId}}_Barley 1\" \"PLAYER_SHIPPED_BASIC_ITEM Any (O){{ModId}}_Buckwheat 1\" \"PLAYER_SHIPPED_BASIC_ITEM Any (O){{ModId}}_Millet 1\" \"PLAYER_SHIPPED_BASIC_ITEM Any (O){{ModId}}_Oat 1\" \"PLAYER_SHIPPED_BASIC_ITEM Any (O){{ModId}}_Rye 1\" \"PLAYER_SHIPPED_BASIC_ITEM Any (O){{ModId}}_Sorghum 1\"",
                             "IsRecipe": true,
                             "Price": 13750
                         },

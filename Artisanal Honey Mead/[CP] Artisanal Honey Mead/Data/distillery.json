@@ -22,7 +22,7 @@
                 "bonghits_OnShipDistilleryBase": {
                     "Id": "bonghits_OnShipDistilleryBase",
                     "Trigger": "DayEnding",
-                    "Condition": "ANY \"PLAYER_SHIPPED_BASIC_ITEM Any (O)262 1\" \"PLAYER_SHIPPED_BASIC_ITEM Any (O)245 1\" \"PLAYER_SHIPPED_BASIC_ITEM Any (O)192 1\"",
+                    "Condition": "ANY \"PLAYER_SHIPPED_BASIC_ITEM Any (O){{ModId}}_Barley 1\" \"PLAYER_SHIPPED_BASIC_ITEM Any (O){{ModId}}_Buckwheat 1\" \"PLAYER_SHIPPED_BASIC_ITEM Any (O){{ModId}}_Millet 1\" \"PLAYER_SHIPPED_BASIC_ITEM Any (O){{ModId}}_Oat 1\" \"PLAYER_SHIPPED_BASIC_ITEM Any (O){{ModId}}_Rye 1\" \"PLAYER_SHIPPED_BASIC_ITEM Any (O){{ModId}}_Sorghum 1\"",
                     "Actions": [
                         "AddMail Current Mail.DistilleryIntro now"
                     ]
@@ -133,7 +133,7 @@
                             "Triggers": [
                                 {
                                     "Trigger": "ItemPlacedInMachine",
-                                    "RequiredItemId": "(O)90", // Cactus Fruit
+                                    "RequiredItemId": "(O){{ModId}}_Sorghum", // Sorghum
                                     "RequiredCount": 5
                                 }
                             ],
@@ -144,7 +144,7 @@
                                 }
                             ],
                             "MinutesUntilReady": 900,
-                            "InvalidCountMessage": "Requires 5 Cactus Fruit"
+                            "InvalidCountMessage": "Requires 5 Sorghum"
                         },
                         {
                             "Id": "MilletToSake",
