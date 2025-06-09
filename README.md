@@ -36,3 +36,13 @@ The itch to tinker and 'fix' crept up on me, now we're here!
 # Work In Progress Mods
 
 - [Arborist's Catalogue](https://github.com/STRHercules/BonghitsStardewMods/tree/main/%5BCP%5D%20Arborist's%20Catalogue) (Converting all trees and bushes to furniture + catalogue)
+
+## Building
+
+To compile the C# mods, set the `GamePath` MSBuild property to your Stardew Valley install directory and run:
+
+```bash
+dotnet build CustomMonsterFramework/CustomMonsterFramework.csproj
+```
+
+The resulting `CustomMonsterFramework.dll` will be placed next to the mod's `manifest.json`.

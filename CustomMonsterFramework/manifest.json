@@ -1,0 +1,9 @@
+{
+  "Name": "Custom Monster Framework",
+  "Author": "MajorBonghits",
+  "Version": "1.0.0",
+  "Description": "Framework for custom monsters",
+  "UniqueID": "bonghits.CustomMonsterFramework",
+  "EntryDll": "CustomMonsterFramework.dll",
+  "MinimumApiVersion": "3.0.0"
+}
