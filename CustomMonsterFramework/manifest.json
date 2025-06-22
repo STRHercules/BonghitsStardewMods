@@ -1,9 +1,15 @@
 {
   "Name": "Custom Monster Framework",
-  "Author": "MajorBonghits",
-  "Version": "1.0.0",
-  "Description": "Framework for custom monsters",
-  "UniqueID": "bonghits.CustomMonsterFramework",
+  "Author": "ThatKingKai",
+  "Version": "0.1.0",
+  "Description": "Framework to load custom monsters from Content Patcher in Stardew Valley 1.6.",
+  "UniqueID": "Bonghits.CustomMonsterFramework",
   "EntryDll": "CustomMonsterFramework.dll",
-  "MinimumApiVersion": "3.0.0"
+  "MinimumApiVersion": "4.0.0",
+  "Dependencies": [
+    {
+      "UniqueID": "Pathoschild.ContentPatcher",
+      "IsRequired": true
+    }
+  ]
 }
