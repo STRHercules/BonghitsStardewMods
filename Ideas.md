@@ -1,2 +1,3 @@
-# Sprinkler Upgrading Machine
-Upgrades basic sprinkler to advanced in a week, upgrades advanced to iridium in 2 weeks
+# Minecolonies in Stardew
+
+Massive plot of land available ro construct buildings where villagers will move in and populare the constructed town.
