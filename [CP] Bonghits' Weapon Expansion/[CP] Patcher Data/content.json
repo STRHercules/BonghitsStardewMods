@@ -124,6 +124,11 @@
             "FromFile": "Data/projectiles.json"
         },
         {
+            // Mine Monster Drops
+            "Action": "Include",
+            "FromFile": "Data/monster_drops.json"
+        },
+        {
             // Potion Load
             "Action": "Include",
             "FromFile": "Data/potions.json"
