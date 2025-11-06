@@ -7,6 +7,8 @@
     "message.invalidCount3": "Need 1 Mead",
     "meadKeg.name": "Artisanal Mead Keg",
     "meadKeg.description": "Used to create artisanal meads from various fruits and honey.",
+
+//Crops
     "Barley.displayname": "Barley",
     "Barley.description": "One of the most nutritional and widely cultivated grains.",
     "Barley.seed.displayname": "Barley Seeds",
@@ -32,14 +34,6 @@
     "Sorghum.seed.displayname": "Sorghum Seeds",
     "Sorghum.seed.description": "Plant these in summer or fall. Takes 5 days to mature. Harvest with the scythe.",
     
-    "Config.Barley.description": "Uncheck this if you prefer to use the Barley from another mod.",
-    "Config.Buckwheat.description": "Uncheck this if you prefer to use the Buckwheat from another mod.",
-    "Config.Millet.description": "Uncheck this if you prefer to use the Millet from another mod.",
-    "Config.Oats.description": "Uncheck this if you prefer to use the Oats from another mod.",
-    "Config.Rye.description": "Uncheck this if you prefer to use the Rye from another mod.",
-    "Config.Sorghum.description": "Uncheck this if you prefer to use the Sorghum from another mod.",
-
-    "Config.RegrowableCrops.description": "This enables the crops to regrow after harvesting.",
 // MPS Mead Kegs
     "meadKegGold.name": "Gold Artisanal Mead Keg",
     "meadKegGold.description": "Used to create artisanal meads from various fruits and honey.",
@@ -53,52 +47,102 @@
     "meadKegPrismatic.description": "Used to create artisanal meads from various fruits and honey.",
     "carb.name": "Carbonator",
     "carb.description": "A specialized device used to infuse artisanal meads with delightful carbonation, enhancing their flavor and effervescence.",
+
+//Config
+    "Config.Barley.description": "Uncheck this if you prefer to use the Barley from another mod.",
+    "Config.Buckwheat.description": "Uncheck this if you prefer to use the Buckwheat from another mod.",
+    "Config.Millet.description": "Uncheck this if you prefer to use the Millet from another mod.",
+    "Config.Oats.description": "Uncheck this if you prefer to use the Oats from another mod.",
+    "Config.Rye.description": "Uncheck this if you prefer to use the Rye from another mod.",
+    "Config.Sorghum.description": "Uncheck this if you prefer to use the Sorghum from another mod.",
+    "Config.RegrowableCrops.description": "This enables the crops to regrow after harvesting.",
     "config.section.behavior.name": "Behavior",
     "config.CopyQualitySetting.name": "Copy Item Quality",
     "config.CopyQualitySetting.description": "Enabled: The produced item has the same quality as the input item. \n\nAuto (default): Like Enabled but only when specific mods are installed. \n\nDisabled: Disable this feature.",
     "config.CopyQualitySetting.values.disabled": "Disabled",
     "config.CopyQualitySetting.values.enabled": "Enabled",
     "config.CopyQualitySetting.values.auto": "Auto",
+
+//Buffs
+    "bonghits.mead.tipsy.DisplayName": "Tipsy on Honey Mead",
+    "bonghits.mead.tipsy.Description": "Enjoyed a little mead!",
+
+    "bonghits.mead.drunk.DisplayName": "Smashed on Honey Mead",
+    "bonghits.mead.drunk.Description": "Enjoyed a bit too much mead! You're not complaining!",
+
+    "bonghits.mead.sparkling.DisplayName": "Feeling Bubbly",
+    "bonghits.mead.sparkling.Description": "Feeling light and bubbly after enjoying some sparkling mead!",
     "bonghits.mead.healingbuff.DisplayName": "Mead Regeneration",
     "bonghits.mead.healingbuff.Description": "Healing from that delicious mead!",
+
     "bonghits.bubblemead.buff.DisplayName": "Feelin' bubbly!",
     "bonghits.bubblemead.buff.Description": "So many bubbles! Do I feel lighter?",
+
     "bonghits.bubble.health.DisplayName": "Bubbly Mead Regeneration",
     "bonghits.bubble.health.Description": "Healing from that delicious bubble mead!",
+
     "bonghits.mead.cider.DisplayName": "Drank some Cider",
     "bonghits.mead.cider.Description": "Mmmm.. tastes so festive!",
+
+//Cider
     "bonghits.mead.emptybottle.DisplayName": "Empty Bottle",
     "bonghits.mead.emptybottle.Description": "Used to bottle meads and ciders.",
     "message.invalidCount4": "Needs one Fire Quartz",
+
+    "bonghits.Cider.DisplayName": "Cider",
+    "bonghits.Cider.Description": "A delicious cider brewed with quality fruits. It smells and tastes so festive!",
+
+//BigCrafteables
     "BarrelSmoker.name": "Barrel Smoker",
     "BarrelSmoker.description": "Used to refine your meads, ciders and spirits to increase their flavor and add a dash of smoke. Increases value of input.",
+
     "bh.Meadery.DisplayName": "Meadery",
     "bh.MeadSaloon.DisplayName": "Mead Saloon",
+
 // SVE Mail Data
     "MailSVE": "@, ^I've been hearing more and more about this phenomenon where people are actually having bears harvest honey for them? Crazy right! ^I wonder what mead brewed from that honey would taste like... ^^If you ever find out I'd love to know! ^ -Zach [#]EarnedJarOfHoney",
+
 // Mail Data
     "Mail1": "Well hey there, @! ^I heard you recently started farming at your grandpa's old place. Great to hear you are following in his footsteps! He often visited my Saloon and provided me with some of the highest quality mead I've ever seen. ^Did you know that you can take the honey from your Bee House and craft artisanal mead? I hear you learned how to craft the Artisanal Mead Keg, I helped pioneer its' conception! Glad to see it's being put to good use! ^Brewing mead can be a really lucrative hobby, you can eventually age it with fruit, brew ciders, and even create sparkling versions of mead! ^Tell you what, you put some mead into your shipping bin, I'll swing by after the saloon closes and pick it up, and make it worth your while! ^ -Zach [#]LearnedMeadKeg",
+
     "Mail2": "@,^ That was some impressive Mead I picked up last night, my patrons went crazy for it! ^They loved it so much they requested another order, I've never had this much positive feedback from a mead before! If you were able to produce that quality mead you should definitely try aging some! ^In order to age your mead, take it over to a preserving Jar and combine that with 2 of any 3 fruits and viola, you'll have some deliciously flavored mead in no time! Same deal as before @, any mead you leave in your shipping bin I will happily come collect. I can't wait to see what kind of aged mead you brew up! ^Speaking of, since you have showed such an interest in brewing mead I updated my stock in my Saloon, come check it out sometime! ^ -Zach [#]ShippedMead",
+
     "Mail3": "@!,^Wow! That aged mead was perfection! Absolutely amazing! I don't think the bottom of the bottle ever even touched the bar haha! ^The highest quality meads are often full of fruity notes, but the best meads I've ever tasted have been smoke aged in a barrel. I can pay even more per bottle once they have been aged in a barrel smoker. ^Speaking of the Barrel Smoker, I recently found some old blueprints for ones your grandpa used back in the day, but these are antique and I can't just let them go. Come down to my shop and we can work out a good price on 'em! [#]ShippedAgedMead",
+
     "Mail4": "@, ^Did you know I sell my very own specialty mead every Friday? I have a limited stock so I can't sell it all week, it's too good! Come down to the Saloon friday night and get yourself a pint! It's right by Marnie's you can't miss it! ^ -Zach [#]SpecialtyMeadReminder",
+
     "Mail5": "@, ^We heard you have made a little progress down in those mines, it can get pretty rough down there. We recommend taking some high quality healing mead down with you! It's brewed with medicinal ingredients and should help you out quite a bit down there! ^Swing by our Saloon sometime, Nat and I recently got shipments of some from a distant farmer who claims they pack quite a punch. If they are good we'll keep a consistent stock of them for you! ^ -Zach and Nat [#]Level10MineReached",
+
     "Mail6": "@, ^Wow, you made it so much farther into the mines than I did! Was it scary? Zach always comes with me to keep me safe! Who had your back out there? I made a special potion for you to take next time to keep you safe! Starting today, I'm offering new and improved Bubble Health Meads! Come grab a bubbly health potion, so you can stay safe and sparkle through the mines! ^ -Nat [#]Level20MineReached",
+
     "Mail7": "@, ^Just a bubbly reminder that every Friday I'm gonna be selling my exclusive Bubble Mead! This delicious treat was brewed by yours truly! Shocked? Me neither! So I'll see you Friday, right?! Yay! ^ -Nat [#]FridayStockReminder",
+
     "Mail8": "@, ^Rosé weekend is here! The perfect weekend starts with a drink in hand! Let it be my Bubbly Rosé Beer! ^Every saturday Nat's Bubble Bar is going to be offering delicious Bubbly Rose Beer! ^ -Nat [#]SaturdayStockReminder",
+
     "Mail9": "@, ^Your weekend isn't done until you've had Rosé both days - only at Nat's Bubble Bar! Sunday I will be serving my specialty Bubbly Rose Mead, it tastes so delicious and the rose bubbles taste like fireworks in spring!  ^ -Nat [#]SundayStockReminder",
+
     "Mail10": "@, ^Wow! Zach and I are absolutely gushing to everyone we know about your aged mead, its so close to perfect the only thing i can possibly imagine that could make it better would be to add bubbles of course! ^Swing by my Bubble Bar sometime I have a little something you may be interested in if you're feeling bubbly! ^ -Nat [#]Nat_MeadShipped",
+
     "Mail11": "@, ^Just wanted to let you know that next season I will be completely changing my stock. I typically try to keep with the seasons so everything I sell is nice and ripe, bad reviews can kill a small business like ours! What helps the most though is support from our local farmers! Swing by sometime and take some of this fruit off my hands, I know you are much more suited for mead production than we our here in our little shop! ^ -Zach and Nat [#]SeasonalFruitReminder",
+
     "Mail12": "@, ^Thank you so much for repairing that bus, I was able to take Nat back to the desert, how was it? I love the heat myself. So much so I decided to take Natlie to see the cactus fruit, she loved them! ^We decided to bring a whole haul of them back with us, so we are proud to announce we now offer Cactus Fruit in our shop! Just come see me and we can work out a price on 'em!  ^ -Zach [#]VistedDesert",
+
     "Mail13": "@, ^Hey 'mon! Enjoying the island life? Nat and I spent a while there last year and fell in love with the scenery! The weather is always so gorgeous over on Ginger Island ^Now that I'm writing this to you come to think of it I believe Nat recently put an order through for some Coconuts for me, what a doll! Next time you swing by I'll probably have some out for you to snag if you want! Take care @! ^ -Zach [#]VistedIsland",
+
     "Mail14": "@, ^Just writing you to make sure you knew that you can do a lot more with the carbonator than just adding some fun bubbles to your mead? You can actually take 5 of any Fruit over to the machine with an Empty Bottle and you can get delicious bubbly cider in no time! ^Try it out and let me know how it goes, okay?! ^ -Nat [#]CiderSuggestion",
+
     "mail.distilleryIntro": "Hey there, @!^ I noticed you've been shipping a few interesting items lately. Have you ever considered using a Distillery to turn those into more profitable spirits? I've got a brand-new Distillery recipe that might interest you! Come down and see me and we can talk price!^^ -Zach[#]DistilleryProgression",
+
     "mail.InfusionIntro": "Hey @!^ You're making some impressive spirits. Ever think about infusing them with fruit or spices? I have a new Infuser blueprint for sale that'll up your game even more!^ Use any 2 fruits with Spirits to infuse them with fruity flavors! You can also spice your Rum by using Spice Berries! Oh and keep in mind I'll come pick up anything you leave in that Shipping Bin for me!^^ -Zach[#]InfuserProgression",
+
     "mail.AgingVatProgression": "Hey, @! ^I heard you recently learned how to craft the Aging Vat, did you know you can actually upgrade it to get better versions for faster production? I sense you're going to get really into shipping me these meads, so I sent along the blueprints for them, good luck!^^ - Zach %item craftingRecipe bh.AgingVatPrismatic %% %item craftingRecipe bh.AgingVatRadioactive %% %item craftingRecipe bh.AgingVatIridium %% %item craftingRecipe bh.AgingVatDiamond %% %item craftingRecipe bh.AgingVatGold %%[#]AgingVatProgression",
+
     "mail.MeadKegProgression": "@, ^^You know the Artisanal Mead Keg can be upgraded? I heard you recently picked up the recipe to make your own, so I figure you would want these blueprints as well. Sending them along with this mail, hope they work out for you!^^ - Zach %item craftingRecipe bh.MeadKegPrismatic %% %item craftingRecipe bh.MeadKegRadioactive %% %item craftingRecipe bh.MeadKegIridium %% %item craftingRecipe bh.MeadKegDiamond %% %item craftingRecipe bh.MeadKegGold %%[#]AgingVatProgression",
+
     "Mail.CropSuggestion": "@, ^^I just got a shipment of some new seeds that are perfect for distilling all kinds of stuff! Buckwheat for Whiskey, Barley for Rum, Rye for Vodka, Millet for Sake, and Oats for Bourbon! You can also use Cactus Fruits to distill some Tequila! Come check them out!^^ -Nat[#]CropSuggestion",
-//
+
 // Tourist NPC Data
-//
+
 // Delphy
     "bonghits.Delphy.DisplayName": "Delphy",
     "npc.Delphy.Introduction": "Hey, you must be @, I'm Delphy! have you tasted the mead here? It's insane!",
@@ -116,6 +160,14 @@
     "npc.Delphy.Fri": "Have you tried Zach's specialty mead? It's sooo good!",
     "npc.Delphy.Sat": "I heard Nat has a special going this weekend you should check it out!",
     "npc.Delphy.Sun": "Man, sundays always feel so boring huh?",
+
+// Delphy Gift Tastes
+  "npc.Delphy.LovedGift": "You're giving this... to me? I'm speechless.",
+  "npc.Delphy.LikedGift": "Oh, goodness! Are you sure?",
+  "npc.Delphy.DeslikedGift": "No, no, no...",
+  "npc.Delphy.HatedGift": "This is absolute junk. I'm offended.",
+  "npc.Delphy.NeutralGift": "Oh, that's sweet. Thank you.",
+
 // Malik (Ghostface)
     "bonghits.Malik.DisplayName": "Malik",
     "npc.Malik.Introduction": "What's your favorite scary movie, @?",
@@ -133,6 +185,14 @@
     "npc.Malik.Fri": "I was at home watching television and uh the exorcist was on, it got me thinking of ..Oh..You again?",
     "npc.Malik.Sat": "Be careful what you wish for.",
     "npc.Malik.Sun": "Now I see something red.",
+
+// Malik Gift Tastes
+  "npc.Malik.LovedGift": "You're giving this... to me? I'm speechless.",
+  "npc.Malik.LikedGift": "Oh, goodness! Are you sure?",
+  "npc.Malik.DeslikedGift": "No, no, no...",
+  "npc.Malik.HatedGift": "This is absolute junk. I'm offended.",
+  "npc.Malik.NeutralGift": "Oh, that's sweet. Thank you.",
+
 // Mandy
     "bonghits.Mandy.DisplayName": "Mandy",
     "npc.Mandy.Introduction": "Oh hey, you're @ right? I knew your grandpa he was a pretty cool guy. Glad to see someone is taking care of that Farm.",
@@ -150,6 +210,14 @@
     "npc.Mandy.Fri": "The crow on the roof squacks every time I walk past, is he trying to tell me something?",
     "npc.Mandy.Sat": "I don't think I wore the right shoes.. oh well.",
     "npc.Mandy.Sun": "Hangover is an understatement, can you keep your voice down?",
+
+// Mandy Gift Tastes
+  "npc.Mandy.LovedGift": "You're giving this... to me? I'm speechless.",
+  "npc.Mandy.LikedGift": "Oh, goodness! Are you sure?",
+  "npc.Mandy.DeslikedGift": "No, no, no...",
+  "npc.Mandy.HatedGift": "This is absolute junk. I'm offended.",
+  "npc.Mandy.NeutralGift": "Oh, that's sweet. Thank you.",
+
 // Joaquin
     "bonghits.Joaquin.DisplayName": "Joaquin",
     "npc.Joaquin.Introduction": "Oh, you're @ aren't you? I heard you moved back into the Valley and I don't blame you. Joja is the worst, I left myself a couple years ago and have zero regrets. Welcome back to sanity @!",
@@ -167,6 +235,14 @@
     "npc.Joaquin.Fri": "Did you see that guy dressed up down by the old meadery? He gives me the creeps to be honest.",
     "npc.Joaquin.Sat": "The old meadery used to be the only thing down here off this old highway, Zach and Nat really performed a miracle making this place what it is. It was really cool to see it grow.",
     "npc.Joaquin.Sun": "I tried opening the kegs over by that big Sign, Zach came out and stopped me immediately.. how did he even know I was trying?",
+
+// Joaquin Gift Tastes
+  "npc.Joaquin.LovedGift": "You're giving this... to me? I'm speechless.",
+  "npc.Joaquin.LikedGift": "Oh, goodness! Are you sure?",
+  "npc.Joaquin.DeslikedGift": "No, no, no...",
+  "npc.Joaquin.HatedGift": "This is absolute junk. I'm offended.",
+  "npc.Joaquin.NeutralGift": "Oh, that's sweet. Thank you.",
+
 // Mona
     "bonghits.Mona.DisplayName": "Mona",
     "npc.Mona.Introduction": "Nice to meet you! I'm Mona, you must be @! I've heard a lot about your grandpa, I'm really happy to see you decided to take up his offer and work the land. I find it really fulfilling to watch something you planted as a seed become something delicious or beautiful.",
@@ -184,16 +260,32 @@
     "npc.Mona.Fri": "20 MPH doesn't sound fast, but could you believe that is actually how fast a little squirrel can run? Makes them challengeing prey for predators I tell you what!",
     "npc.Mona.Sat": "Squirrels have *incredible* memory! Little Curtis over there can remember the exact locations of thousands of buried nuts, using his spatial memory and keen sense of smell. Fascinating little creatures eh?",
     "npc.Mona.Sun": "Little Curtis can live to be over 20 years old! The longer he stays here in this safe little orchard eating all the fruits and honey he would ever need he is gonna be around for a loooong time!",
-//
+
+// Mona Gift Tastes
+  "npc.Mona.LovedGift": "You're giving this... to me? I'm speechless.",
+  "npc.Mona.LikedGift": "Oh, goodness! Are you sure?",
+  "npc.Mona.DeslikedGift": "No, no, no...",
+  "npc.Mona.HatedGift": "This is absolute junk. I'm offended.",
+  "npc.Mona.NeutralGift": "Oh, that's sweet. Thank you.",
+
 // Shopkeeper Data
-//
+
 // Zach
     "bonghits.Zachary.DisplayName": "Zachary",
     "npc.Zachary.Introduction": "You must be @, I'm Zach! I moved here with Nat last year and we bought this old orchard. Fast forward a year and here we are! I'm really enthusiastic about Mead if you couldnt tell, and I hope that rubs off on you a little, your grandpa sure loved the stuff!",
+
+//Zach Gift Tastes
     "npc.Zachary.AcceptBirthdayGift": "Whoa no way! This is for me?",
     "npc.Zachary.AcceptBirthdayGift_Loved": "DUDE! This is so sick!",
     "npc.Zachary.AcceptBirthdayGift_Negative": "Hey did this come with a gift receipt?",
     "npc.Zachary.AcceptBirthdayGift_Positive": "This is awesome! Thanks @!",
+
+    "npc.Zachary.LovedGift": "You're giving this... to me? I'm speechless.",
+    "npc.Zachary.LikedGift": "Oh, goodness! Are you sure?",
+    "npc.Zachary.DeslikedGift": "No, no, no...",
+    "npc.Zachary.HatedGift": "This is absolute junk. I'm offended.",
+    "npc.Zachary.NeutralGift": "Oh, that's sweet. Thank you.",
+
     "npc.Zachary.DumpsterDiveComment": "Hell yeah, brother!",
     "npc.Zachary.GreenRain": "Aww yeah, this rain nets us a whole extra harvest!",
     "npc.Zachary.GreenRainFinished": "Time to go harvest!",
@@ -217,13 +309,23 @@
     "Mead_Shop10": "Hey there! Ever wonder what a blackberry, peach and lime mead would taste like? Don't let your dreams be dreams!",
     "Mead_Shop11": "I change stock every season!",
     "Mead_Shop12": "You know you want to try my specialty mead!",
+
 // Nat
     "bonghits.Natalie.DisplayName": "Nat",
     "npc.Natalie.Introduction": "Hi @! I'm Nat! People around here call me the Bubble Queen, I have no idea why! I'm so glad you're back in the Valley, Joja sucks huh?",
+
+//Nat Gift Tastes
     "npc.Natalie.AcceptBirthdayGift": "Thanks!",
     "npc.Natalie.AcceptBirthdayGift_Loved": "I love this!",
     "npc.Natalie.AcceptBirthdayGift_Negative": "Ewww..",
     "npc.Natalie.AcceptBirthdayGift_Positive": "Yay, thank you!!",
+
+    "npc.Natalie.LovedGift": "You're giving this... to me? I'm speechless.",
+    "npc.Natalie.LikedGift": "Oh, goodness! Are you sure?",
+    "npc.Natalie.DeslikedGift": "No, no, no...",
+    "npc.Natalie.HatedGift": "This is absolute junk. I'm offended.",
+    "npc.Natalie.NeutralGift": "Oh, that's sweet. Thank you.",
+
     "npc.Natalie.DumpsterDiveComment": "Hahahahahahaha",
     "npc.Natalie.GreenRain": "Yayyy, the plant babies are gonna be so happy!!",
     "npc.Natalie.GreenRainFinished": "The plant babies are so happy, oh my gosh!",
@@ -234,6 +336,7 @@
     "npc.Natalie.Fri": "Zach has a super yummy Specialty Mead on sale today!",
     "npc.Natalie.Sat": "I have special stock this weekend, be sure to check back tomorrow for more!",
     "npc.Natalie.Sun": "Yay, you came back! I mean, I knew you would. I'm awesome!",
+
 // Nat Shop Dialogue
     "BubbleMeadShop1": "Hi! Welcome to our little shop!",
     "BubbleMeadShop2": "I made the bubbles myself!",
@@ -247,6 +350,7 @@
     "BubbleMeadShop10": "POP! POP! POP! Bubbles, popping everywhere!",
     "BubbleMeadShop11": "Sometimes I wish I could BE a bubble, you know?",
     "BubbleMeadShop12": "Hello there! Ever tried a mead that's as bubbly and cute as you? Come taste the sparkling difference!",
+
 // Food Stuffs
     "CheeseCake_Name": "Meadcake",
     "CheeseCake_Description": "A delicious cheesecake cooked using Artisanal Honey Mead, it's so soft and bouncy!",
@@ -268,31 +372,133 @@
     "Macadamia_Description": "A rich, buttery-flavored nut with a smooth, hard shell, prized for its creamy texture and high oil content.",
     "bonghits.birthday.DisplayName": "Happy Birthday!",
     "bonghits.birthday.Description": "What a way to celebrate!",
+
 // Distillery machine
     "distillery.machine.name": "Distillery",
     "distillery.machine.description": "A specialized machine used to distill spirits from base ingredients. Place it indoors or outdoors!",
+
 // Spirit Infuser
     "infuser.machine.name": "Spirit Infuser",
     "infuser.machine.description": "Used to combine base spirits with fruit, herbs, or spices for potent infused variants.",
+
+// Error messages spirit infuser
+    "bonghits.InvalidCount.Fruit": "Requires 2 of any Fruit to infuse!",
+    "bonghits.InvalidCount.SpiceBerries": "Requires 2 Spice Berries to infuse!",
+    "bonghits.InvalidCount.InvalidRecipe": "Invalid Recipe",
+
 // Aging Vat
-    "agingvat.name": "Aging Vat",
-    "agingvat.description": "A specialized vat for aging meads with fruit, spices, or other flavorings to create premium artisanal goods.",
-    "agingvatGold.name": "Gold Aging Vat",
-    "agingvatGold.description": "A specialized vat for aging meads with fruit, spices, or other flavorings to create premium artisanal goods. Produces faster than the standard vat.",
-    "agingvatDiamond.name": "Diamond Aging Vat",
-    "agingvatDiamond.description": "A specialized vat for aging meads with fruit, spices, or other flavorings to create premium artisanal goods. Produces faster than the Gold Aging Vat.",
-    "agingvatIridium.name": "Iridium Aging Vat",
-    "agingvatIridium.description": "A specialized vat for aging meads with fruit, spices, or other flavorings to create premium artisanal goods. Produces faster than the Diamond Aging Vat.",
-    "agingvatRadioactive.name": "Radioactive Aging Vat",
-    "agingvatRadioactive.description": "A specialized vat for aging meads with fruit, spices, or other flavorings to create premium artisanal goods. Produces faster than the Iridium Aging Vat.",
-    "agingvatPrismatic.name": "Prismatic Aging Vat",
-    "agingvatPrismatic.description": "A specialized vat for aging meads with fruit, spices, or other flavorings to create premium artisanal goods. Produces faster than the Radioactive Aging Vat.",
+    "bonghits.AgingVat.DisplayName": "Aging Vat",
+"bonghits.AgingVat.Description": "A specialized vat for aging meads with fruit, spices, or other flavorings to create premium artisanal goods.",
+    "bonghits.agingvatGold.name": "Gold Aging Vat",
+    "bonghits.agingvatGold.description": "A specialized vat for aging meads with fruit, spices, or other flavorings to create premium artisanal goods. Produces faster than the standard vat.",
+    "bonghits.agingvatDiamond.name": "Diamond Aging Vat",
+    "bonghits.agingvatDiamond.description": "A specialized vat for aging meads with fruit, spices, or other flavorings to create premium artisanal goods. Produces faster than the Gold Aging Vat.",
+    "bonghits.agingvatIridium.name": "Iridium Aging Vat",
+    "bonghits.agingvatIridium.description": "A specialized vat for aging meads with fruit, spices, or other flavorings to create premium artisanal goods. Produces faster than the Diamond Aging Vat.",
+    "bonghits.agingvatRadioactive.name": "Radioactive Aging Vat",
+    "bonghits.agingvatRadioactive.description": "A specialized vat for aging meads with fruit, spices, or other flavorings to create premium artisanal goods. Produces faster than the Iridium Aging Vat.",
+    "bonghits.agingvatPrismatic.name": "Prismatic Aging Vat",
+    "bonghits.agingvatPrismatic.description": "A specialized vat for aging meads with fruit, spices, or other flavorings to create premium artisanal goods. Produces faster than the Radioactive Aging Vat.",
+
+// Error messages Aging Vat
+   "bonghits.InvalidCount.ThreeFruits": "Requires 2 of any 3 Fruits",
+   "bonghits.InvalidCount.HoneyMead": "Requires 1 Honey Mead",
+
 // Spirits
     "distillery.whiskey.name": "Whiskey",
     "distillery.whiskey.description": "A strong distilled spirit made from fermented grains. Warms you up on a cold day.",
+
     "distillery.rum.name": "Rum",
     "distillery.rum.description": "A sweet spirit distilled from sugar. Reminiscent of tropical breezes.",
+
     "distillery.vodka.name": "Vodka",
     "distillery.vodka.description": "A neutral spirit distilled from potatoes. Pairs well with fruit juices or served alone.",
-    "bh.MeadBarn.DisplayName": "Zach's Mead Barn"
+
+    "bonghits.Tequila.DisplayName": "Tequila",
+    "bonghits.Tequila.Description": "A strong spirit distilled from cactus fruit. Smooth with a desert kick.",
+
+    "bonghits.Sake.DisplayName": "Sake",
+    "bonghits.Sake.Description": "A delicate rice wine with a mild, sweet fragrance.",
+
+    "bonghits.Bourbon.DisplayName": "Bourbon",
+    "bonghits.Bourbon.Description": "A sweet, smoky whiskey distilled from corn. Perfect by the fire.",
+
+// Error messages distillery
+    "bonghits.InvalidCount.Buckwheat5": "Requires 5 Buckwheat",
+    "bonghits.InvalidCount.Rye5": "Requires 5 Rye",
+    "bonghits.InvalidCount.Sorghum5": "Requires 5 Sorghum",
+    "bonghits.InvalidCount.Oats5": "Requires 5 Oats",
+
+    "bh.MeadBarn.DisplayName": "Zach's Mead Barn",
+
+//Infused Spirits
+   "bonghits.AppleInfusedWhiskey.DisplayName": "Apple-Infused Whiskey",
+   "bonghits.AppleInfusedWhiskey.Description": "Fruit infused Whiskey. Smooth, crisp flavor with a comforting warmth.",
+
+   "bonghits.SpicedRum.DisplayName": "Spiced Rum",
+   "bonghits.SpicedRum.Description": "Rum blended with a hot kick of sweet spicy berries. Warms the throat with each sip.",
+
+   "bonghits.HerbalVodka.DisplayName": "Herbal Vodka",
+   "bonghits.HerbalVodka.Description": "Fruity infused Vodka. A refreshing drink with a hint of sweetness. Perfect for a hot summer day, just add ice and garnish!",
+
+   "bonghits.InfusedTequila.DisplayName": "Infused Tequila",
+   "bonghits.InfusedTequila.Description": "Tequila meticulously infused with fresh fruit. A bright, aromatic spirit that surprises the senses.",
+
+  "bonghits.InfusedSake.DisplayName": "Infused Sake",
+  "bonghits.InfusedSake.Description": "A gentle rice wine steeped with subtle fruit flavors, capturing the essence of each season.",
+
+  "bonghits.InfusedBourbon.DisplayName": "Infused Bourbon",
+  "bonghits.InfusedBourbon.Description": "A smooth bourbon flavored with fresh fruit notes. Complex yet comforting, perfect for sipping.",
+
+//SVE Meads
+  "bonghits.BearHoneyMead.DisplayName": "Bear Honey Mead",
+  "bonghits.BearHoneyMead.Description": "An artisanal mead crafted to perfection using honey harvested by happy Bears.",
+
+  "bonghits.HoneyMead.DisplayName": "Honey Mead",
+  "bonghits.HoneyMead.Description": "A handcrafted honey mead with a rich, golden hue and a sweet, floral aroma. Perfect for a relaxing evening.",
+
+  "bonghits.AgedBearHoneyMead.DisplayName": "Aged Bear Honey Mead",
+  "bonghits.AgedBearHoneyMead.Description": "An artisanal honey mead aged to perfection. Its complex flavors reveal multiple fruity notes, offering a delightful and sophisticated experience.",
+
+//Meads
+  "bonghits.SparklingHoneyMead.DisplayName": "Sparkling Honey Mead",
+  "bonghits.SparklingHoneyMead.Description": "A refreshing sparkling honey mead with a light, effervescent quality and a hint of citrus. Perfect for celebrations.",
+
+  "bonghits.HealingMead.DisplayName": "Healing Mead",
+  "bonghits.HealingMead.Description": "A warm inviting mug reminding you of home.",
+
+  "bonghits.ZachsSpecialMead.DisplayName": "Zach's Special Mead",
+  "bonghits.ZachsSpecialMead.Description": "This mead smells strongly of Whiskey.",
+
+  "bonghits.BubbleMead.DisplayName": "Bubble Mead",
+  "bonghits.BubbleMead.Description": "A bubbly beer that makes you feel warm and cozy.",
+
+  "bonghits.BubblyHealthPotion.DisplayName": "Bubbly Health Potion",
+  "bonghits.BubblyHealthPotion.Description": "A carbonated health potion! The bubbles tickle your tongue.",
+
+  "bonghits.BubbleMead2.DisplayName": "Bubble Mead",
+  "bonghits.BubbleMead2.Description": "A bubbly mead that makes you feel warm and effervescent.",
+
+  "bonghits.BubblyRoseBeer.DisplayName": "Bubbly Rosé Beer",
+  "bonghits.BubblyRoseBeer.Description": "A delicious Rosé Beer carbonated to perfection. The bubbles tickle your tongue!",
+
+  "bonghits.BubblyHealthRosePotion.DisplayName": "Bubbly Health Rose Potion",
+  "bonghits.BubblyHealthRosePotion.Description": "A Rosé Mead carbonated to bring out the effervescent notes.",
+
+  "bonghits.HealingBubbleMead.DisplayName": "Healing Bubble Mead",
+  "bonghits.HealingBubbleMead.Description": "A delicious carbonted mead crafting using naturally healing ingredients.",
+
+  "bonghits.LovePotion.DisplayName": "Love Potion",
+  "bonghits.LovePotion.Description": "A potion that brings out warm fuzzy feelings.",
+
+  "bonghits.MoonPotion.DisplayName": "Moon Potion",
+  "bonghits.MoonPotion.Description": "This potion was brewed under a full moon on the friday the 13th.",
+
+  "bonghits.PinkBubble.DisplayName": "A Pink Bubble",
+  "bonghits.PinkBubble.Description": "It's a Bubble. Surely I can't drink this?",
+
+  "bonghits.Bubble.DisplayName": "A Bubble",
+  "bonghits.Bubble.Description": "It's a Bubble. Surely I can't drink this?"
+
+
 }

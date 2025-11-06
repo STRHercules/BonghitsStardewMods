@@ -195,9 +195,8 @@
             "Action": "EditData",
             "Target": "Data/NPCGiftTastes",
             "Entries": {
-                "Zachary2": "You're giving this... to me? I'm speechless./72 213 635 729 907/Oh, goodness! Are you sure?/348 303 -7 18 430/No, no, no.../16 330/This is absolute junk. I'm offended./80 167 648/Oh, that's sweet. Thank you.//",
-                "Natalie": "You're giving this... to me? I'm speechless./72 213 635 729 907/Oh, goodness! Are you sure?/348 303 -7 18 430/No, no, no.../16 330/This is absolute junk. I'm offended./80 167 648/Oh, that's sweet. Thank you.//"
-                
+                "Zachary2": "{{i18n:npc.Zachary.LovedGift}}/72 213 635 729 907/{{i18n:npc.Zachary.LikedGift}}/348 303 -7 18 430/{{i18n:npc.Zachary.DeslikedGift}}/16 330/{{i18n:npc.Zachary.HatedGift}}/80 167 648/{{i18n:npc.Zachary.NeutralGift}}//",
+                "Natalie": "{{i18n:npc.Natalie.LovedGift}}/72 213 635 729 907/{{i18n:npc.Natalie.LikedGift}}/348 303 -7 18 430/{{i18n:npc.Natalie.DeslikedGift}}/16 330/{{i18n:npc.Natalie.HatedGift}}/80 167 648/{{i18n:npc.Natalie.NeutralGift}}//"                
             }
         },
         {

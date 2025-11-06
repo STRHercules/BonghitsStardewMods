@@ -28,8 +28,8 @@
             "Entries": {
                 "{{ModId}}_InfusedWhiskey": {
                     "Name": "{{ModId}}_InfusedWhiskey",
-                    "DisplayName": "Apple-Infused Whiskey",
-                    "Description": "Fruit infused Whiskey. Smooth, crisp flavor with a comforting warmth.",
+                    "DisplayName": "{{i18n:bonghits.AppleInfusedWhiskey.DisplayName}}",
+ 		    "Description": "{{i18n:bonghits.AppleInfusedWhiskey.Description}}",
                     "Type": "ArtisanGoods",
                     "Category": -26,
                     "Price": 1800,
@@ -56,8 +56,8 @@
                 },
                 "{{ModId}}_SpicedRum": {
                     "Name": "{{ModId}}_SpicedRum",
-                    "DisplayName": "Spiced Rum",
-                    "Description": "Rum blended with a hot kick of sweet spicy berries. Warms the throat with each sip.",
+                    "DisplayName": "{{i18n:bonghits.SpicedRum.DisplayName}}",
+		    "Description": "{{i18n:bonghits.SpicedRum.Description}}",
                     "Type": "ArtisanGoods",
                     "Category": -26,
                     "Price": 1600,
@@ -84,8 +84,8 @@
                 },
                 "{{ModId}}_HerbalVodka": {
                     "Name": "{{ModId}}_HerbalVodka",
-                    "DisplayName": "Herbal Vodka",
-                    "Description": "Fruity infused Vodka. A refreshing drink with a hint of sweetness. Perfect for a hot summer day, just add ice and garnish!",
+                    "DisplayName": "{{i18n:bonghits.HerbalVodka.DisplayName}}",
+		    "Description": "{{i18n:bonghits.HerbalVodka.Description}}",
                     "Type": "ArtisanGoods",
                     "Category": -26,
                     "Price": 1500,
@@ -112,8 +112,8 @@
                 },
                 "{{ModId}}_InfusedTequila": {
                     "Name": "{{ModId}}_InfusedTequila",
-                    "DisplayName": "Infused Tequila",
-                    "Description": "Tequila meticulously infused with fresh fruit. A bright, aromatic spirit that surprises the senses.",
+                    "DisplayName": "{{i18n:bonghits.InfusedTequila.DisplayName}}",
+		    "Description": "{{i18n:bonghits.InfusedTequila.Description}}",
                     "Type": "ArtisanGoods",
                     "Category": -26,
                     "Price": 1500,
@@ -140,8 +140,8 @@
                 },
                 "{{ModId}}_InfusedSake": {
                     "Name": "{{ModId}}_InfusedSake",
-                    "DisplayName": "Infused Sake",
-                    "Description": "A gentle rice wine steeped with subtle fruit flavors, capturing the essence of each season.",
+                    "DisplayName": "{{i18n:bonghits.InfusedSake.DisplayName}}",
+		    "Description": "{{i18n:bonghits.InfusedSake.Description}}",
                     "Type": "ArtisanGoods",
                     "Category": -26,
                     "Price": 1400,
@@ -168,8 +168,8 @@
                 },
                 "{{ModId}}_InfusedBourbon": {
                     "Name": "{{ModId}}_InfusedBourbon",
-                    "DisplayName": "Infused Bourbon",
-                    "Description": "A smooth bourbon flavored with fresh fruit notes. Complex yet comforting, perfect for sipping.",
+                    "DisplayName": "{{i18n:bonghits.InfusedBourbon.DisplayName}}",
+		    "Description": "{{i18n:bonghits.InfusedBourbon.Description}}",
                     "Type": "ArtisanGoods",
                     "Category": -26,
                     "Price": 1600,

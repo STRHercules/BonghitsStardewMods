@@ -5,7 +5,7 @@
       "Action": "EditData",
       "Target": "Strings/Objects",
       "Entries": {
-        "bonghits.agedmead_name": "Aged {0} Honey Mead"
+        "bonghits.agedmead_name": "{{i18n:bonghits.agedmead_name}}"
       }
     },
     {
@@ -13,7 +13,7 @@
       "Action": "EditData",
       "Target": "Strings/Objects",
       "Entries": {
-        "bonghits.mead_name": "{0} Honey Mead"
+        "bonghits.mead_name": "{{i18n:bonghits.mead_name}}"
       }
     },
     {
@@ -21,7 +21,7 @@
       "Action": "EditData",
       "Target": "Strings/Objects",
       "Entries": {
-        "bonghits.sparklingmead_name": "Sparkling {0} Honey Mead"
+        "bonghits.sparklingmead_name": "{{i18n:bonghits.sparklingmead_name}}"
       }
     }
   ]

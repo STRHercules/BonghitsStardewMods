@@ -90,7 +90,7 @@
                                 }
                             ],
                             "MinutesUntilReady": 800,
-                            "InvalidCountMessage": "Requires 5 Buckwheat"
+                            "InvalidCountMessage": "{{i18n:bonghits.InvalidCount.Buckwheat5}}"
                         },
                         {
                             "Id": "BarleyToRum",
@@ -126,7 +126,7 @@
                                 }
                             ],
                             "MinutesUntilReady": 800,
-                            "InvalidCountMessage": "Requires 5 Rye"
+                            "InvalidCountMessage": "{{i18n:bonghits.InvalidCount.Rye5}}"
                         },
                         {
                             "Id": "CactusToTequila",
@@ -144,7 +144,7 @@
                                 }
                             ],
                             "MinutesUntilReady": 900,
-                            "InvalidCountMessage": "Requires 5 Sorghum"
+                            "InvalidCountMessage": "{{i18n:bonghits.InvalidCount.Sorghum5}}"
                         },
                         {
                             "Id": "MilletToSake",
@@ -180,7 +180,7 @@
                                 }
                             ],
                             "MinutesUntilReady": 1000,
-                            "InvalidCountMessage": "Requires 5 Oats"
+                            "InvalidCountMessage": "{{i18n:bonghits.InvalidCount.Oats5}}",
                         }
                     ]
                 }

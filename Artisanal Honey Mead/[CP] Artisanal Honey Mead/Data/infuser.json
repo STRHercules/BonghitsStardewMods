@@ -119,14 +119,14 @@
                                         "selph.ExtraMachineConfig.RequirementCount.1": "2",
                                         "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.1": "2",
                                         "selph.ExtraMachineConfig.RequirementNoDuplicate.1": "true",
-                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any Fruit to infuse!"
+                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:bonghits.InvalidCount.Fruit}}"
                                     },
                                     "PerItemCondition": null
                                 }
                             ],
                             "MinutesUntilReady": 1980, // 33 Hours
                             "DaysUntilReady": -1,
-                            "InvalidCountMessage": "Requires 2 of any Fruit to infuse!",
+                            "InvalidCountMessage": "{{i18n:bonghits.InvalidCount.Fruit}}",
                             "RecalculateOnCollect": false
                         },
                         {
@@ -199,14 +199,14 @@
                                         "selph.ExtraMachineConfig.RequirementCount.1": "2",
                                         "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.1": "2",
                                         "selph.ExtraMachineConfig.RequirementNoDuplicate.1": "true",
-                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 Spice Berries to infuse!"
+                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:bonghits.InvalidCount.SpiceBerries}}"
                                     },
                                     "PerItemCondition": null
                                 }
                             ],
                             "MinutesUntilReady": 1980, // 33 Hours
                             "DaysUntilReady": -1,
-                            "InvalidCountMessage": "Requires 2 of any Fruit to infuse!",
+                            "InvalidCountMessage": "{{i18n:bonghits.InvalidCount.Fruit}}",
                             "RecalculateOnCollect": false
                         },
                         {
@@ -279,14 +279,14 @@
                                         "selph.ExtraMachineConfig.RequirementCount.1": "2",
                                         "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.1": "2",
                                         "selph.ExtraMachineConfig.RequirementNoDuplicate.1": "true",
-                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any Fruit to infuse!"
+                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:bonghits.InvalidCount.Fruit}}"
                                     },
                                     "PerItemCondition": null
                                 }
                             ],
                             "MinutesUntilReady": 1980, // 33 Hours
                             "DaysUntilReady": -1,
-                            "InvalidCountMessage": "Invalid Recipe",
+                            "InvalidCountMessage": "{{i18n:bonghits.InvalidCount.InvalidRecipe}}",
                             "RecalculateOnCollect": false
                         },
                         {
@@ -343,12 +343,12 @@
                                         "selph.ExtraMachineConfig.RequirementCount.1": "2",
                                         "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.1": "2",
                                         "selph.ExtraMachineConfig.RequirementNoDuplicate.1": "true",
-                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any Fruit to infuse!"
+                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:bonghits.InvalidCount.Fruit}}"
                                     }
                                 }
                             ],
                             "MinutesUntilReady": 1980, // ~33 Hours
-                            "InvalidCountMessage": "Invalid Recipe"
+                            "InvalidCountMessage": "{{i18n:bonghits.InvalidCount.InvalidRecipe}}"
                         },
                         {
                             "Id": "Sake Infusion",
@@ -402,7 +402,7 @@
                                         "selph.ExtraMachineConfig.RequirementCount.1": "2",
                                         "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.1": "2",
                                         "selph.ExtraMachineConfig.RequirementNoDuplicate.1": "true",
-                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any Fruit to infuse!"
+                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:bonghits.InvalidCount.Fruit}}"
                                     }
                                 }
                             ],
@@ -461,12 +461,12 @@
                                         "selph.ExtraMachineConfig.RequirementCount.1": "2",
                                         "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.1": "2",
                                         "selph.ExtraMachineConfig.RequirementNoDuplicate.1": "true",
-                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any Fruit to infuse!"
+                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:bonghits.InvalidCount.Fruit}}"
                                     }
                                 }
                             ],
                             "MinutesUntilReady": 1980,
-                            "InvalidCountMessage": "Invalid Recipe"
+                            "InvalidCountMessage": "{{i18n:bonghits.InvalidCount.InvalidRecipe}}"
                         }
                     ],
                     "AdditionalConsumedItems": null,

@@ -32,8 +32,8 @@
                 },
                 "bonghits.Cp_StockCider": {
                     "Name": "bonghits.Cp_StockCider",
-                    "DisplayName": "Cider",
-                    "Description": "A delicious cider brewed with quality fruits. It smells and tastes so festive!",
+                    "DisplayName": "{{i18n:bonghits.Cider.DisplayName}}",
+		    "Description": "{{i18n:bonghits.Cider.Description}}",
                     "Type": "ArtisanGoods",
                     "Edibility": 100,
                     "IsDrink": true,

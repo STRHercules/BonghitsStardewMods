@@ -746,11 +746,11 @@
             "Action": "EditData",
             "Target": "Data/NPCGiftTastes",
             "Entries": {
-                "Delphy": "You're giving this... to me? I'm speechless./72 213 635 729 907/Oh, goodness! Are you sure?/348 303 -7 18 430/No, no, no.../16 330/This is absolute junk. I'm offended./80 167 648/Oh, that's sweet. Thank you.//",
-                "Mandy": "You're giving this... to me? I'm speechless./72 213 635 729 907/Oh, goodness! Are you sure?/348 303 -7 18 430/No, no, no.../16 330/This is absolute junk. I'm offended./80 167 648/Oh, that's sweet. Thank you.//",
-                "Joaquin": "You're giving this... to me? I'm speechless./72 213 635 729 907/Oh, goodness! Are you sure?/348 303 -7 18 430/No, no, no.../16 330/This is absolute junk. I'm offended./80 167 648/Oh, that's sweet. Thank you.//",
-                "Malik": "You're giving this... to me? I'm speechless./72 213 635 729 907/Oh, goodness! Are you sure?/348 303 -7 18 430/No, no, no.../16 330/This is absolute junk. I'm offended./80 167 648/Oh, that's sweet. Thank you.//",
-                "Mona": "You're giving this... to me? I'm speechless./72 213 635 729 907/Oh, goodness! Are you sure?/348 303 -7 18 430/No, no, no.../16 330/This is absolute junk. I'm offended./80 167 648/Oh, that's sweet. Thank you.//"
+                "Delphy": "{{i18n:npc.Delphy.LovedGift}}/72 213 635 729 907/{{i18n:npc.Delphy.LikedGift}}/348 303 -7 18 430/{{i18n:npc.Delphy.DeslikedGift}}/16 330/{{i18n:npc.Delphy.HatedGift}}/80 167 648/{{i18n:npc.Delphy.NeutralGift}}//",
+                "Mandy": "{{i18n:npc.Mandy.LovedGift}}/72 213 635 729 907/{{i18n:npc.Mandy.LikedGift}}/348 303 -7 18 430/{{i18n:npc.Mandy.DeslikedGift}}/16 330/{{i18n:npc.Mandy.HatedGift}}/80 167 648/{{i18n:npc.Mandy.NeutralGift}}//",
+                "Joaquin": "{{i18n:npc.Joaquin.LovedGift}}/72 213 635 729 907/{{i18n:npc.Joaquin.LikedGift}}/348 303 -7 18 430/{{i18n:npc.Joaquin.DeslikedGift}}/16 330/{{i18n:npc.Joaquin.HatedGift}}/80 167 648/{{i18n:npc.Joaquin.NeutralGift}}//",
+                "Malik": "{{i18n:npc.Malik.LovedGift}}/72 213 635 729 907/{{i18n:npc.Malik.LikedGift}}/348 303 -7 18 430/{{i18n:npc.Malik.DeslikedGift}}/16 330/{{i18n:npc.Malik.HatedGift}}/80 167 648/{{i18n:npc.Malik.NeutralGift}}//",
+                "Mona": "{{i18n:npc.Mona.LovedGift}}/72 213 635 729 907/{{i18n:npc.Mona.LikedGift}}/348 303 -7 18 430/{{i18n:npc.Mona.DeslikedGift}}/16 330/{{i18n:npc.Mona.HatedGift}}/80 167 648/{{i18n:npc.Mona.NeutralGift}}//"
             }
         },
         // Delphy Data

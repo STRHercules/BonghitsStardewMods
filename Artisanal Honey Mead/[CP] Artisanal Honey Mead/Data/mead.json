@@ -14,8 +14,8 @@
                         "HasMod": "FlashShifter.StardewValleyExpandedCP"
                     },
                     "Name": "bonghits.Cp_HoneyMead",
-                    "DisplayName": "Bear Honey Mead",
-                    "Description": "An artisanal mead crafted to perfection using honey harvested by happy Bears.",
+                    "DisplayName": "{{i18n:bonghits.BearHoneyMead.DisplayName}}",
+		    "Description": "{{i18n:bonghits.BearHoneyMead.Description}}",
                     "Type": "ArtisanGoods",
                     "Edibility": 100,
                     "IsDrink": true,
@@ -51,8 +51,8 @@
                 },
                 "bonghits.Cp_BearHoneyMead": {
                     "Name": "bonghits.Cp_HoneyMead",
-                    "DisplayName": "Honey Mead",
-                    "Description": "A handcrafted honey mead with a rich, golden hue and a sweet, floral aroma. Perfect for a relaxing evening.",
+                    "DisplayName": "{{i18n:bonghits.HoneyMead.DisplayName}}",
+ 		    "Description": "{{i18n:bonghits.HoneyMead.Description}}",
                     "Type": "ArtisanGoods",
                     "Edibility": 100,
                     "IsDrink": true,
@@ -91,8 +91,8 @@
                 //
                 "bonghits.Cp_AgedBearHoneyMead": {
                     "Name": "bonghits.Cp_AgedHoneyMead",
-                    "DisplayName": "Aged Bear Honey Mead",
-                    "Description": "An artisanal honey mead aged to perfection. Its complex flavors reveal multiple fruity notes, offering a delightful and sophisticated experience.",
+                    "DisplayName": "{{i18n:bonghits.AgedBearHoneyMead.DisplayName}}",
+		    "Description": "{{i18n:bonghits.AgedBearHoneyMead.Description}}",
                     "Type": "ArtisanGoods",
                     "Edibility": 100,
                     "IsDrink": true,
@@ -131,8 +131,8 @@
                 //
                 "bonghits.Cp_SparklingHoneyMead": {
                     "Name": "bonghits.Cp_SparklingHoneyMead",
-                    "DisplayName": "Sparkling Honey Mead",
-                    "Description": "A refreshing sparkling honey mead with a light, effervescent quality and a hint of citrus. Perfect for celebrations.",
+                    "DisplayName": "{{i18n:bonghits.SparklingHoneyMead.DisplayName}}",
+		    "Description": "{{i18n:bonghits.SparklingHoneyMead.Description}}",
                     "Type": "ArtisanGoods",
                     "Edibility": 100,
                     "IsDrink": true,
@@ -167,8 +167,8 @@
                 },
                 "bonghits.Cp_HealingMead": {
                     "Name": "bonghits.Cp_HealingMead",
-                    "DisplayName": "Healing Mead",
-                    "Description": "A warm inviting mug reminding you of home.",
+                    "DisplayName": "{{i18n:bonghits.HealingMead.DisplayName}}",
+		    "Description": "{{i18n:bonghits.HealingMead.Description}}",
                     "Type": "ArtisanGoods",
                     "Edibility": 0,
                     "IsDrink": true,
@@ -195,8 +195,8 @@
                 },
                 "bonghits.Cp_SpecialtyHoneyMead": {
                     "Name": "bonghits.Cp_SpecialtyHoneyMead",
-                    "DisplayName": "Zach's Special Mead",
-                    "Description": "This mead smells strongly of Whiskey..",
+                    "DisplayName": "{{i18n:bonghits.ZachsSpecialMead.DisplayName}}",
+		    "Description": "{{i18n:bonghits.ZachsSpecialMead.Description}}",
                     "Type": "ArtisanGoods",
                     "Edibility": 100,
                     "IsDrink": true,
@@ -231,8 +231,8 @@
                 },
                 /*"bonghits.Cp_BubbleBeer": {
                     "Name": "bonghits.Cp_BubbleBeer",
-                    "DisplayName": "Bubble Mead",
-                    "Description": "A bubbly beer that makes you feel warm and cozy.",
+                    "DisplayName": "{{i18n:bonghits.BubbleMead.DisplayName}}",
+		    "Description": "{{i18n:bonghits.BubbleMead.Description}}",
                     "Type": "ArtisanGoods",
                     "Edibility": 100,
                     "IsDrink": true,
@@ -267,8 +267,8 @@
                 },*/
                 "bonghits.Cp_BubbleHealth": {
                     "Name": "bonghits.Cp_BubbleHealth",
-                    "DisplayName": "Bubbly Health Potion",
-                    "Description": "A carbonated health potion! The bubbles tickle your tongue.",
+                    "DisplayName": "{{i18n:bonghits.BubblyHealthPotion.DisplayName}}",
+		    "Description": "{{i18n:bonghits.BubblyHealthPotion.Description}}",
                     "Type": "ArtisanGoods",
                     "Edibility": 100,
                     "IsDrink": true,
@@ -294,8 +294,8 @@
                 },
                 "bonghits.Cp_BubbleMead": {
                     "Name": "bonghits.Cp_BubbleMead",
-                    "DisplayName": "Bubble Mead",
-                    "Description": "A bubbly mead that makes you feel warm and effervescent.",
+                    "DisplayName": "{{i18n:bonghits.BubbleMead2.DisplayName}}",
+		    "Description": "{{i18n:bonghits.BubbleMead2.Description}}",
                     "Type": "ArtisanGoods",
                     "Edibility": 100,
                     "IsDrink": true,
@@ -330,8 +330,8 @@
                 },
                 "bonghits.Cp_BubbleRoseBeer": {
                     "Name": "bonghits.Cp_BubbleRoseBeer",
-                    "DisplayName": "Bubbly Rosé Beer",
-                    "Description": "A delicious Rosé Beer carbonated to perfection. The bubbles tickle your tongue!",
+                    "DisplayName": "{{i18n:bonghits.BubblyRoseBeer.DisplayName}}",
+		    "Description": "{{i18n:bonghits.BubblyRoseBeer.Description}}",
                     "Type": "ArtisanGoods",
                     "Edibility": 100,
                     "IsDrink": true,
@@ -357,8 +357,8 @@
                 },
                 "bonghits.Cp_BubbleRoseMead": {
                     "Name": "bonghits.Cp_BubbleRoseMead",
-                    "DisplayName": "Bubbly Health Potion",
-                    "Description": "A Rosé Mead carbonated to bring out the effervescent notes.",
+                    "DisplayName": "{{i18n:bonghits.BubblyHealthRosePotion.DisplayName}}",
+		    "Description": "{{i18n:bonghits.BubblyHealthRosePotion.Description}}", //Is this item repeated?
                     "Type": "ArtisanGoods",
                     "Edibility": 100,
                     "IsDrink": true,
@@ -384,8 +384,8 @@
                 },
                 "bonghits.Cp_HealingBubbleMead": {
                     "Name": "bonghits.Cp_HealingBubbleMead",
-                    "DisplayName": "Healing Bubble Mead",
-                    "Description": "A delicious carbonted mead crafting using naturally healing ingredients.",
+                    "DisplayName": "{{i18n:bonghits.HealingBubbleMead.DisplayName}}",
+                    "Description": "{{i18n:bonghits.HealingBubbleMead.Description}}",
                     "Type": "ArtisanGoods",
                     "Edibility": 100,
                     "IsDrink": true,
@@ -411,8 +411,8 @@
                 },
                 "bonghits.Cp_LovePotion": {
                     "Name": "bonghits.Cp_LovePotion",
-                    "DisplayName": "Love Potion",
-                    "Description": "A potion that brings out warm fuzzy feelings.",
+                    "DisplayName": "{{i18n:bonghits.LovePotion.DisplayName}}",
+		    "Description": "{{i18n:bonghits.LovePotion.Description}}",
                     "Type": "ArtisanGoods",
                     "Edibility": 100,
                     "IsDrink": true,
@@ -438,8 +438,8 @@
                 },
                 "bonghits.Cp_MoonPotion": {
                     "Name": "bonghits.Cp_MoonPotion",
-                    "DisplayName": "Moon Potion",
-                    "Description": "This potion was brewed under a full moon on the friday the 13th.",
+                    "DisplayName": "{{i18n:bonghits.MoonPotion.DisplayName}}",
+		    "Description": "{{i18n:bonghits.MoonPotion.Description}}",
                     "Type": "ArtisanGoods",
                     "Edibility": 100,
                     "IsDrink": true,
@@ -465,8 +465,8 @@
                 },
                 "bonghits.Cp_PinkBubble": {
                     "Name": "bonghits.PinkBubble",
-                    "DisplayName": "A Pink Bubble",
-                    "Description": "It's a Bubble. Surely I can't drink this?",
+                    "DisplayName": "{{i18n:bonghits.PinkBubble.DisplayName}}",
+		    "Description": "{{i18n:bonghits.PinkBubble.Description}}",
                     "Type": "ArtisanGoods",
                     "Edibility": 100,
                     "IsDrink": true,
@@ -492,8 +492,8 @@
                 },
                 "bonghits.Cp_BubbleSingle": {
                     "Name": "bonghits.Cp_SingleBubble",
-                    "DisplayName": "A Bubble",
-                    "Description": "It's a Bubble. Surely I can't drink this?",
+                    "DisplayName": "{{i18n:bonghits.Bubble.DisplayName}}",
+		    "Description": "{{i18n:bonghits.Bubble.Description}}",
                     "Type": "ArtisanGoods",
                     "Edibility": 100,
                     "IsDrink": true,

@@ -60,8 +60,8 @@
             "Entries": {
                 "bh.AgingVat": {
                     "Name": "bh.AgingVat",
-                    "DisplayName": "Aging Vat",
-                    "Description": "A specialized vat for aging meads with fruit, spices, or other flavorings to create premium artisanal goods.",
+                    "DisplayName": "{{i18n:bonghits.AgingVat.DisplayName}}",
+		    "Description": "{{i18n:bonghits.AgingVat.Description}}",
                     "Price": 12500,
                     "Fragility": 0,
                     "CanBePlacedOutdoors": true,
@@ -82,8 +82,8 @@
             "Entries": {
                 "bh.AgingVatGold": {
                     "Name": "bh.AgingVatGold",
-                    "DisplayName": "{{i18n: agingvatGold.name}}",
-                    "Description": "{{i18n: agingvatGold.description}}",
+                    "DisplayName": "{{i18n:bonghits.agingvatGold.name}}",
+                    "Description": "{{i18n:bonghits.agingvatGold.description}}",
                     "Price": 12500,
                     "Fragility": 0,
                     "CanBePlacedOutdoors": true,
@@ -94,8 +94,8 @@
                 },
                 "bh.AgingVatDiamond": {
                     "Name": "bh.AgingVatDiamond",
-                    "DisplayName": "{{i18n: agingvatDiamond.name}}",
-                    "Description": "{{i18n: agingvatDiamond.description}}",
+                    "DisplayName": "{{i18n:bonghits.agingvatDiamond.name}}",
+                    "Description": "{{i18n:bonghits.agingvatDiamond.description}}",
                     "Price": 12500,
                     "Fragility": 0,
                     "CanBePlacedOutdoors": true,
@@ -106,8 +106,8 @@
                 },
                 "bh.AgingVatIridium": {
                     "Name": "bh.AgingVatIridium",
-                    "DisplayName": "{{i18n: agingvatIridium.name}}",
-                    "Description": "{{i18n: agingvatIridium.description}}",
+                    "DisplayName": "{{i18n:bonghits.agingvatIridium.name}}",
+                    "Description": "{{i18n:bonghits.agingvatIridium.description}}",
                     "Price": 12500,
                     "Fragility": 0,
                     "CanBePlacedOutdoors": true,
@@ -118,8 +118,8 @@
                 },
                 "bh.AgingVatRadioactive": {
                     "Name": "bh.AgingVatRadioactive",
-                    "DisplayName": "{{i18n: agingvatRadioactive.name}}",
-                    "Description": "{{i18n: agingvatRadioactive.description}}",
+                    "DisplayName": "{{i18n:bonghits.agingvatRadioactive.name}}",
+                    "Description": "{{i18n:bonghits.agingvatRadioactive.description}}",
                     "Price": 12500,
                     "Fragility": 0,
                     "CanBePlacedOutdoors": true,
@@ -130,8 +130,8 @@
                 },
                 "bh.AgingVatPrismatic": {
                     "Name": "bh.AgingVatPrismatic",
-                    "DisplayName": "{{i18n: agingvatPrismatic.name}}",
-                    "Description": "{{i18n: agingvatPrismatic.description}}",
+                    "DisplayName": "{{i18n:bonghits.agingvatPrismatic.name}}",
+                    "Description": "{{i18n:bonghits.agingvatPrismatic.description}}",
                     "Price": 12500,
                     "Fragility": 0,
                     "CanBePlacedOutdoors": true,
@@ -200,7 +200,7 @@
                                         "selph.ExtraMachineConfig.RequirementCount.3": "2",
                                         "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2",
                                         "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
-                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:bonghits.InvalidCount.ThreeFruits}}",
                                         "selph.ExtraMachineConfig.CopyColor": "true",
                                     },
                                     "PriceModifiers": [
@@ -257,7 +257,7 @@
                                         "selph.ExtraMachineConfig.RequirementCount.3": "2",
                                         "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2",
                                         "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
-                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:bonghits.InvalidCount.ThreeFruits}}",
                                         "selph.ExtraMachineConfig.CopyColor": "true",
                                     },
                                     "PriceModifiers": [
@@ -314,7 +314,7 @@
                                         "selph.ExtraMachineConfig.RequirementCount.3": "2",
                                         "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2.5",
                                         "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
-                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:bonghits.InvalidCount.ThreeFruits}}",
                                         "selph.ExtraMachineConfig.CopyColor": "true",
                                     },
                                     "PriceModifiers": [
@@ -336,7 +336,7 @@
                                 }
                             ],
                             "MinutesUntilReady": 3000, // 50 Hours - 2.083 Days
-                            "InvalidCountMessage": "Requires 1 Honey Mead"
+                            "InvalidCountMessage": "{{i18n:bonghits.InvalidCount.HoneyMead}}"
                         }
                     ]
                 }
@@ -403,7 +403,7 @@
                                         "selph.ExtraMachineConfig.RequirementCount.3": "2",
                                         "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2",
                                         "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
-                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:bonghits.InvalidCount.ThreeFruits}}",
                                         "selph.ExtraMachineConfig.CopyColor": "true",
                                     },
                                     "PriceModifiers": [
@@ -460,7 +460,7 @@
                                         "selph.ExtraMachineConfig.RequirementCount.3": "2",
                                         "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2",
                                         "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
-                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:bonghits.InvalidCount.ThreeFruits}}",
                                         "selph.ExtraMachineConfig.CopyColor": "true",
                                     },
                                     "PriceModifiers": [
@@ -517,7 +517,7 @@
                                         "selph.ExtraMachineConfig.RequirementCount.3": "2",
                                         "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2.5",
                                         "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
-                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:bonghits.InvalidCount.ThreeFruits}}",
                                         "selph.ExtraMachineConfig.CopyColor": "true",
                                     },
                                     "PriceModifiers": [
@@ -596,7 +596,7 @@
                                         "selph.ExtraMachineConfig.RequirementCount.3": "2",
                                         "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2",
                                         "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
-                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:bonghits.InvalidCount.ThreeFruits}}",
                                         "selph.ExtraMachineConfig.CopyColor": "true",
                                     },
                                     "PriceModifiers": [
@@ -653,7 +653,7 @@
                                         "selph.ExtraMachineConfig.RequirementCount.3": "2",
                                         "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2",
                                         "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
-                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:bonghits.InvalidCount.ThreeFruits}}",
                                         "selph.ExtraMachineConfig.CopyColor": "true",
                                     },
                                     "PriceModifiers": [
@@ -710,7 +710,7 @@
                                         "selph.ExtraMachineConfig.RequirementCount.3": "2",
                                         "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2.5",
                                         "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
-                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:bonghits.InvalidCount.ThreeFruits}}",
                                         "selph.ExtraMachineConfig.CopyColor": "true",
                                     },
                                     "PriceModifiers": [
@@ -789,7 +789,7 @@
                                         "selph.ExtraMachineConfig.RequirementCount.3": "2",
                                         "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2",
                                         "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
-                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:bonghits.InvalidCount.ThreeFruits}}",
                                         "selph.ExtraMachineConfig.CopyColor": "true",
                                     },
                                     "PriceModifiers": [
@@ -846,7 +846,7 @@
                                         "selph.ExtraMachineConfig.RequirementCount.3": "2",
                                         "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2",
                                         "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
-                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:bonghits.InvalidCount.ThreeFruits}}",
                                         "selph.ExtraMachineConfig.CopyColor": "true",
                                     },
                                     "PriceModifiers": [
@@ -903,7 +903,7 @@
                                         "selph.ExtraMachineConfig.RequirementCount.3": "2",
                                         "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2.5",
                                         "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
-                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:bonghits.InvalidCount.ThreeFruits}}",
                                         "selph.ExtraMachineConfig.CopyColor": "true",
                                     },
                                     "PriceModifiers": [
@@ -925,7 +925,7 @@
                                 }
                             ],
                             "MinutesUntilReady": 960, // 16 Hours
-                            "InvalidCountMessage": "Requires 1 Honey Mead"
+                            "InvalidCountMessage": "{{i18n:bonghits.InvalidCount.HoneyMead}}"
                         }
                     ]
                 },
@@ -982,7 +982,7 @@
                                         "selph.ExtraMachineConfig.RequirementCount.3": "2",
                                         "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2",
                                         "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
-                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:bonghits.InvalidCount.ThreeFruits}}",
                                         "selph.ExtraMachineConfig.CopyColor": "true",
                                     },
                                     "PriceModifiers": [
@@ -1039,7 +1039,7 @@
                                         "selph.ExtraMachineConfig.RequirementCount.3": "2",
                                         "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2",
                                         "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
-                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:bonghits.InvalidCount.ThreeFruits}}",
                                         "selph.ExtraMachineConfig.CopyColor": "true",
                                     },
                                     "PriceModifiers": [
@@ -1096,7 +1096,7 @@
                                         "selph.ExtraMachineConfig.RequirementCount.3": "2",
                                         "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2.5",
                                         "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
-                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:bonghits.InvalidCount.ThreeFruits}}",
                                         "selph.ExtraMachineConfig.CopyColor": "true",
                                     },
                                     "PriceModifiers": [
@@ -1118,7 +1118,7 @@
                                 }
                             ],
                             "MinutesUntilReady": 960, // 16 Hours
-                            "InvalidCountMessage": "Requires 1 Honey Mead"
+                            "InvalidCountMessage": "{{i18n:bonghits.InvalidCount.HoneyMead}}"
                         }
                     ]
                 },
@@ -1175,7 +1175,7 @@
                                         "selph.ExtraMachineConfig.RequirementCount.3": "2",
                                         "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2",
                                         "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
-                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:bonghits.InvalidCount.ThreeFruits}}",
                                         "selph.ExtraMachineConfig.CopyColor": "true",
                                     },
                                     "PriceModifiers": [
@@ -1232,7 +1232,7 @@
                                         "selph.ExtraMachineConfig.RequirementCount.3": "2",
                                         "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2",
                                         "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
-                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:bonghits.InvalidCount.ThreeFruits}}",
                                         "selph.ExtraMachineConfig.CopyColor": "true",
                                     },
                                     "PriceModifiers": [
@@ -1289,7 +1289,7 @@
                                         "selph.ExtraMachineConfig.RequirementCount.3": "2",
                                         "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2.5",
                                         "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
-                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                        "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:bonghits.InvalidCount.ThreeFruits}}",
                                         "selph.ExtraMachineConfig.CopyColor": "true",
                                     },
                                     "PriceModifiers": [
@@ -1311,7 +1311,7 @@
                                 }
                             ],
                             "MinutesUntilReady": 720, // 12 Hours
-                            "InvalidCountMessage": "Requires 1 Honey Mead"
+                            "InvalidCountMessage": "{{i18n:bonghits.InvalidCount.HoneyMead}}"
                         }
                     ]
                 }
@@ -1376,7 +1376,7 @@
                                 "selph.ExtraMachineConfig.RequirementCount.3": "2",
                                 "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2",
                                 "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
-                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:bonghits.InvalidCount.ThreeFruits}}",
                                 "selph.ExtraMachineConfig.CopyColor": "true"
                             },
                             "PriceModifiers": [
@@ -1433,7 +1433,7 @@
                                 "selph.ExtraMachineConfig.RequirementCount.3": "2",
                                 "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2",
                                 "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
-                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:bonghits.InvalidCount.ThreeFruits}}",
                                 "selph.ExtraMachineConfig.CopyColor": "true"
                             },
                             "PriceModifiers": [
@@ -1490,7 +1490,7 @@
                                 "selph.ExtraMachineConfig.RequirementCount.3": "2",
                                 "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2.5",
                                 "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
-                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:bonghits.InvalidCount.ThreeFruits}}",
                                 "selph.ExtraMachineConfig.CopyColor": "true",
                             },
                             "PriceModifiers": [
@@ -1583,7 +1583,7 @@
                                 "selph.ExtraMachineConfig.RequirementCount.3": "2",
                                 "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2",
                                 "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
-                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:bonghits.InvalidCount.ThreeFruits}}",
                                 "selph.ExtraMachineConfig.CopyColor": "true",
                             },
                             "PriceModifiers": [
@@ -1640,7 +1640,7 @@
                                 "selph.ExtraMachineConfig.RequirementCount.3": "2",
                                 "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2",
                                 "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
-                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:bonghits.InvalidCount.ThreeFruits}}",
                                 "selph.ExtraMachineConfig.CopyColor": "true",
                             },
                             "PriceModifiers": [
@@ -1697,7 +1697,7 @@
                                 "selph.ExtraMachineConfig.RequirementCount.3": "2",
                                 "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2.5",
                                 "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
-                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:bonghits.InvalidCount.ThreeFruits}}",
                                 "selph.ExtraMachineConfig.CopyColor": "true",
                             },
                             "PriceModifiers": [
@@ -1790,7 +1790,7 @@
                                 "selph.ExtraMachineConfig.RequirementCount.3": "2",
                                 "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2",
                                 "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
-                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:bonghits.InvalidCount.ThreeFruits}}",
                                 "selph.ExtraMachineConfig.CopyColor": "true",
                             },
                             "PriceModifiers": [
@@ -1847,7 +1847,7 @@
                                 "selph.ExtraMachineConfig.RequirementCount.3": "2",
                                 "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2",
                                 "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
-                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:bonghits.InvalidCount.ThreeFruits}}",
                                 "selph.ExtraMachineConfig.CopyColor": "true",
                             },
                             "PriceModifiers": [
@@ -1904,7 +1904,7 @@
                                 "selph.ExtraMachineConfig.RequirementCount.3": "2",
                                 "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2.5",
                                 "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
-                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:bonghits.InvalidCount.ThreeFruits}}",
                                 "selph.ExtraMachineConfig.CopyColor": "true",
                             },
                             "PriceModifiers": [
@@ -1997,7 +1997,7 @@
                                 "selph.ExtraMachineConfig.RequirementCount.3": "2",
                                 "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2",
                                 "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
-                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:bonghits.InvalidCount.ThreeFruits}}",
                                 "selph.ExtraMachineConfig.CopyColor": "true",
                             },
                             "PriceModifiers": [
@@ -2054,7 +2054,7 @@
                                 "selph.ExtraMachineConfig.RequirementCount.3": "2",
                                 "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2",
                                 "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
-                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:bonghits.InvalidCount.ThreeFruits}}",
                                 "selph.ExtraMachineConfig.CopyColor": "true",
                             },
                             "PriceModifiers": [
@@ -2111,7 +2111,7 @@
                                 "selph.ExtraMachineConfig.RequirementCount.3": "2",
                                 "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2.5",
                                 "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
-                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:bonghits.InvalidCount.ThreeFruits}}",
                                 "selph.ExtraMachineConfig.CopyColor": "true",
                             },
                             "PriceModifiers": [
@@ -2204,7 +2204,7 @@
                                 "selph.ExtraMachineConfig.RequirementCount.3": "2",
                                 "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2",
                                 "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
-                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:bonghits.InvalidCount.ThreeFruits}}",
                                 "selph.ExtraMachineConfig.CopyColor": "true",
                             },
                             "PriceModifiers": [
@@ -2261,7 +2261,7 @@
                                 "selph.ExtraMachineConfig.RequirementCount.3": "2",
                                 "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2",
                                 "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
-                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:bonghits.InvalidCount.ThreeFruits}}",
                                 "selph.ExtraMachineConfig.CopyColor": "true",
                             },
                             "PriceModifiers": [
@@ -2318,7 +2318,7 @@
                                 "selph.ExtraMachineConfig.RequirementCount.3": "2",
                                 "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2.5",
                                 "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
-                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:bonghits.InvalidCount.ThreeFruits}}",
                                 "selph.ExtraMachineConfig.CopyColor": "true",
                             },
                             "PriceModifiers": [
@@ -2411,7 +2411,7 @@
                                 "selph.ExtraMachineConfig.RequirementCount.3": "2",
                                 "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2",
                                 "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
-                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:bonghits.InvalidCount.ThreeFruits}}",
                                 "selph.ExtraMachineConfig.CopyColor": "true",
                             },
                             "PriceModifiers": [
@@ -2468,7 +2468,7 @@
                                 "selph.ExtraMachineConfig.RequirementCount.3": "2",
                                 "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2",
                                 "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
-                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:bonghits.InvalidCount.ThreeFruits}}",
                                 "selph.ExtraMachineConfig.CopyColor": "true",
                             },
                             "PriceModifiers": [
@@ -2525,7 +2525,7 @@
                                 "selph.ExtraMachineConfig.RequirementCount.3": "2",
                                 "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.3": "2.5",
                                 "selph.ExtraMachineConfig.RequirementNoDuplicate.3": "true",
-                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "Requires 2 of any 3 Fruits",
+                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:bonghits.InvalidCount.ThreeFruits}}",
                                 "selph.ExtraMachineConfig.CopyColor": "true",
                             },
                             "PriceModifiers": [

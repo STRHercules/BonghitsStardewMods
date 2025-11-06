@@ -6,8 +6,8 @@
             "Target": "Data/Buffs",
             "Entries": {
                 "bonghits.mead_tipsy": {
-                    "DisplayName": "Tipsy on Honey Mead",
-                    "Description": "Enjoyed a little mead!",
+                    "DisplayName": "{{i18n:bonghits.mead.tipsy.DisplayName}}",
+		    "Description": "{{i18n:bonghits.mead.tipsy.Description}}",
                     "IsDebuff": false,
                     "GlowColor": null,
                     "Duration": 30000,
@@ -27,8 +27,8 @@
                     "CustomFields": null
                 },
                 "bonghits.mead_drunk": {
-                    "DisplayName": "Smashed on Honey Mead",
-                    "Description": "Enjoyed a bit too much mead! You're not complaining!",
+                    "DisplayName": "{{i18n:bonghits.mead.drunk.DisplayName}}",
+		    "Description": "{{i18n:bonghits.mead.drunk.Description}}",
                     "IsDebuff": false,
                     "GlowColor": null,
                     "Duration": 30000,
@@ -48,8 +48,8 @@
                     "CustomFields": null
                 },
                 "bonghits.mead_sparkling": {
-                    "DisplayName": "Feeling Bubbly",
-                    "Description": "Feeling light and bubbly after enjoying some sparkling mead!",
+                    "DisplayName": "{{i18n:bonghits.mead.sparkling.DisplayName}}",
+		    "Description": "{{i18n:bonghits.mead.sparkling.Description}}",
                     "IsDebuff": false,
                     "GlowColor": null,
                     "Duration": 30000,
@@ -89,8 +89,8 @@
                     "ActionsOnApply": null,
                 },
                 "bonghits.mead.specialty": {
-                    "DisplayName": "{{i18n:bonghits.mead.specialtybuff.DisplayName}}",
-                    "Description": "{{i18n:bonghits.mead.specialtybuff.Description}}",
+                    "DisplayName": "{{i18n:bonghits.mead.specialtybuff.DisplayName}}", //Missing
+                    "Description": "{{i18n:bonghits.mead.specialtybuff.Description}}", //Missing
                     "IsDebuff": false,
                     //"GlowColor": "PaleGreen",
                     "Duration": 90,
