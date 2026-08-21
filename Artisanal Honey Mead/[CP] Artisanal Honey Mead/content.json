@@ -109,7 +109,7 @@
         {
             "LogName": "Load Data Files",
             "Action": "Include",
-            "FromFile": "Maps/Data/meadshop.json, Data/mail.json, Data/cropdata.json, Data/gifttastes.json, Maps/Data/garbage.json, Data/shops.json, Data/characters.json, Data/tourists.json, Data/strings.json, Data/machines.json, Data/buffs.json, Data/mead.json, Data/cider.json, Data/operations.json, Data/food.json, Data/cooking.json, Data/distillery.json, Data/spirits.json, Data/infused_spirits.json, Data/infuser.json, Data/aging_vat.json"
+            "FromFile": "Maps/Data/meadshop.json, Data/mail.json, Data/cropdata.json, Data/gifttastes.json, Maps/Data/garbage.json, Data/shops.json, Data/characters.json, Data/strings.json, Data/machines.json, Data/buffs.json, Data/mead.json, Data/cider.json, Data/operations.json, Data/food.json, Data/cooking.json, Data/distillery.json, Data/spirits.json, Data/infused_spirits.json, Data/infuser.json, Data/aging_vat.json"
         },
         //  Load Assets
         {
